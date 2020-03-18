@@ -1,0 +1,201 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerStyleCollection:class'
+    summary: Représente une collection d’objets SlicerStyle.
+    name: Excel.SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerStyleCollection#add:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#context:member'
+      - 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#items:member'
+      - 'excel!Excel.SlicerStyleCollection#load:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+  - uid: 'excel!Excel.SlicerStyleCollection#add:member(1)'
+    summary: Crée un SlicerStyle vide avec le nom spécifié.
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: SlicerStyle nouvellement créé.
+      parameters:
+        - id: name
+          description: Nom unique de la nouvelle SlicerStyle. Génère une exception d’argument non valide si le nom est déjà utilisé.
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Facultatif, la valeur par défaut est false. Si la valeur est true, ajoute des numéros au nom afin de le définir comme étant unique, le cas échéant.'
+          type:
+            - boolean
+  - uid: 'excel!Excel.SlicerStyleCollection#context:member'
+    summary: Contexte de demande associé à l’objet. Cette opération connecte le processus du complément au processus de l’application hôte Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
+    summary: Obtient le nombre de styles de slicer de la collection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): ClientResult<number>;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyleCollection#getCount~0:complex'
+        description: ''
+  - uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+    summary: Obtient SlicerStyle par défaut pour la portée de l’objet parent portée.
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: Objet SlicerStyle qui est le SlicerStyle par défaut actuel.
+  - uid: 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
+    summary: Obtient un SlicerStyle par nom.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: Objet SlicerStyle dont le nom correspond à l’entrée.
+      parameters:
+        - id: name
+          description: Nom du SlicerStyle à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient un SlicerStyle par nom. Si le SlicerStyle n’existe pas, il renvoie un objet null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:class'
+        description: Objet SlicerStyle dont le nom correspond à l’entrée.
+      parameters:
+        - id: name
+          description: Nom du SlicerStyle à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerStyleCollection#items:member'
+    summary: Obtient l’élément enfant chargé dans cette collection de sites.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.SlicerStyle[];'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyleCollection#items~0:complex'
+  - uid: 'excel!Excel.SlicerStyleCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.SlicerStyleCollection;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyleCollection:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+    summary: Obtient le SlicerStyle par défaut pour la portée de l’objet parent portée.
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: SlicerStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: Objet SlicerStyle ou nom de l’objet SlicerStyle qui doit être la nouvelle valeur par défaut.
+          type:
+            - 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+references:
+  - uid: 'excel!Excel.SlicerStyle:class'
+    name: SlicerStyle
+    fullName: Excel.SlicerStyle
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.SlicerStyleCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:class'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
+  - uid: 'excel!Excel.SlicerStyleCollection#items~0:complex'
+    name: 'Excel.SlicerStyle[]'
+    fullName: 'Excel.SlicerStyle[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerStyle:class'
+        name: Excel.SlicerStyle
+        fullName: Excel.SlicerStyle
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SlicerStyleCollection:class'
+    name: SlicerStyleCollection
+    fullName: Excel.SlicerStyleCollection
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault~0:complex'
+    name: SlicerStyle | string
+    fullName: Excel.SlicerStyle | string
+    spec.typeScript:
+      - uid: 'excel!Excel.SlicerStyle:class'
+        name: SlicerStyle
+        fullName: Excel.SlicerStyle
+      - name: ' | string'
+        fullName: ' | string'

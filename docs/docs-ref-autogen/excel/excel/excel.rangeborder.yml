@@ -1,0 +1,188 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeBorder:class'
+    summary: Cet objet représente la bordure d'un objet.
+    name: Excel.RangeBorder
+    fullName: Excel.RangeBorder
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.RangeBorder#color:member'
+      - 'excel!Excel.RangeBorder#context:member'
+      - 'excel!Excel.RangeBorder#load:member(1)'
+      - 'excel!Excel.RangeBorder#load:member(2)'
+      - 'excel!Excel.RangeBorder#set:member(1)'
+      - 'excel!Excel.RangeBorder#sideIndex:member'
+      - 'excel!Excel.RangeBorder#style:member'
+      - 'excel!Excel.RangeBorder#tintAndShade:member'
+      - 'excel!Excel.RangeBorder#weight:member'
+  - uid: 'excel!Excel.RangeBorder#color:member'
+    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous \\#la forme RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.RangeBorder#context:member'
+    summary: Contexte de demande associé à l’objet. Cette opération connecte le processus du complément au processus de l’application hôte Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeBorder#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeBorder#load:member(2)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.RangeBorder;
+      return:
+        type:
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`est une chaîne délimitée par des virgules qui spécifie les propriétés à `propertyNamesAndPaths.expand` charger et une chaîne délimitée par des virgules qui spécifie les propriétés de navigation à charger.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.RangeBorder#set:member(1)'
+    summary: 'Définit plusieurs propriétés de l’objet en même temps, en fonction d’un objet chargé existant.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.RangeBorder): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.RangeBorder:class'
+  - uid: 'excel!Excel.RangeBorder#sideIndex:member'
+    summary: 'Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir Excel. BorderIndex. En lecture seule.'
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder#sideIndex~0:complex'
+  - uid: 'excel!Excel.RangeBorder#style:member'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot";'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder#style~0:complex'
+  - uid: 'excel!Excel.RangeBorder#tintAndShade:member'
+    summary: 'Renvoie ou définit un double qui s’éclaire ou assombrit une couleur de bordure de la plage, la valeur est comprise entre -1 (zones les plus sombres) et 1 (plus clair) avec 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeBorder#weight:member'
+    summary: 'Spécifie l''épaisseur de la bordure autour d''une plage. Pour plus d’informations, voir Excel. BorderWeight.'
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
+      return:
+        type:
+          - 'excel!Excel.RangeBorder#weight~0:complex'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.RangeBorder:class'
+    name: RangeBorder
+    fullName: Excel.RangeBorder
+  - uid: 'excel!Excel.RangeBorder#sideIndex~0:complex'
+    name: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
+    fullName: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
+    spec.typeScript:
+      - uid: 'excel!Excel.BorderIndex:enum'
+        name: Excel.BorderIndex
+        fullName: Excel.BorderIndex
+      - name: ' | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"'
+        fullName: ' | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"'
+  - uid: 'excel!Excel.RangeBorder#style~0:complex'
+    name: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"
+    fullName: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"
+    spec.typeScript:
+      - uid: 'excel!Excel.BorderLineStyle:enum'
+        name: Excel.BorderLineStyle
+        fullName: Excel.BorderLineStyle
+      - name: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
+        fullName: ' | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" | "SlantDashDot"'
+  - uid: 'excel!Excel.RangeBorder#weight~0:complex'
+    name: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
+    fullName: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
+    spec.typeScript:
+      - uid: 'excel!Excel.BorderWeight:enum'
+        name: Excel.BorderWeight
+        fullName: Excel.BorderWeight
+      - name: ' | "Hairline" | "Thin" | "Medium" | "Thick"'
+        fullName: ' | "Hairline" | "Thin" | "Medium" | "Thick"'

@@ -1,0 +1,274 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotField:class'
+    summary: Représente le champ de tableau croisé dynamique Excel.
+    name: Excel.PivotField
+    fullName: Excel.PivotField
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.PivotField#context:member'
+      - 'excel!Excel.PivotField#id:member'
+      - 'excel!Excel.PivotField#items:member'
+      - 'excel!Excel.PivotField#load:member(1)'
+      - 'excel!Excel.PivotField#load:member(2)'
+      - 'excel!Excel.PivotField#name:member'
+      - 'excel!Excel.PivotField#set:member(1)'
+      - 'excel!Excel.PivotField#showAllItems:member'
+      - 'excel!Excel.PivotField#sortByLabels:member(1)'
+      - 'excel!Excel.PivotField#sortByValues:member(1)'
+      - 'excel!Excel.PivotField#sortByValues:member(2)'
+      - 'excel!Excel.PivotField#subtotals:member'
+  - uid: 'excel!Excel.PivotField#context:member'
+    summary: Contexte de demande associé à l’objet. Cette opération connecte le processus du complément au processus de l’application hôte Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotField#id:member'
+    summary: ID du champ PivotField.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotField#items:member'
+    summary: Renvoie les PivotFields associés à PivotField.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.PivotItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotItemCollection:class'
+  - uid: 'excel!Excel.PivotField#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PivotField;'
+      return:
+        type:
+          - 'excel!Excel.PivotField:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotField#load:member(2)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.PivotField;
+      return:
+        type:
+          - 'excel!Excel.PivotField:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`est une chaîne délimitée par des virgules qui spécifie les propriétés à `propertyNamesAndPaths.expand` charger et une chaîne délimitée par des virgules qui spécifie les propriétés de navigation à charger.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.PivotField#name:member'
+    summary: Nom du champ PivotField.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotField#set:member(1)'
+    summary: 'Définit plusieurs propriétés de l’objet en même temps, en fonction d’un objet chargé existant.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PivotField): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.PivotField:class'
+  - uid: 'excel!Excel.PivotField#showAllItems:member'
+    summary: Détermine si vous voulez afficher tous les éléments de PivotField.
+    name: showAllItems
+    fullName: showAllItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllItems: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.PivotField#sortByLabels:member(1)'
+    summary: 'Trie le PivotField. Si une DataPivotHierarchy est spécifiée, le tri sera appliqué en fonction de celle-ci, sinon le tri sera basé sur le PivotField lui-même.'
+    name: sortByLabels(sortBy)
+    fullName: sortByLabels(sortBy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByLabels(sortBy: SortBy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
+          type:
+            - 'excel!Excel.SortBy:enum'
+  - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
+    summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs à partir du même DataPivotHierarchy.
+    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortBy
+          description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
+          type:
+            - 'excel!Excel.SortBy:enum'
+        - id: valuesHierarchy
+          description: Spécifie la hiérarchie des valeurs sur l’axe des données à utiliser pour le tri.
+          type:
+            - 'excel!Excel.DataPivotHierarchy:class'
+        - id: pivotItemScope
+          description: 'Les éléments qui doivent être utilisés pour l’étendue du tri. Il s’agit des éléments qui composent la ligne ou la colonne que vous souhaitez trier. Si une chaîne est utilisée à la place d’un PivotItem, la chaîne représente l’ID de PivotItem. S’il n’y a pas d’éléments autres que la hiérarchie de données sur l’axe sur lequel vous souhaitez effectuer le tri, il peut être vide.'
+          type:
+            - 'excel!Excel.PivotField#sortByValues~0:complex'
+  - uid: 'excel!Excel.PivotField#sortByValues:member(2)'
+    summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs à partir du même DataPivotHierarchy.
+    name: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sortByString
+          description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
+          type:
+            - '"Ascending" | "Descending"'
+        - id: valuesHierarchy
+          description: Spécifie la hiérarchie des valeurs sur l’axe des données à utiliser pour le tri.
+          type:
+            - 'excel!Excel.DataPivotHierarchy:class'
+        - id: pivotItemScope
+          description: 'Les éléments qui doivent être utilisés pour l’étendue du tri. Il s’agit des éléments qui composent la ligne ou la colonne que vous souhaitez trier. Si une chaîne est utilisée à la place d’un PivotItem, la chaîne représente l’ID de PivotItem. S’il n’y a pas d’éléments autres que la hiérarchie de données sur l’axe sur lequel vous souhaitez effectuer le tri, il peut être vide.'
+          type:
+            - 'excel!Excel.PivotField#sortByValues~1:complex'
+  - uid: 'excel!Excel.PivotField#subtotals:member'
+    summary: Sous-totaux du champ PivotField.
+    name: subtotals
+    fullName: subtotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotals: Excel.Subtotals;'
+      return:
+        type:
+          - 'excel!Excel.Subtotals:interface'
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.PivotItemCollection:class'
+    name: PivotItemCollection
+    fullName: Excel.PivotItemCollection
+  - uid: 'excel!Excel.PivotField:class'
+    name: PivotField
+    fullName: Excel.PivotField
+  - uid: 'excel!Excel.SortBy:enum'
+    name: SortBy
+    fullName: Excel.SortBy
+  - uid: 'excel!Excel.DataPivotHierarchy:class'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<Excel.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: PivotItem
+        fullName: Excel.PivotItem
+      - name: ' | string>'
+        fullName: ' | string>'
+  - uid: 'excel!Excel.PivotField#sortByValues~1:complex'
+    name: Array<PivotItem | string>
+    fullName: Array<Excel.PivotItem | string>
+    spec.typeScript:
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: 'excel!Excel.PivotItem:class'
+        name: PivotItem
+        fullName: Excel.PivotItem
+      - name: ' | string>'
+        fullName: ' | string>'
+  - uid: 'excel!Excel.Subtotals:interface'
+    name: Subtotals
+    fullName: Excel.Subtotals
