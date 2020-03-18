@@ -1,0 +1,151 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ShapeGroup:class'
+    summary: 'Représente un groupe de formes dans une feuille de calcul. Pour obtenir l’objet Shape correspondant, utilisez`ShapeGroup.shape`<!-- -->.'
+    name: Excel.ShapeGroup
+    fullName: Excel.ShapeGroup
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ShapeGroup#context:member'
+      - 'excel!Excel.ShapeGroup#id:member'
+      - 'excel!Excel.ShapeGroup#load:member(1)'
+      - 'excel!Excel.ShapeGroup#load:member(2)'
+      - 'excel!Excel.ShapeGroup#shape:member'
+      - 'excel!Excel.ShapeGroup#shapes:member'
+      - 'excel!Excel.ShapeGroup#ungroup:member(1)'
+  - uid: 'excel!Excel.ShapeGroup#context:member'
+    summary: Contexte de demande associé à l’objet. Cette opération connecte le processus du complément au processus de l’application hôte Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ShapeGroup#id:member'
+    summary: Représente l’identificateur de forme. En lecture seule.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ShapeGroup#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ShapeGroup;'
+      return:
+        type:
+          - 'excel!Excel.ShapeGroup:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ShapeGroup#load:member(2)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ShapeGroup;
+      return:
+        type:
+          - 'excel!Excel.ShapeGroup:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`est une chaîne délimitée par des virgules qui spécifie les propriétés à `propertyNamesAndPaths.expand` charger et une chaîne délimitée par des virgules qui spécifie les propriétés de navigation à charger.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ShapeGroup#shape:member'
+    summary: Renvoie l’objet de la Forme associée au groupe. En lecture seule.
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Excel.Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.ShapeGroup#shapes:member'
+    summary: Renvoie la collection d’objets de forme. En lecture seule.
+    name: shapes
+    fullName: shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shapes: Excel.GroupShapeCollection;'
+      return:
+        type:
+          - 'excel!Excel.GroupShapeCollection:class'
+  - uid: 'excel!Excel.ShapeGroup#ungroup:member(1)'
+    summary: Dissocie toutes les formes groupées dans la forme spécifiée.
+    name: ungroup()
+    fullName: ungroup()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'ungroup(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>範例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+
+              let shapeGroup = sheet.shapes.getItem("Group").group;
+              shapeGroup.ungroup();
+              console.log("Shapes ungrouped");
+
+              await context.sync();
+          }
+          ```
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ShapeGroup:class'
+    name: ShapeGroup
+    fullName: Excel.ShapeGroup
+  - uid: 'excel!Excel.Shape:class'
+    name: Shape
+    fullName: Excel.Shape
+  - uid: 'excel!Excel.GroupShapeCollection:class'
+    name: GroupShapeCollection
+    fullName: Excel.GroupShapeCollection

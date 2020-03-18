@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxes:class'
+    summary: Représente les axes du graphique.
+    name: Excel.ChartAxes
+    fullName: Excel.ChartAxes
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxes#categoryAxis:member'
+      - 'excel!Excel.ChartAxes#context:member'
+      - 'excel!Excel.ChartAxes#getItem:member(1)'
+      - 'excel!Excel.ChartAxes#getItem:member(2)'
+      - 'excel!Excel.ChartAxes#load:member(1)'
+      - 'excel!Excel.ChartAxes#load:member(2)'
+      - 'excel!Excel.ChartAxes#seriesAxis:member'
+      - 'excel!Excel.ChartAxes#set:member(1)'
+      - 'excel!Excel.ChartAxes#valueAxis:member'
+  - uid: 'excel!Excel.ChartAxes#categoryAxis:member'
+    summary: Représente l’axe des abscisses d’un graphique. En lecture seule.
+    name: categoryAxis
+    fullName: categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly categoryAxis: Excel.ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+  - uid: 'excel!Excel.ChartAxes#context:member'
+    summary: Contexte de demande associé à l’objet. Cette opération connecte le processus du complément au processus de l’application hôte Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxes#getItem:member(1)'
+    summary: Renvoie l’axe spécifique identifié par type et par groupe.
+    name: 'getItem(type, group)'
+    fullName: 'getItem(type, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(type: Excel.ChartAxisType, group?: Excel.ChartAxisGroup): Excel.ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+        description: ''
+      parameters:
+        - id: type
+          description: 'Spécifie le type d’axe. Pour plus d’informations, voir Excel. ChartAxisType.'
+          type:
+            - 'excel!Excel.ChartAxisType:enum'
+        - id: group
+          description: 'Facultatif. Spécifie le groupe d''axes. Pour plus d’informations, voir Excel. ChartAxisGroup.'
+          type:
+            - 'excel!Excel.ChartAxisGroup:enum'
+  - uid: 'excel!Excel.ChartAxes#getItem:member(2)'
+    summary: Renvoie l’axe spécifique identifié par type et par groupe.
+    name: 'getItem(typeString, group)'
+    fullName: 'getItem(typeString, group)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(typeString: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"): Excel.ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+        description: ''
+      parameters:
+        - id: typeString
+          description: 'Spécifie le type d’axe. Pour plus d’informations, voir Excel. ChartAxisType.'
+          type:
+            - '"Invalid" | "Category" | "Value" | "Series"'
+        - id: group
+          description: 'Facultatif. Spécifie le groupe d''axes. Pour plus d’informations, voir Excel. ChartAxisGroup.'
+          type:
+            - '"Primary" | "Secondary"'
+  - uid: 'excel!Excel.ChartAxes#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxes;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxes:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxes#load:member(2)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxes;
+      return:
+        type:
+          - 'excel!Excel.ChartAxes:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`est une chaîne délimitée par des virgules qui spécifie les propriétés à `propertyNamesAndPaths.expand` charger et une chaîne délimitée par des virgules qui spécifie les propriétés de navigation à charger.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartAxes#seriesAxis:member'
+    summary: "Représente l’axe de séries d’un graphique\_3D. En lecture seule."
+    name: seriesAxis
+    fullName: seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly seriesAxis: Excel.ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+  - uid: 'excel!Excel.ChartAxes#set:member(1)'
+    summary: 'Définit plusieurs propriétés de l’objet en même temps, en fonction d’un objet chargé existant.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxes): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartAxes:class'
+  - uid: 'excel!Excel.ChartAxes#valueAxis:member'
+    summary: Représente l’axe des ordonnées. En lecture seule.
+    name: valueAxis
+    fullName: valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valueAxis: Excel.ChartAxis;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxis:class'
+references:
+  - uid: 'excel!Excel.ChartAxis:class'
+    name: ChartAxis
+    fullName: Excel.ChartAxis
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartAxisType:enum'
+    name: ChartAxisType
+    fullName: Excel.ChartAxisType
+  - uid: 'excel!Excel.ChartAxisGroup:enum'
+    name: ChartAxisGroup
+    fullName: Excel.ChartAxisGroup
+  - uid: 'excel!Excel.ChartAxes:class'
+    name: ChartAxes
+    fullName: Excel.ChartAxes
