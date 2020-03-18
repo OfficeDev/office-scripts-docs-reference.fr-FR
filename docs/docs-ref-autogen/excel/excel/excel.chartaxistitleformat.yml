@@ -1,0 +1,144 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
+    summary: Représente le format du titre d’un axe de graphique.
+    name: Excel.ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisTitleFormat#border:member'
+      - 'excel!Excel.ChartAxisTitleFormat#context:member'
+      - 'excel!Excel.ChartAxisTitleFormat#fill:member'
+      - 'excel!Excel.ChartAxisTitleFormat#font:member'
+      - 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+      - 'excel!Excel.ChartAxisTitleFormat#load:member(2)'
+      - 'excel!Excel.ChartAxisTitleFormat#set:member(1)'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#border:member'
+    summary: 'Représente le format bordure, qui inclut couleur, style de ligne et épaisseur.'
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#context:member'
+    summary: Contexte de demande associé à l’objet. Cette opération connecte le processus du complément au processus de l’application hôte Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#fill:member'
+    summary: Représente la mise en forme de remplissage du graphique.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#font:member'
+    summary: 'Représente les attributs de police, tels que le nom de la police, la taille de police, la couleur, etc., de l’objet de titre d’axe de graphique. En lecture seule.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:class'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartAxisTitleFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitleFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartAxisTitleFormat#load:member(2)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.ChartAxisTitleFormat;
+      return:
+        type:
+          - 'excel!Excel.ChartAxisTitleFormat:class'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`est une chaîne délimitée par des virgules qui spécifie les propriétés à `propertyNamesAndPaths.expand` charger et une chaîne délimitée par des virgules qui spécifie les propriétés de navigation à charger.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.ChartAxisTitleFormat#set:member(1)'
+    summary: 'Définit plusieurs propriétés de l’objet en même temps, en fonction d’un objet chargé existant.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartAxisTitleFormat): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - 'excel!Excel.ChartAxisTitleFormat:class'
+references:
+  - uid: 'excel!Excel.ChartBorder:class'
+    name: ChartBorder
+    fullName: Excel.ChartBorder
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.ChartFill:class'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:class'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartAxisTitleFormat:class'
+    name: ChartAxisTitleFormat
+    fullName: Excel.ChartAxisTitleFormat

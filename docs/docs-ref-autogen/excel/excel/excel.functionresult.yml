@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.FunctionResult:class'
+    summary: Objet contenant le résultat d’une opération d’évaluation de fonction
+    name: Excel.FunctionResult
+    fullName: Excel.FunctionResult
+    langs:
+      - typeScript
+    type: class
+    package: excel!
+    children:
+      - 'excel!Excel.FunctionResult#context:member'
+      - 'excel!Excel.FunctionResult#error:member'
+      - 'excel!Excel.FunctionResult#load:member(1)'
+      - 'excel!Excel.FunctionResult#load:member(2)'
+      - 'excel!Excel.FunctionResult#value:member'
+  - uid: 'excel!Excel.FunctionResult#context:member'
+    summary: Contexte de demande associé à l’objet. Cette opération connecte le processus du complément au processus de l’application hôte Office.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.FunctionResult#error:member'
+    summary: "Valeur d’erreur (par exemple\\#, «\_div/0\_») représentant l’erreur. Si la chaîne d’erreur n’est pas définie, la fonction a réussi et son résultat est écrit dans le champ valeur. L’erreur est toujours en anglais."
+    name: error
+    fullName: error
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly error: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.FunctionResult#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): FunctionResult<T>;'
+      return:
+        type:
+          - 'excel!Excel.FunctionResult#load~0:complex'
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.FunctionResult#load:member(2)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): FunctionResult<T>;
+      return:
+        type:
+          - 'excel!Excel.FunctionResult#load~1:complex'
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: '`propertyNamesAndPaths.select`est une chaîne délimitée par des virgules qui spécifie les propriétés à `propertyNamesAndPaths.expand` charger et une chaîne délimitée par des virgules qui spécifie les propriétés de navigation à charger.'
+          type:
+            - |-
+              {
+                          select?: string;
+                          expand?: string;
+                      }
+  - uid: 'excel!Excel.FunctionResult#value:member'
+    summary: 'Valeur de l’évaluation de la fonction. Le champ valeur est renseigné uniquement si aucune erreur n’est survenue (autrement dit, la propriété Error n’est pas définie).'
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: T;'
+      return:
+        type:
+          - T
+references:
+  - uid: 'excel!Excel.RequestContext:class'
+    name: RequestContext
+    fullName: Excel.RequestContext
+  - uid: 'excel!Excel.FunctionResult#load~0:complex'
+    name: FunctionResult<T>
+    fullName: Excel.FunctionResult<T>
+    spec.typeScript:
+      - uid: 'excel!Excel.FunctionResult:class'
+        name: FunctionResult
+        fullName: Excel.FunctionResult
+      - name: <T>
+        fullName: <T>
+  - uid: 'excel!Excel.FunctionResult#load~1:complex'
+    name: FunctionResult<T>
+    fullName: Excel.FunctionResult<T>
+    spec.typeScript:
+      - uid: 'excel!Excel.FunctionResult:class'
+        name: FunctionResult
+        fullName: Excel.FunctionResult
+      - name: <T>
+        fullName: <T>
