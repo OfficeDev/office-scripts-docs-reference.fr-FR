@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.RangeAreas:class'
-    summary: 'RangeAreas représente une collection d’une ou plusieurs plages rectangulaires dans la même feuille de calcul. Pour savoir comment utiliser les plages discontinguous, lisez [travailler avec plusieurs plages simultanément dans des compléments Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.'
+    summary: RangeAreas représente une collection d’une ou plusieurs plages rectangulaires dans la même feuille de calcul.
     name: Excel.RangeAreas
     fullName: Excel.RangeAreas
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Worksheet:class'
-    summary: 'Une feuille de calcul Excel est une grille de cellules. Il peut contenir des données, des tableaux, des graphiques, etc. Pour en savoir plus sur le modèle objet de feuille de calcul, consultez [travailler avec des feuilles de calcul à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets) .<!-- -->.'
+    summary: 'Une feuille de calcul Excel est une grille de cellules. Elle peut contenir des données, des tableaux, des graphiques, etc.'
     name: Excel.Worksheet
     fullName: Excel.Worksheet
     langs:
