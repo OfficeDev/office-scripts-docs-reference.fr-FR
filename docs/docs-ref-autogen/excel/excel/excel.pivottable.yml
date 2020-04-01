@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.PivotTable:class'
-    summary: 'Représente un tableau croisé dynamique Excel. Pour en savoir plus sur le modèle objet de tableau croisé dynamique, lisez utilisation [de tableaux croisés dynamiques à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    summary: Représente un tableau croisé dynamique Excel.
     name: Excel.PivotTable
     fullName: Excel.PivotTable
     langs:

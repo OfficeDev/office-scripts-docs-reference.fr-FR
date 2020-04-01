@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'excel!Excel.Chart:class'
-    summary: 'Représente un objet de graphique dans un classeur. Pour en savoir plus sur le modèle objet Chart, voir [utiliser des graphiques à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.'
+    summary: Représente un objet de graphique dans un classeur.
     name: Excel.Chart
     fullName: Excel.Chart
     langs:
