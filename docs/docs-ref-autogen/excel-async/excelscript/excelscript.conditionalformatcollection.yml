@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalFormatCollection:interface'
+    summary: Représente une collection de toutes les mises en forme conditionnelles qui chevauchent la plage.
+    name: Excel.ConditionalFormatCollection
+    fullName: Excel.ConditionalFormatCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalFormatCollection#add:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalFormatCollection#load:member(1)'
+  - uid: 'excel!Excel.ConditionalFormatCollection#add:member(1)'
+    summary: Ajoute un nouveau format conditionnel à la collection à la priorité la plus haute.
+    name: add(type)
+    fullName: add(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: ConditionalFormatType): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B2:M5");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              let criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: type
+          description: 'Type de mise en forme conditionnelle ajoutée. Pour plus d’informations, voir Excel. ConditionalFormatType.'
+          type:
+            - 'excel!Excel.ConditionalFormatType:enum'
+  - uid: 'excel!Excel.ConditionalFormatCollection#clearAll:member(1)'
+    summary: Efface toutes les mises en forme conditionnelles actives sur la plage spécifiée actuelle.
+    name: clearAll()
+    fullName: clearAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAll(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange();
+              range.conditionalFormats.clearAll();
+
+              await context.sync();
+
+              $(".conditional-formats").hide();
+          }
+          ```
+  - uid: 'excel!Excel.ConditionalFormatCollection#getItem:member(1)'
+    summary: Renvoie une mise en forme conditionnelle à un ID donné.
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): ConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalFormat:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: ID de la mise en forme conditionnelle.
+          type:
+            - string
+  - uid: 'excel!Excel.ConditionalFormatCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ConditionalFormat:interface'
+    name: ConditionalFormat
+    fullName: Excel.ConditionalFormat
+  - uid: 'excel!Excel.ConditionalFormatType:enum'
+    name: ConditionalFormatType
+    fullName: Excel.ConditionalFormatType
