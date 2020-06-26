@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.NamedItemArrayValues:interface'
+    summary: Représente un objet contenant des valeurs et des types d’un élément nommé.
+    name: Excel.NamedItemArrayValues
+    fullName: Excel.NamedItemArrayValues
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.NamedItemArrayValues#load:member(1)'
+      - 'excel!Excel.NamedItemArrayValues#types:member'
+      - 'excel!Excel.NamedItemArrayValues#values:member'
+  - uid: 'excel!Excel.NamedItemArrayValues#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.NamedItemArrayValues#types:member'
+    summary: Représente les types de chaque élément dans le tableau d’éléments nommés
+    name: types
+    fullName: types
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly types: RangeValueType[][];'
+      return:
+        type:
+          - 'excel!Excel.NamedItemArrayValues#types~0:complex'
+  - uid: 'excel!Excel.NamedItemArrayValues#values:member'
+    summary: Représente les valeurs de chaque élément dans le tableau élément nommé.
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+references:
+  - uid: 'excel!Excel.NamedItemArrayValues#types~0:complex'
+    name: 'RangeValueType[][]'
+    fullName: 'Excel.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: RangeValueType
+        fullName: Excel.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

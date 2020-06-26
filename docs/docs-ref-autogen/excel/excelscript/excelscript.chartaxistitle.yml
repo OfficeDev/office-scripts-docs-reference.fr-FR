@@ -1,0 +1,147 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
+    summary: Représente le titre d’un axe de graphique.
+    name: ExcelScript.ChartAxisTitle
+    fullName: ExcelScript.ChartAxisTitle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)'
+    summary: Cette énumération spécifie la mise en forme du titre de l’axe du graphique.
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartAxisTitleFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)'
+    summary: Indique le titre de l’axe.
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)'
+    summary: Cette énumération spécifie l’angle auquel le texte est orienté pour le titre de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)'
+    summary: Indique si le titre de l’axe est visibile.
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setFormula:member(1)'
+    summary: Valeur de chaîne qui représente la formule de titre de l’axe graphique à l’aide de la notation de style A1.
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: chaîne qui présente la formule à définir
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)'
+    summary: Indique le titre de l’axe.
+    name: setText(text)
+    fullName: setText(text)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setText(text: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: text
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)'
+    summary: Cette énumération spécifie l’angle auquel le texte est orienté pour le titre de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)'
+    summary: Indique si le titre de l’axe est visibile.
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisTitleFormat:interface'
+    name: ChartAxisTitleFormat
+    fullName: ExcelScript.ChartAxisTitleFormat

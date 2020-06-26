@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:interface'
+    summary: Représente une collection d’éléments DataPivotHierarchy associés au tableau croisé dynamique.
+    name: Excel.DataPivotHierarchyCollection
+    fullName: Excel.DataPivotHierarchyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+    summary: Ajoute le PivotHierarchy à l’axe en cours.
+    name: add(pivotHierarchy)
+    fullName: add(pivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pivotHierarchy: PivotHierarchy): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: pivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.PivotHierarchy:interface'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient une DataPivotHierarchy par nom. Si la DataPivotHierarchy n’existe pas, cela renvoie un objet null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): DataPivotHierarchy;'
+      return:
+        type:
+          - 'excel!Excel.DataPivotHierarchy:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom du DataPivotHierarchy à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
+    summary: Supprime le PivotHierarchy de l’axe en cours.
+    name: remove(DataPivotHierarchy)
+    fullName: remove(DataPivotHierarchy)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(DataPivotHierarchy: DataPivotHierarchy): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: DataPivotHierarchy
+          description: ''
+          type:
+            - 'excel!Excel.DataPivotHierarchy:interface'
+references:
+  - uid: 'excel!Excel.DataPivotHierarchy:interface'
+    name: DataPivotHierarchy
+    fullName: Excel.DataPivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    name: PivotHierarchy
+    fullName: Excel.PivotHierarchy

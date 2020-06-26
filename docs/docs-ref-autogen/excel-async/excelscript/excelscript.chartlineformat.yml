@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartLineFormat:interface'
+    summary: Encapsule les options de mise en forme pour les éléments de ligne.
+    name: Excel.ChartLineFormat
+    fullName: Excel.ChartLineFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartLineFormat#clear:member(1)'
+      - 'excel!Excel.ChartLineFormat#color:member'
+      - 'excel!Excel.ChartLineFormat#lineStyle:member'
+      - 'excel!Excel.ChartLineFormat#load:member(1)'
+      - 'excel!Excel.ChartLineFormat#weight:member'
+  - uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
+    summary: Désactiver le format de ligne d’un élément de graphique.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ChartLineFormat#color:member'
+    summary: Code couleur HTML qui représente la couleur des lignes dans le graphique.
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartLineFormat#lineStyle:member'
+    summary: 'Représente le style de trait. Pour plus d’informations, voir Excel. ChartLineStyle.'
+    name: lineStyle
+    fullName: lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineStyle: ChartLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineStyle:enum'
+  - uid: 'excel!Excel.ChartLineFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartLineFormat#weight:member'
+    summary: 'Représente l’épaisseur de bordure, en points.'
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'excel!Excel.ChartLineStyle:enum'
+    name: ChartLineStyle
+    fullName: Excel.ChartLineStyle

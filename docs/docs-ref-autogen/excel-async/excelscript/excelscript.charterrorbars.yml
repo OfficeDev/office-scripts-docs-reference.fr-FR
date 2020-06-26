@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartErrorBars:interface'
+    summary: Cet objet représente les attributs des barres d’erreur d’un graphique.
+    name: Excel.ChartErrorBars
+    fullName: Excel.ChartErrorBars
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartErrorBars#endStyleCap:member'
+      - 'excel!Excel.ChartErrorBars#format:member'
+      - 'excel!Excel.ChartErrorBars#include:member'
+      - 'excel!Excel.ChartErrorBars#load:member(1)'
+      - 'excel!Excel.ChartErrorBars#type:member'
+      - 'excel!Excel.ChartErrorBars#visible:member'
+  - uid: 'excel!Excel.ChartErrorBars#endStyleCap:member'
+    summary: Indique si les barres d’erreur sont dotées d’un embout de style.
+    name: endStyleCap
+    fullName: endStyleCap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endStyleCap: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartErrorBars#format:member'
+    summary: Spécifie le type de mise en forme de barres d’erreur.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartErrorBarsFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartErrorBarsFormat:interface'
+  - uid: 'excel!Excel.ChartErrorBars#include:member'
+    summary: Spécifie les parties de barres d’erreur à inclure.
+    name: include
+    fullName: include
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'include: ChartErrorBarsInclude;'
+      return:
+        type:
+          - 'excel!Excel.ChartErrorBarsInclude:enum'
+  - uid: 'excel!Excel.ChartErrorBars#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartErrorBars#type:member'
+    summary: Le type de plage marqué par des barres d’erreur.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ChartErrorBarsType;'
+      return:
+        type:
+          - 'excel!Excel.ChartErrorBarsType:enum'
+  - uid: 'excel!Excel.ChartErrorBars#visible:member'
+    summary: Indique si les barres d’erreur sont affichées.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ChartErrorBarsFormat:interface'
+    name: ChartErrorBarsFormat
+    fullName: Excel.ChartErrorBarsFormat
+  - uid: 'excel!Excel.ChartErrorBarsInclude:enum'
+    name: ChartErrorBarsInclude
+    fullName: Excel.ChartErrorBarsInclude
+  - uid: 'excel!Excel.ChartErrorBarsType:enum'
+    name: ChartErrorBarsType
+    fullName: Excel.ChartErrorBarsType

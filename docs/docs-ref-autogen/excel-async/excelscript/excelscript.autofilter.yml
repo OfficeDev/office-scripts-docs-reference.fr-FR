@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.AutoFilter:interface'
+    summary: Représente l’objet AutoFilter. Filtre automatique transforme les valeurs d’une colonne Excel en filtres spécifiques en fonction du contenu de la cellule.
+    name: Excel.AutoFilter
+    fullName: Excel.AutoFilter
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.AutoFilter#apply:member(1)'
+      - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+      - 'excel!Excel.AutoFilter#criteria:member'
+      - 'excel!Excel.AutoFilter#enabled:member'
+      - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.AutoFilter#isDataFiltered:member'
+      - 'excel!Excel.AutoFilter#load:member(1)'
+      - 'excel!Excel.AutoFilter#reapply:member(1)'
+      - 'excel!Excel.AutoFilter#remove:member(1)'
+  - uid: 'excel!Excel.AutoFilter#apply:member(1)'
+    summary: Applique le filtre automatique à une plage. Ceci permet de filtrer la colonne si les critères de filtre de colonne et index sont spécifiés.
+    name: 'apply(range, columnIndex, criteria)'
+    fullName: 'apply(range, columnIndex, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    range: Range | string,
+                    columnIndex?: number,
+                    criteria?: FilterCriteria
+                ): void;
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getActiveWorksheet();
+              let farmData = sheet.getUsedRange();
+
+              // This filter will only show the rows with the top 25% of values in column 3.
+              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: range
+          description: Plage sur laquelle s’appliquera le filtre automatique.
+          type:
+            - 'excel!Excel.AutoFilter#apply~0:complex'
+        - id: columnIndex
+          description: Index de colonne de base zéro auquel le filtre automatique est appliqué.
+          type:
+            - number
+        - id: criteria
+          description: Critères de filtre.
+          type:
+            - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+    summary: Efface les critères de filtre du filtre automatique.
+    name: clearCriteria()
+    fullName: clearCriteria()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearCriteria(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#criteria:member'
+    summary: Tableau qui conserve tous les critères de filtre dans une plage filtrée.
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly criteria: FilterCriteria[];'
+      return:
+        type:
+          - 'excel!Excel.AutoFilter#criteria~0:complex'
+  - uid: 'excel!Excel.AutoFilter#enabled:member'
+    summary: Indique si le filtre automatique est activé.
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly enabled: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+    summary: 'Cette propriété renvoie un objet Plage qui représente la plage sur laquelle s''applique le filtre automatique spécifié. S’il n’existe aucun objet Range associé au filtre automatique, cette méthode renvoie un objet null.'
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
+    summary: Indique si le filtre automatique a des critères de filtre.
+    name: isDataFiltered
+    fullName: isDataFiltered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isDataFiltered: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.AutoFilter#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.AutoFilter#reapply:member(1)'
+    summary: Applique l’objet Autofilter spécifié actuellement sur la plage.
+    name: reapply()
+    fullName: reapply()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.AutoFilter#remove:member(1)'
+    summary: Supprime le filtre automatique pour la plage.
+    name: remove()
+    fullName: remove()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.AutoFilter#apply~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.FilterCriteria:interface'
+    name: FilterCriteria
+    fullName: Excel.FilterCriteria
+  - uid: 'excel!Excel.AutoFilter#criteria~0:complex'
+    name: 'FilterCriteria[]'
+    fullName: 'Excel.FilterCriteria[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.FilterCriteria:interface'
+        name: FilterCriteria
+        fullName: Excel.FilterCriteria
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

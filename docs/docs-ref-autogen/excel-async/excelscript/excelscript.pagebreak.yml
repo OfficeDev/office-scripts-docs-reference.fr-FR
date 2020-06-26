@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PageBreak:interface'
+    name: Excel.PageBreak
+    fullName: Excel.PageBreak
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PageBreak#columnIndex:member'
+      - 'excel!Excel.PageBreak#delete:member(1)'
+      - 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
+      - 'excel!Excel.PageBreak#load:member(1)'
+  - uid: 'excel!Excel.PageBreak#columnIndex:member'
+    summary: Spécifie l’index de la colonne pour le saut de page
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnIndex: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.PageBreak#delete:member(1)'
+    summary: Supprime un objet de saut de page.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PageBreak#getCellAfterBreak:member(1)'
+    summary: Obtient la première cellule après le saut de page.
+    name: getCellAfterBreak()
+    fullName: getCellAfterBreak()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCellAfterBreak(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.PageBreak#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range

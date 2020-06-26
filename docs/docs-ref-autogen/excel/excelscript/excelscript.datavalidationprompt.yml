@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt:interface'
+    summary: Représente les propriétés d’invite de l’utilisateur pour la validation des données.
+    name: ExcelScript.DataValidationPrompt
+    fullName: ExcelScript.DataValidationPrompt
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#message:member'
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member'
+      - 'ExcelScript!ExcelScript.DataValidationPrompt#title:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#message:member'
+    summary: Spécifie le message de l’invite.
+    name: message
+    fullName: message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member'
+    summary: Indique si une invite s’affiche lorsqu’un utilisateur sélectionne une cellule avec validation des données.
+    name: showPrompt
+    fullName: showPrompt
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPrompt: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.DataValidationPrompt#title:member'
+    summary: Spécifie le titre de l’invite.
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string

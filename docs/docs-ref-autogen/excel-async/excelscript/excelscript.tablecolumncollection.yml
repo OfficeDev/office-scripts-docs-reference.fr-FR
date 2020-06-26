@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableColumnCollection:interface'
+    summary: Représente une collection de toutes les colonnes du tableau.
+    name: Excel.TableColumnCollection
+    fullName: Excel.TableColumnCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableColumnCollection#load:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient un objet de colonne par nom ou par ID. Si la colonne n’existe pas, renvoie un objet null.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: number | string): TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Nom ou ID de la colonne.
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.TableColumn:interface'
+    name: TableColumn
+    fullName: Excel.TableColumn

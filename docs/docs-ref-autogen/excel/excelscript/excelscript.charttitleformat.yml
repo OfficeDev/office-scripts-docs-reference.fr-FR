@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
+    summary: Permet d’accéder à la mise en forme Office Art pour le titre du graphique.
+    name: ExcelScript.ChartTitleFormat
+    fullName: ExcelScript.ChartTitleFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartTitleFormat#getBorder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitleFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitleFormat#getFont:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartTitleFormat#getBorder:member(1)'
+    summary: 'Représente le format de bordure du titre du graphique, qui inclut la couleur, le style de style et le poids.'
+    name: getBorder()
+    fullName: getBorder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitleFormat#getFill:member(1)'
+    summary: 'Représente le format de remplissage d’un objet, qui comprend des informations de mise en forme d’arrière-plan.'
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitleFormat#getFont:member(1)'
+    summary: 'Représente les attributs de police (nom de la police, taille de police, couleur, etc.) pour un objet.'
+    name: getFont()
+    fullName: getFont()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFont:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
+    name: ChartBorder
+    fullName: ExcelScript.ChartBorder
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill
+  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
+    name: ChartFont
+    fullName: ExcelScript.ChartFont

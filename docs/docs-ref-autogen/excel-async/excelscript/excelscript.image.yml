@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Image:interface'
+    summary: 'Représente une image dans la feuille de calcul. Pour obtenir l’objet Shape correspondant, utilisez image. Shape.'
+    name: Excel.Image
+    fullName: Excel.Image
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Image#format:member'
+      - 'excel!Excel.Image#id:member'
+      - 'excel!Excel.Image#load:member(1)'
+  - uid: 'excel!Excel.Image#format:member'
+    summary: Renvoie le format de l’image.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: PictureFormat;'
+      return:
+        type:
+          - 'excel!Excel.PictureFormat:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Shapes");
+              let image = sheet.shapes.getItem("Image").image;
+              image.load("format");
+              await context.sync();
+
+              console.log("The image's format is: " + image.format);
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Image#id:member'
+    summary: Spécifie l’identificateur de la forme de l’objet image.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Image#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PictureFormat:enum'
+    name: PictureFormat
+    fullName: Excel.PictureFormat

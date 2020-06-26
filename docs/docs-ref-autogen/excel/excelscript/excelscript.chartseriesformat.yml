@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat:interface'
+    summary: Encapsule les propriétés de format de la série de graphiques.
+    name: ExcelScript.ChartSeriesFormat
+    fullName: ExcelScript.ChartSeriesFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)'
+      - 'ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getFill:member(1)'
+    summary: 'Représente le format de remplissage d’une série du graphique, qui comprend les informations de mise en forme d’arrière-plan.'
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesFormat#getLine:member(1)'
+    summary: Représente le format des lignes.
+    name: getLine()
+    fullName: getLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLine(): ChartLineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill
+  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: ExcelScript.ChartLineFormat

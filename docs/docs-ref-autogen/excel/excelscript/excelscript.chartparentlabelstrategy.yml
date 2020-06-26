@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy:enum'
+    summary: Représente la stratégie d’étiquette parent de la mise en page de la série de graphiques. Cela s’applique uniquement aux graphiques de compartimentage
+    name: ExcelScript.ChartParentLabelStrategy
+    fullName: ExcelScript.ChartParentLabelStrategy
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member'
+      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member'
+      - 'ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member'
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.banner:member'
+    name: banner
+    fullName: banner
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.none:member'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartParentLabelStrategy.overlapping:member'
+    name: overlapping
+    fullName: overlapping
+    langs:
+      - typeScript
+    type: field

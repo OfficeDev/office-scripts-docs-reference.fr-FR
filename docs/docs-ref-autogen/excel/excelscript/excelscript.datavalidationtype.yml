@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
+    summary: Représente l’énumération de type de validation de données.
+    name: ExcelScript.DataValidationType
+    fullName: ExcelScript.DataValidationType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.date:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.list:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.none:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.time:member'
+      - 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+    summary: Type de validation des données personnalisées
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
+    summary: Type de validation des données de date
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+    summary: Type de validation des données décimal
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+    summary: Incohérent signifie que la plage a une validation des données incohérente (il existe des règles différentes sur différentes cellules).
+    name: inconsistent
+    fullName: inconsistent
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
+    summary: Type de validation des données de liste
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+    summary: MixedCriteria signifie que la plage a une validation des données présente sur certaines cellules mais pas toutes.
+    name: mixedCriteria
+    fullName: mixedCriteria
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
+    summary: 'Aucun signifie autoriser n’importe quelle valeur, de sorte qu’il n’y a aucune validation de données dans la plage.'
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+    summary: Type de validation des données de longueur du texte
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
+    summary: Type de validation des données de temps
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+    summary: Type de validation des données de nombre entier
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: field

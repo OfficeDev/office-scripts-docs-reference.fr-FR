@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType:enum'
+    summary: Spécifie le type de remplissage d'une forme.
+    name: ExcelScript.ShapeFillType
+    fullName: ExcelScript.ShapeFillType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+      - 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.gradient:member'
+    summary: Dégradé
+    name: gradient
+    fullName: gradient
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.mixed:member'
+    summary: Remplissage mixte
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.noFill:member'
+    summary: Aucun remplissage.
+    name: noFill
+    fullName: noFill
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pattern:member'
+    summary: Motif de remplissage.
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.pictureAndTexture:member'
+    summary: Remplissage de l’image et de la texture.
+    name: pictureAndTexture
+    fullName: pictureAndTexture
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ShapeFillType.solid:member'
+    summary: Remplissage uni.
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field

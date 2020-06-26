@@ -1,0 +1,250 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TextFrame:interface'
+    summary: Représente le cadre de texte d’un objet Shape.
+    name: Excel.TextFrame
+    fullName: Excel.TextFrame
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TextFrame#autoSizeSetting:member'
+      - 'excel!Excel.TextFrame#bottomMargin:member'
+      - 'excel!Excel.TextFrame#deleteText:member(1)'
+      - 'excel!Excel.TextFrame#hasText:member'
+      - 'excel!Excel.TextFrame#horizontalAlignment:member'
+      - 'excel!Excel.TextFrame#horizontalOverflow:member'
+      - 'excel!Excel.TextFrame#leftMargin:member'
+      - 'excel!Excel.TextFrame#load:member(1)'
+      - 'excel!Excel.TextFrame#orientation:member'
+      - 'excel!Excel.TextFrame#readingOrder:member'
+      - 'excel!Excel.TextFrame#rightMargin:member'
+      - 'excel!Excel.TextFrame#textRange:member'
+      - 'excel!Excel.TextFrame#topMargin:member'
+      - 'excel!Excel.TextFrame#verticalAlignment:member'
+      - 'excel!Excel.TextFrame#verticalOverflow:member'
+  - uid: 'excel!Excel.TextFrame#autoSizeSetting:member'
+    summary: 'Les paramètres de dimensionnement automatique pour le cadre de texte. Un bloc de texte peut être configuré pour ajuster automatiquement le texte pour le cadre du texte, pour ajuster automatiquement le bloc de texte au texte ou de ne pas effectuer tout problème de dimensionnement automatique.'
+    name: autoSizeSetting
+    fullName: autoSizeSetting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoSizeSetting: ShapeAutoSize;'
+      return:
+        type:
+          - 'excel!Excel.ShapeAutoSize:enum'
+  - uid: 'excel!Excel.TextFrame#bottomMargin:member'
+    summary: 'Représente la marge bas, en points du cadre du texte.'
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottomMargin: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TextFrame#deleteText:member(1)'
+    summary: Supprime tout le texte dans la textframe.
+    name: deleteText()
+    fullName: deleteText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteText(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              let textbox = shapes.getItem("Textbox");
+              textbox.textFrame.deleteText();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.TextFrame#hasText:member'
+    summary: Indique si le cadre de texte contient du texte.
+    name: hasText
+    fullName: hasText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hasText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.TextFrame#horizontalAlignment:member'
+    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir Excel.ShapeTextHorizontalAlignment.'
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: ShapeTextHorizontalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ShapeTextHorizontalAlignment:enum'
+  - uid: 'excel!Excel.TextFrame#horizontalOverflow:member'
+    summary: 'Représente le type de débordement horizontal du cadre du texte. Pour plus d’informations, voir Excel.ShapeTextHorizontalOverflow. '
+    name: horizontalOverflow
+    fullName: horizontalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalOverflow: ShapeTextHorizontalOverflow;'
+      return:
+        type:
+          - 'excel!Excel.ShapeTextHorizontalOverflow:enum'
+  - uid: 'excel!Excel.TextFrame#leftMargin:member'
+    summary: 'Représente la marge gauche, en points du cadre du texte.'
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftMargin: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TextFrame#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TextFrame#orientation:member'
+    summary: 'Représente l’angle auquel le texte est orienté pour le cadre de texte. Pour plus d’informations, voir Excel.ShapeTextOrientation.'
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'orientation: ShapeTextOrientation;'
+      return:
+        type:
+          - 'excel!Excel.ShapeTextOrientation:enum'
+  - uid: 'excel!Excel.TextFrame#readingOrder:member'
+    summary: 'Représente l’ordre de lecture du cadre texte gauche à droite ou de droite à gauche. Pour plus d’informations, voir Excel.ShapeTextReadingOrder.'
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder: ShapeTextReadingOrder;'
+      return:
+        type:
+          - 'excel!Excel.ShapeTextReadingOrder:enum'
+  - uid: 'excel!Excel.TextFrame#rightMargin:member'
+    summary: 'Représente la marge droite, en points du cadre du texte.'
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightMargin: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TextFrame#textRange:member'
+    summary: 'Représente le texte lié à une forme, en plus des propriétés et des méthodes de manipulation du texte. Pour plus d’informations, voir Excel.TextRange.'
+    name: textRange
+    fullName: textRange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textRange: TextRange;'
+      return:
+        type:
+          - 'excel!Excel.TextRange:interface'
+  - uid: 'excel!Excel.TextFrame#topMargin:member'
+    summary: 'Représente la marge du haut, en points du cadre du texte.'
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TextFrame#verticalAlignment:member'
+    summary: 'Représente l’alignement vertical pour le style. Pour plus d’informations, voir Excel.ShapeTextVerticalAlignment.'
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: ShapeTextVerticalAlignment;'
+      return:
+        type:
+          - 'excel!Excel.ShapeTextVerticalAlignment:enum'
+  - uid: 'excel!Excel.TextFrame#verticalOverflow:member'
+    summary: 'Représente le type de débordement vertical du cadre du texte. Pour plus d’informations, voir Excel.ShapeTextVerticalOverflow.'
+    name: verticalOverflow
+    fullName: verticalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalOverflow: ShapeTextVerticalOverflow;'
+      return:
+        type:
+          - 'excel!Excel.ShapeTextVerticalOverflow:enum'
+references:
+  - uid: 'excel!Excel.ShapeAutoSize:enum'
+    name: ShapeAutoSize
+    fullName: Excel.ShapeAutoSize
+  - uid: 'excel!Excel.ShapeTextHorizontalAlignment:enum'
+    name: ShapeTextHorizontalAlignment
+    fullName: Excel.ShapeTextHorizontalAlignment
+  - uid: 'excel!Excel.ShapeTextHorizontalOverflow:enum'
+    name: ShapeTextHorizontalOverflow
+    fullName: Excel.ShapeTextHorizontalOverflow
+  - uid: 'excel!Excel.ShapeTextOrientation:enum'
+    name: ShapeTextOrientation
+    fullName: Excel.ShapeTextOrientation
+  - uid: 'excel!Excel.ShapeTextReadingOrder:enum'
+    name: ShapeTextReadingOrder
+    fullName: Excel.ShapeTextReadingOrder
+  - uid: 'excel!Excel.TextRange:interface'
+    name: TextRange
+    fullName: Excel.TextRange
+  - uid: 'excel!Excel.ShapeTextVerticalAlignment:enum'
+    name: ShapeTextVerticalAlignment
+    fullName: Excel.ShapeTextVerticalAlignment
+  - uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
+    name: ShapeTextVerticalOverflow
+    fullName: Excel.ShapeTextVerticalOverflow

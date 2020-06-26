@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableStyle:interface'
+    summary: 'Représente un style de tableau croisé dynamique, qui définit des éléments de style par région de tableau croisé dynamique.'
+    name: Excel.PivotTableStyle
+    fullName: Excel.PivotTableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableStyle#delete:member(1)'
+      - 'excel!Excel.PivotTableStyle#duplicate:member(1)'
+      - 'excel!Excel.PivotTableStyle#load:member(1)'
+      - 'excel!Excel.PivotTableStyle#name:member'
+      - 'excel!Excel.PivotTableStyle#readOnly:member'
+  - uid: 'excel!Excel.PivotTableStyle#delete:member(1)'
+    summary: Supprime le tableau croisé dynamique.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.PivotTableStyle#duplicate:member(1)'
+    summary: Crée un doublon de cette PivotTableStyle avec une copie de tous les éléments de style.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotTableStyle#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableStyle#name:member'
+    summary: Obtient le nom du PivotTableStyle.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotTableStyle#readOnly:member'
+    summary: Spécifie si cet objet PivotTableStyle est accessible en lecture seule.
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.PivotTableStyle:interface'
+    name: PivotTableStyle
+    fullName: Excel.PivotTableStyle

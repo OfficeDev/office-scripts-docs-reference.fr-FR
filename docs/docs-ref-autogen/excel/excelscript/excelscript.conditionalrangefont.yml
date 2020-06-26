@@ -1,0 +1,194 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont:interface'
+    summary: 'Cet objet représente les attributs de police (style de police, couleur, etc.) d’un objet.'
+    name: ExcelScript.ConditionalRangeFont
+    fullName: ExcelScript.ConditionalRangeFont
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#clear:member(1)'
+    summary: Réinitialise les formats de police.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)'
+    summary: Indique si la police est en gras.
+    name: getBold()
+    fullName: getBold()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)'
+    summary: 'Représentation de code de couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).'
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)'
+    summary: Indique si la police est en italique.
+    name: getItalic()
+    fullName: getItalic()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)'
+    summary: Spécifie l’État barré de la police.
+    name: getStrikethrough()
+    fullName: getStrikethrough()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStrikethrough(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)'
+    summary: 'Type de soulignement appliqué à la police. Pour plus d’informations, voir Excel. ConditionalRangeFontUnderlineStyle.'
+    name: getUnderline()
+    fullName: getUnderline()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUnderline(): ConditionalRangeFontUnderlineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)'
+    summary: Indique si la police est en gras.
+    name: setBold(bold)
+    fullName: setBold(bold)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: bold
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)'
+    summary: 'Représentation de code de couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).'
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)'
+    summary: Indique si la police est en italique.
+    name: setItalic(italic)
+    fullName: setItalic(italic)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: italic
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)'
+    summary: Spécifie l’État barré de la police.
+    name: setStrikethrough(strikethrough)
+    fullName: setStrikethrough(strikethrough)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStrikethrough(strikethrough: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: strikethrough
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)'
+    summary: 'Type de soulignement appliqué à la police. Pour plus d’informations, voir Excel. ConditionalRangeFontUnderlineStyle.'
+    name: setUnderline(underline)
+    fullName: setUnderline(underline)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUnderline(underline: ConditionalRangeFontUnderlineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: underline
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFontUnderlineStyle:enum'
+    name: ConditionalRangeFontUnderlineStyle
+    fullName: ExcelScript.ConditionalRangeFontUnderlineStyle

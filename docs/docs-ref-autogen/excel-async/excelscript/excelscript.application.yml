@@ -1,0 +1,169 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Application:interface'
+    summary: Représente l’application Excel qui gère le classeur.
+    name: Excel.Application
+    fullName: Excel.Application
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Application#calculate:member(1)'
+      - 'excel!Excel.Application#calculationEngineVersion:member'
+      - 'excel!Excel.Application#calculationMode:member'
+      - 'excel!Excel.Application#calculationState:member'
+      - 'excel!Excel.Application#cultureInfo:member'
+      - 'excel!Excel.Application#decimalSeparator:member'
+      - 'excel!Excel.Application#iterativeCalculation:member'
+      - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#thousandsSeparator:member'
+      - 'excel!Excel.Application#useSystemSeparators:member'
+  - uid: 'excel!Excel.Application#calculate:member(1)'
+    summary: Recalcule tous les classeurs actuellement ouverts dans Excel.
+    name: calculate(calculationType)
+    fullName: calculate(calculationType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(calculationType: CalculationType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationType
+          description: 'Spécifie le type de calcul à utiliser. Pour plus d’informations, voir Excel. CalculationType.'
+          type:
+            - 'excel!Excel.CalculationType:enum'
+  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
+    summary: Renvoie la version du moteur de calcul Excel utilisée pour le dernier recalcul complet.
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Application#calculationMode:member'
+    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans Excel. CalculationMode. Les valeurs possibles sont les suivantes\_:`Automatic`<!-- -->, où Excel contrôle le recalcul\_;`AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_;`Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
+    name: calculationMode
+    fullName: calculationMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationMode: CalculationMode;'
+      return:
+        type:
+          - 'excel!Excel.CalculationMode:enum'
+  - uid: 'excel!Excel.Application#calculationState:member'
+    summary: 'Renvoie l’état de calcul de l’application. Pour plus d’informations, voir Excel.CalculationState.'
+    name: calculationState
+    fullName: calculationState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationState: CalculationState;'
+      return:
+        type:
+          - 'excel!Excel.CalculationState:enum'
+  - uid: 'excel!Excel.Application#cultureInfo:member'
+    summary: 'Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme de numéros et d’autres paramètres dépendants de la culture.'
+    name: cultureInfo
+    fullName: cultureInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cultureInfo: CultureInfo;'
+      return:
+        type:
+          - 'excel!Excel.CultureInfo:interface'
+  - uid: 'excel!Excel.Application#decimalSeparator:member'
+    summary: Obtient la chaîne utilisée comme séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+    name: decimalSeparator
+    fullName: decimalSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly decimalSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Application#iterativeCalculation:member'
+    summary: 'Capture d’écran des paramètres de calcul itératif. Dans Excel sous Windows et Mac, les paramètres s’appliquent à l’application Excel. Dans Excel sur le Web et d’autres plateformes, les paramètres s’appliquent au classeur actif.'
+    name: iterativeCalculation
+    fullName: iterativeCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iterativeCalculation: IterativeCalculation;'
+      return:
+        type:
+          - 'excel!Excel.IterativeCalculation:interface'
+  - uid: 'excel!Excel.Application#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Application#thousandsSeparator:member'
+    summary: Obtient la chaîne utilisée pour séparer les groupes de chiffres à gauche du séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+    name: thousandsSeparator
+    fullName: thousandsSeparator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly thousandsSeparator: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Application#useSystemSeparators:member'
+    summary: Indique si les séparateurs système d’Excel sont activés. Les séparateurs système incluent le séparateur décimal et le séparateur des milliers.
+    name: useSystemSeparators
+    fullName: useSystemSeparators
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly useSystemSeparators: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.CalculationType:enum'
+    name: CalculationType
+    fullName: Excel.CalculationType
+  - uid: 'excel!Excel.CalculationMode:enum'
+    name: CalculationMode
+    fullName: Excel.CalculationMode
+  - uid: 'excel!Excel.CalculationState:enum'
+    name: CalculationState
+    fullName: Excel.CalculationState
+  - uid: 'excel!Excel.CultureInfo:interface'
+    name: CultureInfo
+    fullName: Excel.CultureInfo
+  - uid: 'excel!Excel.IterativeCalculation:interface'
+    name: IterativeCalculation
+    fullName: Excel.IterativeCalculation

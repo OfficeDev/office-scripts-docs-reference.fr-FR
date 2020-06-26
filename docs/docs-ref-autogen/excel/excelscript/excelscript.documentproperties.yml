@@ -1,0 +1,430 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties:interface'
+    summary: Représente les propriétés du classeur.
+    name: ExcelScript.DocumentProperties
+    fullName: ExcelScript.DocumentProperties
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)'
+      - 'ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#addCustomProperty:member(1)'
+    summary: Crée une nouvelle propriété personnalisée ou en définit une existante.
+    name: 'addCustomProperty(key, value)'
+    fullName: 'addCustomProperty(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addCustomProperty(key: string, value: any): CustomProperty;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Obligatoire. La clé de la propriété personnalisée, qui ne respecte pas la casse. La clé est limitée à 255 caractères en dehors d’Excel sur le Web (les clés plus volumineuses sont automatiquement réduites à 255 caractères sur d’autres plateformes).'
+          type:
+            - string
+        - id: value
+          description: Obligatoire. Valeur de la propriété personnalisée. La valeur est limitée à 255 caractères en dehors d’Excel sur le Web (les valeurs les plus élevées sont automatiquement réduites à 255 caractères sur d’autres plateformes).
+          type:
+            - any
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#deleteAllCustomProperties:member(1)'
+    summary: Supprime toutes les propriétés personnalisées de cette collection.
+    name: deleteAllCustomProperties()
+    fullName: deleteAllCustomProperties()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAllCustomProperties(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)'
+    summary: Auteur du classeur.
+    name: getAuthor()
+    fullName: getAuthor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAuthor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)'
+    summary: Catégorie du classeur.
+    name: getCategory()
+    fullName: getCategory()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCategory(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)'
+    summary: Commentaires du classeur.
+    name: getComments()
+    fullName: getComments()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getComments(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)'
+    summary: Société du classeur.
+    name: getCompany()
+    fullName: getCompany()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCompany(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)'
+    summary: Obtient la date de création du classeur. En lecture seule.
+    name: getCreationDate()
+    fullName: getCreationDate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCreationDate(): Date;'
+      return:
+        type:
+          - '!Date:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)'
+    summary: Obtient la collection de propriétés personnalisées du classeur. En lecture seule.
+    name: getCustom()
+    fullName: getCustom()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustom(): CustomProperty[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties#getCustom~0:complex'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)'
+    summary: 'Obtient un objet de propriété personnalisé par sa clé, qui ne tient pas compte de la casse. Renvoie un objet null si la propriété personnalisée n’existe pas.'
+    name: getCustomProperty(key)
+    fullName: getCustomProperty(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCustomProperty(key: string): CustomProperty | undefined;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty~0:complex'
+        description: ''
+      parameters:
+        - id: key
+          description: Obligatoire. Clé qui identifie l’objet de propriété personnalisée.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)'
+    summary: Mots clés du classeur.
+    name: getKeywords()
+    fullName: getKeywords()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKeywords(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)'
+    summary: Obtient ou définit le dernier auteur du classeur. En lecture seule.
+    name: getLastAuthor()
+    fullName: getLastAuthor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastAuthor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)'
+    summary: Gestionnaire du classeur.
+    name: getManager()
+    fullName: getManager()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getManager(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)'
+    summary: Obtient le numéro de révision du classeur. En lecture seule.
+    name: getRevisionNumber()
+    fullName: getRevisionNumber()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRevisionNumber(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)'
+    summary: Objet du classeur.
+    name: getSubject()
+    fullName: getSubject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubject(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)'
+    summary: Titre du classeur.
+    name: getTitle()
+    fullName: getTitle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTitle(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)'
+    summary: Auteur du classeur.
+    name: setAuthor(author)
+    fullName: setAuthor(author)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAuthor(author: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: author
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)'
+    summary: Catégorie du classeur.
+    name: setCategory(category)
+    fullName: setCategory(category)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategory(category: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: category
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)'
+    summary: Commentaires du classeur.
+    name: setComments(comments)
+    fullName: setComments(comments)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setComments(comments: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: comments
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)'
+    summary: Société du classeur.
+    name: setCompany(company)
+    fullName: setCompany(company)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCompany(company: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: company
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)'
+    summary: Mots clés du classeur.
+    name: setKeywords(keywords)
+    fullName: setKeywords(keywords)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setKeywords(keywords: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: keywords
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)'
+    summary: Gestionnaire du classeur.
+    name: setManager(manager)
+    fullName: setManager(manager)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setManager(manager: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: manager
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)'
+    summary: Obtient le numéro de révision du classeur. En lecture seule.
+    name: setRevisionNumber(revisionNumber)
+    fullName: setRevisionNumber(revisionNumber)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setRevisionNumber(revisionNumber: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: revisionNumber
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)'
+    summary: Objet du classeur.
+    name: setSubject(subject)
+    fullName: setSubject(subject)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSubject(subject: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subject
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)'
+    summary: Titre du classeur.
+    name: setTitle(title)
+    fullName: setTitle(title)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTitle(title: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: title
+          description: ''
+          type:
+            - string
+references:
+  - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+    name: CustomProperty
+    fullName: ExcelScript.CustomProperty
+  - uid: '!Date:interface'
+    name: Date
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustom~0:complex'
+    name: 'CustomProperty[]'
+    fullName: 'ExcelScript.CustomProperty[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+        name: CustomProperty
+        fullName: ExcelScript.CustomProperty
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'ExcelScript!ExcelScript.DocumentProperties#getCustomProperty~0:complex'
+    name: CustomProperty | undefined
+    fullName: ExcelScript.CustomProperty | undefined
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.CustomProperty:interface'
+        name: CustomProperty
+        fullName: ExcelScript.CustomProperty
+      - name: ' | undefined'
+        fullName: ' | undefined'

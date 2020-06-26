@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotHierarchy:interface'
+    summary: Représente l’PivotHierarchy Excel.
+    name: Excel.PivotHierarchy
+    fullName: Excel.PivotHierarchy
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotHierarchy#fields:member'
+      - 'excel!Excel.PivotHierarchy#id:member'
+      - 'excel!Excel.PivotHierarchy#load:member(1)'
+      - 'excel!Excel.PivotHierarchy#name:member'
+  - uid: 'excel!Excel.PivotHierarchy#fields:member'
+    summary: Renvoie les PivotFields associés à la PivotHierarchy.
+    name: fields
+    fullName: fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fields: PivotFieldCollection;'
+      return:
+        type:
+          - 'excel!Excel.PivotFieldCollection:interface'
+  - uid: 'excel!Excel.PivotHierarchy#id:member'
+    summary: ID de la PivotHierarchy.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.PivotHierarchy#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotHierarchy#name:member'
+    summary: Nom de la PivotHierarchy.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'excel!Excel.PivotFieldCollection:interface'
+    name: PivotFieldCollection
+    fullName: Excel.PivotFieldCollection

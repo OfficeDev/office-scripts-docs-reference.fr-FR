@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerCollection:interface'
+    summary: Représente une collection de tous les objets Slicer du classeur ou d’une feuille de calcul.
+    name: Excel.SlicerCollection
+    fullName: Excel.SlicerCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
+    summary: Ajoute un nouveau segment au classeur.
+    name: 'add(slicerSource, sourceField, slicerDestination)'
+    fullName: 'add(slicerSource, sourceField, slicerDestination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    slicerSource: string | PivotTable | Table,
+                    sourceField: string | PivotField | number | TableColumn,
+                    slicerDestination?: string | Worksheet
+                ): Slicer;
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Pivot");
+              let slicer = sheet.slicers.add(
+                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
+                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
+              );
+              slicer.name = "Fruit Slicer";
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: slicerSource
+          description: 'Source de données sur laquelle le nouveau segment sera basé. Il peut s’agir d’un objet PivotTable, d’un objet table ou d’une chaîne. Lorsqu’un objet PivotTable est transmis, la source de données est la source de l’objet PivotTable. Lorsqu’un objet table est transmis, la source de données est l’objet table. Lorsqu’une chaîne est transmise, elle est interprétée comme le nom/l’ID d’un tableau croisé dynamique/tableau.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~0:complex'
+        - id: sourceField
+          description: 'Champ de la source de données à filtrer. Il peut s’agir d’un objet PivotField, d’un objet TableColumn, de l’ID d’un champ de tableau croisé dynamique ou de l’ID/nom de TableColumn.'
+          type:
+            - 'excel!Excel.SlicerCollection#add~1:complex'
+        - id: slicerDestination
+          description: Facultatif. Feuille de calcul dans laquelle le nouveau segment sera créé. Il peut s’agir d’un objet Worksheet ou du nom/ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de segments est extraite de la feuille de calcul.
+          type:
+            - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, renvoie un objet null.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Nom ou ID du segment à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Slicer:interface'
+    name: Slicer
+    fullName: Excel.Slicer
+  - uid: 'excel!Excel.SlicerCollection#add~0:complex'
+    name: string | PivotTable | Table
+    fullName: string | Excel.PivotTable | Excel.Table
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotTable:interface'
+        name: PivotTable
+        fullName: Excel.PivotTable
+      - name: ' | '
+        fullName: ' | '
+      - uid: 'excel!Excel.Table:interface'
+        name: Table
+        fullName: Excel.Table
+  - uid: 'excel!Excel.SlicerCollection#add~1:complex'
+    name: string | PivotField | number | TableColumn
+    fullName: string | Excel.PivotField | number | Excel.TableColumn
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.PivotField:interface'
+        name: PivotField
+        fullName: Excel.PivotField
+      - name: ' | number | '
+        fullName: ' | number | '
+      - uid: 'excel!Excel.TableColumn:interface'
+        name: TableColumn
+        fullName: Excel.TableColumn
+  - uid: 'excel!Excel.SlicerCollection#add~2:complex'
+    name: string | Worksheet
+    fullName: string | Excel.Worksheet
+    spec.typeScript:
+      - name: 'string | '
+        fullName: 'string | '
+      - uid: 'excel!Excel.Worksheet:interface'
+        name: Worksheet
+        fullName: Excel.Worksheet

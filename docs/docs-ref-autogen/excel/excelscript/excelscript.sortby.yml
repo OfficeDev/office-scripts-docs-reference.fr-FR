@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
+    summary: Représente le sens de tri.
+    name: ExcelScript.SortBy
+    fullName: ExcelScript.SortBy
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SortBy.ascending:member'
+      - 'ExcelScript!ExcelScript.SortBy.descending:member'
+  - uid: 'ExcelScript!ExcelScript.SortBy.ascending:member'
+    summary: Tri croissant. Du plus petit au plus grand ou de A à Z.
+    name: ascending
+    fullName: ascending
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.SortBy.descending:member'
+    summary: Tri décroissant. Du plus grand au plus petit ou de Z à A.
+    name: descending
+    fullName: descending
+    langs:
+      - typeScript
+    type: field

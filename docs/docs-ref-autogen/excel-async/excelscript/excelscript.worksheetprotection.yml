@@ -1,0 +1,128 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.WorksheetProtection:interface'
+    summary: Représente la protection d’un objet de la feuille.
+    name: Excel.WorksheetProtection
+    fullName: Excel.WorksheetProtection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.WorksheetProtection#load:member(1)'
+      - 'excel!Excel.WorksheetProtection#options:member'
+      - 'excel!Excel.WorksheetProtection#protect:member(1)'
+      - 'excel!Excel.WorksheetProtection#protected:member'
+      - 'excel!Excel.WorksheetProtection#unprotect:member(1)'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.WorksheetProtection#options:member'
+    summary: Spécifie les options de protection pour la feuille de calcul.
+    name: options
+    fullName: options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly options: WorksheetProtectionOptions;'
+      return:
+        type:
+          - 'excel!Excel.WorksheetProtectionOptions:interface'
+  - uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
+    summary: Protège une feuille de calcul. Échoue si la feuille de calcul a déjà été protégée.
+    name: 'protect(options, password)'
+    fullName: 'protect(options, password)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.load("protection/protected");
+
+              await context.sync();
+
+              if (!activeSheet.protection.protected) {
+                  activeSheet.protection.protect();
+              }
+          }
+          ```
+      parameters:
+        - id: options
+          description: Facultatif. Options de protection de feuille.
+          type:
+            - 'excel!Excel.WorksheetProtectionOptions:interface'
+        - id: password
+          description: Facultatif. Mot de passe de protection de la feuille.
+          type:
+            - string
+  - uid: 'excel!Excel.WorksheetProtection#protected:member'
+    summary: Indique si la feuille de calcul est protégée.
+    name: protected
+    fullName: protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.WorksheetProtection#unprotect:member(1)'
+    summary: Annule la protection d’une feuille de calcul.
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```javascript
+          async function main(context: Excel.RequestContext) {
+              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+              activeSheet.protection.unprotect();
+          }
+          ```
+      parameters:
+        - id: password
+          description: Mot de passe de protection de feuille.
+          type:
+            - string
+references:
+  - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
+    name: WorksheetProtectionOptions
+    fullName: Excel.WorksheetProtectionOptions

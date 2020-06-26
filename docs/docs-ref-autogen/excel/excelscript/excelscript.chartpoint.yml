@@ -1,0 +1,228 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartPoint:interface'
+    summary: Représente un point d’une série dans un graphique.
+    name: ExcelScript.ChartPoint
+    fullName: ExcelScript.ChartPoint
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#getValue:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getDataLabel:member(1)'
+    summary: Renvoie l’étiquette de données d’un point du graphique.
+    name: getDataLabel()
+    fullName: getDataLabel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataLabel(): ChartDataLabel;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartDataLabel:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getFormat:member(1)'
+    summary: Regroupe les propriétés de format d’un point d’un graphique.
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartPointFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartPointFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getHasDataLabel:member(1)'
+    summary: Indique si un point de données a une étiquette de données. Non applicable pour les graphiques en surface.
+    name: getHasDataLabel()
+    fullName: getHasDataLabel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHasDataLabel(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)'
+    summary: 'Représentation de code de couleur HTML de la couleur d’arrière-plan du marqueur du point de données (par exemple, \# FF0000 représente le rouge).'
+    name: getMarkerBackgroundColor()
+    fullName: getMarkerBackgroundColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMarkerBackgroundColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)'
+    summary: 'Représentation de code de couleur HTML de la couleur de premier plan du point de données (par exemple, \# FF0000 représente le rouge).'
+    name: getMarkerForegroundColor()
+    fullName: getMarkerForegroundColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMarkerForegroundColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)'
+    summary: Représente la taille du marqueur du point de données.
+    name: getMarkerSize()
+    fullName: getMarkerSize()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMarkerSize(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)'
+    summary: 'Représente le style du marqueur du point de données de graphique. Pour plus d’informations, voir Excel. ChartMarkerStyle.'
+    name: getMarkerStyle()
+    fullName: getMarkerStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMarkerStyle(): ChartMarkerStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#getValue:member(1)'
+    summary: Renvoie la valeur d’un point du graphique.
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#setHasDataLabel:member(1)'
+    summary: Indique si un point de données a une étiquette de données. Non applicable pour les graphiques en surface.
+    name: setHasDataLabel(hasDataLabel)
+    fullName: setHasDataLabel(hasDataLabel)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setHasDataLabel(hasDataLabel: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: hasDataLabel
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)'
+    summary: 'Représentation de code de couleur HTML de la couleur d’arrière-plan du marqueur du point de données (par exemple, \# FF0000 représente le rouge).'
+    name: setMarkerBackgroundColor(markerBackgroundColor)
+    fullName: setMarkerBackgroundColor(markerBackgroundColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMarkerBackgroundColor(markerBackgroundColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: markerBackgroundColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)'
+    summary: 'Représentation de code de couleur HTML de la couleur de premier plan du point de données (par exemple, \# FF0000 représente le rouge).'
+    name: setMarkerForegroundColor(markerForegroundColor)
+    fullName: setMarkerForegroundColor(markerForegroundColor)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMarkerForegroundColor(markerForegroundColor: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: markerForegroundColor
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)'
+    summary: Représente la taille du marqueur du point de données.
+    name: setMarkerSize(markerSize)
+    fullName: setMarkerSize(markerSize)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMarkerSize(markerSize: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: markerSize
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)'
+    summary: 'Représente le style du marqueur du point de données de graphique. Pour plus d’informations, voir Excel. ChartMarkerStyle.'
+    name: setMarkerStyle(markerStyle)
+    fullName: setMarkerStyle(markerStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMarkerStyle(markerStyle: ChartMarkerStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: markerStyle
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartDataLabel:interface'
+    name: ChartDataLabel
+    fullName: ExcelScript.ChartDataLabel
+  - uid: 'ExcelScript!ExcelScript.ChartPointFormat:interface'
+    name: ChartPointFormat
+    fullName: ExcelScript.ChartPointFormat
+  - uid: 'ExcelScript!ExcelScript.ChartMarkerStyle:enum'
+    name: ChartMarkerStyle
+    fullName: ExcelScript.ChartMarkerStyle

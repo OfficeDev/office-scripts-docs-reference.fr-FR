@@ -1,0 +1,183 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface'
+    summary: Représente les propriétés d’un graphique en forme de boîte et de moustaches.
+    name: ExcelScript.ChartBoxwhiskerOptions
+    fullName: ExcelScript.ChartBoxwhiskerOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)'
+      - 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)'
+    summary: Indique si le type de calcul quartile d’un graphique en boîte et en moustaches.
+    name: getQuartileCalculation()
+    fullName: getQuartileCalculation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getQuartileCalculation(): ChartBoxQuartileCalculation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)'
+    summary: Indique si les points intérieurs sont affichés dans un graphique en boîte et en moustaches.
+    name: getShowInnerPoints()
+    fullName: getShowInnerPoints()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowInnerPoints(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)'
+    summary: Indique si la ligne moyenne est affichée dans un graphique en boîte et en moustaches.
+    name: getShowMeanLine()
+    fullName: getShowMeanLine()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowMeanLine(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)'
+    summary: Indique si le marqueur moyen est affiché dans un graphique en boîte et en moustaches.
+    name: getShowMeanMarker()
+    fullName: getShowMeanMarker()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowMeanMarker(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)'
+    summary: Indique si les points aberrants sont affichés dans un graphique en boîte et en moustaches.
+    name: getShowOutlierPoints()
+    fullName: getShowOutlierPoints()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowOutlierPoints(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)'
+    summary: Indique si le type de calcul quartile d’un graphique en boîte et en moustaches.
+    name: setQuartileCalculation(quartileCalculation)
+    fullName: setQuartileCalculation(quartileCalculation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setQuartileCalculation(
+                    quartileCalculation: ChartBoxQuartileCalculation
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: quartileCalculation
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)'
+    summary: Indique si les points intérieurs sont affichés dans un graphique en boîte et en moustaches.
+    name: setShowInnerPoints(showInnerPoints)
+    fullName: setShowInnerPoints(showInnerPoints)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowInnerPoints(showInnerPoints: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showInnerPoints
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)'
+    summary: Indique si la ligne moyenne est affichée dans un graphique en boîte et en moustaches.
+    name: setShowMeanLine(showMeanLine)
+    fullName: setShowMeanLine(showMeanLine)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowMeanLine(showMeanLine: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showMeanLine
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)'
+    summary: Indique si le marqueur moyen est affiché dans un graphique en boîte et en moustaches.
+    name: setShowMeanMarker(showMeanMarker)
+    fullName: setShowMeanMarker(showMeanMarker)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowMeanMarker(showMeanMarker: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showMeanMarker
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)'
+    summary: Indique si les points aberrants sont affichés dans un graphique en boîte et en moustaches.
+    name: setShowOutlierPoints(showOutlierPoints)
+    fullName: setShowOutlierPoints(showOutlierPoints)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowOutlierPoints(showOutlierPoints: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showOutlierPoints
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum'
+    name: ChartBoxQuartileCalculation
+    fullName: ExcelScript.ChartBoxQuartileCalculation

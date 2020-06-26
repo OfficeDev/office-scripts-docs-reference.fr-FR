@@ -1,0 +1,217 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartTrendline:interface'
+    summary: Cet objet représente les attributs d’un objet de courbe de tendance de graphique.
+    name: Excel.ChartTrendline
+    fullName: Excel.ChartTrendline
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartTrendline#backwardPeriod:member'
+      - 'excel!Excel.ChartTrendline#delete:member(1)'
+      - 'excel!Excel.ChartTrendline#format:member'
+      - 'excel!Excel.ChartTrendline#forwardPeriod:member'
+      - 'excel!Excel.ChartTrendline#intercept:member'
+      - 'excel!Excel.ChartTrendline#label:member'
+      - 'excel!Excel.ChartTrendline#load:member(1)'
+      - 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
+      - 'excel!Excel.ChartTrendline#name:member'
+      - 'excel!Excel.ChartTrendline#polynomialOrder:member'
+      - 'excel!Excel.ChartTrendline#showEquation:member'
+      - 'excel!Excel.ChartTrendline#showRSquared:member'
+      - 'excel!Excel.ChartTrendline#type:member'
+  - uid: 'excel!Excel.ChartTrendline#backwardPeriod:member'
+    summary: Représente le nombre de points que la courbe de tendance étend en arrière.
+    name: backwardPeriod
+    fullName: backwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'backwardPeriod: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#delete:member(1)'
+    summary: Supprime l’objet courbe de tendance.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.ChartTrendline#format:member'
+    summary: Représente la mise en forme de courbe de tendance de graphique.
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ChartTrendlineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineFormat:interface'
+  - uid: 'excel!Excel.ChartTrendline#forwardPeriod:member'
+    summary: Représente le nombre de points que la courbe de tendance étend en avant.
+    name: forwardPeriod
+    fullName: forwardPeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forwardPeriod: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#intercept:member'
+    summary: Représente la valeur intercept de la courbe de tendance. Peut être défini sur une valeur numérique ou une chaîne vide (pour les valeurs automatiques). La valeur renvoyée est toujours un nombre.
+    name: intercept
+    fullName: intercept
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'intercept: any;'
+      return:
+        type:
+          - any
+  - uid: 'excel!Excel.ChartTrendline#label:member'
+    summary: Représente l’étiquette d’une courbe de tendance de graphique.
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly label: ChartTrendlineLabel;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineLabel:interface'
+  - uid: 'excel!Excel.ChartTrendline#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartTrendline#movingAveragePeriod:member'
+    summary: Représente la période d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type MovingAverage.
+    name: movingAveragePeriod
+    fullName: movingAveragePeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'movingAveragePeriod: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#name:member'
+    summary: 'Représente le nom de la courbe de tendance. Peut être configurée pour une valeur de chaîne, ou peut être configurée pour que la valeur null représente les valeurs automatiques. La valeur renvoyée est toujours une chaîne.'
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ChartTrendline#polynomialOrder:member'
+    summary: Représente l’ordre d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type polynomial.
+    name: polynomialOrder
+    fullName: polynomialOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'polynomialOrder: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartTrendline#showEquation:member'
+    summary: Vrai si l’équation de la courbe de tendance est affichée sur le graphique.
+    name: showEquation
+    fullName: showEquation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showEquation: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendline#showRSquared:member'
+    summary: Vrai si le coefficient de détermination de la courbe de tendance est affiché sur le graphique.
+    name: showRSquared
+    fullName: showRSquared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRSquared: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ChartTrendline#type:member'
+    summary: Représente le type de courbe de tendance de graphique.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ChartTrendlineType;'
+      return:
+        type:
+          - 'excel!Excel.ChartTrendlineType:enum'
+        description: |-
+
+
+          #### <a name="examples"></a>範例
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+
+              let seriesCollection = sheet.charts.getItemAt(0).series;
+
+              // Get the trendline for series 1 and load its type property.  
+              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+              trendline.load("type");
+
+              await context.sync();
+
+              console.log("The trendline type is:" + trendline.type);  
+          }
+          ```
+references:
+  - uid: 'excel!Excel.ChartTrendlineFormat:interface'
+    name: ChartTrendlineFormat
+    fullName: Excel.ChartTrendlineFormat
+  - uid: 'excel!Excel.ChartTrendlineLabel:interface'
+    name: ChartTrendlineLabel
+    fullName: Excel.ChartTrendlineLabel
+  - uid: 'excel!Excel.ChartTrendlineType:enum'
+    name: ChartTrendlineType
+    fullName: Excel.ChartTrendlineType

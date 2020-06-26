@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerStyle:interface'
+    summary: 'Représente un style de segment, qui définit les éléments de style par région du segment.'
+    name: Excel.SlicerStyle
+    fullName: Excel.SlicerStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerStyle#delete:member(1)'
+      - 'excel!Excel.SlicerStyle#duplicate:member(1)'
+      - 'excel!Excel.SlicerStyle#load:member(1)'
+      - 'excel!Excel.SlicerStyle#name:member'
+      - 'excel!Excel.SlicerStyle#readOnly:member'
+  - uid: 'excel!Excel.SlicerStyle#delete:member(1)'
+    summary: Supprime le SlicerStyle.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.SlicerStyle#duplicate:member(1)'
+    summary: Crée un doublon de cette SlicerStyle avec une copie de tous les éléments de style.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): SlicerStyle;'
+      return:
+        type:
+          - 'excel!Excel.SlicerStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.SlicerStyle#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.SlicerStyle#name:member'
+    summary: Obtient le nom de la SlicerStyle.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.SlicerStyle#readOnly:member'
+    summary: Spécifie si cet objet SlicerStyle est accessible en lecture seule.
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.SlicerStyle:interface'
+    name: SlicerStyle
+    fullName: Excel.SlicerStyle

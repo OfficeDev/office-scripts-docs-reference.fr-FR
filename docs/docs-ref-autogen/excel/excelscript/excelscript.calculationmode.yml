@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
+    name: ExcelScript.CalculationMode
+    fullName: ExcelScript.CalculationMode
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
+      - 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
+      - 'ExcelScript!ExcelScript.CalculationMode.manual:member'
+  - uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
+    summary: Comportement de recalcul par défaut où Excel calcule les résultats des nouvelles formules chaque fois que les données pertinentes sont modifiées.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
+    summary: 'Calcule les résultats des nouvelles formules chaque fois que les données pertinentes sont modifiées, sauf si la formule se trouve dans une table de données.'
+    name: automaticExceptTables
+    fullName: automaticExceptTables
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
+    summary: Les calculs se produisent uniquement lorsque l’utilisateur ou le complément les demande.
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field

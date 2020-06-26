@@ -1,0 +1,152 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.BindingCollection:interface'
+    summary: Représente la collection de l’ensemble des objets de liaison qui font partie du classeur.
+    name: Excel.BindingCollection
+    fullName: Excel.BindingCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.BindingCollection#add:member(1)'
+      - 'excel!Excel.BindingCollection#addFromNamedItem:member(1)'
+      - 'excel!Excel.BindingCollection#addFromSelection:member(1)'
+      - 'excel!Excel.BindingCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.BindingCollection#load:member(1)'
+  - uid: 'excel!Excel.BindingCollection#add:member(1)'
+    summary: Ajoute une nouvelle liaison à une plage spécifique.
+    name: 'add(range, bindingType, id)'
+    fullName: 'add(range, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    range: Range | string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'excel!Excel.Binding:interface'
+        description: ''
+      parameters:
+        - id: range
+          description: 'Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name'
+          type:
+            - 'excel!Excel.BindingCollection#add~0:complex'
+        - id: bindingType
+          description: Type de liaison. Voir Excel. BindingType.
+          type:
+            - 'excel!Excel.BindingType:enum'
+        - id: id
+          description: Nom de la liaison.
+          type:
+            - string
+  - uid: 'excel!Excel.BindingCollection#addFromNamedItem:member(1)'
+    summary: "Ajoute une nouvelle liaison basée sur un élément nommé dans le classeur. Si l’élément nommé fait référence à plusieurs zones, l’erreur «\_InvalidReference\_» est renvoyée."
+    name: 'addFromNamedItem(name, bindingType, id)'
+    fullName: 'addFromNamedItem(name, bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        addFromNamedItem(
+                    name: string,
+                    bindingType: BindingType,
+                    id: string
+                ): Binding;
+      return:
+        type:
+          - 'excel!Excel.Binding:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom à partir duquel créer la liaison.
+          type:
+            - string
+        - id: bindingType
+          description: Type de liaison. Voir Excel. BindingType.
+          type:
+            - 'excel!Excel.BindingType:enum'
+        - id: id
+          description: Nom de la liaison.
+          type:
+            - string
+  - uid: 'excel!Excel.BindingCollection#addFromSelection:member(1)'
+    summary: "Ajoute une nouvelle liaison basée sur la sélection en cours. Si la sélection comporte plusieurs zones, l’erreur «\_InvalidReference\_» est renvoyée."
+    name: 'addFromSelection(bindingType, id)'
+    fullName: 'addFromSelection(bindingType, id)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addFromSelection(bindingType: BindingType, id: string): Binding;'
+      return:
+        type:
+          - 'excel!Excel.Binding:interface'
+        description: ''
+      parameters:
+        - id: bindingType
+          description: Type de liaison. Voir Excel. BindingType.
+          type:
+            - 'excel!Excel.BindingType:enum'
+        - id: id
+          description: Nom de la liaison.
+          type:
+            - string
+  - uid: 'excel!Excel.BindingCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient un objet de liaison par ID. Si l’objet de liaison n’existe pas, renvoie un objet null.'
+    name: getItemOrNullObject(id)
+    fullName: getItemOrNullObject(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): Binding;'
+      return:
+        type:
+          - 'excel!Excel.Binding:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: ID de l’objet de liaison à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.BindingCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.Binding:interface'
+    name: Binding
+    fullName: Excel.Binding
+  - uid: 'excel!Excel.BindingCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'excel!Excel.BindingType:enum'
+    name: BindingType
+    fullName: Excel.BindingType

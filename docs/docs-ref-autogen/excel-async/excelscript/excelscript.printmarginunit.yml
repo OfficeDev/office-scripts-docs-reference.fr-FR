@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PrintMarginUnit:enum'
+    name: Excel.PrintMarginUnit
+    fullName: Excel.PrintMarginUnit
+    langs:
+      - typeScript
+    type: enum
+    package: excel!
+    children:
+      - 'excel!Excel.PrintMarginUnit.centimeters:member'
+      - 'excel!Excel.PrintMarginUnit.inches:member'
+      - 'excel!Excel.PrintMarginUnit.points:member'
+  - uid: 'excel!Excel.PrintMarginUnit.centimeters:member'
+    summary: Affectez les marges de page en centimètres.
+    name: centimeters
+    fullName: centimeters
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"centimeters"'
+  - uid: 'excel!Excel.PrintMarginUnit.inches:member'
+    summary: Affectez les marges de page en pouces.
+    name: inches
+    fullName: inches
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"inches"'
+  - uid: 'excel!Excel.PrintMarginUnit.points:member'
+    summary: Affectez les marges de page en points. Un point est de 1/72 de pouce.
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"points"'

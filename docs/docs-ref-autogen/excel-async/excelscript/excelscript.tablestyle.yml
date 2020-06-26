@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TableStyle:interface'
+    summary: 'Représente un TableStyle, qui définit les éléments de style par région du tableau.'
+    name: Excel.TableStyle
+    fullName: Excel.TableStyle
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TableStyle#delete:member(1)'
+      - 'excel!Excel.TableStyle#duplicate:member(1)'
+      - 'excel!Excel.TableStyle#load:member(1)'
+      - 'excel!Excel.TableStyle#name:member'
+      - 'excel!Excel.TableStyle#readOnly:member'
+  - uid: 'excel!Excel.TableStyle#delete:member(1)'
+    summary: Supprime le TableStyle.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.TableStyle#duplicate:member(1)'
+    summary: Crée un doublon de cette TableStyle avec une copie de tous les éléments de style.
+    name: duplicate()
+    fullName: duplicate()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'duplicate(): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+  - uid: 'excel!Excel.TableStyle#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TableStyle#name:member'
+    summary: Obtient le nom du TableStyle.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.TableStyle#readOnly:member'
+    summary: Spécifie si cet objet TableStyle est accessible en lecture seule.
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.TableStyle:interface'
+    name: TableStyle
+    fullName: Excel.TableStyle

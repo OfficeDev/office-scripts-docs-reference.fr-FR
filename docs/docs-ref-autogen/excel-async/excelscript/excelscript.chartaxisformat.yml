@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartAxisFormat:interface'
+    summary: Regroupe les propriétés de format des axes du graphique.
+    name: Excel.ChartAxisFormat
+    fullName: Excel.ChartAxisFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartAxisFormat#fill:member'
+      - 'excel!Excel.ChartAxisFormat#font:member'
+      - 'excel!Excel.ChartAxisFormat#line:member'
+      - 'excel!Excel.ChartAxisFormat#load:member(1)'
+  - uid: 'excel!Excel.ChartAxisFormat#fill:member'
+    summary: Cette énumération spécifie la mise en forme du remplissage du graphique.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ChartFill;'
+      return:
+        type:
+          - 'excel!Excel.ChartFill:interface'
+  - uid: 'excel!Excel.ChartAxisFormat#font:member'
+    summary: 'Spécifie les attributs de police (nom de police, taille de police, couleur, etc.) pour un élément d’axe de graphique.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartAxisFormat#line:member'
+    summary: Indique la mise en forme des lignes de graphique.
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: ChartLineFormat;'
+      return:
+        type:
+          - 'excel!Excel.ChartLineFormat:interface'
+  - uid: 'excel!Excel.ChartAxisFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartFill:interface'
+    name: ChartFill
+    fullName: Excel.ChartFill
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont
+  - uid: 'excel!Excel.ChartLineFormat:interface'
+    name: ChartLineFormat
+    fullName: Excel.ChartLineFormat

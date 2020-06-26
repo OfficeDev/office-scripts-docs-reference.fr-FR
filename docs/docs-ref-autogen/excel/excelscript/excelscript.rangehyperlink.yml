@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
+    summary: Représente les chaînes nécessaires pour obtenir/définir un objet Hyperlink (XHL).
+    name: ExcelScript.RangeHyperlink
+    fullName: ExcelScript.RangeHyperlink
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
+      - 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
+      - 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
+      - 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#address:member'
+    summary: Représente l’url cible du lien hypertexte.
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#documentReference:member'
+    summary: Représente la cible de référence de document pour le lien hypertexte.
+    name: documentReference
+    fullName: documentReference
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'documentReference?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#screenTip:member'
+    summary: Représente la chaîne affichée lorsque vous pointez sur le lien hypertexte.
+    name: screenTip
+    fullName: screenTip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.RangeHyperlink#textToDisplay:member'
+    summary: Représente la chaîne qui s’affiche dans la cellule en haut à gauche de la plage.
+    name: textToDisplay
+    fullName: textToDisplay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type:
+          - string

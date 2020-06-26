@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
+    summary: Représente les critères de recherche à utiliser.
+    name: ExcelScript.SearchCriteria
+    fullName: ExcelScript.SearchCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
+      - 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
+      - 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
+    summary: 'Indique si la correspondance doit être terminée ou partielle. Une correspondance complète correspond à la totalité du contenu de la cellule. Une correspondance partielle correspond à une sous-chaîne dans le contenu de la cellule (par exemple, les `cat` correspondances partielles `caterpillar` et`scatter`<!-- -->). La valeur par défaut est False (partielle).'
+    name: completeMatch
+    fullName: completeMatch
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
+    summary: Indique si la correspondance respecte la casse. Par défaut est false (ou minuscules).
+    name: matchCase
+    fullName: matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
+    summary: Détermine le sens de la recherche. Par défaut est transférer. Voir Excel.SearchDirection.
+    name: searchDirection
+    fullName: searchDirection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'searchDirection?: SearchDirection;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.SearchDirection:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.SearchDirection:enum'
+    name: SearchDirection
+    fullName: ExcelScript.SearchDirection

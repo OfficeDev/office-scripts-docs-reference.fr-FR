@@ -1,0 +1,374 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Table:interface'
+    summary: 'Représente un tableau Excel. Pour en savoir plus sur le modèle objet table, consultez la rubrique [utiliser des tables à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables)<!-- -->.'
+    name: Excel.Table
+    fullName: Excel.Table
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Table#autoFilter:member'
+      - 'excel!Excel.Table#clearFilters:member(1)'
+      - 'excel!Excel.Table#columns:member'
+      - 'excel!Excel.Table#convertToRange:member(1)'
+      - 'excel!Excel.Table#delete:member(1)'
+      - 'excel!Excel.Table#getDataBodyRange:member(1)'
+      - 'excel!Excel.Table#getHeaderRowRange:member(1)'
+      - 'excel!Excel.Table#getRange:member(1)'
+      - 'excel!Excel.Table#getTotalRowRange:member(1)'
+      - 'excel!Excel.Table#highlightFirstColumn:member'
+      - 'excel!Excel.Table#highlightLastColumn:member'
+      - 'excel!Excel.Table#id:member'
+      - 'excel!Excel.Table#legacyId:member'
+      - 'excel!Excel.Table#load:member(1)'
+      - 'excel!Excel.Table#name:member'
+      - 'excel!Excel.Table#reapplyFilters:member(1)'
+      - 'excel!Excel.Table#showBandedColumns:member'
+      - 'excel!Excel.Table#showBandedRows:member'
+      - 'excel!Excel.Table#showFilterButton:member'
+      - 'excel!Excel.Table#showHeaders:member'
+      - 'excel!Excel.Table#showTotals:member'
+      - 'excel!Excel.Table#sort:member'
+      - 'excel!Excel.Table#style:member'
+      - 'excel!Excel.Table#worksheet:member'
+  - uid: 'excel!Excel.Table#autoFilter:member'
+    summary: Représente l’objet de filtre automatique de la table.
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoFilter: AutoFilter;'
+      return:
+        type:
+          - 'excel!Excel.AutoFilter:interface'
+  - uid: 'excel!Excel.Table#clearFilters:member(1)'
+    summary: Supprime tous les filtres appliqués actuellement sur le tableau.
+    name: clearFilters()
+    fullName: clearFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#columns:member'
+    summary: Représente une collection de toutes les colonnes du tableau.
+    name: columns
+    fullName: columns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columns: TableColumnCollection;'
+      return:
+        type:
+          - 'excel!Excel.TableColumnCollection:interface'
+  - uid: 'excel!Excel.Table#convertToRange:member(1)'
+    summary: Convertit le tableau en plage normale de cellules. Toutes les données sont conservées.
+    name: convertToRange()
+    fullName: convertToRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertToRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Table#delete:member(1)'
+    summary: Supprime le tableau.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#getDataBodyRange:member(1)'
+    summary: Obtient l’objet de plage associé au corps de données du tableau.
+    name: getDataBodyRange()
+    fullName: getDataBodyRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Table#getHeaderRowRange:member(1)'
+    summary: Obtient l’objet de plage associé à la ligne d’en-tête du tableau.
+    name: getHeaderRowRange()
+    fullName: getHeaderRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Table#getRange:member(1)'
+    summary: Renvoie l’objet de plage associé à l’intégralité du tableau.
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Table#getTotalRowRange:member(1)'
+    summary: Renvoie l’objet de plage associé à la ligne de total du tableau.
+    name: getTotalRowRange()
+    fullName: getTotalRowRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.Table#highlightFirstColumn:member'
+    summary: Indique si la première colonne contient une mise en forme spéciale.
+    name: highlightFirstColumn
+    fullName: highlightFirstColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightFirstColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#highlightLastColumn:member'
+    summary: Indique si la dernière colonne contient une mise en forme spéciale.
+    name: highlightLastColumn
+    fullName: highlightLastColumn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightLastColumn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#id:member'
+    summary: 'Renvoie une valeur qui permet d’identifier le tableau dans un classeur donné. La valeur de l’identificateur reste identique, même lorsque le tableau est renommé.'
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#legacyId:member'
+    summary: Renvoie un ID numérique.
+    name: legacyId
+    fullName: legacyId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly legacyId: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Table#name:member'
+    summary: |-
+      Nom du tableau.
+
+      Le nom du jeu de tables doit respecter les instructions spécifiées dans l’article [Renommer un tableau Excel](https://support.office.com/article/Rename-an-Excel-table-FBF49A4F-82A3-43EB-8BA2-44D21233B114) .
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#reapplyFilters:member(1)'
+    summary: Applique de nouveau tous les filtres actuellement appliqués sur le tableau.
+    name: reapplyFilters()
+    fullName: reapplyFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapplyFilters(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Table#showBandedColumns:member'
+    summary: Spécifie si les colonnes affichent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillance différemment des colonnes égales pour faciliter la lecture du tableau.
+    name: showBandedColumns
+    fullName: showBandedColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBandedColumns: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showBandedRows:member'
+    summary: Indique si les lignes affichent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillance différemment des lignes paires pour faciliter la lecture du tableau.
+    name: showBandedRows
+    fullName: showBandedRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBandedRows: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showFilterButton:member'
+    summary: Indique si les boutons de filtre sont visibles en haut de chaque en-tête de colonne. Ce paramètre est autorisé uniquement si le tableau contient une ligne d’en-tête.
+    name: showFilterButton
+    fullName: showFilterButton
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showFilterButton: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showHeaders:member'
+    summary: Indique si la ligne d’en-tête est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne d’en-tête.
+    name: showHeaders
+    fullName: showHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#showTotals:member'
+    summary: Indique si la ligne total est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
+    name: showTotals
+    fullName: showTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showTotals: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Table#sort:member'
+    summary: Représente le tri du tableau.
+    name: sort
+    fullName: sort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sort: TableSort;'
+      return:
+        type:
+          - 'excel!Excel.TableSort:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```javascript
+          // Get the current worksheet.
+          let workbook = context.workbook;
+          let worksheets = workbook.worksheets;
+          let selectedSheet = worksheets.getActiveWorksheet();
+
+          // Create a table with the used cells.
+          let usedRange = selectedSheet.getUsedRange();
+          let newTable = selectedSheet.tables.add(usedRange, true);
+
+          // Sort the table using the first column.
+          newTable.sort.apply([{ key: 0, ascending: true }]);
+          ```
+  - uid: 'excel!Excel.Table#style:member'
+    summary: "Valeur de constante qui représente le style du tableau. Les valeurs possibles sont\_: «\_TableStyleLight1\_» à «\_TableStyleLight21\_», «\_TableStyleMedium1\_» à «\_TableStyleMedium28\_», «\_TableStyleDark1\_» et «\_TableStyleDark11\_». Vous pouvez également indiquer un style personnalisé présent dans le classeur."
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Table#worksheet:member'
+    summary: Feuille de calcul contenant le tableau actif.
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.AutoFilter:interface'
+    name: AutoFilter
+    fullName: Excel.AutoFilter
+  - uid: 'excel!Excel.TableColumnCollection:interface'
+    name: TableColumnCollection
+    fullName: Excel.TableColumnCollection
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.TableSort:interface'
+    name: TableSort
+    fullName: Excel.TableSort
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

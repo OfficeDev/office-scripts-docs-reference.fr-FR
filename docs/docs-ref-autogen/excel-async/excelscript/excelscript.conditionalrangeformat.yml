@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    summary: 'Objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés de la plage de mises en forme conditionnelles.'
+    name: Excel.ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeFormat#borders:member'
+      - 'excel!Excel.ConditionalRangeFormat#fill:member'
+      - 'excel!Excel.ConditionalRangeFormat#font:member'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
+  - uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
+    summary: Collection d’objets Border qui s’appliquent à la plage de mise en forme conditionnelle globale.
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly borders: ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderCollection:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
+    summary: Renvoie l’objet Fill défini sur la plage de mise en forme conditionnelle globale.
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: ConditionalRangeFill;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFill:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#font:member'
+    summary: Renvoie l’objet font défini sur la plage de mise en forme conditionnelle globale.
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ConditionalRangeFont;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFont:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
+    summary: Représente le code de format de nombre d’Excel pour la plage donnée. Effacé si null est passé dans.
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: any;'
+      return:
+        type:
+          - any
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
+    name: ConditionalRangeBorderCollection
+    fullName: Excel.ConditionalRangeBorderCollection
+  - uid: 'excel!Excel.ConditionalRangeFill:interface'
+    name: ConditionalRangeFill
+    fullName: Excel.ConditionalRangeFill
+  - uid: 'excel!Excel.ConditionalRangeFont:interface'
+    name: ConditionalRangeFont
+    fullName: Excel.ConditionalRangeFont

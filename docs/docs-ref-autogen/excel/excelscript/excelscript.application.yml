@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Application:interface'
+    summary: Représente l’application Excel qui gère le classeur.
+    name: ExcelScript.Application
+    fullName: ExcelScript.Application
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Application#calculate:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getCultureInfo:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)'
+      - 'ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)'
+      - 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
+  - uid: 'ExcelScript!ExcelScript.Application#calculate:member(1)'
+    summary: Recalcule tous les classeurs actuellement ouverts dans Excel.
+    name: calculate(calculationType)
+    fullName: calculate(calculationType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(calculationType: CalculationType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationType
+          description: 'Spécifie le type de calcul à utiliser. Pour plus d’informations, voir Excel. CalculationType.'
+          type:
+            - 'ExcelScript!ExcelScript.CalculationType:enum'
+  - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
+    summary: Renvoie la version du moteur de calcul Excel utilisée pour le dernier recalcul complet.
+    name: getCalculationEngineVersion()
+    fullName: getCalculationEngineVersion()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCalculationEngineVersion(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
+    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans Excel. CalculationMode. Les valeurs possibles sont les suivantes\_:`Automatic`<!-- -->, où Excel contrôle le recalcul\_;`AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_;`Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
+    name: getCalculationMode()
+    fullName: getCalculationMode()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCalculationMode(): CalculationMode;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CalculationMode:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
+    summary: 'Renvoie l’état de calcul de l’application. Pour plus d’informations, voir Excel.CalculationState.'
+    name: getCalculationState()
+    fullName: getCalculationState()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCalculationState(): CalculationState;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CalculationState:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#getCultureInfo:member(1)'
+    summary: 'Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme de numéros et d’autres paramètres dépendants de la culture.'
+    name: getCultureInfo()
+    fullName: getCultureInfo()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCultureInfo(): CultureInfo;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CultureInfo:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)'
+    summary: Obtient la chaîne utilisée comme séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+    name: getDecimalSeparator()
+    fullName: getDecimalSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDecimalSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)'
+    summary: 'Capture d’écran des paramètres de calcul itératif. Dans Excel sous Windows et Mac, les paramètres s’appliquent à l’application Excel. Dans Excel sur le Web et d’autres plateformes, les paramètres s’appliquent au classeur actif.'
+    name: getIterativeCalculation()
+    fullName: getIterativeCalculation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIterativeCalculation(): IterativeCalculation;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.IterativeCalculation:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)'
+    summary: Obtient la chaîne utilisée pour séparer les groupes de chiffres à gauche du séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+    name: getThousandsSeparator()
+    fullName: getThousandsSeparator()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getThousandsSeparator(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)'
+    summary: Indique si les séparateurs système d’Excel sont activés. Les séparateurs système incluent le séparateur décimal et le séparateur des milliers.
+    name: getUseSystemSeparators()
+    fullName: getUseSystemSeparators()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUseSystemSeparators(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
+    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans Excel. CalculationMode. Les valeurs possibles sont les suivantes\_:`Automatic`<!-- -->, où Excel contrôle le recalcul\_;`AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_;`Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
+    name: setCalculationMode(calculationMode)
+    fullName: setCalculationMode(calculationMode)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCalculationMode(calculationMode: CalculationMode): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationMode
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.CalculationMode:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.CalculationType:enum'
+    name: CalculationType
+    fullName: ExcelScript.CalculationType
+  - uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
+    name: CalculationMode
+    fullName: ExcelScript.CalculationMode
+  - uid: 'ExcelScript!ExcelScript.CalculationState:enum'
+    name: CalculationState
+    fullName: ExcelScript.CalculationState
+  - uid: 'ExcelScript!ExcelScript.CultureInfo:interface'
+    name: CultureInfo
+    fullName: ExcelScript.CultureInfo
+  - uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
+    name: IterativeCalculation
+    fullName: ExcelScript.IterativeCalculation

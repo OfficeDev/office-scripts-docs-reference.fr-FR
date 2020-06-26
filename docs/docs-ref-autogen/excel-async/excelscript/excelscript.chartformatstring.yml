@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartFormatString:interface'
+    summary: 'Représente la sous-chaîne dans les objets associés au graphique qui contient du texte, comme objet ChartTitle, objet ChartAxisTitle, etc.'
+    name: Excel.ChartFormatString
+    fullName: Excel.ChartFormatString
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartFormatString#font:member'
+      - 'excel!Excel.ChartFormatString#load:member(1)'
+  - uid: 'excel!Excel.ChartFormatString#font:member'
+    summary: 'Représente les attributs de police, tels que le nom de la police, la taille de police, la couleur, etc., de l’objet de graphique.'
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: ChartFont;'
+      return:
+        type:
+          - 'excel!Excel.ChartFont:interface'
+  - uid: 'excel!Excel.ChartFormatString#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.ChartFont:interface'
+    name: ChartFont
+    fullName: Excel.ChartFont

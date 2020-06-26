@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.SlicerItemCollection:interface'
+    summary: Représente une collection de tous les objets d’élément de segment sur le Slicer.
+    name: Excel.SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerItemCollection#load:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient un segment de l’élément à l’aide de son nom ou clé. Si le paramètre n’existe pas, renvoie un objet null.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): SlicerItem;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItem:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Clé ou nom du segment à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerItemCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.SlicerItem:interface'
+    name: SlicerItem
+    fullName: Excel.SlicerItem

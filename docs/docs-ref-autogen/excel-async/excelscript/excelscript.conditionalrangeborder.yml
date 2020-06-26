@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
+    summary: Cet objet représente la bordure d'un objet.
+    name: Excel.ConditionalRangeBorder
+    fullName: Excel.ConditionalRangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalRangeBorder#color:member'
+      - 'excel!Excel.ConditionalRangeBorder#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
+      - 'excel!Excel.ConditionalRangeBorder#style:member'
+  - uid: 'excel!Excel.ConditionalRangeBorder#color:member'
+    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalRangeBorder#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
+    summary: 'Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir Excel. ConditionalRangeBorderIndex.'
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: ConditionalRangeBorderIndex;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorder#style:member'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: ConditionalRangeBorderLineStyle;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
+references:
+  - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
+    name: ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex
+  - uid: 'excel!Excel.ConditionalRangeBorderLineStyle:enum'
+    name: ConditionalRangeBorderLineStyle
+    fullName: Excel.ConditionalRangeBorderLineStyle

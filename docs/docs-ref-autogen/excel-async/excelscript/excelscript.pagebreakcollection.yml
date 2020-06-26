@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PageBreakCollection:interface'
+    name: Excel.PageBreakCollection
+    fullName: Excel.PageBreakCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PageBreakCollection#add:member(1)'
+      - 'excel!Excel.PageBreakCollection#load:member(1)'
+      - 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
+  - uid: 'excel!Excel.PageBreakCollection#add:member(1)'
+    summary: Ajoute un saut de page avant la cellule en haut à gauche de la plage spécifiée.
+    name: add(pageBreakRange)
+    fullName: add(pageBreakRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(pageBreakRange: Range | string): PageBreak;'
+      return:
+        type:
+          - 'excel!Excel.PageBreak:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.horizontalPageBreaks.add("A21:E21");
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: pageBreakRange
+          description: Plage immédiatement après le saut de page à ajouter.
+          type:
+            - 'excel!Excel.PageBreakCollection#add~0:complex'
+  - uid: 'excel!Excel.PageBreakCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PageBreakCollection#removePageBreaks:member(1)'
+    summary: Redéfinit tous les sauts de page de la collection.
+    name: removePageBreaks()
+    fullName: removePageBreaks()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removePageBreaks(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.PageBreak:interface'
+    name: PageBreak
+    fullName: Excel.PageBreak
+  - uid: 'excel!Excel.PageBreakCollection#add~0:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string'
+        fullName: ' | string'

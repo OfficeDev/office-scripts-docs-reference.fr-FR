@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup:interface'
+    name: ExcelScript.HeaderFooterGroup
+    fullName: ExcelScript.HeaderFooterGroup
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
+      - 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getDefaultForAllPages:member(1)'
+    summary: 'L’en-tête/pied de page, utilisé pour toutes les pages, sauf si la première page ou page impaire/paire est spécifiée.'
+    name: getDefaultForAllPages()
+    fullName: getDefaultForAllPages()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefaultForAllPages(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getEvenPages:member(1)'
+    summary: 'L’en-tête/le pied de page à utiliser pour les pages paires, en-tête/pied de page impaire doit être spécifié pour les pages impaires.'
+    name: getEvenPages()
+    fullName: getEvenPages()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEvenPages(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getFirstPage:member(1)'
+    summary: 'La première en-tête/le premier pied de page, pour toutes les autres pages générales ou impair/pair est utilisé.'
+    name: getFirstPage()
+    fullName: getFirstPage()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstPage(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getOddPages:member(1)'
+    summary: 'L’en-tête/le pied de page à utiliser pour les pages paires, l’en-tête/pied de page paire doit être spécifié pour les pages paires.'
+    name: getOddPages()
+    fullName: getOddPages()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOddPages(): HeaderFooter;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooter:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
+    summary: 'Les en-têtes/pieds de page définis. Pour plus d’informations, voir Excel.HeaderFooterState.'
+    name: getState()
+    fullName: getState()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getState(): HeaderFooterState;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetMargins:member(1)'
+    summary: Obtient ou définit un indicateur indiquant si les en-têtes/pieds de page sont alignés avec les marges de page définis dans les options de mise en page pour la feuille de calcul.
+    name: getUseSheetMargins()
+    fullName: getUseSheetMargins()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUseSheetMargins(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getUseSheetScale:member(1)'
+    summary: Obtient ou définit un indicateur indiquant si les en-têtes/pieds de page sont alignés avec les marges de page définis dans les options de mise en page pour la feuille de calcul.
+    name: getUseSheetScale()
+    fullName: getUseSheetScale()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUseSheetScale(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
+    summary: 'Les en-têtes/pieds de page définis. Pour plus d’informations, voir Excel.HeaderFooterState.'
+    name: setState(state)
+    fullName: setState(state)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setState(state: HeaderFooterState): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: state
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetMargins:member(1)'
+    summary: Obtient ou définit un indicateur indiquant si les en-têtes/pieds de page sont alignés avec les marges de page définis dans les options de mise en page pour la feuille de calcul.
+    name: setUseSheetMargins(useSheetMargins)
+    fullName: setUseSheetMargins(useSheetMargins)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUseSheetMargins(useSheetMargins: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useSheetMargins
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setUseSheetScale:member(1)'
+    summary: Obtient ou définit un indicateur indiquant si les en-têtes/pieds de page sont alignés avec les marges de page définis dans les options de mise en page pour la feuille de calcul.
+    name: setUseSheetScale(useSheetScale)
+    fullName: setUseSheetScale(useSheetScale)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setUseSheetScale(useSheetScale: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useSheetScale
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.HeaderFooter:interface'
+    name: HeaderFooter
+    fullName: ExcelScript.HeaderFooter
+  - uid: 'ExcelScript!ExcelScript.HeaderFooterState:enum'
+    name: HeaderFooterState
+    fullName: ExcelScript.HeaderFooterState

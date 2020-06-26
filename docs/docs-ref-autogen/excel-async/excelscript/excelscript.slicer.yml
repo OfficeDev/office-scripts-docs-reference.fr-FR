@@ -1,0 +1,302 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Slicer:interface'
+    summary: Représente un objet Slicer dans le classeur.
+    name: Excel.Slicer
+    fullName: Excel.Slicer
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Slicer#caption:member'
+      - 'excel!Excel.Slicer#clearFilters:member(1)'
+      - 'excel!Excel.Slicer#delete:member(1)'
+      - 'excel!Excel.Slicer#getSelectedItems:member(1)'
+      - 'excel!Excel.Slicer#height:member'
+      - 'excel!Excel.Slicer#id:member'
+      - 'excel!Excel.Slicer#isFilterCleared:member'
+      - 'excel!Excel.Slicer#left:member'
+      - 'excel!Excel.Slicer#load:member(1)'
+      - 'excel!Excel.Slicer#name:member'
+      - 'excel!Excel.Slicer#selectItems:member(1)'
+      - 'excel!Excel.Slicer#slicerItems:member'
+      - 'excel!Excel.Slicer#sortBy:member'
+      - 'excel!Excel.Slicer#style:member'
+      - 'excel!Excel.Slicer#top:member'
+      - 'excel!Excel.Slicer#width:member'
+      - 'excel!Excel.Slicer#worksheet:member'
+  - uid: 'excel!Excel.Slicer#caption:member'
+    summary: Représente la légende de segment.
+    name: caption
+    fullName: caption
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'caption: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Slicer#clearFilters:member(1)'
+    summary: Supprime tous les filtres appliqués actuellement sur le tableau.
+    name: clearFilters()
+    fullName: clearFilters()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.clearFilters();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Slicer#delete:member(1)'
+    summary: Supprime le segment.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.slicers.getItemAt(0).delete();
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
+    summary: Renvoie une matrice de noms d’éléments sélectionnés.
+    name: getSelectedItems()
+    fullName: getSelectedItems()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedItems(): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+  - uid: 'excel!Excel.Slicer#height:member'
+    summary: "Représente la hauteur, exprimée en points, de l’axe de graphique. Renvoie un «\_l’argument est non valide ou manquant ou a un format incorrect.\_» exception lorsqu’elle est définie avec une valeur négative ou zéro comme entrée."
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#id:member'
+    summary: Représente l’id unique du segment.
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Slicer#isFilterCleared:member'
+    summary: True si tous les filtres appliqués actuellement sur le segment sont effacés.
+    name: isFilterCleared
+    fullName: isFilterCleared
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isFilterCleared: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.Slicer#left:member'
+    summary: "Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Renvoie un «\_l’argument est non valide ou manquant ou a un format incorrect.\_» exception lorsqu’elle est définie avec une valeur négative comme entrée."
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.Slicer#name:member'
+    summary: Représente le nom de la forme.
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.Slicer#selectItems:member(1)'
+    summary: Sélectionne les éléments du Slicer en fonction de leurs clés. Les sélections précédentes sont effacées. Tous les éléments seront sélectionnés par défaut si le tableau est vide.
+    name: selectItems(items)
+    fullName: selectItems(items)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'selectItems(items?: string[]): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.selectItems(["Lemon", "Lime", "Orange"]);
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: items
+          description: Facultatif. Noms des éléments de Slicer spécifiés à sélectionner.
+          type:
+            - 'string[]'
+  - uid: 'excel!Excel.Slicer#slicerItems:member'
+    summary: Représente la collection de SlicerItems qui font partie du segment.
+    name: slicerItems
+    fullName: slicerItems
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicerItems: SlicerItemCollection;'
+      return:
+        type:
+          - 'excel!Excel.SlicerItemCollection:interface'
+  - uid: 'excel!Excel.Slicer#sortBy:member'
+    summary: "Représente l’ordre de tri des éléments dans le segment. Les valeurs possibles sont\_: \"DataSourceOrder\", \"ascending\", \"Descending\"."
+    name: sortBy
+    fullName: sortBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sortBy: SlicerSortType;'
+      return:
+        type:
+          - 'excel!Excel.SlicerSortType:enum'
+  - uid: 'excel!Excel.Slicer#style:member'
+    summary: "Valeur de constante qui représente le style du tableau. Les valeurs possibles sont\_: «\_SlicerStyleLight1\_» à «\_SlicerStyleLight6\_», «\_TableStyleOther1\_» à «\_TableStyleOther2\_», «\_SlicerStyleDark1\_» et «\_SlicerStyleDark6\_». Vous pouvez également indiquer un style personnalisé présent dans le classeur."
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.style = "SlicerStyleLight6";
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.Slicer#top:member'
+    summary: "Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Renvoie un «\_l’argument est non valide ou manquant ou a un format incorrect.\_» exception lorsqu’elle est définie avec une valeur négative comme entrée."
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#width:member'
+    summary: "Représente la largeur, en points, de la forme. Renvoie un «\_l’argument est non valide ou manquant ou a un format incorrect.\_» exception lorsqu’elle est définie avec une valeur négative ou zéro comme entrée."
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Slicer#worksheet:member'
+    summary: Obtenir la feuille de calcul contenant la plage.
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Worksheet;'
+      return:
+        type:
+          - 'excel!Excel.Worksheet:interface'
+references:
+  - uid: 'excel!Excel.SlicerItemCollection:interface'
+    name: SlicerItemCollection
+    fullName: Excel.SlicerItemCollection
+  - uid: 'excel!Excel.SlicerSortType:enum'
+    name: SlicerSortType
+    fullName: Excel.SlicerSortType
+  - uid: 'excel!Excel.Worksheet:interface'
+    name: Worksheet
+    fullName: Excel.Worksheet

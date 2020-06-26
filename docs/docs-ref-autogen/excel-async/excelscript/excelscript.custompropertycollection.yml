@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.CustomPropertyCollection:interface'
+    summary: Contient la collection d’objets customProperty.
+    name: Excel.CustomPropertyCollection
+    fullName: Excel.CustomPropertyCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.CustomPropertyCollection#add:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#load:member(1)'
+  - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
+    summary: Crée une nouvelle propriété personnalisée ou en définit une existante.
+    name: 'add(key, value)'
+    fullName: 'add(key, value)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(key: string, value: any): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: 'Obligatoire. La clé de la propriété personnalisée, qui ne respecte pas la casse. La clé est limitée à 255 caractères en dehors d’Excel sur le Web (les clés plus volumineuses sont automatiquement réduites à 255 caractères sur d’autres plateformes).'
+          type:
+            - string
+        - id: value
+          description: Obligatoire. Valeur de la propriété personnalisée. La valeur est limitée à 255 caractères en dehors d’Excel sur le Web (les valeurs les plus élevées sont automatiquement réduites à 255 caractères sur d’autres plateformes).
+          type:
+            - any
+  - uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+    summary: Supprime toutes les propriétés personnalisées de cette collection.
+    name: deleteAll()
+    fullName: deleteAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient un objet de propriété personnalisé par sa clé, qui ne tient pas compte de la casse. Renvoie un objet null si la propriété personnalisée n’existe pas.'
+    name: getItemOrNullObject(key)
+    fullName: getItemOrNullObject(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Obligatoire. Clé qui identifie l’objet de propriété personnalisée.
+          type:
+            - string
+  - uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.CustomProperty:interface'
+    name: CustomProperty
+    fullName: Excel.CustomProperty

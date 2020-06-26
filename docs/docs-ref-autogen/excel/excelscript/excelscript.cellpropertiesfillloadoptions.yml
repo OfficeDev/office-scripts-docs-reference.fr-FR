@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions:interface'
+    summary: Spécifie les propriétés à charger sur l' `format.fill` objet.
+    name: ExcelScript.CellPropertiesFillLoadOptions
+    fullName: ExcelScript.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#color:member'
+    summary: Spécifie s’il faut charger la `color` propriété.
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#pattern:member'
+    summary: Spécifie s’il faut charger la `pattern` propriété.
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternColor:member'
+    summary: Spécifie s’il faut charger la `patternColor` propriété.
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#patternTintAndShade:member'
+    summary: Spécifie s’il faut charger la `patternTintAndShade` propriété.
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFillLoadOptions#tintAndShade:member'
+    summary: Spécifie s’il faut charger la `tintAndShade` propriété.
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

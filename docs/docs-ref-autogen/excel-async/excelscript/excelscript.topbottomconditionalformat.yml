@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.TopBottomConditionalFormat:interface'
+    summary: Représente un format conditionnel haut/bas.
+    name: Excel.TopBottomConditionalFormat
+    fullName: Excel.TopBottomConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.TopBottomConditionalFormat#format:member'
+      - 'excel!Excel.TopBottomConditionalFormat#load:member(1)'
+      - 'excel!Excel.TopBottomConditionalFormat#rule:member'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#format:member'
+    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.'
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: ConditionalRangeFormat;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeFormat:interface'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#rule:member'
+    summary: Critères du format conditionnel le plus haut/bas.
+    name: rule
+    fullName: rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: ConditionalTopBottomRule;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalTopBottomRule:interface'
+references:
+  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
+    name: ConditionalRangeFormat
+    fullName: Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.ConditionalTopBottomRule:interface'
+    name: ConditionalTopBottomRule
+    fullName: Excel.ConditionalTopBottomRule

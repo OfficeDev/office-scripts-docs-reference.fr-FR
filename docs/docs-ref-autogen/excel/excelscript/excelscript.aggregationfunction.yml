@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
+    summary: Fonction d’agrégation pour le champ de tableau croisé dynamique de données.
+    name: ExcelScript.AggregationFunction
+    fullName: ExcelScript.AggregationFunction
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+      - 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.automatic:member'
+    summary: Excel sélectionne automatiquement l’agrégation en fonction des éléments de données.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.average:member'
+    summary: 'Agrégation à l’aide de la moyenne des données, équivalente à la fonction AVERage.'
+    name: average
+    fullName: average
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.count:member'
+    summary: 'Agrégation à l’aide du nombre d’éléments dans les données, équivalent à la fonction NBVAL.'
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.countNumbers:member'
+    summary: 'Agrégation à l’aide du nombre de nombres dans les données, équivalent à la fonction COUNT.'
+    name: countNumbers
+    fullName: countNumbers
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.max:member'
+    summary: 'Agrégation à l’aide de la valeur maximale des données, équivalente à la fonction MAX.'
+    name: max
+    fullName: max
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.min:member'
+    summary: 'Agrégation à l’aide de la valeur minimale des données, équivalente à la fonction MIN.'
+    name: min
+    fullName: min
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.product:member'
+    summary: 'Agrégation à l’aide du produit des données, équivalent à la fonction PRODUCT.'
+    name: product
+    fullName: product
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member'
+    summary: 'Agrégat à l’aide de l’écart-type des données, équivalent à la fonction STDEV.'
+    name: standardDeviation
+    fullName: standardDeviation
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member'
+    summary: 'Agrégat à l’aide de l’écart-type des données, équivalent à la fonction STDEVP.'
+    name: standardDeviationP
+    fullName: standardDeviationP
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.sum:member'
+    summary: 'Agrégat à l’aide de la somme des données, équivalente à la fonction SUM.'
+    name: sum
+    fullName: sum
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.unknown:member'
+    summary: La fonction d’agrégation est inconnue ou non prise en charge.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.variance:member'
+    summary: 'Agrégat à l’aide de la variance des données, équivalente à la fonction VAR.'
+    name: variance
+    fullName: variance
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.AggregationFunction.varianceP:member'
+    summary: 'Agrégation à l’aide de la variance des données, équivalente à la fonction VARP.'
+    name: varianceP
+    fullName: varianceP
+    langs:
+      - typeScript
+    type: field

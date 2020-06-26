@@ -1,0 +1,216 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeView:interface'
+    summary: RangeView représente un ensemble de cellules visibles de la plage parent.
+    name: Excel.RangeView
+    fullName: Excel.RangeView
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeView#cellAddresses:member'
+      - 'excel!Excel.RangeView#columnCount:member'
+      - 'excel!Excel.RangeView#formulas:member'
+      - 'excel!Excel.RangeView#formulasLocal:member'
+      - 'excel!Excel.RangeView#formulasR1C1:member'
+      - 'excel!Excel.RangeView#getRange:member(1)'
+      - 'excel!Excel.RangeView#index:member'
+      - 'excel!Excel.RangeView#load:member(1)'
+      - 'excel!Excel.RangeView#numberFormat:member'
+      - 'excel!Excel.RangeView#rowCount:member'
+      - 'excel!Excel.RangeView#rows:member'
+      - 'excel!Excel.RangeView#text:member'
+      - 'excel!Excel.RangeView#values:member'
+      - 'excel!Excel.RangeView#valueTypes:member'
+  - uid: 'excel!Excel.RangeView#cellAddresses:member'
+    summary: Représente les adresses de cellule de la RangeView.
+    name: cellAddresses
+    fullName: cellAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellAddresses: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.RangeView#columnCount:member'
+    summary: Nombre de colonnes visibles.
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeView#formulas:member'
+    summary: Représente la formule dans le style de notation A1.
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulas: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.RangeView#formulasLocal:member'
+    summary: 'Represents the formula in A1-style notation, in the user''s language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.'
+    name: formulasLocal
+    fullName: formulasLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasLocal: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.RangeView#formulasR1C1:member'
+    summary: Représente la formule dans le style de notation R1C1.
+    name: formulasR1C1
+    fullName: formulasR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulasR1C1: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.RangeView#getRange:member(1)'
+    summary: Obtient la plage parent associée à l’affichage de plage actuel.
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
+  - uid: 'excel!Excel.RangeView#index:member'
+    summary: Renvoie une valeur qui représente l’index de l’affichage de plage.
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeView#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.RangeView#numberFormat:member'
+    summary: Représente le code de format de nombre d’Excel pour une cellule donnée.
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.RangeView#rowCount:member'
+    summary: Nombre de lignes visibles.
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.RangeView#rows:member'
+    summary: Représente une collection d’affichages de plage associés à la plage.
+    name: rows
+    fullName: rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly rows: RangeViewCollection;'
+      return:
+        type:
+          - 'excel!Excel.RangeViewCollection:interface'
+  - uid: 'excel!Excel.RangeView#text:member'
+    summary: Valeurs de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La \# substitution de signe qui se produit dans l’interface utilisateur d’Excel n’affecte pas la valeur de texte renvoyée par l’API.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly text: string[][];'
+      return:
+        type:
+          - 'string[][]'
+  - uid: 'excel!Excel.RangeView#values:member'
+    summary: 'Représente les valeurs brutes de l’affichage de plage spécifié. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Les cellules contenant une erreur renvoie la chaîne d’erreur.'
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: any[][];'
+      return:
+        type:
+          - 'any[][]'
+  - uid: 'excel!Excel.RangeView#valueTypes:member'
+    summary: Représente le type de données de chaque cellule.
+    name: valueTypes
+    fullName: valueTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valueTypes: RangeValueType[][];'
+      return:
+        type:
+          - 'excel!Excel.RangeView#valueTypes~0:complex'
+references:
+  - uid: 'excel!Excel.Range:interface'
+    name: Range
+    fullName: Excel.Range
+  - uid: 'excel!Excel.RangeViewCollection:interface'
+    name: RangeViewCollection
+    fullName: Excel.RangeViewCollection
+  - uid: 'excel!Excel.RangeView#valueTypes~0:complex'
+    name: 'RangeValueType[][]'
+    fullName: 'Excel.RangeValueType[][]'
+    spec.typeScript:
+      - uid: 'excel!Excel.RangeValueType:enum'
+        name: RangeValueType
+        fullName: Excel.RangeValueType
+      - name: '[][]'
+        fullName: '[][]'

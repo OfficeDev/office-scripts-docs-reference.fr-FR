@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill:interface'
+    summary: 'Représente les `format.fill` propriétés d''`getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le `format.fill` paramètre d’entrée de`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et`setColumnProperties`<!-- -->.'
+    name: ExcelScript.CellPropertiesFill
+    fullName: ExcelScript.CellPropertiesFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellPropertiesFill#color:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFill#pattern:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFill#patternColor:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
+      - 'ExcelScript!ExcelScript.CellPropertiesFill#tintAndShade:member'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#color:member'
+    summary: Représente la `format.fill.color` propriété.
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#pattern:member'
+    summary: Représente la `format.fill.pattern` propriété.
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: FillPattern;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.FillPattern:enum'
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#patternColor:member'
+    summary: Représente la `format.fill.patternColor` propriété.
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#patternTintAndShade:member'
+    summary: Représente la `format.fill.patternTintAndShade` propriété.
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: 'ExcelScript!ExcelScript.CellPropertiesFill#tintAndShade:member'
+    summary: Représente la `format.fill.tintAndShade` propriété.
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+references:
+  - uid: 'ExcelScript!ExcelScript.FillPattern:enum'
+    name: FillPattern
+    fullName: ExcelScript.FillPattern

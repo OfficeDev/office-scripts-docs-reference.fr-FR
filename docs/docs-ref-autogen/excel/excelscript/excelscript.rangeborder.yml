@@ -1,0 +1,167 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.RangeBorder:interface'
+    summary: Cet objet représente la bordure d'un objet.
+    name: ExcelScript.RangeBorder
+    fullName: ExcelScript.RangeBorder
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.RangeBorder#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setColor:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
+      - 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getColor:member(1)'
+    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
+    summary: 'Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir Excel. BorderIndex.'
+    name: getSideIndex()
+    fullName: getSideIndex()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSideIndex(): BorderIndex;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderIndex:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    name: getStyle()
+    fullName: getStyle()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStyle(): BorderLineStyle;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
+    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
+    name: getTintAndShade()
+    fullName: getTintAndShade()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTintAndShade(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
+    summary: 'Spécifie l''épaisseur de la bordure autour d''une plage. Pour plus d’informations, voir Excel. BorderWeight.'
+    name: getWeight()
+    fullName: getWeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWeight(): BorderWeight;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BorderWeight:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setColor:member(1)'
+    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    name: setStyle(style)
+    fullName: setStyle(style)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStyle(style: BorderLineStyle): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: style
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
+    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
+    name: setTintAndShade(tintAndShade)
+    fullName: setTintAndShade(tintAndShade)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTintAndShade(tintAndShade: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tintAndShade
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
+    summary: 'Spécifie l''épaisseur de la bordure autour d''une plage. Pour plus d’informations, voir Excel. BorderWeight.'
+    name: setWeight(weight)
+    fullName: setWeight(weight)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setWeight(weight: BorderWeight): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: weight
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.BorderWeight:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.BorderIndex:enum'
+    name: BorderIndex
+    fullName: ExcelScript.BorderIndex
+  - uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
+    name: BorderLineStyle
+    fullName: ExcelScript.BorderLineStyle
+  - uid: 'ExcelScript!ExcelScript.BorderWeight:enum'
+    name: BorderWeight
+    fullName: ExcelScript.BorderWeight

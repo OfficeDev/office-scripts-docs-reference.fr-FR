@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.RangeSort:interface'
+    summary: Gère les opérations de tri des objets Range.
+    name: Excel.RangeSort
+    fullName: Excel.RangeSort
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.RangeSort#apply:member(1)'
+      - 'excel!Excel.RangeSort#load:member(1)'
+  - uid: 'excel!Excel.RangeSort#apply:member(1)'
+    summary: Effectue une opération de tri.
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        apply(
+                    fields: SortField[],
+                    matchCase?: boolean,
+                    hasHeaders?: boolean,
+                    orientation?: SortOrientation,
+                    method?: SortMethod
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: Liste des conditions de tri.
+          type:
+            - 'excel!Excel.RangeSort#apply~0:complex'
+        - id: matchCase
+          description: Facultatif. Indique si la casse influe sur le classement des chaînes.
+          type:
+            - boolean
+        - id: hasHeaders
+          description: Facultatif. Indique si la plage comporte un en-tête.
+          type:
+            - boolean
+        - id: orientation
+          description: Facultatif. Indique si l’opération trie les lignes ou les colonnes.
+          type:
+            - 'excel!Excel.SortOrientation:enum'
+        - id: method
+          description: Facultatif. Méthode de classement utilisée pour les caractères chinois.
+          type:
+            - 'excel!Excel.SortMethod:enum'
+  - uid: 'excel!Excel.RangeSort#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.RangeSort#apply~0:complex'
+    name: 'SortField[]'
+    fullName: 'Excel.SortField[]'
+    spec.typeScript:
+      - uid: 'excel!Excel.SortField:interface'
+        name: SortField
+        fullName: Excel.SortField
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'excel!Excel.SortOrientation:enum'
+    name: SortOrientation
+    fullName: Excel.SortOrientation
+  - uid: 'excel!Excel.SortMethod:enum'
+    name: SortMethod
+    fullName: Excel.SortMethod
