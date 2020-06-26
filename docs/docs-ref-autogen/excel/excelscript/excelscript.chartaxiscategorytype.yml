@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
+    summary: Spécifie le type d’axe des abscisses.
+    name: ExcelScript.ChartAxisCategoryType
+    fullName: ExcelScript.ChartAxisCategoryType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+      - 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.automatic:member'
+    summary: Excel contrôle le type d'axe.
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.dateAxis:member'
+    summary: L'axe regroupe les données sur une échelle de temps.
+    name: dateAxis
+    fullName: dateAxis
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType.textAxis:member'
+    summary: L'axe regroupe les données selon un ensemble arbitraire de catégories.
+    name: textAxis
+    fullName: textAxis
+    langs:
+      - typeScript
+    type: field

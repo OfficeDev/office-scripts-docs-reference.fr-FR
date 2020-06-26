@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRule:interface'
+    summary: Représente une règle pour tous les jumelages de règles/mises en forme classiques.
+    name: ExcelScript.ConditionalFormatRule
+    fullName: ExcelScript.ConditionalFormatRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalFormatRule#getFormula:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalFormatRule#getFormulaLocal:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalFormatRule#setFormula:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalFormatRule#setFormulaLocal:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRule#getFormula:member(1)'
+    summary: 'Formule, si nécessaire, servant à évaluer la règle de mise en forme conditionnelle.'
+    name: getFormula()
+    fullName: getFormula()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormula(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRule#getFormulaLocal:member(1)'
+    summary: 'Formule, si nécessaire, servant à évaluer la règle de mise en forme conditionnelle dans la langue de l’utilisateur.'
+    name: getFormulaLocal()
+    fullName: getFormulaLocal()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormulaLocal(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRule#setFormula:member(1)'
+    summary: 'Formule, si nécessaire, servant à évaluer la règle de mise en forme conditionnelle.'
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRule#setFormulaLocal:member(1)'
+    summary: 'Formule, si nécessaire, servant à évaluer la règle de mise en forme conditionnelle dans la langue de l’utilisateur.'
+    name: setFormulaLocal(formulaLocal)
+    fullName: setFormulaLocal(formulaLocal)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormulaLocal(formulaLocal: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formulaLocal
+          description: ''
+          type:
+            - string

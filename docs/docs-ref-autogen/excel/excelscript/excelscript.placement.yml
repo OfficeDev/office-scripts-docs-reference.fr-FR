@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.Placement:enum'
+    summary: Indique la manière dont un objet est lié à ses cellules sous-jacentes.
+    name: ExcelScript.Placement
+    fullName: ExcelScript.Placement
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.Placement.absolute:member'
+      - 'ExcelScript!ExcelScript.Placement.oneCell:member'
+      - 'ExcelScript!ExcelScript.Placement.twoCell:member'
+  - uid: 'ExcelScript!ExcelScript.Placement.absolute:member'
+    summary: L’objet est flottante.
+    name: absolute
+    fullName: absolute
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.oneCell:member'
+    summary: L’objet est déplacé et redimensionné avec les cellules.
+    name: oneCell
+    fullName: oneCell
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.Placement.twoCell:member'
+    summary: L’objet est déplacé avec les cellules.
+    name: twoCell
+    fullName: twoCell
+    langs:
+      - typeScript
+    type: field

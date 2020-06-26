@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
+    summary: Représente la protection d’un objet Workbook.
+    name: ExcelScript.WorkbookProtection
+    fullName: ExcelScript.WorkbookProtection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+      - 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
+    summary: Indique si le classeur est protégé.
+    name: getProtected()
+    fullName: getProtected()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProtected(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
+    summary: Protège un classeur. Échoue si le classeur est protégé.
+    name: protect(password)
+    fullName: protect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: mot de passe de protection du classeur.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
+    summary: Annule la protection un classeur.
+    name: unprotect(password)
+    fullName: unprotect(password)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: mot de passe de protection du classeur.
+          type:
+            - string

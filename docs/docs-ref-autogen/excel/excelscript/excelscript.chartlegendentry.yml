@@ -1,0 +1,114 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry:interface'
+    summary: Représente le legendEntry dans legendEntryCollection.
+    name: ExcelScript.ChartLegendEntry
+    fullName: ExcelScript.ChartLegendEntry
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)'
+    summary: Cette énumération spécifie la hauteur de la fonction legendEntry sur la légende du graphique.
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)'
+    summary: Spécifie l’index de legendEntry dans la légende du graphique.
+    name: getIndex()
+    fullName: getIndex()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIndex(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)'
+    summary: Spécifie la partie gauche d’un graphique legendEntry.
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)'
+    summary: Spécifie le bord supérieur d’un graphique legendEntry.
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)'
+    summary: Représente la partie visible d’une entrée de légende de graphique.
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)'
+    summary: Représente la largeur de legendEntry sur la légende d’un graphique.
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)'
+    summary: Représente la partie visible d’une entrée de légende de graphique.
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean

@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:interface'
+    summary: Représente un format de DataBar de mise en forme conditionnelle pour le côté positif de la barre de données.
+    name: Excel.ConditionalDataBarPositiveFormat
+    fullName: Excel.ConditionalDataBarPositiveFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
+    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»). \"\" (chaîne vide) si aucune bordure n’est présente ou définie."
+    name: borderColor
+    fullName: borderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
+    summary: "Code couleur HTML qui représente la couleur de remplissage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: fillColor
+    fullName: fillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fillColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
+    summary: Indique si le DataBar a un dégradé.
+    name: gradientFill
+    fullName: gradientFill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientFill: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'

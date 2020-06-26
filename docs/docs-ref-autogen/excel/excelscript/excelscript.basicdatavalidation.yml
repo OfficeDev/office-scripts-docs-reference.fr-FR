@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.BasicDataValidation:interface'
+    summary: Représente les critères de validation des données de type de base.
+    name: ExcelScript.BasicDataValidation
+    fullName: ExcelScript.BasicDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
+      - 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
+      - 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
+  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1:member'
+    summary: "Spécifie l’opérande de droite lorsque la propriété Operator est définie sur un opérateur binaire tel que GreaterThan (l’opérande de gauche est la valeur que l’utilisateur tente d’entrer dans la cellule). Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande inférieur. Par exemple, si vous définissez l’option Formula1 sur 10 et l’opérateur sur GreaterThan, les données valides de la plage doivent être supérieures à 10. Lorsque vous définissez la valeur, elle peut être transmise sous la forme d’un nombre, d’un objet Range ou d’une formule de chaîne (où la chaîne est soit un nombre JSON, soit une référence de cellule telle que «\_= a1\_», soit une formule telle que «\_= MIN (a1, B1)\_»). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple\_: \"= 10\", \"= a1\", \"= SUM (a1\_: B5)\", etc."
+    name: formula1
+    fullName: formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string | number | Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BasicDataValidation#formula1~0:complex'
+  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2:member'
+    summary: "Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande supérieur. N’est pas utilisé avec les opérateurs binaires, tels que GreaterThan. Lorsque vous définissez la valeur, elle peut être transmise sous la forme d’un nombre, d’un objet Range ou d’une formule de chaîne (où la chaîne est soit un nombre JSON, soit une référence de cellule telle que «\_= a1\_», soit une formule telle que «\_= MIN (a1, B1)\_»). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple\_: \"= 10\", \"= a1\", \"= SUM (a1\_: B5)\", etc."
+    name: formula2
+    fullName: formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string | number | Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.BasicDataValidation#formula2~0:complex'
+  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#operator:member'
+    summary: L’opérateur à utiliser pour la validation des données.
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: DataValidationOperator;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.DataValidationOperator:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula1~0:complex'
+    name: string | number | Range
+    fullName: string | number | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | number | '
+        fullName: 'string | number | '
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.BasicDataValidation#formula2~0:complex'
+    name: string | number | Range
+    fullName: string | number | ExcelScript.Range
+    spec.typeScript:
+      - name: 'string | number | '
+        fullName: 'string | number | '
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+  - uid: 'ExcelScript!ExcelScript.DataValidationOperator:enum'
+    name: DataValidationOperator
+    fullName: ExcelScript.DataValidationOperator

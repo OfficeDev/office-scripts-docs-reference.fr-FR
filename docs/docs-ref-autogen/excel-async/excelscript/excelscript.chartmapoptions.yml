@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ChartMapOptions:interface'
+    summary: Encapsule les propriétés d’un graphique de carte de région.
+    name: Excel.ChartMapOptions
+    fullName: Excel.ChartMapOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ChartMapOptions#labelStrategy:member'
+      - 'excel!Excel.ChartMapOptions#level:member'
+      - 'excel!Excel.ChartMapOptions#load:member(1)'
+      - 'excel!Excel.ChartMapOptions#projectionType:member'
+  - uid: 'excel!Excel.ChartMapOptions#labelStrategy:member'
+    summary: Cette énumération spécifie la stratégie d’étiquettes de cartes d’un graphique de carte de région.
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelStrategy: ChartMapLabelStrategy;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapLabelStrategy:enum'
+  - uid: 'excel!Excel.ChartMapOptions#level:member'
+    summary: Spécifie le niveau de mappage de série d’un graphique de carte de région.
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level: ChartMapAreaLevel;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapAreaLevel:enum'
+  - uid: 'excel!Excel.ChartMapOptions#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ChartMapOptions#projectionType:member'
+    summary: Indique le type de projection de série d’un graphique de carte de région.
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType: ChartMapProjectionType;'
+      return:
+        type:
+          - 'excel!Excel.ChartMapProjectionType:enum'
+references:
+  - uid: 'excel!Excel.ChartMapLabelStrategy:enum'
+    name: ChartMapLabelStrategy
+    fullName: Excel.ChartMapLabelStrategy
+  - uid: 'excel!Excel.ChartMapAreaLevel:enum'
+    name: ChartMapAreaLevel
+    fullName: Excel.ChartMapAreaLevel
+  - uid: 'excel!Excel.ChartMapProjectionType:enum'
+    name: ChartMapProjectionType
+    fullName: Excel.ChartMapProjectionType

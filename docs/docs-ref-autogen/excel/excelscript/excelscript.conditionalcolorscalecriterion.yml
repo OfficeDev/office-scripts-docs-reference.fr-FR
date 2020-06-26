@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
+    summary: 'Représente un critère d’étendue de couleur qui contient un type, une valeur et une couleur.'
+    name: ExcelScript.ConditionalColorScaleCriterion
+    fullName: ExcelScript.ConditionalColorScaleCriterion
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
+      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
+    summary: 'Représentation de code de couleur HTML de la couleur d’une image d’une couleur (par exemple, \# FF0000 représente le rouge).'
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
+    summary: 'Nombre, formule ou null (si le type est LowestValue).'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type:
+          - string
+  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
+    summary: La formule conditionnelle de critère qui doit être basée.
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: ConditionalFormatColorCriterionType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
+    name: ConditionalFormatColorCriterionType
+    fullName: ExcelScript.ConditionalFormatColorCriterionType

@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ColorScaleConditionalFormat:interface'
+    summary: Représente les critères ColorScale pour la mise en forme conditionnelle.
+    name: Excel.ColorScaleConditionalFormat
+    fullName: Excel.ColorScaleConditionalFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ColorScaleConditionalFormat#criteria:member'
+      - 'excel!Excel.ColorScaleConditionalFormat#load:member(1)'
+      - 'excel!Excel.ColorScaleConditionalFormat#threeColorScale:member'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#criteria:member'
+    summary: Les critères de l’étendue de couleur. Le milieu est facultatif lors de l’utilisation d’une graduation de couleurs à deux points.
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria: ConditionalColorScaleCriteria;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalColorScaleCriteria:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B2:M5");
+              let conditionalFormat = range.conditionalFormats
+                  .add(Excel.ConditionalFormatType.colorScale);
+              let criteria = {
+                  minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+                  midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+                  maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+              };
+              conditionalFormat.colorScale.criteria = criteria;
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ColorScaleConditionalFormat#threeColorScale:member'
+    summary: 'Si la valeur est true, l’échelle de couleurs aura trois points (minimum, milieu, maximum), sinon elle aura deux (minimum, maximum).'
+    name: threeColorScale
+    fullName: threeColorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly threeColorScale: boolean;'
+      return:
+        type:
+          - boolean
+references:
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
+    name: ConditionalColorScaleCriteria
+    fullName: Excel.ConditionalColorScaleCriteria

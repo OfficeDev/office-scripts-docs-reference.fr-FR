@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
+    name: ExcelScript.PrintOrder
+    fullName: ExcelScript.PrintOrder
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
+      - 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
+  - uid: 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
+    summary: Traite les lignes les unes après les autres de haut en bas avant de traiter les pages ou champs de page vers la droite.
+    name: downThenOver
+    fullName: downThenOver
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
+    summary: Traite les pages ou champs page vers la droite avant de descendre à la ligne suivante.
+    name: overThenDown
+    fullName: overThenDown
+    langs:
+      - typeScript
+    type: field

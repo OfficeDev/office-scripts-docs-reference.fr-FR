@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartPointFormat:interface'
+    summary: Représente l’objet de formatage des points du graphique.
+    name: ExcelScript.ChartPointFormat
+    fullName: ExcelScript.ChartPointFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)'
+    summary: 'Représente le format de bordure d’un point de données de graphique, qui inclut les informations de couleur, de style et de poids.'
+    name: getBorder()
+    fullName: getBorder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)'
+    summary: 'Représente le format de remplissage d’un graphique, qui inclut des informations de mise en forme de l’arrière-plan.'
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
+    name: ChartBorder
+    fullName: ExcelScript.ChartBorder
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill

@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat:interface'
+    summary: Représente les propriétés de mise en forme pour le graphique plotArea.
+    name: ExcelScript.ChartPlotAreaFormat
+    fullName: ExcelScript.ChartPlotAreaFormat
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)'
+    summary: Cette énumération spécifie les attributs de bordure d’un graphique plotArea.
+    name: getBorder()
+    fullName: getBorder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartBorder:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)'
+    summary: 'Spécifie le format de remplissage d’un objet, qui inclut les informations de mise en forme de l’arrière-plan.'
+    name: getFill()
+    fullName: getFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFill:interface'
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
+    name: ChartBorder
+    fullName: ExcelScript.ChartBorder
+  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
+    name: ChartFill
+    fullName: ExcelScript.ChartFill

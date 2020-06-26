@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill:interface'
+    summary: Représente l’arrière-plan d’un objet de plage conditionnelle.
+    name: ExcelScript.ConditionalRangeFill
+    fullName: ExcelScript.ConditionalRangeFill
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
+      - 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
+    summary: Réinitialise le remplissage.
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
+    summary: "Code couleur HTML qui représente la couleur du remplissage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: getColor()
+    fullName: getColor()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
+    summary: "Code couleur HTML qui représente la couleur du remplissage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: setColor(color)
+    fullName: setColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string

@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotItemCollection:interface'
+    summary: Représente une collection de tous les éléments de tableau croisé dynamique liés à leur champ PivotField parent.
+    name: Excel.PivotItemCollection
+    fullName: Excel.PivotItemCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotItemCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotItemCollection#getItemOrNullObject:member(1)'
+    summary: 'Obtient un PivotItem par nom. Si PivotItem n’existe pas, renvoie un objet null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotItem;'
+      return:
+        type:
+          - 'excel!Excel.PivotItem:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom du PivotItem à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotItemCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PivotItem:interface'
+    name: PivotItem
+    fullName: Excel.PivotItem

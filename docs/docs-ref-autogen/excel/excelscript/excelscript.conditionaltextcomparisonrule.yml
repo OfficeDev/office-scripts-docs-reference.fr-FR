@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
+    summary: Représente une règle de format conditionnel de valeur de cellule
+    name: ExcelScript.ConditionalTextComparisonRule
+    fullName: ExcelScript.ConditionalTextComparisonRule
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#operator:member'
+      - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#text:member'
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#operator:member'
+    summary: Opérateur du format conditionnel de texte.
+    name: operator
+    fullName: operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: ConditionalTextOperator;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ConditionalTextOperator:enum'
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule#text:member'
+    summary: Valeur de texte de la mise en forme conditionnelle.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+references:
+  - uid: 'ExcelScript!ExcelScript.ConditionalTextOperator:enum'
+    name: ConditionalTextOperator
+    fullName: ExcelScript.ConditionalTextOperator

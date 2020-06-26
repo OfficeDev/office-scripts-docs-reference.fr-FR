@@ -1,0 +1,447 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartTitle:interface'
+    summary: Représente un objet de titre pour un graphique.
+    name: ExcelScript.ChartTitle
+    fullName: ExcelScript.ChartTitle
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getTop:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setText:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setTop:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getFormat:member(1)'
+    summary: 'Représente le format du titre d’un graphique, à savoir le format de remplissage et de la police.'
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartTitleFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getHeight:member(1)'
+    summary: 'Représente la hauteur, exprimée en points, du titre du graphique. NULL si le titre du graphique n’est pas visible.'
+    name: getHeight()
+    fullName: getHeight()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeight(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getHorizontalAlignment:member(1)'
+    summary: Spécifie l’alignement horizontal du titre du graphique.
+    name: getHorizontalAlignment()
+    fullName: getHorizontalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getLeft:member(1)'
+    summary: 'Indique la distance, en points, entre le bord gauche du titre du graphique et le bord gauche de la zone de graphique. NULL si le titre du graphique n’est pas visible.'
+    name: getLeft()
+    fullName: getLeft()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLeft(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getOverlay:member(1)'
+    summary: Indique si le titre du graphique chevauche le graphique.
+    name: getOverlay()
+    fullName: getOverlay()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOverlay(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getPosition:member(1)'
+    summary: 'Représente la position du titre du graphique. Pour plus d’informations, voir Excel. ChartTitlePosition.'
+    name: getPosition()
+    fullName: getPosition()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPosition(): ChartTitlePosition;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getShowShadow:member(1)'
+    summary: Représente une valeur booléenne qui détermine si le titre du graphique possède une ombre.
+    name: getShowShadow()
+    fullName: getShowShadow()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowShadow(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getSubstring:member(1)'
+    summary: Obtenir la sous-chaîne d’un titre de graphique. Saut de ligne'<!-- -->\\<!-- -->n’compte également un seul caractère.
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length: number): ChartFormatString;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartFormatString:interface'
+        description: ''
+      parameters:
+        - id: start
+          description: Position de début de la sous-chaîne à récupérer. Position commence par 0.
+          type:
+            - number
+        - id: length
+          description: Longueur de la sous-chaîne à récupérer.
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getText:member(1)'
+    summary: Spécifie le texte du titre du graphique.
+    name: getText()
+    fullName: getText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getTextOrientation:member(1)'
+    summary: Spécifie l’angle auquel le texte est orienté pour le titre du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+    name: getTextOrientation()
+    fullName: getTextOrientation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getTop:member(1)'
+    summary: 'Indique la distance, en points, entre le bord supérieur du titre du graphique et le haut de la zone de graphique. NULL si le titre du graphique n’est pas visible.'
+    name: getTop()
+    fullName: getTop()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTop(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getVerticalAlignment:member(1)'
+    summary: 'Indique l’alignement vertical du titre du graphique. Pour plus d’informations, voir Excel. ChartTextVerticalAlignment.'
+    name: getVerticalAlignment()
+    fullName: getVerticalAlignment()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getVisible:member(1)'
+    summary: Indique si le titre du graphique est visibile.
+    name: getVisible()
+    fullName: getVisible()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getVisible(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#getWidth:member(1)'
+    summary: 'Indique la largeur, exprimée en points, du titre du graphique. NULL si le titre du graphique n’est pas visible.'
+    name: getWidth()
+    fullName: getWidth()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWidth(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setFormula:member(1)'
+    summary: Définit une valeur de chaîne qui représente la formule de titre de graphique à l’aide de la notation de style A1.
+    name: setFormula(formula)
+    fullName: setFormula(formula)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: Valeur de type String qui représente la formule à définir.
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setHorizontalAlignment:member(1)'
+    summary: Spécifie l’alignement horizontal du titre du graphique.
+    name: setHorizontalAlignment(horizontalAlignment)
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setHorizontalAlignment(
+                    horizontalAlignment: ChartTextHorizontalAlignment
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setLeft:member(1)'
+    summary: 'Indique la distance, en points, entre le bord gauche du titre du graphique et le bord gauche de la zone de graphique. NULL si le titre du graphique n’est pas visible.'
+    name: setLeft(left)
+    fullName: setLeft(left)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setLeft(left: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: left
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setOverlay:member(1)'
+    summary: Indique si le titre du graphique chevauche le graphique.
+    name: setOverlay(overlay)
+    fullName: setOverlay(overlay)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setOverlay(overlay: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: overlay
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setPosition:member(1)'
+    summary: 'Représente la position du titre du graphique. Pour plus d’informations, voir Excel. ChartTitlePosition.'
+    name: setPosition(position)
+    fullName: setPosition(position)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPosition(position: ChartTitlePosition): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: position
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setShowShadow:member(1)'
+    summary: Représente une valeur booléenne qui détermine si le titre du graphique possède une ombre.
+    name: setShowShadow(showShadow)
+    fullName: setShowShadow(showShadow)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowShadow(showShadow: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showShadow
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setText:member(1)'
+    summary: Spécifie le texte du titre du graphique.
+    name: setText(text)
+    fullName: setText(text)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setText(text: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: text
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setTextOrientation:member(1)'
+    summary: Spécifie l’angle auquel le texte est orienté pour le titre du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+    name: setTextOrientation(textOrientation)
+    fullName: setTextOrientation(textOrientation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: textOrientation
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setTop:member(1)'
+    summary: 'Indique la distance, en points, entre le bord supérieur du titre du graphique et le haut de la zone de graphique. NULL si le titre du graphique n’est pas visible.'
+    name: setTop(top)
+    fullName: setTop(top)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTop(top: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: top
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setVerticalAlignment:member(1)'
+    summary: 'Indique l’alignement vertical du titre du graphique. Pour plus d’informations, voir Excel. ChartTextVerticalAlignment.'
+    name: setVerticalAlignment(verticalAlignment)
+    fullName: setVerticalAlignment(verticalAlignment)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setVerticalAlignment(
+                    verticalAlignment: ChartTextVerticalAlignment
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+  - uid: 'ExcelScript!ExcelScript.ChartTitle#setVisible:member(1)'
+    summary: Indique si le titre du graphique est visibile.
+    name: setVisible(visible)
+    fullName: setVisible(visible)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setVisible(visible: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: visible
+          description: ''
+          type:
+            - boolean
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartTitleFormat:interface'
+    name: ChartTitleFormat
+    fullName: ExcelScript.ChartTitleFormat
+  - uid: 'ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum'
+    name: ChartTextHorizontalAlignment
+    fullName: ExcelScript.ChartTextHorizontalAlignment
+  - uid: 'ExcelScript!ExcelScript.ChartTitlePosition:enum'
+    name: ChartTitlePosition
+    fullName: ExcelScript.ChartTitlePosition
+  - uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
+    name: ChartFormatString
+    fullName: ExcelScript.ChartFormatString
+  - uid: 'ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum'
+    name: ChartTextVerticalAlignment
+    fullName: ExcelScript.ChartTextVerticalAlignment

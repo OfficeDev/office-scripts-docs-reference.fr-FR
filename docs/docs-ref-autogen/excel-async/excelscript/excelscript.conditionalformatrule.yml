@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalFormatRule:interface'
+    summary: Représente une règle pour tous les jumelages de règles/mises en forme classiques.
+    name: Excel.ConditionalFormatRule
+    fullName: Excel.ConditionalFormatRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalFormatRule#formula:member'
+      - 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
+      - 'excel!Excel.ConditionalFormatRule#load:member(1)'
+  - uid: 'excel!Excel.ConditionalFormatRule#formula:member'
+    summary: 'Formule, si nécessaire, servant à évaluer la règle de mise en forme conditionnelle.'
+    name: formula
+    fullName: formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let sheet = context.workbook.worksheets.getItem("Sample");
+              let range = sheet.getRange("B8:E13");
+              let conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+              conditionalFormat.custom.format.font.color = "green";
+
+              await context.sync();
+          }
+          ```
+  - uid: 'excel!Excel.ConditionalFormatRule#formulaLocal:member'
+    summary: 'Formule, si nécessaire, servant à évaluer la règle de mise en forme conditionnelle dans la langue de l’utilisateur.'
+    name: formulaLocal
+    fullName: formulaLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaLocal: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalFormatRule#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'

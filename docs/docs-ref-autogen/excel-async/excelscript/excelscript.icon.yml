@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.Icon:interface'
+    summary: Représente une icône de cellule.
+    name: Excel.Icon
+    fullName: Excel.Icon
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.Icon#index:member'
+      - 'excel!Excel.Icon#set:member'
+  - uid: 'excel!Excel.Icon#index:member'
+    summary: Spécifie l’index de l’icône dans l’ensemble donné.
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.Icon#set:member'
+    summary: Spécifie l’ensemble de l’icône.
+    name: set
+    fullName: set
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'set: IconSet;'
+      return:
+        type:
+          - 'excel!Excel.IconSet:enum'
+references:
+  - uid: 'excel!Excel.IconSet:enum'
+    name: IconSet
+    fullName: Excel.IconSet

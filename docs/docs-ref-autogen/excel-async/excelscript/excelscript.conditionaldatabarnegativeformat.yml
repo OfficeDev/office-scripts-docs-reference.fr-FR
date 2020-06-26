@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat:interface'
+    summary: Représente un format de DataBar de mise en forme conditionnelle pour le côté négatif de la barre de données.
+    name: Excel.ConditionalDataBarNegativeFormat
+    fullName: Excel.ConditionalDataBarNegativeFormat
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
+    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»). «\_Chaîne vide\_» si aucune bordure n’est présente ou définie."
+    name: borderColor
+    fullName: borderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
+    summary: "Code couleur HTML qui représente la couleur de remplissage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
+    name: fillColor
+    fullName: fillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fillColor: string;'
+      return:
+        type:
+          - string
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
+    summary: Indique si le DataBar négatif a la même couleur de bordure que le DataBar positif.
+    name: matchPositiveBorderColor
+    fullName: matchPositiveBorderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPositiveBorderColor: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
+    summary: Indique si le DataBar négatif a la même couleur de remplissage que le DataBar positif.
+    name: matchPositiveFillColor
+    fullName: matchPositiveFillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPositiveFillColor: boolean;'
+      return:
+        type:
+          - boolean

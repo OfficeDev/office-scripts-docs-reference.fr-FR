@@ -1,0 +1,136 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableCollection:interface'
+    summary: Représente une collection de tous les tableaux croisés dynamiques du classeur ou de la feuille de travail.
+    name: Excel.PivotTableCollection
+    fullName: Excel.PivotTableCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableCollection#add:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableCollection#load:member(1)'
+      - 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
+  - uid: 'excel!Excel.PivotTableCollection#add:member(1)'
+    summary: Ajoutez un tableau croisé dynamique basé sur les données sources spécifiées et insérez-le dans la cellule située en haut à gauche de la plage de destination.
+    name: 'add(name, source, destination)'
+    fullName: 'add(name, source, destination)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    name: string,
+                    source: Range | string | Table,
+                    destination: Range | string
+                ): PivotTable;
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: |-
+
+
+          #### <a name="examples"></a>Exemples
+
+          ```typescript
+          async function main(context: Excel.RequestContext) {
+              let rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
+              let rangeToPlacePivot = context.workbook.worksheets.getItem("Pivot").getRange("A2");
+              context.workbook.worksheets.getItem("Pivot").pivotTables.add("Farm Sales", rangeToAnalyze, rangeToPlacePivot);
+
+              await context.sync();
+          }
+          ```
+      parameters:
+        - id: name
+          description: Nom du nouveau tableau croisé dynamique.
+          type:
+            - string
+        - id: source
+          description: 'Les données source du nouveau tableau croisé dynamique, il peut s’agir d’une plage (ou d’une adresse de chaîne incluant le nom de la feuille de calcul) ou d’un tableau.'
+          type:
+            - 'excel!Excel.PivotTableCollection#add~0:complex'
+        - id: destination
+          description: Cellule située dans le coin supérieur gauche de la plage de destination du rapport de tableau croisé dynamique (plage de la feuille de calcul destinée à recevoir le rapport obtenu).
+          type:
+            - 'excel!Excel.PivotTableCollection#add~1:complex'
+  - uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
+    summary: 'Extrait un tableau croisé dynamique par nom. Si le tableau croisé dynamique n’existe pas, renvoie un objet null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom du tableau croisé dynamique à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+  - uid: 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
+    summary: Actualise tous les tableaux croisés dynamiques de la collection.
+    name: refreshAll()
+    fullName: refreshAll()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'excel!Excel.PivotTable:interface'
+    name: PivotTable
+    fullName: Excel.PivotTable
+  - uid: 'excel!Excel.PivotTableCollection#add~0:complex'
+    name: Range | string | Table
+    fullName: Excel.Range | string | Excel.Table
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: ' | string | '
+        fullName: ' | string | '
+      - uid: 'excel!Excel.Table:interface'
+        name: Table
+        fullName: Excel.Table
+  - uid: 'excel!Excel.PivotTableCollection#add~1:complex'
+    name: Range | string
+    fullName: Excel.Range | string
+    spec.typeScript:
+      - uid: 'excel!Excel.Range:interface'
+        name: Range
+        fullName: Excel.Range
+      - name: |2-
+           | string
+                  
+        fullName: |2-
+           | string

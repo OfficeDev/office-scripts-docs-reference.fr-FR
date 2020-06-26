@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes:interface'
+    name: ExcelScript.WorksheetFreezePanes
+    fullName: ExcelScript.WorksheetFreezePanes
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)'
+    summary: Définit les cellules figées dans l’affichage de la feuille de calcul active. La plage fournie correspond aux cellules qui seront figées dans le volet supérieur et le volet de gauche.
+    name: freezeAt(frozenRange)
+    fullName: freezeAt(frozenRange)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeAt(frozenRange: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: frozenRange
+          description: Plage qui représente les cellules à figer ou null pour supprimer tous les volets figés.
+          type:
+            - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
+    summary: Figer la/les première(s) colonne(s) de la feuille de calcul en place.
+    name: freezeColumns(count)
+    fullName: freezeColumns(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeColumns(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: 'Nombre facultatif de colonnes à geler, ou zéro pour libérer toutes les colonnes'
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
+    summary: Figer la/les première(s) ligne(s) de la feuille de calcul en place.
+    name: freezeRows(count)
+    fullName: freezeRows(count)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'freezeRows(count?: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: 'Nombre facultatif de lignes à geler, ou zéro pour libérer toutes les lignes'
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)'
+    summary: 'Obtient une plage qui définit les cellules figées dans l’affichage de la feuille de calcul active. La plage figée correspond aux cellules qui sont figées dans le volet supérieur et le volet de gauche. S’il n’y a pas de volet figé, renvoie un objet null.'
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#unfreeze:member(1)'
+    summary: Supprime tous les volets figés dans la feuille de calcul.
+    name: unfreeze()
+    fullName: unfreeze()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unfreeze(): void;'
+      return:
+        type:
+          - void
+        description: ''
+references:
+  - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
+    name: Range | string
+    fullName: ExcelScript.Range | string
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Range:interface'
+        name: Range
+        fullName: ExcelScript.Range
+      - name: ' | string'
+        fullName: ' | string'
+  - uid: 'ExcelScript!ExcelScript.Range:interface'
+    name: Range
+    fullName: ExcelScript.Range

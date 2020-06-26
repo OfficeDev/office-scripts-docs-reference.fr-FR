@@ -1,0 +1,119 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection:interface'
+    summary: 'Représente les `format.borders` propriétés d''`getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le `format.borders` paramètre d’entrée de`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et`setColumnProperties`<!-- -->.'
+    name: ExcelScript.CellBorderCollection
+    fullName: ExcelScript.CellBorderCollection
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.CellBorderCollection#bottom:member'
+      - 'ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member'
+      - 'ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member'
+      - 'ExcelScript!ExcelScript.CellBorderCollection#horizontal:member'
+      - 'ExcelScript!ExcelScript.CellBorderCollection#left:member'
+      - 'ExcelScript!ExcelScript.CellBorderCollection#right:member'
+      - 'ExcelScript!ExcelScript.CellBorderCollection#top:member'
+      - 'ExcelScript!ExcelScript.CellBorderCollection#vertical:member'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#bottom:member'
+    summary: Représente la `format.borders.bottom` propriété.
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#diagonalDown:member'
+    summary: Représente la `format.borders.diagonalDown` propriété.
+    name: diagonalDown
+    fullName: diagonalDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagonalDown?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#diagonalUp:member'
+    summary: Représente la `format.borders.diagonalUp` propriété.
+    name: diagonalUp
+    fullName: diagonalUp
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagonalUp?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#horizontal:member'
+    summary: Représente la `format.borders.horizontal` propriété.
+    name: horizontal
+    fullName: horizontal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontal?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#left:member'
+    summary: Représente la `format.borders.left` propriété.
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#right:member'
+    summary: Représente la `format.borders.right` propriété.
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#top:member'
+    summary: Représente la `format.borders.top` propriété.
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+  - uid: 'ExcelScript!ExcelScript.CellBorderCollection#vertical:member'
+    summary: Représente la `format.borders.vertical` propriété.
+    name: vertical
+    fullName: vertical
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'vertical?: CellBorder;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.CellBorder:interface'
+references:
+  - uid: 'ExcelScript!ExcelScript.CellBorder:interface'
+    name: CellBorder
+    fullName: ExcelScript.CellBorder

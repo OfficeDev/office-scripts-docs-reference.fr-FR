@@ -1,0 +1,360 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline:interface'
+    summary: Cet objet représente les attributs d’un objet de courbe de tendance de graphique.
+    name: ExcelScript.ChartTrendline
+    fullName: ExcelScript.ChartTrendline
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartTrendline#delete:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getBackwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getFormat:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getForwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getLabel:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getShowEquation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#getType:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setBackwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setForwardPeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setName:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setShowEquation:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)'
+      - 'ExcelScript!ExcelScript.ChartTrendline#setType:member(1)'
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#delete:member(1)'
+    summary: Supprime l’objet courbe de tendance.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getBackwardPeriod:member(1)'
+    summary: Représente le nombre de points que la courbe de tendance étend en arrière.
+    name: getBackwardPeriod()
+    fullName: getBackwardPeriod()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBackwardPeriod(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getFormat:member(1)'
+    summary: Représente la mise en forme de courbe de tendance de graphique.
+    name: getFormat()
+    fullName: getFormat()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFormat(): ChartTrendlineFormat;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getForwardPeriod:member(1)'
+    summary: Représente le nombre de points que la courbe de tendance étend en avant.
+    name: getForwardPeriod()
+    fullName: getForwardPeriod()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getForwardPeriod(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
+    summary: Représente la valeur intercept de la courbe de tendance. Peut être défini sur une valeur numérique ou une chaîne vide (pour les valeurs automatiques). La valeur renvoyée est toujours un nombre.
+    name: getIntercept()
+    fullName: getIntercept()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIntercept(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getLabel:member(1)'
+    summary: Représente l’étiquette d’une courbe de tendance de graphique.
+    name: getLabel()
+    fullName: getLabel()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLabel(): ChartTrendlineLabel;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)'
+    summary: Représente la période d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type MovingAverage.
+    name: getMovingAveragePeriod()
+    fullName: getMovingAveragePeriod()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMovingAveragePeriod(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getName:member(1)'
+    summary: 'Représente le nom de la courbe de tendance. Peut être configurée pour une valeur de chaîne, ou peut être configurée pour que la valeur null représente les valeurs automatiques. La valeur renvoyée est toujours une chaîne.'
+    name: getName()
+    fullName: getName()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)'
+    summary: Représente l’ordre d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type polynomial.
+    name: getPolynomialOrder()
+    fullName: getPolynomialOrder()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPolynomialOrder(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getShowEquation:member(1)'
+    summary: Vrai si l’équation de la courbe de tendance est affichée sur le graphique.
+    name: getShowEquation()
+    fullName: getShowEquation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowEquation(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)'
+    summary: Vrai si le coefficient de détermination de la courbe de tendance est affiché sur le graphique.
+    name: getShowRSquared()
+    fullName: getShowRSquared()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getShowRSquared(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#getType:member(1)'
+    summary: Représente le type de courbe de tendance de graphique.
+    name: getType()
+    fullName: getType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getType(): ChartTrendlineType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setBackwardPeriod:member(1)'
+    summary: Représente le nombre de points que la courbe de tendance étend en arrière.
+    name: setBackwardPeriod(backwardPeriod)
+    fullName: setBackwardPeriod(backwardPeriod)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBackwardPeriod(backwardPeriod: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: backwardPeriod
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setForwardPeriod:member(1)'
+    summary: Représente le nombre de points que la courbe de tendance étend en avant.
+    name: setForwardPeriod(forwardPeriod)
+    fullName: setForwardPeriod(forwardPeriod)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setForwardPeriod(forwardPeriod: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: forwardPeriod
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
+    summary: Représente la valeur intercept de la courbe de tendance. Peut être défini sur une valeur numérique ou une chaîne vide (pour les valeurs automatiques). La valeur renvoyée est toujours un nombre.
+    name: setIntercept(intercept)
+    fullName: setIntercept(intercept)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setIntercept(intercept: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: intercept
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)'
+    summary: Représente la période d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type MovingAverage.
+    name: setMovingAveragePeriod(movingAveragePeriod)
+    fullName: setMovingAveragePeriod(movingAveragePeriod)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setMovingAveragePeriod(movingAveragePeriod: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: movingAveragePeriod
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setName:member(1)'
+    summary: 'Représente le nom de la courbe de tendance. Peut être configurée pour une valeur de chaîne, ou peut être configurée pour que la valeur null représente les valeurs automatiques. La valeur renvoyée est toujours une chaîne.'
+    name: setName(name)
+    fullName: setName(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setName(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)'
+    summary: Représente l’ordre d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type polynomial.
+    name: setPolynomialOrder(polynomialOrder)
+    fullName: setPolynomialOrder(polynomialOrder)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPolynomialOrder(polynomialOrder: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: polynomialOrder
+          description: ''
+          type:
+            - number
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setShowEquation:member(1)'
+    summary: Vrai si l’équation de la courbe de tendance est affichée sur le graphique.
+    name: setShowEquation(showEquation)
+    fullName: setShowEquation(showEquation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowEquation(showEquation: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showEquation
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)'
+    summary: Vrai si le coefficient de détermination de la courbe de tendance est affiché sur le graphique.
+    name: setShowRSquared(showRSquared)
+    fullName: setShowRSquared(showRSquared)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShowRSquared(showRSquared: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: showRSquared
+          description: ''
+          type:
+            - boolean
+  - uid: 'ExcelScript!ExcelScript.ChartTrendline#setType:member(1)'
+    summary: Représente le type de courbe de tendance de graphique.
+    name: setType(type)
+    fullName: setType(type)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setType(type: ChartTrendlineType): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: type
+          description: ''
+          type:
+            - 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
+references:
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineFormat:interface'
+    name: ChartTrendlineFormat
+    fullName: ExcelScript.ChartTrendlineFormat
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabel:interface'
+    name: ChartTrendlineLabel
+    fullName: ExcelScript.ChartTrendlineLabel
+  - uid: 'ExcelScript!ExcelScript.ChartTrendlineType:enum'
+    name: ChartTrendlineType
+    fullName: ExcelScript.ChartTrendlineType
