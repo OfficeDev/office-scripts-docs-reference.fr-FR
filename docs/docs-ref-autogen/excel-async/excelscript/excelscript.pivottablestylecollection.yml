@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.PivotTableStyleCollection#add:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#load:member(1)'
       - 'excel!Excel.PivotTableStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 'Facultatif, la valeur par défaut est false. Si la valeur est true, ajoute des numéros au nom afin de le définir comme étant unique, le cas échéant.'
           type:
             - boolean
+  - uid: 'excel!Excel.PivotTableStyleCollection#getCount:member(1)'
+    summary: Obtient le nombre de styles tableaux croisés dynamiques de la collection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.PivotTableStyleCollection#getDefault:member(1)'
     summary: Obtient PivotTableStyle par défaut pour la portée de l’objet parent portée.
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.PivotTableStyle:interface'
         description: ''
+  - uid: 'excel!Excel.PivotTableStyleCollection#getItem:member(1)'
+    summary: Extrait un tableau croisé dynamique par nom.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): PivotTableStyle;'
+      return:
+        type:
+          - 'excel!Excel.PivotTableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom du PivotTableStyle à récupérer.
+          type:
+            - string
   - uid: 'excel!Excel.PivotTableStyleCollection#getItemOrNullObject:member(1)'
     summary: 'Extrait un tableau croisé dynamique par nom. Si le tableau croisé dynamique n’existe pas, renvoie un objet null.'
     name: getItemOrNullObject(name)

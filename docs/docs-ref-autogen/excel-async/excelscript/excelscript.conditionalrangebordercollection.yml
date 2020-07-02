@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
       - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
       - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
@@ -27,6 +29,18 @@ items:
       return:
         type:
           - 'excel!Excel.ConditionalRangeBorder:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
+    summary: Nombre d’objets de bordure de la collection.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
     summary: Obtient un objet de bordure à l’aide de son nom.
     name: getItem(index)
@@ -45,6 +59,24 @@ items:
           description: 'Valeur d’indice de l’objet de bordure à récupérer. Pour plus d’informations, voir Excel. ConditionalRangeBorderIndex.'
           type:
             - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
+    summary: Obtient un objet de bordure à l’aide de son indice.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): ConditionalRangeBorder;'
+      return:
+        type:
+          - 'excel!Excel.ConditionalRangeBorder:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
+          type:
+            - number
   - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     summary: Obtient la bordure gauche.
     name: left

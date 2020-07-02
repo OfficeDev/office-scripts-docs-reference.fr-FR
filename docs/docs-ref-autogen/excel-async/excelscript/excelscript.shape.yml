@@ -32,6 +32,7 @@ items:
       - 'excel!Excel.Shape#load:member(1)'
       - 'excel!Excel.Shape#lockAspectRatio:member'
       - 'excel!Excel.Shape#name:member'
+      - 'excel!Excel.Shape#parentGroup:member'
       - 'excel!Excel.Shape#placement:member'
       - 'excel!Excel.Shape#rotation:member'
       - 'excel!Excel.Shape#scaleHeight:member(1)'
@@ -494,6 +495,18 @@ items:
       return:
         type:
           - string
+  - uid: 'excel!Excel.Shape#parentGroup:member'
+    summary: Spécifie le groupe parent de cette forme.
+    name: parentGroup
+    fullName: parentGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentGroup: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.Shape#placement:member'
     summary: Représente la manière dont l’objet est attaché aux cellules en dessous.
     name: placement

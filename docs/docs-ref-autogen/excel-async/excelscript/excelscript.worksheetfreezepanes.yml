@@ -11,6 +11,7 @@ items:
       - 'excel!Excel.WorksheetFreezePanes#freezeAt:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeColumns:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#freezeRows:member(1)'
+      - 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#load:member(1)'
       - 'excel!Excel.WorksheetFreezePanes#unfreeze:member(1)'
@@ -110,6 +111,19 @@ items:
           description: 'Nombre facultatif de lignes à geler, ou zéro pour libérer toutes les lignes'
           type:
             - number
+  - uid: 'excel!Excel.WorksheetFreezePanes#getLocation:member(1)'
+    summary: Obtient une plage qui définit les cellules figées dans l’affichage de la feuille de calcul active. La plage figée correspond aux cellules qui sont figées dans le volet supérieur et le volet de gauche.
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.WorksheetFreezePanes#getLocationOrNullObject:member(1)'
     summary: 'Obtient une plage qui définit les cellules figées dans l’affichage de la feuille de calcul active. La plage figée correspond aux cellules qui sont figées dans le volet supérieur et le volet de gauche. S’il n’y a pas de volet figé, renvoie un objet null.'
     name: getLocationOrNullObject()

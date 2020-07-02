@@ -10,6 +10,10 @@ items:
     package: excel!
     children:
       - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getCount:member(1)'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
       - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.ChartCollection#load:member(1)'
   - uid: 'excel!Excel.ChartCollection#add:member(1)'
@@ -43,6 +47,67 @@ items:
           description: 'Facultatif. Spécifie la façon dont les colonnes ou les lignes sont utilisées comme séries de données sur le graphique. Pour plus d’informations, voir Excel. ChartSeriesBy.'
           type:
             - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#count:member'
+    summary: Renvoie le nombre de graphiques dans la feuille de calcul.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.ChartCollection#getCount:member(1)'
+    summary: Renvoie le nombre de graphiques dans la feuille de calcul.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
+    summary: 'Extrait un graphique à l’aide de son nom. Si plusieurs graphiques portent le même nom, c’est le premier d’entre eux qui est renvoyé.'
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom du graphique à extraire.
+          type:
+            - string
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
+    summary: Extrait un graphique en fonction de sa position dans la collection.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Chart;'
+      return:
+        type:
+          - 'excel!Excel.Chart:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
+          type:
+            - number
   - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
     summary: 'Extrait un graphique à l’aide de son nom. Si plusieurs graphiques portent le même nom, c’est le premier d’entre eux qui est renvoyé. Si le graphique n’existe pas, renvoie un objet null.'
     name: getItemOrNullObject(name)

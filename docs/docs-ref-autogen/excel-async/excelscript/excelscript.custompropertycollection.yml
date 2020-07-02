@@ -11,6 +11,8 @@ items:
     children:
       - 'excel!Excel.CustomPropertyCollection#add:member(1)'
       - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
       - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.CustomPropertyCollection#load:member(1)'
   - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
@@ -48,6 +50,37 @@ items:
         type:
           - void
         description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+    summary: Obtient le nombre des propriétés personnalisées.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
+    summary: 'Obtient un objet de propriété personnalisé par sa clé, qui ne tient pas compte de la casse. Lève une exception si la propriété personnalisée n’existe pas.'
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): CustomProperty;'
+      return:
+        type:
+          - 'excel!Excel.CustomProperty:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Clé qui identifie l’objet de propriété personnalisée.
+          type:
+            - string
   - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
     summary: 'Obtient un objet de propriété personnalisé par sa clé, qui ne tient pas compte de la casse. Renvoie un objet null si la propriété personnalisée n’existe pas.'
     name: getItemOrNullObject(key)

@@ -62,6 +62,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
       - 'ExcelScript!ExcelScript.Range#getOffsetRange:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
       - 'ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)'
       - 'ExcelScript!ExcelScript.Range#getResizedRange:member(1)'
       - 'ExcelScript!ExcelScript.Range#getRow:member(1)'
@@ -73,6 +74,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getSort:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getTables:member(1)'
       - 'ExcelScript!ExcelScript.Range#getText:member(1)'
       - 'ExcelScript!ExcelScript.Range#getTexts:member(1)'
       - 'ExcelScript!ExcelScript.Range#getTop:member(1)'
@@ -1025,6 +1027,24 @@ items:
           description: 'The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.'
           type:
             - number
+  - uid: 'ExcelScript!ExcelScript.Range#getPivotTables:member(1)'
+    summary: Obtient une collection d’étendues de tableaux croisés dynamiques qui se chevauchent avec la plage.
+    name: getPivotTables(fullyContained)
+    fullName: getPivotTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPivotTables(fullyContained?: boolean): PivotTable[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 'Si la valeur est true, renvoie uniquement les tableaux croisés dynamiques contenus dans les limites de la plage. La valeur par défaut est false.'
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)'
     summary: 'Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, la valeur null est renvoyée. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’énumération BuiltInStyle est retournée.'
     name: getPredefinedCellStyle()
@@ -1265,6 +1285,24 @@ items:
         type:
           - 'ExcelScript!ExcelScript.Range:interface'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getTables:member(1)'
+    summary: Obtient une collection de tableaux qui se chevauchent avec la plage dans l’étendue.
+    name: getTables(fullyContained)
+    fullName: getTables(fullyContained)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTables(fullyContained?: boolean): Table[];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range#getTables~0:complex'
+        description: ''
+      parameters:
+        - id: fullyContained
+          description: 'Si la valeur est true, renvoie uniquement les tables qui sont entièrement contenues dans les limites de la plage. La valeur par défaut est false.'
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.Range#getText:member(1)'
     summary: 'Représente la valeur de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La \# substitution de signe qui se produit dans l’interface utilisateur d’Excel n’affecte pas la valeur de texte renvoyée par l’API. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) seront retournées.'
     name: getText()
@@ -2051,6 +2089,15 @@ references:
         fullName: ExcelScript.LinkedDataTypeState
       - name: '[][]'
         fullName: '[][]'
+  - uid: 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
+    name: 'PivotTable[]'
+    fullName: 'ExcelScript.PivotTable[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
+        name: PivotTable
+        fullName: ExcelScript.PivotTable
+      - name: '[]'
+        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
     name: RangeSort
     fullName: ExcelScript.RangeSort
@@ -2063,6 +2110,15 @@ references:
   - uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
     name: SpecialCellValueType
     fullName: ExcelScript.SpecialCellValueType
+  - uid: 'ExcelScript!ExcelScript.Range#getTables~0:complex'
+    name: 'Table[]'
+    fullName: 'ExcelScript.Table[]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.Table:interface'
+        name: Table
+        fullName: ExcelScript.Table
+      - name: '[]'
+        fullName: '[]'
   - uid: 'ExcelScript!ExcelScript.RangeValueType:enum'
     name: RangeValueType
     fullName: ExcelScript.RangeValueType

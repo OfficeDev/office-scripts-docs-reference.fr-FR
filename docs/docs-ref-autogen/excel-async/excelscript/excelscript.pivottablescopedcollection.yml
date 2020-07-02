@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.PivotTableScopedCollection:interface'
+    summary: 'Représente une collection de tableaux croisés dynamiques. Les tableaux croisés dynamiques sont triés en fonction de l’emplacement du coin supérieur gauche du tableau croisé dynamique. Elles sont classées de haut en bas, puis de gauche à droite.'
+    name: Excel.PivotTableScopedCollection
+    fullName: Excel.PivotTableScopedCollection
+    langs:
+      - typeScript
+    type: interface
+    package: excel!
+    children:
+      - 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.PivotTableScopedCollection#getCount:member(1)'
+    summary: Obtient le nombre de tableaux croisés dynamiques dans la collection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getFirst:member(1)'
+    summary: 'Obtient le premier tableau croisé dynamique de la collection. Les tableaux croisés dynamiques de la collection sont triés de haut en bas et de gauche à droite, de sorte que le tableau supérieur gauche est le premier tableau croisé dynamique de la collection.'
+    name: getFirst()
+    fullName: getFirst()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItem:member(1)'
+    summary: Obtient un tableau croisé dynamique par nom.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Nom du tableau croisé dynamique à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#getItemOrNullObject:member(1)'
+    summary: 'Extrait un tableau croisé dynamique par nom. Si le tableau croisé dynamique n’existe pas, renvoie un objet null.'
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): PivotTable;'
+      return:
+        type:
+          - 'excel!Excel.PivotTable:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom du tableau croisé dynamique à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.PivotTableScopedCollection#load:member(1)'
+    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+          type:
+            - 'string | string[]'
+references:
+  - uid: 'excel!Excel.PivotTable:interface'
+    name: PivotTable
+    fullName: Excel.PivotTable

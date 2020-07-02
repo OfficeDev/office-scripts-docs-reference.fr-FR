@@ -12,6 +12,10 @@ items:
       - 'excel!Excel.BindingCollection#add:member(1)'
       - 'excel!Excel.BindingCollection#addFromNamedItem:member(1)'
       - 'excel!Excel.BindingCollection#addFromSelection:member(1)'
+      - 'excel!Excel.BindingCollection#count:member'
+      - 'excel!Excel.BindingCollection#getCount:member(1)'
+      - 'excel!Excel.BindingCollection#getItem:member(1)'
+      - 'excel!Excel.BindingCollection#getItemAt:member(1)'
       - 'excel!Excel.BindingCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.BindingCollection#load:member(1)'
   - uid: 'excel!Excel.BindingCollection#add:member(1)'
@@ -98,6 +102,67 @@ items:
           description: Nom de la liaison.
           type:
             - string
+  - uid: 'excel!Excel.BindingCollection#count:member'
+    summary: Renvoie le nombre de liaisons de la collection.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.BindingCollection#getCount:member(1)'
+    summary: Obtient le nombre de liaisons de la collection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.BindingCollection#getItem:member(1)'
+    summary: Obtient un objet de liaison par ID.
+    name: getItem(id)
+    fullName: getItem(id)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): Binding;'
+      return:
+        type:
+          - 'excel!Excel.Binding:interface'
+        description: ''
+      parameters:
+        - id: id
+          description: ID de l’objet de liaison à récupérer.
+          type:
+            - string
+  - uid: 'excel!Excel.BindingCollection#getItemAt:member(1)'
+    summary: Obtient un objet de liaison en fonction de sa position dans le tableau d’éléments.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Binding;'
+      return:
+        type:
+          - 'excel!Excel.Binding:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
+          type:
+            - number
   - uid: 'excel!Excel.BindingCollection#getItemOrNullObject:member(1)'
     summary: 'Obtient un objet de liaison par ID. Si l’objet de liaison n’existe pas, renvoie un objet null.'
     name: getItemOrNullObject(id)

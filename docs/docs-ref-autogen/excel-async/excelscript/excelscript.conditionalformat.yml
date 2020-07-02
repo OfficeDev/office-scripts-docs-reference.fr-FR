@@ -9,22 +9,43 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.ConditionalFormat#cellValue:member'
       - 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#colorScale:member'
       - 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#custom:member'
       - 'excel!Excel.ConditionalFormat#customOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#dataBar:member'
       - 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#delete:member(1)'
+      - 'excel!Excel.ConditionalFormat#getRange:member(1)'
       - 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
       - 'excel!Excel.ConditionalFormat#getRanges:member(1)'
+      - 'excel!Excel.ConditionalFormat#iconSet:member'
       - 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#id:member'
       - 'excel!Excel.ConditionalFormat#load:member(1)'
+      - 'excel!Excel.ConditionalFormat#preset:member'
       - 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#priority:member'
       - 'excel!Excel.ConditionalFormat#stopIfTrue:member'
+      - 'excel!Excel.ConditionalFormat#textComparison:member'
       - 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
+      - 'excel!Excel.ConditionalFormat#topBottom:member'
       - 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
       - 'excel!Excel.ConditionalFormat#type:member'
+  - uid: 'excel!Excel.ConditionalFormat#cellValue:member'
+    summary: 'Renvoie les propriétés de mise en forme conditionnelle de la valeur de la cellule si le format conditionnel actuel est un type CellValue. Par exemple, pour mettre en forme toutes les cellules comprises entre 5 et 10.'
+    name: cellValue
+    fullName: cellValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly cellValue: CellValueConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CellValueConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#cellValueOrNullObject:member'
     summary: 'Renvoie les propriétés de mise en forme conditionnelle de la valeur de la cellule si le format conditionnel actuel est un type CellValue. Par exemple, pour mettre en forme toutes les cellules comprises entre 5 et 10.'
     name: cellValueOrNullObject
@@ -37,6 +58,18 @@ items:
       return:
         type:
           - 'excel!Excel.CellValueConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#colorScale:member'
+    summary: Renvoie les propriétés de mise en forme conditionnelle ColorScale si le format conditionnel actuel est un type ColorScale.
+    name: colorScale
+    fullName: colorScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly colorScale: ColorScaleConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.ColorScaleConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#colorScaleOrNullObject:member'
     summary: Renvoie les propriétés de mise en forme conditionnelle ColorScale si le format conditionnel actuel est un type ColorScale.
     name: colorScaleOrNullObject
@@ -49,6 +82,18 @@ items:
       return:
         type:
           - 'excel!Excel.ColorScaleConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#custom:member'
+    summary: Renvoie les propriétés de mise en forme conditionnelle personnalisées si le format conditionnel actuel est un type personnalisé.
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly custom: CustomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.CustomConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#customOrNullObject:member'
     summary: Renvoie les propriétés de mise en forme conditionnelle personnalisées si le format conditionnel actuel est un type personnalisé.
     name: customOrNullObject
@@ -61,6 +106,18 @@ items:
       return:
         type:
           - 'excel!Excel.CustomConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#dataBar:member'
+    summary: Renvoie les propriétés de la barre de données si le format conditionnel actuel est une barre de données.
+    name: dataBar
+    fullName: dataBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataBar: DataBarConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.DataBarConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#dataBarOrNullObject:member'
     summary: Renvoie les propriétés de la barre de données si le format conditionnel actuel est une barre de données.
     name: dataBarOrNullObject
@@ -85,6 +142,19 @@ items:
       return:
         type:
           - void
+        description: ''
+  - uid: 'excel!Excel.ConditionalFormat#getRange:member(1)'
+    summary: Renvoie la plage à laquelle s’applique la mise en forme conditionnelle. Renvoie une erreur si la mise en forme conditionnelle est appliquée à plusieurs plages.
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
         description: ''
   - uid: 'excel!Excel.ConditionalFormat#getRangeOrNullObject:member(1)'
     summary: Renvoie la plage à laquelle le format conditionnelle est appliqué ou un objet null si la mise en forme conditionnelle est appliquée à plusieurs plages.
@@ -112,6 +182,18 @@ items:
         type:
           - 'excel!Excel.RangeAreas:interface'
         description: ''
+  - uid: 'excel!Excel.ConditionalFormat#iconSet:member'
+    summary: Renvoie les propriétés de format conditionnel IconSet si le format conditionnel actuel est un type IconSet.
+    name: iconSet
+    fullName: iconSet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly iconSet: IconSetConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.IconSetConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#iconSetOrNullObject:member'
     summary: Renvoie les propriétés de format conditionnel IconSet si le format conditionnel actuel est un type IconSet.
     name: iconSetOrNullObject
@@ -154,6 +236,18 @@ items:
           description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.ConditionalFormat#preset:member'
+    summary: 'Renvoie le format conditionnel des critères prédéfinis. Pour plus d’informations, voir Excel. PresetCriteriaConditionalFormat.'
+    name: preset
+    fullName: preset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly preset: PresetCriteriaConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.PresetCriteriaConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#presetOrNullObject:member'
     summary: 'Renvoie le format conditionnel des critères prédéfinis. Pour plus d’informations, voir Excel. PresetCriteriaConditionalFormat.'
     name: presetOrNullObject
@@ -190,6 +284,18 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.ConditionalFormat#textComparison:member'
+    summary: "Renvoie les propriétés de mise en forme conditionnelle de texte spécifiques si le format conditionnel actuel est un type de texte. Par exemple, pour mettre en forme des cellules correspondant au mot «\_Text\_»."
+    name: textComparison
+    fullName: textComparison
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textComparison: TextConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TextConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#textComparisonOrNullObject:member'
     summary: "Renvoie les propriétés de mise en forme conditionnelle de texte spécifiques si le format conditionnel actuel est un type de texte. Par exemple, pour mettre en forme des cellules correspondant au mot «\_Text\_»."
     name: textComparisonOrNullObject
@@ -202,6 +308,18 @@ items:
       return:
         type:
           - 'excel!Excel.TextConditionalFormat:interface'
+  - uid: 'excel!Excel.ConditionalFormat#topBottom:member'
+    summary: 'Renvoie les propriétés de mise en forme conditionnelle de haut en bas si le format conditionnel actuel est un type de niveau inférieur. Par exemple, pour mettre en forme les 10% ou les 10 derniers éléments.'
+    name: topBottom
+    fullName: topBottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly topBottom: TopBottomConditionalFormat;'
+      return:
+        type:
+          - 'excel!Excel.TopBottomConditionalFormat:interface'
   - uid: 'excel!Excel.ConditionalFormat#topBottomOrNullObject:member'
     summary: 'Renvoie les propriétés de mise en forme conditionnelle de haut en bas si le format conditionnel actuel est un type de niveau inférieur. Par exemple, pour mettre en forme les 10% ou les 10 derniers éléments.'
     name: topBottomOrNullObject
