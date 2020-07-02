@@ -10,6 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
       - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.SlicerCollection#load:member(1)'
   - uid: 'excel!Excel.SlicerCollection#add:member(1)'
@@ -58,6 +61,55 @@ items:
           description: Facultatif. Feuille de calcul dans laquelle le nouveau segment sera créé. Il peut s’agir d’un objet Worksheet ou du nom/ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de segments est extraite de la feuille de calcul.
           type:
             - 'excel!Excel.SlicerCollection#add~2:complex'
+  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
+    summary: Renvoie le nombre de séries de la collection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
+    summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Nom ou ID du segment.
+          type:
+            - string
+  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
+    summary: Obtient une forme en fonction de sa position dans la collection.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Slicer;'
+      return:
+        type:
+          - 'excel!Excel.Slicer:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
+          type:
+            - number
   - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
     summary: 'Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, renvoie un objet null.'
     name: getItemOrNullObject(key)

@@ -12,6 +12,7 @@ items:
       - 'excel!Excel.Line#beginArrowheadLength:member'
       - 'excel!Excel.Line#beginArrowheadStyle:member'
       - 'excel!Excel.Line#beginArrowheadWidth:member'
+      - 'excel!Excel.Line#beginConnectedShape:member'
       - 'excel!Excel.Line#beginConnectedSite:member'
       - 'excel!Excel.Line#connectBeginShape:member(1)'
       - 'excel!Excel.Line#connectEndShape:member(1)'
@@ -21,11 +22,13 @@ items:
       - 'excel!Excel.Line#endArrowheadLength:member'
       - 'excel!Excel.Line#endArrowheadStyle:member'
       - 'excel!Excel.Line#endArrowheadWidth:member'
+      - 'excel!Excel.Line#endConnectedShape:member'
       - 'excel!Excel.Line#endConnectedSite:member'
       - 'excel!Excel.Line#id:member'
       - 'excel!Excel.Line#isBeginConnected:member'
       - 'excel!Excel.Line#isEndConnected:member'
       - 'excel!Excel.Line#load:member(1)'
+      - 'excel!Excel.Line#shape:member'
   - uid: 'excel!Excel.Line#beginArrowheadLength:member'
     summary: Renvoie ou définit la longueur de la pointe de la flèche au début de la ligne spécifiée.
     name: beginArrowheadLength
@@ -62,6 +65,18 @@ items:
       return:
         type:
           - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#beginConnectedShape:member'
+    summary: Représente la forme de la pointe de la flèche au début de la ligne spécifiée.
+    name: beginConnectedShape
+    fullName: beginConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedShape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.Line#beginConnectedSite:member'
     summary: Représente le site de connexion indiquant le point de connexion auquel le début d'un connecteur est relié. Renvoie la valeur null lorsque le début de la ligne n’est pas attaché à n’importe quelle forme.
     name: beginConnectedSite
@@ -244,6 +259,18 @@ items:
       return:
         type:
           - 'excel!Excel.ArrowheadWidth:enum'
+  - uid: 'excel!Excel.Line#endConnectedShape:member'
+    summary: Représente la forme de la pointe de la flèche à la fin de la ligne spécifiée.
+    name: endConnectedShape
+    fullName: endConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedShape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.Line#endConnectedSite:member'
     summary: Représente le site de connexion indiquant le point de connexion auquel la fin d'un connecteur est relié. Renvoie la valeur null lorsque la fin de la ligne n’est pas attaché à n’importe quelle forme.
     name: endConnectedSite
@@ -310,6 +337,18 @@ items:
           description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Line#shape:member'
+    summary: Renvoie l’objet de la Forme associée à la ligne.
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
 references:
   - uid: 'excel!Excel.ArrowheadLength:enum'
     name: ArrowheadLength

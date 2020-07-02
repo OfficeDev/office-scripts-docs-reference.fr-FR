@@ -11,6 +11,7 @@ items:
     children:
       - 'excel!Excel.ShapeGroup#id:member'
       - 'excel!Excel.ShapeGroup#load:member(1)'
+      - 'excel!Excel.ShapeGroup#shape:member'
       - 'excel!Excel.ShapeGroup#shapes:member'
       - 'excel!Excel.ShapeGroup#ungroup:member(1)'
   - uid: 'excel!Excel.ShapeGroup#id:member'
@@ -43,6 +44,18 @@ items:
           description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.ShapeGroup#shape:member'
+    summary: Renvoie l’objet de la Forme associée au groupe.
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shape: Shape;'
+      return:
+        type:
+          - 'excel!Excel.Shape:interface'
   - uid: 'excel!Excel.ShapeGroup#shapes:member'
     summary: Renvoie la collection d’objets de forme.
     name: shapes
@@ -84,6 +97,9 @@ items:
           }
           ```
 references:
+  - uid: 'excel!Excel.Shape:interface'
+    name: Shape
+    fullName: Excel.Shape
   - uid: 'excel!Excel.GroupShapeCollection:interface'
     name: GroupShapeCollection
     fullName: Excel.GroupShapeCollection

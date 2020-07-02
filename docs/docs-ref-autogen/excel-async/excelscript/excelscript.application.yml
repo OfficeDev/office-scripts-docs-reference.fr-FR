@@ -17,6 +17,8 @@ items:
       - 'excel!Excel.Application#decimalSeparator:member'
       - 'excel!Excel.Application#iterativeCalculation:member'
       - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
       - 'excel!Excel.Application#thousandsSeparator:member'
       - 'excel!Excel.Application#useSystemSeparators:member'
   - uid: 'excel!Excel.Application#calculate:member(1)'
@@ -127,6 +129,35 @@ items:
           description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
           type:
             - 'string | string[]'
+  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+    summary: 'Suspends calculation until the next "context.sync()" is called. Once set, it is the developer''s responsibility to re-calc the workbook, to ensure that any dependencies are propagated.'
+    name: suspendApiCalculationUntilNextSync()
+    fullName: suspendApiCalculationUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendApiCalculationUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+    summary: |-
+      Interrompt la mise à jour de l’écran jusqu’à l’appel de la `context.sync()` méthode suivante.
+
+      **Remarque**: ne pas appeler `suspendScreenUpdatingUntilNextSync` de manière répétée (comme dans une boucle). Les appels répétés entraînent le scintillement de la fenêtre Excel.
+    name: suspendScreenUpdatingUntilNextSync()
+    fullName: suspendScreenUpdatingUntilNextSync()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendScreenUpdatingUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: 'excel!Excel.Application#thousandsSeparator:member'
     summary: Obtient la chaîne utilisée pour séparer les groupes de chiffres à gauche du séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
     name: thousandsSeparator

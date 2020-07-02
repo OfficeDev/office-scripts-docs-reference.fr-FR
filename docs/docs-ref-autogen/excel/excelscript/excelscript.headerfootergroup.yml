@@ -71,7 +71,7 @@ items:
           - 'ExcelScript!ExcelScript.HeaderFooter:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#getState:member(1)'
-    summary: 'Les en-têtes/pieds de page définis. Pour plus d’informations, voir Excel.HeaderFooterState.'
+    summary: 'État par lequel les en-têtes/pieds de page sont définis. Pour plus d’informations, voir Excel.HeaderFooterState.'
     name: getState()
     fullName: getState()
     langs:
@@ -110,7 +110,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.HeaderFooterGroup#setState:member(1)'
-    summary: 'Les en-têtes/pieds de page définis. Pour plus d’informations, voir Excel.HeaderFooterState.'
+    summary: 'État par lequel les en-têtes/pieds de page sont définis. Pour plus d’informations, voir Excel.HeaderFooterState.'
     name: setState(state)
     fullName: setState(state)
     langs:

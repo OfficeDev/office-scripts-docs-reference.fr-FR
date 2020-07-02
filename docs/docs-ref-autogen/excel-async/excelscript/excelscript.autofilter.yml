@@ -13,6 +13,7 @@ items:
       - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
       - 'excel!Excel.AutoFilter#criteria:member'
       - 'excel!Excel.AutoFilter#enabled:member'
+      - 'excel!Excel.AutoFilter#getRange:member(1)'
       - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
       - 'excel!Excel.AutoFilter#isDataFiltered:member'
       - 'excel!Excel.AutoFilter#load:member(1)'
@@ -100,6 +101,19 @@ items:
       return:
         type:
           - boolean
+  - uid: 'excel!Excel.AutoFilter#getRange:member(1)'
+    summary: Cette propriété renvoie un objet Plage qui représente la plage sur laquelle s'applique le filtre automatique spécifié.
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type:
+          - 'excel!Excel.Range:interface'
+        description: ''
   - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
     summary: 'Cette propriété renvoie un objet Plage qui représente la plage sur laquelle s''applique le filtre automatique spécifié. S’il n’existe aucun objet Range associé au filtre automatique, cette méthode renvoie un objet null.'
     name: getRangeOrNullObject()

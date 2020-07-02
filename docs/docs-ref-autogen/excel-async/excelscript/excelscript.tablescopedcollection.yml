@@ -9,9 +9,23 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.TableScopedCollection#getCount:member(1)'
       - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
       - 'excel!Excel.TableScopedCollection#getItem:member(1)'
       - 'excel!Excel.TableScopedCollection#load:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#getCount:member(1)'
+    summary: Obtient le nombre de tableaux de la collection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
     summary: Obtient le premier tableau de cette collection. Les tables dans la collection de sont triées de haut en bas et gauche vers la droite par ce tableau supérieure gauche afin que le premier tableau soit dans la collection de sites.
     name: getFirst()

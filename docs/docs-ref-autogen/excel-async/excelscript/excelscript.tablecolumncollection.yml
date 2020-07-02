@@ -9,8 +9,109 @@ items:
     type: interface
     package: excel!
     children:
+      - 'excel!Excel.TableColumnCollection#add:member(1)'
+      - 'excel!Excel.TableColumnCollection#count:member'
+      - 'excel!Excel.TableColumnCollection#getCount:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItem:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
       - 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TableColumnCollection#load:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#add:member(1)'
+    summary: Ajoute une nouvelle colonne au tableau.
+    name: 'add(index, values, name)'
+    fullName: 'add(index, values, name)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        add(
+                    index?: number,
+                    values?:
+                        | Array<Array<boolean | string | number>>
+                        | boolean
+                        | string
+                        | number,
+                    name?: string
+                ): TableColumn;
+      return:
+        type:
+          - 'excel!Excel.TableColumn:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: 'Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.'
+          type:
+            - number
+        - id: values
+          description: "Facultatif. Matrice\_2D des valeurs non mises en forme de la colonne du tableau."
+          type:
+            - 'excel!Excel.TableColumnCollection#add~0:complex'
+        - id: name
+          description: 'Facultatif. Spécifie le nom de la nouvelle colonne. Si la valeur est null, le nom par défaut est utilisé.'
+          type:
+            - string
+  - uid: 'excel!Excel.TableColumnCollection#count:member'
+    summary: Renvoie le nombre de colonnes du tableau.
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: 'excel!Excel.TableColumnCollection#getCount:member(1)'
+    summary: Obtient le nombre de colonnes dans le tableau.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: 'excel!Excel.TableColumnCollection#getItem:member(1)'
+    summary: Obtient un objet de colonne par son nom ou son ID.
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: number | string): TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:interface'
+        description: ''
+      parameters:
+        - id: key
+          description: Nom ou ID de la colonne.
+          type:
+            - number | string
+  - uid: 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
+    summary: Obtient une colonne en fonction de sa position dans la collection.
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): TableColumn;'
+      return:
+        type:
+          - 'excel!Excel.TableColumn:interface'
+        description: ''
+      parameters:
+        - id: index
+          description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
+          type:
+            - number
   - uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
     summary: 'Obtient un objet de colonne par nom ou par ID. Si la colonne n’existe pas, renvoie un objet null.'
     name: getItemOrNullObject(key)
@@ -51,3 +152,35 @@ references:
   - uid: 'excel!Excel.TableColumn:interface'
     name: TableColumn
     fullName: Excel.TableColumn
+  - uid: 'excel!Excel.TableColumnCollection#add~0:complex'
+    name: |-
+      | Array<Array<boolean | string | number>>
+                      | boolean
+                      | string
+                      | number
+    fullName: |-
+      | Array<Array<boolean | string | number>>
+                      | boolean
+                      | string
+                      | number
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: <
+        fullName: <
+      - uid: '!Array:interface'
+        name: Array
+        fullName: Array
+      - name: |-
+          <boolean | string | number>>
+                          | boolean
+                          | string
+                          | number
+        fullName: |-
+          <boolean | string | number>>
+                          | boolean
+                          | string
+                          | number

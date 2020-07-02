@@ -10,7 +10,9 @@ items:
     package: excel!
     children:
       - 'excel!Excel.TableStyleCollection#add:member(1)'
+      - 'excel!Excel.TableStyleCollection#getCount:member(1)'
       - 'excel!Excel.TableStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.TableStyleCollection#getItem:member(1)'
       - 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TableStyleCollection#load:member(1)'
       - 'excel!Excel.TableStyleCollection#setDefault:member(1)'
@@ -36,6 +38,19 @@ items:
           description: 'Facultatif, la valeur par défaut est false. Si la valeur est true, ajoute des numéros au nom afin de le définir comme étant unique, le cas échéant.'
           type:
             - boolean
+  - uid: 'excel!Excel.TableStyleCollection#getCount:member(1)'
+    summary: Obtient le nombre de styles de tableaux de la collection.
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): number;'
+      return:
+        type:
+          - number
+        description: ''
   - uid: 'excel!Excel.TableStyleCollection#getDefault:member(1)'
     summary: Obtient le TableStyle par défaut pour la portée de l’objet parent portée.
     name: getDefault()
@@ -49,6 +64,24 @@ items:
         type:
           - 'excel!Excel.TableStyle:interface'
         description: ''
+  - uid: 'excel!Excel.TableStyleCollection#getItem:member(1)'
+    summary: Extrait un TableStyle par nom.
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): TableStyle;'
+      return:
+        type:
+          - 'excel!Excel.TableStyle:interface'
+        description: ''
+      parameters:
+        - id: name
+          description: Nom de l’TableStyle à récupérer.
+          type:
+            - string
   - uid: 'excel!Excel.TableStyleCollection#getItemOrNullObject:member(1)'
     summary: 'Extrait un TableStyle par nom. Si le TableStyle n’existe pas, renvoie un objet null.'
     name: getItemOrNullObject(name)
