@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"all"'
+    numericValue: '"All"'
   - uid: 'excel!Excel.ClearApplyTo.contents:member'
     summary: Efface le contenu de la plage.
     name: contents
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"contents"'
+    numericValue: '"Contents"'
   - uid: 'excel!Excel.ClearApplyTo.formats:member'
     summary: Efface toutes les mises en forme de la plage.
     name: formats
@@ -35,7 +35,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"formats"'
+    numericValue: '"Formats"'
   - uid: 'excel!Excel.ClearApplyTo.hyperlinks:member'
     summary: 'Efface tous les liens hypertexte, mais conserve tout le contenu et la mise en forme.'
     name: hyperlinks
@@ -43,7 +43,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hyperlinks"'
+    numericValue: '"Hyperlinks"'
   - uid: 'excel!Excel.ClearApplyTo.removeHyperlinks:member'
     summary: 'Supprime les liens hypertexte et la mise en forme de la cellule, mais laisse le contenu, les mises en forme conditionnelles et la validation des données intactes.'
     name: removeHyperlinks
@@ -51,4 +51,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"removeHyperlinks"'
+    numericValue: '"RemoveHyperlinks"'

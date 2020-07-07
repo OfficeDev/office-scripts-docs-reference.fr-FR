@@ -21,7 +21,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"column"'
+    numericValue: '"Column"'
   - uid: 'excel!Excel.PivotAxis.data:member'
     summary: Axe des données.
     name: data
@@ -29,7 +29,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"data"'
+    numericValue: '"Data"'
   - uid: 'excel!Excel.PivotAxis.filter:member'
     summary: Axe de filtre.
     name: filter
@@ -37,7 +37,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"filter"'
+    numericValue: '"Filter"'
   - uid: 'excel!Excel.PivotAxis.row:member'
     summary: Axe de la ligne.
     name: row
@@ -45,7 +45,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"row"'
+    numericValue: '"Row"'
   - uid: 'excel!Excel.PivotAxis.unknown:member'
     summary: L’axe ou la région est inconnu ou non pris en charge.
     name: unknown
@@ -53,4 +53,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"unknown"'
+    numericValue: '"Unknown"'

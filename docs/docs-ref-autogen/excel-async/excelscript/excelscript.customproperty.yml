@@ -65,10 +65,17 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: DocumentPropertyType;'
+      content: |-
+        readonly type:
+                    | DocumentPropertyType
+                    | "Number"
+                    | "Boolean"
+                    | "Date"
+                    | "String"
+                    | "Float";
       return:
         type:
-          - 'excel!Excel.DocumentPropertyType:enum'
+          - 'excel!Excel.CustomProperty#type~0:complex'
   - uid: 'excel!Excel.CustomProperty#value:member'
     summary: Valeur de la propriété personnalisée. La valeur est limitée à 255 caractères en dehors d’Excel sur le Web (les valeurs les plus élevées sont automatiquement réduites à 255 caractères sur d’autres plateformes).
     name: value
@@ -82,6 +89,38 @@ items:
         type:
           - any
 references:
-  - uid: 'excel!Excel.DocumentPropertyType:enum'
-    name: DocumentPropertyType
-    fullName: Excel.DocumentPropertyType
+  - uid: 'excel!Excel.CustomProperty#type~0:complex'
+    name: |-
+      | DocumentPropertyType
+                  | "Number"
+                  | "Boolean"
+                  | "Date"
+                  | "String"
+                  | "Float"
+    fullName: |-
+      | Excel.DocumentPropertyType
+                  | "Number"
+                  | "Boolean"
+                  | "Date"
+                  | "String"
+                  | "Float"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.DocumentPropertyType:enum'
+        name: DocumentPropertyType
+        fullName: Excel.DocumentPropertyType
+      - name: |2-
+
+                      | "Number"
+                      | "Boolean"
+                      | "Date"
+                      | "String"
+                      | "Float"
+        fullName: |2-
+
+                      | "Number"
+                      | "Boolean"
+                      | "Date"
+                      | "String"
+                      | "Float"

@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"absolute"'
+    numericValue: '"Absolute"'
   - uid: 'excel!Excel.Placement.oneCell:member'
     summary: L’objet est déplacé et redimensionné avec les cellules.
     name: oneCell
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"oneCell"'
+    numericValue: '"OneCell"'
   - uid: 'excel!Excel.Placement.twoCell:member'
     summary: L’objet est déplacé avec les cellules.
     name: twoCell
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"twoCell"'
+    numericValue: '"TwoCell"'

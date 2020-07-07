@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'excel!Excel.ClientResult:interface'
+    summary: Contient le résultat pour les méthodes qui retournent des types primitifs. La propriété Value de l’objet est récupérée à partir du document après l’appel de celle- `context.sync()` ci.
+    name: Excel.ClientResult
+    fullName: Excel.ClientResult
+    langs:
+      - typeScript
+    type: interface
+    syntax:
+      typeParameters:
+        - id: T
+    package: excel!
+    children:
+      - 'excel!Excel.ClientResult#value:member'
+  - uid: 'excel!Excel.ClientResult#value:member'
+    summary: Valeur du résultat qui est récupérée à partir du document après qu' `context.sync()` elle a été appelée.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: T;'
+      return:
+        type:
+          - T

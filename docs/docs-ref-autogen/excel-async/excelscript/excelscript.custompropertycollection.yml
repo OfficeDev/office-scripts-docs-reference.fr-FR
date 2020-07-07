@@ -58,10 +58,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCount(): number;'
+      content: 'getCount(): ClientResult<number>;'
       return:
         type:
-          - number
+          - 'excel!Excel.CustomPropertyCollection#getCount~0:complex'
         description: ''
   - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
     summary: 'Obtient un objet de propriété personnalisé par sa clé, qui ne tient pas compte de la casse. Lève une exception si la propriété personnalisée n’existe pas.'
@@ -121,3 +121,12 @@ references:
   - uid: 'excel!Excel.CustomProperty:interface'
     name: CustomProperty
     fullName: Excel.CustomProperty
+  - uid: 'excel!Excel.CustomPropertyCollection#getCount~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
