@@ -53,10 +53,20 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly sideIndex: BorderIndex;'
+      content: |-
+        readonly sideIndex:
+                    | BorderIndex
+                    | "EdgeTop"
+                    | "EdgeBottom"
+                    | "EdgeLeft"
+                    | "EdgeRight"
+                    | "InsideVertical"
+                    | "InsideHorizontal"
+                    | "DiagonalDown"
+                    | "DiagonalUp";
       return:
         type:
-          - 'excel!Excel.BorderIndex:enum'
+          - 'excel!Excel.RangeBorder#sideIndex~0:complex'
   - uid: 'excel!Excel.RangeBorder#style:member'
     summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
     name: style
@@ -65,10 +75,20 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'style: BorderLineStyle;'
+      content: |-
+        style:
+                    | BorderLineStyle
+                    | "None"
+                    | "Continuous"
+                    | "Dash"
+                    | "DashDot"
+                    | "DashDotDot"
+                    | "Dot"
+                    | "Double"
+                    | "SlantDashDot";
       return:
         type:
-          - 'excel!Excel.BorderLineStyle:enum'
+          - 'excel!Excel.RangeBorder#style~0:complex'
   - uid: 'excel!Excel.RangeBorder#tintAndShade:member'
     summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
     name: tintAndShade
@@ -89,17 +109,111 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'weight: BorderWeight;'
+      content: 'weight: BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
       return:
         type:
-          - 'excel!Excel.BorderWeight:enum'
+          - 'excel!Excel.RangeBorder#weight~0:complex'
 references:
-  - uid: 'excel!Excel.BorderIndex:enum'
-    name: BorderIndex
-    fullName: Excel.BorderIndex
-  - uid: 'excel!Excel.BorderLineStyle:enum'
-    name: BorderLineStyle
-    fullName: Excel.BorderLineStyle
-  - uid: 'excel!Excel.BorderWeight:enum'
-    name: BorderWeight
-    fullName: Excel.BorderWeight
+  - uid: 'excel!Excel.RangeBorder#sideIndex~0:complex'
+    name: |-
+      | BorderIndex
+                  | "EdgeTop"
+                  | "EdgeBottom"
+                  | "EdgeLeft"
+                  | "EdgeRight"
+                  | "InsideVertical"
+                  | "InsideHorizontal"
+                  | "DiagonalDown"
+                  | "DiagonalUp"
+    fullName: |-
+      | Excel.BorderIndex
+                  | "EdgeTop"
+                  | "EdgeBottom"
+                  | "EdgeLeft"
+                  | "EdgeRight"
+                  | "InsideVertical"
+                  | "InsideHorizontal"
+                  | "DiagonalDown"
+                  | "DiagonalUp"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.BorderIndex:enum'
+        name: BorderIndex
+        fullName: Excel.BorderIndex
+      - name: |2-
+
+                      | "EdgeTop"
+                      | "EdgeBottom"
+                      | "EdgeLeft"
+                      | "EdgeRight"
+                      | "InsideVertical"
+                      | "InsideHorizontal"
+                      | "DiagonalDown"
+                      | "DiagonalUp"
+        fullName: |2-
+
+                      | "EdgeTop"
+                      | "EdgeBottom"
+                      | "EdgeLeft"
+                      | "EdgeRight"
+                      | "InsideVertical"
+                      | "InsideHorizontal"
+                      | "DiagonalDown"
+                      | "DiagonalUp"
+  - uid: 'excel!Excel.RangeBorder#style~0:complex'
+    name: |-
+      | BorderLineStyle
+                  | "None"
+                  | "Continuous"
+                  | "Dash"
+                  | "DashDot"
+                  | "DashDotDot"
+                  | "Dot"
+                  | "Double"
+                  | "SlantDashDot"
+    fullName: |-
+      | Excel.BorderLineStyle
+                  | "None"
+                  | "Continuous"
+                  | "Dash"
+                  | "DashDot"
+                  | "DashDotDot"
+                  | "Dot"
+                  | "Double"
+                  | "SlantDashDot"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.BorderLineStyle:enum'
+        name: BorderLineStyle
+        fullName: Excel.BorderLineStyle
+      - name: |2-
+
+                      | "None"
+                      | "Continuous"
+                      | "Dash"
+                      | "DashDot"
+                      | "DashDotDot"
+                      | "Dot"
+                      | "Double"
+                      | "SlantDashDot"
+        fullName: |2-
+
+                      | "None"
+                      | "Continuous"
+                      | "Dash"
+                      | "DashDot"
+                      | "DashDotDot"
+                      | "Dot"
+                      | "Double"
+                      | "SlantDashDot"
+  - uid: 'excel!Excel.RangeBorder#weight~0:complex'
+    name: BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
+    fullName: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"
+    spec.typeScript:
+      - uid: 'excel!Excel.BorderWeight:enum'
+        name: BorderWeight
+        fullName: Excel.BorderWeight
+      - name: ' | "Hairline" | "Thin" | "Medium" | "Thick"'
+        fullName: ' | "Hairline" | "Thin" | "Medium" | "Thick"'

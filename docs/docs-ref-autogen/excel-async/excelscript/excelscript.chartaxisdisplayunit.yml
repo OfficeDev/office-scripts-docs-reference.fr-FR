@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"billions"'
+    numericValue: '"Billions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.custom:member'
     summary: Cette opération définit l’axe en unités de la valeur personnalisée.
     name: custom
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredMillions:member'
     summary: Cette opération définit l’axe en unités de centaines de millions.
     name: hundredMillions
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundredMillions"'
+    numericValue: '"HundredMillions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundreds:member'
     summary: Cette opération définit l’axe en unités de centaines.
     name: hundreds
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundreds"'
+    numericValue: '"Hundreds"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.hundredThousands:member'
     summary: Cette opération définit l’axe en unités de centaines de milliers.
     name: hundredThousands
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"hundredThousands"'
+    numericValue: '"HundredThousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.millions:member'
     summary: Cette opération définit l’axe en millions.
     name: millions
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"millions"'
+    numericValue: '"Millions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.none:member'
     summary: Option par défaut. Cette opération permet de réinitialiser l’unité d’affichage de l’axe et de définir l’étiquette d’unité invisible.
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.tenMillions:member'
     summary: Cette opération définit l’axe en unités de dizaines de millions.
     name: tenMillions
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tenMillions"'
+    numericValue: '"TenMillions"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.tenThousands:member'
     summary: Cette opération définit l’axe en unités de dizaines de milliers.
     name: tenThousands
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"tenThousands"'
+    numericValue: '"TenThousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.thousands:member'
     summary: Cette opération définit l’axe en unités de milliers.
     name: thousands
@@ -98,7 +98,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"thousands"'
+    numericValue: '"Thousands"'
   - uid: 'excel!Excel.ChartAxisDisplayUnit.trillions:member'
     summary: Cette opération définit l’axe en milliards de milliards.
     name: trillions
@@ -106,4 +106,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"trillions"'
+    numericValue: '"Trillions"'

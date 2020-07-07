@@ -29,7 +29,14 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'calculate(calculationType: CalculationType): void;'
+      content: |-
+        calculate(
+                    calculationType:
+                        | CalculationType
+                        | "Recalculate"
+                        | "Full"
+                        | "FullRebuild"
+                ): void;
       return:
         type:
           - void
@@ -38,7 +45,7 @@ items:
         - id: calculationType
           description: 'Spécifie le type de calcul à utiliser. Pour plus d’informations, voir Excel. CalculationType.'
           type:
-            - 'excel!Excel.CalculationType:enum'
+            - 'excel!Excel.Application#calculate~0:complex'
   - uid: 'excel!Excel.Application#calculationEngineVersion:member'
     summary: Renvoie la version du moteur de calcul Excel utilisée pour le dernier recalcul complet.
     name: calculationEngineVersion
@@ -59,10 +66,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'calculationMode: CalculationMode;'
+      content: |-
+        calculationMode:
+                    | CalculationMode
+                    | "Automatic"
+                    | "AutomaticExceptTables"
+                    | "Manual";
       return:
         type:
-          - 'excel!Excel.CalculationMode:enum'
+          - 'excel!Excel.Application#calculationMode~0:complex'
   - uid: 'excel!Excel.Application#calculationState:member'
     summary: 'Renvoie l’état de calcul de l’application. Pour plus d’informations, voir Excel.CalculationState.'
     name: calculationState
@@ -71,10 +83,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly calculationState: CalculationState;'
+      content: |-
+        readonly calculationState:
+                    | CalculationState
+                    | "Done"
+                    | "Calculating"
+                    | "Pending";
       return:
         type:
-          - 'excel!Excel.CalculationState:enum'
+          - 'excel!Excel.Application#calculationState~0:complex'
   - uid: 'excel!Excel.Application#cultureInfo:member'
     summary: 'Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme de numéros et d’autres paramètres dépendants de la culture.'
     name: cultureInfo
@@ -183,15 +200,89 @@ items:
         type:
           - boolean
 references:
-  - uid: 'excel!Excel.CalculationType:enum'
-    name: CalculationType
-    fullName: Excel.CalculationType
-  - uid: 'excel!Excel.CalculationMode:enum'
-    name: CalculationMode
-    fullName: Excel.CalculationMode
-  - uid: 'excel!Excel.CalculationState:enum'
-    name: CalculationState
-    fullName: Excel.CalculationState
+  - uid: 'excel!Excel.Application#calculate~0:complex'
+    name: |-
+      | CalculationType
+                      | "Recalculate"
+                      | "Full"
+                      | "FullRebuild"
+    fullName: |-
+      | Excel.CalculationType
+                      | "Recalculate"
+                      | "Full"
+                      | "FullRebuild"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.CalculationType:enum'
+        name: CalculationType
+        fullName: Excel.CalculationType
+      - name: |2-
+
+                          | "Recalculate"
+                          | "Full"
+                          | "FullRebuild"
+                  
+        fullName: |2-
+
+                          | "Recalculate"
+                          | "Full"
+                          | "FullRebuild"
+                  
+  - uid: 'excel!Excel.Application#calculationMode~0:complex'
+    name: |-
+      | CalculationMode
+                  | "Automatic"
+                  | "AutomaticExceptTables"
+                  | "Manual"
+    fullName: |-
+      | Excel.CalculationMode
+                  | "Automatic"
+                  | "AutomaticExceptTables"
+                  | "Manual"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.CalculationMode:enum'
+        name: CalculationMode
+        fullName: Excel.CalculationMode
+      - name: |2-
+
+                      | "Automatic"
+                      | "AutomaticExceptTables"
+                      | "Manual"
+        fullName: |2-
+
+                      | "Automatic"
+                      | "AutomaticExceptTables"
+                      | "Manual"
+  - uid: 'excel!Excel.Application#calculationState~0:complex'
+    name: |-
+      | CalculationState
+                  | "Done"
+                  | "Calculating"
+                  | "Pending"
+    fullName: |-
+      | Excel.CalculationState
+                  | "Done"
+                  | "Calculating"
+                  | "Pending"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.CalculationState:enum'
+        name: CalculationState
+        fullName: Excel.CalculationState
+      - name: |2-
+
+                      | "Done"
+                      | "Calculating"
+                      | "Pending"
+        fullName: |2-
+
+                      | "Done"
+                      | "Calculating"
+                      | "Pending"
   - uid: 'excel!Excel.CultureInfo:interface'
     name: CultureInfo
     fullName: Excel.CultureInfo

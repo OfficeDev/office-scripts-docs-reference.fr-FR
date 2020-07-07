@@ -17,7 +17,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"downThenOver"'
+    numericValue: '"DownThenOver"'
   - uid: 'excel!Excel.PrintOrder.overThenDown:member'
     summary: Traite les pages ou champs page vers la droite avant de descendre à la ligne suivante.
     name: overThenDown
@@ -25,4 +25,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"overThenDown"'
+    numericValue: '"OverThenDown"'

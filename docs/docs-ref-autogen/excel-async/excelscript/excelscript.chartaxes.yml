@@ -34,7 +34,11 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+      content: |-
+        getItem(
+                    type: ChartAxisType | "Invalid" | "Category" | "Value" | "Series",
+                    group?: ChartAxisGroup | "Primary" | "Secondary"
+                ): ChartAxis;
       return:
         type:
           - 'excel!Excel.ChartAxis:interface'
@@ -43,11 +47,11 @@ items:
         - id: type
           description: 'Spécifie le type d’axe. Pour plus d’informations, voir Excel. ChartAxisType.'
           type:
-            - 'excel!Excel.ChartAxisType:enum'
+            - 'excel!Excel.ChartAxes#getItem~0:complex'
         - id: group
           description: 'Facultatif. Spécifie le groupe d''axes. Pour plus d’informations, voir Excel. ChartAxisGroup.'
           type:
-            - 'excel!Excel.ChartAxisGroup:enum'
+            - 'excel!Excel.ChartAxes#getItem~1:complex'
   - uid: 'excel!Excel.ChartAxes#load:member(1)'
     summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
     name: load(propertyNames)
@@ -94,9 +98,24 @@ references:
   - uid: 'excel!Excel.ChartAxis:interface'
     name: ChartAxis
     fullName: Excel.ChartAxis
-  - uid: 'excel!Excel.ChartAxisType:enum'
-    name: ChartAxisType
-    fullName: Excel.ChartAxisType
-  - uid: 'excel!Excel.ChartAxisGroup:enum'
-    name: ChartAxisGroup
-    fullName: Excel.ChartAxisGroup
+  - uid: 'excel!Excel.ChartAxes#getItem~0:complex'
+    name: ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
+    fullName: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisType:enum'
+        name: ChartAxisType
+        fullName: Excel.ChartAxisType
+      - name: ' | "Invalid" | "Category" | "Value" | "Series"'
+        fullName: ' | "Invalid" | "Category" | "Value" | "Series"'
+  - uid: 'excel!Excel.ChartAxes#getItem~1:complex'
+    name: ChartAxisGroup | "Primary" | "Secondary"
+    fullName: Excel.ChartAxisGroup | "Primary" | "Secondary"
+    spec.typeScript:
+      - uid: 'excel!Excel.ChartAxisGroup:enum'
+        name: ChartAxisGroup
+        fullName: Excel.ChartAxisGroup
+      - name: |2-
+           | "Primary" | "Secondary"
+                  
+        fullName: |2-
+           | "Primary" | "Secondary"

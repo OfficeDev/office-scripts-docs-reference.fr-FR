@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"custom"'
+    numericValue: '"Custom"'
   - uid: 'excel!Excel.DataValidationType.date:member'
     summary: Type de validation des données de date
     name: date
@@ -34,7 +34,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"date"'
+    numericValue: '"Date"'
   - uid: 'excel!Excel.DataValidationType.decimal:member'
     summary: Type de validation des données décimal
     name: decimal
@@ -42,7 +42,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"decimal"'
+    numericValue: '"Decimal"'
   - uid: 'excel!Excel.DataValidationType.inconsistent:member'
     summary: Incohérent signifie que la plage a une validation des données incohérente (il existe des règles différentes sur différentes cellules).
     name: inconsistent
@@ -50,7 +50,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inconsistent"'
+    numericValue: '"Inconsistent"'
   - uid: 'excel!Excel.DataValidationType.list:member'
     summary: Type de validation des données de liste
     name: list
@@ -58,7 +58,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"list"'
+    numericValue: '"List"'
   - uid: 'excel!Excel.DataValidationType.mixedCriteria:member'
     summary: MixedCriteria signifie que la plage a une validation des données présente sur certaines cellules mais pas toutes.
     name: mixedCriteria
@@ -66,7 +66,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"mixedCriteria"'
+    numericValue: '"MixedCriteria"'
   - uid: 'excel!Excel.DataValidationType.none:member'
     summary: 'Aucun signifie autoriser n’importe quelle valeur, de sorte qu’il n’y a aucune validation de données dans la plage.'
     name: none
@@ -74,7 +74,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"none"'
+    numericValue: '"None"'
   - uid: 'excel!Excel.DataValidationType.textLength:member'
     summary: Type de validation des données de longueur du texte
     name: textLength
@@ -82,7 +82,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"textLength"'
+    numericValue: '"TextLength"'
   - uid: 'excel!Excel.DataValidationType.time:member'
     summary: Type de validation des données de temps
     name: time
@@ -90,7 +90,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"time"'
+    numericValue: '"Time"'
   - uid: 'excel!Excel.DataValidationType.wholeNumber:member'
     summary: Type de validation des données de nombre entier
     name: wholeNumber
@@ -98,4 +98,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"wholeNumber"'
+    numericValue: '"WholeNumber"'

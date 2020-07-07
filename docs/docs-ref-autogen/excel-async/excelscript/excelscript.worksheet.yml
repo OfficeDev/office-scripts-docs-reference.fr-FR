@@ -143,7 +143,13 @@ items:
     syntax:
       content: |-
         copy(
-                    positionType?: WorksheetPositionType,
+                    positionType?:
+                        | WorksheetPositionType
+                        | "None"
+                        | "Before"
+                        | "After"
+                        | "Beginning"
+                        | "End",
                     relativeTo?: Worksheet
                 ): Worksheet;
       return:
@@ -172,7 +178,7 @@ items:
         - id: positionType
           description: "Emplacement dans le classeur où placer la feuille de calcul nouvellement créée. La valeur par défaut est «\_None\_», qui insère la feuille de calcul au début de la feuille de calcul."
           type:
-            - 'excel!Excel.WorksheetPositionType:enum'
+            - 'excel!Excel.Worksheet#copy~0:complex'
         - id: relativeTo
           description: "Feuille de calcul existante qui détermine la position de la nouvelle feuille de calcul. Cette condition n’est nécessaire que si le `positionType` est «\_Before\_» ou «\_after\_»."
           type:
@@ -626,10 +632,10 @@ items:
                     text: string,
                     replacement: string,
                     criteria: ReplaceCriteria
-                ): number;
+                ): ClientResult<number>;
       return:
         type:
-          - number
+          - 'excel!Excel.Worksheet#replaceAll~0:complex'
         description: ''
       parameters:
         - id: text
@@ -846,10 +852,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'visibility: SheetVisibility;'
+      content: 'visibility: SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
       return:
         type:
-          - 'excel!Excel.SheetVisibility:enum'
+          - 'excel!Excel.Worksheet#visibility~0:complex'
 references:
   - uid: 'excel!Excel.AutoFilter:interface'
     name: AutoFilter
@@ -863,9 +869,41 @@ references:
   - uid: 'excel!Excel.Worksheet:interface'
     name: Worksheet
     fullName: Excel.Worksheet
-  - uid: 'excel!Excel.WorksheetPositionType:enum'
-    name: WorksheetPositionType
-    fullName: Excel.WorksheetPositionType
+  - uid: 'excel!Excel.Worksheet#copy~0:complex'
+    name: |-
+      | WorksheetPositionType
+                      | "None"
+                      | "Before"
+                      | "After"
+                      | "Beginning"
+                      | "End"
+    fullName: |-
+      | Excel.WorksheetPositionType
+                      | "None"
+                      | "Before"
+                      | "After"
+                      | "Beginning"
+                      | "End"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.WorksheetPositionType:enum'
+        name: WorksheetPositionType
+        fullName: Excel.WorksheetPositionType
+      - name: |2-
+
+                          | "None"
+                          | "Before"
+                          | "After"
+                          | "Beginning"
+                          | "End"
+        fullName: |2-
+
+                          | "None"
+                          | "Before"
+                          | "After"
+                          | "Beginning"
+                          | "End"
   - uid: 'excel!Excel.RangeAreas:interface'
     name: RangeAreas
     fullName: Excel.RangeAreas
@@ -893,6 +931,15 @@ references:
   - uid: 'excel!Excel.WorksheetProtection:interface'
     name: WorksheetProtection
     fullName: Excel.WorksheetProtection
+  - uid: 'excel!Excel.Worksheet#replaceAll~0:complex'
+    name: ClientResult<number>
+    fullName: Excel.ClientResult<number>
+    spec.typeScript:
+      - uid: 'excel!Excel.ClientResult:interface'
+        name: ClientResult
+        fullName: Excel.ClientResult
+      - name: <number>
+        fullName: <number>
   - uid: 'excel!Excel.ReplaceCriteria:interface'
     name: ReplaceCriteria
     fullName: Excel.ReplaceCriteria
@@ -905,6 +952,12 @@ references:
   - uid: 'excel!Excel.TableCollection:interface'
     name: TableCollection
     fullName: Excel.TableCollection
-  - uid: 'excel!Excel.SheetVisibility:enum'
-    name: SheetVisibility
-    fullName: Excel.SheetVisibility
+  - uid: 'excel!Excel.Worksheet#visibility~0:complex'
+    name: SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    fullName: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden"
+    spec.typeScript:
+      - uid: 'excel!Excel.SheetVisibility:enum'
+        name: SheetVisibility
+        fullName: Excel.SheetVisibility
+      - name: ' | "Visible" | "Hidden" | "VeryHidden"'
+        fullName: ' | "Visible" | "Hidden" | "VeryHidden"'
