@@ -91,7 +91,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'sortByLabels(sortBy: SortBy): void;'
+      content: 'sortByLabels(sortBy: SortBy | "Ascending" | "Descending"): void;'
       return:
         type:
           - void
@@ -100,7 +100,7 @@ items:
         - id: sortBy
           description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
           type:
-            - 'excel!Excel.SortBy:enum'
+            - 'excel!Excel.PivotField#sortByLabels~0:complex'
   - uid: 'excel!Excel.PivotField#sortByValues:member(1)'
     summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs à partir du même DataPivotHierarchy.
     name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
@@ -111,7 +111,7 @@ items:
     syntax:
       content: |-
         sortByValues(
-                    sortBy: SortBy,
+                    sortBy: SortBy | "Ascending" | "Descending",
                     valuesHierarchy: DataPivotHierarchy,
                     pivotItemScope?: Array<PivotItem | string>
                 ): void;
@@ -123,7 +123,7 @@ items:
         - id: sortBy
           description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
           type:
-            - 'excel!Excel.SortBy:enum'
+            - 'excel!Excel.PivotField#sortByValues~0:complex'
         - id: valuesHierarchy
           description: Spécifie la hiérarchie des valeurs sur l’axe des données à utiliser pour le tri.
           type:
@@ -131,7 +131,7 @@ items:
         - id: pivotItemScope
           description: 'Les éléments qui doivent être utilisés pour l’étendue du tri. Il s’agit des éléments qui composent la ligne ou la colonne que vous souhaitez trier. Si une chaîne est utilisée à la place d’un PivotItem, la chaîne représente l’ID de PivotItem. S’il n’y a pas d’éléments autres que la hiérarchie de données sur l’axe sur lequel vous souhaitez effectuer le tri, il peut être vide.'
           type:
-            - 'excel!Excel.PivotField#sortByValues~0:complex'
+            - 'excel!Excel.PivotField#sortByValues~1:complex'
   - uid: 'excel!Excel.PivotField#subtotals:member'
     summary: Sous-totaux du champ PivotField.
     name: subtotals
@@ -148,13 +148,28 @@ references:
   - uid: 'excel!Excel.PivotItemCollection:interface'
     name: PivotItemCollection
     fullName: Excel.PivotItemCollection
-  - uid: 'excel!Excel.SortBy:enum'
-    name: SortBy
-    fullName: Excel.SortBy
+  - uid: 'excel!Excel.PivotField#sortByLabels~0:complex'
+    name: SortBy | "Ascending" | "Descending"
+    fullName: Excel.SortBy | "Ascending" | "Descending"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortBy:enum'
+        name: SortBy
+        fullName: Excel.SortBy
+      - name: ' | "Ascending" | "Descending"'
+        fullName: ' | "Ascending" | "Descending"'
+  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+    name: SortBy | "Ascending" | "Descending"
+    fullName: Excel.SortBy | "Ascending" | "Descending"
+    spec.typeScript:
+      - uid: 'excel!Excel.SortBy:enum'
+        name: SortBy
+        fullName: Excel.SortBy
+      - name: ' | "Ascending" | "Descending"'
+        fullName: ' | "Ascending" | "Descending"'
   - uid: 'excel!Excel.DataPivotHierarchy:interface'
     name: DataPivotHierarchy
     fullName: Excel.DataPivotHierarchy
-  - uid: 'excel!Excel.PivotField#sortByValues~0:complex'
+  - uid: 'excel!Excel.PivotField#sortByValues~1:complex'
     name: Array<PivotItem | string>
     fullName: Array<Excel.PivotItem | string>
     spec.typeScript:

@@ -232,10 +232,22 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: DataValidationType;'
+      content: |-
+        readonly type:
+                    | DataValidationType
+                    | "None"
+                    | "WholeNumber"
+                    | "Decimal"
+                    | "List"
+                    | "Date"
+                    | "Time"
+                    | "TextLength"
+                    | "Custom"
+                    | "Inconsistent"
+                    | "MixedCriteria";
       return:
         type:
-          - 'excel!Excel.DataValidationType:enum'
+          - 'excel!Excel.DataValidation#type~0:complex'
   - uid: 'excel!Excel.DataValidation#valid:member'
     summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. Renvoie la valeur true si toutes les valeurs de cellule sont valides ou la valeur false si toutes les valeurs de cellule ne sont pas valides. Renvoie la valeur null si les valeurs des cellules valides et non valides sont comprises dans la plage.
     name: valid
@@ -261,6 +273,58 @@ references:
   - uid: 'excel!Excel.DataValidationRule:interface'
     name: DataValidationRule
     fullName: Excel.DataValidationRule
-  - uid: 'excel!Excel.DataValidationType:enum'
-    name: DataValidationType
-    fullName: Excel.DataValidationType
+  - uid: 'excel!Excel.DataValidation#type~0:complex'
+    name: |-
+      | DataValidationType
+                  | "None"
+                  | "WholeNumber"
+                  | "Decimal"
+                  | "List"
+                  | "Date"
+                  | "Time"
+                  | "TextLength"
+                  | "Custom"
+                  | "Inconsistent"
+                  | "MixedCriteria"
+    fullName: |-
+      | Excel.DataValidationType
+                  | "None"
+                  | "WholeNumber"
+                  | "Decimal"
+                  | "List"
+                  | "Date"
+                  | "Time"
+                  | "TextLength"
+                  | "Custom"
+                  | "Inconsistent"
+                  | "MixedCriteria"
+    spec.typeScript:
+      - name: '| '
+        fullName: '| '
+      - uid: 'excel!Excel.DataValidationType:enum'
+        name: DataValidationType
+        fullName: Excel.DataValidationType
+      - name: |2-
+
+                      | "None"
+                      | "WholeNumber"
+                      | "Decimal"
+                      | "List"
+                      | "Date"
+                      | "Time"
+                      | "TextLength"
+                      | "Custom"
+                      | "Inconsistent"
+                      | "MixedCriteria"
+        fullName: |2-
+
+                      | "None"
+                      | "WholeNumber"
+                      | "Decimal"
+                      | "List"
+                      | "Date"
+                      | "Time"
+                      | "TextLength"
+                      | "Custom"
+                      | "Inconsistent"
+                      | "MixedCriteria"

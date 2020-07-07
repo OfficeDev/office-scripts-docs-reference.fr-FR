@@ -19,7 +19,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"ascending"'
+    numericValue: '"Ascending"'
   - uid: 'excel!Excel.SlicerSortType.dataSourceOrder:member'
     summary: Trier les éléments du segment dans l’ordre indiqué par la source de données.
     name: dataSourceOrder
@@ -27,7 +27,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"dataSourceOrder"'
+    numericValue: '"DataSourceOrder"'
   - uid: 'excel!Excel.SlicerSortType.descending:member'
     summary: Trier les éléments du segment dans l’ordre décroissant des légendes d’élément.
     name: descending
@@ -35,4 +35,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"descending"'
+    numericValue: '"Descending"'
