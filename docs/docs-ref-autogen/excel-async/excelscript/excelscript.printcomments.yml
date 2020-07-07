@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"endSheet"'
+    numericValue: '"EndSheet"'
   - uid: 'excel!Excel.PrintComments.inPlace:member'
     summary: Les commentaires seront imprimés où ils ont été insérés dans la feuille de calcul.
     name: inPlace
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"inPlace"'
+    numericValue: '"InPlace"'
   - uid: 'excel!Excel.PrintComments.noComments:member'
     summary: Les commentaires ne seront pas imprimés.
     name: noComments
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"noComments"'
+    numericValue: '"NoComments"'

@@ -18,7 +18,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"full"'
+    numericValue: '"Full"'
   - uid: 'excel!Excel.CalculationType.fullRebuild:member'
     summary: 'Cette opération permet de reconstruire la chaîne de dépendance complète, de marquer toutes les cellules comme étant modifiées, puis de les recalculer.'
     name: fullRebuild
@@ -26,7 +26,7 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"fullRebuild"'
+    numericValue: '"FullRebuild"'
   - uid: 'excel!Excel.CalculationType.recalculate:member'
     summary: 'Permet de recalculer toutes les cellules qu�Excel a marqu�es comme incorrectes, c�est-�-dire d�pendant de donn�es volatiles ou modifi�es, ainsi que les cellules marqu�es comme incorrectes par programmation.'
     name: recalculate
@@ -34,4 +34,4 @@ items:
     langs:
       - typeScript
     type: field
-    numericValue: '"recalculate"'
+    numericValue: '"Recalculate"'
