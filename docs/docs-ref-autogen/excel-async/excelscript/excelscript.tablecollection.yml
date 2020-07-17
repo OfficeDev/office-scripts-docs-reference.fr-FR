@@ -17,7 +17,7 @@ items:
       - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
       - 'excel!Excel.TableCollection#load:member(1)'
   - uid: 'excel!Excel.TableCollection#add:member(1)'
-    summary: 'Create a new table. The range object or source address determines the worksheet under which the table will be added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another table), an error will be thrown.'
+    summary: 'Crée un tableau L’adresse de la source ou de l’objet de la plage détermine la feuille de calcul dans laquelle le tableau sera ajouté. Si l’ajout ne peut être effectué (par exemple, parce que l’adresse n’est pas valide, ou parce que le tableau empiéterait sur un autre tableau), un message d’erreur apparaît.'
     name: 'add(address, hasHeaders)'
     fullName: 'add(address, hasHeaders)'
     langs:
@@ -35,7 +35,7 @@ items:
           type:
             - 'excel!Excel.TableCollection#add~0:complex'
         - id: hasHeaders
-          description: 'Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.'
+          description: 'Valeur booléenne qui indique si les données importées disposent d’étiquettes de colonne. Si la source ne contient pas d’en-têtes (autrement dit, lorsque cette propriété est définie sur false), Excel génère automatiquement un en-tête et décale les données d’une ligne vers le bas.'
           type:
             - boolean
   - uid: 'excel!Excel.TableCollection#count:member'

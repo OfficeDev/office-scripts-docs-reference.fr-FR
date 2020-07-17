@@ -448,7 +448,7 @@ items:
         description: ''
       parameters:
         - id: startCell
-          description: 'The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user''s right-to-left display settings.'
+          description: 'Cellule de début. Il s’agit de l’emplacement où le graphique sera déplacé. La cellule de début est la cellule supérieure gauche ou supérieure droite, selon les paramètres d’affichage droite-gauche définis par l’utilisateur.'
           type:
             - 'excel!Excel.Chart#setPosition~0:complex'
         - id: endCell
