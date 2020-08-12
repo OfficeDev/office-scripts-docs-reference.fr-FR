@@ -407,7 +407,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>Exemples
+          #### <a name="examples"></a>範例
 
           ```javascript
           /**
@@ -529,7 +529,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>Exemples
+          #### <a name="examples"></a>範例
 
           ```javascript
           /**
@@ -765,7 +765,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>Exemples
+          #### <a name="examples"></a>範例
 
           ```javascript
           /**
@@ -937,7 +937,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>Exemples
+          #### <a name="examples"></a>範例
 
           ```javascript
           /**
@@ -1405,7 +1405,26 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### <a name="examples"></a>範例
+
+          ```javascript
+          /**
+           * This script sets the tab color of every worksheet in the workbook to red.
+           */
+          function main(workbook: ExcelScript.Workbook) {
+            // Get all the worksheets in the workbook. 
+            let sheets = workbook.getWorksheets();
+            
+            // Set the tab color of each worksheet to a random color.
+            for (let sheet of sheets) {    
+              // Set the color of the current worksheet's tab to red.
+              sheet.setTabColor("red");
+            }
+          }
+          ```
       parameters:
         - id: tabColor
           description: ''
