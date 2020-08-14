@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.CellPropertiesProtection:interface'
-    summary: 'Représente les `format.protection` propriétés d''`getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le `format.protection` paramètre d’entrée de`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et`setColumnProperties`<!-- -->.'
+    summary: 'Représente les `format.protection` propriétés d'' `getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le `format.protection` paramètre d’entrée de `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et `setColumnProperties`<!-- -->.'
     name: ExcelScript.CellPropertiesProtection
     fullName: ExcelScript.CellPropertiesProtection
     langs:

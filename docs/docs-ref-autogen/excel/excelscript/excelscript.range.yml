@@ -15,7 +15,6 @@ items:
       - 'ExcelScript!ExcelScript.Range#clear:member(1)'
       - 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.Range#delete:member(1)'
       - 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -260,32 +259,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.Range#convertToLinkedDataType:member(1)'
-    summary: Convertit la plage de cellules en type de données liée dans la feuille de calcul.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: ID de service qui sera utilisé pour interroger les données.
-          type:
-            - number
-        - id: languageCulture
-          description: Culture de langue pour laquelle interroger le service.
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.Range#copyFrom:member(1)'
     summary: Copie les cellules de données ou de mise en forme à partir de la plage source ou RangeAreas à la plage active. La taille de la plage de destination peut être différente de celle de la plage source ou RangeAreas. La destination est étendue automatiquement si elle est plus petite que la source.
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
@@ -1991,7 +1964,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.Range#setValue:member(1)'
-    summary: 'Définit la valeur brute de la plage spécifiée. Les données définies peuvent être de type chaîne, numérique ou booléen. `null`la valeur sera ignorée (non définie ou remplacée dans Excel). Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.'
+    summary: 'Définit la valeur brute de la plage spécifiée. Les données définies peuvent être de type chaîne, numérique ou booléen. `null` la valeur sera ignorée (non définie ou remplacée dans Excel). Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.'
     name: setValue(value)
     fullName: setValue(value)
     langs:

@@ -14,7 +14,6 @@ items:
       - 'ExcelScript!ExcelScript.RangeAreas#clear:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)'
-      - 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddress:member(1)'
       - 'ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)'
@@ -113,32 +112,6 @@ items:
         type:
           - void
         description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeAreas#convertToLinkedDataType:member(1)'
-    summary: Convertit toutes les cellules de RangeAreas avec des types de données en texte.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: ID de service qui sera utilisé pour interroger les données.
-          type:
-            - number
-        - id: languageCulture
-          description: Culture de langue pour laquelle interroger le service.
-          type:
-            - string
   - uid: 'ExcelScript!ExcelScript.RangeAreas#copyFrom:member(1)'
     summary: Copie les cellules de données ou de mise en forme à partir de la plage source ou RangeAreas à la plage active. La taille de l’rangeAreas de destination peut être différente de celle de la plage source ou de la RangeAreas. La destination est étendue automatiquement si elle est plus petite que la source.
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
