@@ -87,7 +87,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.TextFrame#getHorizontalAlignment:member(1)'
-    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir Excel.ShapeTextHorizontalAlignment.'
+    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir ExcelScript. ShapeTextHorizontalAlignment.'
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -100,7 +100,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.TextFrame#getHorizontalOverflow:member(1)'
-    summary: 'Représente le type de débordement horizontal du cadre du texte. Pour plus d’informations, voir Excel.ShapeTextHorizontalOverflow. '
+    summary: 'Représente le type de débordement horizontal du cadre du texte. Pour plus d’informations, voir ExcelScript. ShapeTextHorizontalOverflow.'
     name: getHorizontalOverflow()
     fullName: getHorizontalOverflow()
     langs:
@@ -126,7 +126,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.TextFrame#getOrientation:member(1)'
-    summary: 'Représente l’angle auquel le texte est orienté pour le cadre de texte. Pour plus d’informations, voir Excel.ShapeTextOrientation.'
+    summary: 'Représente l’angle auquel le texte est orienté pour le cadre de texte. Pour plus d’informations, voir ExcelScript. ShapeTextOrientation.'
     name: getOrientation()
     fullName: getOrientation()
     langs:
@@ -139,7 +139,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeTextOrientation:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.TextFrame#getReadingOrder:member(1)'
-    summary: 'Représente l’ordre de lecture du cadre texte gauche à droite ou de droite à gauche. Pour plus d’informations, voir Excel.ShapeTextReadingOrder.'
+    summary: 'Représente l’ordre de lecture du cadre texte gauche à droite ou de droite à gauche. Pour plus d’informations, voir ExcelScript. ShapeTextReadingOrder.'
     name: getReadingOrder()
     fullName: getReadingOrder()
     langs:
@@ -165,7 +165,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.TextFrame#getTextRange:member(1)'
-    summary: 'Représente le texte lié à une forme, en plus des propriétés et des méthodes de manipulation du texte. Pour plus d’informations, voir Excel.TextRange.'
+    summary: 'Représente le texte lié à une forme, en plus des propriétés et des méthodes de manipulation du texte. Pour plus d’informations, voir ExcelScript. TextRange.'
     name: getTextRange()
     fullName: getTextRange()
     langs:
@@ -191,7 +191,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.TextFrame#getVerticalAlignment:member(1)'
-    summary: 'Représente l’alignement vertical pour le style. Pour plus d’informations, voir Excel.ShapeTextVerticalAlignment.'
+    summary: 'Représente l’alignement vertical pour le style. Pour plus d’informations, voir ExcelScript. ShapeTextVerticalAlignment.'
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -204,7 +204,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.TextFrame#getVerticalOverflow:member(1)'
-    summary: 'Représente le type de débordement vertical du cadre du texte. Pour plus d’informations, voir Excel.ShapeTextVerticalOverflow.'
+    summary: 'Représente le type de débordement vertical du cadre du texte. Pour plus d’informations, voir ExcelScript. ShapeTextVerticalOverflow.'
     name: getVerticalOverflow()
     fullName: getVerticalOverflow()
     langs:
@@ -253,7 +253,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.TextFrame#setHorizontalAlignment:member(1)'
-    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir Excel.ShapeTextHorizontalAlignment.'
+    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir ExcelScript. ShapeTextHorizontalAlignment.'
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -274,7 +274,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeTextHorizontalAlignment:enum'
   - uid: 'ExcelScript!ExcelScript.TextFrame#setHorizontalOverflow:member(1)'
-    summary: 'Représente le type de débordement horizontal du cadre du texte. Pour plus d’informations, voir Excel.ShapeTextHorizontalOverflow. '
+    summary: 'Représente le type de débordement horizontal du cadre du texte. Pour plus d’informations, voir ExcelScript. ShapeTextHorizontalOverflow.'
     name: setHorizontalOverflow(horizontalOverflow)
     fullName: setHorizontalOverflow(horizontalOverflow)
     langs:
@@ -313,7 +313,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.TextFrame#setOrientation:member(1)'
-    summary: 'Représente l’angle auquel le texte est orienté pour le cadre de texte. Pour plus d’informations, voir Excel.ShapeTextOrientation.'
+    summary: 'Représente l’angle auquel le texte est orienté pour le cadre de texte. Pour plus d’informations, voir ExcelScript. ShapeTextOrientation.'
     name: setOrientation(orientation)
     fullName: setOrientation(orientation)
     langs:
@@ -331,7 +331,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeTextOrientation:enum'
   - uid: 'ExcelScript!ExcelScript.TextFrame#setReadingOrder:member(1)'
-    summary: 'Représente l’ordre de lecture du cadre texte gauche à droite ou de droite à gauche. Pour plus d’informations, voir Excel.ShapeTextReadingOrder.'
+    summary: 'Représente l’ordre de lecture du cadre texte gauche à droite ou de droite à gauche. Pour plus d’informations, voir ExcelScript. ShapeTextReadingOrder.'
     name: setReadingOrder(readingOrder)
     fullName: setReadingOrder(readingOrder)
     langs:
@@ -385,7 +385,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.TextFrame#setVerticalAlignment:member(1)'
-    summary: 'Représente l’alignement vertical pour le style. Pour plus d’informations, voir Excel.ShapeTextVerticalAlignment.'
+    summary: 'Représente l’alignement vertical pour le style. Pour plus d’informations, voir ExcelScript. ShapeTextVerticalAlignment.'
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:
@@ -406,7 +406,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeTextVerticalAlignment:enum'
   - uid: 'ExcelScript!ExcelScript.TextFrame#setVerticalOverflow:member(1)'
-    summary: 'Représente le type de débordement vertical du cadre du texte. Pour plus d’informations, voir Excel.ShapeTextVerticalOverflow.'
+    summary: 'Représente le type de débordement vertical du cadre du texte. Pour plus d’informations, voir ExcelScript. ShapeTextVerticalOverflow.'
     name: setVerticalOverflow(verticalOverflow)
     fullName: setVerticalOverflow(verticalOverflow)
     langs:

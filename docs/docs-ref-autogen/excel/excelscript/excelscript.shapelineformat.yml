@@ -35,7 +35,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)'
-    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir Excel.ShapeLineStyle.'
+    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir ExcelScript. ShapeLineStyle.'
     name: getDashStyle()
     fullName: getDashStyle()
     langs:
@@ -48,7 +48,7 @@ items:
           - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)'
-    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir Excel.ShapeFontUnderlineStyle.'
+    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir ExcelScript. ShapeLineStyle.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -118,7 +118,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)'
-    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir Excel.ShapeLineStyle.'
+    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir ExcelScript. ShapeLineStyle.'
     name: setDashStyle(dashStyle)
     fullName: setDashStyle(dashStyle)
     langs:
@@ -136,7 +136,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.ShapeLineDashStyle:enum'
   - uid: 'ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)'
-    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir Excel.ShapeFontUnderlineStyle.'
+    summary: 'Représente le style de trait de la forme. Renvoie null lors de la ligne n’est pas visible ou il existe des stylets tiret incohérents. Pour plus d’informations, voir ExcelScript. ShapeLineStyle.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

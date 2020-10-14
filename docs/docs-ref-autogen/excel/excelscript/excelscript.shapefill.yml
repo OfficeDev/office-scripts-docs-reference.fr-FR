@@ -56,7 +56,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFill#getType:member(1)'
-    summary: Renvoie le type de remplissage de la forme. Voir Excel.GeometricShapeType des détails.
+    summary: 'Renvoie le type de remplissage de la forme. Pour plus d’informations, voir ExcelScript. ShapeFillType.'
     name: getType()
     fullName: getType()
     langs:

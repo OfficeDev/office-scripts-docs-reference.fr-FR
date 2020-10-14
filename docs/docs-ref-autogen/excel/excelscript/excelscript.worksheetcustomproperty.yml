@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty:interface'
+    summary: Représente une propriété personnalisée au niveau de la feuille de calcul.
+    name: ExcelScript.WorksheetCustomProperty
+    fullName: ExcelScript.WorksheetCustomProperty
+    langs:
+      - typeScript
+    type: interface
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+      - 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#delete:member(1)'
+    summary: Supprime la propriété personnalisée.
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)'
+    summary: "Obtient la clé de la propriété personnalisée. Les clés de propriété personnalisée ne sont pas sensibles à la casse. La clé est limitée à 255 caractères (les plus grandes valeurs entraînent la levée d’une erreur «\_InvalidArgument\_»)."
+    name: getKey()
+    fullName: getKey()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#getValue:member(1)'
+    summary: Obtient ou définit la valeur de la propriété personnalisée.
+    name: getValue()
+    fullName: getValue()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getValue(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.WorksheetCustomProperty#setValue:member(1)'
+    summary: Obtient ou définit la valeur de la propriété personnalisée.
+    name: setValue(value)
+    fullName: setValue(value)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setValue(value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: ''
+          type:
+            - string

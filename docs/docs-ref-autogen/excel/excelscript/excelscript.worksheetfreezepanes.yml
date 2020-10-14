@@ -32,7 +32,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt~0:complex'
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)'
-    summary: Figer la/les première(s) colonne(s) de la feuille de calcul en place.
+    summary: Figer la première colonne ou les colonnes de la feuille de calcul sur place.
     name: freezeColumns(count)
     fullName: freezeColumns(count)
     langs:
@@ -50,7 +50,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)'
-    summary: Figer la/les première(s) ligne(s) de la feuille de calcul en place.
+    summary: Figer la ou les lignes du haut de la feuille de calcul sur place.
     name: freezeRows(count)
     fullName: freezeRows(count)
     langs:

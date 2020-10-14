@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat:interface'
-    summary: 'Objet qui encapsule une plage, un format, une règle et d’autres propriétés d’un format conditionnel. Pour en savoir plus sur le modèle objet de mise en forme conditionnelle, consultez la rubrique [appliquer une mise en forme conditionnelle à des plages Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.'
+    summary: 'Objet qui encapsule une plage, un format, une règle et d’autres propriétés d’un format conditionnel.'
     name: ExcelScript.ConditionalFormat
     fullName: ExcelScript.ConditionalFormat
     langs:
@@ -118,7 +118,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)'
-    summary: 'Renvoie le format conditionnel des critères prédéfinis. Pour plus d’informations, voir Excel. PresetCriteriaConditionalFormat.'
+    summary: 'Renvoie le format conditionnel des critères prédéfinis. Pour plus d’informations, voir ExcelScript. PresetCriteriaConditionalFormat.'
     name: getPreset()
     fullName: getPreset()
     langs:

@@ -32,7 +32,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)'
-    summary: 'Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir Excel. BorderIndex.'
+    summary: 'Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir ExcelScript. BorderIndex.'
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -45,7 +45,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)'
-    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir ExcelScript. BorderLineStyle.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -58,7 +58,7 @@ items:
           - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
+    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
     name: getTintAndShade()
     fullName: getTintAndShade()
     langs:
@@ -71,7 +71,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)'
-    summary: 'Spécifie l''épaisseur de la bordure autour d''une plage. Pour plus d’informations, voir Excel. BorderWeight.'
+    summary: 'Spécifie l''épaisseur de la bordure autour d''une plage. Pour plus d’informations, voir ExcelScript. BorderWeight.'
     name: getWeight()
     fullName: getWeight()
     langs:
@@ -102,7 +102,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)'
-    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir ExcelScript. BorderLineStyle.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:
@@ -120,7 +120,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
+    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.'
     name: setTintAndShade(tintAndShade)
     fullName: setTintAndShade(tintAndShade)
     langs:
@@ -138,7 +138,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)'
-    summary: 'Spécifie l''épaisseur de la bordure autour d''une plage. Pour plus d’informations, voir Excel. BorderWeight.'
+    summary: 'Spécifie l''épaisseur de la bordure autour d''une plage. Pour plus d’informations, voir ExcelScript. BorderWeight.'
     name: setWeight(weight)
     fullName: setWeight(weight)
     langs:

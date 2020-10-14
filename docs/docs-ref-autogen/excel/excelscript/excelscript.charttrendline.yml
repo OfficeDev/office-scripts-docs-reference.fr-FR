@@ -83,7 +83,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#getIntercept:member(1)'
-    summary: Représente la valeur intercept de la courbe de tendance. Peut être défini sur une valeur numérique ou une chaîne vide (pour les valeurs automatiques). La valeur renvoyée est toujours un nombre.
+    summary: Spécifie la valeur d’interception de la courbe de tendance.
     name: getIntercept()
     fullName: getIntercept()
     langs:
@@ -223,7 +223,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartTrendline#setIntercept:member(1)'
-    summary: Représente la valeur intercept de la courbe de tendance. Peut être défini sur une valeur numérique ou une chaîne vide (pour les valeurs automatiques). La valeur renvoyée est toujours un nombre.
+    summary: Spécifie la valeur d’interception de la courbe de tendance.
     name: setIntercept(intercept)
     fullName: setIntercept(intercept)
     langs:

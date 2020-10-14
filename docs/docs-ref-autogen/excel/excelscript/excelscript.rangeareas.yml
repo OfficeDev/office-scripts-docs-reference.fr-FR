@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    summary: 'RangeAreas représente une collection d’une ou plusieurs plages rectangulaires dans la même feuille de calcul. Pour savoir comment utiliser les plages discontinguous, lisez [travailler avec plusieurs plages simultanément dans des compléments Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.'
+    summary: RangeAreas représente une collection d’une ou plusieurs plages rectangulaires dans la même feuille de calcul.
     name: ExcelScript.RangeAreas
     fullName: ExcelScript.RangeAreas
     langs:
@@ -52,7 +52,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 'Type de mise en forme conditionnelle ajoutée. Pour plus d’informations, voir Excel. ConditionalFormatType.'
+          description: 'Type de mise en forme conditionnelle ajoutée. Pour plus d’informations, voir ExcelScript. ConditionalFormatType.'
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#calculate:member(1)'
@@ -83,7 +83,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: "Facultatif. Détermine le type d’action de suppression. Pour plus d’informations, voir Excel. ClearApplyTo. La valeur par défaut est «\_All\_»."
+          description: "Facultatif. Détermine le type d’action de suppression. Pour plus d’informations, voir ExcelScript. ClearApplyTo. La valeur par défaut est «\_All\_»."
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)'

@@ -15,6 +15,7 @@ items:
       - 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
+      - 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getId:member(1)'
       - 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
@@ -48,7 +49,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
         - id: contentType
-          description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum`ContentType.Plain`<!-- -->.
+          description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Comment#delete:member(1)'
@@ -120,6 +121,19 @@ items:
       return:
         type:
           - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
+    summary: Obtient le type de contenu du commentaire.
+    name: getContentType()
+    fullName: getContentType()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getContentType(): ContentType;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.ContentType:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
     summary: 'Obtenir l’heure de création du commentaire. Renvoie la valeur null si le commentaire a été converti d’une note, étant donné que le commentaire ne dispose pas d’une date de création.'

@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
-    summary: 'Type de soulignement appliqué à la police. Renvoie la valeur null si le TextRange inclut les fragments de texte avec les différentes styles. Pour plus d’informations, voir Excel.ShapeFontUnderlineStyle.'
+    summary: 'Type de soulignement appliqué à la police. Renvoie la valeur null si le TextRange inclut les fragments de texte avec les différentes styles. Pour plus d’informations, voir ExcelScript. ShapeFontUnderlineStyle.'
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
-    summary: 'Type de soulignement appliqué à la police. Renvoie la valeur null si le TextRange inclut les fragments de texte avec les différentes styles. Pour plus d’informations, voir Excel.ShapeFontUnderlineStyle.'
+    summary: 'Type de soulignement appliqué à la police. Renvoie la valeur null si le TextRange inclut les fragments de texte avec les différentes styles. Pour plus d’informations, voir ExcelScript. ShapeFontUnderlineStyle.'
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

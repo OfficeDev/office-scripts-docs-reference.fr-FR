@@ -41,11 +41,11 @@ items:
         description: ''
       parameters:
         - id: type
-          description: 'Spécifie le type d’axe. Pour plus d’informations, voir Excel. ChartAxisType.'
+          description: 'Spécifie le type d’axe. Pour plus d’informations, voir ExcelScript. ChartAxisType.'
           type:
             - 'ExcelScript!ExcelScript.ChartAxisType:enum'
         - id: group
-          description: 'Facultatif. Spécifie le groupe d''axes. Pour plus d’informations, voir Excel. ChartAxisGroup.'
+          description: 'Facultatif. Spécifie le groupe d''axes. Pour plus d’informations, voir ExcelScript. ChartAxisGroup.'
           type:
             - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
   - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
