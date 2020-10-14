@@ -87,7 +87,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)'
-    summary: 'Type de soulignement appliqué à la police. Pour plus d’informations, voir Excel. ChartUnderlineStyle.'
+    summary: 'Type de soulignement appliqué à la police. Pour plus d’informations, voir ExcelScript. ChartUnderlineStyle.'
     name: getUnderline()
     fullName: getUnderline()
     langs:
@@ -190,7 +190,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)'
-    summary: 'Type de soulignement appliqué à la police. Pour plus d’informations, voir Excel. ChartUnderlineStyle.'
+    summary: 'Type de soulignement appliqué à la police. Pour plus d’informations, voir ExcelScript. ChartUnderlineStyle.'
     name: setUnderline(underline)
     fullName: setUnderline(underline)
     langs:

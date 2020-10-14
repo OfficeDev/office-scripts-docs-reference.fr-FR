@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-    summary: 'Représente un tableau croisé dynamique Excel. Pour en savoir plus sur le modèle objet de tableau croisé dynamique, lisez utilisation [de tableaux croisés dynamiques à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
+    summary: Représente un tableau croisé dynamique Excel.
     name: ExcelScript.PivotTable
     fullName: ExcelScript.PivotTable
     langs:
@@ -14,6 +14,7 @@ items:
       - 'ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#delete:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies:member(1)'
@@ -35,6 +36,7 @@ items:
       - 'ExcelScript!ExcelScript.PivotTable#removeDataHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#removeFilterHierarchy:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#removeRowHierarchy:member(1)'
+      - 'ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#setName:member(1)'
       - 'ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
@@ -131,6 +133,19 @@ items:
       return:
         type:
           - void
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)'
+    summary: Indique si le tableau croisé dynamique autorise l’application de plusieurs PivotFilters sur un champ PivotField donné dans le tableau.
+    name: getAllowMultipleFiltersPerField()
+    fullName: getAllowMultipleFiltersPerField()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAllowMultipleFiltersPerField(): boolean;'
+      return:
+        type:
+          - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
     summary: Les hiérarchies de colonne de tableau croisé dynamique.
@@ -456,6 +471,27 @@ items:
           description: ''
           type:
             - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
+  - uid: 'ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)'
+    summary: Indique si le tableau croisé dynamique autorise l’application de plusieurs PivotFilters sur un champ PivotField donné dans le tableau.
+    name: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
+    fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        setAllowMultipleFiltersPerField(
+                    allowMultipleFiltersPerField: boolean
+                ): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: allowMultipleFiltersPerField
+          description: ''
+          type:
+            - boolean
   - uid: 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
     summary: Indique si le tableau croisé dynamique permet aux valeurs du corps de données d’être modifiées par l’utilisateur.
     name: setEnableDataValueEditing(enableDataValueEditing)

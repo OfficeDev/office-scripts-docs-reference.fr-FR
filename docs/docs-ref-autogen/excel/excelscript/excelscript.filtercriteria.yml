@@ -55,7 +55,7 @@ items:
         type:
           - string
   - uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
-    summary: "Critères dynamiques de l’ensemble Excel.DynamicFilterCriteria à appliquer à cette colonne. Utilisé avec un filtrage «\_Dynamic\_»."
+    summary: "Critères dynamiques de l’ensemble ExcelScript. DynamicFilterCriteria à appliquer à cette colonne. Utilisé avec un filtrage «\_Dynamic\_»."
     name: dynamicCriteria
     fullName: dynamicCriteria
     langs:

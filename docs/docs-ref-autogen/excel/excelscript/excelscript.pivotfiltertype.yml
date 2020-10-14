@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
+    summary: Énumération simple qui représente un type de filtre pour un champ de tableau croisé dynamique.
+    name: ExcelScript.PivotFilterType
+    fullName: ExcelScript.PivotFilterType
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+      - 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    summary: "Filtre PivotItems avec une date à la place d’une étiquette. Remarque\_: un champ de tableau croisé dynamique ne peut pas avoir simultanément un filtre d’étiquettes et un filtre date."
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    summary: "Filtre les filtres en fonction de leurs étiquettes. Remarque\_: un champ de tableau croisé dynamique ne peut pas avoir simultanément un filtre d’étiquettes et un filtre date."
+    name: label
+    fullName: label
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    summary: Filtre des filtres spécifiques sélectionnés manuellement à partir du tableau croisé dynamique.
+    name: manual
+    fullName: manual
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    summary: PivotFilterType est inconnu ou non pris en charge.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    summary: Filtre en fonction de la valeur d’un PivotItem par rapport à un DataPivotHierarchy.
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: field

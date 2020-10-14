@@ -81,7 +81,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: 'Renvoie le type de la liaison. Pour plus d’informations, voir Excel. BindingType.'
+    summary: 'Renvoie le type de la liaison. Pour plus d’informations, voir ExcelScript. BindingType.'
     name: getType()
     fullName: getType()
     langs:

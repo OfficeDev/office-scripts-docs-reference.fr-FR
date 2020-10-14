@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
+    summary: Représente les dimensions lors de l’obtention de valeurs à partir de la série de graphiques.
+    name: ExcelScript.ChartSeriesDimension
+    fullName: ExcelScript.ChartSeriesDimension
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
+    summary: Axe des séries du graphique pour les tailles des bulles dans les graphiques en bulles.
+    name: bubbleSizes
+    fullName: bubbleSizes
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
+    summary: Axe des séries du graphique pour les catégories.
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
+    summary: Axe des séries du graphique pour les valeurs.
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
+    summary: Axe des séries du graphique pour les valeurs de l’axe des abscisses dans les graphiques à nuages de points et les graphiques en bulles.
+    name: xvalues
+    fullName: xvalues
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
+    summary: Axe des séries du graphique pour les valeurs de l’axe des ordonnées dans les graphiques en bulles et à nuages de points.
+    name: yvalues
+    fullName: yvalues
+    langs:
+      - typeScript
+    type: field

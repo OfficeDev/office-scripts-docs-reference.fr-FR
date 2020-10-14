@@ -1,0 +1,83 @@
+### YamlMime:UniversalReference
+items:
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
+    summary: Énumération représentant toutes les conditions acceptées par lesquelles un filtre de valeur peut être appliqué. Permet de configurer le type d’PivotFilter appliqué au champ. `PivotFilter.exclusive` peut être défini sur true pour inverser la plupart de ces conditions.
+    name: ExcelScript.ValueFilterCondition
+    fullName: ExcelScript.ValueFilterCondition
+    langs:
+      - typeScript
+    type: enum
+    package: ExcelScript!
+    children:
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+      - 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.between:member'
+    summary: "Entre `lowerBound` et `upperBound` critères.\n\nCritères requis\_: {`value`<!-- -->, `lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critères facultatifs\_: {`exclusive`<!-- -->}<!-- -->."
+    name: between
+    fullName: between
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.bottomN:member'
+    summary: "En bas N (`threshold`<!-- -->) \\[ Items, percent, Sum \\] of value Category.\n\nCritères requis\_: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->."
+    name: bottomN
+    fullName: bottomN
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.equals:member'
+    summary: "Correspond au critère de comparaison.\n\nCritères requis\_: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->. Critères facultatifs\_: {`exclusive`<!-- -->}<!-- -->."
+    name: equals
+    fullName: equals
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThan:member'
+    summary: "Supérieur au critère de comparateur.\n\nCritères requis\_: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->."
+    name: greaterThan
+    fullName: greaterThan
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.greaterThanOrEqualTo:member'
+    summary: "Supérieur ou égal au critère de comparateur.\n\nCritères requis\_: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->."
+    name: greaterThanOrEqualTo
+    fullName: greaterThanOrEqualTo
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThan:member'
+    summary: "Inférieur au critère de comparateur.\n\nCritères requis\_: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->."
+    name: lessThan
+    fullName: lessThan
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.lessThanOrEqualTo:member'
+    summary: "Inférieur ou égal au critère de comparateur.\n\nCritères requis\_: {`value`<!-- -->, `comparator`<!-- -->}<!-- -->."
+    name: lessThanOrEqualTo
+    fullName: lessThanOrEqualTo
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.topN:member'
+    summary: "En haut N (`threshold`<!-- -->) \\[ Items, percent, Sum \\] of value Category.\n\nCritères requis\_: {`value`<!-- -->, `threshold`<!-- -->, `selectionType`<!-- -->}<!-- -->."
+    name: topN
+    fullName: topN
+    langs:
+      - typeScript
+    type: field
+  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition.unknown:member'
+    summary: ValueFilterCondition est inconnu ou non pris en charge.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field

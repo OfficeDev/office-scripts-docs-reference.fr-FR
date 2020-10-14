@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Workbook:interface'
-    summary: 'Workbook est l’objet de niveau supérieur qui contient des objets Workbook connexes tels que des feuilles de calcul, des tableaux, des plages, etc. Pour en savoir plus sur le modèle objet Workbook, consultez [utiliser des classeurs à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.'
+    summary: 'Le classeur est l’objet de niveau supérieur qui contient des objets connexes tels que des feuilles de calcul, des tableaux, des plages, etc.'
     name: ExcelScript.Workbook
     fullName: ExcelScript.Workbook
     langs:
@@ -110,7 +110,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addBinding~0:complex'
         - id: bindingType
-          description: Type de liaison. Voir Excel. BindingType.
+          description: Type de liaison. Voir ExcelScript. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -141,7 +141,7 @@ items:
           type:
             - string
         - id: bindingType
-          description: Type de liaison. Voir Excel. BindingType.
+          description: Type de liaison. Voir ExcelScript. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -163,7 +163,7 @@ items:
         description: ''
       parameters:
         - id: bindingType
-          description: Type de liaison. Voir Excel. BindingType.
+          description: Type de liaison. Voir ExcelScript. BindingType.
           type:
             - 'ExcelScript!ExcelScript.BindingType:enum'
         - id: id
@@ -198,7 +198,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Workbook#addComment~1:complex'
         - id: contentType
-          description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum`ContentType.Plain`<!-- -->.
+          description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum `ContentType.Plain`<!-- -->.
           type:
             - 'ExcelScript!ExcelScript.ContentType:enum'
   - uid: 'ExcelScript!ExcelScript.Workbook#addCustomXmlPart:member(1)'
@@ -508,7 +508,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -1276,7 +1276,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**

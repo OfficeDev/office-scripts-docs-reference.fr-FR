@@ -28,7 +28,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)'
-    summary: 'Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir Excel. ConditionalRangeBorderIndex.'
+    summary: 'Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir ExcelScript. ConditionalRangeBorderIndex.'
     name: getSideIndex()
     fullName: getSideIndex()
     langs:
@@ -41,7 +41,7 @@ items:
           - 'ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)'
-    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir ExcelScript. BorderLineStyle.'
     name: getStyle()
     fullName: getStyle()
     langs:
@@ -72,7 +72,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)'
-    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir Excel. BorderLineStyle.'
+    summary: 'L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir ExcelScript. BorderLineStyle.'
     name: setStyle(style)
     fullName: setStyle(style)
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Range:interface'
-    summary: 'La plage représente un ensemble d’une ou plusieurs cellules contiguës, telles qu’une cellule, une ligne, une colonne, un bloc de cellules, etc. Pour en savoir plus sur l’utilisation des plages tout au long de l’API, consultez la rubrique [utiliser des plages à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) et [utiliser des plages à l’aide de l’API JavaScript pour Excel (avancé)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
+    summary: 'Une plage représente un ensemble constitué d’une ou de plusieurs cellules contiguës comme une cellule, une ligne, une colonne, un bloc de cellules, etc.'
     name: ExcelScript.Range
     fullName: ExcelScript.Range
     langs:
@@ -34,6 +34,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getConditionalFormat:member(1)'
       - 'ExcelScript!ExcelScript.Range#getConditionalFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#getDataValidation:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
       - 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
       - 'ExcelScript!ExcelScript.Range#getEntireRow:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormat:member(1)'
@@ -43,6 +44,7 @@ items:
       - 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
       - 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHidden:member(1)'
       - 'ExcelScript!ExcelScript.Range#getHyperlink:member(1)'
@@ -56,7 +58,9 @@ items:
       - 'ExcelScript!ExcelScript.Range#getLeft:member(1)'
       - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)'
       - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormats:member(1)'
       - 'ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)'
@@ -70,8 +74,11 @@ items:
       - 'ExcelScript!ExcelScript.Range#getRowIndex:member(1)'
       - 'ExcelScript!ExcelScript.Range#getRowsAbove:member(1)'
       - 'ExcelScript!ExcelScript.Range#getRowsBelow:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSort:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSpecialCells:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
+      - 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
       - 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
       - 'ExcelScript!ExcelScript.Range#getTables:member(1)'
       - 'ExcelScript!ExcelScript.Range#getText:member(1)'
@@ -129,7 +136,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -154,14 +161,11 @@ items:
           ```
       parameters:
         - id: type
-          description: 'Type de mise en forme conditionnelle ajoutée. Pour plus d’informations, voir Excel. ConditionalFormatType.'
+          description: 'Type de mise en forme conditionnelle ajoutée. Pour plus d’informations, voir ExcelScript. ConditionalFormatType.'
           type:
             - 'ExcelScript!ExcelScript.ConditionalFormatType:enum'
   - uid: 'ExcelScript!ExcelScript.Range#autoFill:member(1)'
-    summary: |-
-      Remplit la plage de la plage actuelle jusqu’à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être null ou peut étendre la source à l’horizontale ou à la verticale. Les plages discontinues ne sont pas prises en charge.
-
-      Pour plus d’informations, consultez la lecture de l' [AutoFill et du remplissage instantané](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
+    summary: Remplit la plage de la plage actuelle jusqu’à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être null ou peut étendre la source à l’horizontale ou à la verticale. Les plages discontinues ne sont pas prises en charge.
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -214,7 +218,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -230,7 +234,7 @@ items:
           ```
       parameters:
         - id: applyTo
-          description: 'Facultatif. Détermine le type d’action de suppression. Pour plus d’informations, voir Excel. ClearApplyTo.'
+          description: 'Facultatif. Détermine le type d’action de suppression. Pour plus d’informations, voir ExcelScript. ClearApplyTo.'
           type:
             - 'ExcelScript!ExcelScript.ClearApplyTo:enum'
   - uid: 'ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)'
@@ -310,7 +314,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: 'Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir Excel. DeleteShiftDirection.'
+          description: 'Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir ExcelScript. DeleteShiftDirection.'
           type:
             - 'ExcelScript!ExcelScript.DeleteShiftDirection:enum'
   - uid: 'ExcelScript!ExcelScript.Range#find:member(1)'
@@ -482,7 +486,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -620,6 +624,19 @@ items:
         type:
           - 'ExcelScript!ExcelScript.DataValidation:interface'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)'
+    summary: Renvoie un objet WorkbookRangeAreas qui représente la plage contenant tous les antécédents directs d’une cellule dans une même feuille de calcul ou dans plusieurs feuilles de calcul.
+    name: getDirectPrecedents()
+    fullName: getDirectPrecedents()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getEntireColumn:member(1)'
     summary: "Obtient un objet qui représente la colonne entière de la plage (par exemple, si la plage actuelle représente les cellules «\_B4\_: E11\_», `getEntireColumn` qu’il s’agit d’une plage qui représente les colonnes «\_B\_:E\_»)."
     name: getEntireColumn()
@@ -674,7 +691,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /*
@@ -723,7 +740,7 @@ items:
           - string
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulas:member(1)'
-    summary: Représente la formule dans le style de notation A1.
+    summary: 'Représente la formule dans le style de notation A1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.'
     name: getFormulas()
     fullName: getFormulas()
     langs:
@@ -736,7 +753,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)'
-    summary: "Représente la formule en notation\_A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule «\_=SUM(A1, 1.5)\_» en anglais deviendrait «\_=SUMME(A1; 1,5)\_» en allemand."
+    summary: "Représente la formule en notation\_A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule «\_=SUM(A1, 1.5)\_» en anglais deviendrait «\_=SUMME(A1; 1,5)\_» en allemand. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place."
     name: getFormulasLocal()
     fullName: getFormulasLocal()
     langs:
@@ -749,7 +766,7 @@ items:
           - 'string[][]'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)'
-    summary: Représente la formule dans le style de notation R1C1.
+    summary: 'Représente la formule dans le style de notation R1C1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.'
     name: getFormulasR1C1()
     fullName: getFormulasR1C1()
     langs:
@@ -760,6 +777,19 @@ items:
       return:
         type:
           - 'string[][]'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getHasSpill:member(1)'
+    summary: Représente si toutes les cellules ont une bordure renversée. Renvoie la valeur true si toutes les cellules ont une bordure de renversement ou la valeur false si toutes les cellules n’ont pas de bordure de renversement. Renvoie la valeur null s’il y a des cellules à la fois avec et sans bordure de renversement dans la plage.
+    name: getHasSpill()
+    fullName: getHasSpill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHasSpill(): boolean;'
+      return:
+        type:
+          - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getHeight:member(1)'
     summary: 'Renvoie la distance en points pour zoom 100 %, à partir du bord supérieur de la plage au bord inférieur de la plage.'
@@ -801,7 +831,7 @@ items:
           - 'ExcelScript!ExcelScript.RangeHyperlink:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getImage:member(1)'
-    summary: Affiche la plage en tant qu’image png encodée au format Base64.
+    summary: 'Affiche la plage en tant qu’image png encodée au format Base64. **Important**: cette API n’est actuellement pas prise en charge dans Excel pour Mac. Visitez \[ OfficeDev/Office-js Issue \# 235 \] ( https://github.com/OfficeDev/office-js/issues/235) pour obtenir l’état actuel.'
     name: getImage()
     fullName: getImage()
     langs:
@@ -935,6 +965,19 @@ items:
         type:
           - 'ExcelScript!ExcelScript.Range#getLinkedDataTypeStates~0:complex'
         description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getMergedAreas:member(1)'
+    summary: 'Renvoie un objet RangeAreas qui représente les zones fusionnées dans cette plage. Notez que si le nombre de zones fusionnées dans cette plage est supérieur à 512, l’API ne renverra pas le résultat.'
+    name: getMergedAreas()
+    fullName: getMergedAreas()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getMergedAreas(): RangeAreas;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.RangeAreas:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormat:member(1)'
     summary: 'Représente le code de format de nombre Excel de la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) seront retournées.'
     name: getNumberFormat()
@@ -947,6 +990,19 @@ items:
       return:
         type:
           - string
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories:member(1)'
+    summary: Représente la catégorie de format numérique de chaque cellule.
+    name: getNumberFormatCategories()
+    fullName: getNumberFormatCategories()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)'
     summary: 'Représente le code de format de nombre Excel de la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue aucune langue ou contrainte de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes mises en forme localement en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) seront retournées.'
@@ -1002,7 +1058,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -1086,7 +1142,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -1152,7 +1208,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -1246,6 +1302,19 @@ items:
           description: 'Facultatif. Nombre de lignes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.'
           type:
             - number
+  - uid: 'ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)'
+    summary: Représente si toutes les cellules sont enregistrées sous la forme d’une formule matricielle. Renvoie la valeur true si toutes les cellules doivent être enregistrées sous forme de formule matricielle ou la valeur false si toutes les cellules ne sont pas enregistrées sous forme de formule matricielle. Renvoie la valeur null si certaines cellules sont enregistrées sous la forme d’une formule matricielle et d’autres non.
+    name: getSavedAsArray()
+    fullName: getSavedAsArray()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSavedAsArray(): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getSort:member(1)'
     summary: Représente le tri de plage de la plage actuelle.
     name: getSort()
@@ -1285,6 +1354,32 @@ items:
           description: 'Si cellType est une constante ou une formule, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu''en soit le type.'
           type:
             - 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
+  - uid: 'ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)'
+    summary: 'Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n’est pas une cellule d’ancrage ou si la plage de renversement est introuvable, un objet null est renvoyé.'
+    name: getSpillingToRange()
+    fullName: getSpillingToRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillingToRange(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
+  - uid: 'ExcelScript!ExcelScript.Range#getSpillParent:member(1)'
+    summary: 'Obtient l’objet de la plage contenant la cellule d’ancrage d’une cellule prise renversée dans. S’il ne s’agit pas d’une cellule de renversement ou si plusieurs cellules sont attribuées, un objet null est renvoyé.'
+    name: getSpillParent()
+    fullName: getSpillParent()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillParent(): Range;'
+      return:
+        type:
+          - 'ExcelScript!ExcelScript.Range:interface'
+        description: ''
   - uid: 'ExcelScript!ExcelScript.Range#getSurroundingRegion:member(1)'
     summary: Renvoie un objet PLage qui représente la région environnante pour la cellule en haut à gauche de cette plage. Une région environnante est une plage délimitée par une combinaison de lignes et de colonnes vides par rapport à cette plage.
     name: getSurroundingRegion()
@@ -1388,7 +1483,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -1534,7 +1629,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: 'Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir Excel. InsertShiftDirection.'
+          description: 'Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir ExcelScript. InsertShiftDirection.'
           type:
             - 'ExcelScript!ExcelScript.InsertShiftDirection:enum'
   - uid: 'ExcelScript!ExcelScript.Range#merge:member(1)'
@@ -1689,7 +1784,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /*
@@ -1753,7 +1848,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.Range#setFormulas:member(1)'
-    summary: Représente la formule dans le style de notation A1.
+    summary: 'Représente la formule dans le style de notation A1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.'
     name: setFormulas(formulas)
     fullName: setFormulas(formulas)
     langs:
@@ -1771,7 +1866,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)'
-    summary: "Représente la formule en notation\_A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule «\_=SUM(A1, 1.5)\_» en anglais deviendrait «\_=SUMME(A1; 1,5)\_» en allemand."
+    summary: "Représente la formule en notation\_A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule «\_=SUM(A1, 1.5)\_» en anglais deviendrait «\_=SUMME(A1; 1,5)\_» en allemand. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place."
     name: setFormulasLocal(formulasLocal)
     fullName: setFormulasLocal(formulasLocal)
     langs:
@@ -1789,7 +1884,7 @@ items:
           type:
             - 'string[][]'
   - uid: 'ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)'
-    summary: Représente la formule dans le style de notation R1C1.
+    summary: 'Représente la formule dans le style de notation R1C1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.'
     name: setFormulasR1C1(formulasR1C1)
     fullName: setFormulasR1C1(formulasR1C1)
     langs:
@@ -1821,7 +1916,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /** 
@@ -1996,7 +2091,7 @@ items:
         description: |-
 
 
-          #### <a name="examples"></a>範例
+          #### <a name="examples"></a>Exemples
 
           ```javascript
           /**
@@ -2170,6 +2265,9 @@ references:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
     name: DataValidation
     fullName: ExcelScript.DataValidation
+  - uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
+    name: WorkbookRangeAreas
+    fullName: ExcelScript.WorkbookRangeAreas
   - uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
     name: RangeFormat
     fullName: ExcelScript.RangeFormat
@@ -2197,6 +2295,18 @@ references:
         fullName: ExcelScript.LinkedDataTypeState
       - name: '[][]'
         fullName: '[][]'
+  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
+    name: RangeAreas
+    fullName: ExcelScript.RangeAreas
+  - uid: 'ExcelScript!ExcelScript.Range#getNumberFormatCategories~0:complex'
+    name: 'NumberFormatCategory[][]'
+    fullName: 'ExcelScript.NumberFormatCategory[][]'
+    spec.typeScript:
+      - uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
+        name: NumberFormatCategory
+        fullName: ExcelScript.NumberFormatCategory
+      - name: '[][]'
+        fullName: '[][]'
   - uid: 'ExcelScript!ExcelScript.Range#getPivotTables~0:complex'
     name: 'PivotTable[]'
     fullName: 'ExcelScript.PivotTable[]'
@@ -2209,9 +2319,6 @@ references:
   - uid: 'ExcelScript!ExcelScript.RangeSort:interface'
     name: RangeSort
     fullName: ExcelScript.RangeSort
-  - uid: 'ExcelScript!ExcelScript.RangeAreas:interface'
-    name: RangeAreas
-    fullName: ExcelScript.RangeAreas
   - uid: 'ExcelScript!ExcelScript.SpecialCellType:enum'
     name: SpecialCellType
     fullName: ExcelScript.SpecialCellType

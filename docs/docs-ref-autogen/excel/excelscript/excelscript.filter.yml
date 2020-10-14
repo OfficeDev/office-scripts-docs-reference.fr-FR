@@ -230,7 +230,7 @@ items:
         description: ''
       parameters:
         - id: values
-          description: Liste des valeurs à afficher. Il doit s’agir d’un tableau de chaînes ou d’un tableau d’objets Excel. FilterDateTime.
+          description: Liste des valeurs à afficher. Il doit s’agir d’un tableau de chaînes ou d’un tableau d’objets ExcelScript. FilterDateTime.
           type:
             - 'ExcelScript!ExcelScript.Filter#applyValuesFilter~0:complex'
   - uid: 'ExcelScript!ExcelScript.Filter#clear:member(1)'

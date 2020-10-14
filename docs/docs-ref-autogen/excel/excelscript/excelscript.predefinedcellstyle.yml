@@ -146,7 +146,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getHorizontalAlignment:member(1)'
-    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir Excel. HorizontalAlignment.'
+    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir ExcelScript. HorizontalAlignment.'
     name: getHorizontalAlignment()
     fullName: getHorizontalAlignment()
     langs:
@@ -316,11 +316,11 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Valeur d’indice de l’objet de bordure à récupérer. Pour plus d’informations, voir Excel. BorderIndex.'
+          description: 'Valeur d’indice de l’objet de bordure à récupérer. Pour plus d’informations, voir ExcelScript. BorderIndex.'
           type:
             - 'ExcelScript!ExcelScript.BorderIndex:enum'
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getRangeBorderTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour les bordures de plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que les collections de bordures entières n’ont pas de paramètre tintAndShade uniforme.'
+    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour les bordures de plage, la valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), avec 0 pour la couleur d’origine. Une valeur null indique que les collections de bordures entières n’ont pas de paramètre tintAndShade uniforme.'
     name: getRangeBorderTintAndShade()
     fullName: getRangeBorderTintAndShade()
     langs:
@@ -372,7 +372,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#getVerticalAlignment:member(1)'
-    summary: 'Spécifie l’alignement vertical du style. Pour plus d’informations, voir Excel. VerticalAlignment.'
+    summary: 'Spécifie l’alignement vertical du style. Pour plus d’informations, voir ExcelScript. VerticalAlignment.'
     name: getVerticalAlignment()
     fullName: getVerticalAlignment()
     langs:
@@ -434,7 +434,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setHorizontalAlignment:member(1)'
-    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir Excel. HorizontalAlignment.'
+    summary: 'Représente l’alignement horizontal pour le style. Pour plus d’informations, voir ExcelScript. HorizontalAlignment.'
     name: setHorizontalAlignment(horizontalAlignment)
     fullName: setHorizontalAlignment(horizontalAlignment)
     langs:
@@ -632,7 +632,7 @@ items:
           type:
             - string
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setRangeBorderTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour les bordures de plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que les collections de bordures entières n’ont pas de paramètre tintAndShade uniforme.'
+    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour les bordures de plage, la valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), avec 0 pour la couleur d’origine. Une valeur null indique que les collections de bordures entières n’ont pas de paramètre tintAndShade uniforme.'
     name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
     langs:
@@ -704,7 +704,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.PredefinedCellStyle#setVerticalAlignment:member(1)'
-    summary: 'Spécifie l’alignement vertical du style. Pour plus d’informations, voir Excel. VerticalAlignment.'
+    summary: 'Spécifie l’alignement vertical du style. Pour plus d’informations, voir ExcelScript. VerticalAlignment.'
     name: setVerticalAlignment(verticalAlignment)
     fullName: setVerticalAlignment(verticalAlignment)
     langs:

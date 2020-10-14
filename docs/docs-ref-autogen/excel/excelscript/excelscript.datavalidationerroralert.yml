@@ -38,7 +38,7 @@ items:
         type:
           - boolean
   - uid: 'ExcelScript!ExcelScript.DataValidationErrorAlert#style:member'
-    summary: 'Type d’alerte de validation des données, consultez Excel. DataValidationAlertStyle pour plus d’informations.'
+    summary: 'Type d’alerte de validation des données, reportez-vous à ExcelScript. DataValidationAlertStyle pour plus d’informations.'
     name: style
     fullName: style
     langs:

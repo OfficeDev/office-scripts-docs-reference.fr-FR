@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.Chart:interface'
-    summary: 'Représente un objet de graphique dans un classeur. Pour en savoir plus sur le modèle objet Chart, voir [utiliser des graphiques à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.'
+    summary: Représente un objet de graphique dans un classeur.
     name: ExcelScript.Chart
     fullName: ExcelScript.Chart
     langs:
@@ -128,7 +128,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Chart#getChartType:member(1)'
-    summary: 'Cette énumération spécifie le type de graphique. Pour plus d’informations, voir Excel. ChartType.'
+    summary: 'Cette énumération spécifie le type de graphique. Pour plus d’informations, voir ExcelScript. ChartType.'
     name: getChartType()
     fullName: getChartType()
     langs:
@@ -463,7 +463,7 @@ items:
           type:
             - number
   - uid: 'ExcelScript!ExcelScript.Chart#setChartType:member(1)'
-    summary: 'Cette énumération spécifie le type de graphique. Pour plus d’informations, voir Excel. ChartType.'
+    summary: 'Cette énumération spécifie le type de graphique. Pour plus d’informations, voir ExcelScript. ChartType.'
     name: setChartType(chartType)
     fullName: setChartType(chartType)
     langs:
@@ -499,7 +499,7 @@ items:
           type:
             - 'ExcelScript!ExcelScript.Range:interface'
         - id: seriesBy
-          description: "Spécifie la façon dont les colonnes ou les lignes sont utilisées comme séries de données sur le graphique. Il peut s’agir de l’une des valeurs suivantes\_: auto (par défaut), Rows et Columns. Pour plus d’informations, voir Excel. ChartSeriesBy."
+          description: "Spécifie la façon dont les colonnes ou les lignes sont utilisées comme séries de données sur le graphique. Il peut s’agir de l’une des valeurs suivantes\_: auto (par défaut), Rows et Columns. Pour plus d’informations, voir ExcelScript. ChartSeriesBy."
           type:
             - 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
   - uid: 'ExcelScript!ExcelScript.Chart#setDisplayBlanksAs:member(1)'

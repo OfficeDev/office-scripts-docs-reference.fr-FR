@@ -13,7 +13,7 @@ items:
       - 'ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)'
       - 'ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)'
   - uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)'
-    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés du format conditionnel.'
+    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.'
     name: getFormat()
     fullName: getFormat()
     langs:

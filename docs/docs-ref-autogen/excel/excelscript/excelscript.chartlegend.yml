@@ -93,7 +93,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)'
-    summary: 'Indique la position de la légende sur le graphique. Pour plus d’informations, voir Excel. ChartLegendPosition.'
+    summary: 'Indique la position de la légende sur le graphique. Pour plus d’informations, voir ExcelScript. ChartLegendPosition.'
     name: getPosition()
     fullName: getPosition()
     langs:
@@ -212,7 +212,7 @@ items:
           type:
             - boolean
   - uid: 'ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)'
-    summary: 'Indique la position de la légende sur le graphique. Pour plus d’informations, voir Excel. ChartLegendPosition.'
+    summary: 'Indique la position de la légende sur le graphique. Pour plus d’informations, voir ExcelScript. ChartLegendPosition.'
     name: setPosition(position)
     fullName: setPosition(position)
     langs:

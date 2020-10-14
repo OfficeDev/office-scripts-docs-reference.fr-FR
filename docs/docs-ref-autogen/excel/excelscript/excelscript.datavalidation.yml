@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: 'ExcelScript!ExcelScript.DataValidation:interface'
-    summary: 'Représente la validation des données appliquée à la plage actuelle. Pour en savoir plus sur le modèle objet de validation des données, consultez la rubrique [Ajouter la validation des données à des plages Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.'
+    summary: Représente la validation des données appliquée à la plage actuelle.
     name: ExcelScript.DataValidation
     fullName: ExcelScript.DataValidation
     langs:
@@ -100,7 +100,7 @@ items:
           - 'ExcelScript!ExcelScript.DataValidationRule:interface'
         description: ''
   - uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
-    summary: 'Type de validation des données, voir Excel.DataValidationType pour plus d’informations.'
+    summary: 'Type de validation des données, voir ExcelScript. DataValidationType pour plus d’informations.'
     name: getType()
     fullName: getType()
     langs:

@@ -34,7 +34,7 @@ items:
         description: ''
       parameters:
         - id: calculationType
-          description: 'Spécifie le type de calcul à utiliser. Pour plus d’informations, voir Excel. CalculationType.'
+          description: 'Spécifie le type de calcul à utiliser. Pour plus d’informations, voir ExcelScript. CalculationType.'
           type:
             - 'ExcelScript!ExcelScript.CalculationType:enum'
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationEngineVersion:member(1)'
@@ -51,7 +51,7 @@ items:
           - number
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationMode:member(1)'
-    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans Excel. CalculationMode. Les valeurs possibles sont les suivantes\_:`Automatic`<!-- -->, où Excel contrôle le recalcul\_;`AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_;`Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
+    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans ExcelScript. CalculationMode. Les valeurs possibles sont les suivantes\_: `Automatic`<!-- -->, où Excel contrôle le recalcul\_; `AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_; `Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
     name: getCalculationMode()
     fullName: getCalculationMode()
     langs:
@@ -64,7 +64,7 @@ items:
           - 'ExcelScript!ExcelScript.CalculationMode:enum'
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#getCalculationState:member(1)'
-    summary: 'Renvoie l’état de calcul de l’application. Pour plus d’informations, voir Excel.CalculationState.'
+    summary: 'Renvoie l’état de calcul de l’application. Pour plus d’informations, voir ExcelScript. CalculationState,.'
     name: getCalculationState()
     fullName: getCalculationState()
     langs:
@@ -142,7 +142,7 @@ items:
           - boolean
         description: ''
   - uid: 'ExcelScript!ExcelScript.Application#setCalculationMode:member(1)'
-    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans Excel. CalculationMode. Les valeurs possibles sont les suivantes\_:`Automatic`<!-- -->, où Excel contrôle le recalcul\_;`AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_;`Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
+    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans ExcelScript. CalculationMode. Les valeurs possibles sont les suivantes\_: `Automatic`<!-- -->, où Excel contrôle le recalcul\_; `AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_; `Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
     name: setCalculationMode(calculationMode)
     fullName: setCalculationMode(calculationMode)
     langs:
