@@ -1,12 +1,12 @@
 items:
   - name: Référence API
     items:
-      - name: Vue d’ensemble de la référence des API
+      - name: Vue d’ensemble de la référence API
         href: overview.md
       - name: ExcelScript
         uid: ExcelScript!
         items:
-          - name: Énumérations
+          - name: Enums
             uid: ''
             items:
               - &ref_0
@@ -376,7 +376,7 @@ items:
                 name: ShapeTextVerticalOverflow
                 uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
               - &ref_122
-                name: Typedeforme
+                name: ShapeType
                 uid: 'ExcelScript!ExcelScript.ShapeType:enum'
               - &ref_123
                 name: ShapeZOrder
@@ -385,7 +385,7 @@ items:
                 name: SheetVisibility
                 uid: 'ExcelScript!ExcelScript.SheetVisibility:enum'
               - &ref_125
-                name: Du showascalculation
+                name: ShowAsCalculation
                 uid: 'ExcelScript!ExcelScript.ShowAsCalculation:enum'
               - &ref_126
                 name: SlicerSortType
@@ -594,7 +594,7 @@ items:
             uid: 'ExcelScript!ExcelScript.ConditionalCellValueRule:interface'
           - name: ConditionalColorScaleCriteria
             uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface'
-          - name: Troisconditionalcolorscalecriterion
+          - name: ConditionalColorScaleCriterion
             uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
           - *ref_52
           - *ref_53
@@ -664,7 +664,7 @@ items:
             uid: 'ExcelScript!ExcelScript.DataValidationRule:interface'
           - *ref_70
           - *ref_71
-          - name: Objetdatetimedatavalidation
+          - name: DateTimeDataValidation
             uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
           - name: DatetimeFormatInfo
             uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
@@ -674,7 +674,7 @@ items:
           - *ref_73
           - *ref_74
           - *ref_75
-          - name: Filtrer
+          - name: Filtre
             uid: 'ExcelScript!ExcelScript.Filter:interface'
           - name: FilterCriteria
             uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
@@ -785,7 +785,7 @@ items:
             uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'ExcelScript!ExcelScript.RangeHyperlink:interface'
-          - name: RéférencePlage
+          - name: RangeReference
             uid: 'ExcelScript!ExcelScript.RangeReference:interface'
           - name: RangeSort
             uid: 'ExcelScript!ExcelScript.RangeSort:interface'
@@ -851,7 +851,7 @@ items:
           - *ref_134
           - name: Sous-totaux
             uid: 'ExcelScript!ExcelScript.Subtotals:interface'
-          - name: Table
+          - name: Tableau
             uid: 'ExcelScript!ExcelScript.Table:interface'
           - name: TableColumn
             uid: 'ExcelScript!ExcelScript.TableColumn:interface'
@@ -874,7 +874,7 @@ items:
           - *ref_137
           - name: Classeur
             uid: 'ExcelScript!ExcelScript.Workbook:interface'
-          - name: Objetworkbookprotection
+          - name: WorkbookProtection
             uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
           - name: WorkbookRangeAreas
             uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
