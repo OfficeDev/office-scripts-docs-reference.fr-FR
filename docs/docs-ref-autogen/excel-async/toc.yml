@@ -1,12 +1,12 @@
 items:
-  - name: Référence d’API
+  - name: Référence API
     items:
-      - name: Vue d’ensemble de la référence des API
+      - name: Vue d’ensemble de la référence API
         href: overview.md
       - name: Excel
         uid: excel!
         items:
-          - name: Énumérations
+          - name: Enums
             uid: ''
             items:
               - &ref_0
@@ -361,7 +361,7 @@ items:
                 name: ShapeTextVerticalOverflow
                 uid: 'excel!Excel.ShapeTextVerticalOverflow:enum'
               - &ref_117
-                name: Typedeforme
+                name: ShapeType
                 uid: 'excel!Excel.ShapeType:enum'
               - &ref_118
                 name: ShapeZOrder
@@ -370,7 +370,7 @@ items:
                 name: SheetVisibility
                 uid: 'excel!Excel.SheetVisibility:enum'
               - &ref_120
-                name: Du showascalculation
+                name: ShowAsCalculation
                 uid: 'excel!Excel.ShowAsCalculation:enum'
               - &ref_121
                 name: SlicerSortType
@@ -590,7 +590,7 @@ items:
             uid: 'excel!Excel.ConditionalCellValueRule:interface'
           - name: ConditionalColorScaleCriteria
             uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
-          - name: Troisconditionalcolorscalecriterion
+          - name: ConditionalColorScaleCriterion
             uid: 'excel!Excel.ConditionalColorScaleCriterion:interface'
           - *ref_51
           - *ref_52
@@ -650,7 +650,7 @@ items:
             uid: 'excel!Excel.CustomPropertyCollection:interface'
           - name: CustomXmlPart
             uid: 'excel!Excel.CustomXmlPart:interface'
-          - name: Uncustomxmlpartcollection
+          - name: CustomXmlPartCollection
             uid: 'excel!Excel.CustomXmlPartCollection:interface'
           - name: CustomXmlPartScopedCollection
             uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
@@ -673,7 +673,7 @@ items:
           - name: DataValidationRule
             uid: 'excel!Excel.DataValidationRule:interface'
           - *ref_69
-          - name: Objetdatetimedatavalidation
+          - name: DateTimeDataValidation
             uid: 'excel!Excel.DateTimeDataValidation:interface'
           - *ref_70
           - name: DocumentProperties
@@ -782,7 +782,7 @@ items:
           - *ref_96
           - *ref_97
           - *ref_98
-          - name: Range
+          - name: Plage
             uid: 'excel!Excel.Range:interface'
           - name: RangeAreas
             uid: 'excel!Excel.RangeAreas:interface'
@@ -801,7 +801,7 @@ items:
             uid: 'excel!Excel.RangeFormat:interface'
           - name: RangeHyperlink
             uid: 'excel!Excel.RangeHyperlink:interface'
-          - name: RéférencePlage
+          - name: RangeReference
             uid: 'excel!Excel.RangeReference:interface'
           - name: RangeSort
             uid: 'excel!Excel.RangeSort:interface'
@@ -829,7 +829,7 @@ items:
             uid: 'excel!Excel.Setting:interface'
           - name: SettingCollection
             uid: 'excel!Excel.SettingCollection:interface'
-          - name: Shape
+          - name: Forme
             uid: 'excel!Excel.Shape:interface'
           - *ref_104
           - name: ShapeCollection
@@ -889,7 +889,7 @@ items:
           - *ref_129
           - name: Sous-totaux
             uid: 'excel!Excel.Subtotals:interface'
-          - name: Table
+          - name: Tableau
             uid: 'excel!Excel.Table:interface'
           - name: TableCollection
             uid: 'excel!Excel.TableCollection:interface'
@@ -924,7 +924,7 @@ items:
           - *ref_130
           - name: Classeur
             uid: 'excel!Excel.Workbook:interface'
-          - name: Objetworkbookprotection
+          - name: WorkbookProtection
             uid: 'excel!Excel.WorkbookProtection:interface'
           - name: Feuilles de calcul
             uid: 'excel!Excel.Worksheet:interface'
