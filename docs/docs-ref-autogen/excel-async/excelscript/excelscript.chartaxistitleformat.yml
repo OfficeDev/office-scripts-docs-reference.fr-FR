@@ -1,79 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisTitleFormat:interface'
-    summary: Représente le format du titre d’un axe de graphique.
-    name: Excel.ChartAxisTitleFormat
-    fullName: Excel.ChartAxisTitleFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartAxisTitleFormat#border:member'
-      - 'excel!Excel.ChartAxisTitleFormat#fill:member'
-      - 'excel!Excel.ChartAxisTitleFormat#font:member'
-      - 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartAxisTitleFormat#border:member'
-    summary: 'Indique le format de bordure du titre de l’axe du graphique, qui inclut la couleur, le style de style et le poids.'
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly border: ChartBorder;'
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:interface'
-  - uid: 'excel!Excel.ChartAxisTitleFormat#fill:member'
-    summary: Cette énumération spécifie la mise en forme du titre de l’axe du graphique.
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ChartFill;'
-      return:
-        type:
-          - 'excel!Excel.ChartFill:interface'
-  - uid: 'excel!Excel.ChartAxisTitleFormat#font:member'
-    summary: 'Spécifie les attributs de police du titre de l’axe du graphique, tels que le nom de la police, la taille de police, la couleur, etc., de l’objet de titre d’axe de graphique.'
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:interface'
-  - uid: 'excel!Excel.ChartAxisTitleFormat#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartBorder:interface'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
-  - uid: 'excel!Excel.ChartFill:interface'
-    name: ChartFill
-    fullName: Excel.ChartFill
-  - uid: 'excel!Excel.ChartFont:interface'
-    name: ChartFont
-    fullName: Excel.ChartFont
+### YamlMime:TSType
+name: Excel.ChartAxisTitleFormat
+uid: excel!Excel.ChartAxisTitleFormat:interface
+package: excel!
+fullName: Excel.ChartAxisTitleFormat
+summary: Représente le format du titre d’un axe de graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: border
+  uid: excel!Excel.ChartAxisTitleFormat#border:member
+  package: excel!
+  fullName: border
+  summary: Indique le format de bordure du titre de l’axe du graphique, qui inclut la couleur, le style de style et le poids.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly border: ChartBorder;'
+    return:
+      type: <xref uid="excel!Excel.ChartBorder:interface" />
+- name: fill
+  uid: excel!Excel.ChartAxisTitleFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: Cette énumération spécifie la mise en forme du titre de l’axe du graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ChartFill;'
+    return:
+      type: <xref uid="excel!Excel.ChartFill:interface" />
+- name: font
+  uid: excel!Excel.ChartAxisTitleFormat#font:member
+  package: excel!
+  fullName: font
+  summary: Spécifie les attributs de police du titre de l’axe du graphique, tels que le nom de la police, la taille de police, la couleur, etc., de l’objet de titre d’axe de graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ChartFont;'
+    return:
+      type: <xref uid="excel!Excel.ChartFont:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartAxisTitleFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d01c68796b75b8a1ba73c19f39c5ffd327c9f1cb
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413635"

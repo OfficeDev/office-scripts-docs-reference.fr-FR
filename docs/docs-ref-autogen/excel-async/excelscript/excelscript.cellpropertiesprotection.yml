@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CellPropertiesProtection:interface'
-    summary: 'Représente les `format.protection` propriétés d''`getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le `format.protection` paramètre d’entrée de`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et`setColumnProperties`<!-- -->.'
-    name: Excel.CellPropertiesProtection
-    fullName: Excel.CellPropertiesProtection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CellPropertiesProtection#formulaHidden:member'
-      - 'excel!Excel.CellPropertiesProtection#locked:member'
-  - uid: 'excel!Excel.CellPropertiesProtection#formulaHidden:member'
-    summary: Représente la `format.protection.formulaHidden` propriété.
-    name: formulaHidden
-    fullName: formulaHidden
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulaHidden?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.CellPropertiesProtection#locked:member'
-    summary: Représente la `format.protection.locked` propriété.
-    name: locked
-    fullName: locked
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'locked?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: Excel.CellPropertiesProtection
+uid: excel!Excel.CellPropertiesProtection:interface
+package: excel!
+fullName: Excel.CellPropertiesProtection
+summary: Représente les `format.protection` propriétés d' `getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le `format.protection` paramètre d’entrée de `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et `setColumnProperties`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formulaHidden
+  uid: excel!Excel.CellPropertiesProtection#formulaHidden:member
+  package: excel!
+  fullName: formulaHidden
+  summary: Représente la `format.protection.formulaHidden` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulaHidden?: boolean;'
+    return:
+      type: boolean
+- name: locked
+  uid: excel!Excel.CellPropertiesProtection#locked:member
+  package: excel!
+  fullName: locked
+  summary: Représente la `format.protection.locked` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'locked?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: ed3b3b378001695fffc11c1d67348c3f46ebf0c7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413782"

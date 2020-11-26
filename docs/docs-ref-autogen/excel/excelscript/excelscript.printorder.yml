@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
-    name: ExcelScript.PrintOrder
-    fullName: ExcelScript.PrintOrder
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
-      - 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
-  - uid: 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
-    summary: Traite les lignes les unes après les autres de haut en bas avant de traiter les pages ou champs de page vers la droite.
-    name: downThenOver
-    fullName: downThenOver
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
-    summary: Traite les pages ou champs page vers la droite avant de descendre à la ligne suivante.
-    name: overThenDown
-    fullName: overThenDown
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.PrintOrder
+uid: ExcelScript!ExcelScript.PrintOrder:enum
+package: ExcelScript!
+fullName: ExcelScript.PrintOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: downThenOver
+  uid: ExcelScript!ExcelScript.PrintOrder.downThenOver:member
+  package: ExcelScript!
+  summary: Traite les lignes les unes après les autres de haut en bas avant de traiter les pages ou champs de page vers la droite.
+- name: overThenDown
+  uid: ExcelScript!ExcelScript.PrintOrder.overThenDown:member
+  package: ExcelScript!
+  summary: Traite les pages ou champs page vers la droite avant de descendre à la ligne suivante.
+metadata:
+  ms.openlocfilehash: d4074993871b1449779ab8b6fd398cb84a0d06ae
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412034"

@@ -1,24 +1,30 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RangeReference:interface'
-    summary: "Représente une référence de chaîne au format Nom_feuille\_! A1\_: B5, ou une plage nommée globale ou locale."
-    name: ExcelScript.RangeReference
-    fullName: ExcelScript.RangeReference
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RangeReference#address:member'
-  - uid: 'ExcelScript!ExcelScript.RangeReference#address:member'
-    summary: "L’adresse de la plage\_; par exemple’Nom_feuille\_! A1\_: B5."
-    name: address
-    fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'address: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: ExcelScript.RangeReference
+uid: ExcelScript!ExcelScript.RangeReference:interface
+package: ExcelScript!
+fullName: ExcelScript.RangeReference
+summary: 'Représente une référence de chaîne au format Nom_feuille ! A1 : B5, ou une plage nommée globale ou locale.'
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: address
+  uid: ExcelScript!ExcelScript.RangeReference#address:member
+  package: ExcelScript!
+  fullName: address
+  summary: 'L’adresse de la plage ; par exemple’Nom_feuille ! A1 : B5.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'address: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: f6b7b4d465148aa0ef601a71a1fa5f1e56d34e6f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411914"

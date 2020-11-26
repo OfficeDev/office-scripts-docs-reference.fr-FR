@@ -1,187 +1,126 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableSort:interface'
-    summary: Gère les opérations de tri des objets Table.
-    name: Excel.TableSort
-    fullName: Excel.TableSort
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableSort#apply:member(1)'
-      - 'excel!Excel.TableSort#clear:member(1)'
-      - 'excel!Excel.TableSort#fields:member'
-      - 'excel!Excel.TableSort#load:member(1)'
-      - 'excel!Excel.TableSort#matchCase:member'
-      - 'excel!Excel.TableSort#method:member'
-      - 'excel!Excel.TableSort#reapply:member(1)'
-  - uid: 'excel!Excel.TableSort#apply:member(1)'
-    summary: Effectue une opération de tri.
-    name: 'apply(fields, matchCase, method)'
-    fullName: 'apply(fields, matchCase, method)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        apply(
-                    fields: SortField[],
-                    matchCase?: boolean,
-                    method?: SortMethod | "PinYin" | "StrokeCount"
-                ): void;
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```javascript
-          // Get the current worksheet.
-          let workbook = context.workbook;
-          let worksheets = workbook.worksheets;
-          let selectedSheet = worksheets.getActiveWorksheet();
-
-          // Create a table with the used cells.
-          let usedRange = selectedSheet.getUsedRange();
-          let newTable = selectedSheet.tables.add(usedRange, true);
-
-          // Sort the table using the first column.
-          newTable.sort.apply([{ key: 0, ascending: true }]);
-          ```
-      parameters:
-        - id: fields
-          description: Liste des conditions de tri.
-          type:
-            - 'excel!Excel.TableSort#apply~0:complex'
-        - id: matchCase
-          description: Facultatif. Indique si la casse influe sur le classement des chaînes.
-          type:
-            - boolean
-        - id: method
-          description: Facultatif. Méthode de classement utilisée pour les caractères chinois.
-          type:
-            - 'excel!Excel.TableSort#apply~1:complex'
-  - uid: 'excel!Excel.TableSort#clear:member(1)'
-    summary: 'Efface le tri actuellement appliqué au tableau. Même si le classement du tableau n’est pas modifié, l’état des boutons d’en-tête est rétabli.'
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.TableSort#fields:member'
-    summary: Spécifie les conditions actuelles utilisées pour le dernier tri du tableau.
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fields: SortField[];'
-      return:
-        type:
-          - 'excel!Excel.TableSort#fields~0:complex'
-  - uid: 'excel!Excel.TableSort#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableSort#matchCase:member'
-    summary: Indique si la casse a une incidence sur le dernier tri de la table.
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly matchCase: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.TableSort#method:member'
-    summary: Dernière méthode de classement des caractères chinois utilisée pour trier le tableau.
-    name: method
-    fullName: method
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly method: SortMethod | "PinYin" | "StrokeCount";'
-      return:
-        type:
-          - 'excel!Excel.TableSort#method~0:complex'
-  - uid: 'excel!Excel.TableSort#reapply:member(1)'
-    summary: Applique à nouveau les paramètres actuels de tri au tableau.
-    name: reapply()
-    fullName: reapply()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'reapply(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'excel!Excel.TableSort#apply~0:complex'
-    name: 'SortField[]'
-    fullName: 'Excel.SortField[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.SortField:interface'
-        name: SortField
-        fullName: Excel.SortField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.TableSort#apply~1:complex'
-    name: SortMethod | "PinYin" | "StrokeCount"
-    fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
-    spec.typeScript:
-      - uid: 'excel!Excel.SortMethod:enum'
-        name: SortMethod
-        fullName: Excel.SortMethod
-      - name: |2-
-           | "PinYin" | "StrokeCount"
-                  
-        fullName: |2-
-           | "PinYin" | "StrokeCount"
-                  
-  - uid: 'excel!Excel.TableSort#fields~0:complex'
-    name: 'SortField[]'
-    fullName: 'Excel.SortField[]'
-    spec.typeScript:
-      - uid: 'excel!Excel.SortField:interface'
-        name: SortField
-        fullName: Excel.SortField
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'excel!Excel.TableSort#method~0:complex'
-    name: SortMethod | "PinYin" | "StrokeCount"
-    fullName: Excel.SortMethod | "PinYin" | "StrokeCount"
-    spec.typeScript:
-      - uid: 'excel!Excel.SortMethod:enum'
-        name: SortMethod
-        fullName: Excel.SortMethod
-      - name: ' | "PinYin" | "StrokeCount"'
-        fullName: ' | "PinYin" | "StrokeCount"'
+### YamlMime:TSType
+name: Excel.TableSort
+uid: excel!Excel.TableSort:interface
+package: excel!
+fullName: Excel.TableSort
+summary: Gère les opérations de tri des objets Table.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: fields
+  uid: excel!Excel.TableSort#fields:member
+  package: excel!
+  fullName: fields
+  summary: Spécifie les conditions actuelles utilisées pour le dernier tri du tableau.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fields: SortField[];'
+    return:
+      type: <xref uid="excel!Excel.SortField:interface" />[]
+- name: matchCase
+  uid: excel!Excel.TableSort#matchCase:member
+  package: excel!
+  fullName: matchCase
+  summary: Indique si la casse a une incidence sur le dernier tri de la table.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly matchCase: boolean;'
+    return:
+      type: boolean
+- name: method
+  uid: excel!Excel.TableSort#method:member
+  package: excel!
+  fullName: method
+  summary: Dernière méthode de classement des caractères chinois utilisée pour trier le tableau.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly method: SortMethod | "PinYin" | "StrokeCount";'
+    return:
+      type: <xref uid="excel!Excel.SortMethod:enum" /> | "PinYin" | "StrokeCount"
+methods:
+- name: apply(fields, matchCase, method)
+  uid: excel!Excel.TableSort#apply:member(1)
+  package: excel!
+  fullName: apply(fields, matchCase, method)
+  summary: Effectue une opération de tri.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      apply(
+                  fields: SortField[],
+                  matchCase?: boolean,
+                  method?: SortMethod | "PinYin" | "StrokeCount"
+              ): void;
+    parameters:
+    - id: fields
+      description: Liste des conditions de tri.
+      type: <xref uid="excel!Excel.SortField:interface" />[]
+    - id: matchCase
+      description: Facultatif. Indique si la casse influe sur le classement des chaînes.
+      type: boolean
+    - id: method
+      description: Facultatif. Méthode de classement utilisée pour les caractères chinois.
+      type: "<xref uid=\"excel!Excel.SortMethod:enum\" /> | \"PinYin\" | \"StrokeCount\"\n        "
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n// Get the current worksheet.\nlet workbook = context.workbook;\nlet worksheets = workbook.worksheets;\nlet selectedSheet = worksheets.getActiveWorksheet();\n\n// Create a table with the used cells.\nlet usedRange = selectedSheet.getUsedRange();\nlet newTable = selectedSheet.tables.add(usedRange, true);\n\n// Sort the table using the first column.\nnewTable.sort.apply([{ key: 0, ascending: true }]);\n```"
+- name: clear()
+  uid: excel!Excel.TableSort#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: Efface le tri actuellement appliqué au tableau. Même si le classement du tableau n’est pas modifié, l’état des boutons d’en-tête est rétabli.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableSort#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: reapply()
+  uid: excel!Excel.TableSort#reapply:member(1)
+  package: excel!
+  fullName: reapply()
+  summary: Applique à nouveau les paramètres actuels de tri au tableau.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'reapply(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 67a7a3a4f44c69d5870d6dec73a7f704f1a53539
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412733"

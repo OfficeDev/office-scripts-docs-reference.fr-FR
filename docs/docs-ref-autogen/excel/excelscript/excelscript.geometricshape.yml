@@ -1,25 +1,31 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
-    summary: 'Représente une forme géométrique à l’intérieur d’une feuille de calcul. Une forme géométrique peut être un rectangle, une flèche pleine, un symbole d’équation, un élément d’organigramme, une étoile, une bannière, une légende ou toute autre forme simple dans Excel.'
-    name: ExcelScript.GeometricShape
-    fullName: ExcelScript.GeometricShape
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-  - uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
-    summary: Représente l’identificateur de forme.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.GeometricShape
+uid: ExcelScript!ExcelScript.GeometricShape:interface
+package: ExcelScript!
+fullName: ExcelScript.GeometricShape
+summary: Représente une forme géométrique à l’intérieur d’une feuille de calcul. Une forme géométrique peut être un rectangle, une flèche pleine, un symbole d’équation, un élément d’organigramme, une étoile, une bannière, une légende ou toute autre forme simple dans Excel.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getId()
+  uid: ExcelScript!ExcelScript.GeometricShape#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Représente l’identificateur de forme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+metadata:
+  ms.openlocfilehash: cf8298436ba13df23d8be7bfd41aee7612240f70
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412460"
