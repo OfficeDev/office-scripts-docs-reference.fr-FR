@@ -1,161 +1,116 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CustomXmlPartCollection:interface'
-    summary: Collection de parties XML personnalisées.
-    name: Excel.CustomXmlPartCollection
-    fullName: Excel.CustomXmlPartCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CustomXmlPartCollection#add:member(1)'
-      - 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
-      - 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
-      - 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
-      - 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.CustomXmlPartCollection#load:member(1)'
-  - uid: 'excel!Excel.CustomXmlPartCollection#add:member(1)'
-    summary: Ajoute une nouvelle partie XML personnalisée au classeur.
-    name: add(xml)
-    fullName: add(xml)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(xml: string): CustomXmlPart;'
-      return:
-        type:
-          - 'excel!Excel.CustomXmlPart:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              // You must have the xmlns attribute to populate the 
-              // CustomXml.namespaceUri property.
-              let originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
-              let customXmlPart = context.workbook.customXmlParts.add(originalXml);
-              customXmlPart.load("id");
-              let xmlBlob = customXmlPart.getXml();
-
-              await context.sync();
-
-              let readableXml = addLineBreaksToXML(xmlBlob.value);
-              $("#display-xml").text(readableXml);
-
-              // Store the XML part's ID in a setting.
-              let settings = context.workbook.settings;
-              settings.add("ContosoReviewXmlPartId", customXmlPart.id);
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: xml
-          description: Contenu XML. Doit être un fragment XML valide.
-          type:
-            - string
-  - uid: 'excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)'
-    summary: Obtient une nouvelle collection limitée de parties XML personnalisées dont les espaces de noms correspondent à l’espace de noms donné.
-    name: getByNamespace(namespaceUri)
-    fullName: getByNamespace(namespaceUri)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getByNamespace(namespaceUri: string): CustomXmlPartScopedCollection;'
-      return:
-        type:
-          - 'excel!Excel.CustomXmlPartScopedCollection:interface'
-        description: ''
-      parameters:
-        - id: namespaceUri
-          description: "Il doit s’agir d’un URI de schéma complet\_; par exemple, \" http://schemas.contoso.com/review/1.0 \"."
-          type:
-            - string
-  - uid: 'excel!Excel.CustomXmlPartCollection#getCount:member(1)'
-    summary: Obtient le nombre de parties CustomXml dans la collection.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.CustomXmlPartCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.CustomXmlPartCollection#getItem:member(1)'
-    summary: Obtient une partie XML personnalisée en fonction de son ID.
-    name: getItem(id)
-    fullName: getItem(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(id: string): CustomXmlPart;'
-      return:
-        type:
-          - 'excel!Excel.CustomXmlPart:interface'
-        description: ''
-      parameters:
-        - id: id
-          description: ID de l’objet à récupérer.
-          type:
-            - string
-  - uid: 'excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)'
-    summary: 'Obtient une partie XML personnalisée en fonction de son ID. Si l’objet CustomXmlPart n’existe pas, la propriété isNull de l’objet renvoie la valeur true.'
-    name: getItemOrNullObject(id)
-    fullName: getItemOrNullObject(id)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(id: string): CustomXmlPart;'
-      return:
-        type:
-          - 'excel!Excel.CustomXmlPart:interface'
-        description: ''
-      parameters:
-        - id: id
-          description: ID de l’objet à récupérer.
-          type:
-            - string
-  - uid: 'excel!Excel.CustomXmlPartCollection#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.CustomXmlPart:interface'
-    name: CustomXmlPart
-    fullName: Excel.CustomXmlPart
-  - uid: 'excel!Excel.CustomXmlPartScopedCollection:interface'
-    name: CustomXmlPartScopedCollection
-    fullName: Excel.CustomXmlPartScopedCollection
-  - uid: 'excel!Excel.CustomXmlPartCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.CustomXmlPartCollection
+uid: excel!Excel.CustomXmlPartCollection:interface
+package: excel!
+fullName: Excel.CustomXmlPartCollection
+summary: Collection de parties XML personnalisées.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: add(xml)
+  uid: excel!Excel.CustomXmlPartCollection#add:member(1)
+  package: excel!
+  fullName: add(xml)
+  summary: Ajoute une nouvelle partie XML personnalisée au classeur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(xml: string): CustomXmlPart;'
+    parameters:
+    - id: xml
+      description: Contenu XML. Doit être un fragment XML valide.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomXmlPart:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    // You must have the xmlns attribute to populate the \n    // CustomXml.namespaceUri property.\n    let originalXml = \"<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>\";\n    let customXmlPart = context.workbook.customXmlParts.add(originalXml);\n    customXmlPart.load(\"id\");\n    let xmlBlob = customXmlPart.getXml();\n\n    await context.sync();\n\n    let readableXml = addLineBreaksToXML(xmlBlob.value);\n    $(\"#display-xml\").text(readableXml);\n\n    // Store the XML part's ID in a setting.\n    let settings = context.workbook.settings;\n    settings.add(\"ContosoReviewXmlPartId\", customXmlPart.id);\n\n    await context.sync();\n}\n```"
+- name: getByNamespace(namespaceUri)
+  uid: excel!Excel.CustomXmlPartCollection#getByNamespace:member(1)
+  package: excel!
+  fullName: getByNamespace(namespaceUri)
+  summary: Obtient une nouvelle collection limitée de parties XML personnalisées dont les espaces de noms correspondent à l’espace de noms donné.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getByNamespace(namespaceUri: string): CustomXmlPartScopedCollection;'
+    parameters:
+    - id: namespaceUri
+      description: Il doit s’agir d’un URI de schéma complet ; par exemple, " http://schemas.contoso.com/review/1.0 ".
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomXmlPartScopedCollection:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.CustomXmlPartCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Obtient le nombre de parties CustomXml dans la collection.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(id)
+  uid: excel!Excel.CustomXmlPartCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(id)
+  summary: Obtient une partie XML personnalisée en fonction de son ID.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(id: string): CustomXmlPart;'
+    parameters:
+    - id: id
+      description: ID de l’objet à récupérer.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomXmlPart:interface" />
+      description: ''
+- name: getItemOrNullObject(id)
+  uid: excel!Excel.CustomXmlPartCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(id)
+  summary: Obtient une partie XML personnalisée en fonction de son ID. Si l’objet CustomXmlPart n’existe pas, la propriété isNull de l’objet renvoie la valeur true.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(id: string): CustomXmlPart;'
+    parameters:
+    - id: id
+      description: ID de l’objet à récupérer.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.CustomXmlPart:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.CustomXmlPartCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 4f760ed0ebe75334c8367395afe651424c34f644
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416336"

@@ -1,657 +1,507 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotTable:interface'
-    summary: Représente un tableau croisé dynamique Excel.
-    name: ExcelScript.PivotTable
-    fullName: ExcelScript.PivotTable
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotTable#addColumnHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#addDataHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#delete:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getHierarchies:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getId:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getLayout:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#getWorksheet:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#refresh:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#removeColumnHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#removeDataHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#removeFilterHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#removeRowHierarchy:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#setName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#addColumnHierarchy:member(1)'
-    summary: 'Ajoute le PivotHierarchy à l’axe en cours. Si la hiérarchie apparaît ailleurs sur la ligne, colonne ou axe de filtre, celle-ci est supprimée de cet emplacement.'
-    name: addColumnHierarchy(pivotHierarchy)
-    fullName: addColumnHierarchy(pivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addColumnHierarchy(
-                    pivotHierarchy: PivotHierarchy
-                ): RowColumnPivotHierarchy;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-        description: ''
-      parameters:
-        - id: pivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#addDataHierarchy:member(1)'
-    summary: Ajoute le PivotHierarchy à l’axe en cours.
-    name: addDataHierarchy(pivotHierarchy)
-    fullName: addDataHierarchy(pivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addDataHierarchy(pivotHierarchy: PivotHierarchy): DataPivotHierarchy;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-        description: ''
-      parameters:
-        - id: pivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)'
-    summary: 'Ajoute le PivotHierarchy à l’axe en cours. Si la hiérarchie apparaît ailleurs sur la ligne, colonne ou axe de filtre, celle-ci est supprimée de cet emplacement.'
-    name: addFilterHierarchy(pivotHierarchy)
-    fullName: addFilterHierarchy(pivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addFilterHierarchy(
-                    pivotHierarchy: PivotHierarchy
-                ): FilterPivotHierarchy;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
-        description: ''
-      parameters:
-        - id: pivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)'
-    summary: 'Ajoute le PivotHierarchy à l’axe en cours. Si la hiérarchie apparaît ailleurs sur la ligne, colonne ou axe de filtre, celle-ci est supprimée de cet emplacement.'
-    name: addRowHierarchy(pivotHierarchy)
-    fullName: addRowHierarchy(pivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addRowHierarchy(
-                    pivotHierarchy: PivotHierarchy
-                ): RowColumnPivotHierarchy;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-        description: ''
-      parameters:
-        - id: pivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#delete:member(1)'
-    summary: Supprime le tableau croisé dynamique.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)'
-    summary: Indique si le tableau croisé dynamique autorise l’application de plusieurs PivotFilters sur un champ PivotField donné dans le tableau.
-    name: getAllowMultipleFiltersPerField()
-    fullName: getAllowMultipleFiltersPerField()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAllowMultipleFiltersPerField(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)'
-    summary: Les hiérarchies de colonne de tableau croisé dynamique.
-    name: getColumnHierarchies()
-    fullName: getColumnHierarchies()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnHierarchies(): RowColumnPivotHierarchy[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)'
-    summary: 'Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n’existe pas, cela renvoie un objet null.'
-    name: getColumnHierarchy(name)
-    fullName: getColumnHierarchy(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Nom du RowColumnPivotHierarchy à récupérer.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies:member(1)'
-    summary: Les hiérarchies de données de tableau croisé dynamique.
-    name: getDataHierarchies()
-    fullName: getDataHierarchies()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataHierarchies(): DataPivotHierarchy[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)'
-    summary: 'Obtient une DataPivotHierarchy par nom. Si la DataPivotHierarchy n’existe pas, cela renvoie un objet null.'
-    name: getDataHierarchy(name)
-    fullName: getDataHierarchy(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDataHierarchy(name: string): DataPivotHierarchy | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Nom du DataPivotHierarchy à récupérer.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)'
-    summary: Indique si le tableau croisé dynamique permet aux valeurs du corps de données d’être modifiées par l’utilisateur.
-    name: getEnableDataValueEditing()
-    fullName: getEnableDataValueEditing()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEnableDataValueEditing(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies:member(1)'
-    summary: Les hiérarchies de filtre de tableau croisé dynamique.
-    name: getFilterHierarchies()
-    fullName: getFilterHierarchies()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFilterHierarchies(): FilterPivotHierarchy[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)'
-    summary: 'Obtient un FilterPivotHierarchy par nom. Si la FilterPivotHierarchy n’existe pas, cela renvoie un objet null.'
-    name: getFilterHierarchy(name)
-    fullName: getFilterHierarchy(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFilterHierarchy(name: string): FilterPivotHierarchy | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Nom du FilterPivotHierarchy à récupérer.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchies:member(1)'
-    summary: Les hiérarchies Pivot de tableau croisé dynamique.
-    name: getHierarchies()
-    fullName: getHierarchies()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHierarchies(): PivotHierarchy[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getHierarchies~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)'
-    summary: 'Obtient une PivotHierarchy par nom. Si la PivotHierarchy n’existe pas, cela renvoie un objet null.'
-    name: getHierarchy(name)
-    fullName: getHierarchy(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHierarchy(name: string): PivotHierarchy | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getHierarchy~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Nom du PivotHierarchy à récupérer.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getId:member(1)'
-    summary: ID du tableau croisé dynamique.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getLayout:member(1)'
-    summary: Le PivotLayout décrivant la disposition et la structure visuelle de tableau croisé dynamique.
-    name: getLayout()
-    fullName: getLayout()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLayout(): PivotLayout;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotLayout:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getName:member(1)'
-    summary: Nom du tableau croisé dynamique.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies:member(1)'
-    summary: Les hiérarchies de lignes de tableau croisé dynamique.
-    name: getRowHierarchies()
-    fullName: getRowHierarchies()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowHierarchies(): RowColumnPivotHierarchy[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)'
-    summary: 'Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n’existe pas, cela renvoie un objet null.'
-    name: getRowHierarchy(name)
-    fullName: getRowHierarchy(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Nom du RowColumnPivotHierarchy à récupérer.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)'
-    summary: Indique si le tableau croisé dynamique utilise des listes personnalisées lors du tri.
-    name: getUseCustomSortLists()
-    fullName: getUseCustomSortLists()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUseCustomSortLists(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getWorksheet:member(1)'
-    summary: Feuille de calcul contenant le tableau croisé dynamique.
-    name: getWorksheet()
-    fullName: getWorksheet()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWorksheet(): Worksheet;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Worksheet:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#refresh:member(1)'
-    summary: Actualise le tableau croisé dynamique.
-    name: refresh()
-    fullName: refresh()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'refresh(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotTable#removeColumnHierarchy:member(1)'
-    summary: Supprime le PivotHierarchy de l’axe en cours.
-    name: removeColumnHierarchy(rowColumnPivotHierarchy)
-    fullName: removeColumnHierarchy(rowColumnPivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        removeColumnHierarchy(
-                    rowColumnPivotHierarchy: RowColumnPivotHierarchy
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rowColumnPivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#removeDataHierarchy:member(1)'
-    summary: Supprime le PivotHierarchy de l’axe en cours.
-    name: removeDataHierarchy(DataPivotHierarchy)
-    fullName: removeDataHierarchy(DataPivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeDataHierarchy(DataPivotHierarchy: DataPivotHierarchy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: DataPivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#removeFilterHierarchy:member(1)'
-    summary: Supprime le PivotHierarchy de l’axe en cours.
-    name: removeFilterHierarchy(filterPivotHierarchy)
-    fullName: removeFilterHierarchy(filterPivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeFilterHierarchy(filterPivotHierarchy: FilterPivotHierarchy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: filterPivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#removeRowHierarchy:member(1)'
-    summary: Supprime le PivotHierarchy de l’axe en cours.
-    name: removeRowHierarchy(rowColumnPivotHierarchy)
-    fullName: removeRowHierarchy(rowColumnPivotHierarchy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        removeRowHierarchy(
-                    rowColumnPivotHierarchy: RowColumnPivotHierarchy
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rowColumnPivotHierarchy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)'
-    summary: Indique si le tableau croisé dynamique autorise l’application de plusieurs PivotFilters sur un champ PivotField donné dans le tableau.
-    name: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-    fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setAllowMultipleFiltersPerField(
-                    allowMultipleFiltersPerField: boolean
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: allowMultipleFiltersPerField
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)'
-    summary: Indique si le tableau croisé dynamique permet aux valeurs du corps de données d’être modifiées par l’utilisateur.
-    name: setEnableDataValueEditing(enableDataValueEditing)
-    fullName: setEnableDataValueEditing(enableDataValueEditing)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEnableDataValueEditing(enableDataValueEditing: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: enableDataValueEditing
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotTable#setName:member(1)'
-    summary: Nom du tableau croisé dynamique.
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)'
-    summary: Indique si le tableau croisé dynamique utilise des listes personnalisées lors du tri.
-    name: setUseCustomSortLists(useCustomSortLists)
-    fullName: setUseCustomSortLists(useCustomSortLists)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setUseCustomSortLists(useCustomSortLists: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useCustomSortLists
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-    name: RowColumnPivotHierarchy
-    fullName: ExcelScript.RowColumnPivotHierarchy
-  - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-    name: PivotHierarchy
-    fullName: ExcelScript.PivotHierarchy
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-    name: DataPivotHierarchy
-    fullName: ExcelScript.DataPivotHierarchy
-  - uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
-    name: FilterPivotHierarchy
-    fullName: ExcelScript.FilterPivotHierarchy
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchies~0:complex'
-    name: 'RowColumnPivotHierarchy[]'
-    fullName: 'ExcelScript.RowColumnPivotHierarchy[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-        name: RowColumnPivotHierarchy
-        fullName: ExcelScript.RowColumnPivotHierarchy
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getColumnHierarchy~0:complex'
-    name: RowColumnPivotHierarchy | undefined
-    fullName: ExcelScript.RowColumnPivotHierarchy | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-        name: RowColumnPivotHierarchy
-        fullName: ExcelScript.RowColumnPivotHierarchy
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchies~0:complex'
-    name: 'DataPivotHierarchy[]'
-    fullName: 'ExcelScript.DataPivotHierarchy[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-        name: DataPivotHierarchy
-        fullName: ExcelScript.DataPivotHierarchy
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getDataHierarchy~0:complex'
-    name: DataPivotHierarchy | undefined
-    fullName: ExcelScript.DataPivotHierarchy | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-        name: DataPivotHierarchy
-        fullName: ExcelScript.DataPivotHierarchy
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchies~0:complex'
-    name: 'FilterPivotHierarchy[]'
-    fullName: 'ExcelScript.FilterPivotHierarchy[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
-        name: FilterPivotHierarchy
-        fullName: ExcelScript.FilterPivotHierarchy
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getFilterHierarchy~0:complex'
-    name: FilterPivotHierarchy | undefined
-    fullName: ExcelScript.FilterPivotHierarchy | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.FilterPivotHierarchy:interface'
-        name: FilterPivotHierarchy
-        fullName: ExcelScript.FilterPivotHierarchy
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchies~0:complex'
-    name: 'PivotHierarchy[]'
-    fullName: 'ExcelScript.PivotHierarchy[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-        name: PivotHierarchy
-        fullName: ExcelScript.PivotHierarchy
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getHierarchy~0:complex'
-    name: PivotHierarchy | undefined
-    fullName: ExcelScript.PivotHierarchy | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotHierarchy:interface'
-        name: PivotHierarchy
-        fullName: ExcelScript.PivotHierarchy
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.PivotLayout:interface'
-    name: PivotLayout
-    fullName: ExcelScript.PivotLayout
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchies~0:complex'
-    name: 'RowColumnPivotHierarchy[]'
-    fullName: 'ExcelScript.RowColumnPivotHierarchy[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-        name: RowColumnPivotHierarchy
-        fullName: ExcelScript.RowColumnPivotHierarchy
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotTable#getRowHierarchy~0:complex'
-    name: RowColumnPivotHierarchy | undefined
-    fullName: ExcelScript.RowColumnPivotHierarchy | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface'
-        name: RowColumnPivotHierarchy
-        fullName: ExcelScript.RowColumnPivotHierarchy
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Worksheet:interface'
-    name: Worksheet
-    fullName: ExcelScript.Worksheet
+### YamlMime:TSType
+name: ExcelScript.PivotTable
+uid: ExcelScript!ExcelScript.PivotTable:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotTable
+summary: Représente un tableau croisé dynamique Excel.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addColumnHierarchy(pivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#addColumnHierarchy:member(1)
+  package: ExcelScript!
+  fullName: addColumnHierarchy(pivotHierarchy)
+  summary: Ajoute le PivotHierarchy à l’axe en cours. Si la hiérarchie apparaît ailleurs sur la ligne, colonne ou axe de filtre, celle-ci est supprimée de cet emplacement.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addColumnHierarchy(
+                  pivotHierarchy: PivotHierarchy
+              ): RowColumnPivotHierarchy;
+    parameters:
+    - id: pivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />
+      description: ''
+- name: addDataHierarchy(pivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#addDataHierarchy:member(1)
+  package: ExcelScript!
+  fullName: addDataHierarchy(pivotHierarchy)
+  summary: Ajoute le PivotHierarchy à l’axe en cours.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'addDataHierarchy(pivotHierarchy: PivotHierarchy): DataPivotHierarchy;'
+    parameters:
+    - id: pivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
+      description: ''
+- name: addFilterHierarchy(pivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#addFilterHierarchy:member(1)
+  package: ExcelScript!
+  fullName: addFilterHierarchy(pivotHierarchy)
+  summary: Ajoute le PivotHierarchy à l’axe en cours. Si la hiérarchie apparaît ailleurs sur la ligne, colonne ou axe de filtre, celle-ci est supprimée de cet emplacement.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addFilterHierarchy(
+                  pivotHierarchy: PivotHierarchy
+              ): FilterPivotHierarchy;
+    parameters:
+    - id: pivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterPivotHierarchy:interface" />
+      description: ''
+- name: addRowHierarchy(pivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#addRowHierarchy:member(1)
+  package: ExcelScript!
+  fullName: addRowHierarchy(pivotHierarchy)
+  summary: Ajoute le PivotHierarchy à l’axe en cours. Si la hiérarchie apparaît ailleurs sur la ligne, colonne ou axe de filtre, celle-ci est supprimée de cet emplacement.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addRowHierarchy(
+                  pivotHierarchy: PivotHierarchy
+              ): RowColumnPivotHierarchy;
+    parameters:
+    - id: pivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.PivotTable#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Supprime le tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAllowMultipleFiltersPerField()
+  uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
+  package: ExcelScript!
+  fullName: getAllowMultipleFiltersPerField()
+  summary: Indique si le tableau croisé dynamique autorise l’application de plusieurs PivotFilters sur un champ PivotField donné dans le tableau.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAllowMultipleFiltersPerField(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getColumnHierarchies()
+  uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchies:member(1)
+  package: ExcelScript!
+  fullName: getColumnHierarchies()
+  summary: Les hiérarchies de colonne de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnHierarchies(): RowColumnPivotHierarchy[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />[]
+      description: ''
+- name: getColumnHierarchy(name)
+  uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
+  package: ExcelScript!
+  fullName: getColumnHierarchy(name)
+  summary: Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n’existe pas, cela renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
+    parameters:
+    - id: name
+      description: Nom du RowColumnPivotHierarchy à récupérer.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
+      description: ''
+- name: getDataHierarchies()
+  uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchies:member(1)
+  package: ExcelScript!
+  fullName: getDataHierarchies()
+  summary: Les hiérarchies de données de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataHierarchies(): DataPivotHierarchy[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />[]
+      description: ''
+- name: getDataHierarchy(name)
+  uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
+  package: ExcelScript!
+  fullName: getDataHierarchy(name)
+  summary: Obtient une DataPivotHierarchy par nom. Si la DataPivotHierarchy n’existe pas, cela renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDataHierarchy(name: string): DataPivotHierarchy | undefined;'
+    parameters:
+    - id: name
+      description: Nom du DataPivotHierarchy à récupérer.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" /> | undefined
+      description: ''
+- name: getEnableDataValueEditing()
+  uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
+  package: ExcelScript!
+  fullName: getEnableDataValueEditing()
+  summary: Indique si le tableau croisé dynamique permet aux valeurs du corps de données d’être modifiées par l’utilisateur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEnableDataValueEditing(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getFilterHierarchies()
+  uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchies:member(1)
+  package: ExcelScript!
+  fullName: getFilterHierarchies()
+  summary: Les hiérarchies de filtre de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFilterHierarchies(): FilterPivotHierarchy[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterPivotHierarchy:interface" />[]
+      description: ''
+- name: getFilterHierarchy(name)
+  uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
+  package: ExcelScript!
+  fullName: getFilterHierarchy(name)
+  summary: Obtient un FilterPivotHierarchy par nom. Si la FilterPivotHierarchy n’existe pas, cela renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFilterHierarchy(name: string): FilterPivotHierarchy | undefined;'
+    parameters:
+    - id: name
+      description: Nom du FilterPivotHierarchy à récupérer.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FilterPivotHierarchy:interface" /> | undefined
+      description: ''
+- name: getHierarchies()
+  uid: ExcelScript!ExcelScript.PivotTable#getHierarchies:member(1)
+  package: ExcelScript!
+  fullName: getHierarchies()
+  summary: Les hiérarchies Pivot de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHierarchies(): PivotHierarchy[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" />[]
+      description: ''
+- name: getHierarchy(name)
+  uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
+  package: ExcelScript!
+  fullName: getHierarchy(name)
+  summary: Obtient une PivotHierarchy par nom. Si la PivotHierarchy n’existe pas, cela renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHierarchy(name: string): PivotHierarchy | undefined;'
+    parameters:
+    - id: name
+      description: Nom du PivotHierarchy à récupérer.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotHierarchy:interface" /> | undefined
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.PivotTable#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: ID du tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLayout()
+  uid: ExcelScript!ExcelScript.PivotTable#getLayout:member(1)
+  package: ExcelScript!
+  fullName: getLayout()
+  summary: Le PivotLayout décrivant la disposition et la structure visuelle de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLayout(): PivotLayout;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotLayout:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.PivotTable#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Nom du tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRowHierarchies()
+  uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchies:member(1)
+  package: ExcelScript!
+  fullName: getRowHierarchies()
+  summary: Les hiérarchies de lignes de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHierarchies(): RowColumnPivotHierarchy[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />[]
+      description: ''
+- name: getRowHierarchy(name)
+  uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
+  package: ExcelScript!
+  fullName: getRowHierarchy(name)
+  summary: Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n’existe pas, cela renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHierarchy(name: string): RowColumnPivotHierarchy | undefined;'
+    parameters:
+    - id: name
+      description: Nom du RowColumnPivotHierarchy à récupérer.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" /> | undefined
+      description: ''
+- name: getUseCustomSortLists()
+  uid: ExcelScript!ExcelScript.PivotTable#getUseCustomSortLists:member(1)
+  package: ExcelScript!
+  fullName: getUseCustomSortLists()
+  summary: Indique si le tableau croisé dynamique utilise des listes personnalisées lors du tri.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseCustomSortLists(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWorksheet()
+  uid: ExcelScript!ExcelScript.PivotTable#getWorksheet:member(1)
+  package: ExcelScript!
+  fullName: getWorksheet()
+  summary: Feuille de calcul contenant le tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWorksheet(): Worksheet;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: refresh()
+  uid: ExcelScript!ExcelScript.PivotTable#refresh:member(1)
+  package: ExcelScript!
+  fullName: refresh()
+  summary: Actualise le tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refresh(): void;'
+    return:
+      type: void
+      description: ''
+- name: removeColumnHierarchy(rowColumnPivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#removeColumnHierarchy:member(1)
+  package: ExcelScript!
+  fullName: removeColumnHierarchy(rowColumnPivotHierarchy)
+  summary: Supprime le PivotHierarchy de l’axe en cours.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      removeColumnHierarchy(
+                  rowColumnPivotHierarchy: RowColumnPivotHierarchy
+              ): void;
+    parameters:
+    - id: rowColumnPivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />
+    return:
+      type: void
+      description: ''
+- name: removeDataHierarchy(DataPivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#removeDataHierarchy:member(1)
+  package: ExcelScript!
+  fullName: removeDataHierarchy(DataPivotHierarchy)
+  summary: Supprime le PivotHierarchy de l’axe en cours.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'removeDataHierarchy(DataPivotHierarchy: DataPivotHierarchy): void;'
+    parameters:
+    - id: DataPivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
+    return:
+      type: void
+      description: ''
+- name: removeFilterHierarchy(filterPivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#removeFilterHierarchy:member(1)
+  package: ExcelScript!
+  fullName: removeFilterHierarchy(filterPivotHierarchy)
+  summary: Supprime le PivotHierarchy de l’axe en cours.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'removeFilterHierarchy(filterPivotHierarchy: FilterPivotHierarchy): void;'
+    parameters:
+    - id: filterPivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.FilterPivotHierarchy:interface" />
+    return:
+      type: void
+      description: ''
+- name: removeRowHierarchy(rowColumnPivotHierarchy)
+  uid: ExcelScript!ExcelScript.PivotTable#removeRowHierarchy:member(1)
+  package: ExcelScript!
+  fullName: removeRowHierarchy(rowColumnPivotHierarchy)
+  summary: Supprime le PivotHierarchy de l’axe en cours.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      removeRowHierarchy(
+                  rowColumnPivotHierarchy: RowColumnPivotHierarchy
+              ): void;
+    parameters:
+    - id: rowColumnPivotHierarchy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.RowColumnPivotHierarchy:interface" />
+    return:
+      type: void
+      description: ''
+- name: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
+  uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
+  package: ExcelScript!
+  fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
+  summary: Indique si le tableau croisé dynamique autorise l’application de plusieurs PivotFilters sur un champ PivotField donné dans le tableau.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setAllowMultipleFiltersPerField(
+                  allowMultipleFiltersPerField: boolean
+              ): void;
+    parameters:
+    - id: allowMultipleFiltersPerField
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setEnableDataValueEditing(enableDataValueEditing)
+  uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
+  package: ExcelScript!
+  fullName: setEnableDataValueEditing(enableDataValueEditing)
+  summary: Indique si le tableau croisé dynamique permet aux valeurs du corps de données d’être modifiées par l’utilisateur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEnableDataValueEditing(enableDataValueEditing: boolean): void;'
+    parameters:
+    - id: enableDataValueEditing
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.PivotTable#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Nom du tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setUseCustomSortLists(useCustomSortLists)
+  uid: ExcelScript!ExcelScript.PivotTable#setUseCustomSortLists:member(1)
+  package: ExcelScript!
+  fullName: setUseCustomSortLists(useCustomSortLists)
+  summary: Indique si le tableau croisé dynamique utilise des listes personnalisées lors du tri.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseCustomSortLists(useCustomSortLists: boolean): void;'
+    parameters:
+    - id: useCustomSortLists
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 6e6ae4214e6ddb923ba268f247c5088421dbac94
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416714"

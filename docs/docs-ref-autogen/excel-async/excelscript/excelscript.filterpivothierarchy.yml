@@ -1,113 +1,109 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FilterPivotHierarchy:interface'
-    summary: Représente l’FilterPivotHierarchy Excel.
-    name: Excel.FilterPivotHierarchy
-    fullName: Excel.FilterPivotHierarchy
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
-      - 'excel!Excel.FilterPivotHierarchy#fields:member'
-      - 'excel!Excel.FilterPivotHierarchy#id:member'
-      - 'excel!Excel.FilterPivotHierarchy#load:member(1)'
-      - 'excel!Excel.FilterPivotHierarchy#name:member'
-      - 'excel!Excel.FilterPivotHierarchy#position:member'
-      - 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
-  - uid: 'excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member'
-    summary: Détermine si vous voulez autoriser plusieurs éléments de filtre.
-    name: enableMultipleFilterItems
-    fullName: enableMultipleFilterItems
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableMultipleFilterItems: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.FilterPivotHierarchy#fields:member'
-    summary: Renvoie les PivotFields associés à la FilterPivotHierarchy.
-    name: fields
-    fullName: fields
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fields: PivotFieldCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotFieldCollection:interface'
-  - uid: 'excel!Excel.FilterPivotHierarchy#id:member'
-    summary: ID du filterPivotHierarchy.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterPivotHierarchy#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.FilterPivotHierarchy#name:member'
-    summary: Nom du filterPivotHierarchy.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.FilterPivotHierarchy#position:member'
-    summary: Position du filterPivotHierarchy.
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'position: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.FilterPivotHierarchy#setToDefault:member(1)'
-    summary: Restaurer la FilterPivotHierarchy à ses valeurs par défaut.
-    name: setToDefault()
-    fullName: setToDefault()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setToDefault(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'excel!Excel.PivotFieldCollection:interface'
-    name: PivotFieldCollection
-    fullName: Excel.PivotFieldCollection
+### YamlMime:TSType
+name: Excel.FilterPivotHierarchy
+uid: excel!Excel.FilterPivotHierarchy:interface
+package: excel!
+fullName: Excel.FilterPivotHierarchy
+summary: Représente l’FilterPivotHierarchy Excel.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: enableMultipleFilterItems
+  uid: excel!Excel.FilterPivotHierarchy#enableMultipleFilterItems:member
+  package: excel!
+  fullName: enableMultipleFilterItems
+  summary: Détermine si vous voulez autoriser plusieurs éléments de filtre.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enableMultipleFilterItems: boolean;'
+    return:
+      type: boolean
+- name: fields
+  uid: excel!Excel.FilterPivotHierarchy#fields:member
+  package: excel!
+  fullName: fields
+  summary: Renvoie les PivotFields associés à la FilterPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fields: PivotFieldCollection;'
+    return:
+      type: <xref uid="excel!Excel.PivotFieldCollection:interface" />
+- name: id
+  uid: excel!Excel.FilterPivotHierarchy#id:member
+  package: excel!
+  fullName: id
+  summary: ID du filterPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.FilterPivotHierarchy#name:member
+  package: excel!
+  fullName: name
+  summary: Nom du filterPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: position
+  uid: excel!Excel.FilterPivotHierarchy#position:member
+  package: excel!
+  fullName: position
+  summary: Position du filterPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'position: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.FilterPivotHierarchy#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setToDefault()
+  uid: excel!Excel.FilterPivotHierarchy#setToDefault:member(1)
+  package: excel!
+  fullName: setToDefault()
+  summary: Restaurer la FilterPivotHierarchy à ses valeurs par défaut.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setToDefault(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 25824443f7078c37f9235ee07d39e34d0521242b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417924"

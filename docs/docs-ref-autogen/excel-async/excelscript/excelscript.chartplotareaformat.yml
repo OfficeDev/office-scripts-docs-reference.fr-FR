@@ -1,63 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartPlotAreaFormat:interface'
-    summary: Représente les propriétés de mise en forme pour le graphique plotArea.
-    name: Excel.ChartPlotAreaFormat
-    fullName: Excel.ChartPlotAreaFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartPlotAreaFormat#border:member'
-      - 'excel!Excel.ChartPlotAreaFormat#fill:member'
-      - 'excel!Excel.ChartPlotAreaFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartPlotAreaFormat#border:member'
-    summary: Cette énumération spécifie les attributs de bordure d’un graphique plotArea.
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly border: ChartBorder;'
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:interface'
-  - uid: 'excel!Excel.ChartPlotAreaFormat#fill:member'
-    summary: 'Spécifie le format de remplissage d’un objet, qui inclut les informations de mise en forme de l’arrière-plan.'
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ChartFill;'
-      return:
-        type:
-          - 'excel!Excel.ChartFill:interface'
-  - uid: 'excel!Excel.ChartPlotAreaFormat#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartBorder:interface'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
-  - uid: 'excel!Excel.ChartFill:interface'
-    name: ChartFill
-    fullName: Excel.ChartFill
+### YamlMime:TSType
+name: Excel.ChartPlotAreaFormat
+uid: excel!Excel.ChartPlotAreaFormat:interface
+package: excel!
+fullName: Excel.ChartPlotAreaFormat
+summary: Représente les propriétés de mise en forme pour le graphique plotArea.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: border
+  uid: excel!Excel.ChartPlotAreaFormat#border:member
+  package: excel!
+  fullName: border
+  summary: Cette énumération spécifie les attributs de bordure d’un graphique plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly border: ChartBorder;'
+    return:
+      type: <xref uid="excel!Excel.ChartBorder:interface" />
+- name: fill
+  uid: excel!Excel.ChartPlotAreaFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: Spécifie le format de remplissage d’un objet, qui inclut les informations de mise en forme de l’arrière-plan.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ChartFill;'
+    return:
+      type: <xref uid="excel!Excel.ChartFill:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartPlotAreaFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 36ed5ae9ef274df39c6fe9a12c3970fd6e6c53c9
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417441"

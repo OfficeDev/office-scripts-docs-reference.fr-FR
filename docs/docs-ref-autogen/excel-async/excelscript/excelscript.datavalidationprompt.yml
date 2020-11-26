@@ -1,50 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.DataValidationPrompt:interface'
-    summary: Représente les propriétés d’invite de l’utilisateur pour la validation des données.
-    name: Excel.DataValidationPrompt
-    fullName: Excel.DataValidationPrompt
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.DataValidationPrompt#message:member'
-      - 'excel!Excel.DataValidationPrompt#showPrompt:member'
-      - 'excel!Excel.DataValidationPrompt#title:member'
-  - uid: 'excel!Excel.DataValidationPrompt#message:member'
-    summary: Spécifie le message de l’invite.
-    name: message
-    fullName: message
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'message: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.DataValidationPrompt#showPrompt:member'
-    summary: Indique si une invite s’affiche lorsqu’un utilisateur sélectionne une cellule avec validation des données.
-    name: showPrompt
-    fullName: showPrompt
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'showPrompt: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.DataValidationPrompt#title:member'
-    summary: Spécifie le titre de l’invite.
-    name: title
-    fullName: title
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'title: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: Excel.DataValidationPrompt
+uid: excel!Excel.DataValidationPrompt:interface
+package: excel!
+fullName: Excel.DataValidationPrompt
+summary: Représente les propriétés d’invite de l’utilisateur pour la validation des données.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: message
+  uid: excel!Excel.DataValidationPrompt#message:member
+  package: excel!
+  fullName: message
+  summary: Spécifie le message de l’invite.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'message: string;'
+    return:
+      type: string
+- name: showPrompt
+  uid: excel!Excel.DataValidationPrompt#showPrompt:member
+  package: excel!
+  fullName: showPrompt
+  summary: Indique si une invite s’affiche lorsqu’un utilisateur sélectionne une cellule avec validation des données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showPrompt: boolean;'
+    return:
+      type: boolean
+- name: title
+  uid: excel!Excel.DataValidationPrompt#title:member
+  package: excel!
+  fullName: title
+  summary: Spécifie le titre de l’invite.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'title: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: d7a65d6ce0924c282d063e125a9c9b1ab885b1ed
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416266"
