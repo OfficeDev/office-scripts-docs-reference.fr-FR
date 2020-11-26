@@ -1,129 +1,82 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.WorkbookProtection:interface'
-    summary: Représente la protection d’un objet Workbook.
-    name: Excel.WorkbookProtection
-    fullName: Excel.WorkbookProtection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.WorkbookProtection#load:member(1)'
-      - 'excel!Excel.WorkbookProtection#protect:member(1)'
-      - 'excel!Excel.WorkbookProtection#protected:member'
-      - 'excel!Excel.WorkbookProtection#unprotect:member(1)'
-  - uid: 'excel!Excel.WorkbookProtection#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.WorkbookProtection#protect:member(1)'
-    summary: Protège un classeur. Échoue si le classeur est protégé.
-    name: protect(password)
-    fullName: protect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let workbook = context.workbook;
-              workbook.load("protection/protected");
-
-              await context.sync();
-
-              if (!workbook.protection.protected) {
-                  workbook.protection.protect();
-              }
-          }
-          ```
-          ```typescript
-          let password = await passwordHandler();
-          passwordHelper(password);
-          async function main(context: Excel.RequestContext) {
-              let workbook = context.workbook;
-              workbook.load("protection/protected");
-
-              await context.sync();
-
-              if (!workbook.protection.protected) {
-                  workbook.protection.protect(password);
-              }
-          }
-          ```
-      parameters:
-        - id: password
-          description: mot de passe de protection du classeur.
-          type:
-            - string
-  - uid: 'excel!Excel.WorkbookProtection#protected:member'
-    summary: Indique si le classeur est protégé.
-    name: protected
-    fullName: protected
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly protected: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.WorkbookProtection#unprotect:member(1)'
-    summary: Annule la protection un classeur.
-    name: unprotect(password)
-    fullName: unprotect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unprotect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```javascript
-          async function main(context: Excel.RequestContext) {
-              let workbook = context.workbook;
-              workbook.protection.unprotect();
-          }
-          ```
-          ```typescript
-          let password = await passwordHandler();
-          passwordHelper(password);
-          async function main(context: Excel.RequestContext) {
-              let workbook = context.workbook;
-              workbook.protection.unprotect(password);
-          }
-          ```
-      parameters:
-        - id: password
-          description: mot de passe de protection du classeur.
-          type:
-            - string
+### YamlMime:TSType
+name: Excel.WorkbookProtection
+uid: excel!Excel.WorkbookProtection:interface
+package: excel!
+fullName: Excel.WorkbookProtection
+summary: Représente la protection d’un objet Workbook.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: protected
+  uid: excel!Excel.WorkbookProtection#protected:member
+  package: excel!
+  fullName: protected
+  summary: Indique si le classeur est protégé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly protected: boolean;'
+    return:
+      type: boolean
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.WorkbookProtection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: protect(password)
+  uid: excel!Excel.WorkbookProtection#protect:member(1)
+  package: excel!
+  fullName: protect(password)
+  summary: Protège un classeur. Échoue si le classeur est protégé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'protect(password?: string): void;'
+    parameters:
+    - id: password
+      description: mot de passe de protection du classeur.
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let workbook = context.workbook;\n    workbook.load(\"protection/protected\");\n\n    await context.sync();\n\n    if (!workbook.protection.protected) {\n        workbook.protection.protect();\n    }\n}\n```\n```typescript\nlet password = await passwordHandler();\npasswordHelper(password);\nasync function main(context: Excel.RequestContext) {\n    let workbook = context.workbook;\n    workbook.load(\"protection/protected\");\n\n    await context.sync();\n\n    if (!workbook.protection.protected) {\n        workbook.protection.protect(password);\n    }\n}\n```"
+- name: unprotect(password)
+  uid: excel!Excel.WorkbookProtection#unprotect:member(1)
+  package: excel!
+  fullName: unprotect(password)
+  summary: Annule la protection un classeur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unprotect(password?: string): void;'
+    parameters:
+    - id: password
+      description: mot de passe de protection du classeur.
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\nasync function main(context: Excel.RequestContext) {\n    let workbook = context.workbook;\n    workbook.protection.unprotect();\n}\n```\n```typescript\nlet password = await passwordHandler();\npasswordHelper(password);\nasync function main(context: Excel.RequestContext) {\n    let workbook = context.workbook;\n    workbook.protection.unprotect(password);\n}\n```"
+metadata:
+  ms.openlocfilehash: 111f882b36e4a4fcf2843e89d0a1e07b272663c5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418134"

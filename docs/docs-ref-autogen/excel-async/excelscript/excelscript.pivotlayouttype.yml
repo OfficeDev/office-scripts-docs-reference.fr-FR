@@ -1,37 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotLayoutType:enum'
-    name: Excel.PivotLayoutType
-    fullName: Excel.PivotLayoutType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.PivotLayoutType.compact:member'
-      - 'excel!Excel.PivotLayoutType.outline:member'
-      - 'excel!Excel.PivotLayoutType.tabular:member'
-  - uid: 'excel!Excel.PivotLayoutType.compact:member'
-    summary: Formulaire compressé horizontalement avec des étiquettes à partir du champ suivant dans la même colonne.
-    name: compact
-    fullName: compact
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Compact"'
-  - uid: 'excel!Excel.PivotLayoutType.outline:member'
-    summary: Les éléments des champs internes se trouvent sur la même ligne que les champs externes les éléments et les sous-totaux sont toujours en bas.
-    name: outline
-    fullName: outline
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Outline"'
-  - uid: 'excel!Excel.PivotLayoutType.tabular:member'
-    summary: Les éléments des champs internes sont toujours sur une nouvelle ligne par rapport aux éléments des champs externes.
-    name: tabular
-    fullName: tabular
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Tabular"'
+### YamlMime:TSEnum
+name: Excel.PivotLayoutType
+uid: excel!Excel.PivotLayoutType:enum
+package: excel!
+fullName: Excel.PivotLayoutType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: compact
+  uid: excel!Excel.PivotLayoutType.compact:member
+  package: excel!
+  summary: Formulaire compressé horizontalement avec des étiquettes à partir du champ suivant dans la même colonne.
+- name: outline
+  uid: excel!Excel.PivotLayoutType.outline:member
+  package: excel!
+  summary: Les éléments des champs internes se trouvent sur la même ligne que les champs externes les éléments et les sous-totaux sont toujours en bas.
+- name: tabular
+  uid: excel!Excel.PivotLayoutType.tabular:member
+  package: excel!
+  summary: Les éléments des champs internes sont toujours sur une nouvelle ligne par rapport aux éléments des champs externes.
+metadata:
+  ms.openlocfilehash: 8d1efe9874ceae2d6e3325bf4210f099b13b983d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418841"

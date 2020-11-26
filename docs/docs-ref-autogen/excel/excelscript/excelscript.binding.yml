@@ -1,105 +1,96 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Binding:interface'
-    summary: Représente une liaison Office.js définie dans le classeur.
-    name: ExcelScript.Binding
-    fullName: ExcelScript.Binding
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Binding#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getRange:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getTable:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getText:member(1)'
-      - 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Binding#delete:member(1)'
-    summary: Supprime la liaison.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getId:member(1)'
-    summary: Représente l’identificateur de liaison.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getRange:member(1)'
-    summary: Renvoie la plage représentée par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getTable:member(1)'
-    summary: Renvoie le tableau représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
-    name: getTable()
-    fullName: getTable()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTable(): Table;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Table:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getText:member(1)'
-    summary: Renvoie le texte représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Binding#getType:member(1)'
-    summary: 'Renvoie le type de la liaison. Pour plus d’informations, voir ExcelScript. BindingType.'
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): BindingType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BindingType:enum'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.Table:interface'
-    name: Table
-    fullName: ExcelScript.Table
-  - uid: 'ExcelScript!ExcelScript.BindingType:enum'
-    name: BindingType
-    fullName: ExcelScript.BindingType
+### YamlMime:TSType
+name: ExcelScript.Binding
+uid: ExcelScript!ExcelScript.Binding:interface
+package: ExcelScript!
+fullName: ExcelScript.Binding
+summary: Représente une liaison Office.js définie dans le classeur.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: delete()
+  uid: ExcelScript!ExcelScript.Binding#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Supprime la liaison.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Binding#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Représente l’identificateur de liaison.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getRange()
+  uid: ExcelScript!ExcelScript.Binding#getRange:member(1)
+  package: ExcelScript!
+  fullName: getRange()
+  summary: Renvoie la plage représentée par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getTable()
+  uid: ExcelScript!ExcelScript.Binding#getTable:member(1)
+  package: ExcelScript!
+  fullName: getTable()
+  summary: Renvoie le tableau représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTable(): Table;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
+      description: ''
+- name: getText()
+  uid: ExcelScript!ExcelScript.Binding#getText:member(1)
+  package: ExcelScript!
+  fullName: getText()
+  summary: Renvoie le texte représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): string;'
+    return:
+      type: string
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.Binding#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Renvoie le type de la liaison. Pour plus d’informations, voir ExcelScript. BindingType.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): BindingType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BindingType:enum" />
+      description: ''
+metadata:
+  ms.openlocfilehash: dbc040f8940983d3292d272d4d19d7f21a794d9e
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418085"

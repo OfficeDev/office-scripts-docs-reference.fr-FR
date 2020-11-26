@@ -1,78 +1,78 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableRow:interface'
-    summary: |-
-      Représente une ligne dans un tableau.
+### YamlMime:TSType
+name: Excel.TableRow
+uid: excel!Excel.TableRow:interface
+package: excel!
+fullName: Excel.TableRow
+summary: >-
+  Représente une ligne dans un tableau.
 
-      Notez que, à la différence des plages ou colonnes, qui s’ajusteront si de nouvelles lignes/colonnes sont ajoutées avant celles-ci, un objet TableRow représente l’emplacement physique de la ligne de table, mais pas les données. Autrement dit, si les données sont triées ou si de nouvelles lignes sont ajoutées, une ligne de tableau continue de pointer vers l’index pour lequel elle a été créée.
-    name: Excel.TableRow
-    fullName: Excel.TableRow
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableRow#delete:member(1)'
-      - 'excel!Excel.TableRow#getRange:member(1)'
-      - 'excel!Excel.TableRow#load:member(1)'
-      - 'excel!Excel.TableRow#values:member'
-  - uid: 'excel!Excel.TableRow#delete:member(1)'
-    summary: Supprime la ligne du tableau.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.TableRow#getRange:member(1)'
-    summary: Renvoie l’objet de plage associé à la ligne entière.
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.TableRow#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TableRow#values:member'
-    summary: 'Représente les valeurs brutes de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Les cellules contenant une erreur renvoie la chaîne d’erreur.'
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'values: any[][];'
-      return:
-        type:
-          - 'any[][]'
-references:
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
+
+  Notez que, à la différence des plages ou colonnes, qui s’ajusteront si de nouvelles lignes/colonnes sont ajoutées avant celles-ci, un objet TableRow représente l’emplacement physique de la ligne de table, mais pas les données. Autrement dit, si les données sont triées ou si de nouvelles lignes sont ajoutées, une ligne de tableau continue de pointer vers l’index pour lequel elle a été créée.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: values
+  uid: excel!Excel.TableRow#values:member
+  package: excel!
+  fullName: values
+  summary: Représente les valeurs brutes de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Les cellules contenant une erreur renvoie la chaîne d’erreur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'values: any[][];'
+    return:
+      type: any[][]
+methods:
+- name: delete()
+  uid: excel!Excel.TableRow#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Supprime la ligne du tableau.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getRange()
+  uid: excel!Excel.TableRow#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: Renvoie l’objet de plage associé à la ligne entière.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableRow#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7d8b53988f75a8e8f9e9fce4f175396e8ebf2319
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418246"

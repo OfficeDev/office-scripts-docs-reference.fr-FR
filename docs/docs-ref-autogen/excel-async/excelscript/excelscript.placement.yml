@@ -1,38 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Placement:enum'
-    summary: Indique la manière dont un objet est lié à ses cellules sous-jacentes.
-    name: Excel.Placement
-    fullName: Excel.Placement
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.Placement.absolute:member'
-      - 'excel!Excel.Placement.oneCell:member'
-      - 'excel!Excel.Placement.twoCell:member'
-  - uid: 'excel!Excel.Placement.absolute:member'
-    summary: L’objet est flottante.
-    name: absolute
-    fullName: absolute
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Absolute"'
-  - uid: 'excel!Excel.Placement.oneCell:member'
-    summary: L’objet est déplacé et redimensionné avec les cellules.
-    name: oneCell
-    fullName: oneCell
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"OneCell"'
-  - uid: 'excel!Excel.Placement.twoCell:member'
-    summary: L’objet est déplacé avec les cellules.
-    name: twoCell
-    fullName: twoCell
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TwoCell"'
+### YamlMime:TSEnum
+name: Excel.Placement
+uid: excel!Excel.Placement:enum
+package: excel!
+fullName: Excel.Placement
+summary: Indique la manière dont un objet est lié à ses cellules sous-jacentes.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: absolute
+  uid: excel!Excel.Placement.absolute:member
+  package: excel!
+  summary: L’objet est flottante.
+- name: oneCell
+  uid: excel!Excel.Placement.oneCell:member
+  package: excel!
+  summary: L’objet est déplacé et redimensionné avec les cellules.
+- name: twoCell
+  uid: excel!Excel.Placement.twoCell:member
+  package: excel!
+  summary: L’objet est déplacé avec les cellules.
+metadata:
+  ms.openlocfilehash: 7eb3e236a015e7b6daf96f755dbba063c7823bfc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418806"

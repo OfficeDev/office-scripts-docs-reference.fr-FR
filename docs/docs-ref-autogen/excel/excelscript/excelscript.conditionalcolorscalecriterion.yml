@@ -1,54 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface'
-    summary: 'Représente un critère d’étendue de couleur qui contient un type, une valeur et une couleur.'
-    name: ExcelScript.ConditionalColorScaleCriterion
-    fullName: ExcelScript.ConditionalColorScaleCriterion
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
-      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
-      - 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member'
-    summary: 'Représentation de code de couleur HTML de la couleur d’une image d’une couleur (par exemple, \# FF0000 représente le rouge).'
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member'
-    summary: 'Nombre, formule ou null (si le type est LowestValue).'
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member'
-    summary: La formule conditionnelle de critère qui doit être basée.
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'type: ConditionalFormatColorCriterionType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum'
-    name: ConditionalFormatColorCriterionType
-    fullName: ExcelScript.ConditionalFormatColorCriterionType
+### YamlMime:TSType
+name: ExcelScript.ConditionalColorScaleCriterion
+uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalColorScaleCriterion
+summary: Représente un critère d’étendue de couleur qui contient un type, une valeur et une couleur.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: Représentation de code de couleur HTML de la couleur d’une image d’une couleur (par exemple, \# FF0000 représente le rouge).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: formula
+  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
+  package: ExcelScript!
+  fullName: formula
+  summary: Nombre, formule ou null (si le type est LowestValue).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula?: string;'
+    return:
+      type: string
+- name: type
+  uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
+  package: ExcelScript!
+  fullName: type
+  summary: La formule conditionnelle de critère qui doit être basée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'type: ConditionalFormatColorCriterionType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
+metadata:
+  ms.openlocfilehash: 25bac1cb6537ddbb319c9a9371c7e8dbcfd0ba2b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419487"
