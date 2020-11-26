@@ -1,344 +1,273 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-    summary: Représente le champ de tableau croisé dynamique Excel.
-    name: ExcelScript.PivotField
-    fullName: ExcelScript.PivotField
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
-      - 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
-  - uid: 'ExcelScript!ExcelScript.PivotField#applyFilter:member(1)'
-    summary: 'Définit une ou plusieurs des informations de la valeur de champ en vigueur du champ et les applique au champ. Si les filtres fournis ne sont pas valides ou ne peuvent pas être appliqués, une exception est générée.'
-    name: applyFilter(filter)
-    fullName: applyFilter(filter)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'applyFilter(filter: PivotFilters): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: filter
-          description: Une interface spécifique PivotFilter ou une interface PivotFilters contenant plusieurs filtres configurés.
-          type:
-            - 'ExcelScript!ExcelScript.PivotFilters:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)'
-    summary: Efface tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
-    name: clearAllFilters()
-    fullName: clearAllFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearAllFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#clearFilter:member(1)'
-    summary: Efface tous les critères existants du filtre du champ du type donné (s’il est déjà appliqué).
-    name: clearFilter(filterType)
-    fullName: clearFilter(filterType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearFilter(filterType: PivotFilterType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: filterType
-          description: Type de filtre sur le champ dont tous les critères doivent être effacés.
-          type:
-            - 'ExcelScript!ExcelScript.PivotFilterType:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotField#getFilters:member(1)'
-    summary: Obtient tous les filtres actuellement appliqués sur le champ.
-    name: getFilters()
-    fullName: getFilters()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFilters(): PivotFilters;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotFilters:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getId:member(1)'
-    summary: ID du champ PivotField.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getItems:member(1)'
-    summary: Renvoie les PivotFields associés à PivotField.
-    name: getItems()
-    fullName: getItems()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItems(): PivotItem[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getName:member(1)'
-    summary: Nom du champ PivotField.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)'
-    summary: 'Obtient un PivotItem par nom. Si PivotItem n’existe pas, renvoie un objet null.'
-    name: getPivotItem(name)
-    fullName: getPivotItem(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotItem(name: string): PivotItem | undefined;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
-        description: ''
-      parameters:
-        - id: name
-          description: Nom du PivotItem à récupérer.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)'
-    summary: Détermine si vous voulez afficher tous les éléments de PivotField.
-    name: getShowAllItems()
-    fullName: getShowAllItems()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowAllItems(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)'
-    summary: Sous-totaux du champ PivotField.
-    name: getSubtotals()
-    fullName: getSubtotals()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSubtotals(): Subtotals;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Subtotals:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.PivotField#isFiltered:member(1)'
-    summary: Vérifie s’il existe des filtres appliqués sur le champ.
-    name: isFiltered(filterType)
-    fullName: isFiltered(filterType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'isFiltered(filterType?: PivotFilterType): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-      parameters:
-        - id: filterType
-          description: 'Type de filtre à vérifier. Si aucun type n’est fourni, cette méthode vérifie si un filtre est appliqué.'
-          type:
-            - 'ExcelScript!ExcelScript.PivotFilterType:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotField#setName:member(1)'
-    summary: Nom du champ PivotField.
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)'
-    summary: Détermine si vous voulez afficher tous les éléments de PivotField.
-    name: setShowAllItems(showAllItems)
-    fullName: setShowAllItems(showAllItems)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowAllItems(showAllItems: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showAllItems
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)'
-    summary: Sous-totaux du champ PivotField.
-    name: setSubtotals(subtotals)
-    fullName: setSubtotals(subtotals)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSubtotals(subtotals: Subtotals): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: subtotals
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.Subtotals:interface'
-  - uid: 'ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)'
-    summary: 'Trie le PivotField. Si une DataPivotHierarchy est spécifiée, le tri sera appliqué en fonction de celle-ci, sinon le tri sera basé sur le PivotField lui-même.'
-    name: sortByLabels(sortBy)
-    fullName: sortByLabels(sortBy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'sortByLabels(sortBy: SortBy): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sortBy
-          description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
-          type:
-            - 'ExcelScript!ExcelScript.SortBy:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues:member(1)'
-    summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs à partir du même DataPivotHierarchy.
-    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
-    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        sortByValues(
-                    sortBy: SortBy,
-                    valuesHierarchy: DataPivotHierarchy,
-                    pivotItemScope?: Array<PivotItem | string>
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sortBy
-          description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
-          type:
-            - 'ExcelScript!ExcelScript.SortBy:enum'
-        - id: valuesHierarchy
-          description: Spécifie la hiérarchie des valeurs sur l’axe des données à utiliser pour le tri.
-          type:
-            - 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-        - id: pivotItemScope
-          description: 'Les éléments qui doivent être utilisés pour l’étendue du tri. Il s’agit des éléments qui composent la ligne ou la colonne que vous souhaitez trier. Si une chaîne est utilisée à la place d’un PivotItem, la chaîne représente l’ID de PivotItem. S’il n’y a pas d’éléments autres que la hiérarchie de données sur l’axe sur lequel vous souhaitez effectuer le tri, il peut être vide.'
-          type:
-            - 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
-references:
-  - uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
-    name: PivotFilters
-    fullName: ExcelScript.PivotFilters
-  - uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
-    name: PivotFilterType
-    fullName: ExcelScript.PivotFilterType
-  - uid: 'ExcelScript!ExcelScript.PivotField#getItems~0:complex'
-    name: 'PivotItem[]'
-    fullName: 'ExcelScript.PivotItem[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-        name: PivotItem
-        fullName: ExcelScript.PivotItem
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.PivotField#getPivotItem~0:complex'
-    name: PivotItem | undefined
-    fullName: ExcelScript.PivotItem | undefined
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-        name: PivotItem
-        fullName: ExcelScript.PivotItem
-      - name: ' | undefined'
-        fullName: ' | undefined'
-  - uid: 'ExcelScript!ExcelScript.Subtotals:interface'
-    name: Subtotals
-    fullName: ExcelScript.Subtotals
-  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
-    name: SortBy
-    fullName: ExcelScript.SortBy
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-    name: DataPivotHierarchy
-    fullName: ExcelScript.DataPivotHierarchy
-  - uid: 'ExcelScript!ExcelScript.PivotField#sortByValues~0:complex'
-    name: Array<PivotItem | string>
-    fullName: Array<ExcelScript.PivotItem | string>
-    spec.typeScript:
-      - uid: '!Array:interface'
-        name: Array
-        fullName: Array
-      - name: <
-        fullName: <
-      - uid: 'ExcelScript!ExcelScript.PivotItem:interface'
-        name: PivotItem
-        fullName: ExcelScript.PivotItem
-      - name: |2-
-           | string>
-                  
-        fullName: |2-
-           | string>
+### YamlMime:TSType
+name: ExcelScript.PivotField
+uid: ExcelScript!ExcelScript.PivotField:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotField
+summary: Représente le champ de tableau croisé dynamique Excel.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: applyFilter(filter)
+  uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
+  package: ExcelScript!
+  fullName: applyFilter(filter)
+  summary: Définit une ou plusieurs des informations de la valeur de champ en vigueur du champ et les applique au champ. Si les filtres fournis ne sont pas valides ou ne peuvent pas être appliqués, une exception est générée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'applyFilter(filter: PivotFilters): void;'
+    parameters:
+    - id: filter
+      description: Une interface spécifique PivotFilter ou une interface PivotFilters contenant plusieurs filtres configurés.
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
+    return:
+      type: void
+      description: ''
+- name: clearAllFilters()
+  uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
+  package: ExcelScript!
+  fullName: clearAllFilters()
+  summary: Efface tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearAllFilters(): void;'
+    return:
+      type: void
+      description: ''
+- name: clearFilter(filterType)
+  uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
+  package: ExcelScript!
+  fullName: clearFilter(filterType)
+  summary: Efface tous les critères existants du filtre du champ du type donné (s’il est déjà appliqué).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clearFilter(filterType: PivotFilterType): void;'
+    parameters:
+    - id: filterType
+      description: Type de filtre sur le champ dont tous les critères doivent être effacés.
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
+    return:
+      type: void
+      description: ''
+- name: getFilters()
+  uid: ExcelScript!ExcelScript.PivotField#getFilters:member(1)
+  package: ExcelScript!
+  fullName: getFilters()
+  summary: Obtient tous les filtres actuellement appliqués sur le champ.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFilters(): PivotFilters;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: ID du champ PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getItems()
+  uid: ExcelScript!ExcelScript.PivotField#getItems:member(1)
+  package: ExcelScript!
+  fullName: getItems()
+  summary: Renvoie les PivotFields associés à PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItems(): PivotItem[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" />[]
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.PivotField#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Nom du champ PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPivotItem(name)
+  uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
+  package: ExcelScript!
+  fullName: getPivotItem(name)
+  summary: Obtient un PivotItem par nom. Si PivotItem n’existe pas, renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotItem(name: string): PivotItem | undefined;'
+    parameters:
+    - id: name
+      description: Nom du PivotItem à récupérer.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
+      description: ''
+- name: getShowAllItems()
+  uid: ExcelScript!ExcelScript.PivotField#getShowAllItems:member(1)
+  package: ExcelScript!
+  fullName: getShowAllItems()
+  summary: Détermine si vous voulez afficher tous les éléments de PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowAllItems(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSubtotals()
+  uid: ExcelScript!ExcelScript.PivotField#getSubtotals:member(1)
+  package: ExcelScript!
+  fullName: getSubtotals()
+  summary: Sous-totaux du champ PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubtotals(): Subtotals;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
+      description: ''
+- name: isFiltered(filterType)
+  uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
+  package: ExcelScript!
+  fullName: isFiltered(filterType)
+  summary: Vérifie s’il existe des filtres appliqués sur le champ.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'isFiltered(filterType?: PivotFilterType): boolean;'
+    parameters:
+    - id: filterType
+      description: Type de filtre à vérifier. Si aucun type n’est fourni, cette méthode vérifie si un filtre est appliqué.
+      type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
+    return:
+      type: boolean
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.PivotField#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Nom du champ PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setShowAllItems(showAllItems)
+  uid: ExcelScript!ExcelScript.PivotField#setShowAllItems:member(1)
+  package: ExcelScript!
+  fullName: setShowAllItems(showAllItems)
+  summary: Détermine si vous voulez afficher tous les éléments de PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowAllItems(showAllItems: boolean): void;'
+    parameters:
+    - id: showAllItems
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setSubtotals(subtotals)
+  uid: ExcelScript!ExcelScript.PivotField#setSubtotals:member(1)
+  package: ExcelScript!
+  fullName: setSubtotals(subtotals)
+  summary: Sous-totaux du champ PivotField.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSubtotals(subtotals: Subtotals): void;'
+    parameters:
+    - id: subtotals
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.Subtotals:interface" />
+    return:
+      type: void
+      description: ''
+- name: sortByLabels(sortBy)
+  uid: ExcelScript!ExcelScript.PivotField#sortByLabels:member(1)
+  package: ExcelScript!
+  fullName: sortByLabels(sortBy)
+  summary: Trie le PivotField. Si une DataPivotHierarchy est spécifiée, le tri sera appliqué en fonction de celle-ci, sinon le tri sera basé sur le PivotField lui-même.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'sortByLabels(sortBy: SortBy): void;'
+    parameters:
+    - id: sortBy
+      description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
+      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
+    return:
+      type: void
+      description: ''
+- name: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
+  uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
+  package: ExcelScript!
+  fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
+  summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs à partir du même DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      sortByValues(
+                  sortBy: SortBy,
+                  valuesHierarchy: DataPivotHierarchy,
+                  pivotItemScope?: Array<PivotItem | string>
+              ): void;
+    parameters:
+    - id: sortBy
+      description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
+      type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
+    - id: valuesHierarchy
+      description: Spécifie la hiérarchie des valeurs sur l’axe des données à utiliser pour le tri.
+      type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
+    - id: pivotItemScope
+      description: Les éléments qui doivent être utilisés pour l’étendue du tri. Il s’agit des éléments qui composent la ligne ou la colonne que vous souhaitez trier. Si une chaîne est utilisée à la place d’un PivotItem, la chaîne représente l’ID de PivotItem. S’il n’y a pas d’éléments autres que la hiérarchie de données sur l’axe sur lequel vous souhaitez effectuer le tri, il peut être vide.
+      type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 13da7086b9d79638e42f4749066c90ac53a2b3de
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412152"

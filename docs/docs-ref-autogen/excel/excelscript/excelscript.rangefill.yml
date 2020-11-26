@@ -1,194 +1,181 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.RangeFill:interface'
-    summary: Représente l’arrière-plan d’un objet de plage.
-    name: ExcelScript.RangeFill
-    fullName: ExcelScript.RangeFill
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.RangeFill#clear:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-      - 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
-  - uid: 'ExcelScript!ExcelScript.RangeFill#clear:member(1)'
-    summary: Réinitialise l’arrière-plan de la plage.
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getColor:member(1)'
-    summary: "Code couleur HTML représentant la couleur de l’arrière-plan, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)"
-    name: getColor()
-    fullName: getColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getPattern:member(1)'
-    summary: 'Motif d’une plage. Pour plus d’informations, voir ExcelScript. FillPattern. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur null indique que l’ensemble de la plage n’a pas de paramètre de modèle uniforme.'
-    name: getPattern()
-    fullName: getPattern()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPattern(): FillPattern;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.FillPattern:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)'
-    summary: "Code couleur HTML représentant la couleur du modèle de plage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
-    name: getPatternColor()
-    fullName: getPatternColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPatternColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur de motif pour le remplissage de la plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Si le modèle tintAndShades n’est pas uniforme, la valeur null est renvoyée.'
-    name: getPatternTintAndShade()
-    fullName: getPatternTintAndShade()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPatternTintAndShade(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Si les tintAndShades ne sont pas uniformes, la valeur null est renvoyée.'
-    name: getTintAndShade()
-    fullName: getTintAndShade()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTintAndShade(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setColor:member(1)'
-    summary: "Code couleur HTML représentant la couleur de l’arrière-plan, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)"
-    name: setColor(color)
-    fullName: setColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: color
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setPattern:member(1)'
-    summary: 'Motif d’une plage. Pour plus d’informations, voir ExcelScript. FillPattern. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur null indique que l’ensemble de la plage n’a pas de paramètre de modèle uniforme.'
-    name: setPattern(pattern)
-    fullName: setPattern(pattern)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPattern(pattern: FillPattern): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: pattern
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.FillPattern:enum'
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)'
-    summary: "Code couleur HTML représentant la couleur du modèle de plage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
-    name: setPatternColor(patternColor)
-    fullName: setPatternColor(patternColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPatternColor(patternColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: patternColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur de motif pour le remplissage de la plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Si le modèle tintAndShades n’est pas uniforme, la valeur null est renvoyée.'
-    name: setPatternTintAndShade(patternTintAndShade)
-    fullName: setPatternTintAndShade(patternTintAndShade)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: patternTintAndShade
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)'
-    summary: 'Spécifie un double qui éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Si les tintAndShades ne sont pas uniformes, la valeur null est renvoyée.'
-    name: setTintAndShade(tintAndShade)
-    fullName: setTintAndShade(tintAndShade)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTintAndShade(tintAndShade: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: tintAndShade
-          description: ''
-          type:
-            - number
-references:
-  - uid: 'ExcelScript!ExcelScript.FillPattern:enum'
-    name: FillPattern
-    fullName: ExcelScript.FillPattern
+### YamlMime:TSType
+name: ExcelScript.RangeFill
+uid: ExcelScript!ExcelScript.RangeFill:interface
+package: ExcelScript!
+fullName: ExcelScript.RangeFill
+summary: Représente l’arrière-plan d’un objet de plage.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: ExcelScript!ExcelScript.RangeFill#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: Réinitialise l’arrière-plan de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: Code couleur HTML représentant la couleur de l’arrière-plan, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »)
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPattern()
+  uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
+  package: ExcelScript!
+  fullName: getPattern()
+  summary: Motif d’une plage. Pour plus d’informations, voir ExcelScript. FillPattern. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur null indique que l’ensemble de la plage n’a pas de paramètre de modèle uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPattern(): FillPattern;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
+      description: ''
+- name: getPatternColor()
+  uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
+  package: ExcelScript!
+  fullName: getPatternColor()
+  summary: Code couleur HTML représentant la couleur du modèle de plage, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPatternColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPatternTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getPatternTintAndShade()
+  summary: Spécifie un double qui éclaircit ou assombrit une couleur de motif pour le remplissage de la plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Si le modèle tintAndShades n’est pas uniforme, la valeur null est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPatternTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getTintAndShade()
+  summary: Spécifie un double qui éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Si les tintAndShades ne sont pas uniformes, la valeur null est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: Code couleur HTML représentant la couleur de l’arrière-plan, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »)
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPattern(pattern)
+  uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
+  package: ExcelScript!
+  fullName: setPattern(pattern)
+  summary: Motif d’une plage. Pour plus d’informations, voir ExcelScript. FillPattern. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur null indique que l’ensemble de la plage n’a pas de paramètre de modèle uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPattern(pattern: FillPattern): void;'
+    parameters:
+    - id: pattern
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.FillPattern:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPatternColor(patternColor)
+  uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
+  package: ExcelScript!
+  fullName: setPatternColor(patternColor)
+  summary: Code couleur HTML représentant la couleur du modèle de plage, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPatternColor(patternColor: string): void;'
+    parameters:
+    - id: patternColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPatternTintAndShade(patternTintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setPatternTintAndShade(patternTintAndShade)
+  summary: Spécifie un double qui éclaircit ou assombrit une couleur de motif pour le remplissage de la plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Si le modèle tintAndShades n’est pas uniforme, la valeur null est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPatternTintAndShade(patternTintAndShade: number): void;'
+    parameters:
+    - id: patternTintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTintAndShade(tintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setTintAndShade(tintAndShade)
+  summary: Spécifie un double qui éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est comprise entre-1 (le plus foncé) et 1 (le plus clair), 0 pour la couleur d’origine. Si les tintAndShades ne sont pas uniformes, la valeur null est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTintAndShade(tintAndShade: number): void;'
+    parameters:
+    - id: tintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: b9076fea426531db99f583e031e3474e5b30e5e7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411935"

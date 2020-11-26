@@ -1,38 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartAxisCategoryType:enum'
-    summary: Spécifie le type d’axe des abscisses.
-    name: Excel.ChartAxisCategoryType
-    fullName: Excel.ChartAxisCategoryType
-    langs:
-      - typeScript
-    type: enum
-    package: excel!
-    children:
-      - 'excel!Excel.ChartAxisCategoryType.automatic:member'
-      - 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
-      - 'excel!Excel.ChartAxisCategoryType.textAxis:member'
-  - uid: 'excel!Excel.ChartAxisCategoryType.automatic:member'
-    summary: Excel contrôle le type d'axe.
-    name: automatic
-    fullName: automatic
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Automatic"'
-  - uid: 'excel!Excel.ChartAxisCategoryType.dateAxis:member'
-    summary: L'axe regroupe les données sur une échelle de temps.
-    name: dateAxis
-    fullName: dateAxis
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"DateAxis"'
-  - uid: 'excel!Excel.ChartAxisCategoryType.textAxis:member'
-    summary: L'axe regroupe les données selon un ensemble arbitraire de catégories.
-    name: textAxis
-    fullName: textAxis
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"TextAxis"'
+### YamlMime:TSEnum
+name: Excel.ChartAxisCategoryType
+uid: excel!Excel.ChartAxisCategoryType:enum
+package: excel!
+fullName: Excel.ChartAxisCategoryType
+summary: Spécifie le type d’axe des abscisses.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: automatic
+  uid: excel!Excel.ChartAxisCategoryType.automatic:member
+  package: excel!
+  summary: Excel contrôle le type d'axe.
+- name: dateAxis
+  uid: excel!Excel.ChartAxisCategoryType.dateAxis:member
+  package: excel!
+  summary: L'axe regroupe les données sur une échelle de temps.
+- name: textAxis
+  uid: excel!Excel.ChartAxisCategoryType.textAxis:member
+  package: excel!
+  summary: L'axe regroupe les données selon un ensemble arbitraire de catégories.
+metadata:
+  ms.openlocfilehash: cfed6f00c724d8a9ee3d469bf2394e91d19ccd16
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413733"

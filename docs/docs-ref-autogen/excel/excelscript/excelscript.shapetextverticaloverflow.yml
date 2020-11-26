@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum'
-    summary: Indique le débordement vertical du cadre de texte d’une forme.
-    name: ExcelScript.ShapeTextVerticalOverflow
-    fullName: ExcelScript.ShapeTextVerticalOverflow
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
-      - 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member'
-    summary: Masquer le texte qui ne rentre pas verticalement dans le cadre de texte.
-    name: clip
-    fullName: clip
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member'
-    summary: 'Masquer le texte qui ne rentre pas verticalement dans le cadre de texte, et ajouter des points de suspension (...) à la fin du texte visible.'
-    name: ellipsis
-    fullName: ellipsis
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member'
-    summary: 'Autoriser le texte à déborder verticalement du cadre de texte (du haut, du bas ou des deux selon l’alignement du texte).'
-    name: overflow
-    fullName: overflow
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ShapeTextVerticalOverflow
+uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
+package: ExcelScript!
+fullName: ExcelScript.ShapeTextVerticalOverflow
+summary: Indique le débordement vertical du cadre de texte d’une forme.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: clip
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.clip:member
+  package: ExcelScript!
+  summary: Masquer le texte qui ne rentre pas verticalement dans le cadre de texte.
+- name: ellipsis
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.ellipsis:member
+  package: ExcelScript!
+  summary: Masquer le texte qui ne rentre pas verticalement dans le cadre de texte, et ajouter des points de suspension (...) à la fin du texte visible.
+- name: overflow
+  uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow.overflow:member
+  package: ExcelScript!
+  summary: Autoriser le texte à déborder verticalement du cadre de texte (du haut, du bas ou des deux selon l’alignement du texte).
+metadata:
+  ms.openlocfilehash: e52155ed38292cb461911c22ce5173e88217f3b5
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49411774"

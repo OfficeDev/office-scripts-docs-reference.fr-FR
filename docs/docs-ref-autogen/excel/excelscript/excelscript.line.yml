@@ -1,444 +1,398 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Line:interface'
-    summary: 'Représente une ligne dans une feuille de calcul. Pour obtenir l’objet Shape correspondant, utilisez`Line.shape`<!-- -->.'
-    name: ExcelScript.Line
-    fullName: ExcelScript.Line
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Line#connectBeginShape:member(1)'
-      - 'ExcelScript!ExcelScript.Line#connectEndShape:member(1)'
-      - 'ExcelScript!ExcelScript.Line#disconnectBeginShape:member(1)'
-      - 'ExcelScript!ExcelScript.Line#disconnectEndShape:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getBeginArrowheadLength:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getBeginArrowheadStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getBeginArrowheadWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getBeginConnectedShape:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getConnectorType:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getEndArrowheadLength:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getEndArrowheadStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getEndArrowheadWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getEndConnectedShape:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)'
-      - 'ExcelScript!ExcelScript.Line#getShape:member(1)'
-      - 'ExcelScript!ExcelScript.Line#setBeginArrowheadLength:member(1)'
-      - 'ExcelScript!ExcelScript.Line#setBeginArrowheadStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Line#setBeginArrowheadWidth:member(1)'
-      - 'ExcelScript!ExcelScript.Line#setConnectorType:member(1)'
-      - 'ExcelScript!ExcelScript.Line#setEndArrowheadLength:member(1)'
-      - 'ExcelScript!ExcelScript.Line#setEndArrowheadStyle:member(1)'
-      - 'ExcelScript!ExcelScript.Line#setEndArrowheadWidth:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Line#connectBeginShape:member(1)'
-    summary: Détache le début du connecteur spécifié de la forme à laquelle il est attaché.
-    name: 'connectBeginShape(shape, connectionSite)'
-    fullName: 'connectBeginShape(shape, connectionSite)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: shape
-          description: Forme à connecter.
-          type:
-            - 'ExcelScript!ExcelScript.Shape:interface'
-        - id: connectionSite
-          description: Point de connexion sur la forme à laquelle est attaché le début du connecteur. Doit être un entier compris entre 0 (inclus) et le nombre de sites de connexion de la forme spécifiée (exclusif).
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Line#connectEndShape:member(1)'
-    summary: Joint la fin du connecteur spécifié à une forme spécifiée.
-    name: 'connectEndShape(shape, connectionSite)'
-    fullName: 'connectEndShape(shape, connectionSite)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: shape
-          description: Forme à connecter.
-          type:
-            - 'ExcelScript!ExcelScript.Shape:interface'
-        - id: connectionSite
-          description: Point de connexion de la forme à laquelle est attachée la fin du connecteur. Doit être un entier compris entre 0 (inclus) et le nombre de sites de connexion de la forme spécifiée (exclusif).
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.Line#disconnectBeginShape:member(1)'
-    summary: Détache le début du connecteur spécifié de la forme à laquelle il est attaché.
-    name: disconnectBeginShape()
-    fullName: disconnectBeginShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'disconnectBeginShape(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#disconnectEndShape:member(1)'
-    summary: Détache la fin du connecteur spécifié de la forme à laquelle il est attaché.
-    name: disconnectEndShape()
-    fullName: disconnectEndShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'disconnectEndShape(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getBeginArrowheadLength:member(1)'
-    summary: Renvoie ou définit la longueur de la pointe de la flèche au début de la ligne spécifiée.
-    name: getBeginArrowheadLength()
-    fullName: getBeginArrowheadLength()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBeginArrowheadLength(): ArrowheadLength;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ArrowheadLength:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getBeginArrowheadStyle:member(1)'
-    summary: Représente le style de la pointe de la flèche au début de la ligne spécifiée.
-    name: getBeginArrowheadStyle()
-    fullName: getBeginArrowheadStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBeginArrowheadStyle(): ArrowheadStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ArrowheadStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getBeginArrowheadWidth:member(1)'
-    summary: Représente la largeur de la pointe de la flèche au début de la ligne spécifiée.
-    name: getBeginArrowheadWidth()
-    fullName: getBeginArrowheadWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBeginArrowheadWidth(): ArrowheadWidth;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ArrowheadWidth:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getBeginConnectedShape:member(1)'
-    summary: Représente la forme de la pointe de la flèche au début de la ligne spécifiée.
-    name: getBeginConnectedShape()
-    fullName: getBeginConnectedShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBeginConnectedShape(): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)'
-    summary: Représente le site de connexion indiquant le point de connexion auquel le début d'un connecteur est relié. Renvoie la valeur null lorsque le début de la ligne n’est pas attaché à n’importe quelle forme.
-    name: getBeginConnectedSite()
-    fullName: getBeginConnectedSite()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBeginConnectedSite(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getConnectorType:member(1)'
-    summary: Représente le type de connecteur pour la ligne.
-    name: getConnectorType()
-    fullName: getConnectorType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getConnectorType(): ConnectorType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConnectorType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getEndArrowheadLength:member(1)'
-    summary: Représente la longueur de la pointe de la flèche à la fin de la ligne spécifiée.
-    name: getEndArrowheadLength()
-    fullName: getEndArrowheadLength()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEndArrowheadLength(): ArrowheadLength;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ArrowheadLength:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getEndArrowheadStyle:member(1)'
-    summary: Représente le style de la pointe de la flèche à la fin de ligne spécifée.
-    name: getEndArrowheadStyle()
-    fullName: getEndArrowheadStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEndArrowheadStyle(): ArrowheadStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ArrowheadStyle:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getEndArrowheadWidth:member(1)'
-    summary: Représente la largeur de la pointe de la flèche à la fin de la ligne spécifiée.
-    name: getEndArrowheadWidth()
-    fullName: getEndArrowheadWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEndArrowheadWidth(): ArrowheadWidth;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ArrowheadWidth:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getEndConnectedShape:member(1)'
-    summary: Représente la forme de la pointe de la flèche à la fin de la ligne spécifiée.
-    name: getEndConnectedShape()
-    fullName: getEndConnectedShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEndConnectedShape(): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)'
-    summary: Représente le site de connexion indiquant le point de connexion auquel la fin d'un connecteur est relié. Renvoie la valeur null lorsque la fin de la ligne n’est pas attaché à n’importe quelle forme.
-    name: getEndConnectedSite()
-    fullName: getEndConnectedSite()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEndConnectedSite(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getId:member(1)'
-    summary: Spécifie l’identificateur de la forme.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)'
-    summary: Indique si le début de la ligne spécifiée est connecté à une forme.
-    name: getIsBeginConnected()
-    fullName: getIsBeginConnected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsBeginConnected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)'
-    summary: Indique si la fin de la ligne spécifiée est connectée à une forme.
-    name: getIsEndConnected()
-    fullName: getIsEndConnected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsEndConnected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#getShape:member(1)'
-    summary: Renvoie l’objet de la Forme associée à la ligne.
-    name: getShape()
-    fullName: getShape()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShape(): Shape;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Shape:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Line#setBeginArrowheadLength:member(1)'
-    summary: Renvoie ou définit la longueur de la pointe de la flèche au début de la ligne spécifiée.
-    name: setBeginArrowheadLength(beginArrowheadLength)
-    fullName: setBeginArrowheadLength(beginArrowheadLength)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBeginArrowheadLength(beginArrowheadLength: ArrowheadLength): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: beginArrowheadLength
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ArrowheadLength:enum'
-  - uid: 'ExcelScript!ExcelScript.Line#setBeginArrowheadStyle:member(1)'
-    summary: Représente le style de la pointe de la flèche au début de la ligne spécifiée.
-    name: setBeginArrowheadStyle(beginArrowheadStyle)
-    fullName: setBeginArrowheadStyle(beginArrowheadStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBeginArrowheadStyle(beginArrowheadStyle: ArrowheadStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: beginArrowheadStyle
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ArrowheadStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.Line#setBeginArrowheadWidth:member(1)'
-    summary: Représente la largeur de la pointe de la flèche au début de la ligne spécifiée.
-    name: setBeginArrowheadWidth(beginArrowheadWidth)
-    fullName: setBeginArrowheadWidth(beginArrowheadWidth)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBeginArrowheadWidth(beginArrowheadWidth: ArrowheadWidth): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: beginArrowheadWidth
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ArrowheadWidth:enum'
-  - uid: 'ExcelScript!ExcelScript.Line#setConnectorType:member(1)'
-    summary: Représente le type de connecteur pour la ligne.
-    name: setConnectorType(connectorType)
-    fullName: setConnectorType(connectorType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setConnectorType(connectorType: ConnectorType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: connectorType
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ConnectorType:enum'
-  - uid: 'ExcelScript!ExcelScript.Line#setEndArrowheadLength:member(1)'
-    summary: Représente la longueur de la pointe de la flèche à la fin de la ligne spécifiée.
-    name: setEndArrowheadLength(endArrowheadLength)
-    fullName: setEndArrowheadLength(endArrowheadLength)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEndArrowheadLength(endArrowheadLength: ArrowheadLength): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: endArrowheadLength
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ArrowheadLength:enum'
-  - uid: 'ExcelScript!ExcelScript.Line#setEndArrowheadStyle:member(1)'
-    summary: Représente le style de la pointe de la flèche à la fin de ligne spécifée.
-    name: setEndArrowheadStyle(endArrowheadStyle)
-    fullName: setEndArrowheadStyle(endArrowheadStyle)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEndArrowheadStyle(endArrowheadStyle: ArrowheadStyle): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: endArrowheadStyle
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ArrowheadStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.Line#setEndArrowheadWidth:member(1)'
-    summary: Représente la largeur de la pointe de la flèche à la fin de la ligne spécifiée.
-    name: setEndArrowheadWidth(endArrowheadWidth)
-    fullName: setEndArrowheadWidth(endArrowheadWidth)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEndArrowheadWidth(endArrowheadWidth: ArrowheadWidth): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: endArrowheadWidth
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ArrowheadWidth:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.Shape:interface'
-    name: Shape
-    fullName: ExcelScript.Shape
-  - uid: 'ExcelScript!ExcelScript.ArrowheadLength:enum'
-    name: ArrowheadLength
-    fullName: ExcelScript.ArrowheadLength
-  - uid: 'ExcelScript!ExcelScript.ArrowheadStyle:enum'
-    name: ArrowheadStyle
-    fullName: ExcelScript.ArrowheadStyle
-  - uid: 'ExcelScript!ExcelScript.ArrowheadWidth:enum'
-    name: ArrowheadWidth
-    fullName: ExcelScript.ArrowheadWidth
-  - uid: 'ExcelScript!ExcelScript.ConnectorType:enum'
-    name: ConnectorType
-    fullName: ExcelScript.ConnectorType
+### YamlMime:TSType
+name: ExcelScript.Line
+uid: ExcelScript!ExcelScript.Line:interface
+package: ExcelScript!
+fullName: ExcelScript.Line
+summary: Représente une ligne dans une feuille de calcul. Pour obtenir l’objet Shape correspondant, utilisez `Line.shape`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: connectBeginShape(shape, connectionSite)
+  uid: ExcelScript!ExcelScript.Line#connectBeginShape:member(1)
+  package: ExcelScript!
+  fullName: connectBeginShape(shape, connectionSite)
+  summary: Détache le début du connecteur spécifié de la forme à laquelle il est attaché.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'connectBeginShape(shape: Shape, connectionSite: number): void;'
+    parameters:
+    - id: shape
+      description: Forme à connecter.
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+    - id: connectionSite
+      description: Point de connexion sur la forme à laquelle est attaché le début du connecteur. Doit être un entier compris entre 0 (inclus) et le nombre de sites de connexion de la forme spécifiée (exclusif).
+      type: number
+    return:
+      type: void
+      description: ''
+- name: connectEndShape(shape, connectionSite)
+  uid: ExcelScript!ExcelScript.Line#connectEndShape:member(1)
+  package: ExcelScript!
+  fullName: connectEndShape(shape, connectionSite)
+  summary: Joint la fin du connecteur spécifié à une forme spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'connectEndShape(shape: Shape, connectionSite: number): void;'
+    parameters:
+    - id: shape
+      description: Forme à connecter.
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+    - id: connectionSite
+      description: Point de connexion de la forme à laquelle est attachée la fin du connecteur. Doit être un entier compris entre 0 (inclus) et le nombre de sites de connexion de la forme spécifiée (exclusif).
+      type: number
+    return:
+      type: void
+      description: ''
+- name: disconnectBeginShape()
+  uid: ExcelScript!ExcelScript.Line#disconnectBeginShape:member(1)
+  package: ExcelScript!
+  fullName: disconnectBeginShape()
+  summary: Détache le début du connecteur spécifié de la forme à laquelle il est attaché.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'disconnectBeginShape(): void;'
+    return:
+      type: void
+      description: ''
+- name: disconnectEndShape()
+  uid: ExcelScript!ExcelScript.Line#disconnectEndShape:member(1)
+  package: ExcelScript!
+  fullName: disconnectEndShape()
+  summary: Détache la fin du connecteur spécifié de la forme à laquelle il est attaché.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'disconnectEndShape(): void;'
+    return:
+      type: void
+      description: ''
+- name: getBeginArrowheadLength()
+  uid: ExcelScript!ExcelScript.Line#getBeginArrowheadLength:member(1)
+  package: ExcelScript!
+  fullName: getBeginArrowheadLength()
+  summary: Renvoie ou définit la longueur de la pointe de la flèche au début de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBeginArrowheadLength(): ArrowheadLength;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
+      description: ''
+- name: getBeginArrowheadStyle()
+  uid: ExcelScript!ExcelScript.Line#getBeginArrowheadStyle:member(1)
+  package: ExcelScript!
+  fullName: getBeginArrowheadStyle()
+  summary: Représente le style de la pointe de la flèche au début de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBeginArrowheadStyle(): ArrowheadStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
+      description: ''
+- name: getBeginArrowheadWidth()
+  uid: ExcelScript!ExcelScript.Line#getBeginArrowheadWidth:member(1)
+  package: ExcelScript!
+  fullName: getBeginArrowheadWidth()
+  summary: Représente la largeur de la pointe de la flèche au début de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBeginArrowheadWidth(): ArrowheadWidth;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
+      description: ''
+- name: getBeginConnectedShape()
+  uid: ExcelScript!ExcelScript.Line#getBeginConnectedShape:member(1)
+  package: ExcelScript!
+  fullName: getBeginConnectedShape()
+  summary: Représente la forme de la pointe de la flèche au début de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBeginConnectedShape(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: getBeginConnectedSite()
+  uid: ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)
+  package: ExcelScript!
+  fullName: getBeginConnectedSite()
+  summary: Représente le site de connexion indiquant le point de connexion auquel le début d'un connecteur est relié. Renvoie la valeur null lorsque le début de la ligne n’est pas attaché à n’importe quelle forme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBeginConnectedSite(): number;'
+    return:
+      type: number
+      description: ''
+- name: getConnectorType()
+  uid: ExcelScript!ExcelScript.Line#getConnectorType:member(1)
+  package: ExcelScript!
+  fullName: getConnectorType()
+  summary: Représente le type de connecteur pour la ligne.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getConnectorType(): ConnectorType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
+      description: ''
+- name: getEndArrowheadLength()
+  uid: ExcelScript!ExcelScript.Line#getEndArrowheadLength:member(1)
+  package: ExcelScript!
+  fullName: getEndArrowheadLength()
+  summary: Représente la longueur de la pointe de la flèche à la fin de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEndArrowheadLength(): ArrowheadLength;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
+      description: ''
+- name: getEndArrowheadStyle()
+  uid: ExcelScript!ExcelScript.Line#getEndArrowheadStyle:member(1)
+  package: ExcelScript!
+  fullName: getEndArrowheadStyle()
+  summary: Représente le style de la pointe de la flèche à la fin de ligne spécifée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEndArrowheadStyle(): ArrowheadStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
+      description: ''
+- name: getEndArrowheadWidth()
+  uid: ExcelScript!ExcelScript.Line#getEndArrowheadWidth:member(1)
+  package: ExcelScript!
+  fullName: getEndArrowheadWidth()
+  summary: Représente la largeur de la pointe de la flèche à la fin de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEndArrowheadWidth(): ArrowheadWidth;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
+      description: ''
+- name: getEndConnectedShape()
+  uid: ExcelScript!ExcelScript.Line#getEndConnectedShape:member(1)
+  package: ExcelScript!
+  fullName: getEndConnectedShape()
+  summary: Représente la forme de la pointe de la flèche à la fin de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEndConnectedShape(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: getEndConnectedSite()
+  uid: ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)
+  package: ExcelScript!
+  fullName: getEndConnectedSite()
+  summary: Représente le site de connexion indiquant le point de connexion auquel la fin d'un connecteur est relié. Renvoie la valeur null lorsque la fin de la ligne n’est pas attaché à n’importe quelle forme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEndConnectedSite(): number;'
+    return:
+      type: number
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Line#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Spécifie l’identificateur de la forme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getIsBeginConnected()
+  uid: ExcelScript!ExcelScript.Line#getIsBeginConnected:member(1)
+  package: ExcelScript!
+  fullName: getIsBeginConnected()
+  summary: Indique si le début de la ligne spécifiée est connecté à une forme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsBeginConnected(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getIsEndConnected()
+  uid: ExcelScript!ExcelScript.Line#getIsEndConnected:member(1)
+  package: ExcelScript!
+  fullName: getIsEndConnected()
+  summary: Indique si la fin de la ligne spécifiée est connectée à une forme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsEndConnected(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getShape()
+  uid: ExcelScript!ExcelScript.Line#getShape:member(1)
+  package: ExcelScript!
+  fullName: getShape()
+  summary: Renvoie l’objet de la Forme associée à la ligne.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShape(): Shape;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
+      description: ''
+- name: setBeginArrowheadLength(beginArrowheadLength)
+  uid: ExcelScript!ExcelScript.Line#setBeginArrowheadLength:member(1)
+  package: ExcelScript!
+  fullName: setBeginArrowheadLength(beginArrowheadLength)
+  summary: Renvoie ou définit la longueur de la pointe de la flèche au début de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBeginArrowheadLength(beginArrowheadLength: ArrowheadLength): void;'
+    parameters:
+    - id: beginArrowheadLength
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
+    return:
+      type: void
+      description: ''
+- name: setBeginArrowheadStyle(beginArrowheadStyle)
+  uid: ExcelScript!ExcelScript.Line#setBeginArrowheadStyle:member(1)
+  package: ExcelScript!
+  fullName: setBeginArrowheadStyle(beginArrowheadStyle)
+  summary: Représente le style de la pointe de la flèche au début de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBeginArrowheadStyle(beginArrowheadStyle: ArrowheadStyle): void;'
+    parameters:
+    - id: beginArrowheadStyle
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
+    return:
+      type: void
+      description: ''
+- name: setBeginArrowheadWidth(beginArrowheadWidth)
+  uid: ExcelScript!ExcelScript.Line#setBeginArrowheadWidth:member(1)
+  package: ExcelScript!
+  fullName: setBeginArrowheadWidth(beginArrowheadWidth)
+  summary: Représente la largeur de la pointe de la flèche au début de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBeginArrowheadWidth(beginArrowheadWidth: ArrowheadWidth): void;'
+    parameters:
+    - id: beginArrowheadWidth
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
+    return:
+      type: void
+      description: ''
+- name: setConnectorType(connectorType)
+  uid: ExcelScript!ExcelScript.Line#setConnectorType:member(1)
+  package: ExcelScript!
+  fullName: setConnectorType(connectorType)
+  summary: Représente le type de connecteur pour la ligne.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setConnectorType(connectorType: ConnectorType): void;'
+    parameters:
+    - id: connectorType
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setEndArrowheadLength(endArrowheadLength)
+  uid: ExcelScript!ExcelScript.Line#setEndArrowheadLength:member(1)
+  package: ExcelScript!
+  fullName: setEndArrowheadLength(endArrowheadLength)
+  summary: Représente la longueur de la pointe de la flèche à la fin de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEndArrowheadLength(endArrowheadLength: ArrowheadLength): void;'
+    parameters:
+    - id: endArrowheadLength
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadLength:enum" />
+    return:
+      type: void
+      description: ''
+- name: setEndArrowheadStyle(endArrowheadStyle)
+  uid: ExcelScript!ExcelScript.Line#setEndArrowheadStyle:member(1)
+  package: ExcelScript!
+  fullName: setEndArrowheadStyle(endArrowheadStyle)
+  summary: Représente le style de la pointe de la flèche à la fin de ligne spécifée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEndArrowheadStyle(endArrowheadStyle: ArrowheadStyle): void;'
+    parameters:
+    - id: endArrowheadStyle
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadStyle:enum" />
+    return:
+      type: void
+      description: ''
+- name: setEndArrowheadWidth(endArrowheadWidth)
+  uid: ExcelScript!ExcelScript.Line#setEndArrowheadWidth:member(1)
+  package: ExcelScript!
+  fullName: setEndArrowheadWidth(endArrowheadWidth)
+  summary: Représente la largeur de la pointe de la flèche à la fin de la ligne spécifiée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEndArrowheadWidth(endArrowheadWidth: ArrowheadWidth): void;'
+    parameters:
+    - id: endArrowheadWidth
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ArrowheadWidth:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 07e52040452894f6382b0b022b9642037d8d4168
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412257"

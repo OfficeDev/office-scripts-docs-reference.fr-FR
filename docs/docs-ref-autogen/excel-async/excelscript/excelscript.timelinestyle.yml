@@ -1,88 +1,86 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TimelineStyle:interface'
-    summary: 'Représente un style de chronologie, qui définit des éléments de style par région dans la chronologie.'
-    name: Excel.TimelineStyle
-    fullName: Excel.TimelineStyle
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TimelineStyle#delete:member(1)'
-      - 'excel!Excel.TimelineStyle#duplicate:member(1)'
-      - 'excel!Excel.TimelineStyle#load:member(1)'
-      - 'excel!Excel.TimelineStyle#name:member'
-      - 'excel!Excel.TimelineStyle#readOnly:member'
-  - uid: 'excel!Excel.TimelineStyle#delete:member(1)'
-    summary: Supprime le TableStyle.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.TimelineStyle#duplicate:member(1)'
-    summary: Crée un doublon de cette TimelineStyle avec une copie de tous les éléments de style.
-    name: duplicate()
-    fullName: duplicate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'duplicate(): TimelineStyle;'
-      return:
-        type:
-          - 'excel!Excel.TimelineStyle:interface'
-        description: ''
-  - uid: 'excel!Excel.TimelineStyle#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.TimelineStyle#name:member'
-    summary: Obtient le nom du TimelineStyle.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.TimelineStyle#readOnly:member'
-    summary: Spécifie si cet objet TimelineStyle est accessible en lecture seule.
-    name: readOnly
-    fullName: readOnly
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly readOnly: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.TimelineStyle:interface'
-    name: TimelineStyle
-    fullName: Excel.TimelineStyle
+### YamlMime:TSType
+name: Excel.TimelineStyle
+uid: excel!Excel.TimelineStyle:interface
+package: excel!
+fullName: Excel.TimelineStyle
+summary: Représente un style de chronologie, qui définit des éléments de style par région dans la chronologie.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: name
+  uid: excel!Excel.TimelineStyle#name:member
+  package: excel!
+  fullName: name
+  summary: Obtient le nom du TimelineStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: readOnly
+  uid: excel!Excel.TimelineStyle#readOnly:member
+  package: excel!
+  fullName: readOnly
+  summary: Spécifie si cet objet TimelineStyle est accessible en lecture seule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly readOnly: boolean;'
+    return:
+      type: boolean
+methods:
+- name: delete()
+  uid: excel!Excel.TimelineStyle#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Supprime le TableStyle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate()
+  uid: excel!Excel.TimelineStyle#duplicate:member(1)
+  package: excel!
+  fullName: duplicate()
+  summary: Crée un doublon de cette TimelineStyle avec une copie de tous les éléments de style.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(): TimelineStyle;'
+    return:
+      type: <xref uid="excel!Excel.TimelineStyle:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TimelineStyle#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: aacf450a05c054d37e6d81f802c005b382bbca15
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412712"

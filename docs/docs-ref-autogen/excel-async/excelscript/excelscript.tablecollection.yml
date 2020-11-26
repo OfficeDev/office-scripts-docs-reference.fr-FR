@@ -1,159 +1,132 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.TableCollection:interface'
-    summary: 'Représente une collection de tous les tableaux qui font partie du classeur ou de la feuille de calcul, en fonction de la méthode d’appel.'
-    name: Excel.TableCollection
-    fullName: Excel.TableCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.TableCollection#add:member(1)'
-      - 'excel!Excel.TableCollection#count:member'
-      - 'excel!Excel.TableCollection#getCount:member(1)'
-      - 'excel!Excel.TableCollection#getItem:member(1)'
-      - 'excel!Excel.TableCollection#getItemAt:member(1)'
-      - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-      - 'excel!Excel.TableCollection#load:member(1)'
-  - uid: 'excel!Excel.TableCollection#add:member(1)'
-    summary: 'Crée un tableau L’adresse de la source ou de l’objet de la plage détermine la feuille de calcul dans laquelle le tableau sera ajouté. Si l’ajout ne peut être effectué (par exemple, parce que l’adresse n’est pas valide, ou parce que le tableau empiéterait sur un autre tableau), un message d’erreur apparaît.'
-    name: 'add(address, hasHeaders)'
-    fullName: 'add(address, hasHeaders)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'add(address: Range | string, hasHeaders: boolean): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: address
-          description: 'Objet de plage ou nom/adresse (string) de la plage représentant la source de données. Si l’adresse ne contient pas de nom de feuille, la feuille ouverte est utilisée.'
-          type:
-            - 'excel!Excel.TableCollection#add~0:complex'
-        - id: hasHeaders
-          description: 'Valeur booléenne qui indique si les données importées disposent d’étiquettes de colonne. Si la source ne contient pas d’en-têtes (autrement dit, lorsque cette propriété est définie sur false), Excel génère automatiquement un en-tête et décale les données d’une ligne vers le bas.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.TableCollection#count:member'
-    summary: Renvoie le nombre de tableaux dans le classeur.
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.TableCollection#getCount:member(1)'
-    summary: Obtient le nombre de tableaux de la collection.
-    name: getCount()
-    fullName: getCount()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCount(): ClientResult<number>;'
-      return:
-        type:
-          - 'excel!Excel.TableCollection#getCount~0:complex'
-        description: ''
-  - uid: 'excel!Excel.TableCollection#getItem:member(1)'
-    summary: Obtient un tableau à l’aide de son nom ou de son ID.
-    name: getItem(key)
-    fullName: getItem(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(key: string): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Nom ou ID du tableau à récupérer.
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
-    summary: Obtient un tableau en fonction de sa position dans la collection.
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
-          type:
-            - number
-  - uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
-    summary: 'Obtient un tableau à l’aide de son nom ou de son ID. Si le tableau n’existe pas, renvoie un objet null.'
-    name: getItemOrNullObject(key)
-    fullName: getItemOrNullObject(key)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemOrNullObject(key: string): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-      parameters:
-        - id: key
-          description: Nom ou ID du tableau à récupérer.
-          type:
-            - string
-  - uid: 'excel!Excel.TableCollection#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.Table:interface'
-    name: Table
-    fullName: Excel.Table
-  - uid: 'excel!Excel.TableCollection#add~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.TableCollection#getCount~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
+### YamlMime:TSType
+name: Excel.TableCollection
+uid: excel!Excel.TableCollection:interface
+package: excel!
+fullName: Excel.TableCollection
+summary: Représente une collection de tous les tableaux qui font partie du classeur ou de la feuille de calcul, en fonction de la méthode d’appel.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: count
+  uid: excel!Excel.TableCollection#count:member
+  package: excel!
+  fullName: count
+  summary: Renvoie le nombre de tableaux dans le classeur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+methods:
+- name: add(address, hasHeaders)
+  uid: excel!Excel.TableCollection#add:member(1)
+  package: excel!
+  fullName: add(address, hasHeaders)
+  summary: Crée un tableau L’adresse de la source ou de l’objet de la plage détermine la feuille de calcul dans laquelle le tableau sera ajouté. Si l’ajout ne peut être effectué (par exemple, parce que l’adresse n’est pas valide, ou parce que le tableau empiéterait sur un autre tableau), un message d’erreur apparaît.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'add(address: Range | string, hasHeaders: boolean): Table;'
+    parameters:
+    - id: address
+      description: Objet de plage ou nom/adresse (string) de la plage représentant la source de données. Si l’adresse ne contient pas de nom de feuille, la feuille ouverte est utilisée.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: hasHeaders
+      description: Valeur booléenne qui indique si les données importées disposent d’étiquettes de colonne. Si la source ne contient pas d’en-têtes (autrement dit, lorsque cette propriété est définie sur false), Excel génère automatiquement un en-tête et décale les données d’une ligne vers le bas.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getCount()
+  uid: excel!Excel.TableCollection#getCount:member(1)
+  package: excel!
+  fullName: getCount()
+  summary: Obtient le nombre de tableaux de la collection.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCount(): ClientResult<number>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: getItem(key)
+  uid: excel!Excel.TableCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(key)
+  summary: Obtient un tableau à l’aide de son nom ou de son ID.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItem(key: string): Table;'
+    parameters:
+    - id: key
+      description: Nom ou ID du tableau à récupérer.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.TableCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: Obtient un tableau en fonction de sa position dans la collection.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): Table;'
+    parameters:
+    - id: index
+      description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getItemOrNullObject(key)
+  uid: excel!Excel.TableCollection#getItemOrNullObject:member(1)
+  package: excel!
+  fullName: getItemOrNullObject(key)
+  summary: Obtient un tableau à l’aide de son nom ou de son ID. Si le tableau n’existe pas, renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemOrNullObject(key: string): Table;'
+    parameters:
+    - id: key
+      description: Nom ou ID du tableau à récupérer.
+      type: string
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.TableCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: aac3d225eae7ec797fd01e903cc32f635f9a1912
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412747"

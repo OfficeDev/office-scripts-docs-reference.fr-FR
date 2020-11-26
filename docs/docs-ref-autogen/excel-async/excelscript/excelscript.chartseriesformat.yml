@@ -1,63 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartSeriesFormat:interface'
-    summary: Encapsule les propriétés de format de la série de graphiques.
-    name: Excel.ChartSeriesFormat
-    fullName: Excel.ChartSeriesFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartSeriesFormat#fill:member'
-      - 'excel!Excel.ChartSeriesFormat#line:member'
-      - 'excel!Excel.ChartSeriesFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartSeriesFormat#fill:member'
-    summary: 'Représente le format de remplissage d’une série du graphique, qui comprend les informations de mise en forme d’arrière-plan.'
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ChartFill;'
-      return:
-        type:
-          - 'excel!Excel.ChartFill:interface'
-  - uid: 'excel!Excel.ChartSeriesFormat#line:member'
-    summary: Représente le format des lignes.
-    name: line
-    fullName: line
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly line: ChartLineFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartLineFormat:interface'
-  - uid: 'excel!Excel.ChartSeriesFormat#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartFill:interface'
-    name: ChartFill
-    fullName: Excel.ChartFill
-  - uid: 'excel!Excel.ChartLineFormat:interface'
-    name: ChartLineFormat
-    fullName: Excel.ChartLineFormat
+### YamlMime:TSType
+name: Excel.ChartSeriesFormat
+uid: excel!Excel.ChartSeriesFormat:interface
+package: excel!
+fullName: Excel.ChartSeriesFormat
+summary: Encapsule les propriétés de format de la série de graphiques.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: fill
+  uid: excel!Excel.ChartSeriesFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: Représente le format de remplissage d’une série du graphique, qui comprend les informations de mise en forme d’arrière-plan.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ChartFill;'
+    return:
+      type: <xref uid="excel!Excel.ChartFill:interface" />
+- name: line
+  uid: excel!Excel.ChartSeriesFormat#line:member
+  package: excel!
+  fullName: line
+  summary: Représente le format des lignes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly line: ChartLineFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartLineFormat:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartSeriesFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 6cc3fbdb0e504d421fea076eda530c2826970142
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413600"

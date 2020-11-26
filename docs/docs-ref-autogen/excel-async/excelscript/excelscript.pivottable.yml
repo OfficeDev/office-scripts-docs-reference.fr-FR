@@ -1,314 +1,198 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.PivotTable:interface'
-    summary: 'Représente un tableau croisé dynamique Excel. Pour en savoir plus sur le modèle objet de tableau croisé dynamique, lisez utilisation [de tableaux croisés dynamiques à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.'
-    name: Excel.PivotTable
-    fullName: Excel.PivotTable
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.PivotTable#columnHierarchies:member'
-      - 'excel!Excel.PivotTable#dataHierarchies:member'
-      - 'excel!Excel.PivotTable#delete:member(1)'
-      - 'excel!Excel.PivotTable#enableDataValueEditing:member'
-      - 'excel!Excel.PivotTable#filterHierarchies:member'
-      - 'excel!Excel.PivotTable#hierarchies:member'
-      - 'excel!Excel.PivotTable#id:member'
-      - 'excel!Excel.PivotTable#layout:member'
-      - 'excel!Excel.PivotTable#load:member(1)'
-      - 'excel!Excel.PivotTable#name:member'
-      - 'excel!Excel.PivotTable#refresh:member(1)'
-      - 'excel!Excel.PivotTable#rowHierarchies:member'
-      - 'excel!Excel.PivotTable#useCustomSortLists:member'
-      - 'excel!Excel.PivotTable#worksheet:member'
-  - uid: 'excel!Excel.PivotTable#columnHierarchies:member'
-    summary: Les hiérarchies de colonne de tableau croisé dynamique.
-    name: columnHierarchies
-    fullName: columnHierarchies
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly columnHierarchies: RowColumnPivotHierarchyCollection;'
-      return:
-        type:
-          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
-
-              // check if the PivotTable already has a column
-              let column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
-              column.load("id");
-              await context.sync();
-
-              if (column.isNullObject) {
-                  // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
-                  pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
-              } else {
-                  pivotTable.columnHierarchies.remove(column);
-              }
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.PivotTable#dataHierarchies:member'
-    summary: Les hiérarchies de données de tableau croisé dynamique.
-    name: dataHierarchies
-    fullName: dataHierarchies
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly dataHierarchies: DataPivotHierarchyCollection;'
-      return:
-        type:
-          - 'excel!Excel.DataPivotHierarchyCollection:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
-              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.PivotTable#delete:member(1)'
-    summary: Supprime le tableau croisé dynamique.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.PivotTable#enableDataValueEditing:member'
-    summary: Indique si le tableau croisé dynamique permet aux valeurs du corps de données d’être modifiées par l’utilisateur.
-    name: enableDataValueEditing
-    fullName: enableDataValueEditing
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableDataValueEditing: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotTable#filterHierarchies:member'
-    summary: Les hiérarchies de filtre de tableau croisé dynamique.
-    name: filterHierarchies
-    fullName: filterHierarchies
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly filterHierarchies: FilterPivotHierarchyCollection;'
-      return:
-        type:
-          - 'excel!Excel.FilterPivotHierarchyCollection:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function filter(functionType: Excel.AggregationFunction) {
-              async function main(context: Excel.RequestContext) {
-                  let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-                  let filters = pivotTable.filterHierarchies;
-                  let filter = filters.getItemOrNullObject("Classification");
-                  filter.load();
-                  await context.sync();
-
-                  // add the Classification hierarchy to the filter, if it's not already there
-                  if (filter.isNullObject) {
-                      filters.add(pivotTable.hierarchies.getItem("Classification"));
-                      await context.sync();
-                  }
-              }
-          }
-          ```
-  - uid: 'excel!Excel.PivotTable#hierarchies:member'
-    summary: Les hiérarchies Pivot de tableau croisé dynamique.
-    name: hierarchies
-    fullName: hierarchies
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly hierarchies: PivotHierarchyCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotHierarchyCollection:interface'
-  - uid: 'excel!Excel.PivotTable#id:member'
-    summary: ID du tableau croisé dynamique.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotTable#layout:member'
-    summary: Le PivotLayout décrivant la disposition et la structure visuelle de tableau croisé dynamique.
-    name: layout
-    fullName: layout
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly layout: PivotLayout;'
-      return:
-        type:
-          - 'excel!Excel.PivotLayout:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              pivotTable.layout.load("layoutType");
-              await context.sync();
-
-              // cycle between the three layout types
-              if (pivotTable.layout.layoutType === "Compact") {
-                  pivotTable.layout.layoutType = "Outline";
-              } else if (pivotTable.layout.layoutType === "Outline") {
-                  pivotTable.layout.layoutType = "Tabular";
-              } else {
-                  pivotTable.layout.layoutType = "Compact";
-              }
-              await context.sync();
-              console.log("Pivot layout is now " + pivotTable.layout.layoutType);
-          }
-          ```
-  - uid: 'excel!Excel.PivotTable#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.PivotTable#name:member'
-    summary: Nom du tableau croisé dynamique.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.PivotTable#refresh:member(1)'
-    summary: Actualise le tableau croisé dynamique.
-    name: refresh()
-    fullName: refresh()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'refresh(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.PivotTable#rowHierarchies:member'
-    summary: Les hiérarchies de lignes de tableau croisé dynamique.
-    name: rowHierarchies
-    fullName: rowHierarchies
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rowHierarchies: RowColumnPivotHierarchyCollection;'
-      return:
-        type:
-          - 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
-  - uid: 'excel!Excel.PivotTable#useCustomSortLists:member'
-    summary: Indique si le tableau croisé dynamique utilise des listes personnalisées lors du tri.
-    name: useCustomSortLists
-    fullName: useCustomSortLists
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'useCustomSortLists: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.PivotTable#worksheet:member'
-    summary: Feuille de calcul contenant le tableau croisé dynamique.
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-references:
-  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:interface'
-    name: RowColumnPivotHierarchyCollection
-    fullName: Excel.RowColumnPivotHierarchyCollection
-  - uid: 'excel!Excel.DataPivotHierarchyCollection:interface'
-    name: DataPivotHierarchyCollection
-    fullName: Excel.DataPivotHierarchyCollection
-  - uid: 'excel!Excel.FilterPivotHierarchyCollection:interface'
-    name: FilterPivotHierarchyCollection
-    fullName: Excel.FilterPivotHierarchyCollection
-  - uid: 'excel!Excel.PivotHierarchyCollection:interface'
-    name: PivotHierarchyCollection
-    fullName: Excel.PivotHierarchyCollection
-  - uid: 'excel!Excel.PivotLayout:interface'
-    name: PivotLayout
-    fullName: Excel.PivotLayout
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
+### YamlMime:TSType
+name: Excel.PivotTable
+uid: excel!Excel.PivotTable:interface
+package: excel!
+fullName: Excel.PivotTable
+summary: Représente un tableau croisé dynamique Excel. Pour en savoir plus sur le modèle objet de tableau croisé dynamique, lisez utilisation [de tableaux croisés dynamiques à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables)<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: columnHierarchies
+  uid: excel!Excel.PivotTable#columnHierarchies:member
+  package: excel!
+  fullName: columnHierarchies
+  summary: Les hiérarchies de colonne de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly columnHierarchies: RowColumnPivotHierarchyCollection;'
+    return:
+      type: <xref uid="excel!Excel.RowColumnPivotHierarchyCollection:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem(\"Farm Sales\");       \n\n    // check if the PivotTable already has a column\n    let column = pivotTable.columnHierarchies.getItemOrNullObject(\"Farm\");\n    column.load(\"id\");\n    await context.sync();\n\n    if (column.isNullObject) {\n        // ading the farm column to the column hierarchy automatically removes it from the row hierarchy\n        pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem(\"Farm\"));\n    } else {\n        pivotTable.columnHierarchies.remove(column);\n    }\n\n    await context.sync();\n}\n```"
+- name: dataHierarchies
+  uid: excel!Excel.PivotTable#dataHierarchies:member
+  package: excel!
+  fullName: dataHierarchies
+  summary: Les hiérarchies de données de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly dataHierarchies: DataPivotHierarchyCollection;'
+    return:
+      type: <xref uid="excel!Excel.DataPivotHierarchyCollection:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem(\"Farm Sales\");\n    pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem(\"Crates Sold at Farm\"));\n    pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem(\"Crates Sold Wholesale\"));\n\n    await context.sync();\n}\n```"
+- name: enableDataValueEditing
+  uid: excel!Excel.PivotTable#enableDataValueEditing:member
+  package: excel!
+  fullName: enableDataValueEditing
+  summary: Indique si le tableau croisé dynamique permet aux valeurs du corps de données d’être modifiées par l’utilisateur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'enableDataValueEditing: boolean;'
+    return:
+      type: boolean
+- name: filterHierarchies
+  uid: excel!Excel.PivotTable#filterHierarchies:member
+  package: excel!
+  fullName: filterHierarchies
+  summary: Les hiérarchies de filtre de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly filterHierarchies: FilterPivotHierarchyCollection;'
+    return:
+      type: <xref uid="excel!Excel.FilterPivotHierarchyCollection:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function filter(functionType: Excel.AggregationFunction) {\n    async function main(context: Excel.RequestContext) {\n        let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem(\"Farm Sales\");\n        let filters = pivotTable.filterHierarchies;\n        let filter = filters.getItemOrNullObject(\"Classification\");\n        filter.load();\n        await context.sync();\n\n        // add the Classification hierarchy to the filter, if it's not already there\n        if (filter.isNullObject) {\n            filters.add(pivotTable.hierarchies.getItem(\"Classification\"));\n            await context.sync();\n        }\n    }\n}\n```"
+- name: hierarchies
+  uid: excel!Excel.PivotTable#hierarchies:member
+  package: excel!
+  fullName: hierarchies
+  summary: Les hiérarchies Pivot de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly hierarchies: PivotHierarchyCollection;'
+    return:
+      type: <xref uid="excel!Excel.PivotHierarchyCollection:interface" />
+- name: id
+  uid: excel!Excel.PivotTable#id:member
+  package: excel!
+  fullName: id
+  summary: ID du tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: layout
+  uid: excel!Excel.PivotTable#layout:member
+  package: excel!
+  fullName: layout
+  summary: Le PivotLayout décrivant la disposition et la structure visuelle de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly layout: PivotLayout;'
+    return:
+      type: <xref uid="excel!Excel.PivotLayout:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem(\"Farm Sales\");\n    pivotTable.layout.load(\"layoutType\");\n    await context.sync();\n\n    // cycle between the three layout types\n    if (pivotTable.layout.layoutType === \"Compact\") {\n        pivotTable.layout.layoutType = \"Outline\";\n    } else if (pivotTable.layout.layoutType === \"Outline\") {\n        pivotTable.layout.layoutType = \"Tabular\";\n    } else {\n        pivotTable.layout.layoutType = \"Compact\";\n    }\n    await context.sync();\n    console.log(\"Pivot layout is now \" + pivotTable.layout.layoutType);\n}\n```"
+- name: name
+  uid: excel!Excel.PivotTable#name:member
+  package: excel!
+  fullName: name
+  summary: Nom du tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name: string;'
+    return:
+      type: string
+- name: rowHierarchies
+  uid: excel!Excel.PivotTable#rowHierarchies:member
+  package: excel!
+  fullName: rowHierarchies
+  summary: Les hiérarchies de lignes de tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly rowHierarchies: RowColumnPivotHierarchyCollection;'
+    return:
+      type: <xref uid="excel!Excel.RowColumnPivotHierarchyCollection:interface" />
+- name: useCustomSortLists
+  uid: excel!Excel.PivotTable#useCustomSortLists:member
+  package: excel!
+  fullName: useCustomSortLists
+  summary: Indique si le tableau croisé dynamique utilise des listes personnalisées lors du tri.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'useCustomSortLists: boolean;'
+    return:
+      type: boolean
+- name: worksheet
+  uid: excel!Excel.PivotTable#worksheet:member
+  package: excel!
+  fullName: worksheet
+  summary: Feuille de calcul contenant le tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly worksheet: Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+methods:
+- name: delete()
+  uid: excel!Excel.PivotTable#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Supprime le tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    context.workbook.worksheets.getItem(\"Pivot\").pivotTables.getItem(\"Farm Sales\").delete();\n\n    await context.sync();\n}\n```"
+- name: load(propertyNames)
+  uid: excel!Excel.PivotTable#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: refresh()
+  uid: excel!Excel.PivotTable#refresh:member(1)
+  package: excel!
+  fullName: refresh()
+  summary: Actualise le tableau croisé dynamique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refresh(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 2825ad04ac5fbcdf1c4f1de1975d16e9b8ea3d69
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413327"

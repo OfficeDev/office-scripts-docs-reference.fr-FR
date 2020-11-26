@@ -1,47 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ListDataValidation:interface'
-    summary: Représente les critères de validation des données de liste.
-    name: ExcelScript.ListDataValidation
-    fullName: ExcelScript.ListDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
-      - 'ExcelScript!ExcelScript.ListDataValidation#source:member'
-  - uid: 'ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member'
-    summary: 'Affiche la liste dans la cellule déroulante ou non, sa valeur par défaut est true.'
-    name: inCellDropDown
-    fullName: inCellDropDown
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'inCellDropDown: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source:member'
-    summary: 'Source de la liste pour la validation des données lors de la définition de la valeur, elle peut être transmise en tant qu’objet de plage Excel ou en tant que chaîne contenant un nombre séparé par des virgules, une valeur booléenne ou une date.'
-    name: source
-    fullName: source
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'source: string | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
-references:
-  - uid: 'ExcelScript!ExcelScript.ListDataValidation#source~0:complex'
-    name: string | Range
-    fullName: string | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
+### YamlMime:TSType
+name: ExcelScript.ListDataValidation
+uid: ExcelScript!ExcelScript.ListDataValidation:interface
+package: ExcelScript!
+fullName: ExcelScript.ListDataValidation
+summary: Représente les critères de validation des données de liste.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: inCellDropDown
+  uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
+  package: ExcelScript!
+  fullName: inCellDropDown
+  summary: Affiche la liste dans la cellule déroulante ou non, sa valeur par défaut est true.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'inCellDropDown: boolean;'
+    return:
+      type: boolean
+- name: source
+  uid: ExcelScript!ExcelScript.ListDataValidation#source:member
+  package: ExcelScript!
+  fullName: source
+  summary: Source de la liste pour la validation des données lors de la définition de la valeur, elle peut être transmise en tant qu’objet de plage Excel ou en tant que chaîne contenant un nombre séparé par des virgules, une valeur booléenne ou une date.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'source: string | Range;'
+    return:
+      type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+metadata:
+  ms.openlocfilehash: cf8940b22ffc0ff1b79c1a55297fc2f97e4b43ea
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49412180"
