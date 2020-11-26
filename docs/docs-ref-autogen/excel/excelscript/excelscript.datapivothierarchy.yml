@@ -1,228 +1,207 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy:interface'
-    summary: Représente l’DataPivotHierarchy Excel.
-    name: ExcelScript.DataPivotHierarchy
-    fullName: ExcelScript.DataPivotHierarchy
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#getField:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#getId:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#getName:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#getNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#getPosition:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#getShowAs:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#getSummarizeBy:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#setName:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#setNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#setShowAs:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#setSummarizeBy:member(1)'
-      - 'ExcelScript!ExcelScript.DataPivotHierarchy#setToDefault:member(1)'
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getField:member(1)'
-    summary: Renvoie les PivotFields associés à la DataPivotHierarchy.
-    name: getField()
-    fullName: getField()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getField(): PivotField;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.PivotField:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getId:member(1)'
-    summary: ID de la DataPivotHierarchy.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getName:member(1)'
-    summary: Nom de la DataPivotHierarchy.
-    name: getName()
-    fullName: getName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getNumberFormat:member(1)'
-    summary: Format de nombre de la DataPivotHierarchy.
-    name: getNumberFormat()
-    fullName: getNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormat(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getPosition:member(1)'
-    summary: Position de la DataPivotHierarchy.
-    name: getPosition()
-    fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPosition(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getShowAs:member(1)'
-    summary: Indique si les données doivent être affichées sous la forme d’un calcul de synthèse spécifique.
-    name: getShowAs()
-    fullName: getShowAs()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowAs(): ShowAsRule;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ShowAsRule:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#getSummarizeBy:member(1)'
-    summary: Indique si tous les éléments de l’DataPivotHierarchy sont affichés.
-    name: getSummarizeBy()
-    fullName: getSummarizeBy()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSummarizeBy(): AggregationFunction;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.AggregationFunction:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setName:member(1)'
-    summary: Nom de la DataPivotHierarchy.
-    name: setName(name)
-    fullName: setName(name)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setName(name: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: name
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setNumberFormat:member(1)'
-    summary: Format de nombre de la DataPivotHierarchy.
-    name: setNumberFormat(numberFormat)
-    fullName: setNumberFormat(numberFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormat(numberFormat: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormat
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setPosition:member(1)'
-    summary: Position de la DataPivotHierarchy.
-    name: setPosition(position)
-    fullName: setPosition(position)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(position: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: position
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setShowAs:member(1)'
-    summary: Indique si les données doivent être affichées sous la forme d’un calcul de synthèse spécifique.
-    name: setShowAs(showAs)
-    fullName: setShowAs(showAs)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowAs(showAs: ShowAsRule): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showAs
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ShowAsRule:interface'
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setSummarizeBy:member(1)'
-    summary: Indique si tous les éléments de l’DataPivotHierarchy sont affichés.
-    name: setSummarizeBy(summarizeBy)
-    fullName: setSummarizeBy(summarizeBy)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSummarizeBy(summarizeBy: AggregationFunction): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: summarizeBy
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.AggregationFunction:enum'
-  - uid: 'ExcelScript!ExcelScript.DataPivotHierarchy#setToDefault:member(1)'
-    summary: Restaurer la DataPivotHierarchy à ses valeurs par défaut.
-    name: setToDefault()
-    fullName: setToDefault()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setToDefault(): void;'
-      return:
-        type:
-          - void
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.PivotField:interface'
-    name: PivotField
-    fullName: ExcelScript.PivotField
-  - uid: 'ExcelScript!ExcelScript.ShowAsRule:interface'
-    name: ShowAsRule
-    fullName: ExcelScript.ShowAsRule
-  - uid: 'ExcelScript!ExcelScript.AggregationFunction:enum'
-    name: AggregationFunction
-    fullName: ExcelScript.AggregationFunction
+### YamlMime:TSType
+name: ExcelScript.DataPivotHierarchy
+uid: ExcelScript!ExcelScript.DataPivotHierarchy:interface
+package: ExcelScript!
+fullName: ExcelScript.DataPivotHierarchy
+summary: Représente l’DataPivotHierarchy Excel.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getField()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getField:member(1)
+  package: ExcelScript!
+  fullName: getField()
+  summary: Renvoie les PivotFields associés à la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getField(): PivotField;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotField:interface" />
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: ID de la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Nom de la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: Format de nombre de la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): string;'
+    return:
+      type: string
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: Position de la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShowAs()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getShowAs:member(1)
+  package: ExcelScript!
+  fullName: getShowAs()
+  summary: Indique si les données doivent être affichées sous la forme d’un calcul de synthèse spécifique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowAs(): ShowAsRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ShowAsRule:interface" />
+      description: ''
+- name: getSummarizeBy()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#getSummarizeBy:member(1)
+  package: ExcelScript!
+  fullName: getSummarizeBy()
+  summary: Indique si tous les éléments de l’DataPivotHierarchy sont affichés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSummarizeBy(): AggregationFunction;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.AggregationFunction:enum" />
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Nom de la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setNumberFormat(numberFormat)
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormat(numberFormat)
+  summary: Format de nombre de la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormat(numberFormat: string): void;'
+    parameters:
+    - id: numberFormat
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: Position de la DataPivotHierarchy.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: number): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShowAs(showAs)
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setShowAs:member(1)
+  package: ExcelScript!
+  fullName: setShowAs(showAs)
+  summary: Indique si les données doivent être affichées sous la forme d’un calcul de synthèse spécifique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowAs(showAs: ShowAsRule): void;'
+    parameters:
+    - id: showAs
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ShowAsRule:interface" />
+    return:
+      type: void
+      description: ''
+- name: setSummarizeBy(summarizeBy)
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setSummarizeBy:member(1)
+  package: ExcelScript!
+  fullName: setSummarizeBy(summarizeBy)
+  summary: Indique si tous les éléments de l’DataPivotHierarchy sont affichés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSummarizeBy(summarizeBy: AggregationFunction): void;'
+    parameters:
+    - id: summarizeBy
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.AggregationFunction:enum" />
+    return:
+      type: void
+      description: ''
+- name: setToDefault()
+  uid: ExcelScript!ExcelScript.DataPivotHierarchy#setToDefault:member(1)
+  package: ExcelScript!
+  fullName: setToDefault()
+  summary: Restaurer la DataPivotHierarchy à ses valeurs par défaut.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setToDefault(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 670371dcff2c8743a996a5663ff51b5e8817e618
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415574"

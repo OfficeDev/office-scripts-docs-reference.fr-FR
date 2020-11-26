@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
-    summary: 'Énumération simple pour les filtres Top/Bottom à choisir s’il faut effectuer un filtrage par les numéros de niveau supérieur ou inférieur à N, nombre ou somme des valeurs.'
-    name: ExcelScript.TopBottomSelectionType
-    fullName: ExcelScript.TopBottomSelectionType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
-      - 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
-    summary: Filtre le nombre d’éléments supérieur/inférieur N comme mesuré par la valeur choisie.
-    name: items
-    fullName: items
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
-    summary: Filtre les N premiers/derniers% des éléments comme mesuré par la valeur choisie.
-    name: percent
-    fullName: percent
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
-    summary: Filtre la somme des N premières/dernières comme mesurée par la valeur choisie.
-    name: sum
-    fullName: sum
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.TopBottomSelectionType
+uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+package: ExcelScript!
+fullName: ExcelScript.TopBottomSelectionType
+summary: Énumération simple pour les filtres Top/Bottom à choisir s’il faut effectuer un filtrage par les numéros de niveau supérieur ou inférieur à N, nombre ou somme des valeurs.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: items
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
+  package: ExcelScript!
+  summary: Filtre le nombre d’éléments supérieur/inférieur N comme mesuré par la valeur choisie.
+- name: percent
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
+  package: ExcelScript!
+  summary: Filtre les N premiers/derniers% des éléments comme mesuré par la valeur choisie.
+- name: sum
+  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
+  package: ExcelScript!
+  summary: Filtre la somme des N premières/dernières comme mesurée par la valeur choisie.
+metadata:
+  ms.openlocfilehash: 4772398cc7e7f7f89cef3dcb6148c47eab247ce4
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415168"

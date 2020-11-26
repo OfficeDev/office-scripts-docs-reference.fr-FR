@@ -1,291 +1,204 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Application:interface'
-    summary: Représente l’application Excel qui gère le classeur.
-    name: Excel.Application
-    fullName: Excel.Application
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Application#calculate:member(1)'
-      - 'excel!Excel.Application#calculationEngineVersion:member'
-      - 'excel!Excel.Application#calculationMode:member'
-      - 'excel!Excel.Application#calculationState:member'
-      - 'excel!Excel.Application#cultureInfo:member'
-      - 'excel!Excel.Application#decimalSeparator:member'
-      - 'excel!Excel.Application#iterativeCalculation:member'
-      - 'excel!Excel.Application#load:member(1)'
-      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
-      - 'excel!Excel.Application#thousandsSeparator:member'
-      - 'excel!Excel.Application#useSystemSeparators:member'
-  - uid: 'excel!Excel.Application#calculate:member(1)'
-    summary: Recalcule tous les classeurs actuellement ouverts dans Excel.
-    name: calculate(calculationType)
-    fullName: calculate(calculationType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        calculate(
-                    calculationType:
-                        | CalculationType
-                        | "Recalculate"
-                        | "Full"
-                        | "FullRebuild"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: calculationType
-          description: 'Spécifie le type de calcul à utiliser. Pour plus d’informations, voir Excel. CalculationType.'
-          type:
-            - 'excel!Excel.Application#calculate~0:complex'
-  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
-    summary: Renvoie la version du moteur de calcul Excel utilisée pour le dernier recalcul complet.
-    name: calculationEngineVersion
-    fullName: calculationEngineVersion
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly calculationEngineVersion: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Application#calculationMode:member'
-    summary: "Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans Excel. CalculationMode. Les valeurs possibles sont les suivantes\_:`Automatic`<!-- -->, où Excel contrôle le recalcul\_;`AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux\_;`Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande."
-    name: calculationMode
-    fullName: calculationMode
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        calculationMode:
-                    | CalculationMode
+### YamlMime:TSType
+name: Excel.Application
+uid: excel!Excel.Application:interface
+package: excel!
+fullName: Excel.Application
+summary: Représente l’application Excel qui gère le classeur.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: calculationEngineVersion
+  uid: excel!Excel.Application#calculationEngineVersion:member
+  package: excel!
+  fullName: calculationEngineVersion
+  summary: Renvoie la version du moteur de calcul Excel utilisée pour le dernier recalcul complet.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly calculationEngineVersion: number;'
+    return:
+      type: number
+- name: calculationMode
+  uid: excel!Excel.Application#calculationMode:member
+  package: excel!
+  fullName: calculationMode
+  summary: 'Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans Excel. CalculationMode. Les valeurs possibles sont les suivantes : `Automatic`<!-- -->, où Excel contrôle le recalcul ; `AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux ; `Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      calculationMode:
+                  | CalculationMode
+                  | "Automatic"
+                  | "AutomaticExceptTables"
+                  | "Manual";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.CalculationMode:enum" />
                     | "Automatic"
                     | "AutomaticExceptTables"
-                    | "Manual";
-      return:
-        type:
-          - 'excel!Excel.Application#calculationMode~0:complex'
-  - uid: 'excel!Excel.Application#calculationState:member'
-    summary: 'Renvoie l’état de calcul de l’application. Pour plus d’informations, voir Excel.CalculationState.'
-    name: calculationState
-    fullName: calculationState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        readonly calculationState:
-                    | CalculationState
+                    | "Manual"
+- name: calculationState
+  uid: excel!Excel.Application#calculationState:member
+  package: excel!
+  fullName: calculationState
+  summary: Renvoie l’état de calcul de l’application. Pour plus d’informations, voir Excel.CalculationState.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      readonly calculationState:
+                  | CalculationState
+                  | "Done"
+                  | "Calculating"
+                  | "Pending";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.CalculationState:enum" />
                     | "Done"
                     | "Calculating"
-                    | "Pending";
-      return:
-        type:
-          - 'excel!Excel.Application#calculationState~0:complex'
-  - uid: 'excel!Excel.Application#cultureInfo:member'
-    summary: 'Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme de numéros et d’autres paramètres dépendants de la culture.'
-    name: cultureInfo
-    fullName: cultureInfo
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly cultureInfo: CultureInfo;'
-      return:
-        type:
-          - 'excel!Excel.CultureInfo:interface'
-  - uid: 'excel!Excel.Application#decimalSeparator:member'
-    summary: Obtient la chaîne utilisée comme séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
-    name: decimalSeparator
-    fullName: decimalSeparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly decimalSeparator: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Application#iterativeCalculation:member'
-    summary: 'Capture d’écran des paramètres de calcul itératif. Dans Excel sous Windows et Mac, les paramètres s’appliquent à l’application Excel. Dans Excel sur le Web et d’autres plateformes, les paramètres s’appliquent au classeur actif.'
-    name: iterativeCalculation
-    fullName: iterativeCalculation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly iterativeCalculation: IterativeCalculation;'
-      return:
-        type:
-          - 'excel!Excel.IterativeCalculation:interface'
-  - uid: 'excel!Excel.Application#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
-    summary: "Interrompt le calcul jusqu'à ce que la prochaine méthode «\_context.sync()\_» soit appelée. Une fois cette option définie, il incombe au développeur de recalculer le classeur afin de garantir que toutes les dépendances sont propagées."
-    name: suspendApiCalculationUntilNextSync()
-    fullName: suspendApiCalculationUntilNextSync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'suspendApiCalculationUntilNextSync(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
-    summary: |-
-      Interrompt la mise à jour de l’écran jusqu’à l’appel de la `context.sync()` méthode suivante.
-
-      **Remarque**: ne pas appeler `suspendScreenUpdatingUntilNextSync` de manière répétée (comme dans une boucle). Les appels répétés entraînent le scintillement de la fenêtre Excel.
-    name: suspendScreenUpdatingUntilNextSync()
-    fullName: suspendScreenUpdatingUntilNextSync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'suspendScreenUpdatingUntilNextSync(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Application#thousandsSeparator:member'
-    summary: Obtient la chaîne utilisée pour séparer les groupes de chiffres à gauche du séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
-    name: thousandsSeparator
-    fullName: thousandsSeparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly thousandsSeparator: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Application#useSystemSeparators:member'
-    summary: Indique si les séparateurs système d’Excel sont activés. Les séparateurs système incluent le séparateur décimal et le séparateur des milliers.
-    name: useSystemSeparators
-    fullName: useSystemSeparators
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly useSystemSeparators: boolean;'
-      return:
-        type:
-          - boolean
-references:
-  - uid: 'excel!Excel.Application#calculate~0:complex'
-    name: |-
-      | CalculationType
+                    | "Pending"
+- name: cultureInfo
+  uid: excel!Excel.Application#cultureInfo:member
+  package: excel!
+  fullName: cultureInfo
+  summary: Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme de numéros et d’autres paramètres dépendants de la culture.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly cultureInfo: CultureInfo;'
+    return:
+      type: <xref uid="excel!Excel.CultureInfo:interface" />
+- name: decimalSeparator
+  uid: excel!Excel.Application#decimalSeparator:member
+  package: excel!
+  fullName: decimalSeparator
+  summary: Obtient la chaîne utilisée comme séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly decimalSeparator: string;'
+    return:
+      type: string
+- name: iterativeCalculation
+  uid: excel!Excel.Application#iterativeCalculation:member
+  package: excel!
+  fullName: iterativeCalculation
+  summary: Capture d’écran des paramètres de calcul itératif. Dans Excel sous Windows et Mac, les paramètres s’appliquent à l’application Excel. Dans Excel sur le Web et d’autres plateformes, les paramètres s’appliquent au classeur actif.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly iterativeCalculation: IterativeCalculation;'
+    return:
+      type: <xref uid="excel!Excel.IterativeCalculation:interface" />
+- name: thousandsSeparator
+  uid: excel!Excel.Application#thousandsSeparator:member
+  package: excel!
+  fullName: thousandsSeparator
+  summary: Obtient la chaîne utilisée pour séparer les groupes de chiffres à gauche du séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly thousandsSeparator: string;'
+    return:
+      type: string
+- name: useSystemSeparators
+  uid: excel!Excel.Application#useSystemSeparators:member
+  package: excel!
+  fullName: useSystemSeparators
+  summary: Indique si les séparateurs système d’Excel sont activés. Les séparateurs système incluent le séparateur décimal et le séparateur des milliers.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly useSystemSeparators: boolean;'
+    return:
+      type: boolean
+methods:
+- name: calculate(calculationType)
+  uid: excel!Excel.Application#calculate:member(1)
+  package: excel!
+  fullName: calculate(calculationType)
+  summary: Recalcule tous les classeurs actuellement ouverts dans Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      calculate(
+                  calculationType:
+                      | CalculationType
                       | "Recalculate"
                       | "Full"
                       | "FullRebuild"
-    fullName: |-
-      | Excel.CalculationType
-                      | "Recalculate"
-                      | "Full"
-                      | "FullRebuild"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationType:enum'
-        name: CalculationType
-        fullName: Excel.CalculationType
-      - name: |2-
+              ): void;
+    parameters:
+    - id: calculationType
+      description: Spécifie le type de calcul à utiliser. Pour plus d’informations, voir Excel. CalculationType.
+      type: "| <xref uid=\"excel!Excel.CalculationType:enum\" />\n                | \"Recalculate\"\n                | \"Full\"\n                | \"FullRebuild\"\n        "
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Application#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: suspendApiCalculationUntilNextSync()
+  uid: excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)
+  package: excel!
+  fullName: suspendApiCalculationUntilNextSync()
+  summary: Interrompt le calcul jusqu'à ce que la prochaine méthode « context.sync() » soit appelée. Une fois cette option définie, il incombe au développeur de recalculer le classeur afin de garantir que toutes les dépendances sont propagées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'suspendApiCalculationUntilNextSync(): void;'
+    return:
+      type: void
+      description: ''
+- name: suspendScreenUpdatingUntilNextSync()
+  uid: excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)
+  package: excel!
+  fullName: suspendScreenUpdatingUntilNextSync()
+  summary: >-
+    Interrompt la mise à jour de l’écran jusqu’à l’appel de la `context.sync()` méthode suivante.
 
-                          | "Recalculate"
-                          | "Full"
-                          | "FullRebuild"
-                  
-        fullName: |2-
 
-                          | "Recalculate"
-                          | "Full"
-                          | "FullRebuild"
-                  
-  - uid: 'excel!Excel.Application#calculationMode~0:complex'
-    name: |-
-      | CalculationMode
-                  | "Automatic"
-                  | "AutomaticExceptTables"
-                  | "Manual"
-    fullName: |-
-      | Excel.CalculationMode
-                  | "Automatic"
-                  | "AutomaticExceptTables"
-                  | "Manual"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationMode:enum'
-        name: CalculationMode
-        fullName: Excel.CalculationMode
-      - name: |2-
-
-                      | "Automatic"
-                      | "AutomaticExceptTables"
-                      | "Manual"
-        fullName: |2-
-
-                      | "Automatic"
-                      | "AutomaticExceptTables"
-                      | "Manual"
-  - uid: 'excel!Excel.Application#calculationState~0:complex'
-    name: |-
-      | CalculationState
-                  | "Done"
-                  | "Calculating"
-                  | "Pending"
-    fullName: |-
-      | Excel.CalculationState
-                  | "Done"
-                  | "Calculating"
-                  | "Pending"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.CalculationState:enum'
-        name: CalculationState
-        fullName: Excel.CalculationState
-      - name: |2-
-
-                      | "Done"
-                      | "Calculating"
-                      | "Pending"
-        fullName: |2-
-
-                      | "Done"
-                      | "Calculating"
-                      | "Pending"
-  - uid: 'excel!Excel.CultureInfo:interface'
-    name: CultureInfo
-    fullName: Excel.CultureInfo
-  - uid: 'excel!Excel.IterativeCalculation:interface'
-    name: IterativeCalculation
-    fullName: Excel.IterativeCalculation
+    **Remarque**: ne pas appeler `suspendScreenUpdatingUntilNextSync` de manière répétée (comme dans une boucle). Les appels répétés entraînent le scintillement de la fenêtre Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'suspendScreenUpdatingUntilNextSync(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: ebedb8b1b7c0a22547a6ad13f9bf194a9846d7cb
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414554"

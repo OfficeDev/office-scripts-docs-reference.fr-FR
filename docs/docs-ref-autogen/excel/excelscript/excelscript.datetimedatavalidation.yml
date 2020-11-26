@@ -1,82 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation:interface'
-    summary: Représente les critères de validation des données de date.
-    name: ExcelScript.DateTimeDataValidation
-    fullName: ExcelScript.DateTimeDataValidation
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member'
-      - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member'
-      - 'ExcelScript!ExcelScript.DateTimeDataValidation#operator:member'
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member'
-    summary: "Spécifie l’opérande de droite lorsque la propriété Operator est définie sur un opérateur binaire tel que GreaterThan (l’opérande de gauche est la valeur que l’utilisateur tente d’entrer dans la cellule). Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande inférieur. Lors de la définition de la valeur, elle peut être transmise sous forme de date, d’objet Range ou de formule de chaîne (où la chaîne est soit une date/heure JSON au format ISO8601, soit une référence de cellule telle que «\_= a1\_», soit une formule comme «\_= MIN (a1, B1)\_»). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple\_: \"= 10\", \"= a1\", \"= SUM (a1\_: B5)\", etc."
-    name: formula1
-    fullName: formula1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula1: string | Date | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1~0:complex'
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member'
-    summary: "Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande supérieur. N’est pas utilisé avec les opérateurs binaires, tels que GreaterThan. Lors de la définition de la valeur, elle peut être passée sous forme de date, d’objet Range ou de chaîne (où la chaîne est soit une date/heure JSON au format ISO8601, soit une référence de cellule telle que «\_= a1\_», soit une formule comme «\_= MIN (a1, B1)\_»). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple\_: \"= 10\", \"= a1\", \"= SUM (a1\_: B5)\", etc."
-    name: formula2
-    fullName: formula2
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula2?: string | Date | Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2~0:complex'
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#operator:member'
-    summary: L’opérateur à utiliser pour la validation des données.
-    name: operator
-    fullName: operator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'operator: DataValidationOperator;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula1~0:complex'
-    name: string | Date | Range
-    fullName: string | Date | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.DateTimeDataValidation#formula2~0:complex'
-    name: string | Date | Range
-    fullName: string | Date | ExcelScript.Range
-    spec.typeScript:
-      - name: 'string | '
-        fullName: 'string | '
-      - uid: '!Date:interface'
-        name: Date
-        fullName: Date
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'ExcelScript!ExcelScript.Range:interface'
-        name: Range
-        fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.DataValidationOperator:enum'
-    name: DataValidationOperator
-    fullName: ExcelScript.DataValidationOperator
+### YamlMime:TSType
+name: ExcelScript.DateTimeDataValidation
+uid: ExcelScript!ExcelScript.DateTimeDataValidation:interface
+package: ExcelScript!
+fullName: ExcelScript.DateTimeDataValidation
+summary: Représente les critères de validation des données de date.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formula1
+  uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member
+  package: ExcelScript!
+  fullName: formula1
+  summary: 'Spécifie l’opérande de droite lorsque la propriété Operator est définie sur un opérateur binaire tel que GreaterThan (l’opérande de gauche est la valeur que l’utilisateur tente d’entrer dans la cellule). Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande inférieur. Lors de la définition de la valeur, elle peut être transmise sous forme de date, d’objet Range ou de formule de chaîne (où la chaîne est soit une date/heure JSON au format ISO8601, soit une référence de cellule telle que « = a1 », soit une formule comme « = MIN (a1, B1) »). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple : "= 10", "= a1", "= SUM (a1 : B5)", etc.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula1: string | Date | Range;'
+    return:
+      type: string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: formula2
+  uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member
+  package: ExcelScript!
+  fullName: formula2
+  summary: 'Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande supérieur. N’est pas utilisé avec les opérateurs binaires, tels que GreaterThan. Lors de la définition de la valeur, elle peut être passée sous forme de date, d’objet Range ou de chaîne (où la chaîne est soit une date/heure JSON au format ISO8601, soit une référence de cellule telle que « = a1 », soit une formule comme « = MIN (a1, B1) »). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple : "= 10", "= a1", "= SUM (a1 : B5)", etc.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula2?: string | Date | Range;'
+    return:
+      type: string | Date | <xref uid="ExcelScript!ExcelScript.Range:interface" />
+- name: operator
+  uid: ExcelScript!ExcelScript.DateTimeDataValidation#operator:member
+  package: ExcelScript!
+  fullName: operator
+  summary: L’opérateur à utiliser pour la validation des données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'operator: DataValidationOperator;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
+metadata:
+  ms.openlocfilehash: e996fdc017fd932a17031a0bb57255f84f01759c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415429"

@@ -1,85 +1,81 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtection:interface'
-    summary: Représente la protection d’un objet de la feuille.
-    name: ExcelScript.WorksheetProtection
-    fullName: ExcelScript.WorksheetProtection
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
-      - 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)'
-    summary: Spécifie les options de protection pour la feuille de calcul.
-    name: getOptions()
-    fullName: getOptions()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOptions(): WorksheetProtectionOptions;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)'
-    summary: Indique si la feuille de calcul est protégée.
-    name: getProtected()
-    fullName: getProtected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getProtected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)'
-    summary: Protège une feuille de calcul. Échoue si la feuille de calcul a déjà été protégée.
-    name: 'protect(options, password)'
-    fullName: 'protect(options, password)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: options
-          description: Facultatif. Options de protection de feuille.
-          type:
-            - 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
-        - id: password
-          description: Facultatif. Mot de passe de protection de la feuille.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)'
-    summary: Annule la protection d’une feuille de calcul.
-    name: unprotect(password)
-    fullName: unprotect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unprotect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: password
-          description: Mot de passe de protection de feuille.
-          type:
-            - string
-references:
-  - uid: 'ExcelScript!ExcelScript.WorksheetProtectionOptions:interface'
-    name: WorksheetProtectionOptions
-    fullName: ExcelScript.WorksheetProtectionOptions
+### YamlMime:TSType
+name: ExcelScript.WorksheetProtection
+uid: ExcelScript!ExcelScript.WorksheetProtection:interface
+package: ExcelScript!
+fullName: ExcelScript.WorksheetProtection
+summary: Représente la protection d’un objet de la feuille.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getOptions()
+  uid: ExcelScript!ExcelScript.WorksheetProtection#getOptions:member(1)
+  package: ExcelScript!
+  fullName: getOptions()
+  summary: Spécifie les options de protection pour la feuille de calcul.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOptions(): WorksheetProtectionOptions;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetProtectionOptions:interface" />
+      description: ''
+- name: getProtected()
+  uid: ExcelScript!ExcelScript.WorksheetProtection#getProtected:member(1)
+  package: ExcelScript!
+  fullName: getProtected()
+  summary: Indique si la feuille de calcul est protégée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtected(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: protect(options, password)
+  uid: ExcelScript!ExcelScript.WorksheetProtection#protect:member(1)
+  package: ExcelScript!
+  fullName: protect(options, password)
+  summary: Protège une feuille de calcul. Échoue si la feuille de calcul a déjà été protégée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'protect(options?: WorksheetProtectionOptions, password?: string): void;'
+    parameters:
+    - id: options
+      description: Facultatif. Options de protection de feuille.
+      type: <xref uid="ExcelScript!ExcelScript.WorksheetProtectionOptions:interface" />
+    - id: password
+      description: Facultatif. Mot de passe de protection de la feuille.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: unprotect(password)
+  uid: ExcelScript!ExcelScript.WorksheetProtection#unprotect:member(1)
+  package: ExcelScript!
+  fullName: unprotect(password)
+  summary: Annule la protection d’une feuille de calcul.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unprotect(password?: string): void;'
+    parameters:
+    - id: password
+      description: Mot de passe de protection de feuille.
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: a3153d184f1b8537b9f3f117c9b98748c4ed724c
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415133"

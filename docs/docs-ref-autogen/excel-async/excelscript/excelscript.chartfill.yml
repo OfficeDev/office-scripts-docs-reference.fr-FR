@@ -1,80 +1,65 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartFill:interface'
-    summary: Représente le format de remplissage d’un élément de graphique.
-    name: Excel.ChartFill
-    fullName: Excel.ChartFill
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartFill#clear:member(1)'
-      - 'excel!Excel.ChartFill#load:member(1)'
-      - 'excel!Excel.ChartFill#setSolidColor:member(1)'
-  - uid: 'excel!Excel.ChartFill#clear:member(1)'
-    summary: Supprime la couleur de remplissage d’un élément de graphique.
-    name: clear()
-    fullName: clear()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.ChartFill#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartFill#setSolidColor:member(1)'
-    summary: Définit le format de remplissage d’un élément de graphique sur une couleur unie.
-    name: setSolidColor(color)
-    fullName: setSolidColor(color)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSolidColor(color: string): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-
-              let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
-              let point = pointsCollection.getItemAt(2);
-
-              // Set color for chart point.
-              point.format.fill.setSolidColor('red');
-
-              await context.sync();        
-          }
-          ```
-      parameters:
-        - id: color
-          description: "Code couleur HTML qui représente la couleur de l’arrière-plan, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
-          type:
-            - string
+### YamlMime:TSType
+name: Excel.ChartFill
+uid: excel!Excel.ChartFill:interface
+package: excel!
+fullName: Excel.ChartFill
+summary: Représente le format de remplissage d’un élément de graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: clear()
+  uid: excel!Excel.ChartFill#clear:member(1)
+  package: excel!
+  fullName: clear()
+  summary: Supprime la couleur de remplissage d’un élément de graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ChartFill#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: setSolidColor(color)
+  uid: excel!Excel.ChartFill#setSolidColor:member(1)
+  package: excel!
+  fullName: setSolidColor(color)
+  summary: Définit le format de remplissage d’un élément de graphique sur une couleur unie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSolidColor(color: string): void;'
+    parameters:
+    - id: color
+      description: Code couleur HTML qui représente la couleur de l’arrière-plan, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n\n    let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;\n    let point = pointsCollection.getItemAt(2);\n\n    // Set color for chart point.\n    point.format.fill.setSolidColor('red');\n\n    await context.sync();        \n}\n```"
+metadata:
+  ms.openlocfilehash: a18be61af14a07853b4dc3bde236076faabb3aff
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414998"

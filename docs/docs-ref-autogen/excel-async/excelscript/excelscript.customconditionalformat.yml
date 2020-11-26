@@ -1,79 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CustomConditionalFormat:interface'
-    summary: Représente un type de format conditionnel personnalisé.
-    name: Excel.CustomConditionalFormat
-    fullName: Excel.CustomConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CustomConditionalFormat#format:member'
-      - 'excel!Excel.CustomConditionalFormat#load:member(1)'
-      - 'excel!Excel.CustomConditionalFormat#rule:member'
-  - uid: 'excel!Excel.CustomConditionalFormat#format:member'
-    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.'
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ConditionalRangeFormat;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeFormat:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B8:E13");
-              let conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-              conditionalFormat.custom.format.font.color = "green";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.CustomConditionalFormat#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.CustomConditionalFormat#rule:member'
-    summary: Spécifie l’objet Rule sur ce format conditionnel.
-    name: rule
-    fullName: rule
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rule: ConditionalFormatRule;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalFormatRule:interface'
-references:
-  - uid: 'excel!Excel.ConditionalRangeFormat:interface'
-    name: ConditionalRangeFormat
-    fullName: Excel.ConditionalRangeFormat
-  - uid: 'excel!Excel.ConditionalFormatRule:interface'
-    name: ConditionalFormatRule
-    fullName: Excel.ConditionalFormatRule
+### YamlMime:TSType
+name: Excel.CustomConditionalFormat
+uid: excel!Excel.CustomConditionalFormat:interface
+package: excel!
+fullName: Excel.CustomConditionalFormat
+summary: Représente un type de format conditionnel personnalisé.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: format
+  uid: excel!Excel.CustomConditionalFormat#format:member
+  package: excel!
+  fullName: format
+  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ConditionalRangeFormat;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeFormat:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B8:E13\");\n    let conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);\n    conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT(\"RC[-1]\",0),TRUE)';\n    conditionalFormat.custom.format.font.color = \"green\";\n\n    await context.sync();\n}\n```"
+- name: rule
+  uid: excel!Excel.CustomConditionalFormat#rule:member
+  package: excel!
+  fullName: rule
+  summary: Spécifie l’objet Rule sur ce format conditionnel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly rule: ConditionalFormatRule;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalFormatRule:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.CustomConditionalFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 39fa2594e5f9908fa53de1e830129dad6db304d9
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414082"
