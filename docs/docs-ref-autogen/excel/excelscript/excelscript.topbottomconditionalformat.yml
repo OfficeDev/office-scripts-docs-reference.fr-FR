@@ -1,90 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat:interface'
-    summary: Représente un format conditionnel haut/bas.
-    name: ExcelScript.TopBottomConditionalFormat
-    fullName: ExcelScript.TopBottomConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TopBottomConditionalFormat#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.TopBottomConditionalFormat#getRule:member(1)'
-      - 'ExcelScript!ExcelScript.TopBottomConditionalFormat#setRule:member(1)'
-  - uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat#getFormat:member(1)'
-    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés du format conditionnel.'
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ConditionalRangeFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat#getRule:member(1)'
-    summary: Critères du format conditionnel le plus haut/bas.
-    name: getRule()
-    fullName: getRule()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRule(): ConditionalTopBottomRule;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TopBottomConditionalFormat#setRule:member(1)'
-    summary: Critères du format conditionnel le plus haut/bas.
-    name: setRule(rule)
-    fullName: setRule(rule)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRule(rule: ConditionalTopBottomRule): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>範例
-
-          ```javascript
-          /**
-           * This sample applies conditional formatting to the currently used range in the worksheet. 
-           * The conditional formatting is a green fill for the top 10% of values.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the current worksheet.
-            let selectedSheet = workbook.getActiveWorksheet();
-
-            // Get the used range in the worksheet.
-            let range = selectedSheet.getUsedRange();
-
-            // Set the fill color to green for the top 10% of values in the range.
-            let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)
-            conditionalFormat.getTopBottom().getFormat().getFill().setColor("green");
-            conditionalFormat.getTopBottom().setRule({
-              rank: 10, // The percentage threshold.
-              type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.
-            });
-          }
-          ```
-      parameters:
-        - id: rule
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
-    name: ConditionalRangeFormat
-    fullName: ExcelScript.ConditionalRangeFormat
-  - uid: 'ExcelScript!ExcelScript.ConditionalTopBottomRule:interface'
-    name: ConditionalTopBottomRule
-    fullName: ExcelScript.ConditionalTopBottomRule
+### YamlMime:TSType
+name: ExcelScript.TopBottomConditionalFormat
+uid: ExcelScript!ExcelScript.TopBottomConditionalFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.TopBottomConditionalFormat
+summary: Représente un format conditionnel haut/bas.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés du format conditionnel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ConditionalRangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
+      description: ''
+- name: getRule()
+  uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#getRule:member(1)
+  package: ExcelScript!
+  fullName: getRule()
+  summary: Critères du format conditionnel le plus haut/bas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRule(): ConditionalTopBottomRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomRule:interface" />
+      description: ''
+- name: setRule(rule)
+  uid: ExcelScript!ExcelScript.TopBottomConditionalFormat#setRule:member(1)
+  package: ExcelScript!
+  fullName: setRule(rule)
+  summary: Critères du format conditionnel le plus haut/bas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRule(rule: ConditionalTopBottomRule): void;'
+    parameters:
+    - id: rule
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTopBottomRule:interface" />
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
+metadata:
+  ms.openlocfilehash: 3a2f783224711b691587830e5138faf30a492838
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420215"

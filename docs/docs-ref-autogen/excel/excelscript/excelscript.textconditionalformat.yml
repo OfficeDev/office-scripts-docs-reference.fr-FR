@@ -1,65 +1,61 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat:interface'
-    summary: Représente un format conditionnel de texte spécifique.
-    name: ExcelScript.TextConditionalFormat
-    fullName: ExcelScript.TextConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)'
-      - 'ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)'
-  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)'
-    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés du format conditionnel.'
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ConditionalRangeFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)'
-    summary: Règle de mise en forme conditionnelle.
-    name: getRule()
-    fullName: getRule()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRule(): ConditionalTextComparisonRule;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)'
-    summary: Règle de mise en forme conditionnelle.
-    name: setRule(rule)
-    fullName: setRule(rule)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setRule(rule: ConditionalTextComparisonRule): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: rule
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
-    name: ConditionalRangeFormat
-    fullName: ExcelScript.ConditionalRangeFormat
-  - uid: 'ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface'
-    name: ConditionalTextComparisonRule
-    fullName: ExcelScript.ConditionalTextComparisonRule
+### YamlMime:TSType
+name: ExcelScript.TextConditionalFormat
+uid: ExcelScript!ExcelScript.TextConditionalFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.TextConditionalFormat
+summary: Représente un format conditionnel de texte spécifique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés du format conditionnel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ConditionalRangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
+      description: ''
+- name: getRule()
+  uid: ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)
+  package: ExcelScript!
+  fullName: getRule()
+  summary: Règle de mise en forme conditionnelle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRule(): ConditionalTextComparisonRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
+      description: ''
+- name: setRule(rule)
+  uid: ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)
+  package: ExcelScript!
+  fullName: setRule(rule)
+  summary: Règle de mise en forme conditionnelle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRule(rule: ConditionalTextComparisonRule): void;'
+    parameters:
+    - id: rule
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d8c00c2d246010e30903554288c963d01d010c8f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420250"
