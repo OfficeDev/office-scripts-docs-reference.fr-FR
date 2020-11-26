@@ -1,177 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection:interface'
-    summary: Représente les objets de bordure qui composent la bordure de la plage.
-    name: Excel.ConditionalRangeBorderCollection
-    fullName: Excel.ConditionalRangeBorderCollection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
-      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
-      - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
-      - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
-      - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
-    summary: Obtient la bordure inférieure.
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly bottom: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
-    summary: Nombre d’objets de bordure de la collection.
-    name: count
-    fullName: count
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly count: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
-    summary: Obtient un objet de bordure à l’aide de son nom.
-    name: getItem(index)
-    fullName: getItem(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getItem(
-                    index:
-                        | ConditionalRangeBorderIndex
-                        | "EdgeTop"
-                        | "EdgeBottom"
-                        | "EdgeLeft"
-                        | "EdgeRight"
-                ): ConditionalRangeBorder;
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: 'Valeur d’indice de l’objet de bordure à récupérer. Pour plus d’informations, voir Excel. ConditionalRangeBorderIndex.'
-          type:
-            - 'excel!Excel.ConditionalRangeBorderCollection#getItem~0:complex'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
-    summary: Obtient un objet de bordure à l’aide de son indice.
-    name: getItemAt(index)
-    fullName: getItemAt(index)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItemAt(index: number): ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-        description: ''
-      parameters:
-        - id: index
-          description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
-          type:
-            - number
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
-    summary: Obtient la bordure gauche.
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly left: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
-    summary: Obtient la bordure droite.
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly right: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
-    summary: Obtient la bordure supérieure.
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly top: ConditionalRangeBorder;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalRangeBorder:interface'
-references:
-  - uid: 'excel!Excel.ConditionalRangeBorder:interface'
-    name: ConditionalRangeBorder
-    fullName: Excel.ConditionalRangeBorder
-  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem~0:complex'
-    name: |-
-      | ConditionalRangeBorderIndex
+### YamlMime:TSType
+name: Excel.ConditionalRangeBorderCollection
+uid: excel!Excel.ConditionalRangeBorderCollection:interface
+package: excel!
+fullName: Excel.ConditionalRangeBorderCollection
+summary: Représente les objets de bordure qui composent la bordure de la plage.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bottom
+  uid: excel!Excel.ConditionalRangeBorderCollection#bottom:member
+  package: excel!
+  fullName: bottom
+  summary: Obtient la bordure inférieure.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly bottom: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+- name: count
+  uid: excel!Excel.ConditionalRangeBorderCollection#count:member
+  package: excel!
+  fullName: count
+  summary: Nombre d’objets de bordure de la collection.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly count: number;'
+    return:
+      type: number
+- name: left
+  uid: excel!Excel.ConditionalRangeBorderCollection#left:member
+  package: excel!
+  fullName: left
+  summary: Obtient la bordure gauche.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly left: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+- name: right
+  uid: excel!Excel.ConditionalRangeBorderCollection#right:member
+  package: excel!
+  fullName: right
+  summary: Obtient la bordure droite.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly right: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+- name: top
+  uid: excel!Excel.ConditionalRangeBorderCollection#top:member
+  package: excel!
+  fullName: top
+  summary: Obtient la bordure supérieure.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly top: ConditionalRangeBorder;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+methods:
+- name: getItem(index)
+  uid: excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)
+  package: excel!
+  fullName: getItem(index)
+  summary: Obtient un objet de bordure à l’aide de son nom.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getItem(
+                  index:
+                      | ConditionalRangeBorderIndex
                       | "EdgeTop"
                       | "EdgeBottom"
                       | "EdgeLeft"
                       | "EdgeRight"
-    fullName: |-
-      | Excel.ConditionalRangeBorderIndex
-                      | "EdgeTop"
-                      | "EdgeBottom"
-                      | "EdgeLeft"
-                      | "EdgeRight"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ConditionalRangeBorderIndex:enum'
-        name: ConditionalRangeBorderIndex
-        fullName: Excel.ConditionalRangeBorderIndex
-      - name: |2-
-
-                          | "EdgeTop"
-                          | "EdgeBottom"
-                          | "EdgeLeft"
-                          | "EdgeRight"
-                  
-        fullName: |2-
-
-                          | "EdgeTop"
-                          | "EdgeBottom"
-                          | "EdgeLeft"
-                          | "EdgeRight"
+              ): ConditionalRangeBorder;
+    parameters:
+    - id: index
+      description: Valeur d’indice de l’objet de bordure à récupérer. Pour plus d’informations, voir Excel. ConditionalRangeBorderIndex.
+      type: "| <xref uid=\"excel!Excel.ConditionalRangeBorderIndex:enum\" />\n                | \"EdgeTop\"\n                | \"EdgeBottom\"\n                | \"EdgeLeft\"\n                | \"EdgeRight\"\n        "
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+      description: ''
+- name: getItemAt(index)
+  uid: excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)
+  package: excel!
+  fullName: getItemAt(index)
+  summary: Obtient un objet de bordure à l’aide de son indice.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItemAt(index: number): ConditionalRangeBorder;'
+    parameters:
+    - id: index
+      description: Valeur d’indice de l’objet à récupérer. Avec indice zéro.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.ConditionalRangeBorder:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.ConditionalRangeBorderCollection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 0110d5aacf9c092e4aa0037ec45851818754c73f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414180"

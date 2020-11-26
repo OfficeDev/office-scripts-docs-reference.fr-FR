@@ -1,26 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
-    name: ExcelScript.ContentType
-    fullName: ExcelScript.ContentType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ContentType.mention:member'
-      - 'ExcelScript!ExcelScript.ContentType.plain:member'
-  - uid: 'ExcelScript!ExcelScript.ContentType.mention:member'
-    summary: Contenu de commentaire contenant des mentions.
-    name: mention
-    fullName: mention
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ContentType.plain:member'
-    summary: Indique le type de contenu de commentaire.
-    name: plain
-    fullName: plain
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ContentType
+uid: ExcelScript!ExcelScript.ContentType:enum
+package: ExcelScript!
+fullName: ExcelScript.ContentType
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: mention
+  uid: ExcelScript!ExcelScript.ContentType.mention:member
+  package: ExcelScript!
+  summary: Contenu de commentaire contenant des mentions.
+- name: plain
+  uid: ExcelScript!ExcelScript.ContentType.plain:member
+  package: ExcelScript!
+  summary: Indique le type de contenu de commentaire.
+metadata:
+  ms.openlocfilehash: 006eeb67a0cfd2fb589c5e4f8281c60a53ab0421
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415679"

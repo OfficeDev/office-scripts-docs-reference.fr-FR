@@ -1,81 +1,83 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo:interface'
-    summary: Définit le format d’affichage des nombres approprié pour la culture. Cette fonction est basée sur les paramètres de culture actuelle du système.
-    name: ExcelScript.DatetimeFormatInfo
-    fullName: ExcelScript.DatetimeFormatInfo
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
-      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
-      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
-      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
-      - 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)'
-    summary: Obtient la chaîne utilisée comme séparateur de date. Cette fonction est basée sur les paramètres système actuels.
-    name: getDateSeparator()
-    fullName: getDateSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDateSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)'
-    summary: Obtient la chaîne de format pour une valeur de date longue. Cette fonction est basée sur les paramètres système actuels.
-    name: getLongDatePattern()
-    fullName: getLongDatePattern()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLongDatePattern(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)'
-    summary: Obtient la chaîne de format pour une valeur d’heure longue. Cette fonction est basée sur les paramètres système actuels.
-    name: getLongTimePattern()
-    fullName: getLongTimePattern()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLongTimePattern(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)'
-    summary: Obtient la chaîne de format pour une valeur de date courte. Cette fonction est basée sur les paramètres système actuels.
-    name: getShortDatePattern()
-    fullName: getShortDatePattern()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShortDatePattern(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)'
-    summary: Obtient la chaîne utilisée comme séparateur d’heure. Cette fonction est basée sur les paramètres système actuels.
-    name: getTimeSeparator()
-    fullName: getTimeSeparator()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTimeSeparator(): string;'
-      return:
-        type:
-          - string
-        description: ''
+### YamlMime:TSType
+name: ExcelScript.DatetimeFormatInfo
+uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
+package: ExcelScript!
+fullName: ExcelScript.DatetimeFormatInfo
+summary: Définit le format d’affichage des nombres approprié pour la culture. Cette fonction est basée sur les paramètres de culture actuelle du système.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getDateSeparator()
+  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
+  package: ExcelScript!
+  fullName: getDateSeparator()
+  summary: Obtient la chaîne utilisée comme séparateur de date. Cette fonction est basée sur les paramètres système actuels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDateSeparator(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLongDatePattern()
+  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)
+  package: ExcelScript!
+  fullName: getLongDatePattern()
+  summary: Obtient la chaîne de format pour une valeur de date longue. Cette fonction est basée sur les paramètres système actuels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLongDatePattern(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLongTimePattern()
+  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
+  package: ExcelScript!
+  fullName: getLongTimePattern()
+  summary: Obtient la chaîne de format pour une valeur d’heure longue. Cette fonction est basée sur les paramètres système actuels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLongTimePattern(): string;'
+    return:
+      type: string
+      description: ''
+- name: getShortDatePattern()
+  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)
+  package: ExcelScript!
+  fullName: getShortDatePattern()
+  summary: Obtient la chaîne de format pour une valeur de date courte. Cette fonction est basée sur les paramètres système actuels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShortDatePattern(): string;'
+    return:
+      type: string
+      description: ''
+- name: getTimeSeparator()
+  uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
+  package: ExcelScript!
+  fullName: getTimeSeparator()
+  summary: Obtient la chaîne utilisée comme séparateur d’heure. Cette fonction est basée sur les paramètres système actuels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTimeSeparator(): string;'
+    return:
+      type: string
+      description: ''
+metadata:
+  ms.openlocfilehash: a0ef9ff40580d0e29330b73b2f05c382fd73f777
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415434"

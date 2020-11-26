@@ -1,173 +1,156 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartPlotArea:interface'
-    summary: Cet objet représente les attributs d’un objet plotArea de graphique.
-    name: Excel.ChartPlotArea
-    fullName: Excel.ChartPlotArea
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartPlotArea#format:member'
-      - 'excel!Excel.ChartPlotArea#height:member'
-      - 'excel!Excel.ChartPlotArea#insideHeight:member'
-      - 'excel!Excel.ChartPlotArea#insideLeft:member'
-      - 'excel!Excel.ChartPlotArea#insideTop:member'
-      - 'excel!Excel.ChartPlotArea#insideWidth:member'
-      - 'excel!Excel.ChartPlotArea#left:member'
-      - 'excel!Excel.ChartPlotArea#load:member(1)'
-      - 'excel!Excel.ChartPlotArea#position:member'
-      - 'excel!Excel.ChartPlotArea#top:member'
-      - 'excel!Excel.ChartPlotArea#width:member'
-  - uid: 'excel!Excel.ChartPlotArea#format:member'
-    summary: Cette énumération spécifie la mise en forme d’un graphique plotArea.
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ChartPlotAreaFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartPlotAreaFormat:interface'
-  - uid: 'excel!Excel.ChartPlotArea#height:member'
-    summary: Spécifie la valeur de la hauteur de plotArea.
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'height: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPlotArea#insideHeight:member'
-    summary: Spécifie la valeur insideHeight de plotArea.
-    name: insideHeight
-    fullName: insideHeight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'insideHeight: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPlotArea#insideLeft:member'
-    summary: Spécifie la valeur insideLeft de plotArea.
-    name: insideLeft
-    fullName: insideLeft
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'insideLeft: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPlotArea#insideTop:member'
-    summary: Spécifie la valeur insideTop de plotArea.
-    name: insideTop
-    fullName: insideTop
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'insideTop: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPlotArea#insideWidth:member'
-    summary: Spécifie la valeur insideWidth de plotArea.
-    name: insideWidth
-    fullName: insideWidth
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'insideWidth: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPlotArea#left:member'
-    summary: Spécifie la valeur gauche de plotArea.
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPlotArea#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartPlotArea#position:member'
-    summary: Spécifie la position de plotArea.
-    name: position
-    fullName: position
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'position: ChartPlotAreaPosition | "Automatic" | "Custom";'
-      return:
-        type:
-          - 'excel!Excel.ChartPlotArea#position~0:complex'
-  - uid: 'excel!Excel.ChartPlotArea#top:member'
-    summary: Spécifie la valeur la plus haute de plotArea.
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartPlotArea#width:member'
-    summary: Spécifie la valeur de la largeur de plotArea.
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'width: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartPlotAreaFormat:interface'
-    name: ChartPlotAreaFormat
-    fullName: Excel.ChartPlotAreaFormat
-  - uid: 'excel!Excel.ChartPlotArea#position~0:complex'
-    name: ChartPlotAreaPosition | "Automatic" | "Custom"
-    fullName: Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
-    spec.typeScript:
-      - uid: 'excel!Excel.ChartPlotAreaPosition:enum'
-        name: ChartPlotAreaPosition
-        fullName: Excel.ChartPlotAreaPosition
-      - name: ' | "Automatic" | "Custom"'
-        fullName: ' | "Automatic" | "Custom"'
+### YamlMime:TSType
+name: Excel.ChartPlotArea
+uid: excel!Excel.ChartPlotArea:interface
+package: excel!
+fullName: Excel.ChartPlotArea
+summary: Cet objet représente les attributs d’un objet plotArea de graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: format
+  uid: excel!Excel.ChartPlotArea#format:member
+  package: excel!
+  fullName: format
+  summary: Cette énumération spécifie la mise en forme d’un graphique plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ChartPlotAreaFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartPlotAreaFormat:interface" />
+- name: height
+  uid: excel!Excel.ChartPlotArea#height:member
+  package: excel!
+  fullName: height
+  summary: Spécifie la valeur de la hauteur de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'height: number;'
+    return:
+      type: number
+- name: insideHeight
+  uid: excel!Excel.ChartPlotArea#insideHeight:member
+  package: excel!
+  fullName: insideHeight
+  summary: Spécifie la valeur insideHeight de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'insideHeight: number;'
+    return:
+      type: number
+- name: insideLeft
+  uid: excel!Excel.ChartPlotArea#insideLeft:member
+  package: excel!
+  fullName: insideLeft
+  summary: Spécifie la valeur insideLeft de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'insideLeft: number;'
+    return:
+      type: number
+- name: insideTop
+  uid: excel!Excel.ChartPlotArea#insideTop:member
+  package: excel!
+  fullName: insideTop
+  summary: Spécifie la valeur insideTop de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'insideTop: number;'
+    return:
+      type: number
+- name: insideWidth
+  uid: excel!Excel.ChartPlotArea#insideWidth:member
+  package: excel!
+  fullName: insideWidth
+  summary: Spécifie la valeur insideWidth de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'insideWidth: number;'
+    return:
+      type: number
+- name: left
+  uid: excel!Excel.ChartPlotArea#left:member
+  package: excel!
+  fullName: left
+  summary: Spécifie la valeur gauche de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left: number;'
+    return:
+      type: number
+- name: position
+  uid: excel!Excel.ChartPlotArea#position:member
+  package: excel!
+  fullName: position
+  summary: Spécifie la position de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'position: ChartPlotAreaPosition | "Automatic" | "Custom";'
+    return:
+      type: <xref uid="excel!Excel.ChartPlotAreaPosition:enum" /> | "Automatic" | "Custom"
+- name: top
+  uid: excel!Excel.ChartPlotArea#top:member
+  package: excel!
+  fullName: top
+  summary: Spécifie la valeur la plus haute de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top: number;'
+    return:
+      type: number
+- name: width
+  uid: excel!Excel.ChartPlotArea#width:member
+  package: excel!
+  fullName: width
+  summary: Spécifie la valeur de la largeur de plotArea.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'width: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartPlotArea#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: f0a3f2a9229a6b6c6c0a2ade1b2bd26d0e444e4f
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414858"

@@ -1,46 +1,44 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CustomConditionalFormat:interface'
-    summary: Représente un type de format conditionnel personnalisé.
-    name: ExcelScript.CustomConditionalFormat
-    fullName: ExcelScript.CustomConditionalFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CustomConditionalFormat#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.CustomConditionalFormat#getRule:member(1)'
-  - uid: 'ExcelScript!ExcelScript.CustomConditionalFormat#getFormat:member(1)'
-    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.'
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ConditionalRangeFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.CustomConditionalFormat#getRule:member(1)'
-    summary: Spécifie l’objet Rule sur ce format conditionnel.
-    name: getRule()
-    fullName: getRule()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRule(): ConditionalFormatRule;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ConditionalFormatRule:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
-    name: ConditionalRangeFormat
-    fullName: ExcelScript.ConditionalRangeFormat
-  - uid: 'ExcelScript!ExcelScript.ConditionalFormatRule:interface'
-    name: ConditionalFormatRule
-    fullName: ExcelScript.ConditionalFormatRule
+### YamlMime:TSType
+name: ExcelScript.CustomConditionalFormat
+uid: ExcelScript!ExcelScript.CustomConditionalFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.CustomConditionalFormat
+summary: Représente un type de format conditionnel personnalisé.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.CustomConditionalFormat#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ConditionalRangeFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
+      description: ''
+- name: getRule()
+  uid: ExcelScript!ExcelScript.CustomConditionalFormat#getRule:member(1)
+  package: ExcelScript!
+  fullName: getRule()
+  summary: Spécifie l’objet Rule sur ce format conditionnel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRule(): ConditionalFormatRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRule:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 7b61d313814a23f543c9507123573298dde6f36d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415644"

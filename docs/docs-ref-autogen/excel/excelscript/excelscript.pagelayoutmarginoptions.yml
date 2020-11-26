@@ -1,89 +1,90 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions:interface'
-    summary: Représente les options des marges de la mise en page.
-    name: ExcelScript.PageLayoutMarginOptions
-    fullName: ExcelScript.PageLayoutMarginOptions
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
-      - 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member'
-    summary: Spécifie la marge inférieure de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
-    name: bottom
-    fullName: bottom
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bottom?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member'
-    summary: Spécifie la marge de pied de page de mise en page dans l’unité spécifiée à utiliser pour l’impression.
-    name: footer
-    fullName: footer
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'footer?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member'
-    summary: Spécifie la marge d’en-tête de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
-    name: header
-    fullName: header
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'header?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member'
-    summary: Spécifie la marge de gauche de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member'
-    summary: Spécifie la marge de droite de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
-    name: right
-    fullName: right
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'right?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member'
-    summary: Spécifie la marge supérieure de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top?: number;'
-      return:
-        type:
-          - number
+### YamlMime:TSType
+name: ExcelScript.PageLayoutMarginOptions
+uid: ExcelScript!ExcelScript.PageLayoutMarginOptions:interface
+package: ExcelScript!
+fullName: ExcelScript.PageLayoutMarginOptions
+summary: Représente les options des marges de la mise en page.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bottom
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member
+  package: ExcelScript!
+  fullName: bottom
+  summary: Spécifie la marge inférieure de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bottom?: number;'
+    return:
+      type: number
+- name: footer
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#footer:member
+  package: ExcelScript!
+  fullName: footer
+  summary: Spécifie la marge de pied de page de mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'footer?: number;'
+    return:
+      type: number
+- name: header
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member
+  package: ExcelScript!
+  fullName: header
+  summary: Spécifie la marge d’en-tête de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'header?: number;'
+    return:
+      type: number
+- name: left
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member
+  package: ExcelScript!
+  fullName: left
+  summary: Spécifie la marge de gauche de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left?: number;'
+    return:
+      type: number
+- name: right
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member
+  package: ExcelScript!
+  fullName: right
+  summary: Spécifie la marge de droite de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'right?: number;'
+    return:
+      type: number
+- name: top
+  uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member
+  package: ExcelScript!
+  fullName: top
+  summary: Spécifie la marge supérieure de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top?: number;'
+    return:
+      type: number
+metadata:
+  ms.openlocfilehash: 3cd60d73c21b4ed612a6cd7b470c5e26f961056d
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415283"

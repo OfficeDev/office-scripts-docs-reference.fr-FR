@@ -1,63 +1,65 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection:interface'
-    summary: Représente la protection d’un objet Workbook.
-    name: ExcelScript.WorkbookProtection
-    fullName: ExcelScript.WorkbookProtection
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
-      - 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
-      - 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)'
-    summary: Indique si le classeur est protégé.
-    name: getProtected()
-    fullName: getProtected()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getProtected(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)'
-    summary: Protège un classeur. Échoue si le classeur est protégé.
-    name: protect(password)
-    fullName: protect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'protect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: password
-          description: mot de passe de protection du classeur.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)'
-    summary: Annule la protection un classeur.
-    name: unprotect(password)
-    fullName: unprotect(password)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unprotect(password?: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: password
-          description: mot de passe de protection du classeur.
-          type:
-            - string
+### YamlMime:TSType
+name: ExcelScript.WorkbookProtection
+uid: ExcelScript!ExcelScript.WorkbookProtection:interface
+package: ExcelScript!
+fullName: ExcelScript.WorkbookProtection
+summary: Représente la protection d’un objet Workbook.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getProtected()
+  uid: ExcelScript!ExcelScript.WorkbookProtection#getProtected:member(1)
+  package: ExcelScript!
+  fullName: getProtected()
+  summary: Indique si le classeur est protégé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtected(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: protect(password)
+  uid: ExcelScript!ExcelScript.WorkbookProtection#protect:member(1)
+  package: ExcelScript!
+  fullName: protect(password)
+  summary: Protège un classeur. Échoue si le classeur est protégé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'protect(password?: string): void;'
+    parameters:
+    - id: password
+      description: mot de passe de protection du classeur.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: unprotect(password)
+  uid: ExcelScript!ExcelScript.WorkbookProtection#unprotect:member(1)
+  package: ExcelScript!
+  fullName: unprotect(password)
+  summary: Annule la protection un classeur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unprotect(password?: string): void;'
+    parameters:
+    - id: password
+      description: mot de passe de protection du classeur.
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 78fcc6042f655d841c8330506ca305e7533ac0f6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415161"

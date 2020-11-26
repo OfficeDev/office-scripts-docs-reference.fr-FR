@@ -1,137 +1,112 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Binding:interface'
-    summary: Représente une liaison Office.js définie dans le classeur.
-    name: Excel.Binding
-    fullName: Excel.Binding
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Binding#delete:member(1)'
-      - 'excel!Excel.Binding#getRange:member(1)'
-      - 'excel!Excel.Binding#getTable:member(1)'
-      - 'excel!Excel.Binding#getText:member(1)'
-      - 'excel!Excel.Binding#id:member'
-      - 'excel!Excel.Binding#load:member(1)'
-      - 'excel!Excel.Binding#type:member'
-  - uid: 'excel!Excel.Binding#delete:member(1)'
-    summary: Supprime la liaison.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Binding#getRange:member(1)'
-    summary: Renvoie la plage représentée par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
-    name: getRange()
-    fullName: getRange()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRange(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Binding#getTable:member(1)'
-    summary: Renvoie le tableau représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
-    name: getTable()
-    fullName: getTable()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTable(): Table;'
-      return:
-        type:
-          - 'excel!Excel.Table:interface'
-        description: ''
-  - uid: 'excel!Excel.Binding#getText:member(1)'
-    summary: Renvoie le texte représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
-    name: getText()
-    fullName: getText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getText(): ClientResult<string>;'
-      return:
-        type:
-          - 'excel!Excel.Binding#getText~0:complex'
-        description: ''
-  - uid: 'excel!Excel.Binding#id:member'
-    summary: Représente l’identificateur de liaison.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Binding#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Binding#type:member'
-    summary: 'Renvoie le type de la liaison. Pour plus d’informations, voir Excel. BindingType.'
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly type: BindingType | "Range" | "Table" | "Text";'
-      return:
-        type:
-          - 'excel!Excel.Binding#type~0:complex'
-references:
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.Table:interface'
-    name: Table
-    fullName: Excel.Table
-  - uid: 'excel!Excel.Binding#getText~0:complex'
-    name: ClientResult<string>
-    fullName: Excel.ClientResult<string>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <string>
-        fullName: <string>
-  - uid: 'excel!Excel.Binding#type~0:complex'
-    name: BindingType | "Range" | "Table" | "Text"
-    fullName: Excel.BindingType | "Range" | "Table" | "Text"
-    spec.typeScript:
-      - uid: 'excel!Excel.BindingType:enum'
-        name: BindingType
-        fullName: Excel.BindingType
-      - name: ' | "Range" | "Table" | "Text"'
-        fullName: ' | "Range" | "Table" | "Text"'
+### YamlMime:TSType
+name: Excel.Binding
+uid: excel!Excel.Binding:interface
+package: excel!
+fullName: Excel.Binding
+summary: Représente une liaison Office.js définie dans le classeur.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: id
+  uid: excel!Excel.Binding#id:member
+  package: excel!
+  fullName: id
+  summary: Représente l’identificateur de liaison.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly id: string;'
+    return:
+      type: string
+- name: type
+  uid: excel!Excel.Binding#type:member
+  package: excel!
+  fullName: type
+  summary: Renvoie le type de la liaison. Pour plus d’informations, voir Excel. BindingType.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly type: BindingType | "Range" | "Table" | "Text";'
+    return:
+      type: <xref uid="excel!Excel.BindingType:enum" /> | "Range" | "Table" | "Text"
+methods:
+- name: delete()
+  uid: excel!Excel.Binding#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Supprime la liaison.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getRange()
+  uid: excel!Excel.Binding#getRange:member(1)
+  package: excel!
+  fullName: getRange()
+  summary: Renvoie la plage représentée par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRange(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getTable()
+  uid: excel!Excel.Binding#getTable:member(1)
+  package: excel!
+  fullName: getTable()
+  summary: Renvoie le tableau représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTable(): Table;'
+    return:
+      type: <xref uid="excel!Excel.Table:interface" />
+      description: ''
+- name: getText()
+  uid: excel!Excel.Binding#getText:member(1)
+  package: excel!
+  fullName: getText()
+  summary: Renvoie le texte représenté par la liaison. Génère une erreur si la liaison n’est pas du type approprié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getText(): ClientResult<string>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;string&gt;
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Binding#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7c9efd696430922dcec71dddd3d9963b4d82fe75
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49413883"

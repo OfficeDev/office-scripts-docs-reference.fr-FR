@@ -1,287 +1,218 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartTrendlineLabel:interface'
-    summary: Cet objet représente les attributs d’un objet étiquette de courbe de tendance de graphique.
-    name: Excel.ChartTrendlineLabel
-    fullName: Excel.ChartTrendlineLabel
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartTrendlineLabel#autoText:member'
-      - 'excel!Excel.ChartTrendlineLabel#format:member'
-      - 'excel!Excel.ChartTrendlineLabel#formula:member'
-      - 'excel!Excel.ChartTrendlineLabel#height:member'
-      - 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
-      - 'excel!Excel.ChartTrendlineLabel#left:member'
-      - 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
-      - 'excel!Excel.ChartTrendlineLabel#load:member(1)'
-      - 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
-      - 'excel!Excel.ChartTrendlineLabel#text:member'
-      - 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
-      - 'excel!Excel.ChartTrendlineLabel#top:member'
-      - 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
-      - 'excel!Excel.ChartTrendlineLabel#width:member'
-  - uid: 'excel!Excel.ChartTrendlineLabel#autoText:member'
-    summary: Indique si l’étiquette de courbe de tendance génère automatiquement le texte approprié en fonction du contexte.
-    name: autoText
-    fullName: autoText
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'autoText: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartTrendlineLabel#format:member'
-    summary: Format de l’étiquette de courbe de tendance du graphique.
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: ChartTrendlineLabelFormat;'
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineLabelFormat:interface'
-  - uid: 'excel!Excel.ChartTrendlineLabel#formula:member'
-    summary: Valeur de chaîne qui représente la formule de l’étiquette de tendances du graphique à l’aide de la notation de style A1.
-    name: formula
-    fullName: formula
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formula: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartTrendlineLabel#height:member'
-    summary: 'Représente la hauteur, exprimée en points, de l’étiquette de tendances du graphique. Null si l’étiquette de tendances graphique n’est pas visible.'
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly height: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment:member'
-    summary: 'Représente l’alignement horizontal de l’étiquette de tendances du graphique. Pour plus d’informations, voir Excel. ChartTextHorizontalAlignment. Cette propriété est valide uniquement lorsque la TextOrientation de la courbe de tendance est-90, 90 ou 180.'
-    name: horizontalAlignment
-    fullName: horizontalAlignment
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        horizontalAlignment:
-                    | ChartTextHorizontalAlignment
+### YamlMime:TSType
+name: Excel.ChartTrendlineLabel
+uid: excel!Excel.ChartTrendlineLabel:interface
+package: excel!
+fullName: Excel.ChartTrendlineLabel
+summary: Cet objet représente les attributs d’un objet étiquette de courbe de tendance de graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: autoText
+  uid: excel!Excel.ChartTrendlineLabel#autoText:member
+  package: excel!
+  fullName: autoText
+  summary: Indique si l’étiquette de courbe de tendance génère automatiquement le texte approprié en fonction du contexte.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autoText: boolean;'
+    return:
+      type: boolean
+- name: format
+  uid: excel!Excel.ChartTrendlineLabel#format:member
+  package: excel!
+  fullName: format
+  summary: Format de l’étiquette de courbe de tendance du graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: ChartTrendlineLabelFormat;'
+    return:
+      type: <xref uid="excel!Excel.ChartTrendlineLabelFormat:interface" />
+- name: formula
+  uid: excel!Excel.ChartTrendlineLabel#formula:member
+  package: excel!
+  fullName: formula
+  summary: Valeur de chaîne qui représente la formule de l’étiquette de tendances du graphique à l’aide de la notation de style A1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formula: string;'
+    return:
+      type: string
+- name: height
+  uid: excel!Excel.ChartTrendlineLabel#height:member
+  package: excel!
+  fullName: height
+  summary: Représente la hauteur, exprimée en points, de l’étiquette de tendances du graphique. Null si l’étiquette de tendances graphique n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly height: number;'
+    return:
+      type: number
+- name: horizontalAlignment
+  uid: excel!Excel.ChartTrendlineLabel#horizontalAlignment:member
+  package: excel!
+  fullName: horizontalAlignment
+  summary: Représente l’alignement horizontal de l’étiquette de tendances du graphique. Pour plus d’informations, voir Excel. ChartTextHorizontalAlignment. Cette propriété est valide uniquement lorsque la TextOrientation de la courbe de tendance est-90, 90 ou 180.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      horizontalAlignment:
+                  | ChartTextHorizontalAlignment
+                  | "Center"
+                  | "Left"
+                  | "Right"
+                  | "Justify"
+                  | "Distributed";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartTextHorizontalAlignment:enum" />
                     | "Center"
                     | "Left"
                     | "Right"
                     | "Justify"
-                    | "Distributed";
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineLabel#horizontalAlignment~0:complex'
-  - uid: 'excel!Excel.ChartTrendlineLabel#left:member'
-    summary: 'Représente la distance en points, du bord gauche de l’étiquette de tendances graphique au bord gauche de la zone de graphique. Null si l’étiquette de tendances graphique n’est pas visible.'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'left: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendlineLabel#linkNumberFormat:member'
-    summary: Indique si le format de nombre est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu’il est modifié dans les cellules).
-    name: linkNumberFormat
-    fullName: linkNumberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'linkNumberFormat: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.ChartTrendlineLabel#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.ChartTrendlineLabel#numberFormat:member'
-    summary: Valeur de chaîne qui représente le code de format pour l’étiquette de tendances.
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'numberFormat: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartTrendlineLabel#text:member'
-    summary: Chaîne représentant le texte d’étiquette de tendances dans un graphique.
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'text: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.ChartTrendlineLabel#textOrientation:member'
-    summary: Représente l’angle auquel le texte est orienté pour l’étiquette de courbe de tendance du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
-    name: textOrientation
-    fullName: textOrientation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'textOrientation: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendlineLabel#top:member'
-    summary: 'Représente la distance en points, du bord supérieur de l’étiquette de tendances du graphique au bord supérieur de la zone de graphique. Null si l’étiquette de tendances graphique n’est pas visible.'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'top: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.ChartTrendlineLabel#verticalAlignment:member'
-    summary: 'Représente l’alignement vertical de l’étiquette de tendances du graphique. Pour plus d’informations, voir Excel. ChartTextVerticalAlignment. Cette propriété est valide uniquement lorsque l’TextOrientation de la courbe de tendance est égale à 0.'
-    name: verticalAlignment
-    fullName: verticalAlignment
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        verticalAlignment:
-                    | ChartTextVerticalAlignment
+                    | "Distributed"
+- name: left
+  uid: excel!Excel.ChartTrendlineLabel#left:member
+  package: excel!
+  fullName: left
+  summary: Représente la distance en points, du bord gauche de l’étiquette de tendances graphique au bord gauche de la zone de graphique. Null si l’étiquette de tendances graphique n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'left: number;'
+    return:
+      type: number
+- name: linkNumberFormat
+  uid: excel!Excel.ChartTrendlineLabel#linkNumberFormat:member
+  package: excel!
+  fullName: linkNumberFormat
+  summary: Indique si le format de nombre est lié aux cellules (de sorte que le format de nombre est modifié dans les étiquettes lorsqu’il est modifié dans les cellules).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'linkNumberFormat: boolean;'
+    return:
+      type: boolean
+- name: numberFormat
+  uid: excel!Excel.ChartTrendlineLabel#numberFormat:member
+  package: excel!
+  fullName: numberFormat
+  summary: Valeur de chaîne qui représente le code de format pour l’étiquette de tendances.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'numberFormat: string;'
+    return:
+      type: string
+- name: text
+  uid: excel!Excel.ChartTrendlineLabel#text:member
+  package: excel!
+  fullName: text
+  summary: Chaîne représentant le texte d’étiquette de tendances dans un graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'text: string;'
+    return:
+      type: string
+- name: textOrientation
+  uid: excel!Excel.ChartTrendlineLabel#textOrientation:member
+  package: excel!
+  fullName: textOrientation
+  summary: Représente l’angle auquel le texte est orienté pour l’étiquette de courbe de tendance du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'textOrientation: number;'
+    return:
+      type: number
+- name: top
+  uid: excel!Excel.ChartTrendlineLabel#top:member
+  package: excel!
+  fullName: top
+  summary: Représente la distance en points, du bord supérieur de l’étiquette de tendances du graphique au bord supérieur de la zone de graphique. Null si l’étiquette de tendances graphique n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'top: number;'
+    return:
+      type: number
+- name: verticalAlignment
+  uid: excel!Excel.ChartTrendlineLabel#verticalAlignment:member
+  package: excel!
+  fullName: verticalAlignment
+  summary: Représente l’alignement vertical de l’étiquette de tendances du graphique. Pour plus d’informations, voir Excel. ChartTextVerticalAlignment. Cette propriété est valide uniquement lorsque l’TextOrientation de la courbe de tendance est égale à 0.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      verticalAlignment:
+                  | ChartTextVerticalAlignment
+                  | "Center"
+                  | "Bottom"
+                  | "Top"
+                  | "Justify"
+                  | "Distributed";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.ChartTextVerticalAlignment:enum" />
                     | "Center"
                     | "Bottom"
                     | "Top"
                     | "Justify"
-                    | "Distributed";
-      return:
-        type:
-          - 'excel!Excel.ChartTrendlineLabel#verticalAlignment~0:complex'
-  - uid: 'excel!Excel.ChartTrendlineLabel#width:member'
-    summary: 'Représente la largeur, exprimée en points, de l’étiquette de tendances du graphique. Null si l’étiquette de tendances graphique n’est pas visible.'
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly width: number;'
-      return:
-        type:
-          - number
-references:
-  - uid: 'excel!Excel.ChartTrendlineLabelFormat:interface'
-    name: ChartTrendlineLabelFormat
-    fullName: Excel.ChartTrendlineLabelFormat
-  - uid: 'excel!Excel.ChartTrendlineLabel#horizontalAlignment~0:complex'
-    name: |-
-      | ChartTextHorizontalAlignment
-                  | "Center"
-                  | "Left"
-                  | "Right"
-                  | "Justify"
-                  | "Distributed"
-    fullName: |-
-      | Excel.ChartTextHorizontalAlignment
-                  | "Center"
-                  | "Left"
-                  | "Right"
-                  | "Justify"
-                  | "Distributed"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartTextHorizontalAlignment:enum'
-        name: ChartTextHorizontalAlignment
-        fullName: Excel.ChartTextHorizontalAlignment
-      - name: |2-
-
-                      | "Center"
-                      | "Left"
-                      | "Right"
-                      | "Justify"
-                      | "Distributed"
-        fullName: |2-
-
-                      | "Center"
-                      | "Left"
-                      | "Right"
-                      | "Justify"
-                      | "Distributed"
-  - uid: 'excel!Excel.ChartTrendlineLabel#verticalAlignment~0:complex'
-    name: |-
-      | ChartTextVerticalAlignment
-                  | "Center"
-                  | "Bottom"
-                  | "Top"
-                  | "Justify"
-                  | "Distributed"
-    fullName: |-
-      | Excel.ChartTextVerticalAlignment
-                  | "Center"
-                  | "Bottom"
-                  | "Top"
-                  | "Justify"
-                  | "Distributed"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
-        name: ChartTextVerticalAlignment
-        fullName: Excel.ChartTextVerticalAlignment
-      - name: |2-
-
-                      | "Center"
-                      | "Bottom"
-                      | "Top"
-                      | "Justify"
-                      | "Distributed"
-        fullName: |2-
-
-                      | "Center"
-                      | "Bottom"
-                      | "Top"
-                      | "Justify"
-                      | "Distributed"
+                    | "Distributed"
+- name: width
+  uid: excel!Excel.ChartTrendlineLabel#width:member
+  package: excel!
+  fullName: width
+  summary: Représente la largeur, exprimée en points, de l’étiquette de tendances du graphique. Null si l’étiquette de tendances graphique n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly width: number;'
+    return:
+      type: number
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartTrendlineLabel#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 3567b194f93a42af008a50cd50c502a3e26e6ce8
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414425"

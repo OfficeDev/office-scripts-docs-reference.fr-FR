@@ -1,126 +1,98 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.CustomProperty:interface'
-    summary: Représente une propriété personnalisée.
-    name: Excel.CustomProperty
-    fullName: Excel.CustomProperty
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.CustomProperty#delete:member(1)'
-      - 'excel!Excel.CustomProperty#key:member'
-      - 'excel!Excel.CustomProperty#load:member(1)'
-      - 'excel!Excel.CustomProperty#type:member'
-      - 'excel!Excel.CustomProperty#value:member'
-  - uid: 'excel!Excel.CustomProperty#delete:member(1)'
-    summary: Supprime la propriété personnalisée.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.CustomProperty#key:member'
-    summary: Clé de la propriété personnalisée. La clé est limitée à 255 caractères en dehors d’Excel sur le Web (les clés plus volumineuses sont automatiquement réduites à 255 caractères sur d’autres plateformes).
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly key: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.CustomProperty#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.CustomProperty#type:member'
-    summary: Type de la valeur utilisée pour la propriété personnalisée.
-    name: type
-    fullName: type
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: |-
-        readonly type:
-                    | DocumentPropertyType
+### YamlMime:TSType
+name: Excel.CustomProperty
+uid: excel!Excel.CustomProperty:interface
+package: excel!
+fullName: Excel.CustomProperty
+summary: Représente une propriété personnalisée.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: key
+  uid: excel!Excel.CustomProperty#key:member
+  package: excel!
+  fullName: key
+  summary: Clé de la propriété personnalisée. La clé est limitée à 255 caractères en dehors d’Excel sur le Web (les clés plus volumineuses sont automatiquement réduites à 255 caractères sur d’autres plateformes).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly key: string;'
+    return:
+      type: string
+- name: type
+  uid: excel!Excel.CustomProperty#type:member
+  package: excel!
+  fullName: type
+  summary: Type de la valeur utilisée pour la propriété personnalisée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      readonly type:
+                  | DocumentPropertyType
+                  | "Number"
+                  | "Boolean"
+                  | "Date"
+                  | "String"
+                  | "Float";
+    return:
+      type: >-
+        | <xref uid="excel!Excel.DocumentPropertyType:enum" />
                     | "Number"
                     | "Boolean"
                     | "Date"
                     | "String"
-                    | "Float";
-      return:
-        type:
-          - 'excel!Excel.CustomProperty#type~0:complex'
-  - uid: 'excel!Excel.CustomProperty#value:member'
-    summary: Valeur de la propriété personnalisée. La valeur est limitée à 255 caractères en dehors d’Excel sur le Web (les valeurs les plus élevées sont automatiquement réduites à 255 caractères sur d’autres plateformes).
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'value: any;'
-      return:
-        type:
-          - any
-references:
-  - uid: 'excel!Excel.CustomProperty#type~0:complex'
-    name: |-
-      | DocumentPropertyType
-                  | "Number"
-                  | "Boolean"
-                  | "Date"
-                  | "String"
-                  | "Float"
-    fullName: |-
-      | Excel.DocumentPropertyType
-                  | "Number"
-                  | "Boolean"
-                  | "Date"
-                  | "String"
-                  | "Float"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.DocumentPropertyType:enum'
-        name: DocumentPropertyType
-        fullName: Excel.DocumentPropertyType
-      - name: |2-
-
-                      | "Number"
-                      | "Boolean"
-                      | "Date"
-                      | "String"
-                      | "Float"
-        fullName: |2-
-
-                      | "Number"
-                      | "Boolean"
-                      | "Date"
-                      | "String"
-                      | "Float"
+                    | "Float"
+- name: value
+  uid: excel!Excel.CustomProperty#value:member
+  package: excel!
+  fullName: value
+  summary: Valeur de la propriété personnalisée. La valeur est limitée à 255 caractères en dehors d’Excel sur le Web (les valeurs les plus élevées sont automatiquement réduites à 255 caractères sur d’autres plateformes).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'value: any;'
+    return:
+      type: any
+methods:
+- name: delete()
+  uid: excel!Excel.CustomProperty#delete:member(1)
+  package: excel!
+  fullName: delete()
+  summary: Supprime la propriété personnalisée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.CustomProperty#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 7f1578f1fb451c82ce126983269f801d44940f0a
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49414075"
