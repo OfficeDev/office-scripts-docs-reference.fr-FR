@@ -1,70 +1,66 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CellBorder:interface'
-    summary: 'Représente les propriétés d’une bordure unique renvoyée par`getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le paramètre d’entrée de la propriété border de`setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et`setColumnProperties`<!-- -->.'
-    name: ExcelScript.CellBorder
-    fullName: ExcelScript.CellBorder
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CellBorder#color:member'
-      - 'ExcelScript!ExcelScript.CellBorder#style:member'
-      - 'ExcelScript!ExcelScript.CellBorder#tintAndShade:member'
-      - 'ExcelScript!ExcelScript.CellBorder#weight:member'
-  - uid: 'ExcelScript!ExcelScript.CellBorder#color:member'
-    summary: Représente la `color` propriété d’une bordure simple.
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.CellBorder#style:member'
-    summary: Représente la `style` propriété d’une bordure simple.
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style?: BorderLineStyle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BorderLineStyle:enum'
-  - uid: 'ExcelScript!ExcelScript.CellBorder#tintAndShade:member'
-    summary: Représente la `tintAndShade` propriété d’une bordure simple.
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.CellBorder#weight:member'
-    summary: Représente la `weight` propriété d’une bordure simple.
-    name: weight
-    fullName: weight
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'weight?: BorderWeight;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.BorderWeight:enum'
-references:
-  - uid: 'ExcelScript!ExcelScript.BorderLineStyle:enum'
-    name: BorderLineStyle
-    fullName: ExcelScript.BorderLineStyle
-  - uid: 'ExcelScript!ExcelScript.BorderWeight:enum'
-    name: BorderWeight
-    fullName: ExcelScript.BorderWeight
+### YamlMime:TSType
+name: ExcelScript.CellBorder
+uid: ExcelScript!ExcelScript.CellBorder:interface
+package: ExcelScript!
+fullName: ExcelScript.CellBorder
+summary: Représente les propriétés d’une bordure unique renvoyée par `getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le paramètre d’entrée de la propriété border de `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et `setColumnProperties`<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: color
+  uid: ExcelScript!ExcelScript.CellBorder#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: Représente la `color` propriété d’une bordure simple.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: style
+  uid: ExcelScript!ExcelScript.CellBorder#style:member
+  package: ExcelScript!
+  fullName: style
+  summary: Représente la `style` propriété d’une bordure simple.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style?: BorderLineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BorderLineStyle:enum" />
+- name: tintAndShade
+  uid: ExcelScript!ExcelScript.CellBorder#tintAndShade:member
+  package: ExcelScript!
+  fullName: tintAndShade
+  summary: Représente la `tintAndShade` propriété d’une bordure simple.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade?: number;'
+    return:
+      type: number
+- name: weight
+  uid: ExcelScript!ExcelScript.CellBorder#weight:member
+  package: ExcelScript!
+  fullName: weight
+  summary: Représente la `weight` propriété d’une bordure simple.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'weight?: BorderWeight;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
+metadata:
+  ms.openlocfilehash: 5892c241cee81f97e1b52001d2d8cbb02d03f295
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417183"

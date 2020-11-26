@@ -1,324 +1,266 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.Comment:interface'
-    summary: Représente un commentaire dans le classeur.
-    name: ExcelScript.Comment
-    fullName: ExcelScript.Comment
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.Comment#addCommentReply:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#delete:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getId:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getMentions:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getReplies:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getResolved:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#getRichContent:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#setContent:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#setResolved:member(1)'
-      - 'ExcelScript!ExcelScript.Comment#updateMentions:member(1)'
-  - uid: 'ExcelScript!ExcelScript.Comment#addCommentReply:member(1)'
-    summary: Crée une réponse à un commentaire pour un commentaire.
-    name: 'addCommentReply(content, contentType)'
-    fullName: 'addCommentReply(content, contentType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        addCommentReply(
-                    content: CommentRichContent | string,
-                    contentType?: ContentType
-                ): CommentReply;
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CommentReply:interface'
-        description: ''
-      parameters:
-        - id: content
-          description: 'Contenu du commentaire. Il peut s’agir d’une chaîne ou d’une interface CommentRichContent (par exemple, pour les commentaires avec mentions).'
-          type:
-            - 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
-        - id: contentType
-          description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum `ContentType.Plain`<!-- -->.
-          type:
-            - 'ExcelScript!ExcelScript.ContentType:enum'
-  - uid: 'ExcelScript!ExcelScript.Comment#delete:member(1)'
-    summary: Supprime le commentaire et toutes les réponses connectées.
-    name: delete()
-    fullName: delete()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)'
-    summary: Obtenir l’adresse email de l’auteur du commentaire.
-    name: getAuthorEmail()
-    fullName: getAuthorEmail()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAuthorEmail(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getAuthorName:member(1)'
-    summary: Obtient le nom de l’auteur du commentaire.
-    name: getAuthorName()
-    fullName: getAuthorName()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAuthorName(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getCommentReply:member(1)'
-    summary: Renvoie une réponse de commentaire identifié via son ID.
-    name: getCommentReply(commentReplyId)
-    fullName: getCommentReply(commentReplyId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCommentReply(commentReplyId: string): CommentReply;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.CommentReply:interface'
-        description: ''
-      parameters:
-        - id: commentReplyId
-          description: Identificateur de la réponse de commentaire.
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Comment#getContent:member(1)'
-    summary: Contenu du commentaire. La chaîne est en texte brut.
-    name: getContent()
-    fullName: getContent()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getContent(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getContentType:member(1)'
-    summary: Obtient le type de contenu du commentaire.
-    name: getContentType()
-    fullName: getContentType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getContentType(): ContentType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ContentType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getCreationDate:member(1)'
-    summary: 'Obtenir l’heure de création du commentaire. Renvoie la valeur null si le commentaire a été converti d’une note, étant donné que le commentaire ne dispose pas d’une date de création.'
-    name: getCreationDate()
-    fullName: getCreationDate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCreationDate(): Date;'
-      return:
-        type:
-          - '!Date:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getId:member(1)'
-    summary: Spécifie l’identificateur de commentaire.
-    name: getId()
-    fullName: getId()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getId(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getLocation:member(1)'
-    summary: Obtient la cellule dans laquelle se trouve ce commentaire.
-    name: getLocation()
-    fullName: getLocation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLocation(): Range;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Range:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getMentions:member(1)'
-    summary: 'Obtient les entités (par exemple, les personnes) mentionnées dans les commentaires.'
-    name: getMentions()
-    fullName: getMentions()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMentions(): CommentMention[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment#getMentions~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getReplies:member(1)'
-    summary: Représente une collection de feuilles de calcul associées au classeur.
-    name: getReplies()
-    fullName: getReplies()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getReplies(): CommentReply[];'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Comment#getReplies~0:complex'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getResolved:member(1)'
-    summary: "État du fil de commentaire. La valeur «\_true\_» signifie que le thread de commentaire est résolu."
-    name: getResolved()
-    fullName: getResolved()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getResolved(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#getRichContent:member(1)'
-    summary: 'Obtient le contenu de commentaire enrichi (par exemple, mentions dans les commentaires). Cette chaîne n’est pas destinée à être affichée aux utilisateurs finaux. Votre complément doit uniquement l’utiliser pour analyser le contenu de commentaire enrichi.'
-    name: getRichContent()
-    fullName: getRichContent()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRichContent(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.Comment#setContent:member(1)'
-    summary: Contenu du commentaire. La chaîne est en texte brut.
-    name: setContent(content)
-    fullName: setContent(content)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setContent(content: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: content
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.Comment#setResolved:member(1)'
-    summary: "État du fil de commentaire. La valeur «\_true\_» signifie que le thread de commentaire est résolu."
-    name: setResolved(resolved)
-    fullName: setResolved(resolved)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setResolved(resolved: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: resolved
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.Comment#updateMentions:member(1)'
-    summary: Met à jour le contenu de commentaire avec une chaîne spécialement mise en forme et une liste de mentions.
-    name: updateMentions(contentWithMentions)
-    fullName: updateMentions(contentWithMentions)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: contentWithMentions
-          description: Contenu du commentaire. Il contient une chaîne spécialement mise en forme et une liste de mentions qui seront analysées dans la chaîne lors de son affichage par Excel.
-          type:
-            - 'ExcelScript!ExcelScript.CommentRichContent:interface'
-references:
-  - uid: 'ExcelScript!ExcelScript.CommentReply:interface'
-    name: CommentReply
-    fullName: ExcelScript.CommentReply
-  - uid: 'ExcelScript!ExcelScript.Comment#addCommentReply~0:complex'
-    name: CommentRichContent | string
-    fullName: ExcelScript.CommentRichContent | string
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
-        name: CommentRichContent
-        fullName: ExcelScript.CommentRichContent
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'ExcelScript!ExcelScript.ContentType:enum'
-    name: ContentType
-    fullName: ExcelScript.ContentType
-  - uid: '!Date:interface'
-    name: Date
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
-  - uid: 'ExcelScript!ExcelScript.Comment#getMentions~0:complex'
-    name: 'CommentMention[]'
-    fullName: 'ExcelScript.CommentMention[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentMention:interface'
-        name: CommentMention
-        fullName: ExcelScript.CommentMention
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.Comment#getReplies~0:complex'
-    name: 'CommentReply[]'
-    fullName: 'ExcelScript.CommentReply[]'
-    spec.typeScript:
-      - uid: 'ExcelScript!ExcelScript.CommentReply:interface'
-        name: CommentReply
-        fullName: ExcelScript.CommentReply
-      - name: '[]'
-        fullName: '[]'
-  - uid: 'ExcelScript!ExcelScript.CommentRichContent:interface'
-    name: CommentRichContent
-    fullName: ExcelScript.CommentRichContent
+### YamlMime:TSType
+name: ExcelScript.Comment
+uid: ExcelScript!ExcelScript.Comment:interface
+package: ExcelScript!
+fullName: ExcelScript.Comment
+summary: Représente un commentaire dans le classeur.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: addCommentReply(content, contentType)
+  uid: ExcelScript!ExcelScript.Comment#addCommentReply:member(1)
+  package: ExcelScript!
+  fullName: addCommentReply(content, contentType)
+  summary: Crée une réponse à un commentaire pour un commentaire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      addCommentReply(
+                  content: CommentRichContent | string,
+                  contentType?: ContentType
+              ): CommentReply;
+    parameters:
+    - id: content
+      description: Contenu du commentaire. Il peut s’agir d’une chaîne ou d’une interface CommentRichContent (par exemple, pour les commentaires avec mentions).
+      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
+    - id: contentType
+      description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum `ContentType.Plain`<!-- -->.
+      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.Comment#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Supprime le commentaire et toutes les réponses connectées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAuthorEmail()
+  uid: ExcelScript!ExcelScript.Comment#getAuthorEmail:member(1)
+  package: ExcelScript!
+  fullName: getAuthorEmail()
+  summary: Obtenir l’adresse email de l’auteur du commentaire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAuthorEmail(): string;'
+    return:
+      type: string
+      description: ''
+- name: getAuthorName()
+  uid: ExcelScript!ExcelScript.Comment#getAuthorName:member(1)
+  package: ExcelScript!
+  fullName: getAuthorName()
+  summary: Obtient le nom de l’auteur du commentaire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAuthorName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getCommentReply(commentReplyId)
+  uid: ExcelScript!ExcelScript.Comment#getCommentReply:member(1)
+  package: ExcelScript!
+  fullName: getCommentReply(commentReplyId)
+  summary: Renvoie une réponse de commentaire identifié via son ID.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCommentReply(commentReplyId: string): CommentReply;'
+    parameters:
+    - id: commentReplyId
+      description: Identificateur de la réponse de commentaire.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />
+      description: ''
+- name: getContent()
+  uid: ExcelScript!ExcelScript.Comment#getContent:member(1)
+  package: ExcelScript!
+  fullName: getContent()
+  summary: Contenu du commentaire. La chaîne est en texte brut.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getContent(): string;'
+    return:
+      type: string
+      description: ''
+- name: getContentType()
+  uid: ExcelScript!ExcelScript.Comment#getContentType:member(1)
+  package: ExcelScript!
+  fullName: getContentType()
+  summary: Obtient le type de contenu du commentaire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getContentType(): ContentType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ContentType:enum" />
+      description: ''
+- name: getCreationDate()
+  uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
+  package: ExcelScript!
+  fullName: getCreationDate()
+  summary: Obtenir l’heure de création du commentaire. Renvoie la valeur null si le commentaire a été converti d’une note, étant donné que le commentaire ne dispose pas d’une date de création.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCreationDate(): Date;'
+    return:
+      type: Date
+      description: ''
+- name: getId()
+  uid: ExcelScript!ExcelScript.Comment#getId:member(1)
+  package: ExcelScript!
+  fullName: getId()
+  summary: Spécifie l’identificateur de commentaire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getId(): string;'
+    return:
+      type: string
+      description: ''
+- name: getLocation()
+  uid: ExcelScript!ExcelScript.Comment#getLocation:member(1)
+  package: ExcelScript!
+  fullName: getLocation()
+  summary: Obtient la cellule dans laquelle se trouve ce commentaire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLocation(): Range;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
+- name: getMentions()
+  uid: ExcelScript!ExcelScript.Comment#getMentions:member(1)
+  package: ExcelScript!
+  fullName: getMentions()
+  summary: Obtient les entités (par exemple, les personnes) mentionnées dans les commentaires.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMentions(): CommentMention[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentMention:interface" />[]
+      description: ''
+- name: getReplies()
+  uid: ExcelScript!ExcelScript.Comment#getReplies:member(1)
+  package: ExcelScript!
+  fullName: getReplies()
+  summary: Représente une collection de feuilles de calcul associées au classeur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReplies(): CommentReply[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CommentReply:interface" />[]
+      description: ''
+- name: getResolved()
+  uid: ExcelScript!ExcelScript.Comment#getResolved:member(1)
+  package: ExcelScript!
+  fullName: getResolved()
+  summary: État du fil de commentaire. La valeur « true » signifie que le thread de commentaire est résolu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getResolved(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getRichContent()
+  uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
+  package: ExcelScript!
+  fullName: getRichContent()
+  summary: Obtient le contenu de commentaire enrichi (par exemple, mentions dans les commentaires). Cette chaîne n’est pas destinée à être affichée aux utilisateurs finaux. Votre complément doit uniquement l’utiliser pour analyser le contenu de commentaire enrichi.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRichContent(): string;'
+    return:
+      type: string
+      description: ''
+- name: setContent(content)
+  uid: ExcelScript!ExcelScript.Comment#setContent:member(1)
+  package: ExcelScript!
+  fullName: setContent(content)
+  summary: Contenu du commentaire. La chaîne est en texte brut.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setContent(content: string): void;'
+    parameters:
+    - id: content
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setResolved(resolved)
+  uid: ExcelScript!ExcelScript.Comment#setResolved:member(1)
+  package: ExcelScript!
+  fullName: setResolved(resolved)
+  summary: État du fil de commentaire. La valeur « true » signifie que le thread de commentaire est résolu.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setResolved(resolved: boolean): void;'
+    parameters:
+    - id: resolved
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: updateMentions(contentWithMentions)
+  uid: ExcelScript!ExcelScript.Comment#updateMentions:member(1)
+  package: ExcelScript!
+  fullName: updateMentions(contentWithMentions)
+  summary: Met à jour le contenu de commentaire avec une chaîne spécialement mise en forme et une liste de mentions.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
+    parameters:
+    - id: contentWithMentions
+      description: Contenu du commentaire. Il contient une chaîne spécialement mise en forme et une liste de mentions qui seront analysées dans la chaîne lors de son affichage par Excel.
+      type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 99f2cf48b37e0d1b0db82fa78492b823e4d5eee7
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415973"

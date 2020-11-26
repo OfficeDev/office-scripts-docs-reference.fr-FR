@@ -1,49 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
-    name: ExcelScript.ClearApplyTo
-    fullName: ExcelScript.ClearApplyTo
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ClearApplyTo.all:member'
-      - 'ExcelScript!ExcelScript.ClearApplyTo.contents:member'
-      - 'ExcelScript!ExcelScript.ClearApplyTo.formats:member'
-      - 'ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member'
-      - 'ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member'
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo.all:member'
-    name: all
-    fullName: all
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo.contents:member'
-    summary: Efface le contenu de la plage.
-    name: contents
-    fullName: contents
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo.formats:member'
-    summary: Efface toutes les mises en forme de la plage.
-    name: formats
-    fullName: formats
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member'
-    summary: 'Efface tous les liens hypertexte, mais conserve tout le contenu et la mise en forme.'
-    name: hyperlinks
-    fullName: hyperlinks
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member'
-    summary: 'Supprime les liens hypertexte et la mise en forme de la cellule, mais laisse le contenu, les mises en forme conditionnelles et la validation des données intactes.'
-    name: removeHyperlinks
-    fullName: removeHyperlinks
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ClearApplyTo
+uid: ExcelScript!ExcelScript.ClearApplyTo:enum
+package: ExcelScript!
+fullName: ExcelScript.ClearApplyTo
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: all
+  uid: ExcelScript!ExcelScript.ClearApplyTo.all:member
+  package: ExcelScript!
+  summary: ''
+- name: contents
+  uid: ExcelScript!ExcelScript.ClearApplyTo.contents:member
+  package: ExcelScript!
+  summary: Efface le contenu de la plage.
+- name: formats
+  uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
+  package: ExcelScript!
+  summary: Efface toutes les mises en forme de la plage.
+- name: hyperlinks
+  uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
+  package: ExcelScript!
+  summary: Efface tous les liens hypertexte, mais conserve tout le contenu et la mise en forme.
+- name: removeHyperlinks
+  uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
+  package: ExcelScript!
+  summary: Supprime les liens hypertexte et la mise en forme de la cellule, mais laisse le contenu, les mises en forme conditionnelles et la validation des données intactes.
+metadata:
+  ms.openlocfilehash: ac23bc453e0ec416e0d2f4bde26e0f69a7270ccf
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49415980"

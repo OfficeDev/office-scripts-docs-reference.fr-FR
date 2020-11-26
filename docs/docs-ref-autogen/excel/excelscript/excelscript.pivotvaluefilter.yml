@@ -1,122 +1,114 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter:interface'
-    summary: Modèle configurable pour un filtre de valeur à appliquer à un champ de tableau croisé dynamique. L `condition` 'définit les critères qui doivent être définis afin que le filtre fonctionne.
-    name: ExcelScript.PivotValueFilter
-    fullName: ExcelScript.PivotValueFilter
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.PivotValueFilter#comparator:member'
-      - 'ExcelScript!ExcelScript.PivotValueFilter#condition:member'
-      - 'ExcelScript!ExcelScript.PivotValueFilter#exclusive:member'
-      - 'ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member'
-      - 'ExcelScript!ExcelScript.PivotValueFilter#selectionType:member'
-      - 'ExcelScript!ExcelScript.PivotValueFilter#threshold:member'
-      - 'ExcelScript!ExcelScript.PivotValueFilter#upperBound:member'
-      - 'ExcelScript!ExcelScript.PivotValueFilter#value:member'
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#comparator:member'
-    summary: "Le comparateur est la valeur statique à laquelle les autres valeurs sont comparées. Le type de comparaison est défini par la condition. Par exemple, si le comparateur est «\_50\_» et la condition est «\_GreaterThan\_», toutes les valeurs d’élément qui ne sont pas supérieures à 50 seront supprimées par le filtre."
-    name: comparator
-    fullName: comparator
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'comparator?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#condition:member'
-    summary: 'Spécifie la condition pour le filtre, qui définit les critères de filtrage nécessaires.'
-    name: condition
-    fullName: condition
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'condition: ValueFilterCondition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#exclusive:member'
-    summary: 'Si la valeur est true, Filter *exclut* les éléments qui répondent aux critères. La valeur par défaut est false (filtre pour inclure les éléments qui satisfont les critères).'
-    name: exclusive
-    fullName: exclusive
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'exclusive?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member'
-    summary: Limite inférieure de la plage de la condition de `Between` filtre.
-    name: lowerBound
-    fullName: lowerBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'lowerBound?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#selectionType:member'
-    summary: 'Indique si le filtre est destiné à l’élément N haut/bas, le niveau haut/bas de N pour cent, ou la somme N-Top/Bottom.'
-    name: selectionType
-    fullName: selectionType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'selectionType?: TopBottomSelectionType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#threshold:member'
-    summary: "Le nombre de seuils «\_N\_» d’éléments, pourcentage ou somme à filtrer pour une condition de filtre de haut en bas."
-    name: threshold
-    fullName: threshold
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'threshold?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#upperBound:member'
-    summary: La limite supérieure de la plage pour la `Between` condition de filtre.
-    name: upperBound
-    fullName: upperBound
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'upperBound?: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.PivotValueFilter#value:member'
-    summary: "Nom de la «\_valeur\_» sélectionnée dans le champ à utiliser pour filtrer."
-    name: value
-    fullName: value
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'value: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'ExcelScript!ExcelScript.ValueFilterCondition:enum'
-    name: ValueFilterCondition
-    fullName: ExcelScript.ValueFilterCondition
-  - uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
-    name: TopBottomSelectionType
-    fullName: ExcelScript.TopBottomSelectionType
+### YamlMime:TSType
+name: ExcelScript.PivotValueFilter
+uid: ExcelScript!ExcelScript.PivotValueFilter:interface
+package: ExcelScript!
+fullName: ExcelScript.PivotValueFilter
+summary: Modèle configurable pour un filtre de valeur à appliquer à un champ de tableau croisé dynamique. L `condition` 'définit les critères qui doivent être définis afin que le filtre fonctionne.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: comparator
+  uid: ExcelScript!ExcelScript.PivotValueFilter#comparator:member
+  package: ExcelScript!
+  fullName: comparator
+  summary: Le comparateur est la valeur statique à laquelle les autres valeurs sont comparées. Le type de comparaison est défini par la condition. Par exemple, si le comparateur est « 50 » et la condition est « GreaterThan », toutes les valeurs d’élément qui ne sont pas supérieures à 50 seront supprimées par le filtre.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'comparator?: number;'
+    return:
+      type: number
+- name: condition
+  uid: ExcelScript!ExcelScript.PivotValueFilter#condition:member
+  package: ExcelScript!
+  fullName: condition
+  summary: Spécifie la condition pour le filtre, qui définit les critères de filtrage nécessaires.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'condition: ValueFilterCondition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ValueFilterCondition:enum" />
+- name: exclusive
+  uid: ExcelScript!ExcelScript.PivotValueFilter#exclusive:member
+  package: ExcelScript!
+  fullName: exclusive
+  summary: Si la valeur est true, Filter *exclut* les éléments qui répondent aux critères. La valeur par défaut est false (filtre pour inclure les éléments qui satisfont les critères).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'exclusive?: boolean;'
+    return:
+      type: boolean
+- name: lowerBound
+  uid: ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member
+  package: ExcelScript!
+  fullName: lowerBound
+  summary: Limite inférieure de la plage de la condition de `Between` filtre.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'lowerBound?: number;'
+    return:
+      type: number
+- name: selectionType
+  uid: ExcelScript!ExcelScript.PivotValueFilter#selectionType:member
+  package: ExcelScript!
+  fullName: selectionType
+  summary: Indique si le filtre est destiné à l’élément N haut/bas, le niveau haut/bas de N pour cent, ou la somme N-Top/Bottom.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'selectionType?: TopBottomSelectionType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.TopBottomSelectionType:enum" />
+- name: threshold
+  uid: ExcelScript!ExcelScript.PivotValueFilter#threshold:member
+  package: ExcelScript!
+  fullName: threshold
+  summary: Le nombre de seuils « N » d’éléments, pourcentage ou somme à filtrer pour une condition de filtre de haut en bas.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'threshold?: number;'
+    return:
+      type: number
+- name: upperBound
+  uid: ExcelScript!ExcelScript.PivotValueFilter#upperBound:member
+  package: ExcelScript!
+  fullName: upperBound
+  summary: La limite supérieure de la plage pour la `Between` condition de filtre.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'upperBound?: number;'
+    return:
+      type: number
+- name: value
+  uid: ExcelScript!ExcelScript.PivotValueFilter#value:member
+  package: ExcelScript!
+  fullName: value
+  summary: Nom de la « valeur » sélectionnée dans le champ à utiliser pour filtrer.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'value: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: 3c35fae98f6ae6e897b205b57d818601ad71a0cc
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416707"

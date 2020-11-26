@@ -1,167 +1,151 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars:interface'
-    summary: Cet objet représente les attributs des barres d’erreur d’un graphique.
-    name: ExcelScript.ChartErrorBars
-    fullName: ExcelScript.ChartErrorBars
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartErrorBars#getEndStyleCap:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#getInclude:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#getType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#setEndStyleCap:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#setInclude:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#setType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartErrorBars#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#getEndStyleCap:member(1)'
-    summary: Indique si les barres d’erreur sont dotées d’un embout de style.
-    name: getEndStyleCap()
-    fullName: getEndStyleCap()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEndStyleCap(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#getFormat:member(1)'
-    summary: Spécifie le type de mise en forme de barres d’erreur.
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartErrorBarsFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartErrorBarsFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#getInclude:member(1)'
-    summary: Spécifie les parties de barres d’erreur à inclure.
-    name: getInclude()
-    fullName: getInclude()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getInclude(): ChartErrorBarsInclude;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartErrorBarsInclude:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#getType:member(1)'
-    summary: Le type de plage marqué par des barres d’erreur.
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): ChartErrorBarsType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartErrorBarsType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#getVisible:member(1)'
-    summary: Indique si les barres d’erreur sont affichées.
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#setEndStyleCap:member(1)'
-    summary: Indique si les barres d’erreur sont dotées d’un embout de style.
-    name: setEndStyleCap(endStyleCap)
-    fullName: setEndStyleCap(endStyleCap)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setEndStyleCap(endStyleCap: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: endStyleCap
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#setInclude:member(1)'
-    summary: Spécifie les parties de barres d’erreur à inclure.
-    name: setInclude(include)
-    fullName: setInclude(include)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setInclude(include: ChartErrorBarsInclude): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: include
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartErrorBarsInclude:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#setType:member(1)'
-    summary: Le type de plage marqué par des barres d’erreur.
-    name: setType(type)
-    fullName: setType(type)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setType(type: ChartErrorBarsType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: type
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartErrorBarsType:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBars#setVisible:member(1)'
-    summary: Indique si les barres d’erreur sont affichées.
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBarsFormat:interface'
-    name: ChartErrorBarsFormat
-    fullName: ExcelScript.ChartErrorBarsFormat
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBarsInclude:enum'
-    name: ChartErrorBarsInclude
-    fullName: ExcelScript.ChartErrorBarsInclude
-  - uid: 'ExcelScript!ExcelScript.ChartErrorBarsType:enum'
-    name: ChartErrorBarsType
-    fullName: ExcelScript.ChartErrorBarsType
+### YamlMime:TSType
+name: ExcelScript.ChartErrorBars
+uid: ExcelScript!ExcelScript.ChartErrorBars:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartErrorBars
+summary: Cet objet représente les attributs des barres d’erreur d’un graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getEndStyleCap()
+  uid: ExcelScript!ExcelScript.ChartErrorBars#getEndStyleCap:member(1)
+  package: ExcelScript!
+  fullName: getEndStyleCap()
+  summary: Indique si les barres d’erreur sont dotées d’un embout de style.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEndStyleCap(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartErrorBars#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Spécifie le type de mise en forme de barres d’erreur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartErrorBarsFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartErrorBarsFormat:interface" />
+      description: ''
+- name: getInclude()
+  uid: ExcelScript!ExcelScript.ChartErrorBars#getInclude:member(1)
+  package: ExcelScript!
+  fullName: getInclude()
+  summary: Spécifie les parties de barres d’erreur à inclure.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getInclude(): ChartErrorBarsInclude;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartErrorBarsInclude:enum" />
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.ChartErrorBars#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Le type de plage marqué par des barres d’erreur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ChartErrorBarsType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartErrorBarsType:enum" />
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartErrorBars#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Indique si les barres d’erreur sont affichées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setEndStyleCap(endStyleCap)
+  uid: ExcelScript!ExcelScript.ChartErrorBars#setEndStyleCap:member(1)
+  package: ExcelScript!
+  fullName: setEndStyleCap(endStyleCap)
+  summary: Indique si les barres d’erreur sont dotées d’un embout de style.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setEndStyleCap(endStyleCap: boolean): void;'
+    parameters:
+    - id: endStyleCap
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setInclude(include)
+  uid: ExcelScript!ExcelScript.ChartErrorBars#setInclude:member(1)
+  package: ExcelScript!
+  fullName: setInclude(include)
+  summary: Spécifie les parties de barres d’erreur à inclure.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setInclude(include: ChartErrorBarsInclude): void;'
+    parameters:
+    - id: include
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartErrorBarsInclude:enum" />
+    return:
+      type: void
+      description: ''
+- name: setType(type)
+  uid: ExcelScript!ExcelScript.ChartErrorBars#setType:member(1)
+  package: ExcelScript!
+  fullName: setType(type)
+  summary: Le type de plage marqué par des barres d’erreur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setType(type: ChartErrorBarsType): void;'
+    parameters:
+    - id: type
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartErrorBarsType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartErrorBars#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Indique si les barres d’erreur sont affichées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 2a72641826ff961d6575fe417c305615803ed362
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416917"

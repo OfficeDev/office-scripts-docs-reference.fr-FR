@@ -1,141 +1,138 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions:interface'
-    summary: Spécifie les propriétés à charger sur l' `format.font` objet.
-    name: ExcelScript.CellPropertiesFontLoadOptions
-    fullName: ExcelScript.CellPropertiesFontLoadOptions
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
-      - 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member'
-    summary: Spécifie s’il faut charger sur la `bold` propriété.
-    name: bold
-    fullName: bold
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'bold?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member'
-    summary: Spécifie s’il faut charger sur la `color` propriété.
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member'
-    summary: Spécifie s’il faut charger sur la `italic` propriété.
-    name: italic
-    fullName: italic
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'italic?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member'
-    summary: Spécifie s’il faut charger sur la `name` propriété.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'name?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member'
-    summary: Spécifie s’il faut charger sur la `size` propriété.
-    name: size
-    fullName: size
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'size?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member'
-    summary: Spécifie s’il faut charger sur la `strikethrough` propriété.
-    name: strikethrough
-    fullName: strikethrough
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'strikethrough?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member'
-    summary: Spécifie s’il faut charger sur la `subscript` propriété.
-    name: subscript
-    fullName: subscript
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'subscript?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member'
-    summary: Spécifie s’il faut charger sur la `superscript` propriété.
-    name: superscript
-    fullName: superscript
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'superscript?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member'
-    summary: Spécifie s’il faut charger sur la `tintAndShade` propriété.
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member'
-    summary: Spécifie s’il faut charger sur la `underline` propriété.
-    name: underline
-    fullName: underline
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'underline?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.CellPropertiesFontLoadOptions
+uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions:interface
+package: ExcelScript!
+fullName: ExcelScript.CellPropertiesFontLoadOptions
+summary: Spécifie les propriétés à charger sur l' `format.font` objet.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: bold
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member
+  package: ExcelScript!
+  fullName: bold
+  summary: Spécifie s’il faut charger sur la `bold` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'bold?: boolean;'
+    return:
+      type: boolean
+- name: color
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: Spécifie s’il faut charger sur la `color` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: boolean;'
+    return:
+      type: boolean
+- name: italic
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member
+  package: ExcelScript!
+  fullName: italic
+  summary: Spécifie s’il faut charger sur la `italic` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'italic?: boolean;'
+    return:
+      type: boolean
+- name: name
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member
+  package: ExcelScript!
+  fullName: name
+  summary: Spécifie s’il faut charger sur la `name` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'name?: boolean;'
+    return:
+      type: boolean
+- name: size
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member
+  package: ExcelScript!
+  fullName: size
+  summary: Spécifie s’il faut charger sur la `size` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'size?: boolean;'
+    return:
+      type: boolean
+- name: strikethrough
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member
+  package: ExcelScript!
+  fullName: strikethrough
+  summary: Spécifie s’il faut charger sur la `strikethrough` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'strikethrough?: boolean;'
+    return:
+      type: boolean
+- name: subscript
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member
+  package: ExcelScript!
+  fullName: subscript
+  summary: Spécifie s’il faut charger sur la `subscript` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subscript?: boolean;'
+    return:
+      type: boolean
+- name: superscript
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member
+  package: ExcelScript!
+  fullName: superscript
+  summary: Spécifie s’il faut charger sur la `superscript` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'superscript?: boolean;'
+    return:
+      type: boolean
+- name: tintAndShade
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member
+  package: ExcelScript!
+  fullName: tintAndShade
+  summary: Spécifie s’il faut charger sur la `tintAndShade` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'tintAndShade?: boolean;'
+    return:
+      type: boolean
+- name: underline
+  uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member
+  package: ExcelScript!
+  fullName: underline
+  summary: Spécifie s’il faut charger sur la `underline` propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'underline?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 20b3d4cc2181d279a9f8453648d2eed1300d1016
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417127"

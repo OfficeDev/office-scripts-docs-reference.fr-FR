@@ -1,34 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
-    name: ExcelScript.ReadingOrder
-    fullName: ExcelScript.ReadingOrder
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-      - 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
-    summary: 'Le sens de la lecture est déterminé par la langue du premier caractère saisi. S''il s''agit du caractère d''une langue lue de droite à gauche, la lecture se fera de la droite vers la gauche. Inversement, si le premier caractère saisi appartient à une langue qui se lit de gauche à droite, la lecture se fera de la gauche vers la droite.'
-    name: context
-    fullName: context
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
-    summary: Sens de lecture de gauche à droite
-    name: leftToRight
-    fullName: leftToRight
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
-    summary: Sens de lecture de droite à gauche
-    name: rightToLeft
-    fullName: rightToLeft
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ReadingOrder
+uid: ExcelScript!ExcelScript.ReadingOrder:enum
+package: ExcelScript!
+fullName: ExcelScript.ReadingOrder
+summary: ''
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: context
+  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
+  package: ExcelScript!
+  summary: Le sens de la lecture est déterminé par la langue du premier caractère saisi. S'il s'agit du caractère d'une langue lue de droite à gauche, la lecture se fera de la droite vers la gauche. Inversement, si le premier caractère saisi appartient à une langue qui se lit de gauche à droite, la lecture se fera de la gauche vers la droite.
+- name: leftToRight
+  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
+  package: ExcelScript!
+  summary: Sens de lecture de gauche à droite
+- name: rightToLeft
+  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
+  package: ExcelScript!
+  summary: Sens de lecture de droite à gauche
+metadata:
+  ms.openlocfilehash: 391ae0ad91303544e478b18cf04e6fcfbee4cec3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49416560"

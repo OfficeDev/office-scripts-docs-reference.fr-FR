@@ -1,79 +1,72 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.ChartDataLabelFormat:interface'
-    summary: Regroupe les propriétés de format des étiquettes de données du graphique.
-    name: Excel.ChartDataLabelFormat
-    fullName: Excel.ChartDataLabelFormat
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.ChartDataLabelFormat#border:member'
-      - 'excel!Excel.ChartDataLabelFormat#fill:member'
-      - 'excel!Excel.ChartDataLabelFormat#font:member'
-      - 'excel!Excel.ChartDataLabelFormat#load:member(1)'
-  - uid: 'excel!Excel.ChartDataLabelFormat#border:member'
-    summary: 'Représente le format bordure, qui inclut couleur, style de ligne et épaisseur.'
-    name: border
-    fullName: border
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly border: ChartBorder;'
-      return:
-        type:
-          - 'excel!Excel.ChartBorder:interface'
-  - uid: 'excel!Excel.ChartDataLabelFormat#fill:member'
-    summary: Représente le format de remplissage de l’étiquette de données.
-    name: fill
-    fullName: fill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly fill: ChartFill;'
-      return:
-        type:
-          - 'excel!Excel.ChartFill:interface'
-  - uid: 'excel!Excel.ChartDataLabelFormat#font:member'
-    summary: 'Représente les attributs de police (nom de la police, taille de police, couleur, etc.) d’une étiquette de données de graphique.'
-    name: font
-    fullName: font
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly font: ChartFont;'
-      return:
-        type:
-          - 'excel!Excel.ChartFont:interface'
-  - uid: 'excel!Excel.ChartDataLabelFormat#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-references:
-  - uid: 'excel!Excel.ChartBorder:interface'
-    name: ChartBorder
-    fullName: Excel.ChartBorder
-  - uid: 'excel!Excel.ChartFill:interface'
-    name: ChartFill
-    fullName: Excel.ChartFill
-  - uid: 'excel!Excel.ChartFont:interface'
-    name: ChartFont
-    fullName: Excel.ChartFont
+### YamlMime:TSType
+name: Excel.ChartDataLabelFormat
+uid: excel!Excel.ChartDataLabelFormat:interface
+package: excel!
+fullName: Excel.ChartDataLabelFormat
+summary: Regroupe les propriétés de format des étiquettes de données du graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: border
+  uid: excel!Excel.ChartDataLabelFormat#border:member
+  package: excel!
+  fullName: border
+  summary: Représente le format bordure, qui inclut couleur, style de ligne et épaisseur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly border: ChartBorder;'
+    return:
+      type: <xref uid="excel!Excel.ChartBorder:interface" />
+- name: fill
+  uid: excel!Excel.ChartDataLabelFormat#fill:member
+  package: excel!
+  fullName: fill
+  summary: Représente le format de remplissage de l’étiquette de données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly fill: ChartFill;'
+    return:
+      type: <xref uid="excel!Excel.ChartFill:interface" />
+- name: font
+  uid: excel!Excel.ChartDataLabelFormat#font:member
+  package: excel!
+  fullName: font
+  summary: Représente les attributs de police (nom de la police, taille de police, couleur, etc.) d’une étiquette de données de graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly font: ChartFont;'
+    return:
+      type: <xref uid="excel!Excel.ChartFont:interface" />
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.ChartDataLabelFormat#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: bb5708e7d7d2cc336b159674822644c85e109297
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417812"

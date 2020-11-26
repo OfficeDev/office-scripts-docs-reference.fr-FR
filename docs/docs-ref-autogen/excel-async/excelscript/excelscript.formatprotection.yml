@@ -1,56 +1,60 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.FormatProtection:interface'
-    summary: Représente la protection du format d’un objet plage.
-    name: Excel.FormatProtection
-    fullName: Excel.FormatProtection
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.FormatProtection#formulaHidden:member'
-      - 'excel!Excel.FormatProtection#load:member(1)'
-      - 'excel!Excel.FormatProtection#locked:member'
-  - uid: 'excel!Excel.FormatProtection#formulaHidden:member'
-    summary: Indique si Excel masque la formule pour les cellules de la plage. Une valeur null indique que les paramètres de formule masquée ne sont pas les mêmes sur l’ensemble de la plage.
-    name: formulaHidden
-    fullName: formulaHidden
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulaHidden: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.FormatProtection#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.FormatProtection#locked:member'
-    summary: Indique si Excel verrouille les cellules dans l’objet. Une valeur null indique que les paramètres de verrouillage ne sont pas les mêmes sur l’ensemble de la plage.
-    name: locked
-    fullName: locked
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'locked: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: Excel.FormatProtection
+uid: excel!Excel.FormatProtection:interface
+package: excel!
+fullName: Excel.FormatProtection
+summary: Représente la protection du format d’un objet plage.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: formulaHidden
+  uid: excel!Excel.FormatProtection#formulaHidden:member
+  package: excel!
+  fullName: formulaHidden
+  summary: Indique si Excel masque la formule pour les cellules de la plage. Une valeur null indique que les paramètres de formule masquée ne sont pas les mêmes sur l’ensemble de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulaHidden: boolean;'
+    return:
+      type: boolean
+- name: locked
+  uid: excel!Excel.FormatProtection#locked:member
+  package: excel!
+  fullName: locked
+  summary: Indique si Excel verrouille les cellules dans l’objet. Une valeur null indique que les paramètres de verrouillage ne sont pas les mêmes sur l’ensemble de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'locked: boolean;'
+    return:
+      type: boolean
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.FormatProtection#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: d4b79041d58cdd4d0dd2932d40591f6d0bcb0aeb
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417917"

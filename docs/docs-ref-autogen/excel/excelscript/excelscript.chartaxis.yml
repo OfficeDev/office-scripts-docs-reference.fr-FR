@@ -1,1173 +1,1038 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
-    summary: Représente un axe unique dans un graphique.
-    name: ExcelScript.ChartAxis
-    fullName: ExcelScript.ChartAxis
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getTop:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)'
-    summary: 'Spécifie l’alignement de l’étiquette de graduation de l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartTextHorizontalAlignment.'
-    name: getAlignment()
-    fullName: getAlignment()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAlignment(): ChartTickLabelAlignment;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)'
-    summary: 'Cette énumération spécifie le groupe pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisGroup.'
-    name: getAxisGroup()
-    fullName: getAxisGroup()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAxisGroup(): ChartAxisGroup;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)'
-    summary: Spécifie l’unité de base pour l’axe des abscisses spécifié.
-    name: getBaseTimeUnit()
-    fullName: getBaseTimeUnit()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBaseTimeUnit(): ChartAxisTimeUnit;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)'
-    summary: Spécifie le type d’axe de catégorie.
-    name: getCategoryType()
-    fullName: getCategoryType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCategoryType(): ChartAxisCategoryType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)'
-    summary: 'Spécifie la valeur de l’unité d’affichage de l’axe personnalisé. Pour définir cette propriété, utilisez la méthode SetCustomDisplayUnit(double).'
-    name: getCustomDisplayUnit()
-    fullName: getCustomDisplayUnit()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCustomDisplayUnit(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)'
-    summary: 'Représente l’unité d’affichage de l’axe. Pour plus d’informations, voir ExcelScript. ChartAxisDisplayUnit.'
-    name: getDisplayUnit()
-    fullName: getDisplayUnit()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getDisplayUnit(): ChartAxisDisplayUnit;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)'
-    summary: 'Représente la mise en forme d’un objet de graphique, à savoir le format des lignes et de la police.'
-    name: getFormat()
-    fullName: getFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFormat(): ChartAxisFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)'
-    summary: 'Indique la hauteur, exprimée en points, de l’axe du graphique. NULL si l’axe n’est pas visible.'
-    name: getHeight()
-    fullName: getHeight()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getHeight(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)'
-    summary: Indique si l’axe des ordonnées coupe l’axe des abscisses entre les catégories.
-    name: getIsBetweenCategories()
-    fullName: getIsBetweenCategories()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIsBetweenCategories(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)'
-    summary: 'Indique la distance, en points, entre le bord gauche de l’axe et la partie gauche de la zone de graphique. NULL si l’axe n’est pas visible.'
-    name: getLeft()
-    fullName: getLeft()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLeft(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)'
-    summary: 'Indique si le format de nombre est lié aux cellules. Si true, le format de numérotation est affiché dans les étiquettes lorsqu’il se transforme dans les cellules.'
-    name: getLinkNumberFormat()
-    fullName: getLinkNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLinkNumberFormat(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)'
-    summary: Indique la base du logarithme lors de l’utilisation d’échelles logarithmiques.
-    name: getLogBase()
-    fullName: getLogBase()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLogBase(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)'
-    summary: Renvoie un objet de quadrillage qui représente les lignes de quadrillage principal de l’axe spécifié.
-    name: getMajorGridlines()
-    fullName: getMajorGridlines()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMajorGridlines(): ChartGridlines;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartGridlines:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)'
-    summary: 'Cette énumération spécifie le type de graduation principale pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.'
-    name: getMajorTickMark()
-    fullName: getMajorTickMark()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMajorTickMark(): ChartAxisTickMark;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)'
-    summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
-    name: getMajorTimeUnitScale()
-    fullName: getMajorTimeUnitScale()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMajorTimeUnitScale(): ChartAxisTimeUnit;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)'
-    summary: Spécifie l’intervalle entre deux graduations principales.
-    name: getMajorUnit()
-    fullName: getMajorUnit()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMajorUnit(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)'
-    summary: Indique la valeur maximale de l’axe des ordonnées.
-    name: getMaximum()
-    fullName: getMaximum()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMaximum(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)'
-    summary: Indique la valeur minimale de l’axe des ordonnées.
-    name: getMinimum()
-    fullName: getMinimum()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMinimum(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)'
-    summary: Renvoie un objet de quadrillage qui représente les lignes de quadrillage secondaire de l’axe spécifié.
-    name: getMinorGridlines()
-    fullName: getMinorGridlines()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMinorGridlines(): ChartGridlines;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartGridlines:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)'
-    summary: 'Cette énumération spécifie le type de graduation secondaire pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.'
-    name: getMinorTickMark()
-    fullName: getMinorTickMark()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMinorTickMark(): ChartAxisTickMark;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)'
-    summary: Indique la valeur d’échelle d’unité secondaire pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
-    name: getMinorTimeUnitScale()
-    fullName: getMinorTimeUnitScale()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMinorTimeUnitScale(): ChartAxisTimeUnit;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)'
-    summary: Spécifie l’intervalle entre deux graduations secondaires.
-    name: getMinorUnit()
-    fullName: getMinorUnit()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMinorUnit(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)'
-    summary: Indique si un axe est à plusieurs niveaux.
-    name: getMultiLevel()
-    fullName: getMultiLevel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getMultiLevel(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)'
-    summary: Spécifie le code du format de l’étiquette de graduation de l’axe.
-    name: getNumberFormat()
-    fullName: getNumberFormat()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getNumberFormat(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)'
-    summary: Indique la distance entre les niveaux des étiquettes et la distance entre le premier niveau et la ligne de l’axe. La valeur doit être un entier compris entre 0 et 1000.
-    name: getOffset()
-    fullName: getOffset()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOffset(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)'
-    summary: 'Spécifie la position de l’axe spécifié où l’autre axe croise. Pour plus d’informations, voir ExcelScript. ChartAxisPosition.'
-    name: getPosition()
-    fullName: getPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPosition(): ChartAxisPosition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisPosition:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)'
-    summary: Spécifie la position de l’axe spécifié où l’autre axe se coupe. Vous devez utiliser la méthode SetPositionAt(double) pour définir cette propriété.
-    name: getPositionAt()
-    fullName: getPositionAt()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPositionAt(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)'
-    summary: Indique si Excel trace les points de données du dernier au premier.
-    name: getReversePlotOrder()
-    fullName: getReversePlotOrder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getReversePlotOrder(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)'
-    summary: 'Indique le type d’étendue de l’axe des ordonnées. Pour plus d’informations, voir ExcelScript. ChartAxisScaleType.'
-    name: getScaleType()
-    fullName: getScaleType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getScaleType(): ChartAxisScaleType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisScaleType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)'
-    summary: Indique si l’étiquette de l’unité d’affichage de l’axe est visible.
-    name: getShowDisplayUnitLabel()
-    fullName: getShowDisplayUnitLabel()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getShowDisplayUnitLabel(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)'
-    summary: Cette énumération spécifie l’angle auquel le texte est orienté pour l’étiquette de graduation de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
-    name: getTextOrientation()
-    fullName: getTextOrientation()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)'
-    summary: 'Spécifie la position des étiquettes de graduation sur l''axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickLabelPosition.'
-    name: getTickLabelPosition()
-    fullName: getTickLabelPosition()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTickLabelPosition(): ChartAxisTickLabelPosition;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)'
-    summary: "Indique le nombre d’abscisses ou de séries entre les étiquettes de graduation. Il peut s’agir d’une valeur comprise entre\_1 et 31999."
-    name: getTickLabelSpacing()
-    fullName: getTickLabelSpacing()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTickLabelSpacing(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)'
-    summary: Indique le nombre d’abscisses ou de séries entre les marques de graduation.
-    name: getTickMarkSpacing()
-    fullName: getTickMarkSpacing()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTickMarkSpacing(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)'
-    summary: Représente le titre de l’axe.
-    name: getTitle()
-    fullName: getTitle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTitle(): ChartAxisTitle;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getTop:member(1)'
-    summary: 'Indique la distance, en points, entre le bord supérieur de l’axe et le haut de la zone de graphique. NULL si l’axe n’est pas visible.'
-    name: getTop()
-    fullName: getTop()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTop(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getType:member(1)'
-    summary: 'Spécifie le type d’axe. Pour plus d’informations, voir ExcelScript. ChartAxisType.'
-    name: getType()
-    fullName: getType()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getType(): ChartAxisType;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxisType:enum'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)'
-    summary: Indique si l’axe est visible.
-    name: getVisible()
-    fullName: getVisible()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisible(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)'
-    summary: 'Indique la largeur, exprimée en points, de l’axe du graphique. NULL si l’axe n’est pas visible.'
-    name: getWidth()
-    fullName: getWidth()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getWidth(): number;'
-      return:
-        type:
-          - number
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)'
-    summary: 'Spécifie l’alignement de l’étiquette de graduation de l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartTextHorizontalAlignment.'
-    name: setAlignment(alignment)
-    fullName: setAlignment(alignment)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setAlignment(alignment: ChartTickLabelAlignment): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: alignment
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)'
-    summary: Spécifie l’unité de base pour l’axe des abscisses spécifié.
-    name: setBaseTimeUnit(baseTimeUnit)
-    fullName: setBaseTimeUnit(baseTimeUnit)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBaseTimeUnit(baseTimeUnit: ChartAxisTimeUnit): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: baseTimeUnit
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)'
-    summary: Définit tous les noms de catégorie pour l’axe spécifié.
-    name: setCategoryNames(sourceData)
-    fullName: setCategoryNames(sourceData)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCategoryNames(sourceData: Range): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: sourceData
-          description: Objet Range correspondant aux données source.
-          type:
-            - 'ExcelScript!ExcelScript.Range:interface'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)'
-    summary: Spécifie le type d’axe de catégorie.
-    name: setCategoryType(categoryType)
-    fullName: setCategoryType(categoryType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCategoryType(categoryType: ChartAxisCategoryType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: categoryType
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)'
-    summary: Définit l’unité d’affichage axe sur une valeur personnalisée.
-    name: setCustomDisplayUnit(value)
-    fullName: setCustomDisplayUnit(value)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setCustomDisplayUnit(value: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: value
-          description: Valeur personnalisée de l’unité d’affichage.
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)'
-    summary: 'Représente l’unité d’affichage de l’axe. Pour plus d’informations, voir ExcelScript. ChartAxisDisplayUnit.'
-    name: setDisplayUnit(displayUnit)
-    fullName: setDisplayUnit(displayUnit)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDisplayUnit(displayUnit: ChartAxisDisplayUnit): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: displayUnit
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)'
-    summary: Indique si l’axe des ordonnées coupe l’axe des abscisses entre les catégories.
-    name: setIsBetweenCategories(isBetweenCategories)
-    fullName: setIsBetweenCategories(isBetweenCategories)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setIsBetweenCategories(isBetweenCategories: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: isBetweenCategories
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)'
-    summary: 'Indique si le format de nombre est lié aux cellules. Si true, le format de numérotation est affiché dans les étiquettes lorsqu’il se transforme dans les cellules.'
-    name: setLinkNumberFormat(linkNumberFormat)
-    fullName: setLinkNumberFormat(linkNumberFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: linkNumberFormat
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)'
-    summary: Indique la base du logarithme lors de l’utilisation d’échelles logarithmiques.
-    name: setLogBase(logBase)
-    fullName: setLogBase(logBase)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLogBase(logBase: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: logBase
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)'
-    summary: 'Cette énumération spécifie le type de graduation principale pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.'
-    name: setMajorTickMark(majorTickMark)
-    fullName: setMajorTickMark(majorTickMark)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMajorTickMark(majorTickMark: ChartAxisTickMark): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: majorTickMark
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)'
-    summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
-    name: setMajorTimeUnitScale(majorTimeUnitScale)
-    fullName: setMajorTimeUnitScale(majorTimeUnitScale)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMajorTimeUnitScale(majorTimeUnitScale: ChartAxisTimeUnit): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: majorTimeUnitScale
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)'
-    summary: Spécifie l’intervalle entre deux graduations principales.
-    name: setMajorUnit(majorUnit)
-    fullName: setMajorUnit(majorUnit)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMajorUnit(majorUnit: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: majorUnit
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)'
-    summary: Indique la valeur maximale de l’axe des ordonnées.
-    name: setMaximum(maximum)
-    fullName: setMaximum(maximum)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMaximum(maximum: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: maximum
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)'
-    summary: Indique la valeur minimale de l’axe des ordonnées.
-    name: setMinimum(minimum)
-    fullName: setMinimum(minimum)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMinimum(minimum: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: minimum
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)'
-    summary: 'Cette énumération spécifie le type de graduation secondaire pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.'
-    name: setMinorTickMark(minorTickMark)
-    fullName: setMinorTickMark(minorTickMark)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMinorTickMark(minorTickMark: ChartAxisTickMark): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: minorTickMark
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)'
-    summary: Indique la valeur d’échelle d’unité secondaire pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
-    name: setMinorTimeUnitScale(minorTimeUnitScale)
-    fullName: setMinorTimeUnitScale(minorTimeUnitScale)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMinorTimeUnitScale(minorTimeUnitScale: ChartAxisTimeUnit): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: minorTimeUnitScale
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)'
-    summary: Spécifie l’intervalle entre deux graduations secondaires.
-    name: setMinorUnit(minorUnit)
-    fullName: setMinorUnit(minorUnit)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMinorUnit(minorUnit: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: minorUnit
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)'
-    summary: Indique si un axe est à plusieurs niveaux.
-    name: setMultiLevel(multiLevel)
-    fullName: setMultiLevel(multiLevel)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setMultiLevel(multiLevel: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: multiLevel
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)'
-    summary: Spécifie le code du format de l’étiquette de graduation de l’axe.
-    name: setNumberFormat(numberFormat)
-    fullName: setNumberFormat(numberFormat)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setNumberFormat(numberFormat: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: numberFormat
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)'
-    summary: Indique la distance entre les niveaux des étiquettes et la distance entre le premier niveau et la ligne de l’axe. La valeur doit être un entier compris entre 0 et 1000.
-    name: setOffset(offset)
-    fullName: setOffset(offset)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setOffset(offset: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: offset
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)'
-    summary: 'Spécifie la position de l’axe spécifié où l’autre axe croise. Pour plus d’informations, voir ExcelScript. ChartAxisPosition.'
-    name: setPosition(position)
-    fullName: setPosition(position)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPosition(position: ChartAxisPosition): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: position
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisPosition:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)'
-    summary: Définit la position de l’axe spécifié où l’autre axe se coupe.
-    name: setPositionAt(value)
-    fullName: setPositionAt(value)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setPositionAt(value: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: value
-          description: Valeur personnalisée des croisements à
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)'
-    summary: Indique si Excel trace les points de données du dernier au premier.
-    name: setReversePlotOrder(reversePlotOrder)
-    fullName: setReversePlotOrder(reversePlotOrder)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setReversePlotOrder(reversePlotOrder: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: reversePlotOrder
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)'
-    summary: 'Indique le type d’étendue de l’axe des ordonnées. Pour plus d’informations, voir ExcelScript. ChartAxisScaleType.'
-    name: setScaleType(scaleType)
-    fullName: setScaleType(scaleType)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setScaleType(scaleType: ChartAxisScaleType): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: scaleType
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisScaleType:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)'
-    summary: Indique si l’étiquette de l’unité d’affichage de l’axe est visible.
-    name: setShowDisplayUnitLabel(showDisplayUnitLabel)
-    fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setShowDisplayUnitLabel(showDisplayUnitLabel: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: showDisplayUnitLabel
-          description: ''
-          type:
-            - boolean
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)'
-    summary: Cette énumération spécifie l’angle auquel le texte est orienté pour l’étiquette de graduation de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
-    name: setTextOrientation(textOrientation)
-    fullName: setTextOrientation(textOrientation)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: textOrientation
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)'
-    summary: 'Spécifie la position des étiquettes de graduation sur l''axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickLabelPosition.'
-    name: setTickLabelPosition(tickLabelPosition)
-    fullName: setTickLabelPosition(tickLabelPosition)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        setTickLabelPosition(
-                    tickLabelPosition: ChartAxisTickLabelPosition
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: tickLabelPosition
-          description: ''
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)'
-    summary: "Indique le nombre d’abscisses ou de séries entre les étiquettes de graduation. Il peut s’agir d’une valeur comprise entre\_1 et 31999."
-    name: setTickLabelSpacing(tickLabelSpacing)
-    fullName: setTickLabelSpacing(tickLabelSpacing)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: tickLabelSpacing
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)'
-    summary: Indique le nombre d’abscisses ou de séries entre les marques de graduation.
-    name: setTickMarkSpacing(tickMarkSpacing)
-    fullName: setTickMarkSpacing(tickMarkSpacing)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setTickMarkSpacing(tickMarkSpacing: number): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: tickMarkSpacing
-          description: ''
-          type:
-            - number
-  - uid: 'ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)'
-    summary: Indique si l’axe est visible.
-    name: setVisible(visible)
-    fullName: setVisible(visible)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setVisible(visible: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: visible
-          description: ''
-          type:
-            - boolean
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartTickLabelAlignment:enum'
-    name: ChartTickLabelAlignment
-    fullName: ExcelScript.ChartTickLabelAlignment
-  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-    name: ChartAxisGroup
-    fullName: ExcelScript.ChartAxisGroup
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTimeUnit:enum'
-    name: ChartAxisTimeUnit
-    fullName: ExcelScript.ChartAxisTimeUnit
-  - uid: 'ExcelScript!ExcelScript.ChartAxisCategoryType:enum'
-    name: ChartAxisCategoryType
-    fullName: ExcelScript.ChartAxisCategoryType
-  - uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
-    name: ChartAxisDisplayUnit
-    fullName: ExcelScript.ChartAxisDisplayUnit
-  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
-    name: ChartAxisFormat
-    fullName: ExcelScript.ChartAxisFormat
-  - uid: 'ExcelScript!ExcelScript.ChartGridlines:interface'
-    name: ChartGridlines
-    fullName: ExcelScript.ChartGridlines
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTickMark:enum'
-    name: ChartAxisTickMark
-    fullName: ExcelScript.ChartAxisTickMark
-  - uid: 'ExcelScript!ExcelScript.ChartAxisPosition:enum'
-    name: ChartAxisPosition
-    fullName: ExcelScript.ChartAxisPosition
-  - uid: 'ExcelScript!ExcelScript.ChartAxisScaleType:enum'
-    name: ChartAxisScaleType
-    fullName: ExcelScript.ChartAxisScaleType
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum'
-    name: ChartAxisTickLabelPosition
-    fullName: ExcelScript.ChartAxisTickLabelPosition
-  - uid: 'ExcelScript!ExcelScript.ChartAxisTitle:interface'
-    name: ChartAxisTitle
-    fullName: ExcelScript.ChartAxisTitle
-  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
-    name: ChartAxisType
-    fullName: ExcelScript.ChartAxisType
-  - uid: 'ExcelScript!ExcelScript.Range:interface'
-    name: Range
-    fullName: ExcelScript.Range
+### YamlMime:TSType
+name: ExcelScript.ChartAxis
+uid: ExcelScript!ExcelScript.ChartAxis:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxis
+summary: Représente un axe unique dans un graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getAlignment()
+  uid: ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)
+  package: ExcelScript!
+  fullName: getAlignment()
+  summary: Spécifie l’alignement de l’étiquette de graduation de l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartTextHorizontalAlignment.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAlignment(): ChartTickLabelAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />
+      description: ''
+- name: getAxisGroup()
+  uid: ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)
+  package: ExcelScript!
+  fullName: getAxisGroup()
+  summary: Cette énumération spécifie le groupe pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisGroup.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAxisGroup(): ChartAxisGroup;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
+      description: ''
+- name: getBaseTimeUnit()
+  uid: ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)
+  package: ExcelScript!
+  fullName: getBaseTimeUnit()
+  summary: Spécifie l’unité de base pour l’axe des abscisses spécifié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBaseTimeUnit(): ChartAxisTimeUnit;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
+      description: ''
+- name: getCategoryType()
+  uid: ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)
+  package: ExcelScript!
+  fullName: getCategoryType()
+  summary: Spécifie le type d’axe de catégorie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCategoryType(): ChartAxisCategoryType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />
+      description: ''
+- name: getCustomDisplayUnit()
+  uid: ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)
+  package: ExcelScript!
+  fullName: getCustomDisplayUnit()
+  summary: Spécifie la valeur de l’unité d’affichage de l’axe personnalisé. Pour définir cette propriété, utilisez la méthode SetCustomDisplayUnit(double).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomDisplayUnit(): number;'
+    return:
+      type: number
+      description: ''
+- name: getDisplayUnit()
+  uid: ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)
+  package: ExcelScript!
+  fullName: getDisplayUnit()
+  summary: Représente l’unité d’affichage de l’axe. Pour plus d’informations, voir ExcelScript. ChartAxisDisplayUnit.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getDisplayUnit(): ChartAxisDisplayUnit;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />
+      description: ''
+- name: getFormat()
+  uid: ExcelScript!ExcelScript.ChartAxis#getFormat:member(1)
+  package: ExcelScript!
+  fullName: getFormat()
+  summary: Représente la mise en forme d’un objet de graphique, à savoir le format des lignes et de la police.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFormat(): ChartAxisFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisFormat:interface" />
+      description: ''
+- name: getHeight()
+  uid: ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)
+  package: ExcelScript!
+  fullName: getHeight()
+  summary: Indique la hauteur, exprimée en points, de l’axe du graphique. NULL si l’axe n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getIsBetweenCategories()
+  uid: ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)
+  package: ExcelScript!
+  fullName: getIsBetweenCategories()
+  summary: Indique si l’axe des ordonnées coupe l’axe des abscisses entre les catégories.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIsBetweenCategories(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getLeft()
+  uid: ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)
+  package: ExcelScript!
+  fullName: getLeft()
+  summary: Indique la distance, en points, entre le bord gauche de l’axe et la partie gauche de la zone de graphique. NULL si l’axe n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLeft(): number;'
+    return:
+      type: number
+      description: ''
+- name: getLinkNumberFormat()
+  uid: ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getLinkNumberFormat()
+  summary: Indique si le format de nombre est lié aux cellules. Si true, le format de numérotation est affiché dans les étiquettes lorsqu’il se transforme dans les cellules.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkNumberFormat(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getLogBase()
+  uid: ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)
+  package: ExcelScript!
+  fullName: getLogBase()
+  summary: Indique la base du logarithme lors de l’utilisation d’échelles logarithmiques.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLogBase(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMajorGridlines()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)
+  package: ExcelScript!
+  fullName: getMajorGridlines()
+  summary: Renvoie un objet de quadrillage qui représente les lignes de quadrillage principal de l’axe spécifié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMajorGridlines(): ChartGridlines;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />
+      description: ''
+- name: getMajorTickMark()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)
+  package: ExcelScript!
+  fullName: getMajorTickMark()
+  summary: Cette énumération spécifie le type de graduation principale pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMajorTickMark(): ChartAxisTickMark;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
+      description: ''
+- name: getMajorTimeUnitScale()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)
+  package: ExcelScript!
+  fullName: getMajorTimeUnitScale()
+  summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMajorTimeUnitScale(): ChartAxisTimeUnit;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
+      description: ''
+- name: getMajorUnit()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)
+  package: ExcelScript!
+  fullName: getMajorUnit()
+  summary: Spécifie l’intervalle entre deux graduations principales.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMajorUnit(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMaximum()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)
+  package: ExcelScript!
+  fullName: getMaximum()
+  summary: Indique la valeur maximale de l’axe des ordonnées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMaximum(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMinimum()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)
+  package: ExcelScript!
+  fullName: getMinimum()
+  summary: Indique la valeur minimale de l’axe des ordonnées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMinimum(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMinorGridlines()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)
+  package: ExcelScript!
+  fullName: getMinorGridlines()
+  summary: Renvoie un objet de quadrillage qui représente les lignes de quadrillage secondaire de l’axe spécifié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMinorGridlines(): ChartGridlines;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartGridlines:interface" />
+      description: ''
+- name: getMinorTickMark()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)
+  package: ExcelScript!
+  fullName: getMinorTickMark()
+  summary: Cette énumération spécifie le type de graduation secondaire pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMinorTickMark(): ChartAxisTickMark;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
+      description: ''
+- name: getMinorTimeUnitScale()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)
+  package: ExcelScript!
+  fullName: getMinorTimeUnitScale()
+  summary: Indique la valeur d’échelle d’unité secondaire pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMinorTimeUnitScale(): ChartAxisTimeUnit;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
+      description: ''
+- name: getMinorUnit()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)
+  package: ExcelScript!
+  fullName: getMinorUnit()
+  summary: Spécifie l’intervalle entre deux graduations secondaires.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMinorUnit(): number;'
+    return:
+      type: number
+      description: ''
+- name: getMultiLevel()
+  uid: ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)
+  package: ExcelScript!
+  fullName: getMultiLevel()
+  summary: Indique si un axe est à plusieurs niveaux.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMultiLevel(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getNumberFormat()
+  uid: ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormat()
+  summary: Spécifie le code du format de l’étiquette de graduation de l’axe.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormat(): string;'
+    return:
+      type: string
+      description: ''
+- name: getOffset()
+  uid: ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)
+  package: ExcelScript!
+  fullName: getOffset()
+  summary: Indique la distance entre les niveaux des étiquettes et la distance entre le premier niveau et la ligne de l’axe. La valeur doit être un entier compris entre 0 et 1000.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOffset(): number;'
+    return:
+      type: number
+      description: ''
+- name: getPosition()
+  uid: ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)
+  package: ExcelScript!
+  fullName: getPosition()
+  summary: Spécifie la position de l’axe spécifié où l’autre axe croise. Pour plus d’informations, voir ExcelScript. ChartAxisPosition.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPosition(): ChartAxisPosition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />
+      description: ''
+- name: getPositionAt()
+  uid: ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)
+  package: ExcelScript!
+  fullName: getPositionAt()
+  summary: Spécifie la position de l’axe spécifié où l’autre axe se coupe. Vous devez utiliser la méthode SetPositionAt(double) pour définir cette propriété.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPositionAt(): number;'
+    return:
+      type: number
+      description: ''
+- name: getReversePlotOrder()
+  uid: ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)
+  package: ExcelScript!
+  fullName: getReversePlotOrder()
+  summary: Indique si Excel trace les points de données du dernier au premier.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReversePlotOrder(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getScaleType()
+  uid: ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)
+  package: ExcelScript!
+  fullName: getScaleType()
+  summary: Indique le type d’étendue de l’axe des ordonnées. Pour plus d’informations, voir ExcelScript. ChartAxisScaleType.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getScaleType(): ChartAxisScaleType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />
+      description: ''
+- name: getShowDisplayUnitLabel()
+  uid: ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)
+  package: ExcelScript!
+  fullName: getShowDisplayUnitLabel()
+  summary: Indique si l’étiquette de l’unité d’affichage de l’axe est visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShowDisplayUnitLabel(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: Cette énumération spécifie l’angle auquel le texte est orienté pour l’étiquette de graduation de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTickLabelPosition()
+  uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)
+  package: ExcelScript!
+  fullName: getTickLabelPosition()
+  summary: Spécifie la position des étiquettes de graduation sur l'axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickLabelPosition.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTickLabelPosition(): ChartAxisTickLabelPosition;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />
+      description: ''
+- name: getTickLabelSpacing()
+  uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)
+  package: ExcelScript!
+  fullName: getTickLabelSpacing()
+  summary: Indique le nombre d’abscisses ou de séries entre les étiquettes de graduation. Il peut s’agir d’une valeur comprise entre 1 et 31999.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTickLabelSpacing(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTickMarkSpacing()
+  uid: ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)
+  package: ExcelScript!
+  fullName: getTickMarkSpacing()
+  summary: Indique le nombre d’abscisses ou de séries entre les marques de graduation.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTickMarkSpacing(): number;'
+    return:
+      type: number
+      description: ''
+- name: getTitle()
+  uid: ExcelScript!ExcelScript.ChartAxis#getTitle:member(1)
+  package: ExcelScript!
+  fullName: getTitle()
+  summary: Représente le titre de l’axe.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTitle(): ChartAxisTitle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTitle:interface" />
+      description: ''
+- name: getTop()
+  uid: ExcelScript!ExcelScript.ChartAxis#getTop:member(1)
+  package: ExcelScript!
+  fullName: getTop()
+  summary: Indique la distance, en points, entre le bord supérieur de l’axe et le haut de la zone de graphique. NULL si l’axe n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTop(): number;'
+    return:
+      type: number
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.ChartAxis#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Spécifie le type d’axe. Pour plus d’informations, voir ExcelScript. ChartAxisType.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): ChartAxisType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
+      description: ''
+- name: getVisible()
+  uid: ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)
+  package: ExcelScript!
+  fullName: getVisible()
+  summary: Indique si l’axe est visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisible(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getWidth()
+  uid: ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)
+  package: ExcelScript!
+  fullName: getWidth()
+  summary: Indique la largeur, exprimée en points, de l’axe du graphique. NULL si l’axe n’est pas visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: setAlignment(alignment)
+  uid: ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)
+  package: ExcelScript!
+  fullName: setAlignment(alignment)
+  summary: Spécifie l’alignement de l’étiquette de graduation de l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartTextHorizontalAlignment.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAlignment(alignment: ChartTickLabelAlignment): void;'
+    parameters:
+    - id: alignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartTickLabelAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setBaseTimeUnit(baseTimeUnit)
+  uid: ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)
+  package: ExcelScript!
+  fullName: setBaseTimeUnit(baseTimeUnit)
+  summary: Spécifie l’unité de base pour l’axe des abscisses spécifié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBaseTimeUnit(baseTimeUnit: ChartAxisTimeUnit): void;'
+    parameters:
+    - id: baseTimeUnit
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
+    return:
+      type: void
+      description: ''
+- name: setCategoryNames(sourceData)
+  uid: ExcelScript!ExcelScript.ChartAxis#setCategoryNames:member(1)
+  package: ExcelScript!
+  fullName: setCategoryNames(sourceData)
+  summary: Définit tous les noms de catégorie pour l’axe spécifié.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCategoryNames(sourceData: Range): void;'
+    parameters:
+    - id: sourceData
+      description: Objet Range correspondant aux données source.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+    return:
+      type: void
+      description: ''
+- name: setCategoryType(categoryType)
+  uid: ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)
+  package: ExcelScript!
+  fullName: setCategoryType(categoryType)
+  summary: Spécifie le type d’axe de catégorie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCategoryType(categoryType: ChartAxisCategoryType): void;'
+    parameters:
+    - id: categoryType
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisCategoryType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setCustomDisplayUnit(value)
+  uid: ExcelScript!ExcelScript.ChartAxis#setCustomDisplayUnit:member(1)
+  package: ExcelScript!
+  fullName: setCustomDisplayUnit(value)
+  summary: Définit l’unité d’affichage axe sur une valeur personnalisée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setCustomDisplayUnit(value: number): void;'
+    parameters:
+    - id: value
+      description: Valeur personnalisée de l’unité d’affichage.
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setDisplayUnit(displayUnit)
+  uid: ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)
+  package: ExcelScript!
+  fullName: setDisplayUnit(displayUnit)
+  summary: Représente l’unité d’affichage de l’axe. Pour plus d’informations, voir ExcelScript. ChartAxisDisplayUnit.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDisplayUnit(displayUnit: ChartAxisDisplayUnit): void;'
+    parameters:
+    - id: displayUnit
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum" />
+    return:
+      type: void
+      description: ''
+- name: setIsBetweenCategories(isBetweenCategories)
+  uid: ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)
+  package: ExcelScript!
+  fullName: setIsBetweenCategories(isBetweenCategories)
+  summary: Indique si l’axe des ordonnées coupe l’axe des abscisses entre les catégories.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIsBetweenCategories(isBetweenCategories: boolean): void;'
+    parameters:
+    - id: isBetweenCategories
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setLinkNumberFormat(linkNumberFormat)
+  uid: ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setLinkNumberFormat(linkNumberFormat)
+  summary: Indique si le format de nombre est lié aux cellules. Si true, le format de numérotation est affiché dans les étiquettes lorsqu’il se transforme dans les cellules.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+    parameters:
+    - id: linkNumberFormat
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setLogBase(logBase)
+  uid: ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)
+  package: ExcelScript!
+  fullName: setLogBase(logBase)
+  summary: Indique la base du logarithme lors de l’utilisation d’échelles logarithmiques.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setLogBase(logBase: number): void;'
+    parameters:
+    - id: logBase
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMajorTickMark(majorTickMark)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)
+  package: ExcelScript!
+  fullName: setMajorTickMark(majorTickMark)
+  summary: Cette énumération spécifie le type de graduation principale pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMajorTickMark(majorTickMark: ChartAxisTickMark): void;'
+    parameters:
+    - id: majorTickMark
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
+    return:
+      type: void
+      description: ''
+- name: setMajorTimeUnitScale(majorTimeUnitScale)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)
+  package: ExcelScript!
+  fullName: setMajorTimeUnitScale(majorTimeUnitScale)
+  summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMajorTimeUnitScale(majorTimeUnitScale: ChartAxisTimeUnit): void;'
+    parameters:
+    - id: majorTimeUnitScale
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
+    return:
+      type: void
+      description: ''
+- name: setMajorUnit(majorUnit)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)
+  package: ExcelScript!
+  fullName: setMajorUnit(majorUnit)
+  summary: Spécifie l’intervalle entre deux graduations principales.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMajorUnit(majorUnit: number): void;'
+    parameters:
+    - id: majorUnit
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMaximum(maximum)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)
+  package: ExcelScript!
+  fullName: setMaximum(maximum)
+  summary: Indique la valeur maximale de l’axe des ordonnées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMaximum(maximum: number): void;'
+    parameters:
+    - id: maximum
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMinimum(minimum)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)
+  package: ExcelScript!
+  fullName: setMinimum(minimum)
+  summary: Indique la valeur minimale de l’axe des ordonnées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMinimum(minimum: number): void;'
+    parameters:
+    - id: minimum
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMinorTickMark(minorTickMark)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)
+  package: ExcelScript!
+  fullName: setMinorTickMark(minorTickMark)
+  summary: Cette énumération spécifie le type de graduation secondaire pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMinorTickMark(minorTickMark: ChartAxisTickMark): void;'
+    parameters:
+    - id: minorTickMark
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickMark:enum" />
+    return:
+      type: void
+      description: ''
+- name: setMinorTimeUnitScale(minorTimeUnitScale)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)
+  package: ExcelScript!
+  fullName: setMinorTimeUnitScale(minorTimeUnitScale)
+  summary: Indique la valeur d’échelle d’unité secondaire pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMinorTimeUnitScale(minorTimeUnitScale: ChartAxisTimeUnit): void;'
+    parameters:
+    - id: minorTimeUnitScale
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTimeUnit:enum" />
+    return:
+      type: void
+      description: ''
+- name: setMinorUnit(minorUnit)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)
+  package: ExcelScript!
+  fullName: setMinorUnit(minorUnit)
+  summary: Spécifie l’intervalle entre deux graduations secondaires.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMinorUnit(minorUnit: number): void;'
+    parameters:
+    - id: minorUnit
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setMultiLevel(multiLevel)
+  uid: ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)
+  package: ExcelScript!
+  fullName: setMultiLevel(multiLevel)
+  summary: Indique si un axe est à plusieurs niveaux.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setMultiLevel(multiLevel: boolean): void;'
+    parameters:
+    - id: multiLevel
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setNumberFormat(numberFormat)
+  uid: ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)
+  package: ExcelScript!
+  fullName: setNumberFormat(numberFormat)
+  summary: Spécifie le code du format de l’étiquette de graduation de l’axe.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setNumberFormat(numberFormat: string): void;'
+    parameters:
+    - id: numberFormat
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setOffset(offset)
+  uid: ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)
+  package: ExcelScript!
+  fullName: setOffset(offset)
+  summary: Indique la distance entre les niveaux des étiquettes et la distance entre le premier niveau et la ligne de l’axe. La valeur doit être un entier compris entre 0 et 1000.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setOffset(offset: number): void;'
+    parameters:
+    - id: offset
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setPosition(position)
+  uid: ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)
+  package: ExcelScript!
+  fullName: setPosition(position)
+  summary: Spécifie la position de l’axe spécifié où l’autre axe croise. Pour plus d’informations, voir ExcelScript. ChartAxisPosition.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPosition(position: ChartAxisPosition): void;'
+    parameters:
+    - id: position
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisPosition:enum" />
+    return:
+      type: void
+      description: ''
+- name: setPositionAt(value)
+  uid: ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)
+  package: ExcelScript!
+  fullName: setPositionAt(value)
+  summary: Définit la position de l’axe spécifié où l’autre axe se coupe.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPositionAt(value: number): void;'
+    parameters:
+    - id: value
+      description: Valeur personnalisée des croisements à
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setReversePlotOrder(reversePlotOrder)
+  uid: ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)
+  package: ExcelScript!
+  fullName: setReversePlotOrder(reversePlotOrder)
+  summary: Indique si Excel trace les points de données du dernier au premier.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setReversePlotOrder(reversePlotOrder: boolean): void;'
+    parameters:
+    - id: reversePlotOrder
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setScaleType(scaleType)
+  uid: ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)
+  package: ExcelScript!
+  fullName: setScaleType(scaleType)
+  summary: Indique le type d’étendue de l’axe des ordonnées. Pour plus d’informations, voir ExcelScript. ChartAxisScaleType.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setScaleType(scaleType: ChartAxisScaleType): void;'
+    parameters:
+    - id: scaleType
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisScaleType:enum" />
+    return:
+      type: void
+      description: ''
+- name: setShowDisplayUnitLabel(showDisplayUnitLabel)
+  uid: ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)
+  package: ExcelScript!
+  fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
+  summary: Indique si l’étiquette de l’unité d’affichage de l’axe est visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShowDisplayUnitLabel(showDisplayUnitLabel: boolean): void;'
+    parameters:
+    - id: showDisplayUnitLabel
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: Cette énumération spécifie l’angle auquel le texte est orienté pour l’étiquette de graduation de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTickLabelPosition(tickLabelPosition)
+  uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)
+  package: ExcelScript!
+  fullName: setTickLabelPosition(tickLabelPosition)
+  summary: Spécifie la position des étiquettes de graduation sur l'axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickLabelPosition.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setTickLabelPosition(
+                  tickLabelPosition: ChartAxisTickLabelPosition
+              ): void;
+    parameters:
+    - id: tickLabelPosition
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisTickLabelPosition:enum" />
+    return:
+      type: void
+      description: ''
+- name: setTickLabelSpacing(tickLabelSpacing)
+  uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)
+  package: ExcelScript!
+  fullName: setTickLabelSpacing(tickLabelSpacing)
+  summary: Indique le nombre d’abscisses ou de séries entre les étiquettes de graduation. Il peut s’agir d’une valeur comprise entre 1 et 31999.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTickLabelSpacing(tickLabelSpacing: number): void;'
+    parameters:
+    - id: tickLabelSpacing
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setTickMarkSpacing(tickMarkSpacing)
+  uid: ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)
+  package: ExcelScript!
+  fullName: setTickMarkSpacing(tickMarkSpacing)
+  summary: Indique le nombre d’abscisses ou de séries entre les marques de graduation.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTickMarkSpacing(tickMarkSpacing: number): void;'
+    parameters:
+    - id: tickMarkSpacing
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setVisible(visible)
+  uid: ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)
+  package: ExcelScript!
+  fullName: setVisible(visible)
+  summary: Indique si l’axe est visible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVisible(visible: boolean): void;'
+    parameters:
+    - id: visible
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: a8c050c98e73332c5362ffa16f3b35306b331810
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49417099"
