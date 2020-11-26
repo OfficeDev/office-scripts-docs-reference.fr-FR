@@ -1,82 +1,84 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SlicerItem:interface'
-    summary: Représente un élément de segment dans un Slicer.
-    name: Excel.SlicerItem
-    fullName: Excel.SlicerItem
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.SlicerItem#hasData:member'
-      - 'excel!Excel.SlicerItem#isSelected:member'
-      - 'excel!Excel.SlicerItem#key:member'
-      - 'excel!Excel.SlicerItem#load:member(1)'
-      - 'excel!Excel.SlicerItem#name:member'
-  - uid: 'excel!Excel.SlicerItem#hasData:member'
-    summary: True si l’élément de segment comporte des données.
-    name: hasData
-    fullName: hasData
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly hasData: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SlicerItem#isSelected:member'
-    summary: "True si l’élément de slicer est sélectionné\_; sinon False. Définir cette valeur n’efface pas état autres SlicerItems sélectionné. Par défaut, si l’élément de segment est le seul sélectionné, lorsqu’il est désélectionné, tous les éléments sont sélectionnés."
-    name: isSelected
-    fullName: isSelected
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isSelected: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SlicerItem#key:member'
-    summary: Représente la valeur unique représentant l’élément de segment.
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly key: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.SlicerItem#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.SlicerItem#name:member'
-    summary: Représente le titre affiché dans l’interface utilisateur.
-    name: name
-    fullName: name
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly name: string;'
-      return:
-        type:
-          - string
+### YamlMime:TSType
+name: Excel.SlicerItem
+uid: excel!Excel.SlicerItem:interface
+package: excel!
+fullName: Excel.SlicerItem
+summary: Représente un élément de segment dans un Slicer.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: hasData
+  uid: excel!Excel.SlicerItem#hasData:member
+  package: excel!
+  fullName: hasData
+  summary: True si l’élément de segment comporte des données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly hasData: boolean;'
+    return:
+      type: boolean
+- name: isSelected
+  uid: excel!Excel.SlicerItem#isSelected:member
+  package: excel!
+  fullName: isSelected
+  summary: True si l’élément de slicer est sélectionné ; sinon False. Définir cette valeur n’efface pas état autres SlicerItems sélectionné. Par défaut, si l’élément de segment est le seul sélectionné, lorsqu’il est désélectionné, tous les éléments sont sélectionnés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'isSelected: boolean;'
+    return:
+      type: boolean
+- name: key
+  uid: excel!Excel.SlicerItem#key:member
+  package: excel!
+  fullName: key
+  summary: Représente la valeur unique représentant l’élément de segment.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly key: string;'
+    return:
+      type: string
+- name: name
+  uid: excel!Excel.SlicerItem#name:member
+  package: excel!
+  fullName: name
+  summary: Représente le titre affiché dans l’interface utilisateur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly name: string;'
+    return:
+      type: string
+methods:
+- name: load(propertyNames)
+  uid: excel!Excel.SlicerItem#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 976b469bdb1f34f77a4e6a0fcb863a624cdb080b
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418407"

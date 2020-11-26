@@ -1,63 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface'
-    summary: Encapsule les propriétés de format de l’étiquette de courbe de tendance du graphique.
-    name: ExcelScript.ChartTrendlineLabelFormat
-    fullName: ExcelScript.ChartTrendlineLabelFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)'
-      - 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)'
-    summary: 'Cette énumération spécifie le format de bordure, qui inclut couleur, LineStyle et Weight.'
-    name: getBorder()
-    fullName: getBorder()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorder(): ChartBorder;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartBorder:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)'
-    summary: Cette énumération spécifie le format de remplissage de l’étiquette de courbe de tendance du graphique actif.
-    name: getFill()
-    fullName: getFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFill(): ChartFill;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFill:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)'
-    summary: 'Spécifie les attributs de police (nom de police, taille de police, couleur, etc.) pour une étiquette de courbe de tendance de graphique.'
-    name: getFont()
-    fullName: getFont()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFont(): ChartFont;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFont:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
-    name: ChartBorder
-    fullName: ExcelScript.ChartBorder
-  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
-    name: ChartFill
-    fullName: ExcelScript.ChartFill
-  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
-    name: ChartFont
-    fullName: ExcelScript.ChartFont
+### YamlMime:TSType
+name: ExcelScript.ChartTrendlineLabelFormat
+uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartTrendlineLabelFormat
+summary: Encapsule les propriétés de format de l’étiquette de courbe de tendance du graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorder()
+  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)
+  package: ExcelScript!
+  fullName: getBorder()
+  summary: Cette énumération spécifie le format de bordure, qui inclut couleur, LineStyle et Weight.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorder(): ChartBorder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: Cette énumération spécifie le format de remplissage de l’étiquette de courbe de tendance du graphique actif.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): ChartFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
+      description: ''
+- name: getFont()
+  uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: Spécifie les attributs de police (nom de police, taille de police, couleur, etc.) pour une étiquette de courbe de tendance de graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): ChartFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 0830f7c4527fd1b5b50b2ed8b04de4f42d839c38
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419501"

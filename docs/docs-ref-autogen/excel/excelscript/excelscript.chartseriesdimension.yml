@@ -1,51 +1,37 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension:enum'
-    summary: Représente les dimensions lors de l’obtention de valeurs à partir de la série de graphiques.
-    name: ExcelScript.ChartSeriesDimension
-    fullName: ExcelScript.ChartSeriesDimension
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
-      - 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member'
-    summary: Axe des séries du graphique pour les tailles des bulles dans les graphiques en bulles.
-    name: bubbleSizes
-    fullName: bubbleSizes
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.categories:member'
-    summary: Axe des séries du graphique pour les catégories.
-    name: categories
-    fullName: categories
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.values:member'
-    summary: Axe des séries du graphique pour les valeurs.
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member'
-    summary: Axe des séries du graphique pour les valeurs de l’axe des abscisses dans les graphiques à nuages de points et les graphiques en bulles.
-    name: xvalues
-    fullName: xvalues
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member'
-    summary: Axe des séries du graphique pour les valeurs de l’axe des ordonnées dans les graphiques en bulles et à nuages de points.
-    name: yvalues
-    fullName: yvalues
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.ChartSeriesDimension
+uid: ExcelScript!ExcelScript.ChartSeriesDimension:enum
+package: ExcelScript!
+fullName: ExcelScript.ChartSeriesDimension
+summary: Représente les dimensions lors de l’obtention de valeurs à partir de la série de graphiques.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: bubbleSizes
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.bubbleSizes:member
+  package: ExcelScript!
+  summary: Axe des séries du graphique pour les tailles des bulles dans les graphiques en bulles.
+- name: categories
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.categories:member
+  package: ExcelScript!
+  summary: Axe des séries du graphique pour les catégories.
+- name: values
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.values:member
+  package: ExcelScript!
+  summary: Axe des séries du graphique pour les valeurs.
+- name: xvalues
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.xvalues:member
+  package: ExcelScript!
+  summary: Axe des séries du graphique pour les valeurs de l’axe des abscisses dans les graphiques à nuages de points et les graphiques en bulles.
+- name: yvalues
+  uid: ExcelScript!ExcelScript.ChartSeriesDimension.yvalues:member
+  package: ExcelScript!
+  summary: Axe des séries du graphique pour les valeurs de l’axe des ordonnées dans les graphiques en bulles et à nuages de points.
+metadata:
+  ms.openlocfilehash: 62dbf9658e63772b83fed5d065b58bce1c013d89
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49419550"

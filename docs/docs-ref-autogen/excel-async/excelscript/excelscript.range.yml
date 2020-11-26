@@ -1,952 +1,1003 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.Range:interface'
-    summary: 'La plage représente un ensemble d’une ou plusieurs cellules contiguës, telles qu’une cellule, une ligne, une colonne, un bloc de cellules, etc. Pour en savoir plus sur l’utilisation des plages tout au long de l’API, consultez la rubrique [utiliser des plages à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) et [utiliser des plages à l’aide de l’API JavaScript pour Excel (avancé)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.'
-    name: Excel.Range
-    fullName: Excel.Range
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.Range#address:member'
-      - 'excel!Excel.Range#addressLocal:member'
-      - 'excel!Excel.Range#autoFill:member(1)'
-      - 'excel!Excel.Range#calculate:member(1)'
-      - 'excel!Excel.Range#cellCount:member'
-      - 'excel!Excel.Range#clear:member(1)'
-      - 'excel!Excel.Range#columnCount:member'
-      - 'excel!Excel.Range#columnHidden:member'
-      - 'excel!Excel.Range#columnIndex:member'
-      - 'excel!Excel.Range#conditionalFormats:member'
-      - 'excel!Excel.Range#convertDataTypeToText:member(1)'
-      - 'excel!Excel.Range#convertToLinkedDataType:member(1)'
-      - 'excel!Excel.Range#copyFrom:member(1)'
-      - 'excel!Excel.Range#dataValidation:member'
-      - 'excel!Excel.Range#delete:member(1)'
-      - 'excel!Excel.Range#find:member(1)'
-      - 'excel!Excel.Range#findOrNullObject:member(1)'
-      - 'excel!Excel.Range#flashFill:member(1)'
-      - 'excel!Excel.Range#format:member'
-      - 'excel!Excel.Range#formulas:member'
-      - 'excel!Excel.Range#formulasLocal:member'
-      - 'excel!Excel.Range#formulasR1C1:member'
-      - 'excel!Excel.Range#getAbsoluteResizedRange:member(1)'
-      - 'excel!Excel.Range#getBoundingRect:member(1)'
-      - 'excel!Excel.Range#getCell:member(1)'
-      - 'excel!Excel.Range#getColumn:member(1)'
-      - 'excel!Excel.Range#getColumnsAfter:member(1)'
-      - 'excel!Excel.Range#getColumnsBefore:member(1)'
-      - 'excel!Excel.Range#getEntireColumn:member(1)'
-      - 'excel!Excel.Range#getEntireRow:member(1)'
-      - 'excel!Excel.Range#getImage:member(1)'
-      - 'excel!Excel.Range#getIntersection:member(1)'
-      - 'excel!Excel.Range#getIntersectionOrNullObject:member(1)'
-      - 'excel!Excel.Range#getLastCell:member(1)'
-      - 'excel!Excel.Range#getLastColumn:member(1)'
-      - 'excel!Excel.Range#getLastRow:member(1)'
-      - 'excel!Excel.Range#getOffsetRange:member(1)'
-      - 'excel!Excel.Range#getPivotTables:member(1)'
-      - 'excel!Excel.Range#getResizedRange:member(1)'
-      - 'excel!Excel.Range#getRow:member(1)'
-      - 'excel!Excel.Range#getRowsAbove:member(1)'
-      - 'excel!Excel.Range#getRowsBelow:member(1)'
-      - 'excel!Excel.Range#getSpecialCells:member(1)'
-      - 'excel!Excel.Range#getSpecialCellsOrNullObject:member(1)'
-      - 'excel!Excel.Range#getSurroundingRegion:member(1)'
-      - 'excel!Excel.Range#getTables:member(1)'
-      - 'excel!Excel.Range#getUsedRange:member(1)'
-      - 'excel!Excel.Range#getUsedRangeOrNullObject:member(1)'
-      - 'excel!Excel.Range#getVisibleView:member(1)'
-      - 'excel!Excel.Range#group:member(1)'
-      - 'excel!Excel.Range#height:member'
-      - 'excel!Excel.Range#hidden:member'
-      - 'excel!Excel.Range#hideGroupDetails:member(1)'
-      - 'excel!Excel.Range#hyperlink:member'
-      - 'excel!Excel.Range#insert:member(1)'
-      - 'excel!Excel.Range#isEntireColumn:member'
-      - 'excel!Excel.Range#isEntireRow:member'
-      - 'excel!Excel.Range#left:member'
-      - 'excel!Excel.Range#linkedDataTypeState:member'
-      - 'excel!Excel.Range#load:member(1)'
-      - 'excel!Excel.Range#merge:member(1)'
-      - 'excel!Excel.Range#moveTo:member(1)'
-      - 'excel!Excel.Range#numberFormat:member'
-      - 'excel!Excel.Range#numberFormatLocal:member'
-      - 'excel!Excel.Range#removeDuplicates:member(1)'
-      - 'excel!Excel.Range#replaceAll:member(1)'
-      - 'excel!Excel.Range#rowCount:member'
-      - 'excel!Excel.Range#rowHidden:member'
-      - 'excel!Excel.Range#rowIndex:member'
-      - 'excel!Excel.Range#select:member(1)'
-      - 'excel!Excel.Range#setDirty:member(1)'
-      - 'excel!Excel.Range#showCard:member(1)'
-      - 'excel!Excel.Range#showGroupDetails:member(1)'
-      - 'excel!Excel.Range#sort:member'
-      - 'excel!Excel.Range#style:member'
-      - 'excel!Excel.Range#text:member'
-      - 'excel!Excel.Range#top:member'
-      - 'excel!Excel.Range#ungroup:member(1)'
-      - 'excel!Excel.Range#unmerge:member(1)'
-      - 'excel!Excel.Range#values:member'
-      - 'excel!Excel.Range#valueTypes:member'
-      - 'excel!Excel.Range#width:member'
-      - 'excel!Excel.Range#worksheet:member'
-  - uid: 'excel!Excel.Range#address:member'
-    summary: "Spécifie la référence de plage en style a1. La valeur de l’adresse contiendra la référence de la feuille (par exemple, «Sheet1\_! A1\_: B4 \")."
-    name: address
-    fullName: address
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly address: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Range#addressLocal:member'
-    summary: Cette énumération spécifie la référence de plage pour la plage spécifiée dans la langue de l’utilisateur.
-    name: addressLocal
-    fullName: addressLocal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly addressLocal: string;'
-      return:
-        type:
-          - string
-  - uid: 'excel!Excel.Range#autoFill:member(1)'
-    summary: |-
-      Remplit la plage de la plage actuelle jusqu’à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être null ou peut étendre la source à l’horizontale ou à la verticale. Les plages discontinues ne sont pas prises en charge.
+### YamlMime:TSType
+name: Excel.Range
+uid: excel!Excel.Range:interface
+package: excel!
+fullName: Excel.Range
+summary: La plage représente un ensemble d’une ou plusieurs cellules contiguës, telles qu’une cellule, une ligne, une colonne, un bloc de cellules, etc. Pour en savoir plus sur l’utilisation des plages tout au long de l’API, consultez la rubrique [utiliser des plages à l’aide de l’API JavaScript pour Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges) et [utiliser des plages à l’aide de l’API JavaScript pour Excel (avancé)](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced)<!-- -->.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: address
+  uid: excel!Excel.Range#address:member
+  package: excel!
+  fullName: address
+  summary: 'Spécifie la référence de plage en style a1. La valeur de l’adresse contiendra la référence de la feuille (par exemple, «Sheet1 ! A1 : B4 ").'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly address: string;'
+    return:
+      type: string
+- name: addressLocal
+  uid: excel!Excel.Range#addressLocal:member
+  package: excel!
+  fullName: addressLocal
+  summary: Cette énumération spécifie la référence de plage pour la plage spécifiée dans la langue de l’utilisateur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly addressLocal: string;'
+    return:
+      type: string
+- name: cellCount
+  uid: excel!Excel.Range#cellCount:member
+  package: excel!
+  fullName: cellCount
+  summary: Indique le nombre de cellules de la plage. Cette API renvoie -1 si le nombre de cellules est supérieur à 2^31-1 (2 147 483 647).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly cellCount: number;'
+    return:
+      type: number
+- name: columnCount
+  uid: excel!Excel.Range#columnCount:member
+  package: excel!
+  fullName: columnCount
+  summary: Indique le nombre total de colonnes de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly columnCount: number;'
+    return:
+      type: number
+- name: columnHidden
+  uid: excel!Excel.Range#columnHidden:member
+  package: excel!
+  fullName: columnHidden
+  summary: Indique si toutes les colonnes de la plage active sont masquées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'columnHidden: boolean;'
+    return:
+      type: boolean
+- name: columnIndex
+  uid: excel!Excel.Range#columnIndex:member
+  package: excel!
+  fullName: columnIndex
+  summary: Indique le numéro de colonne de la première cellule de la plage. Avec indice zéro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly columnIndex: number;'
+    return:
+      type: number
+- name: conditionalFormats
+  uid: excel!Excel.Range#conditionalFormats:member
+  package: excel!
+  fullName: conditionalFormats
+  summary: Collection d’ConditionalFormats qui croise la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly conditionalFormats: ConditionalFormatCollection;'
+    return:
+      type: <xref uid="excel!Excel.ConditionalFormatCollection:interface" />
+- name: dataValidation
+  uid: excel!Excel.Range#dataValidation:member
+  package: excel!
+  fullName: dataValidation
+  summary: Renvoie un objet de validation des données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly dataValidation: DataValidation;'
+    return:
+      type: <xref uid="excel!Excel.DataValidation:interface" />
+- name: format
+  uid: excel!Excel.Range#format:member
+  package: excel!
+  fullName: format
+  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures, l’alignement et d’autres propriétés de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly format: RangeFormat;'
+    return:
+      type: <xref uid="excel!Excel.RangeFormat:interface" />
+- name: formulas
+  uid: excel!Excel.Range#formulas:member
+  package: excel!
+  fullName: formulas
+  summary: Représente la formule dans le style de notation A1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulas: any[][];'
+    return:
+      type: any[][]
+- name: formulasLocal
+  uid: excel!Excel.Range#formulasLocal:member
+  package: excel!
+  fullName: formulasLocal
+  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulasLocal: any[][];'
+    return:
+      type: any[][]
+- name: formulasR1C1
+  uid: excel!Excel.Range#formulasR1C1:member
+  package: excel!
+  fullName: formulasR1C1
+  summary: Représente la formule dans le style de notation R1C1.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'formulasR1C1: any[][];'
+    return:
+      type: any[][]
+- name: height
+  uid: excel!Excel.Range#height:member
+  package: excel!
+  fullName: height
+  summary: Renvoie la distance en points pour zoom 100 %, à partir du bord supérieur de la plage au bord inférieur de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly height: number;'
+    return:
+      type: number
+- name: hidden
+  uid: excel!Excel.Range#hidden:member
+  package: excel!
+  fullName: hidden
+  summary: Indique si toutes les cellules de la plage active sont masquées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly hidden: boolean;'
+    return:
+      type: boolean
+- name: hyperlink
+  uid: excel!Excel.Range#hyperlink:member
+  package: excel!
+  fullName: hyperlink
+  summary: Représente le lien hypertexte de la plage active.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'hyperlink: RangeHyperlink;'
+    return:
+      type: <xref uid="excel!Excel.RangeHyperlink:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Orders\");\n\n    let productsRange = sheet.getRange(\"A3:A5\");\n    productsRange.load(\"values\");\n\n    await context.sync();\n\n    // Create a hyperlink to a URL \n    // for each product name in the first table.\n    for (let i = 0; i < productsRange.values.length; i++) {\n        let cellRange = productsRange.getCell(i, 0);\n        let cellText = productsRange.values[i][0];\n\n        let hyperlink = {\n            textToDisplay: cellText,\n            screenTip: \"Search Bing for '\" + cellText + \"'\",\n            address: \"https://www.bing.com?q=\" + cellText\n        }\n        cellRange.hyperlink = hyperlink;\n    }\n\n    await context.sync();\n}\n```"
+- name: isEntireColumn
+  uid: excel!Excel.Range#isEntireColumn:member
+  package: excel!
+  fullName: isEntireColumn
+  summary: Représente si la plage active est une colonne entière.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isEntireColumn: boolean;'
+    return:
+      type: boolean
+- name: isEntireRow
+  uid: excel!Excel.Range#isEntireRow:member
+  package: excel!
+  fullName: isEntireRow
+  summary: Représente si la plage active est une ligne entière.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly isEntireRow: boolean;'
+    return:
+      type: boolean
+- name: left
+  uid: excel!Excel.Range#left:member
+  package: excel!
+  fullName: left
+  summary: Renvoie la distance en points pour zoom 100 %, à partir du bord gauche de la feuille de calcul au bord gauche de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly left: number;'
+    return:
+      type: number
+- name: linkedDataTypeState
+  uid: excel!Excel.Range#linkedDataTypeState:member
+  package: excel!
+  fullName: linkedDataTypeState
+  summary: Représente l’état du type de données de chaque cellule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly linkedDataTypeState: LinkedDataTypeState[][];'
+    return:
+      type: <xref uid="excel!Excel.LinkedDataTypeState:enum" />[][]
+- name: numberFormat
+  uid: excel!Excel.Range#numberFormat:member
+  package: excel!
+  fullName: numberFormat
+  summary: Représente le code de format de nombre d’Excel pour la plage donnée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'numberFormat: any[][];'
+    return:
+      type: any[][]
+- name: numberFormatLocal
+  uid: excel!Excel.Range#numberFormatLocal:member
+  package: excel!
+  fullName: numberFormatLocal
+  summary: Représente le code de format de nombre d’Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue aucune langue ou contrainte de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes mises en forme localement en fonction de la langue spécifiée dans les paramètres système.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'numberFormatLocal: any[][];'
+    return:
+      type: any[][]
+- name: rowCount
+  uid: excel!Excel.Range#rowCount:member
+  package: excel!
+  fullName: rowCount
+  summary: Renvoie le nombre total de lignes de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly rowCount: number;'
+    return:
+      type: number
+- name: rowHidden
+  uid: excel!Excel.Range#rowHidden:member
+  package: excel!
+  fullName: rowHidden
+  summary: Indique si toutes les lignes de la plage active sont masquées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'rowHidden: boolean;'
+    return:
+      type: boolean
+- name: rowIndex
+  uid: excel!Excel.Range#rowIndex:member
+  package: excel!
+  fullName: rowIndex
+  summary: Renvoie le numéro de ligne de la première cellule de la plage. Avec indice zéro.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly rowIndex: number;'
+    return:
+      type: number
+- name: sort
+  uid: excel!Excel.Range#sort:member
+  package: excel!
+  fullName: sort
+  summary: Représente le tri de plage de la plage actuelle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly sort: RangeSort;'
+    return:
+      type: <xref uid="excel!Excel.RangeSort:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    let range = sheet.getRange(\"A1:E5\");\n\n    // Find the column header that provides the sort criteria.\n    let header = range.find(criteria, {});\n    header.load(\"columnIndex\");\n    await context.sync();\n\n    range.sort.apply(\n        [\n            {\n                key: header.columnIndex,\n                sortOn: Excel.SortOn.value\n            }\n        ],\n        false /*matchCase*/,\n        true /*hasHeaders*/,\n        Excel.SortOrientation.rows\n    );\n    await context.sync();\n}\n```"
+- name: style
+  uid: excel!Excel.Range#style:member
+  package: excel!
+  fullName: style
+  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, la valeur null est renvoyée. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’énumération BuiltInStyle est retournée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'style: string;'
+    return:
+      type: string
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let worksheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = worksheet.getRange(\"A1:E1\");\n\n    // Apply built-in style. \n    // Styles are in the Home tab ribbon.\n    range.style = Excel.BuiltInStyle.neutral;\n    range.format.horizontalAlignment = \"Right\";\n\n    await context.sync();\n}\n```"
+- name: text
+  uid: excel!Excel.Range#text:member
+  package: excel!
+  fullName: text
+  summary: Valeurs de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La \# substitution de signe qui se produit dans l’interface utilisateur d’Excel n’affecte pas la valeur de texte renvoyée par l’API.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly text: string[][];'
+    return:
+      type: string[][]
+- name: top
+  uid: excel!Excel.Range#top:member
+  package: excel!
+  fullName: top
+  summary: Renvoie la distance en points pour zoom 100 %, à partir du bord supérieur de la feuille de calcul au bord supérieur de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly top: number;'
+    return:
+      type: number
+- name: values
+  uid: excel!Excel.Range#values:member
+  package: excel!
+  fullName: values
+  summary: Représente les valeurs brutes de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Les cellules contenant une erreur renvoie la chaîne d’erreur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'values: any[][];'
+    return:
+      type: any[][]
+- name: valueTypes
+  uid: excel!Excel.Range#valueTypes:member
+  package: excel!
+  fullName: valueTypes
+  summary: Cette énumération spécifie le type de données dans chaque cellule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly valueTypes: RangeValueType[][];'
+    return:
+      type: <xref uid="excel!Excel.RangeValueType:enum" />[][]
+- name: width
+  uid: excel!Excel.Range#width:member
+  package: excel!
+  fullName: width
+  summary: Renvoie la distance en points pour zoom 100 %, à partir du bord gauche de la plage au bord droit de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly width: number;'
+    return:
+      type: number
+- name: worksheet
+  uid: excel!Excel.Range#worksheet:member
+  package: excel!
+  fullName: worksheet
+  summary: Feuille de calcul contenant la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'readonly worksheet: Worksheet;'
+    return:
+      type: <xref uid="excel!Excel.Worksheet:interface" />
+methods:
+- name: autoFill(destinationRange, autoFillType)
+  uid: excel!Excel.Range#autoFill:member(1)
+  package: excel!
+  fullName: autoFill(destinationRange, autoFillType)
+  summary: >-
+    Remplit la plage de la plage actuelle jusqu’à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être null ou peut étendre la source à l’horizontale ou à la verticale. Les plages discontinues ne sont pas prises en charge.
 
-      Pour plus d’informations, consultez la lecture de l' [AutoFill et du remplissage instantané](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
-    name: 'autoFill(destinationRange, autoFillType)'
-    fullName: 'autoFill(destinationRange, autoFillType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        autoFill(
-                    destinationRange?: Range | string,
-                    autoFillType?:
-                        | AutoFillType
-                        | "FillDefault"
-                        | "FillCopy"
-                        | "FillSeries"
-                        | "FillFormats"
-                        | "FillValues"
-                        | "FillDays"
-                        | "FillWeekdays"
-                        | "FillMonths"
-                        | "FillYears"
-                        | "LinearTrend"
-                        | "GrowthTrend"
-                        | "FlashFill"
-                ): void;
-      return:
-        type:
-          - void
-        description: |-
 
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-            let sheet = context.workbook.worksheets.getActiveWorksheet();
-            let sumCell = sheet.getRange("P4");
-            
-            // Copy everything. The formulas will be contextually updated based on their new locations.
-            sumCell.autoFill("P4:P7", Excel.AutoFillType.fillCopy);
-            sumCell.format.autofitColumns();
-            await context.sync();
-          }
-          ```
-      parameters:
-        - id: destinationRange
-          description: 'La plage de destination à AutoFill. Si la plage de destination est null, les données sont remplies en fonction des cellules environnantes (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de la plage de l’interface utilisateur).'
-          type:
-            - 'excel!Excel.Range#autoFill~0:complex'
-        - id: autoFillType
-          description: "Type de remplissage automatique. Indique comment la plage de destination doit être remplie, en fonction du contenu de la plage actuelle. La valeur par défaut est «\_FillDefault\_»."
-          type:
-            - 'excel!Excel.Range#autoFill~1:complex'
-  - uid: 'excel!Excel.Range#calculate:member(1)'
-    summary: Calcule une plage de cellules dans une feuille de calcul.
-    name: calculate()
-    fullName: calculate()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'calculate(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Range#cellCount:member'
-    summary: "Indique le nombre de cellules de la plage. Cette API renvoie -1 si le nombre de cellules est supérieur à 2^31-1\_(2\_147\_483\_647)."
-    name: cellCount
-    fullName: cellCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly cellCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#clear:member(1)'
-    summary: 'Supprime les valeurs et les propriétés de format, de remplissage, de bordure, etc. de la plage.'
-    name: clear(applyTo)
-    fullName: clear(applyTo)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        clear(
-                    applyTo?:
-                        | ClearApplyTo
-                        | "All"
-                        | "Formats"
-                        | "Contents"
-                        | "Hyperlinks"
-                        | "RemoveHyperlinks"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: applyTo
-          description: 'Facultatif. Détermine le type d’action de suppression. Pour plus d’informations, voir Excel. ClearApplyTo.'
-          type:
-            - 'excel!Excel.Range#clear~0:complex'
-  - uid: 'excel!Excel.Range#columnCount:member'
-    summary: Indique le nombre total de colonnes de la plage.
-    name: columnCount
-    fullName: columnCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly columnCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#columnHidden:member'
-    summary: Indique si toutes les colonnes de la plage active sont masquées.
-    name: columnHidden
-    fullName: columnHidden
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'columnHidden: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Range#columnIndex:member'
-    summary: Indique le numéro de colonne de la première cellule de la plage. Avec indice zéro.
-    name: columnIndex
-    fullName: columnIndex
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly columnIndex: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#conditionalFormats:member'
-    summary: Collection d’ConditionalFormats qui croise la plage.
-    name: conditionalFormats
-    fullName: conditionalFormats
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly conditionalFormats: ConditionalFormatCollection;'
-      return:
-        type:
-          - 'excel!Excel.ConditionalFormatCollection:interface'
-  - uid: 'excel!Excel.Range#convertDataTypeToText:member(1)'
-    summary: Convertit la plage de cellules avec des types de données en texte.
-    name: convertDataTypeToText()
-    fullName: convertDataTypeToText()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertDataTypeToText(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Range#convertToLinkedDataType:member(1)'
-    summary: Convertit la plage de cellules en type de données liée dans la feuille de calcul.
-    name: 'convertToLinkedDataType(serviceID, languageCulture)'
-    fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        convertToLinkedDataType(
-                    serviceID: number,
-                    languageCulture: string
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: serviceID
-          description: ID de service qui sera utilisé pour interroger les données.
-          type:
-            - number
-        - id: languageCulture
-          description: Culture de langue pour laquelle interroger le service.
-          type:
-            - string
-  - uid: 'excel!Excel.Range#copyFrom:member(1)'
-    summary: Copie les cellules de données ou de mise en forme à partir de la plage source ou RangeAreas à la plage active. La taille de la plage de destination peut être différente de celle de la plage source ou RangeAreas. La destination est étendue automatiquement si elle est plus petite que la source.
-    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        copyFrom(
-                    sourceRange: Range | RangeAreas | string,
-                    copyType?:
-                        | RangeCopyType
+    Pour plus d’informations, consultez la lecture de l' [AutoFill et du remplissage instantané](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      autoFill(
+                  destinationRange?: Range | string,
+                  autoFillType?:
+                      | AutoFillType
+                      | "FillDefault"
+                      | "FillCopy"
+                      | "FillSeries"
+                      | "FillFormats"
+                      | "FillValues"
+                      | "FillDays"
+                      | "FillWeekdays"
+                      | "FillMonths"
+                      | "FillYears"
+                      | "LinearTrend"
+                      | "GrowthTrend"
+                      | "FlashFill"
+              ): void;
+    parameters:
+    - id: destinationRange
+      description: La plage de destination à AutoFill. Si la plage de destination est null, les données sont remplies en fonction des cellules environnantes (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de la plage de l’interface utilisateur).
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    - id: autoFillType
+      description: Type de remplissage automatique. Indique comment la plage de destination doit être remplie, en fonction du contenu de la plage actuelle. La valeur par défaut est « FillDefault ».
+      type: "| <xref uid=\"excel!Excel.AutoFillType:enum\" />\n                | \"FillDefault\"\n                | \"FillCopy\"\n                | \"FillSeries\"\n                | \"FillFormats\"\n                | \"FillValues\"\n                | \"FillDays\"\n                | \"FillWeekdays\"\n                | \"FillMonths\"\n                | \"FillYears\"\n                | \"LinearTrend\"\n                | \"GrowthTrend\"\n                | \"FlashFill\"\n        "
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n  let sheet = context.workbook.worksheets.getActiveWorksheet();\n  let sumCell = sheet.getRange(\"P4\");\n  \n  // Copy everything. The formulas will be contextually updated based on their new locations.\n  sumCell.autoFill(\"P4:P7\", Excel.AutoFillType.fillCopy);\n  sumCell.format.autofitColumns();\n  await context.sync();\n}\n```"
+- name: calculate()
+  uid: excel!Excel.Range#calculate:member(1)
+  package: excel!
+  fullName: calculate()
+  summary: Calcule une plage de cellules dans une feuille de calcul.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'calculate(): void;'
+    return:
+      type: void
+      description: ''
+- name: clear(applyTo)
+  uid: excel!Excel.Range#clear:member(1)
+  package: excel!
+  fullName: clear(applyTo)
+  summary: Supprime les valeurs et les propriétés de format, de remplissage, de bordure, etc. de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      clear(
+                  applyTo?:
+                      | ClearApplyTo
+                      | "All"
+                      | "Formats"
+                      | "Contents"
+                      | "Hyperlinks"
+                      | "RemoveHyperlinks"
+              ): void;
+    parameters:
+    - id: applyTo
+      description: Facultatif. Détermine le type d’action de suppression. Pour plus d’informations, voir Excel. ClearApplyTo.
+      type: "| <xref uid=\"excel!Excel.ClearApplyTo:enum\" />\n                | \"All\"\n                | \"Formats\"\n                | \"Contents\"\n                | \"Hyperlinks\"\n                | \"RemoveHyperlinks\"\n        "
+    return:
+      type: void
+      description: ''
+- name: convertDataTypeToText()
+  uid: excel!Excel.Range#convertDataTypeToText:member(1)
+  package: excel!
+  fullName: convertDataTypeToText()
+  summary: Convertit la plage de cellules avec des types de données en texte.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'convertDataTypeToText(): void;'
+    return:
+      type: void
+      description: ''
+- name: convertToLinkedDataType(serviceID, languageCulture)
+  uid: excel!Excel.Range#convertToLinkedDataType:member(1)
+  package: excel!
+  fullName: convertToLinkedDataType(serviceID, languageCulture)
+  summary: Convertit la plage de cellules en type de données liée dans la feuille de calcul.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      convertToLinkedDataType(
+                  serviceID: number,
+                  languageCulture: string
+              ): void;
+    parameters:
+    - id: serviceID
+      description: ID de service qui sera utilisé pour interroger les données.
+      type: number
+    - id: languageCulture
+      description: Culture de langue pour laquelle interroger le service.
+      type: string
+    return:
+      type: void
+      description: ''
+- name: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  uid: excel!Excel.Range#copyFrom:member(1)
+  package: excel!
+  fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
+  summary: Copie les cellules de données ou de mise en forme à partir de la plage source ou RangeAreas à la plage active. La taille de la plage de destination peut être différente de celle de la plage source ou RangeAreas. La destination est étendue automatiquement si elle est plus petite que la source.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      copyFrom(
+                  sourceRange: Range | RangeAreas | string,
+                  copyType?:
+                      | RangeCopyType
+                      | "All"
+                      | "Formulas"
+                      | "Values"
+                      | "Formats",
+                  skipBlanks?: boolean,
+                  transpose?: boolean
+              ): void;
+    parameters:
+    - id: sourceRange
+      description: Plage source ou RangeAreas à partir de laquelle effectuer la copie. Lorsque la RangeAreas source est composée de plusieurs plages, son formulaire doit pouvoir être créé en supprimant des lignes ou des colonnes entières d’une plage rectangulaire.
+      type: <xref uid="excel!Excel.Range:interface" /> | <xref uid="excel!Excel.RangeAreas:interface" /> | string
+    - id: copyType
+      description: Type de données de cellule ou de mise en forme à copier. La valeur par défaut est « All ».
+      type: >-
+        | <xref uid="excel!Excel.RangeCopyType:enum" />
                         | "All"
                         | "Formulas"
                         | "Values"
-                        | "Formats",
-                    skipBlanks?: boolean,
-                    transpose?: boolean
-                ): void;
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.getRange("F2").values = [["Copied Formula"]];
-              sheet.getRange("F2").format.autofitColumns();
-
-              // copy a range preserving the formulas
-              // note: non-formula values are copied over as is
-              sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: sourceRange
-          description: 'Plage source ou RangeAreas à partir de laquelle effectuer la copie. Lorsque la RangeAreas source est composée de plusieurs plages, son formulaire doit pouvoir être créé en supprimant des lignes ou des colonnes entières d’une plage rectangulaire.'
-          type:
-            - 'excel!Excel.Range#copyFrom~0:complex'
-        - id: copyType
-          description: "Type de données de cellule ou de mise en forme à copier. La valeur par défaut est «\_All\_»."
-          type:
-            - 'excel!Excel.Range#copyFrom~1:complex'
-        - id: skipBlanks
-          description: True si pour ignorer les cellules vides dans la plage source. La valeur par défaut est False.
-          type:
-            - boolean
-        - id: transpose
-          description: True si pour transposer les cellules dans la plage de destination. La valeur par défaut est False.
-          type:
-            - boolean
-  - uid: 'excel!Excel.Range#dataValidation:member'
-    summary: Renvoie un objet de validation des données.
-    name: dataValidation
-    fullName: dataValidation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly dataValidation: DataValidation;'
-      return:
-        type:
-          - 'excel!Excel.DataValidation:interface'
-  - uid: 'excel!Excel.Range#delete:member(1)'
-    summary: Supprime les cellules associées à la plage.
-    name: delete(shift)
-    fullName: delete(shift)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'delete(shift: DeleteShiftDirection | "Up" | "Left"): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: shift
-          description: 'Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir Excel. DeleteShiftDirection.'
-          type:
-            - 'excel!Excel.Range#delete~0:complex'
-  - uid: 'excel!Excel.Range#find:member(1)'
-    summary: 'Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage active est plus grande qu’une seule cellule, la recherche est limitée à cette plage, sinon la recherche porte sur la totalité de la feuille qui commence après cette cellule.'
-    name: 'find(text, criteria)'
-    fullName: 'find(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'find(text: string, criteria: SearchCriteria): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: text
-          description: Chaîne à rechercher.
-          type:
-            - string
-        - id: criteria
-          description: 'Critères de recherche supplémentaires, y compris le sens de la recherche et si la recherche doit correspondre à la totalité de la cellule ou respecter la casse.'
-          type:
-            - 'excel!Excel.SearchCriteria:interface'
-  - uid: 'excel!Excel.Range#findOrNullObject:member(1)'
-    summary: 'Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage active est plus grande qu’une seule cellule, la recherche est limitée à cette plage, sinon la recherche porte sur la totalité de la feuille qui commence après cette cellule. S’il n’y a aucune correspondance, cette fonction renverra un objet null.'
-    name: 'findOrNullObject(text, criteria)'
-    fullName: 'findOrNullObject(text, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'findOrNullObject(text: string, criteria: SearchCriteria): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let table = sheet.tables.getItem("ExpensesTable");
-              let searchRange = table.getRange();
-              let foundRange = searchRange.findOrNullObject($("#searchText").text(), {
-                  completeMatch: isCompleteMatchToggle,
-                  matchCase: isMatchCaseToggle,
-                  searchDirection: searchDirectionToggle
-              });
-              
-              foundRange.load("address");
-              await context.sync();
-
-              if (foundRange.isNullObject) {
-                  console.log("Text not found");
-              } else {
-                  console.log(foundRange.address);
-              }
-          }
-          ```
-      parameters:
-        - id: text
-          description: Chaîne à rechercher.
-          type:
-            - string
-        - id: criteria
-          description: 'Critères de recherche supplémentaires, y compris le sens de la recherche et si la recherche doit correspondre à la totalité de la cellule ou respecter la casse.'
-          type:
-            - 'excel!Excel.SearchCriteria:interface'
-  - uid: 'excel!Excel.Range#flashFill:member(1)'
-    summary: 'Apporte un remplissage instantané étendue en cours. Le remplissage instantané renseignera automatiquement les données lorsqu’il détectera un modèle, la plage doit donc être la seule plage de la colonne et avoir des données autour afin de trouver le modèle.'
-    name: flashFill()
-    fullName: flashFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'flashFill(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Range#format:member'
-    summary: 'Renvoie un objet format qui encapsule la police, le remplissage, les bordures, l’alignement et d’autres propriétés de la plage.'
-    name: format
-    fullName: format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: RangeFormat;'
-      return:
-        type:
-          - 'excel!Excel.RangeFormat:interface'
-  - uid: 'excel!Excel.Range#formulas:member'
-    summary: Représente la formule dans le style de notation A1.
-    name: formulas
-    fullName: formulas
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulas: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Range#formulasLocal:member'
-    summary: "Représente la formule en notation\_A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule «\_=SUM(A1, 1.5)\_» en anglais deviendrait «\_=SUMME(A1; 1,5)\_» en allemand."
-    name: formulasLocal
-    fullName: formulasLocal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulasLocal: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Range#formulasR1C1:member'
-    summary: Représente la formule dans le style de notation R1C1.
-    name: formulasR1C1
-    fullName: formulasR1C1
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'formulasR1C1: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Range#getAbsoluteResizedRange:member(1)'
-    summary: 'Obtient un objet Plage avec la même cellule supérieure gauche que l’objet de Plage en cours, mais avec un nombre spécifié de lignes et colonnes.'
-    name: 'getAbsoluteResizedRange(numRows, numColumns)'
-    fullName: 'getAbsoluteResizedRange(numRows, numColumns)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: numRows
-          description: Nombre de lignes de la nouvelle taille de la plage.
-          type:
-            - number
-        - id: numColumns
-          description: Nombre de colonnes de la nouvelle taille de la plage.
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getBoundingRect:member(1)'
-    summary: "Renvoie le plus petit objet de plage qui englobe les plages données. Par exemple, la valeur GetBoundingRect pour «\_B2:C5\_» et «\_D10:E15\_» est «\_B2:E15\_»."
-    name: getBoundingRect(anotherRange)
-    fullName: getBoundingRect(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBoundingRect(anotherRange: Range | string): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: 'Nom, adresse ou objet de plage.'
-          type:
-            - 'excel!Excel.Range#getBoundingRect~0:complex'
-  - uid: 'excel!Excel.Range#getCell:member(1)'
-    summary: 'Renvoie l’objet de plage qui contient une cellule donnée sur la base des numéros de ligne et de colonne. La cellule peut être située en dehors des limites de sa plage parente, tant qu’elle reste dans la grille de la feuille de calcul. L’emplacement de la cellule renvoyée est déterminé à partir de la cellule supérieure gauche de la plage.'
-    name: 'getCell(row, column)'
-    fullName: 'getCell(row, column)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCell(row: number, column: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: Numéro de ligne de la cellule à récupérer. Avec indice zéro.
-          type:
-            - number
-        - id: column
-          description: Numéro de colonne de la cellule à récupérer. Avec indice zéro.
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getColumn:member(1)'
-    summary: Obtient une colonne contenue dans la plage.
-    name: getColumn(column)
-    fullName: getColumn(column)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumn(column: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: column
-          description: Numéro de colonne de la plage à récupérer. Avec indice zéro.
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getColumnsAfter:member(1)'
-    summary: Obtient un certain nombre de colonnes à droite de l’objet de plage actuel.
-    name: getColumnsAfter(count)
-    fullName: getColumnsAfter(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnsAfter(count?: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 'Facultatif. Nombre de colonnes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.'
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getColumnsBefore:member(1)'
-    summary: Obtient un certain nombre de colonnes à gauche de l’objet de plage actuel.
-    name: getColumnsBefore(count)
-    fullName: getColumnsBefore(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getColumnsBefore(count?: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 'Facultatif. Nombre de colonnes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.'
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getEntireColumn:member(1)'
-    summary: "Obtient un objet qui représente la colonne entière de la plage (par exemple, si la plage actuelle représente les cellules «\_B4\_: E11\_», `getEntireColumn` qu’il s’agit d’une plage qui représente les colonnes «\_B\_:E\_»)."
-    name: getEntireColumn()
-    fullName: getEntireColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireColumn(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Range#getEntireRow:member(1)'
-    summary: "Obtient un objet qui représente la ligne entière de la plage (par exemple, si la plage actuelle représente les cellules «\_B4\_: E11\_», `GetEntireRow` qu’il s’agit d’une plage qui représente les lignes «\_4:11\_»)."
-    name: getEntireRow()
-    fullName: getEntireRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getEntireRow(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Range#getImage:member(1)'
-    summary: Affiche la plage en tant qu’image png encodée au format Base64.
-    name: getImage()
-    fullName: getImage()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getImage(): ClientResult<string>;'
-      return:
-        type:
-          - 'excel!Excel.Range#getImage~0:complex'
-        description: ''
-  - uid: 'excel!Excel.Range#getIntersection:member(1)'
-    summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données.
-    name: getIntersection(anotherRange)
-    fullName: getIntersection(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersection(anotherRange: Range | string): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: anotherRange
-          description: Objet de plage ou adresse de plage utilisé pour déterminer l’intersection des plages.
-          type:
-            - 'excel!Excel.Range#getIntersection~0:complex'
-  - uid: 'excel!Excel.Range#getIntersectionOrNullObject:member(1)'
-    summary: 'Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, renvoie un objet Null.'
-    name: getIntersectionOrNullObject(anotherRange)
-    fullName: getIntersectionOrNullObject(anotherRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getIntersectionOrNullObject(anotherRange: Range | string): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = salesTable.getDataBodyRange();
-
-              // We want the most recent quarter that has data, so
-              // exclude quarters without data and get the last of
-              // the remaining columns.
-              let usedDataRange = dataRange.getUsedRange(true /* valuesOnly */);
-              let currentQuarterRange = usedDataRange.getLastColumn();
-
-              // Asian and European teams have separate contests.
-              let asianSalesRange = sheet.getRange("A2:E4");
-              let europeanSalesRange = sheet.getRange("A5:E7");
-
-              // The data for each chart is the intersection of the
-              // current quarter column and the rows for the continent.
-              let asianContestRange = asianSalesRange.getIntersectionOrNullObject(currentQuarterRange);
-              let europeanContestRange = europeanSalesRange.getIntersectionOrNullObject(currentQuarterRange);
-
-              // Must sync before you can test the output of *OrNullObject
-              // method/property.
-              await context.sync();
-
-              if (asianContestRange.isNullObject) {
-                  // See the declaration of this method for how to
-                  // test this code path.
-                  reportMissingData("Asian");
-              } else {
-                  createContinentChart(
-                      sheet,
-                      "Asian",
-                      asianContestRange,
-                      "A9",
-                      "F24"
-                  );
-              }
-
-              if (europeanContestRange.isNullObject) {
-                  // See the declaration of this method for how to
-                  // test this code path.
-                  reportMissingData("European");
-              } else {
-                  createContinentChart(
-                      sheet,
-                      "European",
-                      europeanContestRange,
-                      "A25",
-                      "F40"
-                  );
-              }
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: anotherRange
-          description: Objet de plage ou adresse de plage utilisé pour déterminer l’intersection des plages.
-          type:
-            - 'excel!Excel.Range#getIntersectionOrNullObject~0:complex'
-  - uid: 'excel!Excel.Range#getLastCell:member(1)'
-    summary: "Obtient la dernière cellule de la plage. Par exemple, la dernière cellule de la plage «\_B2:D5\_» est «\_D5\_»."
-    name: getLastCell()
-    fullName: getLastCell()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastCell(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Range#getLastColumn:member(1)'
-    summary: "Obtient la dernière colonne de la plage. Par exemple, la dernière colonne de la plage «\_B2:D5\_» est «\_D2:D5\_»."
-    name: getLastColumn()
-    fullName: getLastColumn()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastColumn(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Range#getLastRow:member(1)'
-    summary: "Obtient la dernière ligne de la plage. Par exemple, la dernière ligne de la plage «\_B2:D5\_» est «\_B5:D5\_»."
-    name: getLastRow()
-    fullName: getLastRow()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLastRow(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Range#getOffsetRange:member(1)'
-    summary: 'Obtient un objet qui représente une plage décalée par rapport à la plage spécifiée. Les dimensions de la plage renvoyée correspondent à cette plage. Si la plage obtenue se retrouve en dehors des limites de grille de la feuille de calcul, une erreur est déclenchée.'
-    name: 'getOffsetRange(rowOffset, columnOffset)'
-    fullName: 'getOffsetRange(rowOffset, columnOffset)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: rowOffset
-          description: 'Nombre de lignes (positif, négatif ou nul) duquel décaler la plage. Les valeurs positives représentent un décalage vers le bas et les valeurs négatives un décalage vers le haut.'
-          type:
-            - number
-        - id: columnOffset
-          description: 'Nombre de colonnes (positif, négatif ou nul) duquel décaler la plage. Les valeurs positives représentent un décalage vers la droite et les valeurs négatives un décalage vers la gauche.'
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getPivotTables:member(1)'
-    summary: Obtient une collection d’étendues de tableaux croisés dynamiques qui se chevauchent avec la plage.
-    name: getPivotTables(fullyContained)
-    fullName: getPivotTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getPivotTables(fullyContained?: boolean): PivotTableScopedCollection;'
-      return:
-        type:
-          - 'excel!Excel.PivotTableScopedCollection:interface'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: 'Si la valeur est true, renvoie uniquement les tableaux croisés dynamiques contenus dans les limites de la plage. La valeur par défaut est false.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Range#getResizedRange:member(1)'
-    summary: 'Obtient un objet de plage semblable à l’objet de plage actuel, mais avec le coin inférieur droit développé (ou contracté) selon un certain nombre de lignes et de colonnes.'
-    name: 'getResizedRange(deltaRows, deltaColumns)'
-    fullName: 'getResizedRange(deltaRows, deltaColumns)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: deltaRows
-          description: 'Nombre de lignes par lequel développer le coin inférieur droit, par rapport à la plage actuelle. Utilisez un nombre positif pour étendre la plage ou un nombre négatif pour la réduire.'
-          type:
-            - number
-        - id: deltaColumns
-          description: Nombre de colonnes en fonction desquelles développer le coin inférieur droit par rapport à la plage actuelle. Utilisez un nombre positif pour étendre la plage ou un nombre négatif pour la réduire.
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getRow:member(1)'
-    summary: Obtient une ligne contenue dans la plage.
-    name: getRow(row)
-    fullName: getRow(row)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRow(row: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: row
-          description: Numéro de ligne de la plage à récupérer. Avec indice zéro.
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getRowsAbove:member(1)'
-    summary: Obtient un certain nombre de lignes au-dessus de l’objet de plage actuel.
-    name: getRowsAbove(count)
-    fullName: getRowsAbove(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowsAbove(count?: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 'Facultatif. Nombre de lignes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.'
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getRowsBelow:member(1)'
-    summary: Obtient un certain nombre de lignes en dessous de l’objet de plage actuel.
-    name: getRowsBelow(count)
-    fullName: getRowsBelow(count)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getRowsBelow(count?: number): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: count
-          description: 'Facultatif. Nombre de lignes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.'
-          type:
-            - number
-  - uid: 'excel!Excel.Range#getSpecialCells:member(1)'
-    summary: 'Obtient l’objet RangeAreas, comprenant une ou plusieurs plages rectangulaires qui représente toutes les cellules qui correspondent au type et la valeur spécifiés. Si aucune cellule spéciale n’est trouvée, une erreur ItemNotFound est générée.'
-    name: 'getSpecialCells(cellType, cellValueType)'
-    fullName: 'getSpecialCells(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getSpecialCells(
-                    cellType:
-                        | SpecialCellType
+                        | "Formats"
+    - id: skipBlanks
+      description: True si pour ignorer les cellules vides dans la plage source. La valeur par défaut est False.
+      type: boolean
+    - id: transpose
+      description: True si pour transposer les cellules dans la plage de destination. La valeur par défaut est False.
+      type: boolean
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    sheet.getRange(\"F2\").values = [[\"Copied Formula\"]];\n    sheet.getRange(\"F2\").format.autofitColumns();\n\n    // copy a range preserving the formulas\n    // note: non-formula values are copied over as is\n    sheet.getRange(\"G2\").copyFrom(\"A1:E1\", Excel.RangeCopyType.formulas);\n    await context.sync();\n}\n```"
+- name: delete(shift)
+  uid: excel!Excel.Range#delete:member(1)
+  package: excel!
+  fullName: delete(shift)
+  summary: Supprime les cellules associées à la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(shift: DeleteShiftDirection | "Up" | "Left"): void;'
+    parameters:
+    - id: shift
+      description: Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir Excel. DeleteShiftDirection.
+      type: <xref uid="excel!Excel.DeleteShiftDirection:enum" /> | "Up" | "Left"
+    return:
+      type: void
+      description: ''
+- name: find(text, criteria)
+  uid: excel!Excel.Range#find:member(1)
+  package: excel!
+  fullName: find(text, criteria)
+  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage active est plus grande qu’une seule cellule, la recherche est limitée à cette plage, sinon la recherche porte sur la totalité de la feuille qui commence après cette cellule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'find(text: string, criteria: SearchCriteria): Range;'
+    parameters:
+    - id: text
+      description: Chaîne à rechercher.
+      type: string
+    - id: criteria
+      description: Critères de recherche supplémentaires, y compris le sens de la recherche et si la recherche doit correspondre à la totalité de la cellule ou respecter la casse.
+      type: <xref uid="excel!Excel.SearchCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: findOrNullObject(text, criteria)
+  uid: excel!Excel.Range#findOrNullObject:member(1)
+  package: excel!
+  fullName: findOrNullObject(text, criteria)
+  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage active est plus grande qu’une seule cellule, la recherche est limitée à cette plage, sinon la recherche porte sur la totalité de la feuille qui commence après cette cellule. S’il n’y a aucune correspondance, cette fonction renverra un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'findOrNullObject(text: string, criteria: SearchCriteria): Range;'
+    parameters:
+    - id: text
+      description: Chaîne à rechercher.
+      type: string
+    - id: criteria
+      description: Critères de recherche supplémentaires, y compris le sens de la recherche et si la recherche doit correspondre à la totalité de la cellule ou respecter la casse.
+      type: <xref uid="excel!Excel.SearchCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let table = sheet.tables.getItem(\"ExpensesTable\");\n    let searchRange = table.getRange();\n    let foundRange = searchRange.findOrNullObject($(\"#searchText\").text(), {\n        completeMatch: isCompleteMatchToggle,\n        matchCase: isMatchCaseToggle,\n        searchDirection: searchDirectionToggle\n    });\n    \n    foundRange.load(\"address\");\n    await context.sync();\n\n    if (foundRange.isNullObject) {\n        console.log(\"Text not found\");\n    } else {\n        console.log(foundRange.address);\n    }\n}\n```"
+- name: flashFill()
+  uid: excel!Excel.Range#flashFill:member(1)
+  package: excel!
+  fullName: flashFill()
+  summary: Apporte un remplissage instantané étendue en cours. Le remplissage instantané renseignera automatiquement les données lorsqu’il détectera un modèle, la plage doit donc être la seule plage de la colonne et avoir des données autour afin de trouver le modèle.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'flashFill(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAbsoluteResizedRange(numRows, numColumns)
+  uid: excel!Excel.Range#getAbsoluteResizedRange:member(1)
+  package: excel!
+  fullName: getAbsoluteResizedRange(numRows, numColumns)
+  summary: Obtient un objet Plage avec la même cellule supérieure gauche que l’objet de Plage en cours, mais avec un nombre spécifié de lignes et colonnes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
+    parameters:
+    - id: numRows
+      description: Nombre de lignes de la nouvelle taille de la plage.
+      type: number
+    - id: numColumns
+      description: Nombre de colonnes de la nouvelle taille de la plage.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getBoundingRect(anotherRange)
+  uid: excel!Excel.Range#getBoundingRect:member(1)
+  package: excel!
+  fullName: getBoundingRect(anotherRange)
+  summary: Renvoie le plus petit objet de plage qui englobe les plages données. Par exemple, la valeur GetBoundingRect pour « B2:C5 » et « D10:E15 » est « B2:E15 ».
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBoundingRect(anotherRange: Range | string): Range;'
+    parameters:
+    - id: anotherRange
+      description: Nom, adresse ou objet de plage.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getCell(row, column)
+  uid: excel!Excel.Range#getCell:member(1)
+  package: excel!
+  fullName: getCell(row, column)
+  summary: Renvoie l’objet de plage qui contient une cellule donnée sur la base des numéros de ligne et de colonne. La cellule peut être située en dehors des limites de sa plage parente, tant qu’elle reste dans la grille de la feuille de calcul. L’emplacement de la cellule renvoyée est déterminé à partir de la cellule supérieure gauche de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCell(row: number, column: number): Range;'
+    parameters:
+    - id: row
+      description: Numéro de ligne de la cellule à récupérer. Avec indice zéro.
+      type: number
+    - id: column
+      description: Numéro de colonne de la cellule à récupérer. Avec indice zéro.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getColumn(column)
+  uid: excel!Excel.Range#getColumn:member(1)
+  package: excel!
+  fullName: getColumn(column)
+  summary: Obtient une colonne contenue dans la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumn(column: number): Range;'
+    parameters:
+    - id: column
+      description: Numéro de colonne de la plage à récupérer. Avec indice zéro.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getColumnsAfter(count)
+  uid: excel!Excel.Range#getColumnsAfter:member(1)
+  package: excel!
+  fullName: getColumnsAfter(count)
+  summary: Obtient un certain nombre de colonnes à droite de l’objet de plage actuel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnsAfter(count?: number): Range;'
+    parameters:
+    - id: count
+      description: Facultatif. Nombre de colonnes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getColumnsBefore(count)
+  uid: excel!Excel.Range#getColumnsBefore:member(1)
+  package: excel!
+  fullName: getColumnsBefore(count)
+  summary: Obtient un certain nombre de colonnes à gauche de l’objet de plage actuel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnsBefore(count?: number): Range;'
+    parameters:
+    - id: count
+      description: Facultatif. Nombre de colonnes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getEntireColumn()
+  uid: excel!Excel.Range#getEntireColumn:member(1)
+  package: excel!
+  fullName: getEntireColumn()
+  summary: 'Obtient un objet qui représente la colonne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4 : E11 », `getEntireColumn` qu’il s’agit d’une plage qui représente les colonnes « B :E »).'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireColumn(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getEntireRow()
+  uid: excel!Excel.Range#getEntireRow:member(1)
+  package: excel!
+  fullName: getEntireRow()
+  summary: 'Obtient un objet qui représente la ligne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4 : E11 », `GetEntireRow` qu’il s’agit d’une plage qui représente les lignes « 4:11 »).'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getEntireRow(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getImage()
+  uid: excel!Excel.Range#getImage:member(1)
+  package: excel!
+  fullName: getImage()
+  summary: Affiche la plage en tant qu’image png encodée au format Base64.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getImage(): ClientResult<string>;'
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;string&gt;
+      description: ''
+- name: getIntersection(anotherRange)
+  uid: excel!Excel.Range#getIntersection:member(1)
+  package: excel!
+  fullName: getIntersection(anotherRange)
+  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntersection(anotherRange: Range | string): Range;'
+    parameters:
+    - id: anotherRange
+      description: Objet de plage ou adresse de plage utilisé pour déterminer l’intersection des plages.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getIntersectionOrNullObject(anotherRange)
+  uid: excel!Excel.Range#getIntersectionOrNullObject:member(1)
+  package: excel!
+  fullName: getIntersectionOrNullObject(anotherRange)
+  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, renvoie un objet Null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIntersectionOrNullObject(anotherRange: Range | string): Range;'
+    parameters:
+    - id: anotherRange
+      description: Objet de plage ou adresse de plage utilisé pour déterminer l’intersection des plages.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let salesTable = sheet.tables.getItem(\"SalesTable\");\n    let dataRange = salesTable.getDataBodyRange();\n\n    // We want the most recent quarter that has data, so\n    // exclude quarters without data and get the last of\n    // the remaining columns.\n    let usedDataRange = dataRange.getUsedRange(true /* valuesOnly */);\n    let currentQuarterRange = usedDataRange.getLastColumn();\n\n    // Asian and European teams have separate contests.\n    let asianSalesRange = sheet.getRange(\"A2:E4\");\n    let europeanSalesRange = sheet.getRange(\"A5:E7\");\n\n    // The data for each chart is the intersection of the\n    // current quarter column and the rows for the continent.\n    let asianContestRange = asianSalesRange.getIntersectionOrNullObject(currentQuarterRange);\n    let europeanContestRange = europeanSalesRange.getIntersectionOrNullObject(currentQuarterRange);\n\n    // Must sync before you can test the output of *OrNullObject\n    // method/property.\n    await context.sync();\n\n    if (asianContestRange.isNullObject) {\n        // See the declaration of this method for how to\n        // test this code path.\n        reportMissingData(\"Asian\");\n    } else {\n        createContinentChart(\n            sheet,\n            \"Asian\",\n            asianContestRange,\n            \"A9\",\n            \"F24\"\n        );\n    }\n\n    if (europeanContestRange.isNullObject) {\n        // See the declaration of this method for how to\n        // test this code path.\n        reportMissingData(\"European\");\n    } else {\n        createContinentChart(\n            sheet,\n            \"European\",\n            europeanContestRange,\n            \"A25\",\n            \"F40\"\n        );\n    }\n\n    await context.sync();\n}\n```"
+- name: getLastCell()
+  uid: excel!Excel.Range#getLastCell:member(1)
+  package: excel!
+  fullName: getLastCell()
+  summary: Obtient la dernière cellule de la plage. Par exemple, la dernière cellule de la plage « B2:D5 » est « D5 ».
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastCell(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getLastColumn()
+  uid: excel!Excel.Range#getLastColumn:member(1)
+  package: excel!
+  fullName: getLastColumn()
+  summary: Obtient la dernière colonne de la plage. Par exemple, la dernière colonne de la plage « B2:D5 » est « D2:D5 ».
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastColumn(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getLastRow()
+  uid: excel!Excel.Range#getLastRow:member(1)
+  package: excel!
+  fullName: getLastRow()
+  summary: Obtient la dernière ligne de la plage. Par exemple, la dernière ligne de la plage « B2:D5 » est « B5:D5 ».
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLastRow(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getOffsetRange(rowOffset, columnOffset)
+  uid: excel!Excel.Range#getOffsetRange:member(1)
+  package: excel!
+  fullName: getOffsetRange(rowOffset, columnOffset)
+  summary: Obtient un objet qui représente une plage décalée par rapport à la plage spécifiée. Les dimensions de la plage renvoyée correspondent à cette plage. Si la plage obtenue se retrouve en dehors des limites de grille de la feuille de calcul, une erreur est déclenchée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
+    parameters:
+    - id: rowOffset
+      description: Nombre de lignes (positif, négatif ou nul) duquel décaler la plage. Les valeurs positives représentent un décalage vers le bas et les valeurs négatives un décalage vers le haut.
+      type: number
+    - id: columnOffset
+      description: Nombre de colonnes (positif, négatif ou nul) duquel décaler la plage. Les valeurs positives représentent un décalage vers la droite et les valeurs négatives un décalage vers la gauche.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getPivotTables(fullyContained)
+  uid: excel!Excel.Range#getPivotTables:member(1)
+  package: excel!
+  fullName: getPivotTables(fullyContained)
+  summary: Obtient une collection d’étendues de tableaux croisés dynamiques qui se chevauchent avec la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPivotTables(fullyContained?: boolean): PivotTableScopedCollection;'
+    parameters:
+    - id: fullyContained
+      description: Si la valeur est true, renvoie uniquement les tableaux croisés dynamiques contenus dans les limites de la plage. La valeur par défaut est false.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.PivotTableScopedCollection:interface" />
+      description: ''
+- name: getResizedRange(deltaRows, deltaColumns)
+  uid: excel!Excel.Range#getResizedRange:member(1)
+  package: excel!
+  fullName: getResizedRange(deltaRows, deltaColumns)
+  summary: Obtient un objet de plage semblable à l’objet de plage actuel, mais avec le coin inférieur droit développé (ou contracté) selon un certain nombre de lignes et de colonnes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+    parameters:
+    - id: deltaRows
+      description: Nombre de lignes par lequel développer le coin inférieur droit, par rapport à la plage actuelle. Utilisez un nombre positif pour étendre la plage ou un nombre négatif pour la réduire.
+      type: number
+    - id: deltaColumns
+      description: Nombre de colonnes en fonction desquelles développer le coin inférieur droit par rapport à la plage actuelle. Utilisez un nombre positif pour étendre la plage ou un nombre négatif pour la réduire.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRow(row)
+  uid: excel!Excel.Range#getRow:member(1)
+  package: excel!
+  fullName: getRow(row)
+  summary: Obtient une ligne contenue dans la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRow(row: number): Range;'
+    parameters:
+    - id: row
+      description: Numéro de ligne de la plage à récupérer. Avec indice zéro.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRowsAbove(count)
+  uid: excel!Excel.Range#getRowsAbove:member(1)
+  package: excel!
+  fullName: getRowsAbove(count)
+  summary: Obtient un certain nombre de lignes au-dessus de l’objet de plage actuel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowsAbove(count?: number): Range;'
+    parameters:
+    - id: count
+      description: Facultatif. Nombre de lignes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getRowsBelow(count)
+  uid: excel!Excel.Range#getRowsBelow:member(1)
+  package: excel!
+  fullName: getRowsBelow(count)
+  summary: Obtient un certain nombre de lignes en dessous de l’objet de plage actuel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowsBelow(count?: number): Range;'
+    parameters:
+    - id: count
+      description: Facultatif. Nombre de lignes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
+      type: number
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getSpecialCells(cellType, cellValueType)
+  uid: excel!Excel.Range#getSpecialCells:member(1)
+  package: excel!
+  fullName: getSpecialCells(cellType, cellValueType)
+  summary: Obtient l’objet RangeAreas, comprenant une ou plusieurs plages rectangulaires qui représente toutes les cellules qui correspondent au type et la valeur spécifiés. Si aucune cellule spéciale n’est trouvée, une erreur ItemNotFound est générée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCells(
+                  cellType:
+                      | SpecialCellType
+                      | "ConditionalFormats"
+                      | "DataValidations"
+                      | "Blanks"
+                      | "Constants"
+                      | "Formulas"
+                      | "SameConditionalFormat"
+                      | "SameDataValidation"
+                      | "Visible",
+                  cellValueType?:
+                      | SpecialCellValueType
+                      | "All"
+                      | "Errors"
+                      | "ErrorsLogical"
+                      | "ErrorsNumbers"
+                      | "ErrorsText"
+                      | "ErrorsLogicalNumber"
+                      | "ErrorsLogicalText"
+                      | "ErrorsNumberText"
+                      | "Logical"
+                      | "LogicalNumbers"
+                      | "LogicalText"
+                      | "LogicalNumbersText"
+                      | "Numbers"
+                      | "NumbersText"
+                      | "Text"
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: Type de cellules à inclure.
+      type: >-
+        | <xref uid="excel!Excel.SpecialCellType:enum" />
                         | "ConditionalFormats"
                         | "DataValidations"
                         | "Blanks"
@@ -954,50 +1005,57 @@ items:
                         | "Formulas"
                         | "SameConditionalFormat"
                         | "SameDataValidation"
-                        | "Visible",
-                    cellValueType?:
-                        | SpecialCellValueType
-                        | "All"
-                        | "Errors"
-                        | "ErrorsLogical"
-                        | "ErrorsNumbers"
-                        | "ErrorsText"
-                        | "ErrorsLogicalNumber"
-                        | "ErrorsLogicalText"
-                        | "ErrorsNumberText"
-                        | "Logical"
-                        | "LogicalNumbers"
-                        | "LogicalText"
-                        | "LogicalNumbersText"
-                        | "Numbers"
-                        | "NumbersText"
-                        | "Text"
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: cellType
-          description: Type de cellules à inclure.
-          type:
-            - 'excel!Excel.Range#getSpecialCells~0:complex'
-        - id: cellValueType
-          description: 'Si cellType est une constante ou une formule, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu''en soit le type.'
-          type:
-            - 'excel!Excel.Range#getSpecialCells~1:complex'
-  - uid: 'excel!Excel.Range#getSpecialCellsOrNullObject:member(1)'
-    summary: 'Obtient l’objet RangeAreas, comprenant une ou plusieurs plages qui représente les cellules qui correspondent au type et à la valeur spécifiés. Si aucune cellule spéciale n’est trouvée, un objet null est renvoyé.'
-    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
-    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        getSpecialCellsOrNullObject(
-                    cellType:
-                        | SpecialCellType
+                        | "Visible"
+    - id: cellValueType
+      description: Si cellType est une constante ou une formule, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
+      type: "| <xref uid=\"excel!Excel.SpecialCellValueType:enum\" />\n                | \"All\"\n                | \"Errors\"\n                | \"ErrorsLogical\"\n                | \"ErrorsNumbers\"\n                | \"ErrorsText\"\n                | \"ErrorsLogicalNumber\"\n                | \"ErrorsLogicalText\"\n                | \"ErrorsNumberText\"\n                | \"Logical\"\n                | \"LogicalNumbers\"\n                | \"LogicalText\"\n                | \"LogicalNumbersText\"\n                | \"Numbers\"\n                | \"NumbersText\"\n                | \"Text\"\n        "
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getSpecialCellsOrNullObject(cellType, cellValueType)
+  uid: excel!Excel.Range#getSpecialCellsOrNullObject:member(1)
+  package: excel!
+  fullName: getSpecialCellsOrNullObject(cellType, cellValueType)
+  summary: Obtient l’objet RangeAreas, comprenant une ou plusieurs plages qui représente les cellules qui correspondent au type et à la valeur spécifiés. Si aucune cellule spéciale n’est trouvée, un objet null est renvoyé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getSpecialCellsOrNullObject(
+                  cellType:
+                      | SpecialCellType
+                      | "ConditionalFormats"
+                      | "DataValidations"
+                      | "Blanks"
+                      | "Constants"
+                      | "Formulas"
+                      | "SameConditionalFormat"
+                      | "SameDataValidation"
+                      | "Visible",
+                  cellValueType?:
+                      | SpecialCellValueType
+                      | "All"
+                      | "Errors"
+                      | "ErrorsLogical"
+                      | "ErrorsNumbers"
+                      | "ErrorsText"
+                      | "ErrorsLogicalNumber"
+                      | "ErrorsLogicalText"
+                      | "ErrorsNumberText"
+                      | "Logical"
+                      | "LogicalNumbers"
+                      | "LogicalText"
+                      | "LogicalNumbersText"
+                      | "Numbers"
+                      | "NumbersText"
+                      | "Text"
+              ): RangeAreas;
+    parameters:
+    - id: cellType
+      description: Type de cellules à inclure.
+      type: >-
+        | <xref uid="excel!Excel.SpecialCellType:enum" />
                         | "ConditionalFormats"
                         | "DataValidations"
                         | "Blanks"
@@ -1005,1364 +1063,340 @@ items:
                         | "Formulas"
                         | "SameConditionalFormat"
                         | "SameDataValidation"
-                        | "Visible",
-                    cellValueType?:
-                        | SpecialCellValueType
-                        | "All"
-                        | "Errors"
-                        | "ErrorsLogical"
-                        | "ErrorsNumbers"
-                        | "ErrorsText"
-                        | "ErrorsLogicalNumber"
-                        | "ErrorsLogicalText"
-                        | "ErrorsNumberText"
-                        | "Logical"
-                        | "LogicalNumbers"
-                        | "LogicalText"
-                        | "LogicalNumbersText"
-                        | "Numbers"
-                        | "NumbersText"
-                        | "Text"
-                ): RangeAreas;
-      return:
-        type:
-          - 'excel!Excel.RangeAreas:interface'
-        description: ''
-      parameters:
-        - id: cellType
-          description: Type de cellules à inclure.
-          type:
-            - 'excel!Excel.Range#getSpecialCellsOrNullObject~0:complex'
-        - id: cellValueType
-          description: 'Si cellType est une constante ou une formule, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu''en soit le type.'
-          type:
-            - 'excel!Excel.Range#getSpecialCellsOrNullObject~1:complex'
-  - uid: 'excel!Excel.Range#getSurroundingRegion:member(1)'
-    summary: Renvoie un objet PLage qui représente la région environnante pour la cellule en haut à gauche de cette plage. Une région environnante est une plage délimitée par une combinaison de lignes et de colonnes vides par rapport à cette plage.
-    name: getSurroundingRegion()
-    fullName: getSurroundingRegion()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSurroundingRegion(): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-  - uid: 'excel!Excel.Range#getTables:member(1)'
-    summary: Obtient une collection de tableaux qui se chevauchent avec la plage dans l’étendue.
-    name: getTables(fullyContained)
-    fullName: getTables(fullyContained)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
-      return:
-        type:
-          - 'excel!Excel.TableScopedCollection:interface'
-        description: ''
-      parameters:
-        - id: fullyContained
-          description: 'Si la valeur est true, renvoie uniquement les tables qui sont entièrement contenues dans les limites de la plage. La valeur par défaut est false.'
-          type:
-            - boolean
-  - uid: 'excel!Excel.Range#getUsedRange:member(1)'
-    summary: 'Renvoie la plage utilisée d’un objet de plage donné. Si aucune cellule n’est utilisée dans la plage, cette fonction génère une erreur ItemNotFound.'
-    name: getUsedRange(valuesOnly)
-    fullName: getUsedRange(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRange(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: valuesOnly
-          description: Prend uniquement en compte les cellules avec des valeurs sous forme de cellules utilisées.
-          type:
-            - boolean
-  - uid: 'excel!Excel.Range#getUsedRangeOrNullObject:member(1)'
-    summary: 'Renvoie la plage utilisée d’un objet de plage donné. Si aucune cellule n’est utilisée dans la plage, cette fonction renvoie un objet null.'
-    name: getUsedRangeOrNullObject(valuesOnly)
-    fullName: getUsedRangeOrNullObject(valuesOnly)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = salesTable.getDataBodyRange();
-
-              // Pass true so only cells with values count as used
-              let usedDataRange = dataRange.getUsedRangeOrNullObject(
-                  true /* valuesOnly */
-              );
-
-              //Must sync before reading value returned from *OrNullObject method/property.
-              await context.sync();
-
-              if (usedDataRange.isNullObject) {
-                  console.log("Need Data to Make Chart");
-                  console.log("To create a meaningful chart, press 'Fill the table' (or add names to the Product column and numbers to some of the other cells). Then press 'Try to create chart' again.");
-              } else {
-                  let chart = sheet.charts.add(
-                      Excel.ChartType.columnClustered,
-                      dataRange,
-                      "Columns"
-                  );
-                  chart.setPosition("A15", "F30");
-                  chart.title.text = "Quarterly sales chart";
-                  chart.legend.position = "Right";
-                  chart.legend.format.fill.setSolidColor("white");
-                  chart.dataLabels.format.font.size = 15;
-                  chart.dataLabels.format.font.color = "black";
-              }
-
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: valuesOnly
-          description: Prend uniquement en compte les cellules avec des valeurs sous forme de cellules utilisées.
-          type:
-            - boolean
-  - uid: 'excel!Excel.Range#getVisibleView:member(1)'
-    summary: Représente les lignes visibles de la plage en cours.
-    name: getVisibleView()
-    fullName: getVisibleView()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getVisibleView(): RangeView;'
-      return:
-        type:
-          - 'excel!Excel.RangeView:interface'
-        description: ''
-  - uid: 'excel!Excel.Range#group:member(1)'
-    summary: Regroupe les colonnes et les lignes d’un plan.
-    name: group(groupOption)
-    fullName: group(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'group(groupOption: GroupOption | "ByRows" | "ByColumns"): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              
-              // Group the larger, main level. Note that the outline controls
-              // will be on row 10, meaning 4-9 will collapse and expand.
-              sheet.getRange("4:9").group(Excel.GroupOption.byRows);
-
-              // Group the smaller, sublevels. Note that the outline controls
-              // will be on rows 6 and 9, meaning 4-5 and 7-8 will collapse and expand.
-              sheet.getRange("4:5").group(Excel.GroupOption.byRows);
-              sheet.getRange("7:8").group(Excel.GroupOption.byRows);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: groupOption
-          description: "Indique comment la plage peut être regroupée par ligne ou par colonne. Une `InvalidArgument` erreur est générée lorsque l’option de groupe diffère de la propriété ou de la plage `isEntireRow` `isEntireColumn` ( `range.isEntireRow` elle a la valeur true et `groupOption` est «\_ByColumns\_» ou `range.isEntireColumn` est true et `groupOption` est «\_ByRows\_»)."
-          type:
-            - 'excel!Excel.Range#group~0:complex'
-  - uid: 'excel!Excel.Range#height:member'
-    summary: 'Renvoie la distance en points pour zoom 100 %, à partir du bord supérieur de la plage au bord inférieur de la plage.'
-    name: height
-    fullName: height
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly height: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#hidden:member'
-    summary: Indique si toutes les cellules de la plage active sont masquées.
-    name: hidden
-    fullName: hidden
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly hidden: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Range#hideGroupDetails:member(1)'
-    summary: Masque les détails du groupe de lignes ou de colonnes.
-    name: hideGroupDetails(groupOption)
-    fullName: hideGroupDetails(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        hideGroupDetails(
-                    groupOption: GroupOption | "ByRows" | "ByColumns"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: Indique s’il faut masquer les détails des lignes groupées ou des colonnes groupées.
-          type:
-            - 'excel!Excel.Range#hideGroupDetails~0:complex'
-  - uid: 'excel!Excel.Range#hyperlink:member'
-    summary: Représente le lien hypertexte de la plage active.
-    name: hyperlink
-    fullName: hyperlink
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hyperlink: RangeHyperlink;'
-      return:
-        type:
-          - 'excel!Excel.RangeHyperlink:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Orders");
-
-              let productsRange = sheet.getRange("A3:A5");
-              productsRange.load("values");
-
-              await context.sync();
-
-              // Create a hyperlink to a URL 
-              // for each product name in the first table.
-              for (let i = 0; i < productsRange.values.length; i++) {
-                  let cellRange = productsRange.getCell(i, 0);
-                  let cellText = productsRange.values[i][0];
-
-                  let hyperlink = {
-                      textToDisplay: cellText,
-                      screenTip: "Search Bing for '" + cellText + "'",
-                      address: "https://www.bing.com?q=" + cellText
-                  }
-                  cellRange.hyperlink = hyperlink;
-              }
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Range#insert:member(1)'
-    summary: Insère une cellule ou une plage de cellules dans la feuille de calcul à la place d’une plage donnée et décale les autres cellules pour libérer de l’espace. Renvoie un nouvel objet Range dans l’espace vide qui s’est créé.
-    name: insert(shift)
-    fullName: insert(shift)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'insert(shift: InsertShiftDirection | "Down" | "Right"): Range;'
-      return:
-        type:
-          - 'excel!Excel.Range:interface'
-        description: ''
-      parameters:
-        - id: shift
-          description: 'Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir Excel. InsertShiftDirection.'
-          type:
-            - 'excel!Excel.Range#insert~0:complex'
-  - uid: 'excel!Excel.Range#isEntireColumn:member'
-    summary: Représente si la plage active est une colonne entière.
-    name: isEntireColumn
-    fullName: isEntireColumn
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isEntireColumn: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Range#isEntireRow:member'
-    summary: Représente si la plage active est une ligne entière.
-    name: isEntireRow
-    fullName: isEntireRow
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isEntireRow: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Range#left:member'
-    summary: 'Renvoie la distance en points pour zoom 100 %, à partir du bord gauche de la feuille de calcul au bord gauche de la plage.'
-    name: left
-    fullName: left
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly left: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#linkedDataTypeState:member'
-    summary: Représente l’état du type de données de chaque cellule.
-    name: linkedDataTypeState
-    fullName: linkedDataTypeState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly linkedDataTypeState: LinkedDataTypeState[][];'
-      return:
-        type:
-          - 'excel!Excel.Range#linkedDataTypeState~0:complex'
-  - uid: 'excel!Excel.Range#load:member(1)'
-    summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez appeler `context.sync()` avant de lire les propriétés.
-    name: load(propertyNames)
-    fullName: load(propertyNames)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(propertyNames?: string | string[]): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: propertyNames
-          description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
-          type:
-            - 'string | string[]'
-  - uid: 'excel!Excel.Range#merge:member(1)'
-    summary: Fusionne la plage de cellules dans une zone de la feuille de calcul.
-    name: merge(across)
-    fullName: merge(across)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'merge(across?: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: across
-          description: "Facultatif. Définit la valeur «\_true\_» pour fusionner séparément les cellules de chaque ligne de la plage spécifiée. La valeur par défaut est «\_false\_»."
-          type:
-            - boolean
-  - uid: 'excel!Excel.Range#moveTo:member(1)'
-    summary: 'Déplace les valeurs de cellule, la mise en forme et les formules de la plage actuelle à la plage de destination, en remplaçant les anciennes informations de ces cellules. La plage de destination est étendue automatiquement si elle est plus petite que la plage actuelle. Les cellules de la plage de destination qui se trouvent en dehors de la zone de la plage d’origine ne sont pas modifiées.'
-    name: moveTo(destinationRange)
-    fullName: moveTo(destinationRange)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'moveTo(destinationRange: Range | string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: destinationRange
-          description: destinationRange spécifie la plage où les informations de cette plage seront déplacées.
-          type:
-            - 'excel!Excel.Range#moveTo~0:complex'
-  - uid: 'excel!Excel.Range#numberFormat:member'
-    summary: Représente le code de format de nombre d’Excel pour la plage donnée.
-    name: numberFormat
-    fullName: numberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'numberFormat: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Range#numberFormatLocal:member'
-    summary: 'Représente le code de format de nombre d’Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue aucune langue ou contrainte de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes mises en forme localement en fonction de la langue spécifiée dans les paramètres système.'
-    name: numberFormatLocal
-    fullName: numberFormatLocal
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'numberFormatLocal: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Range#removeDuplicates:member(1)'
-    summary: Supprime les valeurs dupliquées de la plage spécifiée par les colonnes.
-    name: 'removeDuplicates(columns, includesHeader)'
-    fullName: 'removeDuplicates(columns, includesHeader)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        removeDuplicates(
-                    columns: number[],
-                    includesHeader: boolean
-                ): RemoveDuplicatesResult;
-      return:
-        type:
-          - 'excel!Excel.RemoveDuplicatesResult:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let range = sheet.getRange("B2:D11");
-
-              let deleteResult = range.removeDuplicates([0],true);    
-              deleteResult.load();    
-              await context.sync();
-
-              console.log(deleteResult.removed + " entries with duplicate names removed.");
-              console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
-          }
-          ```
-      parameters:
-        - id: columns
-          description: Les colonnes à l’intérieur de la plage qui peuvent contenir des doublons. Au moins une colonne doit être spécifiée. Avec indice zéro.
-          type:
-            - 'number[]'
-        - id: includesHeader
-          description: True si les données d’entrée contiennent un en-tête. La valeur par défaut est False.
-          type:
-            - boolean
-  - uid: 'excel!Excel.Range#replaceAll:member(1)'
-    summary: Détecte et remplace la chaîne donnée basée sur les critères spécifiés dans la plage active.
-    name: 'replaceAll(text, replacement, criteria)'
-    fullName: 'replaceAll(text, replacement, criteria)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        replaceAll(
-                    text: string,
-                    replacement: string,
-                    criteria: ReplaceCriteria
-                ): ClientResult<number>;
-      return:
-        type:
-          - 'excel!Excel.Range#replaceAll~0:complex'
-        description: ''
-      parameters:
-        - id: text
-          description: Chaîne à rechercher.
-          type:
-            - string
-        - id: replacement
-          description: Chaîne de remplacement de l’original par.
-          type:
-            - string
-        - id: criteria
-          description: Critères de remplacement supplémentaires.
-          type:
-            - 'excel!Excel.ReplaceCriteria:interface'
-  - uid: 'excel!Excel.Range#rowCount:member'
-    summary: Renvoie le nombre total de lignes de la plage.
-    name: rowCount
-    fullName: rowCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rowCount: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#rowHidden:member'
-    summary: Indique si toutes les lignes de la plage active sont masquées.
-    name: rowHidden
-    fullName: rowHidden
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'rowHidden: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.Range#rowIndex:member'
-    summary: Renvoie le numéro de ligne de la première cellule de la plage. Avec indice zéro.
-    name: rowIndex
-    fullName: rowIndex
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly rowIndex: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#select:member(1)'
-    summary: Sélectionne la plage spécifiée dans l’interface utilisateur d’Excel.
-    name: select()
-    fullName: select()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'select(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Range#setDirty:member(1)'
-    summary: Cette méthode désigne une plage qui doit être recalculée lorsque le recalcul suivant se produit.
-    name: setDirty()
-    fullName: setDirty()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setDirty(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Range#showCard:member(1)'
-    summary: Affiche la carte pour une cellule active si son contenu est riche en valeur.
-    name: showCard()
-    fullName: showCard()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'showCard(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Range#showGroupDetails:member(1)'
-    summary: Affiche les détails du groupe de lignes ou de colonnes.
-    name: showGroupDetails(groupOption)
-    fullName: showGroupDetails(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: |-
-        showGroupDetails(
-                    groupOption: GroupOption | "ByRows" | "ByColumns"
-                ): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: groupOption
-          description: Indique s’il faut afficher les détails des lignes groupées ou des colonnes groupées.
-          type:
-            - 'excel!Excel.Range#showGroupDetails~0:complex'
-  - uid: 'excel!Excel.Range#sort:member'
-    summary: Représente le tri de plage de la plage actuelle.
-    name: sort
-    fullName: sort
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly sort: RangeSort;'
-      return:
-        type:
-          - 'excel!Excel.RangeSort:interface'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              let range = sheet.getRange("A1:E5");
-
-              // Find the column header that provides the sort criteria.
-              let header = range.find(criteria, {});
-              header.load("columnIndex");
-              await context.sync();
-
-              range.sort.apply(
-                  [
-                      {
-                          key: header.columnIndex,
-                          sortOn: Excel.SortOn.value
-                      }
-                  ],
-                  false /*matchCase*/,
-                  true /*hasHeaders*/,
-                  Excel.SortOrientation.rows
-              );
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Range#style:member'
-    summary: 'Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, la valeur null est renvoyée. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’énumération BuiltInStyle est retournée.'
-    name: style
-    fullName: style
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'style: string;'
-      return:
-        type:
-          - string
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          async function main(context: Excel.RequestContext) {
-              let worksheet = context.workbook.worksheets.getItem("Sample");
-              let range = worksheet.getRange("A1:E1");
-
-              // Apply built-in style. 
-              // Styles are in the Home tab ribbon.
-              range.style = Excel.BuiltInStyle.neutral;
-              range.format.horizontalAlignment = "Right";
-
-              await context.sync();
-          }
-          ```
-  - uid: 'excel!Excel.Range#text:member'
-    summary: Valeurs de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La \# substitution de signe qui se produit dans l’interface utilisateur d’Excel n’affecte pas la valeur de texte renvoyée par l’API.
-    name: text
-    fullName: text
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly text: string[][];'
-      return:
-        type:
-          - 'string[][]'
-  - uid: 'excel!Excel.Range#top:member'
-    summary: 'Renvoie la distance en points pour zoom 100 %, à partir du bord supérieur de la feuille de calcul au bord supérieur de la plage.'
-    name: top
-    fullName: top
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly top: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#ungroup:member(1)'
-    summary: Dissocie les colonnes et les lignes d’un plan.
-    name: ungroup(groupOption)
-    fullName: ungroup(groupOption)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'ungroup(groupOption: GroupOption | "ByRows" | "ByColumns"): void;'
-      return:
-        type:
-          - void
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```typescript
-          Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getActiveWorksheet();
-              
-              // This removes two levels of groups from the "A1-R10" range.
-              // Any groups at the same level on the same dimension will be removed by a single call.
-              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
-              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byRows);
-              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
-              sheet.getRange("A1:R10").ungroup(Excel.GroupOption.byColumns);
-              await context.sync();
-          }
-          ```
-      parameters:
-        - id: groupOption
-          description: Indique comment la plage peut être dissociée par des lignes ou des colonnes.
-          type:
-            - 'excel!Excel.Range#ungroup~0:complex'
-  - uid: 'excel!Excel.Range#unmerge:member(1)'
-    summary: Annule la fusion de la plage de cellules.
-    name: unmerge()
-    fullName: unmerge()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'unmerge(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: 'excel!Excel.Range#values:member'
-    summary: 'Représente les valeurs brutes de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Les cellules contenant une erreur renvoie la chaîne d’erreur.'
-    name: values
-    fullName: values
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'values: any[][];'
-      return:
-        type:
-          - 'any[][]'
-  - uid: 'excel!Excel.Range#valueTypes:member'
-    summary: Cette énumération spécifie le type de données dans chaque cellule.
-    name: valueTypes
-    fullName: valueTypes
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly valueTypes: RangeValueType[][];'
-      return:
-        type:
-          - 'excel!Excel.Range#valueTypes~0:complex'
-  - uid: 'excel!Excel.Range#width:member'
-    summary: 'Renvoie la distance en points pour zoom 100 %, à partir du bord gauche de la plage au bord droit de la plage.'
-    name: width
-    fullName: width
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly width: number;'
-      return:
-        type:
-          - number
-  - uid: 'excel!Excel.Range#worksheet:member'
-    summary: Feuille de calcul contenant la plage.
-    name: worksheet
-    fullName: worksheet
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly worksheet: Worksheet;'
-      return:
-        type:
-          - 'excel!Excel.Worksheet:interface'
-references:
-  - uid: 'excel!Excel.Range#autoFill~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.Range#autoFill~1:complex'
-    name: |-
-      | AutoFillType
-                      | "FillDefault"
-                      | "FillCopy"
-                      | "FillSeries"
-                      | "FillFormats"
-                      | "FillValues"
-                      | "FillDays"
-                      | "FillWeekdays"
-                      | "FillMonths"
-                      | "FillYears"
-                      | "LinearTrend"
-                      | "GrowthTrend"
-                      | "FlashFill"
-    fullName: |-
-      | Excel.AutoFillType
-                      | "FillDefault"
-                      | "FillCopy"
-                      | "FillSeries"
-                      | "FillFormats"
-                      | "FillValues"
-                      | "FillDays"
-                      | "FillWeekdays"
-                      | "FillMonths"
-                      | "FillYears"
-                      | "LinearTrend"
-                      | "GrowthTrend"
-                      | "FlashFill"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.AutoFillType:enum'
-        name: AutoFillType
-        fullName: Excel.AutoFillType
-      - name: |2-
-
-                          | "FillDefault"
-                          | "FillCopy"
-                          | "FillSeries"
-                          | "FillFormats"
-                          | "FillValues"
-                          | "FillDays"
-                          | "FillWeekdays"
-                          | "FillMonths"
-                          | "FillYears"
-                          | "LinearTrend"
-                          | "GrowthTrend"
-                          | "FlashFill"
-                  
-        fullName: |2-
-
-                          | "FillDefault"
-                          | "FillCopy"
-                          | "FillSeries"
-                          | "FillFormats"
-                          | "FillValues"
-                          | "FillDays"
-                          | "FillWeekdays"
-                          | "FillMonths"
-                          | "FillYears"
-                          | "LinearTrend"
-                          | "GrowthTrend"
-                          | "FlashFill"
-                  
-  - uid: 'excel!Excel.Range#clear~0:complex'
-    name: |-
-      | ClearApplyTo
-                      | "All"
-                      | "Formats"
-                      | "Contents"
-                      | "Hyperlinks"
-                      | "RemoveHyperlinks"
-    fullName: |-
-      | Excel.ClearApplyTo
-                      | "All"
-                      | "Formats"
-                      | "Contents"
-                      | "Hyperlinks"
-                      | "RemoveHyperlinks"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.ClearApplyTo:enum'
-        name: ClearApplyTo
-        fullName: Excel.ClearApplyTo
-      - name: |2-
-
-                          | "All"
-                          | "Formats"
-                          | "Contents"
-                          | "Hyperlinks"
-                          | "RemoveHyperlinks"
-                  
-        fullName: |2-
-
-                          | "All"
-                          | "Formats"
-                          | "Contents"
-                          | "Hyperlinks"
-                          | "RemoveHyperlinks"
-                  
-  - uid: 'excel!Excel.ConditionalFormatCollection:interface'
-    name: ConditionalFormatCollection
-    fullName: Excel.ConditionalFormatCollection
-  - uid: 'excel!Excel.Range#copyFrom~0:complex'
-    name: Range | RangeAreas | string
-    fullName: Excel.Range | Excel.RangeAreas | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | '
-        fullName: ' | '
-      - uid: 'excel!Excel.RangeAreas:interface'
-        name: RangeAreas
-        fullName: Excel.RangeAreas
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.Range#copyFrom~1:complex'
-    name: |-
-      | RangeCopyType
-                      | "All"
-                      | "Formulas"
-                      | "Values"
-                      | "Formats"
-    fullName: |-
-      | Excel.RangeCopyType
-                      | "All"
-                      | "Formulas"
-                      | "Values"
-                      | "Formats"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.RangeCopyType:enum'
-        name: RangeCopyType
-        fullName: Excel.RangeCopyType
-      - name: |2-
-
-                          | "All"
-                          | "Formulas"
-                          | "Values"
-                          | "Formats"
-        fullName: |2-
-
-                          | "All"
-                          | "Formulas"
-                          | "Values"
-                          | "Formats"
-  - uid: 'excel!Excel.DataValidation:interface'
-    name: DataValidation
-    fullName: Excel.DataValidation
-  - uid: 'excel!Excel.Range#delete~0:complex'
-    name: DeleteShiftDirection | "Up" | "Left"
-    fullName: Excel.DeleteShiftDirection | "Up" | "Left"
-    spec.typeScript:
-      - uid: 'excel!Excel.DeleteShiftDirection:enum'
-        name: DeleteShiftDirection
-        fullName: Excel.DeleteShiftDirection
-      - name: ' | "Up" | "Left"'
-        fullName: ' | "Up" | "Left"'
-  - uid: 'excel!Excel.Range:interface'
-    name: Range
-    fullName: Excel.Range
-  - uid: 'excel!Excel.SearchCriteria:interface'
-    name: SearchCriteria
-    fullName: Excel.SearchCriteria
-  - uid: 'excel!Excel.RangeFormat:interface'
-    name: RangeFormat
-    fullName: Excel.RangeFormat
-  - uid: 'excel!Excel.Range#getBoundingRect~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.Range#getImage~0:complex'
-    name: ClientResult<string>
-    fullName: Excel.ClientResult<string>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <string>
-        fullName: <string>
-  - uid: 'excel!Excel.Range#getIntersection~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.Range#getIntersectionOrNullObject~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.PivotTableScopedCollection:interface'
-    name: PivotTableScopedCollection
-    fullName: Excel.PivotTableScopedCollection
-  - uid: 'excel!Excel.RangeAreas:interface'
-    name: RangeAreas
-    fullName: Excel.RangeAreas
-  - uid: 'excel!Excel.Range#getSpecialCells~0:complex'
-    name: |-
-      | SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    fullName: |-
-      | Excel.SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellType:enum'
-        name: SpecialCellType
-        fullName: Excel.SpecialCellType
-      - name: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-        fullName: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-  - uid: 'excel!Excel.Range#getSpecialCells~1:complex'
-    name: |-
-      | SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    fullName: |-
-      | Excel.SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellValueType:enum'
-        name: SpecialCellValueType
-        fullName: Excel.SpecialCellValueType
-      - name: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-        fullName: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-  - uid: 'excel!Excel.Range#getSpecialCellsOrNullObject~0:complex'
-    name: |-
-      | SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    fullName: |-
-      | Excel.SpecialCellType
-                      | "ConditionalFormats"
-                      | "DataValidations"
-                      | "Blanks"
-                      | "Constants"
-                      | "Formulas"
-                      | "SameConditionalFormat"
-                      | "SameDataValidation"
-                      | "Visible"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellType:enum'
-        name: SpecialCellType
-        fullName: Excel.SpecialCellType
-      - name: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-        fullName: |2-
-
-                          | "ConditionalFormats"
-                          | "DataValidations"
-                          | "Blanks"
-                          | "Constants"
-                          | "Formulas"
-                          | "SameConditionalFormat"
-                          | "SameDataValidation"
-                          | "Visible"
-  - uid: 'excel!Excel.Range#getSpecialCellsOrNullObject~1:complex'
-    name: |-
-      | SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    fullName: |-
-      | Excel.SpecialCellValueType
-                      | "All"
-                      | "Errors"
-                      | "ErrorsLogical"
-                      | "ErrorsNumbers"
-                      | "ErrorsText"
-                      | "ErrorsLogicalNumber"
-                      | "ErrorsLogicalText"
-                      | "ErrorsNumberText"
-                      | "Logical"
-                      | "LogicalNumbers"
-                      | "LogicalText"
-                      | "LogicalNumbersText"
-                      | "Numbers"
-                      | "NumbersText"
-                      | "Text"
-    spec.typeScript:
-      - name: '| '
-        fullName: '| '
-      - uid: 'excel!Excel.SpecialCellValueType:enum'
-        name: SpecialCellValueType
-        fullName: Excel.SpecialCellValueType
-      - name: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-        fullName: |2-
-
-                          | "All"
-                          | "Errors"
-                          | "ErrorsLogical"
-                          | "ErrorsNumbers"
-                          | "ErrorsText"
-                          | "ErrorsLogicalNumber"
-                          | "ErrorsLogicalText"
-                          | "ErrorsNumberText"
-                          | "Logical"
-                          | "LogicalNumbers"
-                          | "LogicalText"
-                          | "LogicalNumbersText"
-                          | "Numbers"
-                          | "NumbersText"
-                          | "Text"
-                  
-  - uid: 'excel!Excel.TableScopedCollection:interface'
-    name: TableScopedCollection
-    fullName: Excel.TableScopedCollection
-  - uid: 'excel!Excel.RangeView:interface'
-    name: RangeView
-    fullName: Excel.RangeView
-  - uid: 'excel!Excel.Range#group~0:complex'
-    name: GroupOption | "ByRows" | "ByColumns"
-    fullName: Excel.GroupOption | "ByRows" | "ByColumns"
-    spec.typeScript:
-      - uid: 'excel!Excel.GroupOption:enum'
-        name: GroupOption
-        fullName: Excel.GroupOption
-      - name: ' | "ByRows" | "ByColumns"'
-        fullName: ' | "ByRows" | "ByColumns"'
-  - uid: 'excel!Excel.Range#hideGroupDetails~0:complex'
-    name: GroupOption | "ByRows" | "ByColumns"
-    fullName: Excel.GroupOption | "ByRows" | "ByColumns"
-    spec.typeScript:
-      - uid: 'excel!Excel.GroupOption:enum'
-        name: GroupOption
-        fullName: Excel.GroupOption
-      - name: |2-
-           | "ByRows" | "ByColumns"
-                  
-        fullName: |2-
-           | "ByRows" | "ByColumns"
-                  
-  - uid: 'excel!Excel.RangeHyperlink:interface'
-    name: RangeHyperlink
-    fullName: Excel.RangeHyperlink
-  - uid: 'excel!Excel.Range#insert~0:complex'
-    name: InsertShiftDirection | "Down" | "Right"
-    fullName: Excel.InsertShiftDirection | "Down" | "Right"
-    spec.typeScript:
-      - uid: 'excel!Excel.InsertShiftDirection:enum'
-        name: InsertShiftDirection
-        fullName: Excel.InsertShiftDirection
-      - name: ' | "Down" | "Right"'
-        fullName: ' | "Down" | "Right"'
-  - uid: 'excel!Excel.Range#linkedDataTypeState~0:complex'
-    name: 'LinkedDataTypeState[][]'
-    fullName: 'Excel.LinkedDataTypeState[][]'
-    spec.typeScript:
-      - uid: 'excel!Excel.LinkedDataTypeState:enum'
-        name: LinkedDataTypeState
-        fullName: Excel.LinkedDataTypeState
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'excel!Excel.Range#moveTo~0:complex'
-    name: Range | string
-    fullName: Excel.Range | string
-    spec.typeScript:
-      - uid: 'excel!Excel.Range:interface'
-        name: Range
-        fullName: Excel.Range
-      - name: ' | string'
-        fullName: ' | string'
-  - uid: 'excel!Excel.RemoveDuplicatesResult:interface'
-    name: RemoveDuplicatesResult
-    fullName: Excel.RemoveDuplicatesResult
-  - uid: 'excel!Excel.Range#replaceAll~0:complex'
-    name: ClientResult<number>
-    fullName: Excel.ClientResult<number>
-    spec.typeScript:
-      - uid: 'excel!Excel.ClientResult:interface'
-        name: ClientResult
-        fullName: Excel.ClientResult
-      - name: <number>
-        fullName: <number>
-  - uid: 'excel!Excel.ReplaceCriteria:interface'
-    name: ReplaceCriteria
-    fullName: Excel.ReplaceCriteria
-  - uid: 'excel!Excel.Range#showGroupDetails~0:complex'
-    name: GroupOption | "ByRows" | "ByColumns"
-    fullName: Excel.GroupOption | "ByRows" | "ByColumns"
-    spec.typeScript:
-      - uid: 'excel!Excel.GroupOption:enum'
-        name: GroupOption
-        fullName: Excel.GroupOption
-      - name: |2-
-           | "ByRows" | "ByColumns"
-                  
-        fullName: |2-
-           | "ByRows" | "ByColumns"
-                  
-  - uid: 'excel!Excel.RangeSort:interface'
-    name: RangeSort
-    fullName: Excel.RangeSort
-  - uid: 'excel!Excel.Range#ungroup~0:complex'
-    name: GroupOption | "ByRows" | "ByColumns"
-    fullName: Excel.GroupOption | "ByRows" | "ByColumns"
-    spec.typeScript:
-      - uid: 'excel!Excel.GroupOption:enum'
-        name: GroupOption
-        fullName: Excel.GroupOption
-      - name: ' | "ByRows" | "ByColumns"'
-        fullName: ' | "ByRows" | "ByColumns"'
-  - uid: 'excel!Excel.Range#valueTypes~0:complex'
-    name: 'RangeValueType[][]'
-    fullName: 'Excel.RangeValueType[][]'
-    spec.typeScript:
-      - uid: 'excel!Excel.RangeValueType:enum'
-        name: RangeValueType
-        fullName: Excel.RangeValueType
-      - name: '[][]'
-        fullName: '[][]'
-  - uid: 'excel!Excel.Worksheet:interface'
-    name: Worksheet
-    fullName: Excel.Worksheet
+                        | "Visible"
+    - id: cellValueType
+      description: Si cellType est une constante ou une formule, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
+      type: "| <xref uid=\"excel!Excel.SpecialCellValueType:enum\" />\n                | \"All\"\n                | \"Errors\"\n                | \"ErrorsLogical\"\n                | \"ErrorsNumbers\"\n                | \"ErrorsText\"\n                | \"ErrorsLogicalNumber\"\n                | \"ErrorsLogicalText\"\n                | \"ErrorsNumberText\"\n                | \"Logical\"\n                | \"LogicalNumbers\"\n                | \"LogicalText\"\n                | \"LogicalNumbersText\"\n                | \"Numbers\"\n                | \"NumbersText\"\n                | \"Text\"\n        "
+    return:
+      type: <xref uid="excel!Excel.RangeAreas:interface" />
+      description: ''
+- name: getSurroundingRegion()
+  uid: excel!Excel.Range#getSurroundingRegion:member(1)
+  package: excel!
+  fullName: getSurroundingRegion()
+  summary: Renvoie un objet PLage qui représente la région environnante pour la cellule en haut à gauche de cette plage. Une région environnante est une plage délimitée par une combinaison de lignes et de colonnes vides par rapport à cette plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSurroundingRegion(): Range;'
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getTables(fullyContained)
+  uid: excel!Excel.Range#getTables:member(1)
+  package: excel!
+  fullName: getTables(fullyContained)
+  summary: Obtient une collection de tableaux qui se chevauchent avec la plage dans l’étendue.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTables(fullyContained?: boolean): TableScopedCollection;'
+    parameters:
+    - id: fullyContained
+      description: Si la valeur est true, renvoie uniquement les tables qui sont entièrement contenues dans les limites de la plage. La valeur par défaut est false.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.TableScopedCollection:interface" />
+      description: ''
+- name: getUsedRange(valuesOnly)
+  uid: excel!Excel.Range#getUsedRange:member(1)
+  package: excel!
+  fullName: getUsedRange(valuesOnly)
+  summary: Renvoie la plage utilisée d’un objet de plage donné. Si aucune cellule n’est utilisée dans la plage, cette fonction génère une erreur ItemNotFound.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: Prend uniquement en compte les cellules avec des valeurs sous forme de cellules utilisées.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: getUsedRangeOrNullObject(valuesOnly)
+  uid: excel!Excel.Range#getUsedRangeOrNullObject:member(1)
+  package: excel!
+  fullName: getUsedRangeOrNullObject(valuesOnly)
+  summary: Renvoie la plage utilisée d’un objet de plage donné. Si aucune cellule n’est utilisée dans la plage, cette fonction renvoie un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Range;'
+    parameters:
+    - id: valuesOnly
+      description: Prend uniquement en compte les cellules avec des valeurs sous forme de cellules utilisées.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let salesTable = sheet.tables.getItem(\"SalesTable\");\n    let dataRange = salesTable.getDataBodyRange();\n\n    // Pass true so only cells with values count as used\n    let usedDataRange = dataRange.getUsedRangeOrNullObject(\n        true /* valuesOnly */\n    );\n\n    //Must sync before reading value returned from *OrNullObject method/property.\n    await context.sync();\n\n    if (usedDataRange.isNullObject) {\n        console.log(\"Need Data to Make Chart\");\n        console.log(\"To create a meaningful chart, press 'Fill the table' (or add names to the Product column and numbers to some of the other cells). Then press 'Try to create chart' again.\");\n    } else {\n        let chart = sheet.charts.add(\n            Excel.ChartType.columnClustered,\n            dataRange,\n            \"Columns\"\n        );\n        chart.setPosition(\"A15\", \"F30\");\n        chart.title.text = \"Quarterly sales chart\";\n        chart.legend.position = \"Right\";\n        chart.legend.format.fill.setSolidColor(\"white\");\n        chart.dataLabels.format.font.size = 15;\n        chart.dataLabels.format.font.color = \"black\";\n    }\n\n    await context.sync();\n}\n```"
+- name: getVisibleView()
+  uid: excel!Excel.Range#getVisibleView:member(1)
+  package: excel!
+  fullName: getVisibleView()
+  summary: Représente les lignes visibles de la plage en cours.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVisibleView(): RangeView;'
+    return:
+      type: <xref uid="excel!Excel.RangeView:interface" />
+      description: ''
+- name: group(groupOption)
+  uid: excel!Excel.Range#group:member(1)
+  package: excel!
+  fullName: group(groupOption)
+  summary: Regroupe les colonnes et les lignes d’un plan.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'group(groupOption: GroupOption | "ByRows" | "ByColumns"): void;'
+    parameters:
+    - id: groupOption
+      description: Indique comment la plage peut être regroupée par ligne ou par colonne. Une `InvalidArgument` erreur est générée lorsque l’option de groupe diffère de la propriété ou de la plage `isEntireRow` `isEntireColumn` ( `range.isEntireRow` elle a la valeur true et `groupOption` est « ByColumns » ou `range.isEntireColumn` est true et `groupOption` est « ByRows »).
+      type: <xref uid="excel!Excel.GroupOption:enum" /> | "ByRows" | "ByColumns"
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nExcel.run(async (context) => {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    \n    // Group the larger, main level. Note that the outline controls\n    // will be on row 10, meaning 4-9 will collapse and expand.\n    sheet.getRange(\"4:9\").group(Excel.GroupOption.byRows);\n\n    // Group the smaller, sublevels. Note that the outline controls\n    // will be on rows 6 and 9, meaning 4-5 and 7-8 will collapse and expand.\n    sheet.getRange(\"4:5\").group(Excel.GroupOption.byRows);\n    sheet.getRange(\"7:8\").group(Excel.GroupOption.byRows);\n    await context.sync();\n}\n```"
+- name: hideGroupDetails(groupOption)
+  uid: excel!Excel.Range#hideGroupDetails:member(1)
+  package: excel!
+  fullName: hideGroupDetails(groupOption)
+  summary: Masque les détails du groupe de lignes ou de colonnes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      hideGroupDetails(
+                  groupOption: GroupOption | "ByRows" | "ByColumns"
+              ): void;
+    parameters:
+    - id: groupOption
+      description: Indique s’il faut masquer les détails des lignes groupées ou des colonnes groupées.
+      type: "<xref uid=\"excel!Excel.GroupOption:enum\" /> | \"ByRows\" | \"ByColumns\"\n        "
+    return:
+      type: void
+      description: ''
+- name: insert(shift)
+  uid: excel!Excel.Range#insert:member(1)
+  package: excel!
+  fullName: insert(shift)
+  summary: Insère une cellule ou une plage de cellules dans la feuille de calcul à la place d’une plage donnée et décale les autres cellules pour libérer de l’espace. Renvoie un nouvel objet Range dans l’espace vide qui s’est créé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'insert(shift: InsertShiftDirection | "Down" | "Right"): Range;'
+    parameters:
+    - id: shift
+      description: Indique la façon dont les cellules doivent être décalées. Pour plus d’informations, voir Excel. InsertShiftDirection.
+      type: <xref uid="excel!Excel.InsertShiftDirection:enum" /> | "Down" | "Right"
+    return:
+      type: <xref uid="excel!Excel.Range:interface" />
+      description: ''
+- name: load(propertyNames)
+  uid: excel!Excel.Range#load:member(1)
+  package: excel!
+  fullName: load(propertyNames)
+  summary: Files d’attente de la commande pour charger les propriétés de l’objet spécifié. Vous devez contacter `context.sync()` avant de lire les propriétés.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'load(propertyNames?: string | string[]): void;'
+    parameters:
+    - id: propertyNames
+      description: Une chaîne délimitée par des virgules ou un tableau de chaînes qui spécifient les propriétés à charger.
+      type: string | string[]
+    return:
+      type: void
+      description: ''
+- name: merge(across)
+  uid: excel!Excel.Range#merge:member(1)
+  package: excel!
+  fullName: merge(across)
+  summary: Fusionne la plage de cellules dans une zone de la feuille de calcul.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'merge(across?: boolean): void;'
+    parameters:
+    - id: across
+      description: Facultatif. Définit la valeur « true » pour fusionner séparément les cellules de chaque ligne de la plage spécifiée. La valeur par défaut est « false ».
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: moveTo(destinationRange)
+  uid: excel!Excel.Range#moveTo:member(1)
+  package: excel!
+  fullName: moveTo(destinationRange)
+  summary: Déplace les valeurs de cellule, la mise en forme et les formules de la plage actuelle à la plage de destination, en remplaçant les anciennes informations de ces cellules. La plage de destination est étendue automatiquement si elle est plus petite que la plage actuelle. Les cellules de la plage de destination qui se trouvent en dehors de la zone de la plage d’origine ne sont pas modifiées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'moveTo(destinationRange: Range | string): void;'
+    parameters:
+    - id: destinationRange
+      description: destinationRange spécifie la plage où les informations de cette plage seront déplacées.
+      type: <xref uid="excel!Excel.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
+- name: removeDuplicates(columns, includesHeader)
+  uid: excel!Excel.Range#removeDuplicates:member(1)
+  package: excel!
+  fullName: removeDuplicates(columns, includesHeader)
+  summary: Supprime les valeurs dupliquées de la plage spécifiée par les colonnes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      removeDuplicates(
+                  columns: number[],
+                  includesHeader: boolean
+              ): RemoveDuplicatesResult;
+    parameters:
+    - id: columns
+      description: Les colonnes à l’intérieur de la plage qui peuvent contenir des doublons. Au moins une colonne doit être spécifiée. Avec indice zéro.
+      type: number[]
+    - id: includesHeader
+      description: True si les données d’entrée contiennent un en-tête. La valeur par défaut est False.
+      type: boolean
+    return:
+      type: <xref uid="excel!Excel.RemoveDuplicatesResult:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nasync function main(context: Excel.RequestContext) {\n    let sheet = context.workbook.worksheets.getItem(\"Sample\");\n    let range = sheet.getRange(\"B2:D11\");\n\n    let deleteResult = range.removeDuplicates([0],true);    \n    deleteResult.load();    \n    await context.sync();\n\n    console.log(deleteResult.removed + \" entries with duplicate names removed.\");\n    console.log(deleteResult.uniqueRemaining + \" entries with unique names remain in the range.\");\n}\n```"
+- name: replaceAll(text, replacement, criteria)
+  uid: excel!Excel.Range#replaceAll:member(1)
+  package: excel!
+  fullName: replaceAll(text, replacement, criteria)
+  summary: Détecte et remplace la chaîne donnée basée sur les critères spécifiés dans la plage active.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      replaceAll(
+                  text: string,
+                  replacement: string,
+                  criteria: ReplaceCriteria
+              ): ClientResult<number>;
+    parameters:
+    - id: text
+      description: Chaîne à rechercher.
+      type: string
+    - id: replacement
+      description: Chaîne de remplacement de l’original par.
+      type: string
+    - id: criteria
+      description: Critères de remplacement supplémentaires.
+      type: <xref uid="excel!Excel.ReplaceCriteria:interface" />
+    return:
+      type: <xref uid="excel!Excel.ClientResult:interface" />&lt;number&gt;
+      description: ''
+- name: select()
+  uid: excel!Excel.Range#select:member(1)
+  package: excel!
+  fullName: select()
+  summary: Sélectionne la plage spécifiée dans l’interface utilisateur d’Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'select(): void;'
+    return:
+      type: void
+      description: ''
+- name: setDirty()
+  uid: excel!Excel.Range#setDirty:member(1)
+  package: excel!
+  fullName: setDirty()
+  summary: Cette méthode désigne une plage qui doit être recalculée lorsque le recalcul suivant se produit.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setDirty(): void;'
+    return:
+      type: void
+      description: ''
+- name: showCard()
+  uid: excel!Excel.Range#showCard:member(1)
+  package: excel!
+  fullName: showCard()
+  summary: Affiche la carte pour une cellule active si son contenu est riche en valeur.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'showCard(): void;'
+    return:
+      type: void
+      description: ''
+- name: showGroupDetails(groupOption)
+  uid: excel!Excel.Range#showGroupDetails:member(1)
+  package: excel!
+  fullName: showGroupDetails(groupOption)
+  summary: Affiche les détails du groupe de lignes ou de colonnes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      showGroupDetails(
+                  groupOption: GroupOption | "ByRows" | "ByColumns"
+              ): void;
+    parameters:
+    - id: groupOption
+      description: Indique s’il faut afficher les détails des lignes groupées ou des colonnes groupées.
+      type: "<xref uid=\"excel!Excel.GroupOption:enum\" /> | \"ByRows\" | \"ByColumns\"\n        "
+    return:
+      type: void
+      description: ''
+- name: ungroup(groupOption)
+  uid: excel!Excel.Range#ungroup:member(1)
+  package: excel!
+  fullName: ungroup(groupOption)
+  summary: Dissocie les colonnes et les lignes d’un plan.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'ungroup(groupOption: GroupOption | "ByRows" | "ByColumns"): void;'
+    parameters:
+    - id: groupOption
+      description: Indique comment la plage peut être dissociée par des lignes ou des colonnes.
+      type: <xref uid="excel!Excel.GroupOption:enum" /> | "ByRows" | "ByColumns"
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\nExcel.run(async (context) => {\n    let sheet = context.workbook.worksheets.getActiveWorksheet();\n    \n    // This removes two levels of groups from the \"A1-R10\" range.\n    // Any groups at the same level on the same dimension will be removed by a single call.\n    sheet.getRange(\"A1:R10\").ungroup(Excel.GroupOption.byRows);\n    sheet.getRange(\"A1:R10\").ungroup(Excel.GroupOption.byRows);\n    sheet.getRange(\"A1:R10\").ungroup(Excel.GroupOption.byColumns);\n    sheet.getRange(\"A1:R10\").ungroup(Excel.GroupOption.byColumns);\n    await context.sync();\n}\n```"
+- name: unmerge()
+  uid: excel!Excel.Range#unmerge:member(1)
+  package: excel!
+  fullName: unmerge()
+  summary: Annule la fusion de la plage de cellules.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'unmerge(): void;'
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: de868bdab7b9962ebb7c9d967bd06a3d73f5e9fd
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418785"

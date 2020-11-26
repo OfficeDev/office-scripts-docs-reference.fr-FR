@@ -1,63 +1,57 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat:interface'
-    summary: Regroupe les propriétés de format des axes du graphique.
-    name: ExcelScript.ChartAxisFormat
-    fullName: ExcelScript.ChartAxisFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)'
-    summary: Cette énumération spécifie la mise en forme du remplissage du graphique.
-    name: getFill()
-    fullName: getFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFill(): ChartFill;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFill:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)'
-    summary: 'Spécifie les attributs de police (nom de police, taille de police, couleur, etc.) pour un élément d’axe de graphique.'
-    name: getFont()
-    fullName: getFont()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFont(): ChartFont;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartFont:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)'
-    summary: Indique la mise en forme des lignes de graphique.
-    name: getLine()
-    fullName: getLine()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLine(): ChartLineFormat;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartLineFormat:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartFill:interface'
-    name: ChartFill
-    fullName: ExcelScript.ChartFill
-  - uid: 'ExcelScript!ExcelScript.ChartFont:interface'
-    name: ChartFont
-    fullName: ExcelScript.ChartFont
-  - uid: 'ExcelScript!ExcelScript.ChartLineFormat:interface'
-    name: ChartLineFormat
-    fullName: ExcelScript.ChartLineFormat
+### YamlMime:TSType
+name: ExcelScript.ChartAxisFormat
+uid: ExcelScript!ExcelScript.ChartAxisFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxisFormat
+summary: Regroupe les propriétés de format des axes du graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getFill()
+  uid: ExcelScript!ExcelScript.ChartAxisFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: Cette énumération spécifie la mise en forme du remplissage du graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): ChartFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
+      description: ''
+- name: getFont()
+  uid: ExcelScript!ExcelScript.ChartAxisFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: Spécifie les attributs de police (nom de police, taille de police, couleur, etc.) pour un élément d’axe de graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): ChartFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
+      description: ''
+- name: getLine()
+  uid: ExcelScript!ExcelScript.ChartAxisFormat#getLine:member(1)
+  package: ExcelScript!
+  fullName: getLine()
+  summary: Indique la mise en forme des lignes de graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLine(): ChartLineFormat;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartLineFormat:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 7a45fe459150d9ea8ccad9dfcca8ef833298db96
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420096"

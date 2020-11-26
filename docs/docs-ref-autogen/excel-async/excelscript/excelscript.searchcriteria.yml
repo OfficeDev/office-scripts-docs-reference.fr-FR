@@ -1,60 +1,54 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'excel!Excel.SearchCriteria:interface'
-    summary: Représente les critères de recherche à utiliser.
-    name: Excel.SearchCriteria
-    fullName: Excel.SearchCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: excel!
-    children:
-      - 'excel!Excel.SearchCriteria#completeMatch:member'
-      - 'excel!Excel.SearchCriteria#matchCase:member'
-      - 'excel!Excel.SearchCriteria#searchDirection:member'
-  - uid: 'excel!Excel.SearchCriteria#completeMatch:member'
-    summary: 'Indique si la correspondance doit être terminée ou partielle. Une correspondance complète correspond à la totalité du contenu de la cellule. Une correspondance partielle correspond à une sous-chaîne dans le contenu de la cellule (par exemple, les `cat` correspondances partielles `caterpillar` et`scatter`<!-- -->). La valeur par défaut est False (partielle).'
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SearchCriteria#matchCase:member'
-    summary: Indique si la correspondance respecte la casse. Par défaut est false (ou minuscules).
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'excel!Excel.SearchCriteria#searchDirection:member'
-    summary: Détermine le sens de la recherche. Par défaut est transférer. Voir Excel.SearchDirection.
-    name: searchDirection
-    fullName: searchDirection
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'searchDirection?: SearchDirection | "Forward" | "Backwards";'
-      return:
-        type:
-          - 'excel!Excel.SearchCriteria#searchDirection~0:complex'
-references:
-  - uid: 'excel!Excel.SearchCriteria#searchDirection~0:complex'
-    name: SearchDirection | "Forward" | "Backwards"
-    fullName: Excel.SearchDirection | "Forward" | "Backwards"
-    spec.typeScript:
-      - uid: 'excel!Excel.SearchDirection:enum'
-        name: SearchDirection
-        fullName: Excel.SearchDirection
-      - name: ' | "Forward" | "Backwards"'
-        fullName: ' | "Forward" | "Backwards"'
+### YamlMime:TSType
+name: Excel.SearchCriteria
+uid: excel!Excel.SearchCriteria:interface
+package: excel!
+fullName: Excel.SearchCriteria
+summary: Représente les critères de recherche à utiliser.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: excel!Excel.SearchCriteria#completeMatch:member
+  package: excel!
+  fullName: completeMatch
+  summary: Indique si la correspondance doit être terminée ou partielle. Une correspondance complète correspond à la totalité du contenu de la cellule. Une correspondance partielle correspond à une sous-chaîne dans le contenu de la cellule (par exemple, les `cat` correspondances partielles `caterpillar` et `scatter`<!-- -->). La valeur par défaut est False (partielle).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: excel!Excel.SearchCriteria#matchCase:member
+  package: excel!
+  fullName: matchCase
+  summary: Indique si la correspondance respecte la casse. Par défaut est false (ou minuscules).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+- name: searchDirection
+  uid: excel!Excel.SearchCriteria#searchDirection:member
+  package: excel!
+  fullName: searchDirection
+  summary: Détermine le sens de la recherche. Par défaut est transférer. Voir Excel.SearchDirection.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'searchDirection?: SearchDirection | "Forward" | "Backwards";'
+    return:
+      type: <xref uid="excel!Excel.SearchDirection:enum" /> | "Forward" | "Backwards"
+metadata:
+  ms.openlocfilehash: 05b2c27b25815da716cf93f733c02380cdb71251
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49418638"
