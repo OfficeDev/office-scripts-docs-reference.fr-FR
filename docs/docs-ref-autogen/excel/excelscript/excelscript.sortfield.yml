@@ -1,112 +1,102 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SortField:interface'
-    summary: Représente une condition dans une opération de tri.
-    name: ExcelScript.SortField
-    fullName: ExcelScript.SortField
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SortField#ascending:member'
-      - 'ExcelScript!ExcelScript.SortField#color:member'
-      - 'ExcelScript!ExcelScript.SortField#dataOption:member'
-      - 'ExcelScript!ExcelScript.SortField#icon:member'
-      - 'ExcelScript!ExcelScript.SortField#key:member'
-      - 'ExcelScript!ExcelScript.SortField#sortOn:member'
-      - 'ExcelScript!ExcelScript.SortField#subField:member'
-  - uid: 'ExcelScript!ExcelScript.SortField#ascending:member'
-    summary: Indique si le tri est réalisé de manière ascendante.
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'ascending?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.SortField#color:member'
-    summary: Indique la couleur cible de la condition si le tri est appliqué à la police ou à la couleur de la cellule.
-    name: color
-    fullName: color
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'color?: string;'
-      return:
-        type:
-          - string
-  - uid: 'ExcelScript!ExcelScript.SortField#dataOption:member'
-    summary: Options de tri supplémentaires pour ce champ.
-    name: dataOption
-    fullName: dataOption
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'dataOption?: SortDataOption;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SortDataOption:enum'
-  - uid: 'ExcelScript!ExcelScript.SortField#icon:member'
-    summary: Spécifie l’icône qui est la cible de la condition si le tri est appliqué à l’icône de la cellule.
-    name: icon
-    fullName: icon
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'icon?: Icon;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.Icon:interface'
-  - uid: 'ExcelScript!ExcelScript.SortField#key:member'
-    summary: 'Spécifie la colonne (ou ligne, en fonction de l’orientation du tri) sur laquelle se trouve la condition. Représentée sous forme d’un décalage par rapport à la première colonne (ou ligne).'
-    name: key
-    fullName: key
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'key: number;'
-      return:
-        type:
-          - number
-  - uid: 'ExcelScript!ExcelScript.SortField#sortOn:member'
-    summary: Spécifie le type de tri de cette condition.
-    name: sortOn
-    fullName: sortOn
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'sortOn?: SortOn;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.SortOn:enum'
-  - uid: 'ExcelScript!ExcelScript.SortField#subField:member'
-    summary: Spécifie le sous-champ qui est le nom de la propriété cible d’une valeur enrichie à trier.
-    name: subField
-    fullName: subField
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'subField?: string;'
-      return:
-        type:
-          - string
-references:
-  - uid: 'ExcelScript!ExcelScript.SortDataOption:enum'
-    name: SortDataOption
-    fullName: ExcelScript.SortDataOption
-  - uid: 'ExcelScript!ExcelScript.Icon:interface'
-    name: Icon
-    fullName: ExcelScript.Icon
-  - uid: 'ExcelScript!ExcelScript.SortOn:enum'
-    name: SortOn
-    fullName: ExcelScript.SortOn
+### YamlMime:TSType
+name: ExcelScript.SortField
+uid: ExcelScript!ExcelScript.SortField:interface
+package: ExcelScript!
+fullName: ExcelScript.SortField
+summary: Représente une condition dans une opération de tri.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: ascending
+  uid: ExcelScript!ExcelScript.SortField#ascending:member
+  package: ExcelScript!
+  fullName: ascending
+  summary: Indique si le tri est réalisé de manière ascendante.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'ascending?: boolean;'
+    return:
+      type: boolean
+- name: color
+  uid: ExcelScript!ExcelScript.SortField#color:member
+  package: ExcelScript!
+  fullName: color
+  summary: Indique la couleur cible de la condition si le tri est appliqué à la police ou à la couleur de la cellule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'color?: string;'
+    return:
+      type: string
+- name: dataOption
+  uid: ExcelScript!ExcelScript.SortField#dataOption:member
+  package: ExcelScript!
+  fullName: dataOption
+  summary: Options de tri supplémentaires pour ce champ.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'dataOption?: SortDataOption;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SortDataOption:enum" />
+- name: icon
+  uid: ExcelScript!ExcelScript.SortField#icon:member
+  package: ExcelScript!
+  fullName: icon
+  summary: Spécifie l’icône qui est la cible de la condition si le tri est appliqué à l’icône de la cellule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'icon?: Icon;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
+- name: key
+  uid: ExcelScript!ExcelScript.SortField#key:member
+  package: ExcelScript!
+  fullName: key
+  summary: Spécifie la colonne (ou ligne, en fonction de l’orientation du tri) sur laquelle se trouve la condition. Représentée sous forme d’un décalage par rapport à la première colonne (ou ligne).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'key: number;'
+    return:
+      type: number
+- name: sortOn
+  uid: ExcelScript!ExcelScript.SortField#sortOn:member
+  package: ExcelScript!
+  fullName: sortOn
+  summary: Spécifie le type de tri de cette condition.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'sortOn?: SortOn;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SortOn:enum" />
+- name: subField
+  uid: ExcelScript!ExcelScript.SortField#subField:member
+  package: ExcelScript!
+  fullName: subField
+  summary: Spécifie le sous-champ qui est le nom de la propriété cible d’une valeur enrichie à trier.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'subField?: string;'
+    return:
+      type: string
+metadata:
+  ms.openlocfilehash: ebc6a6627cee8a97f7f156534f43fb99f731efa4
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420383"

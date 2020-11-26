@@ -1,86 +1,77 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ChartAxes:interface'
-    summary: Représente les axes du graphique.
-    name: ExcelScript.ChartAxes
-    fullName: ExcelScript.ChartAxes
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
-      - 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)'
-    summary: Représente l’axe des abscisses d’un graphique.
-    name: getCategoryAxis()
-    fullName: getCategoryAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getCategoryAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)'
-    summary: Renvoie l’axe spécifique identifié par type et par groupe.
-    name: 'getChartAxis(type, group)'
-    fullName: 'getChartAxis(type, group)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-      parameters:
-        - id: type
-          description: 'Spécifie le type d’axe. Pour plus d’informations, voir ExcelScript. ChartAxisType.'
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisType:enum'
-        - id: group
-          description: 'Facultatif. Spécifie le groupe d''axes. Pour plus d’informations, voir ExcelScript. ChartAxisGroup.'
-          type:
-            - 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)'
-    summary: "Représente l’axe de séries d’un graphique\_3D."
-    name: getSeriesAxis()
-    fullName: getSeriesAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSeriesAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)'
-    summary: Représente l’axe des ordonnées.
-    name: getValueAxis()
-    fullName: getValueAxis()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getValueAxis(): ChartAxis;'
-      return:
-        type:
-          - 'ExcelScript!ExcelScript.ChartAxis:interface'
-        description: ''
-references:
-  - uid: 'ExcelScript!ExcelScript.ChartAxis:interface'
-    name: ChartAxis
-    fullName: ExcelScript.ChartAxis
-  - uid: 'ExcelScript!ExcelScript.ChartAxisType:enum'
-    name: ChartAxisType
-    fullName: ExcelScript.ChartAxisType
-  - uid: 'ExcelScript!ExcelScript.ChartAxisGroup:enum'
-    name: ChartAxisGroup
-    fullName: ExcelScript.ChartAxisGroup
+### YamlMime:TSType
+name: ExcelScript.ChartAxes
+uid: ExcelScript!ExcelScript.ChartAxes:interface
+package: ExcelScript!
+fullName: ExcelScript.ChartAxes
+summary: Représente les axes du graphique.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getCategoryAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getCategoryAxis:member(1)
+  package: ExcelScript!
+  fullName: getCategoryAxis()
+  summary: Représente l’axe des abscisses d’un graphique.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCategoryAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getChartAxis(type, group)
+  uid: ExcelScript!ExcelScript.ChartAxes#getChartAxis:member(1)
+  package: ExcelScript!
+  fullName: getChartAxis(type, group)
+  summary: Renvoie l’axe spécifique identifié par type et par groupe.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getChartAxis(type: ChartAxisType, group?: ChartAxisGroup): ChartAxis;'
+    parameters:
+    - id: type
+      description: Spécifie le type d’axe. Pour plus d’informations, voir ExcelScript. ChartAxisType.
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisType:enum" />
+    - id: group
+      description: Facultatif. Spécifie le groupe d'axes. Pour plus d’informations, voir ExcelScript. ChartAxisGroup.
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxisGroup:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getSeriesAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getSeriesAxis:member(1)
+  package: ExcelScript!
+  fullName: getSeriesAxis()
+  summary: Représente l’axe de séries d’un graphique 3D.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSeriesAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+- name: getValueAxis()
+  uid: ExcelScript!ExcelScript.ChartAxes#getValueAxis:member(1)
+  package: ExcelScript!
+  fullName: getValueAxis()
+  summary: Représente l’axe des ordonnées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValueAxis(): ChartAxis;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ChartAxis:interface" />
+      description: ''
+metadata:
+  ms.openlocfilehash: 5228c8107a7d138be68485c568f89a67578a44dd
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420110"

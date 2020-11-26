@@ -1,35 +1,29 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
-    summary: Spécifie le comportement de tri de Slicer pour l’API Slicer. sortBy.
-    name: ExcelScript.SlicerSortType
-    fullName: ExcelScript.SlicerSortType
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
-      - 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
-      - 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
-    summary: Trier les éléments du segment dans l’ordre croissant des légendes des éléments.
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
-    summary: Trier les éléments du segment dans l’ordre indiqué par la source de données.
-    name: dataSourceOrder
-    fullName: dataSourceOrder
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
-    summary: Trier les éléments du segment dans l’ordre décroissant des légendes d’élément.
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SlicerSortType
+uid: ExcelScript!ExcelScript.SlicerSortType:enum
+package: ExcelScript!
+fullName: ExcelScript.SlicerSortType
+summary: Spécifie le comportement de tri de Slicer pour l’API Slicer. sortBy.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: ascending
+  uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
+  package: ExcelScript!
+  summary: Trier les éléments du segment dans l’ordre croissant des légendes des éléments.
+- name: dataSourceOrder
+  uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
+  package: ExcelScript!
+  summary: Trier les éléments du segment dans l’ordre indiqué par la source de données.
+- name: descending
+  uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
+  package: ExcelScript!
+  summary: Trier les éléments du segment dans l’ordre décroissant des légendes d’élément.
+metadata:
+  ms.openlocfilehash: 5b56c58547f73ee6fdbcc145985c6bfc2526d6c3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420474"

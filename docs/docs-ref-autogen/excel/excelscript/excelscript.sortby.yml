@@ -1,27 +1,25 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.SortBy:enum'
-    summary: Représente le sens de tri.
-    name: ExcelScript.SortBy
-    fullName: ExcelScript.SortBy
-    langs:
-      - typeScript
-    type: enum
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.SortBy.ascending:member'
-      - 'ExcelScript!ExcelScript.SortBy.descending:member'
-  - uid: 'ExcelScript!ExcelScript.SortBy.ascending:member'
-    summary: Tri croissant. Du plus petit au plus grand ou de A à Z.
-    name: ascending
-    fullName: ascending
-    langs:
-      - typeScript
-    type: field
-  - uid: 'ExcelScript!ExcelScript.SortBy.descending:member'
-    summary: Tri décroissant. Du plus grand au plus petit ou de Z à A.
-    name: descending
-    fullName: descending
-    langs:
-      - typeScript
-    type: field
+### YamlMime:TSEnum
+name: ExcelScript.SortBy
+uid: ExcelScript!ExcelScript.SortBy:enum
+package: ExcelScript!
+fullName: ExcelScript.SortBy
+summary: Représente le sens de tri.
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: ascending
+  uid: ExcelScript!ExcelScript.SortBy.ascending:member
+  package: ExcelScript!
+  summary: Tri croissant. Du plus petit au plus grand ou de A à Z.
+- name: descending
+  uid: ExcelScript!ExcelScript.SortBy.descending:member
+  package: ExcelScript!
+  summary: Tri décroissant. Du plus grand au plus petit ou de Z à A.
+metadata:
+  ms.openlocfilehash: ac1f6680ff327f4fedd3b7521ebd3a130bd4f077
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420439"

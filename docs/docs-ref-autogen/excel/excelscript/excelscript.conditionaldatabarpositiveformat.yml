@@ -1,110 +1,108 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface'
-    summary: Représente un format de DataBar de mise en forme conditionnelle pour le côté positif de la barre de données.
-    name: ExcelScript.ConditionalDataBarPositiveFormat
-    fullName: ExcelScript.ConditionalDataBarPositiveFormat
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)'
-      - 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)'
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)'
-    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»). \"\" (chaîne vide) si aucune bordure n’est présente ou définie."
-    name: getBorderColor()
-    fullName: getBorderColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getBorderColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)'
-    summary: "Code couleur HTML qui représente la couleur de remplissage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
-    name: getFillColor()
-    fullName: getFillColor()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getFillColor(): string;'
-      return:
-        type:
-          - string
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)'
-    summary: Indique si le DataBar a un dégradé.
-    name: getGradientFill()
-    fullName: getGradientFill()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getGradientFill(): boolean;'
-      return:
-        type:
-          - boolean
-        description: ''
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)'
-    summary: "Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»). \"\" (chaîne vide) si aucune bordure n’est présente ou définie."
-    name: setBorderColor(borderColor)
-    fullName: setBorderColor(borderColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setBorderColor(borderColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: borderColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)'
-    summary: "Code couleur HTML qui représente la couleur de remplissage, sous la forme \\# RRGGBB (par exemple, «\_FFA500\_») ou sous forme de couleur HTML nommée (par exemple, «\_orange\_»)."
-    name: setFillColor(fillColor)
-    fullName: setFillColor(fillColor)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setFillColor(fillColor: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: fillColor
-          description: ''
-          type:
-            - string
-  - uid: 'ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)'
-    summary: Indique si le DataBar a un dégradé.
-    name: setGradientFill(gradientFill)
-    fullName: setGradientFill(gradientFill)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setGradientFill(gradientFill: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: gradientFill
-          description: ''
-          type:
-            - boolean
+### YamlMime:TSType
+name: ExcelScript.ConditionalDataBarPositiveFormat
+uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat:interface
+package: ExcelScript!
+fullName: ExcelScript.ConditionalDataBarPositiveFormat
+summary: Représente un format de DataBar de mise en forme conditionnelle pour le côté positif de la barre de données.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: getBorderColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getBorderColor:member(1)
+  package: ExcelScript!
+  fullName: getBorderColor()
+  summary: Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). "" (chaîne vide) si aucune bordure n’est présente ou définie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorderColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getFillColor()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getFillColor:member(1)
+  package: ExcelScript!
+  fullName: getFillColor()
+  summary: Code couleur HTML qui représente la couleur de remplissage, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFillColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getGradientFill()
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#getGradientFill:member(1)
+  package: ExcelScript!
+  fullName: getGradientFill()
+  summary: Indique si le DataBar a un dégradé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getGradientFill(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setBorderColor(borderColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setBorderColor:member(1)
+  package: ExcelScript!
+  fullName: setBorderColor(borderColor)
+  summary: Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). "" (chaîne vide) si aucune bordure n’est présente ou définie.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBorderColor(borderColor: string): void;'
+    parameters:
+    - id: borderColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setFillColor(fillColor)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setFillColor:member(1)
+  package: ExcelScript!
+  fullName: setFillColor(fillColor)
+  summary: Code couleur HTML qui représente la couleur de remplissage, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setFillColor(fillColor: string): void;'
+    parameters:
+    - id: fillColor
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setGradientFill(gradientFill)
+  uid: ExcelScript!ExcelScript.ConditionalDataBarPositiveFormat#setGradientFill:member(1)
+  package: ExcelScript!
+  fullName: setGradientFill(gradientFill)
+  summary: Indique si le DataBar a un dégradé.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setGradientFill(gradientFill: boolean): void;'
+    parameters:
+    - id: gradientFill
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: e2477aab79cb1074e976aa71eb0748a362c1cda3
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420684"

@@ -1,37 +1,42 @@
-### YamlMime:UniversalReference
-items:
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
-    summary: Représente les critères de remplacement à utiliser.
-    name: ExcelScript.ReplaceCriteria
-    fullName: ExcelScript.ReplaceCriteria
-    langs:
-      - typeScript
-    type: interface
-    package: ExcelScript!
-    children:
-      - 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-      - 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-    summary: 'Indique si la correspondance doit être terminée ou partielle. Une correspondance complète correspond à la totalité du contenu de la cellule. Une correspondance partielle correspond à une sous-chaîne dans le contenu de la cellule (par exemple, les `cat` correspondances partielles `caterpillar` et`scatter`<!-- -->). La valeur par défaut est False (partielle).'
-    name: completeMatch
-    fullName: completeMatch
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-    summary: Indique si la correspondance respecte la casse. Par défaut est false (ou minuscules).
-    name: matchCase
-    fullName: matchCase
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type:
-          - boolean
+### YamlMime:TSType
+name: ExcelScript.ReplaceCriteria
+uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
+package: ExcelScript!
+fullName: ExcelScript.ReplaceCriteria
+summary: Représente les critères de remplacement à utiliser.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: Indique si la correspondance doit être terminée ou partielle. Une correspondance complète correspond à la totalité du contenu de la cellule. Une correspondance partielle correspond à une sous-chaîne dans le contenu de la cellule (par exemple, les `cat` correspondances partielles `caterpillar` et `scatter`<!-- -->). La valeur par défaut est False (partielle).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: Indique si la correspondance respecte la casse. Par défaut est false (ou minuscules).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+metadata:
+  ms.openlocfilehash: 1894a4f11b497b0f71859489023b1c3d69e3e0d6
+  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/25/2020
+  ms.locfileid: "49420677"
