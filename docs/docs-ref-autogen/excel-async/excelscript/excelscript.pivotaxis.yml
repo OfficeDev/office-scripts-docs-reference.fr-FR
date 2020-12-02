@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.PivotAxis.column:member
   package: excel!
   summary: L’axe des colonnes.
+  value: "\"Column\""
 - name: data
   uid: excel!Excel.PivotAxis.data:member
   package: excel!
   summary: Axe des données.
+  value: "\"Data\""
 - name: filter
   uid: excel!Excel.PivotAxis.filter:member
   package: excel!
   summary: Axe de filtre.
+  value: "\"Filter\""
 - name: row
   uid: excel!Excel.PivotAxis.row:member
   package: excel!
   summary: Axe de la ligne.
+  value: "\"Row\""
 - name: unknown
   uid: excel!Excel.PivotAxis.unknown:member
   package: excel!
   summary: L’axe ou la région est inconnu ou non pris en charge.
+  value: "\"Unknown\""
 metadata:
-  ms.openlocfilehash: 839736e21ec467c39a9c5c95cdd98072f8fe0576
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 535c92c12fd0bb9a01bab3ca9de09f47331400d9
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413432"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554460"

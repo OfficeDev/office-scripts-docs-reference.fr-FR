@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: Obtient un objet de colonne par nom ou par ID. Si la colonne n’existe pas, renvoie un objet null.
+  summary: Obtient un objet de colonne par son nom ou son ID. Si la colonne n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -614,9 +614,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: fcf4f090e5ad499d6a7500fa1e290efc08e7a5a2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: ecc5b6e0aacfab67e2748147c15fb32e2f7dbd59
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420320"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554742"

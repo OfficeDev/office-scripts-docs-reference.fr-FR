@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ChartAxisCategoryType.automatic:member
   package: excel!
   summary: Excel contrôle le type d'axe.
+  value: "\"Automatic\""
 - name: dateAxis
   uid: excel!Excel.ChartAxisCategoryType.dateAxis:member
   package: excel!
   summary: L'axe regroupe les données sur une échelle de temps.
+  value: "\"DateAxis\""
 - name: textAxis
   uid: excel!Excel.ChartAxisCategoryType.textAxis:member
   package: excel!
   summary: L'axe regroupe les données selon un ensemble arbitraire de catégories.
+  value: "\"TextAxis\""
 metadata:
-  ms.openlocfilehash: cfed6f00c724d8a9ee3d469bf2394e91d19ccd16
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eb212796ba24a540cf32c24bce1728e268c8d5a1
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49413733"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49553542"
