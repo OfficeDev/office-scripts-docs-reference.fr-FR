@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.Placement.absolute:member
   package: excel!
   summary: L’objet est flottante.
+  value: "\"Absolute\""
 - name: oneCell
   uid: excel!Excel.Placement.oneCell:member
   package: excel!
   summary: L’objet est déplacé et redimensionné avec les cellules.
+  value: "\"OneCell\""
 - name: twoCell
   uid: excel!Excel.Placement.twoCell:member
   package: excel!
   summary: L’objet est déplacé avec les cellules.
+  value: "\"TwoCell\""
 metadata:
-  ms.openlocfilehash: 7eb3e236a015e7b6daf96f755dbba063c7823bfc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 205bdf51fc3b8b32cc99f95b0fe0ea4af50f64e9
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418806"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554341"

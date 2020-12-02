@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Renvoie l’objet de plage qui est associé au nom. Renvoie un objet null si le type de l’élément nommé n’est pas une plage.
+  summary: Renvoie l’objet de plage qui est associé au nom. Si le type de l’élément nommé n’est pas une plage, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Renvoie la feuille de calcul dans laquelle est inclus l’élément nommé. Renvoie un objet null si l’élément est inclus dans le classeur à la place.
+  summary: Renvoie la feuille de calcul dans laquelle l’élément nommé est inclus dans l’étendue. Si l’élément est inclus dans l’étendue du classeur, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 00abdcecbb6352d4585620ff18b0df6b0e4b7d81
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 64b38b2371d79f40394f2bfb6db981b9f56f740b
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415357"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554756"

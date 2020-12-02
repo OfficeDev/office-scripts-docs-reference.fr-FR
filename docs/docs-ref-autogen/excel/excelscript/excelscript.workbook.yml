@@ -392,12 +392,12 @@ methods:
     content: 'getActiveCell(): Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
 - name: getActiveChart()
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: Obtient la feuille de calcul active du classeur. S’il n’y a aucun graphique actif, un objet null est renvoyé.
+  summary: Obtient la feuille de calcul active du classeur. S’il n’y a aucun graphique actif, cette fonction renverra un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: Obtient le segment actif actuel du classeur. S’il n’existe aucun segment actif, un objet null est renvoyé.
+  summary: Obtient le segment actif actuel du classeur. S’il n’y a aucun segment actif, cette fonction renverra un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -462,7 +462,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: Obtient un objet de liaison par ID. Si l’objet de liaison n’existe pas, renvoie un objet null.
+  summary: Obtient un objet de liaison par ID. Si l’objet Binding n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété a la valeur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -599,7 +599,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartByNamespace:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPartByNamespace(namespaceUri)
-  summary: Obtient une nouvelle collection limitée de parties XML personnalisées dont les espaces de noms correspondent à l’espace de noms donné.
+  summary: Obtient une nouvelle collection de parties XML personnalisées dont les espaces de noms correspondent à l’espace de noms donné.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -741,7 +741,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Obtient un objet NamedItem à l’aide de son nom. Si l’objet nameditem n’existe pas, renvoie un objet null.
+  summary: Obtient un `NamedItem` objet à l’aide de son nom. Si l’objet n’existe pas, cette fonction renvoie un objet dont la propriété est `isNullObject` définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -801,7 +801,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: Extrait un tableau croisé dynamique par nom. Si le tableau croisé dynamique n’existe pas, renvoie un objet null.
+  summary: Extrait un tableau croisé dynamique par nom. Si le PivotTableStyle n’existe pas, cette fonction renvoie un objet dont la propriété est `isNullObject` définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -939,7 +939,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, renvoie un objet null.
+  summary: Obtient un Slicer à l’aide de son nom ou de son ID. Si le Slicer n’existe pas, cette fonction renverra un objet dont la `isNullObject` propriété a la valeur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -969,7 +969,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: Obtient un SlicerStyle par nom. Si le SlicerStyle n’existe pas, il renvoie un objet null.
+  summary: Obtient un SlicerStyle par nom. Si le SlicerStyle n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -999,7 +999,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Obtient un tableau à l’aide de son nom ou de son ID. Si le tableau n’existe pas, renvoie un objet null.
+  summary: Obtient un tableau à l’aide de son nom ou de son ID. Si la table n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1029,7 +1029,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: Extrait un TableStyle par nom. Si le TableStyle n’existe pas, renvoie un objet null.
+  summary: Extrait un TableStyle par nom. Si l’objet TableStyle n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété a la valeur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1059,7 +1059,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: Obtient un TimelineStyle par nom. Si leTimelineStyle n’existe pas, renvoie un objet null.
+  summary: Obtient un TimelineStyle par nom. Si le TimelineStyle n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1102,7 +1102,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, renvoie un objet null.
+  summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1127,7 +1127,7 @@ methods:
     content: 'getWorksheets(): Worksheet[];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />[]
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
 - name: refreshAllDataConnections()
   uid: ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)
   package: ExcelScript!
@@ -1277,9 +1277,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 63c89957d0a69f7f4c53440e74567153a98cc4bb
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 23e4276bec55df7612e4bb11dfab3aec59ee5cfa
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419249"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554735"

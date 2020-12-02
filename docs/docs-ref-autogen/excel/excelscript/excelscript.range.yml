@@ -25,7 +25,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
 - name: autoFill(destinationRange, autoFillType)
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
@@ -79,7 +79,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
 - name: clearAllConditionalFormats()
   uid: ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)
   package: ExcelScript!
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage active est plus grande qu’une seule cellule, la recherche est limitée à cette plage, sinon la recherche porte sur la totalité de la feuille qui commence après cette cellule. S’il n’y a aucune correspondance, cette fonction renverra un objet null.
+  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage active est plus grande qu’une seule cellule, la recherche est limitée à cette plage, sinon la recherche porte sur la totalité de la feuille qui commence après cette cellule. S’il n’y a aucune correspondance, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -313,7 +313,7 @@ methods:
     content: 'getColumnCount(): number;'
     return:
       type: number
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
 - name: getColumnHidden()
   uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
   package: ExcelScript!
@@ -481,7 +481,7 @@ methods:
     content: 'getFormula(): string;'
     return:
       type: string
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
 - name: getFormulaLocal()
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
@@ -616,7 +616,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, renvoie un objet Null.
+  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -830,7 +830,7 @@ methods:
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
 - name: getPivotTables(fullyContained)
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
@@ -880,7 +880,7 @@ methods:
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n    );\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n    );\n}\n```"
 - name: getRow(row)
   uid: ExcelScript!ExcelScript.Range#getRow:member(1)
   package: ExcelScript!
@@ -910,7 +910,7 @@ methods:
     content: 'getRowCount(): number;'
     return:
       type: number
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
 - name: getRowHidden()
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
@@ -1001,7 +1001,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Obtient l’objet RangeAreas, comprenant une ou plusieurs plages qui représente les cellules qui correspondent au type et à la valeur spécifiés. Si aucune cellule spéciale n’est trouvée, un objet null est renvoyé.
+  summary: Obtient l’objet RangeAreas, comprenant une ou plusieurs plages qui représente les cellules qui correspondent au type et à la valeur spécifiés. Si aucune cellule spéciale n’est trouvée, cette fonction renverra un objet dont la `isNullObject` propriété a la valeur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1025,7 +1025,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n’est pas une cellule d’ancrage ou si la plage de renversement est introuvable, un objet null est renvoyé.
+  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n’est pas une cellule d’ancrage ou si la plage de renversement est introuvable, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1038,7 +1038,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtient l’objet de la plage contenant la cellule d’ancrage d’une cellule prise renversée dans. S’il ne s’agit pas d’une cellule de renversement ou si plusieurs cellules sont attribuées, un objet null est renvoyé.
+  summary: Obtient l’objet de plage contenant la cellule d’ancrage de la cellule en cours de déversion. S’il ne s’agit pas d’une cellule déduite ou si plusieurs cellules sont indiquées, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1120,7 +1120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Renvoie la plage utilisée d’un objet de plage donné. Si aucune cellule n’est utilisée dans la plage, cette fonction renvoie un objet null.
+  summary: Renvoie la plage utilisée d’un objet de plage donné. S’il n’y a pas de cellules utilisées dans la plage, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1142,10 +1142,10 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): any;'
+    content: 'getValue(): string | number | boolean;'
     return:
-      type: any
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
+      type: string | number | boolean
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
 - name: getValues()
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
@@ -1155,9 +1155,9 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValues(): any[][];'
+    content: 'getValues(): (string | number | boolean)[][];'
     return:
-      type: any[][]
+      type: (string | number | boolean)[][]
       description: ''
 - name: getValueType()
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
@@ -1420,7 +1420,7 @@ methods:
       type: string
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
 - name: setFormulaLocal(formulaLocal)
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
@@ -1522,7 +1522,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
 - name: setNumberFormat(numberFormat)
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
@@ -1651,14 +1651,14 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValues(values: any[][]): void;'
+    content: 'setValues(values: (string | number | boolean)[][]): void;'
     parameters:
     - id: values
       description: ''
-      type: any[][]
+      type: (string | number | boolean)[][]
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```javascript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
 - name: showCard()
   uid: ExcelScript!ExcelScript.Range#showCard:member(1)
   package: ExcelScript!
@@ -1720,9 +1720,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 652e22f246ce965e2c606f78abb8a457c478431d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2727f3b8ce8b578719e8f5496ee9c1a4cbe40a44
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412020"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554579"

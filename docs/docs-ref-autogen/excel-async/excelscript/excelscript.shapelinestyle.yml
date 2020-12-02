@@ -12,26 +12,31 @@ fields:
   uid: excel!Excel.ShapeLineStyle.single:member
   package: excel!
   summary: Ligne simple.
+  value: "\"Single\""
 - name: thickBetweenThin
   uid: excel!Excel.ShapeLineStyle.thickBetweenThin:member
   package: excel!
   summary: Trait épais avec un trait fin de chaque coté
+  value: "\"ThickBetweenThin\""
 - name: thickThin
   uid: excel!Excel.ShapeLineStyle.thickThin:member
   package: excel!
   summary: Trait épais jouxtant un trait fin. Pour les lignes horizontales, la ligne épaisse se trouve au-dessus de la ligne fine. Pour les lignes verticales, la ligne épaisse se trouve à gauche de la ligne fine.
+  value: "\"ThickThin\""
 - name: thinThick
   uid: excel!Excel.ShapeLineStyle.thinThick:member
   package: excel!
   summary: Trait épais jouxtant un trait fin. Pour les lignes horizontales, la ligne épaisse est en dessous de la ligne fine. Pour les lignes verticales, la ligne épaisse se trouve à droite de la ligne fine.
+  value: "\"ThinThick\""
 - name: thinThin
   uid: excel!Excel.ShapeLineStyle.thinThin:member
   package: excel!
   summary: Deux traits fins
+  value: "\"ThinThin\""
 metadata:
-  ms.openlocfilehash: 9fe097a67002a02d837927f22183c04d7831da90
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e8ac502f3e66886a82656f94a1919b78f4a935e8
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418526"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554222"

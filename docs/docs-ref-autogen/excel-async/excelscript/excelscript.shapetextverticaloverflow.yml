@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ShapeTextVerticalOverflow.clip:member
   package: excel!
   summary: Masquer le texte qui ne rentre pas verticalement dans le cadre de texte.
+  value: "\"Clip\""
 - name: ellipsis
   uid: excel!Excel.ShapeTextVerticalOverflow.ellipsis:member
   package: excel!
   summary: Masquer le texte qui ne rentre pas verticalement dans le cadre de texte, et ajouter des points de suspension (...) à la fin du texte visible.
+  value: "\"Ellipsis\""
 - name: overflow
   uid: excel!Excel.ShapeTextVerticalOverflow.overflow:member
   package: excel!
   summary: Autoriser le texte à déborder verticalement du cadre de texte (du haut, du bas ou des deux selon l’alignement du texte).
+  value: "\"Overflow\""
 metadata:
-  ms.openlocfilehash: cd7269a9e880c370cfa623e506147b2babd5cb29
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cab48af946183f16c1930a35f07fba102ceb4446
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418477"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554180"

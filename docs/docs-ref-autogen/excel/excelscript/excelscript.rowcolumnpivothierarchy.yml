@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RowColumnPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: Obtient un champ de tableau croisé dynamique par nom. Si le champ PivotField n’existe pas, un objet null est renvoyé.
+  summary: Obtient un champ de tableau croisé dynamique par nom. Si le champ PivotField n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -126,9 +126,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4dd28fa5d6bb8e5b6e2d834b1342a99db6aed1a4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5a134274f2e2e795189bda817df67130072ea113
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411893"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554530"

@@ -12,18 +12,21 @@ fields:
   uid: excel!Excel.ReadingOrder.context:member
   package: excel!
   summary: Le sens de la lecture est déterminé par la langue du premier caractère saisi. S'il s'agit du caractère d'une langue lue de droite à gauche, la lecture se fera de la droite vers la gauche. Inversement, si le premier caractère saisi appartient à une langue qui se lit de gauche à droite, la lecture se fera de la gauche vers la droite.
+  value: "\"Context\""
 - name: leftToRight
   uid: excel!Excel.ReadingOrder.leftToRight:member
   package: excel!
   summary: Sens de lecture de gauche à droite
+  value: "\"LeftToRight\""
 - name: rightToLeft
   uid: excel!Excel.ReadingOrder.rightToLeft:member
   package: excel!
   summary: Sens de lecture de droite à gauche
+  value: "\"RightToLeft\""
 metadata:
-  ms.openlocfilehash: 04b866773dea46f4ae6cc6c0accf8de351004716
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fd53fe7af6e6a01fa2192edc5252082824fd4e8e
+  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418666"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "49554376"
