@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
-  summary: Ajoute un nouveau format conditionnel à la collection à la première/priorité supérieure.
+  summary: Ajoute un nouveau format conditionnel à la collection à la priorité première/supérieure.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -42,7 +42,7 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: Plage de destination à remplir automatiquement. Si la plage de destination est null, les données sont remplies en fonction des cellules qui l’entourent (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de plage de l’interface utilisateur).
+      description: Plage de destination à remplir automatiquement. Si la plage de destination est null, les données sont remplies en fonction des cellules qui l’entourent (comportement du double-clic sur la poignée de remplissage de plage de l’interface utilisateur).
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
       description: Type de remplissage automatique. Spécifie la façon dont la plage de destination doit être remplie, en fonction du contenu de la plage actuelle. La valeur par défaut est « FillDefault ».
@@ -750,7 +750,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Représente le code de format numérique excel de cellule pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente le code de format numérique de cellule Excel pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,6 +771,19 @@ methods:
     content: 'getNumberFormatCategories(): NumberFormatCategory[][];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />[][]
+      description: ''
+- name: getNumberFormatCategory()
+  uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
+  package: ExcelScript!
+  fullName: getNumberFormatCategory()
+  summary: Spécifie la catégorie de format de nombre de la première cellule de la plage (représentée par l’index de ligne 0 et l’index de colonne de 0).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
       description: ''
 - name: getNumberFormatLocal()
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
@@ -975,7 +988,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: Représente si TOUTES les cellules doivent être enregistrées sous la formule ma matrice. Renvoie true si TOUTES les cellules sont enregistrées en tant que formule ma matrice, ou false si TOUTES les cellules ne sont PAS enregistrées en tant que formule ma matrice. Renvoie la valeur null si certaines cellules sont enregistrées en tant que formule ma matrice et d’autres non.
+  summary: Représente si TOUTES les cellules doivent être enregistrées sous la la mesure d’une formule ma matrice. Renvoie true si TOUTES les cellules sont enregistrées en tant que formule ma matrice, ou false si TOUTES les cellules ne sont PAS enregistrées en tant que formule ma matrice. Renvoie la valeur null si certaines cellules sont enregistrées en tant que formule ma matrice et d’autres non.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1720,9 +1733,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8f16fa6c9b84bdd42fd68e8d9be7402164c40531
-  ms.sourcegitcommit: 2166f15e1168b1b453872c5840431e960dc909df
+  ms.openlocfilehash: 0f16a00124cd360f9a0ac72ab7a7bcf96af7930a
+  ms.sourcegitcommit: 2224b5a1c9da58cc58b310ccbdc0b58c63ab501b
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "49784456"
+  ms.lasthandoff: 02/03/2021
+  ms.locfileid: "50091814"
