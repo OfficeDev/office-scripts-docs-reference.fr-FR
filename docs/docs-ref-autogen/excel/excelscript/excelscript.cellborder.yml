@@ -3,7 +3,7 @@ name: ExcelScript.CellBorder
 uid: ExcelScript!ExcelScript.CellBorder:interface
 package: ExcelScript!
 fullName: ExcelScript.CellBorder
-summary: Représente les propriétés d’une bordure unique renvoyée par `getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties` ou le paramètre d’entrée de la propriété border de `setCellProperties`<!-- -->, `setRowProperties`<!-- -->, et `setColumnProperties`<!-- -->.
+summary: Représente les propriétés d’une bordure unique renvoyée par `getCellProperties`<!-- -->, `getRowProperties`<!-- -->et `getColumnProperties`<!-- -->ou le paramètre d’entrée de propriété de bordure de `setCellProperties`<!-- -->, `setRowProperties`<!-- -->et `setColumnProperties`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.BorderWeight:enum" />
 metadata:
-  ms.openlocfilehash: 5892c241cee81f97e1b52001d2d8cbb02d03f295
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a945edbecc207d55be2843978bd0084f60441b23
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417183"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607003"

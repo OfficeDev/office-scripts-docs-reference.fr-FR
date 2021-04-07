@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getAlignment:member(1)
   package: ExcelScript!
   fullName: getAlignment()
-  summary: Spécifie l’alignement de l’étiquette de graduation de l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartTextHorizontalAlignment.
+  summary: Spécifie l’alignement de l’étiquette de la coche de l’axe spécifiée. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getAxisGroup:member(1)
   package: ExcelScript!
   fullName: getAxisGroup()
-  summary: Cette énumération spécifie le groupe pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisGroup.
+  summary: Spécifie le groupe de l’axe spécifié. Pour `ExcelScript.ChartAxisGroup` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getBaseTimeUnit:member(1)
   package: ExcelScript!
   fullName: getBaseTimeUnit()
-  summary: Spécifie l’unité de base pour l’axe des abscisses spécifié.
+  summary: Spécifie l’unité de base de l’axe des catégories spécifié.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getCategoryType:member(1)
   package: ExcelScript!
   fullName: getCategoryType()
-  summary: Spécifie le type d’axe de catégorie.
+  summary: Spécifie le type d’axe des catégories.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getCustomDisplayUnit:member(1)
   package: ExcelScript!
   fullName: getCustomDisplayUnit()
-  summary: Spécifie la valeur de l’unité d’affichage de l’axe personnalisé. Pour définir cette propriété, utilisez la méthode SetCustomDisplayUnit(double).
+  summary: Spécifie la valeur d’unité d’affichage de l’axe personnalisé. Pour définir cette propriété, utilisez la `SetCustomDisplayUnit(double)` méthode.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getDisplayUnit:member(1)
   package: ExcelScript!
   fullName: getDisplayUnit()
-  summary: Représente l’unité d’affichage de l’axe. Pour plus d’informations, voir ExcelScript. ChartAxisDisplayUnit.
+  summary: Représente l’unité d’affichage de l’axe. Pour `ExcelScript.ChartAxisDisplayUnit` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Indique la hauteur, exprimée en points, de l’axe du graphique. NULL si l’axe n’est pas visible.
+  summary: Spécifie la hauteur, en points, de l’axe du graphique. Renvoie `null` si l’axe n’est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getIsBetweenCategories:member(1)
   package: ExcelScript!
   fullName: getIsBetweenCategories()
-  summary: Indique si l’axe des ordonnées coupe l’axe des abscisses entre les catégories.
+  summary: Spécifie si l’axe des valeurs croise l’axe des catégories entre les catégories.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Indique la distance, en points, entre le bord gauche de l’axe et la partie gauche de la zone de graphique. NULL si l’axe n’est pas visible.
+  summary: Spécifie la distance, en points, entre le bord gauche de l’axe et la gauche de la zone de graphique. Renvoie `null` si l’axe n’est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Indique si le format de nombre est lié aux cellules. Si true, le format de numérotation est affiché dans les étiquettes lorsqu’il se transforme dans les cellules.
+  summary: Spécifie si le format numérique est lié aux cellules. If `true`<!-- -->, le format numérique change dans les étiquettes lorsqu’il change dans les cellules.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getLogBase:member(1)
   package: ExcelScript!
   fullName: getLogBase()
-  summary: Indique la base du logarithme lors de l’utilisation d’échelles logarithmiques.
+  summary: Spécifie la base du logarithme lors de l’utilisation des échelles logarithmiques.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorGridlines:member(1)
   package: ExcelScript!
   fullName: getMajorGridlines()
-  summary: Renvoie un objet de quadrillage qui représente les lignes de quadrillage principal de l’axe spécifié.
+  summary: Renvoie un objet qui représente le quadrillage principal de l’axe spécifié.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorTickMark:member(1)
   package: ExcelScript!
   fullName: getMajorTickMark()
-  summary: Cette énumération spécifie le type de graduation principale pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  summary: Spécifie le type de la coche principale de l’axe spécifié. Pour `ExcelScript.ChartAxisTickMark` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: getMajorTimeUnitScale()
-  summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des catégories lorsque la propriété `categoryType` est définie sur `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMajorUnit:member(1)
   package: ExcelScript!
   fullName: getMajorUnit()
-  summary: Spécifie l’intervalle entre deux graduations principales.
+  summary: Spécifie l’intervalle entre deux marques de cocher principales.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -221,7 +221,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMaximum:member(1)
   package: ExcelScript!
   fullName: getMaximum()
-  summary: Indique la valeur maximale de l’axe des ordonnées.
+  summary: Spécifie la valeur maximale sur l’axe des valeurs.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinimum:member(1)
   package: ExcelScript!
   fullName: getMinimum()
-  summary: Indique la valeur minimale de l’axe des ordonnées.
+  summary: Spécifie la valeur minimale sur l’axe des valeurs.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorGridlines:member(1)
   package: ExcelScript!
   fullName: getMinorGridlines()
-  summary: Renvoie un objet de quadrillage qui représente les lignes de quadrillage secondaire de l’axe spécifié.
+  summary: Renvoie un objet qui représente le quadrillage mineur de l’axe spécifié.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorTickMark:member(1)
   package: ExcelScript!
   fullName: getMinorTickMark()
-  summary: Cette énumération spécifie le type de graduation secondaire pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  summary: Spécifie le type de marque de cocher mineure pour l’axe spécifié. Pour `ExcelScript.ChartAxisTickMark` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: getMinorTimeUnitScale()
-  summary: Indique la valeur d’échelle d’unité secondaire pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  summary: Spécifie la valeur d’échelle d’unité mineure pour l’axe des catégories lorsque la `categoryType` propriété est définie sur `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMinorUnit:member(1)
   package: ExcelScript!
   fullName: getMinorUnit()
-  summary: Spécifie l’intervalle entre deux graduations secondaires.
+  summary: Spécifie l’intervalle entre deux marques de cocher mineures.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getMultiLevel:member(1)
   package: ExcelScript!
   fullName: getMultiLevel()
-  summary: Indique si un axe est à plusieurs niveaux.
+  summary: Spécifie si un axe est à plusieurs niveaux.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Spécifie le code du format de l’étiquette de graduation de l’axe.
+  summary: Spécifie le code de format de l’étiquette de la coche de l’axe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -325,7 +325,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getOffset:member(1)
   package: ExcelScript!
   fullName: getOffset()
-  summary: Indique la distance entre les niveaux des étiquettes et la distance entre le premier niveau et la ligne de l’axe. La valeur doit être un entier compris entre 0 et 1000.
+  summary: Spécifie la distance entre les niveaux d’étiquettes et la distance entre le premier niveau et la ligne d’axe. La valeur doit être un entier compris entre 0 et 1000.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Spécifie la position de l’axe spécifié où l’autre axe croise. Pour plus d’informations, voir ExcelScript. ChartAxisPosition.
+  summary: Spécifie la position de l’axe spécifié à l’endroit où l’autre axe croise. Pour `ExcelScript.ChartAxisPosition` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -351,7 +351,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getPositionAt:member(1)
   package: ExcelScript!
   fullName: getPositionAt()
-  summary: Spécifie la position de l’axe spécifié où l’autre axe se coupe. Vous devez utiliser la méthode SetPositionAt(double) pour définir cette propriété.
+  summary: Spécifie la position de l’axe où l’autre axe croise. Vous devez utiliser la `SetPositionAt(double)` méthode pour définir cette propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -364,7 +364,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getReversePlotOrder:member(1)
   package: ExcelScript!
   fullName: getReversePlotOrder()
-  summary: Indique si Excel trace les points de données du dernier au premier.
+  summary: Spécifie si Excel trace les points de données du dernier au premier.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -377,7 +377,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getScaleType:member(1)
   package: ExcelScript!
   fullName: getScaleType()
-  summary: Indique le type d’étendue de l’axe des ordonnées. Pour plus d’informations, voir ExcelScript. ChartAxisScaleType.
+  summary: Spécifie le type d’échelle de l’axe des valeurs. Pour `ExcelScript.ChartAxisScaleType` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,7 +390,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getShowDisplayUnitLabel:member(1)
   package: ExcelScript!
   fullName: getShowDisplayUnitLabel()
-  summary: Indique si l’étiquette de l’unité d’affichage de l’axe est visible.
+  summary: Spécifie si l’étiquette d’unité d’affichage de l’axe est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -403,7 +403,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Cette énumération spécifie l’angle auquel le texte est orienté pour l’étiquette de graduation de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+  summary: Spécifie l’angle vers lequel le texte est orienté pour l’étiquette de la tick de l’axe du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,7 +416,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelPosition:member(1)
   package: ExcelScript!
   fullName: getTickLabelPosition()
-  summary: Spécifie la position des étiquettes de graduation sur l'axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickLabelPosition.
+  summary: Spécifie la position des étiquettes de graduation sur l'axe spécifié. Pour `ExcelScript.ChartAxisTickLabelPosition` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -429,7 +429,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickLabelSpacing:member(1)
   package: ExcelScript!
   fullName: getTickLabelSpacing()
-  summary: Indique le nombre d’abscisses ou de séries entre les étiquettes de graduation. Il peut s’agir d’une valeur comprise entre 1 et 31999.
+  summary: Spécifie le nombre d’catégories ou de séries entre les étiquettes de coche. Il peut s’agir d’une valeur comprise entre 1 et 31999.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -442,7 +442,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTickMarkSpacing:member(1)
   package: ExcelScript!
   fullName: getTickMarkSpacing()
-  summary: Indique le nombre d’abscisses ou de séries entre les marques de graduation.
+  summary: Spécifie le nombre de catégories ou de séries entre les marques de cocher.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -468,7 +468,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Indique la distance, en points, entre le bord supérieur de l’axe et le haut de la zone de graphique. NULL si l’axe n’est pas visible.
+  summary: Spécifie la distance, en points, entre le bord supérieur de l’axe et le haut de la zone de graphique. Renvoie `null` si l’axe n’est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -481,7 +481,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Spécifie le type d’axe. Pour plus d’informations, voir ExcelScript. ChartAxisType.
+  summary: Spécifie le type d’axe. Pour `ExcelScript.ChartAxisType` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -494,7 +494,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Indique si l’axe est visible.
+  summary: Spécifie si l’axe est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -507,7 +507,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Indique la largeur, exprimée en points, de l’axe du graphique. NULL si l’axe n’est pas visible.
+  summary: Spécifie la largeur, en points, de l’axe du graphique. Renvoie `null` si l’axe n’est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -520,7 +520,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setAlignment:member(1)
   package: ExcelScript!
   fullName: setAlignment(alignment)
-  summary: Spécifie l’alignement de l’étiquette de graduation de l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartTextHorizontalAlignment.
+  summary: Spécifie l’alignement de l’étiquette de la coche de l’axe spécifiée. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -537,7 +537,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setBaseTimeUnit:member(1)
   package: ExcelScript!
   fullName: setBaseTimeUnit(baseTimeUnit)
-  summary: Spécifie l’unité de base pour l’axe des abscisses spécifié.
+  summary: Spécifie l’unité de base de l’axe des catégories spécifié.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -562,7 +562,7 @@ methods:
     content: 'setCategoryNames(sourceData: Range): void;'
     parameters:
     - id: sourceData
-      description: Objet Range correspondant aux données source.
+      description: Objet `Range` correspondant aux données sources.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     return:
       type: void
@@ -571,7 +571,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setCategoryType:member(1)
   package: ExcelScript!
   fullName: setCategoryType(categoryType)
-  summary: Spécifie le type d’axe de catégorie.
+  summary: Spécifie le type d’axe des catégories.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -605,7 +605,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setDisplayUnit:member(1)
   package: ExcelScript!
   fullName: setDisplayUnit(displayUnit)
-  summary: Représente l’unité d’affichage de l’axe. Pour plus d’informations, voir ExcelScript. ChartAxisDisplayUnit.
+  summary: Représente l’unité d’affichage de l’axe. Pour `ExcelScript.ChartAxisDisplayUnit` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -622,7 +622,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setIsBetweenCategories:member(1)
   package: ExcelScript!
   fullName: setIsBetweenCategories(isBetweenCategories)
-  summary: Indique si l’axe des ordonnées coupe l’axe des abscisses entre les catégories.
+  summary: Spécifie si l’axe des valeurs croise l’axe des catégories entre les catégories.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -639,7 +639,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Indique si le format de nombre est lié aux cellules. Si true, le format de numérotation est affiché dans les étiquettes lorsqu’il se transforme dans les cellules.
+  summary: Spécifie si le format numérique est lié aux cellules. If `true`<!-- -->, le format numérique change dans les étiquettes lorsqu’il change dans les cellules.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -656,7 +656,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setLogBase:member(1)
   package: ExcelScript!
   fullName: setLogBase(logBase)
-  summary: Indique la base du logarithme lors de l’utilisation d’échelles logarithmiques.
+  summary: Spécifie la base du logarithme lors de l’utilisation des échelles logarithmiques.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -673,7 +673,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorTickMark:member(1)
   package: ExcelScript!
   fullName: setMajorTickMark(majorTickMark)
-  summary: Cette énumération spécifie le type de graduation principale pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  summary: Spécifie le type de la coche principale de l’axe spécifié. Pour `ExcelScript.ChartAxisTickMark` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -690,7 +690,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: setMajorTimeUnitScale(majorTimeUnitScale)
-  summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  summary: Spécifie la valeur d’échelle d’unité principale pour l’axe des catégories lorsque la propriété `categoryType` est définie sur `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,7 +707,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMajorUnit:member(1)
   package: ExcelScript!
   fullName: setMajorUnit(majorUnit)
-  summary: Spécifie l’intervalle entre deux graduations principales.
+  summary: Spécifie l’intervalle entre deux marques de cocher principales.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -724,7 +724,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMaximum:member(1)
   package: ExcelScript!
   fullName: setMaximum(maximum)
-  summary: Indique la valeur maximale de l’axe des ordonnées.
+  summary: Spécifie la valeur maximale sur l’axe des valeurs.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -741,7 +741,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinimum:member(1)
   package: ExcelScript!
   fullName: setMinimum(minimum)
-  summary: Indique la valeur minimale de l’axe des ordonnées.
+  summary: Spécifie la valeur minimale sur l’axe des valeurs.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -758,7 +758,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorTickMark:member(1)
   package: ExcelScript!
   fullName: setMinorTickMark(minorTickMark)
-  summary: Cette énumération spécifie le type de graduation secondaire pour l’axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickMark.
+  summary: Spécifie le type de marque de cocher mineure pour l’axe spécifié. Pour `ExcelScript.ChartAxisTickMark` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -775,7 +775,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorTimeUnitScale:member(1)
   package: ExcelScript!
   fullName: setMinorTimeUnitScale(minorTimeUnitScale)
-  summary: Indique la valeur d’échelle d’unité secondaire pour l’axe des abscisses lorsque la propriété CategoryType est définie sur échelle de temps.
+  summary: Spécifie la valeur d’échelle d’unité mineure pour l’axe des catégories lorsque la `categoryType` propriété est définie sur `dateAxis`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -792,7 +792,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMinorUnit:member(1)
   package: ExcelScript!
   fullName: setMinorUnit(minorUnit)
-  summary: Spécifie l’intervalle entre deux graduations secondaires.
+  summary: Spécifie l’intervalle entre deux marques de cocher mineures.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -809,7 +809,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setMultiLevel:member(1)
   package: ExcelScript!
   fullName: setMultiLevel(multiLevel)
-  summary: Indique si un axe est à plusieurs niveaux.
+  summary: Spécifie si un axe est à plusieurs niveaux.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -826,7 +826,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Spécifie le code du format de l’étiquette de graduation de l’axe.
+  summary: Spécifie le code de format de l’étiquette de la coche de l’axe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -843,7 +843,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setOffset:member(1)
   package: ExcelScript!
   fullName: setOffset(offset)
-  summary: Indique la distance entre les niveaux des étiquettes et la distance entre le premier niveau et la ligne de l’axe. La valeur doit être un entier compris entre 0 et 1000.
+  summary: Spécifie la distance entre les niveaux d’étiquettes et la distance entre le premier niveau et la ligne d’axe. La valeur doit être un entier compris entre 0 et 1000.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -860,7 +860,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Spécifie la position de l’axe spécifié où l’autre axe croise. Pour plus d’informations, voir ExcelScript. ChartAxisPosition.
+  summary: Spécifie la position de l’axe spécifié à l’endroit où l’autre axe croise. Pour `ExcelScript.ChartAxisPosition` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -877,7 +877,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setPositionAt:member(1)
   package: ExcelScript!
   fullName: setPositionAt(value)
-  summary: Définit la position de l’axe spécifié où l’autre axe se coupe.
+  summary: Définit la position de l’axe spécifié à l’endroit où l’autre axe le croise.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -885,7 +885,7 @@ methods:
     content: 'setPositionAt(value: number): void;'
     parameters:
     - id: value
-      description: Valeur personnalisée des croisements à
+      description: Valeur personnalisée du point d’traversée.
       type: number
     return:
       type: void
@@ -894,7 +894,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setReversePlotOrder:member(1)
   package: ExcelScript!
   fullName: setReversePlotOrder(reversePlotOrder)
-  summary: Indique si Excel trace les points de données du dernier au premier.
+  summary: Spécifie si Excel trace les points de données du dernier au premier.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -911,7 +911,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setScaleType:member(1)
   package: ExcelScript!
   fullName: setScaleType(scaleType)
-  summary: Indique le type d’étendue de l’axe des ordonnées. Pour plus d’informations, voir ExcelScript. ChartAxisScaleType.
+  summary: Spécifie le type d’échelle de l’axe des valeurs. Pour `ExcelScript.ChartAxisScaleType` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -928,7 +928,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setShowDisplayUnitLabel:member(1)
   package: ExcelScript!
   fullName: setShowDisplayUnitLabel(showDisplayUnitLabel)
-  summary: Indique si l’étiquette de l’unité d’affichage de l’axe est visible.
+  summary: Spécifie si l’étiquette d’unité d’affichage de l’axe est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -945,7 +945,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Cette énumération spécifie l’angle auquel le texte est orienté pour l’étiquette de graduation de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+  summary: Spécifie l’angle vers lequel le texte est orienté pour l’étiquette de la tick de l’axe du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -962,7 +962,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelPosition:member(1)
   package: ExcelScript!
   fullName: setTickLabelPosition(tickLabelPosition)
-  summary: Spécifie la position des étiquettes de graduation sur l'axe spécifié. Pour plus d’informations, voir ExcelScript. ChartAxisTickLabelPosition.
+  summary: Spécifie la position des étiquettes de graduation sur l'axe spécifié. Pour `ExcelScript.ChartAxisTickLabelPosition` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -982,7 +982,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickLabelSpacing:member(1)
   package: ExcelScript!
   fullName: setTickLabelSpacing(tickLabelSpacing)
-  summary: Indique le nombre d’abscisses ou de séries entre les étiquettes de graduation. Il peut s’agir d’une valeur comprise entre 1 et 31999.
+  summary: Spécifie le nombre d’catégories ou de séries entre les étiquettes de coche. Il peut s’agir d’une valeur comprise entre 1 et 31999.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -999,7 +999,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setTickMarkSpacing:member(1)
   package: ExcelScript!
   fullName: setTickMarkSpacing(tickMarkSpacing)
-  summary: Indique le nombre d’abscisses ou de séries entre les marques de graduation.
+  summary: Spécifie le nombre de catégories ou de séries entre les marques de cocher.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1016,7 +1016,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxis#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Indique si l’axe est visible.
+  summary: Spécifie si l’axe est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1030,9 +1030,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a8c050c98e73332c5362ffa16f3b35306b331810
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 758f8cb951ab73f11cc4c5aa49a03ffb1a7dd2eb
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417099"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606940"

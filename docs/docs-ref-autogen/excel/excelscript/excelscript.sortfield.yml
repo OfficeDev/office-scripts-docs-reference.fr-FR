@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#ascending:member
   package: ExcelScript!
   fullName: ascending
-  summary: Indique si le tri est réalisé de manière ascendante.
+  summary: Spécifie si le tri est effectué de manière ascendante.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#color:member
   package: ExcelScript!
   fullName: color
-  summary: Indique la couleur cible de la condition si le tri est appliqué à la police ou à la couleur de la cellule.
+  summary: Spécifie la couleur qui est la cible de la condition si le tri est sur la couleur de police ou de cellule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#icon:member
   package: ExcelScript!
   fullName: icon
-  summary: Spécifie l’icône qui est la cible de la condition si le tri est appliqué à l’icône de la cellule.
+  summary: Spécifie l’icône qui est la cible de la condition, si le tri se trouve sur l’icône de la cellule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#key:member
   package: ExcelScript!
   fullName: key
-  summary: Spécifie la colonne (ou ligne, en fonction de l’orientation du tri) sur laquelle se trouve la condition. Représentée sous forme d’un décalage par rapport à la première colonne (ou ligne).
+  summary: Spécifie la colonne (ou la ligne, en fonction de l’orientation du tri) sur qui se trouve la condition. Représentée sous forme d’un décalage par rapport à la première colonne (ou ligne).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.SortField#subField:member
   package: ExcelScript!
   fullName: subField
-  summary: Spécifie le sous-champ qui est le nom de la propriété cible d’une valeur enrichie à trier.
+  summary: Spécifie le sous-champ qui est le nom de propriété cible d’une valeur enrichie à trier.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -94,9 +94,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: ebc6a6627cee8a97f7f156534f43fb99f731efa4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e357fd813e45dcb01b36c18a57e930c7b07708da
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420383"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605996"

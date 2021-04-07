@@ -3,7 +3,7 @@ name: ExcelScript.IterativeCalculation
 uid: ExcelScript!ExcelScript.IterativeCalculation:interface
 package: ExcelScript!
 fullName: ExcelScript.IterativeCalculation
-summary: Représente les paramètres de calcul itératif.
+summary: Représente les paramètres de calcul itératifs.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)
   package: ExcelScript!
   fullName: getMaxChange()
-  summary: Spécifie l’écart maximal entre chaque itération au fur et à mesure que Excel résout les références circulaires.
+  summary: Spécifie la quantité maximale de modification entre chaque itération à mesure qu’Excel résout des références circulaires.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)
   package: ExcelScript!
   fullName: setMaxChange(maxChange)
-  summary: Spécifie l’écart maximal entre chaque itération au fur et à mesure que Excel résout les références circulaires.
+  summary: Spécifie la quantité maximale de modification entre chaque itération à mesure qu’Excel résout des références circulaires.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,9 +100,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7fcf571a42bdb830bb9372a15896f1e862f0ccb3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 7cb09be3de82cb1333c3afdcb640c8a19e2b89dd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412292"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606440"

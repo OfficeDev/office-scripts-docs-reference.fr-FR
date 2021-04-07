@@ -3,7 +3,7 @@ name: ExcelScript.ChartPointFormat
 uid: ExcelScript!ExcelScript.ChartPointFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartPointFormat
-summary: Représente l’objet de formatage des points du graphique.
+summary: Représente l’objet de mise en forme pour les points de graphique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPointFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Représente le format de bordure d’un point de données de graphique, qui inclut les informations de couleur, de style et de poids.
+  summary: Représente le format de bordure d’un point de données de graphique, qui inclut des informations sur la couleur, le style et l’poids.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPointFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Représente le format de remplissage d’un graphique, qui inclut des informations de mise en forme de l’arrière-plan.
+  summary: Représente le format de remplissage d’un graphique, qui inclut des informations de mise en forme d’arrière-plan.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: d4731ddaac158b83d1aabe172d19f47b0153a81b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c90275f66858b0afa2251140d08c527c6a55474a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416088"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606856"

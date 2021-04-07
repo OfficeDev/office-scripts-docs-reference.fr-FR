@@ -3,7 +3,7 @@ name: ExcelScript.ChartFont
 uid: ExcelScript!ExcelScript.ChartFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartFont
-summary: Cet objet représente les attributs de police (nom de police, taille de police, couleur, etc.) d’un objet de graphique.
+summary: Cet objet représente les attributs de police (tels que le nom de police, la taille de police et la couleur) d’un objet graphique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Représentation de code de couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Nom de la police (par exemple, « Calibri »)
+  summary: Nom de la police (par exemple, « Calibri »)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Type de soulignement appliqué à la police. Pour plus d’informations, voir ExcelScript. ChartUnderlineStyle.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ChartUnderlineStyle` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Représentation de code de couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Nom de la police (par exemple, « Calibri »)
+  summary: Nom de la police (par exemple, « Calibri »)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Type de soulignement appliqué à la police. Pour plus d’informations, voir ExcelScript. ChartUnderlineStyle.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ChartUnderlineStyle` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: ef4d91ec8835380a3af1b0de7def9ab52d8dda8c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 58486871c20f86feee8008975bd8790f284b09d0
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419935"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606898"

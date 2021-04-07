@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Cette énumération spécifie le format de bordure, qui inclut couleur, LineStyle et Weight.
+  summary: Spécifie le format de bordure, qui inclut la couleur, le style de trait et l’pondération.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Cette énumération spécifie le format de remplissage de l’étiquette de courbe de tendance du graphique actif.
+  summary: Spécifie le format de remplissage de l’étiquette de tendances du graphique actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabelFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Spécifie les attributs de police (nom de police, taille de police, couleur, etc.) pour une étiquette de courbe de tendance de graphique.
+  summary: Spécifie les attributs de police (tels que le nom de la police, la taille et la couleur) d’une étiquette de tendances de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 0830f7c4527fd1b5b50b2ed8b04de4f42d839c38
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: bd5eb3a45779061c21b69399056af9b1ce764cdd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419501"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606793"

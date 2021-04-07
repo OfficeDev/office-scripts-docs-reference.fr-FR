@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Indique si la police est en gras.
+  summary: Spécifie si la police est en gras.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Représentation de code de couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Indique si la police est en italique.
+  summary: Spécifie si la police est en italique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Spécifie l’État barré de la police.
+  summary: Spécifie l’état de la police de type strikethrough.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Type de soulignement appliqué à la police. Pour plus d’informations, voir ExcelScript. ConditionalRangeFontUnderlineStyle.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ConditionalRangeFontUnderlineStyle` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Indique si la police est en gras.
+  summary: Spécifie si la police est en gras.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Représentation de code de couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Indique si la police est en italique.
+  summary: Spécifie si la police est en italique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Spécifie l’État barré de la police.
+  summary: Spécifie l’état de la police de type strikethrough.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Type de soulignement appliqué à la police. Pour plus d’informations, voir ExcelScript. ConditionalRangeFontUnderlineStyle.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ConditionalRangeFontUnderlineStyle` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4b59e433ac3535d4aa352158485d17289731760a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0baa0c9251cd94135e208c7592d45e78dace77ca
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419368"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606709"

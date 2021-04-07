@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFormat
 uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
-summary: Objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés de la plage de mises en forme conditionnelles.
+summary: Objet de format encapsulant la police, le remplissage, les bordures et d’autres propriétés de la plage de formats conditionnels.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
   package: ExcelScript!
   fullName: getBorders()
-  summary: Collection d’objets Border qui s’appliquent à la plage de mise en forme conditionnelle globale.
+  summary: Collection d’objets de bordure qui s’appliquent à la plage de mise en forme conditionnelle globale.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ methods:
               ): ConditionalRangeBorder;
     parameters:
     - id: index
-      description: Valeur d’indice de l’objet de bordure à récupérer. Pour plus d’informations, voir ExcelScript. ConditionalRangeBorderIndex.
+      description: Valeur d’indice de l’objet de bordure à récupérer. Pour `ExcelScript.ConditionalRangeBorderIndex` plus d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Renvoie l’objet Fill défini sur la plage de mise en forme conditionnelle globale.
+  summary: Renvoie l’objet de remplissage défini sur la plage de mise en forme conditionnelle globale.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Renvoie l’objet font défini sur la plage de mise en forme conditionnelle globale.
+  summary: Renvoie l’objet de police défini sur la plage de mise en forme conditionnelle globale.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Représente le code de format de nombre d’Excel pour la plage donnée. Effacé si null est passé dans.
+  summary: Représente le code de format numérique d’Excel pour la plage donnée. Effacé si `null` transmis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -137,7 +137,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Représente le code de format de nombre d’Excel pour la plage donnée. Effacé si null est passé dans.
+  summary: Représente le code de format numérique d’Excel pour la plage donnée. Effacé si `null` transmis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,9 +151,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: be58369049f9a2cb9cd0fe4054310f143edad700
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e63b2c2a317b000595bc16de7e43ca89a08fa57a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419375"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606702"

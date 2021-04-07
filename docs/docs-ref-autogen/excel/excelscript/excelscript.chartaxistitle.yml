@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Cette énumération spécifie la mise en forme du titre de l’axe du graphique.
+  summary: Spécifie la mise en forme du titre de l’axe du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Indique le titre de l’axe.
+  summary: Spécifie le titre de l’axe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Cette énumération spécifie l’angle auquel le texte est orienté pour le titre de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+  summary: Spécifie l’angle vers lequel le texte est orienté pour le titre de l’axe du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Indique si le titre de l’axe est visibile.
+  summary: Spécifie si le titre de l’axe est visibile.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ methods:
     content: 'setFormula(formula: string): void;'
     parameters:
     - id: formula
-      description: chaîne qui présente la formule à définir
+      description: Chaîne qui représente la formule à définir.
       type: string
     return:
       type: void
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setText:member(1)
   package: ExcelScript!
   fullName: setText(text)
-  summary: Indique le titre de l’axe.
+  summary: Spécifie le titre de l’axe.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Cette énumération spécifie l’angle auquel le texte est orienté pour le titre de l’axe du graphique. La valeur doit être un entier compris entre-90 et 90 ou l’entier 180 pour le texte orienté verticalement.
+  summary: Spécifie l’angle vers lequel le texte est orienté pour le titre de l’axe du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitle#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Indique si le titre de l’axe est visibile.
+  summary: Spécifie si le titre de l’axe est visibile.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cc90d8c96c4846a97eb80b1c44317def1d5a9e51
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3ac4a54e34535c1f4198a7ea2f714ef83f0e45b1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417008"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606933"

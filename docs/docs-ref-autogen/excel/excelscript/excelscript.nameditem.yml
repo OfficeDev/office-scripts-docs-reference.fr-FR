@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: Représente un nom défini pour une plage de cellules ou une valeur. Les noms peuvent être des objets nommés primitifs (comme indiqué dans le type ci-dessous), un objet Range ou une référence à une plage. Cet objet peut être utilisé pour obtenir l’objet de plage associé à des noms.
+summary: Représente un nom défini pour une plage de cellules ou une valeur. Les noms peuvent être des objets nommés primitifs (comme dans le type ci-dessous), un objet de plage ou une référence à une plage. Cet objet peut être utilisé pour obtenir l’objet de plage associé à des noms.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Formule de l’élément nommé. La formule commence toujours par un signe '='.
+  summary: Formule de l’élément nommé. Les formules commencent toujours par un signe égal (« = »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Renvoie l’objet de plage qui est associé au nom. Si le type de l’élément nommé n’est pas une plage, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Renvoie l’objet de plage qui est associé au nom. Si le type de l’élément nommé n’est pas une plage, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 'Indique si le nom est inclus dans le classeur ou dans une feuille de calcul spécifique. Les valeurs possibles sont les suivantes : Worksheet, Workbook.'
+  summary: 'Spécifie si le nom est d’étendue au workbook ou à une feuille de calcul spécifique. Les valeurs possibles sont : Worksheet, Workbook.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Cette énumération spécifie le type de la valeur renvoyée par la formule du nom. Pour plus d’informations, voir ExcelScript. NamedItemType.
+  summary: Spécifie le type de la valeur renvoyée par la formule du nom. Pour `ExcelScript.NamedItemType` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Indique si l’objet est visible.
+  summary: Spécifie si l’objet est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Renvoie la feuille de calcul dans laquelle l’élément nommé est inclus dans l’étendue. Si l’élément est inclus dans l’étendue du classeur, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Renvoie la feuille de calcul dans laquelle l’élément nommé est d’étendue. Si l’élément est plutôt limitée au workbook, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Formule de l’élément nommé. La formule commence toujours par un signe '='.
+  summary: Formule de l’élément nommé. Les formules commencent toujours par un signe égal (« = »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Indique si l’objet est visible.
+  summary: Spécifie si l’objet est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 64b38b2371d79f40394f2bfb6db981b9f56f740b
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 03b2b429178a6d8ad6d13a13c28271340d8c23ef
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554756"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606419"

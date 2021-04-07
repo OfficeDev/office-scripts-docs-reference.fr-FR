@@ -3,7 +3,7 @@ name: ExcelScript.Slicer
 uid: ExcelScript!ExcelScript.Slicer:interface
 package: ExcelScript!
 fullName: ExcelScript.Slicer
-summary: Représente un objet Slicer dans le classeur.
+summary: Représente un `Slicer` objet dans le workbook.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getCaption:member(1)
   package: ExcelScript!
   fullName: getCaption()
-  summary: Représente la légende de segment.
+  summary: Représente la légende du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Représente l’id unique du segment.
+  summary: Représente l’ID unique du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getIsFilterCleared:member(1)
   package: ExcelScript!
   fullName: getIsFilterCleared()
-  summary: True si tous les filtres appliqués actuellement sur le segment sont effacés.
+  summary: La valeur est `true` si tous les filtres appliqués actuellement sur le slicer sont effacés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Représente le nom de la forme.
+  summary: Représente le nom du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: Obtient un segment de l’élément à l’aide de son nom ou clé. Si l’élément de segment n’existe pas, cette fonction renverra un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un segment de l’élément à l’aide de son nom ou clé. Si l’élément de slicer n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
     content: 'getSlicerItem(key: string): SlicerItem | undefined;'
     parameters:
     - id: key
-      description: Clé ou nom du segment à récupérer.
+      description: Clé ou nom du slicer à récupérer.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.SlicerItem:interface" /> | undefined
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)
   package: ExcelScript!
   fullName: getSlicerItems()
-  summary: Représente la collection de SlicerItems qui font partie du segment.
+  summary: Représente la collection d’éléments de slicer qui font partie du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSortBy:member(1)
   package: ExcelScript!
   fullName: getSortBy()
-  summary: 'Représente l’ordre de tri des éléments dans le segment. Les valeurs possibles sont : "DataSourceOrder", "ascending", "Descending".'
+  summary: 'Représente l’ordre de tri des éléments dans le segment. Les valeurs possibles sont : « DataSourceOrder », « Ascending », « Descending ».'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: 'Valeur de constante qui représente le style du tableau. Les valeurs possibles sont : « SlicerStyleLight1 » à « SlicerStyleLight6 », « TableStyleOther1 » à « TableStyleOther2 », « SlicerStyleDark1 » et « SlicerStyleDark6 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
+  summary: 'Valeur constante qui représente le style de slicer. Les valeurs possibles sont les suivants : « SlicerStyleLight1 » à « SlicerStyleLight6 », « TableStyleOther1 » à « TableStyleOther2 », « SlicerStyleDark1 » à « SlicerStyleDark6 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Représente la largeur, en points, de la forme. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Représente la largeur, en points, de la forme. Envoie une erreur `InvalidArgument` lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#selectItems:member(1)
   package: ExcelScript!
   fullName: selectItems(items)
-  summary: Sélectionne les éléments du Slicer en fonction de leurs clés. Les sélections précédentes sont effacées. Tous les éléments seront sélectionnés par défaut si le tableau est vide.
+  summary: Sélectionne les éléments de slicer en fonction de leurs clés. Les sélections précédentes sont effacées. Tous les éléments sont sélectionnés par défaut si le tableau est vide.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
     content: 'selectItems(items?: string[]): void;'
     parameters:
     - id: items
-      description: Facultatif. Noms des éléments de Slicer spécifiés à sélectionner.
+      description: Facultatif. Noms d’éléments de slicer spécifiés à sélectionner.
       type: string[]
     return:
       type: void
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setCaption:member(1)
   package: ExcelScript!
   fullName: setCaption(caption)
-  summary: Représente la légende de segment.
+  summary: Représente la légende du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,7 +276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -293,7 +293,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Représente le nom de la forme.
+  summary: Représente le nom du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,7 +310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setSortBy:member(1)
   package: ExcelScript!
   fullName: setSortBy(sortBy)
-  summary: 'Représente l’ordre de tri des éléments dans le segment. Les valeurs possibles sont : "DataSourceOrder", "ascending", "Descending".'
+  summary: 'Représente l’ordre de tri des éléments dans le segment. Les valeurs possibles sont : « DataSourceOrder », « Ascending », « Descending ».'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -327,7 +327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: 'Valeur de constante qui représente le style du tableau. Les valeurs possibles sont : « SlicerStyleLight1 » à « SlicerStyleLight6 », « TableStyleOther1 » à « TableStyleOther2 », « SlicerStyleDark1 » et « SlicerStyleDark6 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
+  summary: 'Valeur constante qui représente le style de slicer. Les valeurs possibles sont les suivants : « SlicerStyleLight1 » à « SlicerStyleLight6 », « TableStyleOther1 » à « TableStyleOther2 », « SlicerStyleDark1 » à « SlicerStyleDark6 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Représente la largeur, en points, de la forme. Renvoie un « l’argument est non valide ou manquant ou a un format incorrect. » exception lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Représente la largeur, en points, de la forme. Envoie une erreur `InvalidArgument` lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4136caf5e44c73d4f4a4ef5d7379a80e370d5ef9
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: e77939566a567014410472a3a707d5c624220469
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554770"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606010"

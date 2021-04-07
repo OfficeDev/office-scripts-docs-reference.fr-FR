@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalDataBarDirection
 uid: ExcelScript!ExcelScript.ConditionalDataBarDirection:enum
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarDirection
-summary: Représente la direction de la barre de données dans une cellule.
+summary: Représente le sens de la barre de données au sein d’une cellule.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: bc40499f2d0f711ad2ff2f2ec5024b216c499075
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c08b72d876a60f7a0cc2af2dbb468b878a0cab3e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419480"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607108"

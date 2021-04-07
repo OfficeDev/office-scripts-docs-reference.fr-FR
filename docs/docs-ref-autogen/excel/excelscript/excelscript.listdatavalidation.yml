@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#inCellDropDown:member
   package: ExcelScript!
   fullName: inCellDropDown
-  summary: Affiche la liste dans la cellule déroulante ou non, sa valeur par défaut est true.
+  summary: Spécifie s’il faut afficher la liste dans une liste de cellules. La valeur par défaut est `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ListDataValidation#source:member
   package: ExcelScript!
   fullName: source
-  summary: Source de la liste pour la validation des données lors de la définition de la valeur, elle peut être transmise en tant qu’objet de plage Excel ou en tant que chaîne contenant un nombre séparé par des virgules, une valeur booléenne ou une date.
+  summary: Source de la liste pour la validation des données Lors de la définition de la valeur, elle peut être transmise en tant qu’objet, ou une chaîne contenant un nombre, une valeur boolénable ou une date séparés par des `Range` virgules.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: string | <xref uid="ExcelScript!ExcelScript.Range:interface" />
 metadata:
-  ms.openlocfilehash: cf8940b22ffc0ff1b79c1a55297fc2f97e4b43ea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 9b241254b4ff28826e267a10e68a801a7535d4bf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412180"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607220"

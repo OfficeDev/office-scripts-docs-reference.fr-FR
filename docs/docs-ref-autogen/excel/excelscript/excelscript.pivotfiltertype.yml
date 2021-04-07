@@ -3,7 +3,7 @@ name: ExcelScript.PivotFilterType
 uid: ExcelScript!ExcelScript.PivotFilterType:enum
 package: ExcelScript!
 fullName: ExcelScript.PivotFilterType
-summary: Énumération simple qui représente un type de filtre pour un champ de tableau croisé dynamique.
+summary: Simple enum qui représente un type de filtre pour un champ de tableau croisé dynamique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,27 +11,27 @@ fields:
 - name: date
   uid: ExcelScript!ExcelScript.PivotFilterType.date:member
   package: ExcelScript!
-  summary: 'Filtre PivotItems avec une date à la place d’une étiquette. Remarque : un champ de tableau croisé dynamique ne peut pas avoir simultanément un filtre d’étiquettes et un filtre date.'
+  summary: 'Filtre les pivotItems avec une date à la place d’une étiquette. Remarque : un champ de tableau croisé dynamique ne peut pas simultanément avoir un filtre d’étiquette et un filtre de date appliqué.'
 - name: label
   uid: ExcelScript!ExcelScript.PivotFilterType.label:member
   package: ExcelScript!
-  summary: 'Filtre les filtres en fonction de leurs étiquettes. Remarque : un champ de tableau croisé dynamique ne peut pas avoir simultanément un filtre d’étiquettes et un filtre date.'
+  summary: 'Filtre les pivotItems en fonction de leurs étiquettes. Remarque : un champ de tableau croisé dynamique ne peut pas simultanément avoir un filtre d’étiquette et un filtre de date appliqué.'
 - name: manual
   uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
   package: ExcelScript!
-  summary: Filtre des filtres spécifiques sélectionnés manuellement à partir du tableau croisé dynamique.
+  summary: Filtre des pivotItems sélectionnés manuellement à partir du tableau croisé dynamique.
 - name: unknown
   uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
   package: ExcelScript!
-  summary: PivotFilterType est inconnu ou non pris en charge.
+  summary: '`PivotFilterType` est inconnu ou non pris en cas d’insupportation.'
 - name: value
   uid: ExcelScript!ExcelScript.PivotFilterType.value:member
   package: ExcelScript!
-  summary: Filtre en fonction de la valeur d’un PivotItem par rapport à un DataPivotHierarchy.
+  summary: Filtres basés sur la valeur d’un pivotItem par rapport à un `DataPivotHierarchy`<!-- -->.
 metadata:
-  ms.openlocfilehash: 3c8b99c254d001d641d6a9cb6ae7de55c404b69a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 156d677d365b0975bf3c8238594d3c39348a5afa
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415245"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607010"

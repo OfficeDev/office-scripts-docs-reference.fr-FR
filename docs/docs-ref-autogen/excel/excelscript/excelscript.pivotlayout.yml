@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)
   package: ExcelScript!
   fullName: getAutoFormat()
-  summary: Indique si la mise en forme est automatiquement mise en forme lorsqu’elle est actualisée ou lorsque les champs sont déplacés.
+  summary: Spécifie si la mise en forme sera automatiquement mise en forme lorsqu’elle est actualisée ou lorsque les champs sont déplacés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,7 +60,7 @@ methods:
     content: 'getDataHierarchy(cell: Range | string): DataPivotHierarchy;'
     parameters:
     - id: cell
-      description: Cellule unique dans le corps de données du tableau croisé dynamique.
+      description: Cellule unique dans le corps des données du tableau croisé dynamique.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)
   package: ExcelScript!
   fullName: getEnableFieldList()
-  summary: Indique si la liste de champs peut être affichée dans l’interface utilisateur.
+  summary: Spécifie si la liste des champs peut être affichée dans l’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: getPreserveFormatting()
-  summary: Indique si la mise en forme est conservée lorsque le rapport est actualisé ou recalcule par des opérations telles que le pivotement, le tri ou la modification des éléments de champ de page.
+  summary: Spécifie si la mise en forme est conservée lorsque le rapport est actualisé ou recalculé par des opérations telles que la pivotation, le tri ou la modification d’éléments de champ de page.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowColumnGrandTotals()
-  summary: Indique si le rapport de tableau croisé dynamique affiche les totaux généraux des colonnes.
+  summary: Spécifie si le rapport de tableau croisé dynamique affiche les totaux grands des colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: getShowRowGrandTotals()
-  summary: Indique si le rapport de tableau croisé dynamique affiche des totaux généraux de lignes.
+  summary: Spécifie si le rapport de tableau croisé dynamique affiche les totaux complets des lignes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,7 +173,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: getSubtotalLocation()
-  summary: Cette propriété indique le SubtotalLocationType de tous les champs sur le tableau croisé dynamique. Si les champs ont des états différents, la valeur sera null.
+  summary: Cette propriété indique tous les `SubtotalLocationType` champs du tableau croisé dynamique. Si les champs ont des états différents, ce sera `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)
   package: ExcelScript!
   fullName: setAutoFormat(autoFormat)
-  summary: Indique si la mise en forme est automatiquement mise en forme lorsqu’elle est actualisée ou lorsque les champs sont déplacés.
+  summary: Spécifie si la mise en forme sera automatiquement mise en forme lorsqu’elle est actualisée ou lorsque les champs sont déplacés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
     content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
     parameters:
     - id: cell
-      description: Une cellule unique à utiliser obtenir les critères à partir de pour appliquer le tri automatique.
+      description: Cellule unique à utiliser pour obtenir les critères d’application du tri automatique.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: sortBy
       description: Sens du tri.
@@ -223,7 +223,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)
   package: ExcelScript!
   fullName: setEnableFieldList(enableFieldList)
-  summary: Indique si la liste de champs peut être affichée dans l’interface utilisateur.
+  summary: Spécifie si la liste des champs peut être affichée dans l’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -257,7 +257,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: setPreserveFormatting(preserveFormatting)
-  summary: Indique si la mise en forme est conservée lorsque le rapport est actualisé ou recalcule par des opérations telles que le pivotement, le tri ou la modification des éléments de champ de page.
+  summary: Spécifie si la mise en forme est conservée lorsque le rapport est actualisé ou recalculé par des opérations telles que la pivotation, le tri ou la modification d’éléments de champ de page.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -274,7 +274,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowColumnGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowColumnGrandTotals(showColumnGrandTotals)
-  summary: Indique si le rapport de tableau croisé dynamique affiche les totaux généraux des colonnes.
+  summary: Spécifie si le rapport de tableau croisé dynamique affiche les totaux grands des colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -291,7 +291,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setShowRowGrandTotals:member(1)
   package: ExcelScript!
   fullName: setShowRowGrandTotals(showRowGrandTotals)
-  summary: Indique si le rapport de tableau croisé dynamique affiche des totaux généraux de lignes.
+  summary: Spécifie si le rapport de tableau croisé dynamique affiche les totaux complets des lignes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setSubtotalLocation:member(1)
   package: ExcelScript!
   fullName: setSubtotalLocation(subtotalLocation)
-  summary: Cette propriété indique le SubtotalLocationType de tous les champs sur le tableau croisé dynamique. Si les champs ont des états différents, la valeur sera null.
+  summary: Cette propriété indique tous les `SubtotalLocationType` champs du tableau croisé dynamique. Si les champs ont des états différents, ce sera `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -322,9 +322,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: edb6b050eb6f004b74bf38c57764bf5292367016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4612183d3dca994b991b7f65659024e46fb06a13
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416735"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607192"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getAxisColor:member(1)
   package: ExcelScript!
   fullName: getAxisColor()
-  summary: Code couleur HTML qui représente la couleur de la ligne de l’axe, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). "" (chaîne vide) si aucun axe n’est présent ou défini.
+  summary: Code couleur HTML représentant la couleur de la ligne Axe, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucun axe n’est présent ou n’est définie.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getBarDirection:member(1)
   package: ExcelScript!
   fullName: getBarDirection()
-  summary: Indique le sens de l’image de la barre de données.
+  summary: Spécifie la direction sur qui le graphique de barre de données doit être basé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getLowerBoundRule:member(1)
   package: ExcelScript!
   fullName: getLowerBoundRule()
-  summary: Règle de ce qui constitue la limite inférieure (et comment la calculer, le cas échéant) pour une barre de données. L' `ConditionalDataBarRule` objet doit être défini en tant qu’objet JSON (utilisez `x.lowerBoundRule = {...}` au lieu de `x.lowerBoundRule.formula = ...`<!-- -->).
+  summary: Règle de ce qui constitue la limite inférieure (et comment la calculer, le cas échéant) pour une barre de données. `ConditionalDataBarRule`L’objet doit être définie en tant qu’objet JSON (à utiliser au lieu `x.lowerBoundRule = {...}` de`x.lowerBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getShowDataBarOnly:member(1)
   package: ExcelScript!
   fullName: getShowDataBarOnly()
-  summary: Si la valeur est True, masque les valeurs des cellules où la barre de données est appliquée.
+  summary: If `true`<!-- -->, masque les valeurs des cellules où la barre de données est appliquée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#getUpperBoundRule:member(1)
   package: ExcelScript!
   fullName: getUpperBoundRule()
-  summary: Règle de ce qui constitue la limite supérieure (et comment la calculer, le cas échéant) pour une barre de données. L' `ConditionalDataBarRule` objet doit être défini en tant qu’objet JSON (utilisez `x.upperBoundRule = {...}` au lieu de `x.upperBoundRule.formula = ...`<!-- -->).
+  summary: Règle de ce qui constitue la limite supérieure (et comment la calculer, le cas échéant) pour une barre de données. `ConditionalDataBarRule`L’objet doit être définie en tant qu’objet JSON (à utiliser au lieu `x.upperBoundRule = {...}` de`x.upperBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setAxisColor:member(1)
   package: ExcelScript!
   fullName: setAxisColor(axisColor)
-  summary: Code couleur HTML qui représente la couleur de la ligne de l’axe, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). "" (chaîne vide) si aucun axe n’est présent ou défini.
+  summary: Code couleur HTML représentant la couleur de la ligne Axe, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucun axe n’est présent ou n’est définie.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setBarDirection:member(1)
   package: ExcelScript!
   fullName: setBarDirection(barDirection)
-  summary: Indique le sens de l’image de la barre de données.
+  summary: Spécifie la direction sur qui le graphique de barre de données doit être basé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setLowerBoundRule:member(1)
   package: ExcelScript!
   fullName: setLowerBoundRule(lowerBoundRule)
-  summary: Règle de ce qui constitue la limite inférieure (et comment la calculer, le cas échéant) pour une barre de données. L' `ConditionalDataBarRule` objet doit être défini en tant qu’objet JSON (utilisez `x.lowerBoundRule = {...}` au lieu de `x.lowerBoundRule.formula = ...`<!-- -->).
+  summary: Règle de ce qui constitue la limite inférieure (et comment la calculer, le cas échéant) pour une barre de données. `ConditionalDataBarRule`L’objet doit être définie en tant qu’objet JSON (à utiliser au lieu `x.lowerBoundRule = {...}` de`x.lowerBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setShowDataBarOnly:member(1)
   package: ExcelScript!
   fullName: setShowDataBarOnly(showDataBarOnly)
-  summary: Si la valeur est True, masque les valeurs des cellules où la barre de données est appliquée.
+  summary: If `true`<!-- -->, masque les valeurs des cellules où la barre de données est appliquée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataBarConditionalFormat#setUpperBoundRule:member(1)
   package: ExcelScript!
   fullName: setUpperBoundRule(upperBoundRule)
-  summary: Règle de ce qui constitue la limite supérieure (et comment la calculer, le cas échéant) pour une barre de données. L' `ConditionalDataBarRule` objet doit être défini en tant qu’objet JSON (utilisez `x.upperBoundRule = {...}` au lieu de `x.upperBoundRule.formula = ...`<!-- -->).
+  summary: Règle de ce qui constitue la limite supérieure (et comment la calculer, le cas échéant) pour une barre de données. `ConditionalDataBarRule`L’objet doit être définie en tant qu’objet JSON (à utiliser au lieu `x.upperBoundRule = {...}` de`x.upperBoundRule.formula = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,9 +216,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 71067c46b38608eb87a203c02f0406f1b68d0d2e
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3a334c053c4f5bbddbcc87db22e43f21cbe47260
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415567"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606543"

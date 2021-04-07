@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#email:member
   package: ExcelScript!
   fullName: email
-  summary: Adresse de messagerie de l’entité mentionnée dans Comment.
+  summary: Adresse de messagerie de l’entité mentionnée dans un commentaire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#name:member
   package: ExcelScript!
   fullName: name
-  summary: Nom de l’entité mentionnée dans Comment.
+  summary: Nom de l’entité mentionnée dans un commentaire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 82bf472cdb4e1dae90dc50e8f4d52deae37ed1ef
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 44c3197151b14d7a6954531d9e086f9fe33a53a6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419508"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606785"

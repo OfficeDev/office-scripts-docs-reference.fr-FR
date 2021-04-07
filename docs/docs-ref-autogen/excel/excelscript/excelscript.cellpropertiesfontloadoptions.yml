@@ -3,7 +3,7 @@ name: ExcelScript.CellPropertiesFontLoadOptions
 uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.CellPropertiesFontLoadOptions
-summary: Spécifie les propriétés à charger sur l' `format.font` objet.
+summary: Spécifie les propriétés à charger sur `format.font` l’objet.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#bold:member
   package: ExcelScript!
   fullName: bold
-  summary: Spécifie s’il faut charger sur la `bold` propriété.
+  summary: Spécifie s’il faut charger la `bold` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#color:member
   package: ExcelScript!
   fullName: color
-  summary: Spécifie s’il faut charger sur la `color` propriété.
+  summary: Spécifie s’il faut charger la `color` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#italic:member
   package: ExcelScript!
   fullName: italic
-  summary: Spécifie s’il faut charger sur la `italic` propriété.
+  summary: Spécifie s’il faut charger la `italic` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#name:member
   package: ExcelScript!
   fullName: name
-  summary: Spécifie s’il faut charger sur la `name` propriété.
+  summary: Spécifie s’il faut charger la `name` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#size:member
   package: ExcelScript!
   fullName: size
-  summary: Spécifie s’il faut charger sur la `size` propriété.
+  summary: Spécifie s’il faut charger la `size` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#strikethrough:member
   package: ExcelScript!
   fullName: strikethrough
-  summary: Spécifie s’il faut charger sur la `strikethrough` propriété.
+  summary: Spécifie s’il faut charger la `strikethrough` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#subscript:member
   package: ExcelScript!
   fullName: subscript
-  summary: Spécifie s’il faut charger sur la `subscript` propriété.
+  summary: Spécifie s’il faut charger la `subscript` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#superscript:member
   package: ExcelScript!
   fullName: superscript
-  summary: Spécifie s’il faut charger sur la `superscript` propriété.
+  summary: Spécifie s’il faut charger la `superscript` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,7 +109,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#tintAndShade:member
   package: ExcelScript!
   fullName: tintAndShade
-  summary: Spécifie s’il faut charger sur la `tintAndShade` propriété.
+  summary: Spécifie s’il faut charger la `tintAndShade` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ properties:
   uid: ExcelScript!ExcelScript.CellPropertiesFontLoadOptions#underline:member
   package: ExcelScript!
   fullName: underline
-  summary: Spécifie s’il faut charger sur la `underline` propriété.
+  summary: Spécifie s’il faut charger la `underline` propriété.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 20b3d4cc2181d279a9f8453648d2eed1300d1016
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: a98813f764c076b1ee587c32fab9b81c9c2775a7
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417127"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606968"

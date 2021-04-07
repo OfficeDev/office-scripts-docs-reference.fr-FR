@@ -3,7 +3,7 @@ name: ExcelScript.CellValueConditionalFormat
 uid: ExcelScript!ExcelScript.CellValueConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.CellValueConditionalFormat
-summary: Représente un format conditionnel de valeur de cellule.
+summary: Représente une mise en forme conditionnelle de valeur de cellule.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
+  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Spécifie l’objet Rule sur ce format conditionnel.
+  summary: Spécifie l’objet de règle sur ce format conditionnel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: Spécifie l’objet Rule sur ce format conditionnel.
+  summary: Spécifie l’objet de règle sur ce format conditionnel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e11b3923d72e3d1b348c24bb07ab4d8088476a8d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c47186e09ea2838f1facb336a4390f299546d887
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417113"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606961"

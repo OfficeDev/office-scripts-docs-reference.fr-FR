@@ -21,7 +21,7 @@ methods:
     content: 'calculate(calculationType: CalculationType): void;'
     parameters:
     - id: calculationType
-      description: Spécifie le type de calcul à utiliser. Pour plus d’informations, voir ExcelScript. CalculationType.
+      description: Spécifie le type de calcul à utiliser. Pour `ExcelScript.CalculationType` plus d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.CalculationType:enum" />
     return:
       type: void
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationMode:member(1)
   package: ExcelScript!
   fullName: getCalculationMode()
-  summary: 'Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans ExcelScript. CalculationMode. Les valeurs possibles sont les suivantes : `Automatic`<!-- -->, où Excel contrôle le recalcul ; `AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux ; `Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande.'
+  summary: 'Renvoie le mode de calcul utilisé dans le workbook, tel que défini par les constantes dans `ExcelScript.CalculationMode`<!-- -->. Les valeurs possibles sont les : `Automatic`<!-- -->, où Excel contrôle le recalcul ; `AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul mais ignore les modifications apportées aux tableaux ; `Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCalculationState:member(1)
   package: ExcelScript!
   fullName: getCalculationState()
-  summary: Renvoie l’état de calcul de l’application. Pour plus d’informations, voir ExcelScript. CalculationState,.
+  summary: Renvoie l’état de calcul de l’application. Pour `ExcelScript.CalculationState` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getCultureInfo:member(1)
   package: ExcelScript!
   fullName: getCultureInfo()
-  summary: Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme de numéros et d’autres paramètres dépendants de la culture.
+  summary: Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme des nombres et d’autres paramètres dépendant de la culture.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getDecimalSeparator:member(1)
   package: ExcelScript!
   fullName: getDecimalSeparator()
-  summary: Obtient la chaîne utilisée comme séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+  summary: Obtient la chaîne utilisée comme séparateur décimal pour les valeurs numériques. Il est basé sur les paramètres Excel locaux.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getIterativeCalculation:member(1)
   package: ExcelScript!
   fullName: getIterativeCalculation()
-  summary: Capture d’écran des paramètres de calcul itératif. Dans Excel sous Windows et Mac, les paramètres s’appliquent à l’application Excel. Dans Excel sur le Web et d’autres plateformes, les paramètres s’appliquent au classeur actif.
+  summary: Renvoie les paramètres de calcul itératifs. Dans Excel sur Windows et Mac, les paramètres s’appliquent à l’application Excel. Dans Excel sur le web et d’autres plateformes, les paramètres s’appliquent au workbook actif.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getThousandsSeparator:member(1)
   package: ExcelScript!
   fullName: getThousandsSeparator()
-  summary: Obtient la chaîne utilisée pour séparer les groupes de chiffres à gauche du séparateur décimal pour les valeurs numériques. Cette fonction est basée sur les paramètres locaux d’Excel.
+  summary: Obtient la chaîne utilisée pour séparer les groupes de chiffres à gauche de la virgule pour les valeurs numériques. Il est basé sur les paramètres Excel locaux.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#getUseSystemSeparators:member(1)
   package: ExcelScript!
   fullName: getUseSystemSeparators()
-  summary: Indique si les séparateurs système d’Excel sont activés. Les séparateurs système incluent le séparateur décimal et le séparateur des milliers.
+  summary: Spécifie si les séparateurs système d’Excel sont activés. Les séparateurs système incluent le séparateur décimal et le séparateur de milliers.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.Application#setCalculationMode:member(1)
   package: ExcelScript!
   fullName: setCalculationMode(calculationMode)
-  summary: 'Renvoie le mode de calcul utilisé dans le classeur, tel que défini par les constantes dans ExcelScript. CalculationMode. Les valeurs possibles sont les suivantes : `Automatic`<!-- -->, où Excel contrôle le recalcul ; `AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul, mais ignore les modifications apportées aux tableaux ; `Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande.'
+  summary: 'Renvoie le mode de calcul utilisé dans le workbook, tel que défini par les constantes dans `ExcelScript.CalculationMode`<!-- -->. Les valeurs possibles sont les : `Automatic`<!-- -->, où Excel contrôle le recalcul ; `AutomaticExceptTables`<!-- -->, où Excel contrôle le recalcul mais ignore les modifications apportées aux tableaux ; `Manual`<!-- -->, où le calcul est effectué lorsque l’utilisateur le demande.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -148,9 +148,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3bb99af272686a3303d2564bbed7e972f6cde6e7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdcd7a220d23bc540129c9547789a241c15fd3b2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418127"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606634"

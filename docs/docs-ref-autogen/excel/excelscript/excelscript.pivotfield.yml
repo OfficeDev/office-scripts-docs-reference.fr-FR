@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: Définit une ou plusieurs des informations de la valeur de champ en vigueur du champ et les applique au champ. Si les filtres fournis ne sont pas valides ou ne peuvent pas être appliqués, une exception est générée.
+  summary: Définit un ou plusieurs des filtres de tableau croisé dynamique actuels du champ et les applique au champ. Si les filtres fournis ne sont pas valides ou ne peuvent pas être appliqués, une exception est lancée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: Une interface spécifique PivotFilter ou une interface PivotFilters contenant plusieurs filtres configurés.
+      description: Un filtre de tableau croisé dynamique spécifique configuré ou une interface de filtres croisés dynamiques contenant plusieurs filtres configurés.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: Efface tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
+  summary: Permet d’effacer tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: Efface tous les critères existants du filtre du champ du type donné (s’il est déjà appliqué).
+  summary: Permet d’effacer tous les critères existants du filtre du champ du type donné (s’il en existe un actuellement appliqué).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -51,7 +51,7 @@ methods:
     content: 'clearFilter(filterType: PivotFilterType): void;'
     parameters:
     - id: filterType
-      description: Type de filtre sur le champ dont tous les critères doivent être effacés.
+      description: Type de filtre sur le champ pour lequel effacer tous les critères.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: void
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: ID du champ PivotField.
+  summary: ID du champ de tableau croisé dynamique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: Obtient un PivotItem par nom. Si l’objet PivotItem n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété a la valeur `true`<!-- -->.
+  summary: Obtient un pivotItem par nom. Si l’objet PivotItem n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -120,7 +120,7 @@ methods:
     content: 'getPivotItem(name: string): PivotItem | undefined;'
     parameters:
     - id: name
-      description: Nom du PivotItem à récupérer.
+      description: Nom du pivotItem à récupérer.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
@@ -231,7 +231,7 @@ methods:
     content: 'sortByLabels(sortBy: SortBy): void;'
     parameters:
     - id: sortBy
-      description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
+      description: Spécifie si le tri est effectué par ordre croissant ou décroit.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     return:
       type: void
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs à partir du même DataPivotHierarchy.
+  summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs de la même DataPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,21 +253,21 @@ methods:
               ): void;
     parameters:
     - id: sortBy
-      description: Indique si le tri est réalisé dans l’ordre croissant ou décroissant.
+      description: Spécifie si le tri est effectué par ordre croissant ou décroit.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
-      description: Spécifie la hiérarchie des valeurs sur l’axe des données à utiliser pour le tri.
+      description: Spécifie la hiérarchie de valeurs sur l’axe des données à utiliser pour le tri.
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: Les éléments qui doivent être utilisés pour l’étendue du tri. Il s’agit des éléments qui composent la ligne ou la colonne que vous souhaitez trier. Si une chaîne est utilisée à la place d’un PivotItem, la chaîne représente l’ID de PivotItem. S’il n’y a pas d’éléments autres que la hiérarchie de données sur l’axe sur lequel vous souhaitez effectuer le tri, il peut être vide.
+      description: Éléments à utiliser pour l’étendue du tri. Ce sont les éléments qui formeront la ligne ou la colonne sur qui vous souhaitez trier. Si une chaîne est utilisée à la place d’un pivotItem, la chaîne représente l’ID de l’pivotItem. S’il n’y a pas d’autres éléments que la hiérarchie de données sur l’axe sur quoi vous souhaitez trier, cela peut être vide.
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f9bc753c30f6ec8c165cdf9966aab8c5be2040cc
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 4228e7c2e7435e23e1566b570c05a7c18505e14e
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554614"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606398"

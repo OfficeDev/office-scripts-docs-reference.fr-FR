@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: getMovingAveragePeriod()
-  summary: Représente la période d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type MovingAverage.
+  summary: Représente la période d’une courbe de tendance de graphique. Applicable uniquement aux tendances avec le type `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Représente le nom de la courbe de tendance. Peut être configurée pour une valeur de chaîne, ou peut être configurée pour que la valeur null représente les valeurs automatiques. La valeur renvoyée est toujours une chaîne.
+  summary: Représente le nom de la courbe de tendance. Peut être définie sur une valeur de chaîne, une `null` valeur représente des valeurs automatiques. La valeur renvoyée est toujours une chaîne.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: getPolynomialOrder()
-  summary: Représente l’ordre d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type polynomial.
+  summary: Représente l’ordre d’une courbe de tendance de graphique. Applicable uniquement aux tendances avec le type `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#getShowRSquared:member(1)
   package: ExcelScript!
   fullName: getShowRSquared()
-  summary: Vrai si le coefficient de détermination de la courbe de tendance est affiché sur le graphique.
+  summary: True si la valeur r-squared de la courbe de tendance est affichée sur le graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,7 +220,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setMovingAveragePeriod:member(1)
   package: ExcelScript!
   fullName: setMovingAveragePeriod(movingAveragePeriod)
-  summary: Représente la période d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type MovingAverage.
+  summary: Représente la période d’une courbe de tendance de graphique. Applicable uniquement aux tendances avec le type `MovingAverage`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -237,7 +237,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Représente le nom de la courbe de tendance. Peut être configurée pour une valeur de chaîne, ou peut être configurée pour que la valeur null représente les valeurs automatiques. La valeur renvoyée est toujours une chaîne.
+  summary: Représente le nom de la courbe de tendance. Peut être définie sur une valeur de chaîne, une `null` valeur représente des valeurs automatiques. La valeur renvoyée est toujours une chaîne.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -254,7 +254,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setPolynomialOrder:member(1)
   package: ExcelScript!
   fullName: setPolynomialOrder(polynomialOrder)
-  summary: Représente l’ordre d’une courbe de tendance de graphique. Applicable uniquement à la courbe de tendance avec le type polynomial.
+  summary: Représente l’ordre d’une courbe de tendance de graphique. Applicable uniquement aux tendances avec le type `Polynomial`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -288,7 +288,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendline#setShowRSquared:member(1)
   package: ExcelScript!
   fullName: setShowRSquared(showRSquared)
-  summary: Vrai si le coefficient de détermination de la courbe de tendance est affiché sur le graphique.
+  summary: True si la valeur r-squared de la courbe de tendance est affichée sur le graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -319,9 +319,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f529a31774e6430cd11a32826f876b48d7c3c43c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5ce9ab90bf97fbe09577aca7d44bfa1d09f59414
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416001"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606814"

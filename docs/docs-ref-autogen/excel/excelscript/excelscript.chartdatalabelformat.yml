@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabelFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Représente les attributs de police (nom de la police, taille de police, couleur, etc.) d’une étiquette de données de graphique.
+  summary: Représente les attributs de police (tels que le nom de la police, la taille de police et la couleur) d’une étiquette de données de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 501c1c739325039d2c64c8389423749a8ce3f3b7
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: da98f5cb65d25429b7e569a4e9fc4a830821e96b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416959"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606912"

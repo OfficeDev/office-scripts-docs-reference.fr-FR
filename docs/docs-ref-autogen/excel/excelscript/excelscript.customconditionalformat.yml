@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomConditionalFormat#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
+  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CustomConditionalFormat#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Spécifie l’objet Rule sur ce format conditionnel.
+  summary: Spécifie `Rule` l’objet sur cette mise en forme conditionnelle.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -36,9 +36,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatRule:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: 7b61d313814a23f543c9507123573298dde6f36d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fdd94ee431794b06febf59f81ea14deca322b1a8
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415644"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606550"

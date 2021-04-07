@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartFill#clear:member(1)
   package: ExcelScript!
   fullName: clear()
-  summary: Supprime la couleur de remplissage d’un élément de graphique.
+  summary: Permet d’effacer la couleur de remplissage d’un élément de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,15 +34,15 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: Code couleur HTML qui représente la couleur de l’arrière-plan, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+      description: Code couleur HTML représentant la couleur d’arrière-plan, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
       type: string
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d33b09062079157785b412603d9f36f7736e6d92
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e90710f2f898cebee541ca3eb4eb9923eb8dfe14
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416889"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606585"
