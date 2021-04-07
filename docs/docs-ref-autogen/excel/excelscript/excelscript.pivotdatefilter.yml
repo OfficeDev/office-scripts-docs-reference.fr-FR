@@ -3,7 +3,7 @@ name: ExcelScript.PivotDateFilter
 uid: ExcelScript!ExcelScript.PivotDateFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotDateFilter
-summary: Modèle configurable pour un filtre de date à appliquer à un champ de tableau croisé dynamique. L `condition` 'définit les critères qui doivent être définis afin que le filtre fonctionne.
+summary: Modèle configurable pour un filtre de date à appliquer à un champ de tableau croisé dynamique. Définit `condition` les critères à définir pour que le filtre fonctionne.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Spécifie la condition pour le filtre, qui définit les critères de filtrage nécessaires.
+  summary: Spécifie la condition du filtre, qui définit les critères de filtrage nécessaires.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Si la valeur est true, Filter *exclut* les éléments qui répondent aux critères. La valeur par défaut est false (filtre pour inclure les éléments qui satisfont les critères).
+  summary: If `true`<!-- -->, le *filtre exclut les* éléments qui répondent aux critères. La valeur par défaut `false` est (filtre pour inclure les éléments qui répondent aux critères).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: Limite inférieure de la plage de la condition de `Between` filtre.
+  summary: Limite inférieure de la plage pour la `between` condition de filtre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: La limite supérieure de la plage pour la `Between` condition de filtre.
+  summary: Limite supérieure de la plage pour la `between` condition de filtre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotDateFilter#wholeDays:member
   package: ExcelScript!
   fullName: wholeDays
-  summary: For, <mot clé><!-- -->, `Before`<!-- -->, `After`<!-- -->et les `Between` conditions de filtre, indique si les comparaisons doivent être effectuées comme des journées entières.
+  summary: For, <mot clé><!-- -->, `before`<!-- -->, `after`<!-- -->, et `between` les conditions de filtrage, indique si les comparaisons doivent être réalisées en jours entiers.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,9 +82,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 50b2f14b12d33ae4786ce8fd4838d8c8ade4a3bd
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 905fcb75ff1228a38409d7e7d9d860ac4725350d
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415273"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607213"

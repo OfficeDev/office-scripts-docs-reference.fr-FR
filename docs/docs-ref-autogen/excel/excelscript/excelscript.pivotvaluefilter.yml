@@ -3,7 +3,7 @@ name: ExcelScript.PivotValueFilter
 uid: ExcelScript!ExcelScript.PivotValueFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotValueFilter
-summary: Modèle configurable pour un filtre de valeur à appliquer à un champ de tableau croisé dynamique. L `condition` 'définit les critères qui doivent être définis afin que le filtre fonctionne.
+summary: Modèle configurable pour un filtre de valeurs à appliquer à un champ de tableau croisé dynamique. Définit `condition` les critères à définir pour que le filtre fonctionne.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#comparator:member
   package: ExcelScript!
   fullName: comparator
-  summary: Le comparateur est la valeur statique à laquelle les autres valeurs sont comparées. Le type de comparaison est défini par la condition. Par exemple, si le comparateur est « 50 » et la condition est « GreaterThan », toutes les valeurs d’élément qui ne sont pas supérieures à 50 seront supprimées par le filtre.
+  summary: Le comparateur est la valeur statique à laquelle les autres valeurs sont comparées. Le type de comparaison est défini par la condition. Par exemple, si le comparateur est « 50 » et que la condition est « greaterThan », toutes les valeurs d’élément qui ne sont pas supérieures à 50 seront supprimées par le filtre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Spécifie la condition pour le filtre, qui définit les critères de filtrage nécessaires.
+  summary: Spécifie la condition du filtre, qui définit les critères de filtrage nécessaires.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Si la valeur est true, Filter *exclut* les éléments qui répondent aux critères. La valeur par défaut est false (filtre pour inclure les éléments qui satisfont les critères).
+  summary: If `true`<!-- -->, le *filtre exclut les* éléments qui répondent aux critères. La valeur par défaut `false` est (filtre pour inclure les éléments qui répondent aux critères).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: Limite inférieure de la plage de la condition de `Between` filtre.
+  summary: Limite inférieure de la plage pour la `between` condition de filtre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#selectionType:member
   package: ExcelScript!
   fullName: selectionType
-  summary: Indique si le filtre est destiné à l’élément N haut/bas, le niveau haut/bas de N pour cent, ou la somme N-Top/Bottom.
+  summary: Spécifie si le filtre est pour les éléments N supérieur/inférieur, le pourcentage N supérieur/inférieur ou la somme N supérieure/inférieure.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#threshold:member
   package: ExcelScript!
   fullName: threshold
-  summary: Le nombre de seuils « N » d’éléments, pourcentage ou somme à filtrer pour une condition de filtre de haut en bas.
+  summary: Nombre seuil « N » d’éléments, de pourcentage ou de somme à filtrer pour une condition de filtre supérieure/inférieure.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: La limite supérieure de la plage pour la `Between` condition de filtre.
+  summary: Limite supérieure de la plage pour la `between` condition de filtre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -97,7 +97,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotValueFilter#value:member
   package: ExcelScript!
   fullName: value
-  summary: Nom de la « valeur » sélectionnée dans le champ à utiliser pour filtrer.
+  summary: Nom de la « valeur » choisie dans le champ par lequel filtrer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -106,9 +106,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 3c35fae98f6ae6e897b205b57d818601ad71a0cc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2f788cd8ae30fd40cb31cdb383b7929a79c40ca4
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416707"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606209"

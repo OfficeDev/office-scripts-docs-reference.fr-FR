@@ -3,7 +3,7 @@ name: ExcelScript.AutoFillType
 uid: ExcelScript!ExcelScript.AutoFillType:enum
 package: ExcelScript!
 fullName: ExcelScript.AutoFillType
-summary: Les types de comportement lorsque AutoFill est utilisé sur une plage dans le classeur.
+summary: Le comportement se tape lorsque le remplissage automatique est utilisé sur une plage du workbook.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,11 +15,11 @@ fields:
 - name: fillDays
   uid: ExcelScript!ExcelScript.AutoFillType.fillDays:member
   package: ExcelScript!
-  summary: Une version de « FillSeries » pour les dates qui base le modèle sur le jour du mois ou sur le jour de la semaine, selon le contexte.
+  summary: Version de « FillSeries » pour les dates qui base le modèle sur le jour du mois ou le jour de la semaine, selon le contexte.
 - name: fillDefault
   uid: ExcelScript!ExcelScript.AutoFillType.fillDefault:member
   package: ExcelScript!
-  summary: Remplit les cellules adjacentes en fonction des données avoisinantes (le comportement de remplissage automatique standard).
+  summary: Remplit les cellules adjacentes en fonction des données qui l’entourent (comportement de remplissage automatique standard).
 - name: fillFormats
   uid: ExcelScript!ExcelScript.AutoFillType.fillFormats:member
   package: ExcelScript!
@@ -27,11 +27,11 @@ fields:
 - name: fillMonths
   uid: ExcelScript!ExcelScript.AutoFillType.fillMonths:member
   package: ExcelScript!
-  summary: Une version de « FillSeries » pour les dates qui base le modèle sur le mois.
+  summary: Version de « FillSeries » pour les dates qui base le modèle sur le mois.
 - name: fillSeries
   uid: ExcelScript!ExcelScript.AutoFillType.fillSeries:member
   package: ExcelScript!
-  summary: Remplit les cellules adjacentes avec des données qui suivent un motif dans les cellules copiées.
+  summary: Remplit les cellules adjacentes avec des données qui suivent un modèle dans les cellules copiées.
 - name: fillValues
   uid: ExcelScript!ExcelScript.AutoFillType.fillValues:member
   package: ExcelScript!
@@ -39,27 +39,27 @@ fields:
 - name: fillWeekdays
   uid: ExcelScript!ExcelScript.AutoFillType.fillWeekdays:member
   package: ExcelScript!
-  summary: Une version de « FillSeries » pour les dates qui base le modèle sur le jour de la semaine et inclut uniquement les jours de la semaine.
+  summary: Version de « FillSeries » pour les dates qui base le modèle sur le jour de la semaine et inclut uniquement les jours de la semaine.
 - name: fillYears
   uid: ExcelScript!ExcelScript.AutoFillType.fillYears:member
   package: ExcelScript!
-  summary: Une version de « FillSeries » pour les dates qui base le modèle sur l’année.
+  summary: Version de « FillSeries » pour les dates qui base le modèle sur l’année.
 - name: flashFill
   uid: ExcelScript!ExcelScript.AutoFillType.flashFill:member
   package: ExcelScript!
-  summary: Remplit les cellules adjacentes à l’aide de la fonctionnalité Flashfill, d’Excel.
+  summary: Remplit les cellules adjacentes à l’aide de la fonctionnalité Remplissage flash d’Excel.
 - name: growthTrend
   uid: ExcelScript!ExcelScript.AutoFillType.growthTrend:member
   package: ExcelScript!
-  summary: Une version de « FillSeries » pour les nombres qui remplissent les valeurs dans les cellules adjacentes en fonction d’un modèle de tendance géométrique.
+  summary: Version de « FillSeries » pour les nombres qui remplit les valeurs des cellules adjacentes en fonction d’un modèle de tendance de croissance.
 - name: linearTrend
   uid: ExcelScript!ExcelScript.AutoFillType.linearTrend:member
   package: ExcelScript!
-  summary: Une version de « FillSeries » pour les nombres qui remplissent les valeurs dans les cellules adjacentes en fonction d’un modèle de tendance linéaire.
+  summary: Version de « FillSeries » pour les nombres qui remplit les valeurs des cellules adjacentes en fonction d’un modèle de tendance linéaire.
 metadata:
-  ms.openlocfilehash: d9d6e6a7f8b28503a3c39ab71c66cbcbf5581dec
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 60a16fedc18165357a796d52d714408cb4288ca7
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417312"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606627"

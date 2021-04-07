@@ -3,7 +3,7 @@ name: ExcelScript.ShowAsCalculation
 uid: ExcelScript!ExcelScript.ShowAsCalculation:enum
 package: ExcelScript!
 fullName: ExcelScript.ShowAsCalculation
-summary: Fonction de calcul ShowAs pour le champ de tableau croisé dynamique de données.
+summary: Fonction de calcul ShowAs pour DataPivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,7 +15,7 @@ fields:
 - name: index
   uid: ExcelScript!ExcelScript.ShowAsCalculation.index:member
   package: ExcelScript!
-  summary: 'Calcule les valeurs comme suit : ((valeur dans la cellule) x (total général de totaux généraux))/((total général de ligne) x (total général de colonne))'
+  summary: 'Calcule les valeurs comme suit : ((valeur dans la cellule) x (Total total des totaux grands)) / ((Total des lignes grand) x (total des colonnes grand))'
 - name: none
   uid: ExcelScript!ExcelScript.ShowAsCalculation.none:member
   package: ExcelScript!
@@ -35,19 +35,19 @@ fields:
 - name: percentOfGrandTotal
   uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfGrandTotal:member
   package: ExcelScript!
-  summary: Pourcentage du total général.
+  summary: Pourcentage du total.
 - name: percentOfParentColumnTotal
   uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentColumnTotal:member
   package: ExcelScript!
-  summary: Pourcentage du total de la colonne pour le champ de base spécifié.
+  summary: Pourcentage du total de colonne pour le champ de base spécifié.
 - name: percentOfParentRowTotal
   uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentRowTotal:member
   package: ExcelScript!
-  summary: Pourcentage du total de la ligne pour le champ de base spécifié.
+  summary: Pourcentage du total de ligne pour le champ de base spécifié.
 - name: percentOfParentTotal
   uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfParentTotal:member
   package: ExcelScript!
-  summary: Pourcentage du total général pour le champ de base spécifié.
+  summary: Pourcentage du total global pour le champ de base spécifié.
 - name: percentOfRowTotal
   uid: ExcelScript!ExcelScript.ShowAsCalculation.percentOfRowTotal:member
   package: ExcelScript!
@@ -55,27 +55,27 @@ fields:
 - name: percentRunningTotal
   uid: ExcelScript!ExcelScript.ShowAsCalculation.percentRunningTotal:member
   package: ExcelScript!
-  summary: Pourcentage cumulé du champ de base spécifié.
+  summary: Pourcentage d’exécution total du champ de base spécifié.
 - name: rankAscending
   uid: ExcelScript!ExcelScript.ShowAsCalculation.rankAscending:member
   package: ExcelScript!
-  summary: Classement croissant du champ de base spécifié.
+  summary: Rang croissant du champ de base spécifié.
 - name: rankDecending
   uid: ExcelScript!ExcelScript.ShowAsCalculation.rankDecending:member
   package: ExcelScript!
-  summary: Classement décroissant du champ de base spécifié.
+  summary: Rang décroit du champ de base spécifié.
 - name: runningTotal
   uid: ExcelScript!ExcelScript.ShowAsCalculation.runningTotal:member
   package: ExcelScript!
-  summary: Cumul du champ de base spécifié.
+  summary: Exécution du total du champ de base spécifié.
 - name: unknown
   uid: ExcelScript!ExcelScript.ShowAsCalculation.unknown:member
   package: ExcelScript!
-  summary: Le calcul est inconnu ou non pris en charge.
+  summary: Le calcul est inconnu ou non pris en compte.
 metadata:
-  ms.openlocfilehash: d9b3d7c1f2c5e31154f2b54de141a37ff1afead0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 97d9e9bb0fbe87d7cf904afd092d25094e6c208a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420495"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606080"

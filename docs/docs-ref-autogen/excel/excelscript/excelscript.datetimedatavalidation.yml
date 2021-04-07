@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula1:member
   package: ExcelScript!
   fullName: formula1
-  summary: 'Spécifie l’opérande de droite lorsque la propriété Operator est définie sur un opérateur binaire tel que GreaterThan (l’opérande de gauche est la valeur que l’utilisateur tente d’entrer dans la cellule). Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande inférieur. Lors de la définition de la valeur, elle peut être transmise sous forme de date, d’objet Range ou de formule de chaîne (où la chaîne est soit une date/heure JSON au format ISO8601, soit une référence de cellule telle que « = a1 », soit une formule comme « = MIN (a1, B1) »). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple : "= 10", "= a1", "= SUM (a1 : B5)", etc.'
+  summary: 'Spécifie l’opérande de droite lorsque la propriété de l’opérateur est définie sur un opérateur binaire tel que GreaterThan (l’opérande gauche est la valeur que l’utilisateur tente d’entrer dans la cellule). Avec les opérateurs ternaires Between et NotBetween, spécifie l’opérande lié inférieur. Lors de la définition de la valeur, elle peut être transmise sous la forme d’une date, d’un objet Range ou d’une formule de chaîne (où la chaîne est une date/heure stringified au format ISO8601, une référence de cellule telle que « =A1 » ou une formule comme « =MIN(A1, B1) »). Lors de la récupération de la valeur, elle est toujours renvoyée sous la mesure d’une formule de chaîne, par exemple : " =10 « , « =A1 », « =SUM(A1:B5) », etc.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DateTimeDataValidation#formula2:member
   package: ExcelScript!
   fullName: formula2
-  summary: 'Avec les opérateurs ternaires entre et NotBetween, spécifie l’opérande supérieur. N’est pas utilisé avec les opérateurs binaires, tels que GreaterThan. Lors de la définition de la valeur, elle peut être passée sous forme de date, d’objet Range ou de chaîne (où la chaîne est soit une date/heure JSON au format ISO8601, soit une référence de cellule telle que « = a1 », soit une formule comme « = MIN (a1, B1) »). Lors de la récupération de la valeur, elle est toujours renvoyée sous la forme d’une formule de chaîne, par exemple : "= 10", "= a1", "= SUM (a1 : B5)", etc.'
+  summary: 'Avec les opérateurs ternaires Between et NotBetween, spécifie l’opérande lié supérieur. N’est pas utilisé avec les opérateurs binaires, tels que GreaterThan. Lors de la définition de la valeur, elle peut être transmise sous la forme d’une date, d’un objet Range ou d’une chaîne (où la chaîne est une date/heure stringified au format ISO8601, une référence de cellule telle que « =A1 » ou une formule telle que « =MIN(A1, B1) »). Lors de la récupération de la valeur, elle est toujours renvoyée sous la mesure d’une formule de chaîne, par exemple : " =10 « , « =A1 », « =SUM(A1:B5) », etc.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationOperator:enum" />
 metadata:
-  ms.openlocfilehash: e996fdc017fd932a17031a0bb57255f84f01759c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c1b292157a719eed4f7ba1716623d9e64f359ae2
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415429"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607038"

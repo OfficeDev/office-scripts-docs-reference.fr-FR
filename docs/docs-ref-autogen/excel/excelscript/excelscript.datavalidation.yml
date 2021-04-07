@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: getIgnoreBlanks()
-  summary: Indique si la validation des données est effectuée sur des cellules vides, la valeur par défaut est true.
+  summary: Spécifie si la validation des données sera effectuée sur des cellules vides. La valeur par défaut est `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: Renvoie un RangeAreas comprenant une ou plusieurs plages rectangulaires, avec des valeurs de cellule non valide. Si toutes les valeurs de cellule sont valides, cette fonction renverra une valeur null.
+  summary: Renvoie un `RangeAreas` objet, comprenant une ou plusieurs plages rectangulaires, avec des valeurs de cellule non valides. Si toutes les valeurs de cellule sont valides, cette fonction retourne `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
   package: ExcelScript!
   fullName: getRule()
-  summary: Règle de validation des données qui contient différents critères de validation de données.
+  summary: Règle de validation des données qui contient différents types de critères de validation des données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Type de validation des données, voir ExcelScript. DataValidationType pour plus d’informations.
+  summary: Type de validation des données, voir `ExcelScript.DataValidationType` pour plus d’informations.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. Renvoie la valeur true si toutes les valeurs de cellule sont valides ou la valeur false si toutes les valeurs de cellule ne sont pas valides. Renvoie la valeur null si les valeurs des cellules valides et non valides sont comprises dans la plage.
+  summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. Renvoie `true` si toutes les valeurs de cellule sont valides ou si toutes les `false` valeurs de cellule ne sont pas valides. Renvoie s’il existe des valeurs de cellule valides et `null` non valides dans la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
   package: ExcelScript!
   fullName: setIgnoreBlanks(ignoreBlanks)
-  summary: Indique si la validation des données est effectuée sur des cellules vides, la valeur par défaut est true.
+  summary: Spécifie si la validation des données sera effectuée sur des cellules vides. La valeur par défaut est `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
   package: ExcelScript!
   fullName: setRule(rule)
-  summary: Règle de validation des données qui contient différents critères de validation de données.
+  summary: Règle de validation des données qui contient différents types de critères de validation des données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,9 +182,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0a1ef3975375fe45241680d6b0228b2ba31aefd0
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6d3151f99740e7628302eb6bea65e58fe153cc6
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415560"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606536"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Indique le format de bordure du titre de l’axe du graphique, qui inclut la couleur, le style de style et le poids.
+  summary: Spécifie le format de bordure du titre de l’axe du graphique, qui inclut la couleur, le style de trait et l’pondération.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFill:member(1)
   package: ExcelScript!
   fullName: getFill()
-  summary: Cette énumération spécifie la mise en forme du titre de l’axe du graphique.
+  summary: Spécifie la mise en forme du remplissage du titre de l’axe du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAxisTitleFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Spécifie les attributs de police du titre de l’axe du graphique, tels que le nom de la police, la taille de police, la couleur, etc., de l’objet de titre d’axe de graphique.
+  summary: Spécifie les attributs de police du titre de l’axe du graphique, tels que le nom de la police, la taille de police ou la couleur, de l’objet de titre de l’axe du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: aa3d5e5f80de2db848dd49faa79439f0a0490d45
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2a8b4cfada09ede9adb3bf5501b9032ad26247ea
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420061"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606599"

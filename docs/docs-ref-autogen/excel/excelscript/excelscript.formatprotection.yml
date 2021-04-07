@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#getFormulaHidden:member(1)
   package: ExcelScript!
   fullName: getFormulaHidden()
-  summary: Indique si Excel masque la formule pour les cellules de la plage. Une valeur null indique que les paramètres de formule masquée ne sont pas les mêmes sur l’ensemble de la plage.
+  summary: Spécifie si Excel masque la formule pour les cellules de la plage. Une valeur indique que la plage entière n’a pas de paramètre de `null` formule masquée uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#getLocked:member(1)
   package: ExcelScript!
   fullName: getLocked()
-  summary: Indique si Excel verrouille les cellules dans l’objet. Une valeur null indique que les paramètres de verrouillage ne sont pas les mêmes sur l’ensemble de la plage.
+  summary: Spécifie si Excel verrouille les cellules de l’objet. Une valeur indique que la plage entière `null` n’a pas de paramètre de verrouillage uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#setFormulaHidden:member(1)
   package: ExcelScript!
   fullName: setFormulaHidden(formulaHidden)
-  summary: Indique si Excel masque la formule pour les cellules de la plage. Une valeur null indique que les paramètres de formule masquée ne sont pas les mêmes sur l’ensemble de la plage.
+  summary: Spécifie si Excel masque la formule pour les cellules de la plage. Une valeur indique que la plage entière n’a pas de paramètre de `null` formule masquée uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.FormatProtection#setLocked:member(1)
   package: ExcelScript!
   fullName: setLocked(locked)
-  summary: Indique si Excel verrouille les cellules dans l’objet. Une valeur null indique que les paramètres de verrouillage ne sont pas les mêmes sur l’ensemble de la plage.
+  summary: Spécifie si Excel verrouille les cellules de l’objet. Une valeur indique que la plage entière `null` n’a pas de paramètre de verrouillage uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -70,9 +70,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 91b7c8a1aebc842baacb87ae53c768d1cb0a097f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: abbdbc1d833fa3521bfd2966a187a6d5b274d7ac
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412467"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607248"

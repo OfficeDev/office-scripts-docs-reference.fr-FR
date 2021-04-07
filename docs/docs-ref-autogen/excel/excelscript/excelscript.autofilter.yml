@@ -3,7 +3,7 @@ name: ExcelScript.AutoFilter
 uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
-summary: Représente l’objet AutoFilter. Filtre automatique transforme les valeurs d’une colonne Excel en filtres spécifiques en fonction du contenu de la cellule.
+summary: Représente `AutoFilter` l’objet. Le filtre automatique transforme les valeurs de la colonne Excel en filtres spécifiques basés sur le contenu de la cellule.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,10 +26,10 @@ methods:
               ): void;
     parameters:
     - id: range
-      description: Plage sur laquelle s’appliquera le filtre automatique.
+      description: Plage à laquelle le filtre automatique s’appliquera.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: columnIndex
-      description: Index de colonne de base zéro auquel le filtre automatique est appliqué.
+      description: Index de colonne de base 0 auquel le filtre automatique est appliqué.
       type: number
     - id: criteria
       description: Critères de filtre.
@@ -67,7 +67,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getEnabled:member(1)
   package: ExcelScript!
   fullName: getEnabled()
-  summary: Indique si le filtre automatique est activé.
+  summary: Spécifie si le filtre automatique est activé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -80,7 +80,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getIsDataFiltered:member(1)
   package: ExcelScript!
   fullName: getIsDataFiltered()
-  summary: Indique si le filtre automatique a des critères de filtre.
+  summary: Spécifie si le filtre automatique a des critères de filtre.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Renvoie l' `Range` objet qui représente la plage à laquelle `AutoFilter` s’applique. S’il n’y a aucun `Range` objet associé au `AutoFilter`<!-- -->, cette méthode renvoie un objet dont la `isNullObject` propriété a la valeur `true`<!-- -->.
+  summary: Renvoie `Range` l’objet qui représente la plage à laquelle le filtre automatique s’applique. Si aucun objet n’est associé au filtre automatique, cette méthode renvoie un objet dont la propriété `Range` `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1dbc1c191f25e138a30a64923da20b27f0f1d6d8
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: a865026c221bc283e64e00b8829f0eb05148ec61
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554666"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606613"

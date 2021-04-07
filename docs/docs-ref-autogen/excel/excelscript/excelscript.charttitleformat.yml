@@ -3,7 +3,7 @@ name: ExcelScript.ChartTitleFormat
 uid: ExcelScript!ExcelScript.ChartTitleFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTitleFormat
-summary: Permet d’accéder à la mise en forme Office Art pour le titre du graphique.
+summary: Permet d’accéder aux options de mise en forme pour un titre de graphique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitleFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Représente le format de bordure du titre du graphique, qui inclut la couleur, le style de style et le poids.
+  summary: Représente le format de bordure du titre du graphique, qui inclut la couleur, le style de trait et l’pondération.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTitleFormat#getFont:member(1)
   package: ExcelScript!
   fullName: getFont()
-  summary: Représente les attributs de police (nom de la police, taille de police, couleur, etc.) pour un objet.
+  summary: Représente les attributs de police (tels que le nom de police, la taille et la couleur de police) d’un objet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: fd2f4dd5f848a50004c41c46601def48bd710026
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c9eba7efeaa42e00ebb73c9b4aeeb2ba736dec61
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416008"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606828"

@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowAutoFilter:member
   package: ExcelScript!
   fullName: allowAutoFilter
-  summary: Représente l’option de protection de feuille de calcul qui autorise l’utilisation de la fonctionnalité Filtre automatique.
+  summary: Représente l’option de protection de feuille de calcul qui autorise l’utilisation de la fonctionnalité de filtre automatique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteColumns:member
   package: ExcelScript!
   fullName: allowDeleteColumns
-  summary: Représente l’option de protection de feuille de calcul qui autorise la suppression des colonnes.
+  summary: Représente l’option de protection de feuille de calcul permettant la suppression de colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowDeleteRows:member
   package: ExcelScript!
   fullName: allowDeleteRows
-  summary: Représente l’option de protection de feuille de calcul qui autorise la suppression des lignes.
+  summary: Représente l’option de protection de feuille de calcul permettant la suppression des lignes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditObjects:member
   package: ExcelScript!
   fullName: allowEditObjects
-  summary: Représente l’option de protection de feuille de calcul qui autorise la modification d’objets.
+  summary: Représente l’option de protection de feuille de calcul permettant la modification des objets.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowEditScenarios:member
   package: ExcelScript!
   fullName: allowEditScenarios
-  summary: Représente l’option de protection de feuille de calcul qui autorise la modification de scénarios.
+  summary: Représente l’option de protection de feuille de calcul qui permet la modification des scénarios.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,7 +109,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertColumns:member
   package: ExcelScript!
   fullName: allowInsertColumns
-  summary: Représente l’option de protection de feuille de calcul qui autorise l’insertion des colonnes.
+  summary: Représente l’option de protection de feuille de calcul qui autorise l’insertion de colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertHyperlinks:member
   package: ExcelScript!
   fullName: allowInsertHyperlinks
-  summary: Représente l’option de protection de feuille de calcul qui autorise l’insertion des liens hypertexte.
+  summary: Représente l’option de protection de feuille de calcul qui autorise l’insertion de liens hypertexte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowInsertRows:member
   package: ExcelScript!
   fullName: allowInsertRows
-  summary: Représente l’option de protection de feuille de calcul qui autorise l’insertion des lignes.
+  summary: Représente l’option de protection de feuille de calcul permettant l’insertion de lignes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowPivotTables:member
   package: ExcelScript!
   fullName: allowPivotTables
-  summary: Représente l’option de protection de feuille de calcul qui autorise l’utilisation de la fonctionnalité Tableau croisé dynamique.
+  summary: Représente l’option de protection de feuille de calcul qui autorise l’utilisation de la fonctionnalité de tableau croisé dynamique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -157,7 +157,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetProtectionOptions#allowSort:member
   package: ExcelScript!
   fullName: allowSort
-  summary: Représente l’option de protection de feuille de calcul qui autorise l’utilisation de la fonctionnalité Tri.
+  summary: Représente l’option de protection de feuille de calcul qui autorise l’utilisation de la fonctionnalité de tri.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -178,9 +178,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ProtectionSelectionMode:enum" />
 metadata:
-  ms.openlocfilehash: d4d1d23a781e1be35d76429ab5af1d60d5d696c5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0772bfad59e8d426f5f989afdd69557ba5d49c10
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419228"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51605289"

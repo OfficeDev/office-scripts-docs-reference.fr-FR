@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalColorScaleCriterion
 uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalColorScaleCriterion
-summary: Représente un critère d’étendue de couleur qui contient un type, une valeur et une couleur.
+summary: Représente un critère d’échelle de couleur qui contient un type, une valeur et une couleur.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#color:member
   package: ExcelScript!
   fullName: color
-  summary: Représentation de code de couleur HTML de la couleur d’une image d’une couleur (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur d’échelle de couleur (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#formula:member
   package: ExcelScript!
   fullName: formula
-  summary: Nombre, formule ou null (si le type est LowestValue).
+  summary: Un nombre, une formule ou `null` (le `type` cas `lowestValue`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ConditionalColorScaleCriterion#type:member
   package: ExcelScript!
   fullName: type
-  summary: La formule conditionnelle de critère qui doit être basée.
+  summary: Sur quoi la formule conditionnelle critère doit être basée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatColorCriterionType:enum" />
 metadata:
-  ms.openlocfilehash: 25bac1cb6537ddbb319c9a9371c7e8dbcfd0ba2b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 25ed1beb5905b9dc3fe38a118f5191b51cdfabcb
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419487"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607115"

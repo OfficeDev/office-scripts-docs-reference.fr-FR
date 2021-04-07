@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getSideIndex:member(1)
   package: ExcelScript!
   fullName: getSideIndex()
-  summary: Valeur constante qui indique un côté spécifique de la bordure. Pour plus d’informations, voir ExcelScript. BorderIndex.
+  summary: Valeur constante qui indique un côté spécifique de la bordure. Pour `ExcelScript.BorderIndex` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir ExcelScript. BorderLineStyle.
+  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour `ExcelScript.BorderLineStyle` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour la bordure de plage, la valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la bordure n’a pas de paramètre `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: Spécifie l'épaisseur de la bordure autour d'une plage. Pour plus d’informations, voir ExcelScript. BorderWeight.
+  summary: Spécifie l'épaisseur de la bordure autour d'une plage. Pour `ExcelScript.BorderWeight` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Code couleur HTML qui représente la couleur de la ligne de bordure, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour plus d’informations, voir ExcelScript. BorderLineStyle.
+  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour `ExcelScript.BorderLineStyle` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Spécifie un double qui éclaircit ou assombrit une couleur pour une bordure de plage, la valeur est comprise entre-1 (sombre) et 1 (le plus clair), 0 pour la couleur d’origine. Une valeur null indique que la bordure n’a pas de paramètre tintAndShade uniforme.
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour la bordure de plage, la valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la bordure n’a pas de paramètre `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeBorder#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: Spécifie l'épaisseur de la bordure autour d'une plage. Pour plus d’informations, voir ExcelScript. BorderWeight.
+  summary: Spécifie l'épaisseur de la bordure autour d'une plage. Pour `ExcelScript.BorderWeight` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,9 +143,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5f8e2551cc91dde4ada9a6226243454c3213a1d6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c807283501f63bac9e10c3d2e16e3b91ea5be940
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411956"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607178"

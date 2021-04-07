@@ -3,7 +3,7 @@ name: ExcelScript.CommentReply
 uid: ExcelScript!ExcelScript.CommentReply:interface
 package: ExcelScript!
 fullName: ExcelScript.CommentReply
-summary: Représente une réponse de commentaire dans le classeur.
+summary: Représente une réponse de commentaire dans le workbook.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getContent:member(1)
   package: ExcelScript!
   fullName: getContent()
-  summary: Contenu de la réponse de commentaire. La chaîne est en texte brut.
+  summary: Contenu de la réponse au commentaire. La chaîne est en texte simple.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Spécifie l’identificateur de réponse de commentaire.
+  summary: Spécifie l’identificateur de réponse du commentaire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getMentions:member(1)
   package: ExcelScript!
   fullName: getMentions()
-  summary: Entités (par exemple, les personnes) mentionnées dans les commentaires.
+  summary: Entités (par exemple, personnes) mentionnées dans les commentaires.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: État de la réponse de commentaire. La valeur « true » signifie que la réponse est à l’État résolu.
+  summary: État de réponse du commentaire. Valeur de signifie `true` que la réponse est dans l’état résolu.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: Contenu de commentaire enrichi (par exemple, mentions dans les commentaires). Cette chaîne n’est pas destinée à être affichée aux utilisateurs finaux. Votre complément doit uniquement l’utiliser pour analyser le contenu de commentaire enrichi.
+  summary: Contenu de commentaire enrichi (par exemple, mentions dans les commentaires). Cette chaîne n’est pas destinée à être affichée aux utilisateurs finaux. Votre add-in ne doit l’utiliser que pour l’utilisation du contenu de commentaires enrichis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#setContent:member(1)
   package: ExcelScript!
   fullName: setContent(content)
-  summary: Contenu de la réponse de commentaire. La chaîne est en texte brut.
+  summary: Contenu de la réponse au commentaire. La chaîne est en texte simple.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#updateMentions:member(1)
   package: ExcelScript!
   fullName: updateMentions(contentWithMentions)
-  summary: Met à jour le contenu de commentaire avec une chaîne spécialement mise en forme et une liste de mentions.
+  summary: Met à jour le contenu des commentaires avec une chaîne spécialement mise en forme et une liste de mentions.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,15 +194,15 @@ methods:
     content: 'updateMentions(contentWithMentions: CommentRichContent): void;'
     parameters:
     - id: contentWithMentions
-      description: Contenu du commentaire. Il contient une chaîne spécialement mise en forme et une liste de mentions qui seront analysées dans la chaîne lors de son affichage par Excel.
+      description: Contenu du commentaire. Il contient une chaîne spécialement mise en forme et une liste de mentions qui seront affichées par Excel dans la chaîne.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 31bdb0a4b91653fb02a9f9d3d5612bc4de4dcc97
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 979eadeede217100141cf9aa45a39fbaf0c6ab6f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416798"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606768"

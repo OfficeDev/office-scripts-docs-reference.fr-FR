@@ -3,7 +3,7 @@ name: ExcelScript.ChartLegendEntry
 uid: ExcelScript!ExcelScript.ChartLegendEntry:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartLegendEntry
-summary: Représente le legendEntry dans legendEntryCollection.
+summary: Représente l’entrée de légende dans `legendEntryCollection`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Cette énumération spécifie la hauteur de la fonction legendEntry sur la légende du graphique.
+  summary: Spécifie la hauteur de l’entrée de légende sur la légende du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getIndex:member(1)
   package: ExcelScript!
   fullName: getIndex()
-  summary: Spécifie l’index de legendEntry dans la légende du graphique.
+  summary: Spécifie l’index de l’entrée de légende dans la légende du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Spécifie la partie gauche d’un graphique legendEntry.
+  summary: Spécifie la valeur gauche d’une entrée de légende de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Spécifie le bord supérieur d’un graphique legendEntry.
+  summary: Spécifie le haut d’une entrée de légende de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Représente la partie visible d’une entrée de légende de graphique.
+  summary: Représente la visibilité d’une entrée de légende de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Représente la largeur de legendEntry sur la légende d’un graphique.
+  summary: Représente la largeur de l’entrée de légende sur la légende du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegendEntry#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Représente la partie visible d’une entrée de légende de graphique.
+  summary: Représente la visibilité d’une entrée de légende de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -105,9 +105,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 8bce41532fd56c707fdc407fcb976525c2738314
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d98e7450d1c9d3c24a5b91dd6b32f77ae37fd31f
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419767"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606564"

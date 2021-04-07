@@ -3,7 +3,7 @@ name: ExcelScript.PivotLabelFilter
 uid: ExcelScript!ExcelScript.PivotLabelFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotLabelFilter
-summary: Modèle configurable pour un filtre d’étiquettes à appliquer à un champ de tableau croisé dynamique. L `condition` 'définit les critères qui doivent être définis afin que le filtre fonctionne.
+summary: Modèle configurable pour un filtre d’étiquette à appliquer à un champ de tableau croisé dynamique. Définit `condition` les critères à définir pour que le filtre fonctionne.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#condition:member
   package: ExcelScript!
   fullName: condition
-  summary: Spécifie la condition pour le filtre, qui définit les critères de filtrage nécessaires.
+  summary: Spécifie la condition du filtre, qui définit les critères de filtrage nécessaires.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#exclusive:member
   package: ExcelScript!
   fullName: exclusive
-  summary: Si la valeur est true, Filter *exclut* les éléments qui répondent aux critères. La valeur par défaut est false (filtre pour inclure les éléments qui satisfont les critères).
+  summary: If `true`<!-- -->, le *filtre exclut les* éléments qui répondent aux critères. La valeur par défaut `false` est (filtre pour inclure les éléments qui répondent aux critères).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#lowerBound:member
   package: ExcelScript!
   fullName: lowerBound
-  summary: 'La limite inférieure de la plage pour la condition entre le filtre. Remarque : une chaîne numérique est traitée comme un nombre lors d’une comparaison avec d’autres chaînes numériques.'
+  summary: 'Limite inférieure de la plage pour la `between` condition de filtre. Remarque : une chaîne numérique est traitée comme un nombre lorsqu’elle est comparée à d’autres chaînes numériques.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#substring:member
   package: ExcelScript!
   fullName: substring
-  summary: Sous-chaîne utilisée pour `BeginsWith`<!-- -->, `EndsWith`<!-- -->et les `Contains` conditions de filtrage.
+  summary: Sous-stration utilisée pour `beginsWith`<!-- -->, `endsWith`<!-- -->et `contains` filtrer les conditions.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotLabelFilter#upperBound:member
   package: ExcelScript!
   fullName: upperBound
-  summary: 'La limite supérieure de la plage pour la condition entre le filtre. Remarque : une chaîne numérique est traitée comme un nombre lors d’une comparaison avec d’autres chaînes numériques.'
+  summary: 'Limite supérieure de la plage pour la `between` condition de filtre. Remarque : une chaîne numérique est traitée comme un nombre lorsqu’elle est comparée à d’autres chaînes numériques.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -70,9 +70,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: d030957f0b9d36c810d4e9b9016f5ec9ba5f704a
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c6080eb33854c086d20c526e506de43a898f0463
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412054"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606384"

@@ -3,7 +3,7 @@ name: ExcelScript.AggregationFunction
 uid: ExcelScript!ExcelScript.AggregationFunction:enum
 package: ExcelScript!
 fullName: ExcelScript.AggregationFunction
-summary: Fonction d’agrégation pour le champ de tableau croisé dynamique de données.
+summary: Fonction d’agrégation pour DataPivotField.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -15,55 +15,55 @@ fields:
 - name: average
   uid: ExcelScript!ExcelScript.AggregationFunction.average:member
   package: ExcelScript!
-  summary: Agrégation à l’aide de la moyenne des données, équivalente à la fonction AVERage.
+  summary: Agréger à l’aide de la moyenne des données, équivalente à la fonction AVERAGE.
 - name: count
   uid: ExcelScript!ExcelScript.AggregationFunction.count:member
   package: ExcelScript!
-  summary: Agrégation à l’aide du nombre d’éléments dans les données, équivalent à la fonction NBVAL.
+  summary: Regroupement à l’aide du nombre d’éléments dans les données, équivalent à la fonction COUNTA.
 - name: countNumbers
   uid: ExcelScript!ExcelScript.AggregationFunction.countNumbers:member
   package: ExcelScript!
-  summary: Agrégation à l’aide du nombre de nombres dans les données, équivalent à la fonction COUNT.
+  summary: Regroupement à l’aide du nombre de nombres dans les données, équivalent à la fonction COUNT.
 - name: max
   uid: ExcelScript!ExcelScript.AggregationFunction.max:member
   package: ExcelScript!
-  summary: Agrégation à l’aide de la valeur maximale des données, équivalente à la fonction MAX.
+  summary: Regroupement à l’aide de la valeur maximale des données, équivalente à la fonction MAX.
 - name: min
   uid: ExcelScript!ExcelScript.AggregationFunction.min:member
   package: ExcelScript!
-  summary: Agrégation à l’aide de la valeur minimale des données, équivalente à la fonction MIN.
+  summary: Agréger à l’aide de la valeur minimale des données, équivalente à la fonction MIN.
 - name: product
   uid: ExcelScript!ExcelScript.AggregationFunction.product:member
   package: ExcelScript!
-  summary: Agrégation à l’aide du produit des données, équivalent à la fonction PRODUCT.
+  summary: Regroupement à l’aide du produit des données, équivalent à la fonction PRODUCT.
 - name: standardDeviation
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviation:member
   package: ExcelScript!
-  summary: Agrégat à l’aide de l’écart-type des données, équivalent à la fonction STDEV.
+  summary: Agréger à l’aide de l’écart-type des données, équivalent à la fonction STDEV.
 - name: standardDeviationP
   uid: ExcelScript!ExcelScript.AggregationFunction.standardDeviationP:member
   package: ExcelScript!
-  summary: Agrégat à l’aide de l’écart-type des données, équivalent à la fonction STDEVP.
+  summary: Regroupement à l’aide de l’écart type des données, équivalent à la fonction STDEVP.
 - name: sum
   uid: ExcelScript!ExcelScript.AggregationFunction.sum:member
   package: ExcelScript!
-  summary: Agrégat à l’aide de la somme des données, équivalente à la fonction SUM.
+  summary: Agréger à l’aide de la somme des données, équivalente à la fonction SUM.
 - name: unknown
   uid: ExcelScript!ExcelScript.AggregationFunction.unknown:member
   package: ExcelScript!
-  summary: La fonction d’agrégation est inconnue ou non prise en charge.
+  summary: La fonction d’agrégation est inconnue ou non.
 - name: variance
   uid: ExcelScript!ExcelScript.AggregationFunction.variance:member
   package: ExcelScript!
-  summary: Agrégat à l’aide de la variance des données, équivalente à la fonction VAR.
+  summary: Agréger à l’aide de la variance des données, équivalente à la fonction VAR.
 - name: varianceP
   uid: ExcelScript!ExcelScript.AggregationFunction.varianceP:member
   package: ExcelScript!
-  summary: Agrégation à l’aide de la variance des données, équivalente à la fonction VARP.
+  summary: Regroupement à l’aide de la variance des données, équivalente à la fonction VARP.
 metadata:
-  ms.openlocfilehash: fd80d4534a8db2e7a409a6b8e45e529b9bfcaddc
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e7c0e255ebfdaf6446c2c8cca20171cff0fdcbcf
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417369"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51606695"

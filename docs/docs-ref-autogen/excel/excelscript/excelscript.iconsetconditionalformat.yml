@@ -3,7 +3,7 @@ name: ExcelScript.IconSetConditionalFormat
 uid: ExcelScript!ExcelScript.IconSetConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.IconSetConditionalFormat
-summary: Représente un critère IconSet pour la mise en forme conditionnelle.
+summary: Représente un jeu de critères de jeu d’icônes pour la mise en forme conditionnelle.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getCriteria:member(1)
   package: ExcelScript!
   fullName: getCriteria()
-  summary: Un tableau de critères et de IconSets pour les règles et les icônes personnalisées potentielles pour les icônes conditionnelles. Notez que pour le premier critère, seule l’icône personnalisée peut être modifiée, tandis que le type, la formule et l’opérateur seront ignorés lors de la définition.
+  summary: Tableau de critères et d’ensembles d’icônes pour les règles et icônes personnalisées potentielles pour les icônes conditionnelles. Notez que pour le premier critère, seule l’icône personnalisée peut être modifiée, tandis que le type, la formule et l’opérateur sont ignorés lorsqu’ils sont définies.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: getReverseIconOrder()
-  summary: Si la valeur est true, inverse l’ordre des icônes pour la IconSet. Notez que cette valeur ne peut pas être définie si des icônes personnalisées sont utilisées.
+  summary: If `true`<!-- -->, inverse les commandes d’icône pour le jeu d’icônes. Notez que cela ne peut pas être définie si des icônes personnalisées sont utilisées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getShowIconOnly:member(1)
   package: ExcelScript!
   fullName: getShowIconOnly()
-  summary: Si la valeur est True, masque les valeurs et affiche uniquement les icônes.
+  summary: If `true`<!-- -->, masque les valeurs et affiche uniquement les icônes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Si ce paramètre est défini, il affiche l’option IconSet pour le format conditionnel.
+  summary: Si elle est définie, affiche l’option de jeu d’icônes pour la mise en forme conditionnelle.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setCriteria:member(1)
   package: ExcelScript!
   fullName: setCriteria(criteria)
-  summary: Un tableau de critères et de IconSets pour les règles et les icônes personnalisées potentielles pour les icônes conditionnelles. Notez que pour le premier critère, seule l’icône personnalisée peut être modifiée, tandis que le type, la formule et l’opérateur seront ignorés lors de la définition.
+  summary: Tableau de critères et d’ensembles d’icônes pour les règles et icônes personnalisées potentielles pour les icônes conditionnelles. Notez que pour le premier critère, seule l’icône personnalisée peut être modifiée, tandis que le type, la formule et l’opérateur sont ignorés lorsqu’ils sont définies.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setReverseIconOrder:member(1)
   package: ExcelScript!
   fullName: setReverseIconOrder(reverseIconOrder)
-  summary: Si la valeur est true, inverse l’ordre des icônes pour la IconSet. Notez que cette valeur ne peut pas être définie si des icônes personnalisées sont utilisées.
+  summary: If `true`<!-- -->, inverse les commandes d’icône pour le jeu d’icônes. Notez que cela ne peut pas être définie si des icônes personnalisées sont utilisées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setShowIconOnly:member(1)
   package: ExcelScript!
   fullName: setShowIconOnly(showIconOnly)
-  summary: Si la valeur est True, masque les valeurs et affiche uniquement les icônes.
+  summary: If `true`<!-- -->, masque les valeurs et affiche uniquement les icônes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -116,7 +116,7 @@ methods:
   uid: ExcelScript!ExcelScript.IconSetConditionalFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Si ce paramètre est défini, il affiche l’option IconSet pour le format conditionnel.
+  summary: Si elle est définie, affiche l’option de jeu d’icônes pour la mise en forme conditionnelle.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 097baba5d4e77c03e543300da7c48c70638dd62c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 0fd12949aad6fc518834dfe02a0fd9aa01dae20a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412327"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607227"
