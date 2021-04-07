@@ -3,7 +3,7 @@ name: ExcelScript.SlicerItem
 uid: ExcelScript!ExcelScript.SlicerItem:interface
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
-summary: Représente un élément de segment dans un Slicer.
+summary: Représente un élément de slicer dans un slicer.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
   package: ExcelScript!
   fullName: getHasData()
-  summary: True si l’élément de segment comporte des données.
+  summary: La valeur est `true` si l’élément de slicer possède des données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
   package: ExcelScript!
   fullName: getIsSelected()
-  summary: True si l’élément de slicer est sélectionné ; sinon False. Définir cette valeur n’efface pas état autres SlicerItems sélectionné. Par défaut, si l’élément de segment est le seul sélectionné, lorsqu’il est désélectionné, tous les éléments sont sélectionnés.
+  summary: La valeur `true` est si l’élément de slicer est sélectionné. La définition de cette valeur n’effacera pas l’état sélectionné des autres éléments de slicer. Par défaut, si l’élément de slicer est le seul sélectionné, lorsqu’il est désélectionnés, tous les éléments sont sélectionnés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Représente le titre affiché dans l’interface utilisateur.
+  summary: Représente le titre affiché dans l’interface utilisateur Excel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
   package: ExcelScript!
   fullName: setIsSelected(isSelected)
-  summary: True si l’élément de slicer est sélectionné ; sinon False. Définir cette valeur n’efface pas état autres SlicerItems sélectionné. Par défaut, si l’élément de segment est le seul sélectionné, lorsqu’il est désélectionné, tous les éléments sont sélectionnés.
+  summary: La valeur `true` est si l’élément de slicer est sélectionné. La définition de cette valeur n’effacera pas l’état sélectionné des autres éléments de slicer. Par défaut, si l’élément de slicer est le seul sélectionné, lorsqu’il est désélectionnés, tous les éléments sont sélectionnés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 198e28e187b64e9c64d0b94e95fb91eb7720156c
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cdfae7429391b3992f4f885b23794f5876c6c7fd
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420481"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607353"

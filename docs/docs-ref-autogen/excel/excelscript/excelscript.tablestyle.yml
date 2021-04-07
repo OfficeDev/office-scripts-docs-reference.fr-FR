@@ -3,7 +3,7 @@ name: ExcelScript.TableStyle
 uid: ExcelScript!ExcelScript.TableStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.TableStyle
-summary: Représente un TableStyle, qui définit les éléments de style par région du tableau.
+summary: Représente un style de tableau, qui définit les éléments de style par région du tableau.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Supprime le TableStyle.
+  summary: Supprime le style de tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: Crée un doublon de cette TableStyle avec une copie de tous les éléments de style.
+  summary: Crée une copie de ce style de tableau avec des copies de tous les éléments de style.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Obtient le nom du TableStyle.
+  summary: Obtient le nom du style de tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: Spécifie si cet objet TableStyle est accessible en lecture seule.
+  summary: Spécifie si cet `TableStyle` objet est en lecture seule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.TableStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Obtient le nom du TableStyle.
+  summary: Obtient le nom du style de tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d84ac6abc2294b8f0a754f1554678e1b2433ddf4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 621e00720f56ee4e183f971c9026e7271de9ba4b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419277"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607318"

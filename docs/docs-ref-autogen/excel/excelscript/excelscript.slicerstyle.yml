@@ -3,7 +3,7 @@ name: ExcelScript.SlicerStyle
 uid: ExcelScript!ExcelScript.SlicerStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.SlicerStyle
-summary: Représente un style de segment, qui définit les éléments de style par région du segment.
+summary: Représente un style de slicer, qui définit les éléments de style par région du slicer.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Supprime le SlicerStyle.
+  summary: Supprime le style de slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: Crée un doublon de cette SlicerStyle avec une copie de tous les éléments de style.
+  summary: Crée une copie de ce style de slicer avec des copies de tous les éléments de style.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Obtient le nom de la SlicerStyle.
+  summary: Obtient le nom du style de slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: Spécifie si cet objet SlicerStyle est accessible en lecture seule.
+  summary: Spécifie si cet `SlicerStyle` objet est en lecture seule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Obtient le nom de la SlicerStyle.
+  summary: Obtient le nom du style de slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1bd98885aa1a0790b67701c2500449d2d97aa6b4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: fa5d50110c995d315855f63ac8716c1a9e5dd267
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420460"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607346"

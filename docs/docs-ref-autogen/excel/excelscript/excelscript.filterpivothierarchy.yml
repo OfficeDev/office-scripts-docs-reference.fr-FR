@@ -3,7 +3,7 @@ name: ExcelScript.FilterPivotHierarchy
 uid: ExcelScript!ExcelScript.FilterPivotHierarchy:interface
 package: ExcelScript!
 fullName: ExcelScript.FilterPivotHierarchy
-summary: Représente l’FilterPivotHierarchy Excel.
+summary: Représente la FilterPivotHierarchy Excel.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: ID du filterPivotHierarchy.
+  summary: ID de la FilterPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.FilterPivotHierarchy#getPivotField:member(1)
   package: ExcelScript!
   fullName: getPivotField(name)
-  summary: Obtient un champ de tableau croisé dynamique par nom. Si le champ PivotField n’existe pas, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un champ de tableau croisé dynamique par nom. Si le champ PivotField n’existe pas, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,9 +156,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: af7fd69594be9ce4e054accf9bbc368055e51b8d
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: cf431a5718822ee8d157fdfa96ceca84d87c5323
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554645"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607255"

@@ -3,7 +3,7 @@ name: ExcelScript.Subtotals
 uid: ExcelScript!ExcelScript.Subtotals:interface
 package: ExcelScript!
 fullName: ExcelScript.Subtotals
-summary: Sous-totaux du champ de tableau croisé dynamique.
+summary: Sous-totaux du champ pivot.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#automatic:member
   package: ExcelScript!
   fullName: automatic
-  summary: Si Automatic est défini sur true, toutes les autres valeurs seront ignorées lorsque vous configurez les sous-totaux.
+  summary: Si `Automatic` est définie sur `true`<!-- -->, toutes les autres valeurs seront ignorées lors de la définition de la propriété `Subtotals`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#count:member
   package: ExcelScript!
   fullName: count
-  summary: Count
+  summary: Compte
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -133,7 +133,7 @@ properties:
   uid: ExcelScript!ExcelScript.Subtotals#variance:member
   package: ExcelScript!
   fullName: variance
-  summary: Variante
+  summary: Variance
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,9 +154,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: c75a609fc36f6b00544f4d9437c9c149bcb64848
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: c34f149472ce8c2cde19ce23c5f3cb1e84c2a28a
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419326"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607332"

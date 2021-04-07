@@ -3,7 +3,7 @@ name: ExcelScript.RangeSort
 uid: ExcelScript!ExcelScript.RangeSort:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeSort
-summary: Gère les opérations de tri des objets Range.
+summary: Gère les opérations de tri sur `Range` les objets.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -46,9 +46,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 82bab11b3e24abeb9f053a9f259bfffcbc7e2dd2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: aac26f2501cc8107831122b3f171fc7a52403333
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416567"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607416"

@@ -3,7 +3,7 @@ name: ExcelScript.PivotTableStyle
 uid: ExcelScript!ExcelScript.PivotTableStyle:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotTableStyle
-summary: Représente un style de tableau croisé dynamique, qui définit des éléments de style par région de tableau croisé dynamique.
+summary: Représente un style de tableau croisé dynamique, qui définit les éléments de style par zone de tableau croisé dynamique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#delete:member(1)
   package: ExcelScript!
   fullName: delete()
-  summary: Supprime le tableau croisé dynamique.
+  summary: Supprime le style de tableau croisé dynamique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#duplicate:member(1)
   package: ExcelScript!
   fullName: duplicate()
-  summary: Crée un doublon de cette PivotTableStyle avec une copie de tous les éléments de style.
+  summary: Crée une copie de ce style de tableau croisé dynamique avec des copies de tous les éléments de style.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Obtient le nom du PivotTableStyle.
+  summary: Obtient le nom du style de tableau croisé dynamique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#getReadOnly:member(1)
   package: ExcelScript!
   fullName: getReadOnly()
-  summary: Spécifie si cet objet PivotTableStyle est accessible en lecture seule.
+  summary: Spécifie si cet `PivotTableStyle` objet est en lecture seule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTableStyle#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Obtient le nom du PivotTableStyle.
+  summary: Obtient le nom du style de tableau croisé dynamique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: be48391a3f9d7768d0fa40f7b6af974cb3284a0d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3c51495b8a265c82b23429024dd5328bb324095b
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412026"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607451"

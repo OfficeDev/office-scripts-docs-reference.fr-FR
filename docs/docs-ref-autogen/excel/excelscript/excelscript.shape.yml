@@ -3,7 +3,7 @@ name: ExcelScript.Shape
 uid: ExcelScript!ExcelScript.Shape:interface
 package: ExcelScript!
 fullName: ExcelScript.Shape
-summary: Représente un objet de forme générique dans la feuille de calcul. Une forme peut être une forme géométrique, une ligne, un groupe de formes, etc.
+summary: Représente un objet de forme générique dans la feuille de calcul. Une forme peut être une forme géométrique, un trait, un groupe de formes, etc.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#copyTo:member(1)
   package: ExcelScript!
   fullName: copyTo(destinationSheet)
-  summary: Copie et colle un objet de forme. La forme collée est copiée dans le même emplacement de pixels que cette forme.
+  summary: Copie et copie un `Shape` objet. La forme copiée est copiée au même emplacement en pixels que cette forme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'copyTo(destinationSheet?: Worksheet | string): Shape;'
     parameters:
     - id: destinationSheet
-      description: Feuille à laquelle l’objet de forme est collé. La valeur par défaut est la feuille de calcul de la forme copiée.
+      description: Feuille dans laquelle l’objet de forme sera passé. La valeur par défaut est la feuille de calcul de la forme copiée.
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextDescription:member(1)
   package: ExcelScript!
   fullName: getAltTextDescription()
-  summary: Cette énumération spécifie le texte de description de remplacement d’un objet Shape.
+  summary: Spécifie l’autre texte de description d’un `Shape` objet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -56,7 +56,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAltTextTitle:member(1)
   package: ExcelScript!
   fullName: getAltTextTitle()
-  summary: Cette énumération spécifie le texte de l’autre titre de l’objet Shape.
+  summary: Spécifie le texte de titre de remplacement `Shape` d’un objet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getAsImage:member(1)
   package: ExcelScript!
   fullName: getAsImage(format)
-  summary: Convertit la forme à une image et renvoie l’image comme une chaîne codée en base 64. La résolution est 96. Les seuls formats pris en charge sont `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->, et `ExcelScript.PictureFormat.GIF`<!-- -->.
+  summary: Convertit la forme à une image et renvoie l’image comme une chaîne codée en base 64. La résolution est 96. Les seuls formats pris en charge sont `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->et `ExcelScript.PictureFormat.GIF`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: getGeometricShapeType()
-  summary: Indique le type de forme géométrique de cette forme géométrique. Pour plus d’informations, voir ExcelScript. GeometricShapeType. Renvoie la valeur null si le type de forme n’est pas "GeometricShape".
+  summary: Spécifie le type de forme géométrique de cette forme géométrique. Pour `ExcelScript.GeometricShapeType` plus d’informations, voir. Renvoie `null` si le type de forme n’est pas « GeometricShape ».
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Indique la hauteur, exprimée en points, de la forme. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Spécifie la hauteur, en points, de la forme. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -164,7 +164,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Spécifie l’identificateur de la forme.
+  summary: Spécifie l’identificateur de forme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,7 +190,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -203,7 +203,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLevel:member(1)
   package: ExcelScript!
   fullName: getLevel()
-  summary: Cette énumération spécifie le niveau de la forme spécifiée. Par exemple, un niveau de 0 signifie que la forme ne fait pas partie d’un groupe, un niveau de la forme 1 signifie fait partie d’un groupe de niveau supérieur et un niveau de 2, la forme fait partie d’un groupe sous-blocs de niveau supérieur.
+  summary: Spécifie le niveau de la forme spécifiée. Par exemple, un niveau de 0 signifie que la forme ne fait pas partie d’un groupe, un niveau de la forme 1 signifie fait partie d’un groupe de niveau supérieur et un niveau de 2, la forme fait partie d’un groupe sous-blocs de niveau supérieur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -242,7 +242,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: getLockAspectRatio()
-  summary: Indique si les proportions de cette forme sont verrouillées.
+  summary: Spécifie si les proportions de cette forme sont verrouillées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Cette énumération spécifie le nom de la forme.
+  summary: Spécifie le nom de la forme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,7 +320,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -333,7 +333,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Renvoie le type de cette forme. Pour plus d’informations, voir ExcelScript. Typedeforme.
+  summary: Renvoie le type de cette forme. Pour `ExcelScript.ShapeType` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -346,7 +346,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Indique si la forme est visible.
+  summary: Spécifie si la forme est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -359,7 +359,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Indique la largeur, exprimée en points, de la forme. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Spécifie la largeur, en points, de la forme. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -393,7 +393,7 @@ methods:
     content: 'incrementLeft(increment: number): void;'
     parameters:
     - id: increment
-      description: 'Incrément, en points, la forme est déplacée horizontalement. Une valeur positive déplace la forme vers la droite et une valeur négative la déplace vers la gauche. Si la feuille est orientée de droite à gauche, elle est inversée : les valeurs positives déplacent la forme vers la gauche et les valeurs négatives la déplacent vers la droite.'
+      description: 'Incrémentation, en points, de la forme est déplacée horizontalement. Une valeur positive déplace la forme vers la droite et une valeur négative la déplace vers la gauche. Si la feuille est orientée de droite à gauche, cette valeur est inversée : les valeurs positives déplacent la forme vers la gauche et les valeurs négatives la déplacent vers la droite.'
       type: number
     return:
       type: void
@@ -410,7 +410,7 @@ methods:
     content: 'incrementRotation(increment: number): void;'
     parameters:
     - id: increment
-      description: Nombre de degrés de rotation de la forme. Spécifiez une valeur positive pour faire pivoter la forme dans le sens des aiguilles d'une montre, ou inversement, une valeur négative pour la faire pivoter dans le sens inverse.
+      description: Nombre de degrés de rotation de la forme. Une valeur positive fait pivoter la forme dans le sens des aiguilles d’une montre et une valeur négative la fait pivoter dans le sens contraire des aiguilles d’une montre.
       type: number
     return:
       type: void
@@ -427,7 +427,7 @@ methods:
     content: 'incrementTop(increment: number): void;'
     parameters:
     - id: increment
-      description: Incrément, en points, la forme est déplacée verticalement. en points. Une valeur positive déplace la forme vers le bas et une valeur négative la déplace vers le haut.
+      description: Incrémentation, en points, de la forme est déplacée verticalement. Une valeur positive déplace la forme vers le bas et une valeur négative la déplace vers le haut.
       type: number
     return:
       type: void
@@ -452,10 +452,10 @@ methods:
       description: Indique le rapport entre la hauteur de la forme redimensionnée et sa hauteur actuelle ou originale.
       type: number
     - id: scaleType
-      description: Indique si la forme est mise à l’horizontale par rapport à sa taille initiale ou actuelle. L’option de mise à l’échelle de taille d’origine ne fonctionne que pour les images.
+      description: Spécifie si la forme est mise à l’échelle par rapport à sa taille d’origine ou actuelle. L’option de mise à l’échelle de taille d’origine fonctionne uniquement pour les images.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: Facultatif. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle. Si ce paramètre est omis, il représente le coin supérieur gauche de la forme conserve sa position.
+      description: Facultatif. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle. S’il est omis, il représente le coin supérieur gauche de la forme conserve sa position.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -480,10 +480,10 @@ methods:
       description: Indique le rapport de la largeur de la forme redimensionnée sur sa largeur actuelle ou originale.
       type: number
     - id: scaleType
-      description: Indique si la forme est mise à l’horizontale par rapport à sa taille initiale ou actuelle. L’option de mise à l’échelle de taille d’origine ne fonctionne que pour les images.
+      description: Spécifie si la forme est mise à l’échelle par rapport à sa taille d’origine ou actuelle. L’option de mise à l’échelle de taille d’origine fonctionne uniquement pour les images.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleType:enum" />
     - id: scaleFrom
-      description: Facultatif. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle. Si ce paramètre est omis, il représente le coin supérieur gauche de la forme conserve sa position.
+      description: Facultatif. Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle. S’il est omis, il représente le coin supérieur gauche de la forme conserve sa position.
       type: <xref uid="ExcelScript!ExcelScript.ShapeScaleFrom:enum" />
     return:
       type: void
@@ -492,7 +492,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextDescription:member(1)
   package: ExcelScript!
   fullName: setAltTextDescription(altTextDescription)
-  summary: Cette énumération spécifie le texte de description de remplacement d’un objet Shape.
+  summary: Spécifie l’autre texte de description d’un `Shape` objet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -509,7 +509,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setAltTextTitle:member(1)
   package: ExcelScript!
   fullName: setAltTextTitle(altTextTitle)
-  summary: Cette énumération spécifie le texte de l’autre titre de l’objet Shape.
+  summary: Spécifie le texte de titre de remplacement `Shape` d’un objet.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -526,7 +526,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setGeometricShapeType:member(1)
   package: ExcelScript!
   fullName: setGeometricShapeType(geometricShapeType)
-  summary: Indique le type de forme géométrique de cette forme géométrique. Pour plus d’informations, voir ExcelScript. GeometricShapeType. Renvoie la valeur null si le type de forme n’est pas "GeometricShape".
+  summary: Spécifie le type de forme géométrique de cette forme géométrique. Pour `ExcelScript.GeometricShapeType` plus d’informations, voir. Renvoie `null` si le type de forme n’est pas « GeometricShape ».
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -543,7 +543,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Indique la hauteur, exprimée en points, de la forme. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Spécifie la hauteur, en points, de la forme. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -560,7 +560,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -577,7 +577,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLockAspectRatio:member(1)
   package: ExcelScript!
   fullName: setLockAspectRatio(lockAspectRatio)
-  summary: Indique si les proportions de cette forme sont verrouillées.
+  summary: Spécifie si les proportions de cette forme sont verrouillées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -594,7 +594,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setName:member(1)
   package: ExcelScript!
   fullName: setName(name)
-  summary: Cette énumération spécifie le nom de la forme.
+  summary: Spécifie le nom de la forme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -645,7 +645,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -662,7 +662,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Indique si la forme est visible.
+  summary: Spécifie si la forme est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -679,7 +679,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Indique la largeur, exprimée en points, de la forme. Renvoie une exception d’argument non valide lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Spécifie la largeur, en points, de la forme. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -704,15 +704,15 @@ methods:
     content: 'setZOrder(position: ShapeZOrder): void;'
     parameters:
     - id: position
-      description: Où déplacer la forme dans la pile de plan par rapport aux autres formes. Pour plus d’informations, voir ExcelScript. ShapeZOrder.
+      description: Où déplacer la forme dans la pile de l’ordre de z par rapport aux autres formes. Pour `ExcelScript.ShapeZOrder` plus d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ShapeZOrder:enum" />
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5f91e5e56a6070dafa9e07a6b9d4d48328abfca6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 36a7bebbdc04c3cd25b9e093008cfdb50e67a4c1
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420663"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607395"

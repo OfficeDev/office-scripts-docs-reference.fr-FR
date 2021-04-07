@@ -3,7 +3,7 @@ name: ExcelScript.TopBottomSelectionType
 uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
-summary: Énumération simple pour les filtres Top/Bottom à choisir s’il faut effectuer un filtrage par les numéros de niveau supérieur ou inférieur à N, nombre ou somme des valeurs.
+summary: Une simple enum pour les filtres de haut/bas pour choisir s’il faut filtrer selon le N supérieur ou inférieur N pour cent, nombre ou somme de valeurs.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -11,19 +11,19 @@ fields:
 - name: items
   uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
   package: ExcelScript!
-  summary: Filtre le nombre d’éléments supérieur/inférieur N comme mesuré par la valeur choisie.
+  summary: Filtrer le nombre n supérieur/inférieur d’éléments tel que mesuré par la valeur choisie.
 - name: percent
   uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
   package: ExcelScript!
-  summary: Filtre les N premiers/derniers% des éléments comme mesuré par la valeur choisie.
+  summary: Filtrer le N pourcentage supérieur/inférieur des éléments tel que mesuré par la valeur choisie.
 - name: sum
   uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
   package: ExcelScript!
-  summary: Filtre la somme des N premières/dernières comme mesurée par la valeur choisie.
+  summary: Filtrer la somme N supérieure/inférieure telle que mesurée par la valeur choisie.
 metadata:
-  ms.openlocfilehash: 4772398cc7e7f7f89cef3dcb6148c47eab247ce4
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b9352750a5222ad7c57c6933a3cc26c4c78e7c34
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415168"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607297"

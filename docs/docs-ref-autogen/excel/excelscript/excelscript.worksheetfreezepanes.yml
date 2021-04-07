@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeAt:member(1)
   package: ExcelScript!
   fullName: freezeAt(frozenRange)
-  summary: Définit les cellules figées dans l’affichage de la feuille de calcul active. La plage fournie correspond aux cellules qui seront figées dans le volet supérieur et le volet de gauche.
+  summary: Définit les cellules figées dans l’affichage de la feuille de calcul active. La plage fournie correspond aux cellules figées dans les volets supérieur et gauche.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'freezeAt(frozenRange: Range | string): void;'
     parameters:
     - id: frozenRange
-      description: Plage qui représente les cellules à figer ou null pour supprimer tous les volets figés.
+      description: Plage qui représente les cellules à figer ou pour `null` supprimer tous les volets figés.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeColumns:member(1)
   package: ExcelScript!
   fullName: freezeColumns(count)
-  summary: Figer la première colonne ou les colonnes de la feuille de calcul sur place.
+  summary: Figer la première ou les premières colonnes de la feuille de calcul en place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -38,7 +38,7 @@ methods:
     content: 'freezeColumns(count?: number): void;'
     parameters:
     - id: count
-      description: Nombre facultatif de colonnes à geler, ou zéro pour libérer toutes les colonnes
+      description: Nombre facultatif de colonnes à figer ou zéro pour libérer toutes les colonnes
       type: number
     return:
       type: void
@@ -47,7 +47,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#freezeRows:member(1)
   package: ExcelScript!
   fullName: freezeRows(count)
-  summary: Figer la ou les lignes du haut de la feuille de calcul sur place.
+  summary: Figer la ou les lignes du haut de la feuille de calcul en place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -55,7 +55,7 @@ methods:
     content: 'freezeRows(count?: number): void;'
     parameters:
     - id: count
-      description: Nombre facultatif de lignes à geler, ou zéro pour libérer toutes les lignes
+      description: Nombre facultatif de lignes à figer ou zéro pour libérer toutes les lignes
       type: number
     return:
       type: void
@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Obtient une plage qui définit les cellules figées dans l’affichage de la feuille de calcul active. La plage figée correspond aux cellules qui sont figées dans le volet supérieur et le volet de gauche. S’il n’y a pas de volet figé, cette fonction renvoie un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient une plage qui définit les cellules figées dans l’affichage de la feuille de calcul active. La plage figée correspond aux cellules figées dans le volet supérieur et le volet le plus à gauche. S’il n’existe pas de volet figé, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6e5fbac54802cd580aee48a168245ddc3f4bb59a
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
+  ms.openlocfilehash: 3ee4e99a62a7adfff3ab84a75424673c3cb9f59c
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554047"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607276"
