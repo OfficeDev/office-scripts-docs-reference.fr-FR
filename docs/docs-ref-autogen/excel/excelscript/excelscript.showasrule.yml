@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.ShowAsRule#baseField:member
   package: ExcelScript!
   fullName: baseField
-  summary: La base PivotField pour le calcul ShowAs, le cas échéant en fonction du type ShowAsCalculation, sinon null.
+  summary: Champ de tableau croisé dynamique sur qui baser le calcul, le cas échéant `ShowAs` en fonction du `ShowAsCalculation` type, sinon `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.ShowAsRule#baseItem:member
   package: ExcelScript!
   fullName: baseItem
-  summary: La base Item pour le calcul ShowAs, le cas échéant en fonction du type ShowAsCalculation, sinon null.
+  summary: Élément sur quoi baser le calcul, le cas échéant `ShowAs` en fonction du `ShowAsCalculation` type, sinon `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.ShowAsRule#calculation:member
   package: ExcelScript!
   fullName: calculation
-  summary: Le calcul ShowAs à utiliser pour le champ de données PivotField. Pour plus d’informations, voir ExcelScript. du showascalculation.
+  summary: Calcul `ShowAs` à utiliser pour le champ de tableau croisé dynamique. Pour `ExcelScript.ShowAsCalculation` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.ShowAsCalculation:enum" />
 metadata:
-  ms.openlocfilehash: 67e05ceac6ff56dc434ee1679fc237c15216c871
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6b811a5ed9514c963f23ae2d4bce796431236782
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420502"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607360"

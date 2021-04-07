@@ -3,7 +3,7 @@ name: ExcelScript.ShapeFill
 uid: ExcelScript!ExcelScript.ShapeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeFill
-summary: Représente la mise en forme du remplissage d’un objet Shape.
+summary: Représente la mise en forme de remplissage d’un objet de forme.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getForegroundColor:member(1)
   package: ExcelScript!
   fullName: getForegroundColor()
-  summary: Représente la couleur de remplissage du premier plan de forme au format HTML, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Représente la couleur de premier plan de remplissage de la forme au format HTML, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getTransparency:member(1)
   package: ExcelScript!
   fullName: getTransparency()
-  summary: Spécifie le pourcentage de transparence du remplissage sous la forme d’une valeur comprise entre 0,0 (opaque) et 1,0 (clair). Renvoie null si le type de forme ne prend pas en charge transparence ou le remplissage de forme présente incohérente transparence, par exemple, avec un type de remplissage dégradé.
+  summary: Spécifie le pourcentage de transparence du remplissage sous la forme d’une valeur entre 0.0 (opaque) et 1.0 (clair). Renvoie si le type de forme ne prend pas en charge la transparence ou si le remplissage de la forme présente une transparence incohérente, par exemple avec un `null` type de remplissage dégradé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Renvoie le type de remplissage de la forme. Pour plus d’informations, voir ExcelScript. ShapeFillType.
+  summary: Renvoie le type de remplissage de la forme. Pour `ExcelScript.ShapeFillType` plus d’informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setForegroundColor:member(1)
   package: ExcelScript!
   fullName: setForegroundColor(foregroundColor)
-  summary: Représente la couleur de remplissage du premier plan de forme au format HTML, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Représente la couleur de premier plan de remplissage de la forme au format HTML, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -90,7 +90,7 @@ methods:
     content: 'setSolidColor(color: string): void;'
     parameters:
     - id: color
-      description: Chaîne qui représente la couleur de remplissage au format HTML, sous la forme \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+      description: Chaîne qui représente la couleur de remplissage au format HTML, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
       type: string
     return:
       type: void
@@ -99,7 +99,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeFill#setTransparency:member(1)
   package: ExcelScript!
   fullName: setTransparency(transparency)
-  summary: Spécifie le pourcentage de transparence du remplissage sous la forme d’une valeur comprise entre 0,0 (opaque) et 1,0 (clair). Renvoie null si le type de forme ne prend pas en charge transparence ou le remplissage de forme présente incohérente transparence, par exemple, avec un type de remplissage dégradé.
+  summary: Spécifie le pourcentage de transparence du remplissage sous la forme d’une valeur entre 0.0 (opaque) et 1.0 (clair). Renvoie si le type de forme ne prend pas en charge la transparence ou si le remplissage de la forme présente une transparence incohérente, par exemple avec un `null` type de remplissage dégradé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,9 +113,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 48b38d153693b4ffc41e670286c67f362dd83c89
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5c00db0f8c8884c051c570938f1141d2c08bbd94
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420656"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607388"

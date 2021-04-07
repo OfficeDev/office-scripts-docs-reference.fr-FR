@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: Indique si la correspondance doit être terminée ou partielle. Une correspondance complète correspond à la totalité du contenu de la cellule. Une correspondance partielle correspond à une sous-chaîne dans le contenu de la cellule (par exemple, les `cat` correspondances partielles `caterpillar` et `scatter`<!-- -->). La valeur par défaut est False (partielle).
+  summary: Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l’intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#matchCase:member
   package: ExcelScript!
   fullName: matchCase
-  summary: Indique si la correspondance respecte la casse. Par défaut est false (ou minuscules).
+  summary: Spécifie si la correspondance est sensible à la cas. La valeur `false` par défaut est (ne sensible à la cas).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 56003b6e099d7730216a7a57188780d6b966aeea
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 393ff5521f0413ca8b03d8013cf6735fa24696bc
+  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415126"
+  ms.lasthandoff: 04/07/2021
+  ms.locfileid: "51607262"
