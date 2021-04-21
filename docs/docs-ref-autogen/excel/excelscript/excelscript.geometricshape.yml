@@ -3,7 +3,7 @@ name: ExcelScript.GeometricShape
 uid: ExcelScript!ExcelScript.GeometricShape:interface
 package: ExcelScript!
 fullName: ExcelScript.GeometricShape
-summary: Représente une forme géométrique à l’intérieur d’une feuille de calcul. Une forme géométrique peut être un rectangle, une flèche pleine, un symbole d’équation, un élément d’organigramme, une étoile, une bannière, une légende ou toute autre forme simple dans Excel.
+summary: Représente une forme géométrique à l’intérieur d’une feuille de calcul. Une forme géométrique peut être un rectangle, une flèche de bloc, un symbole d’équation, un élément d’arc de flux, une étoile, une bannière, une callout ou toute autre forme de base dans Excel.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -23,9 +23,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: cf8298436ba13df23d8be7bfd41aee7612240f70
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 4dfea045b85b1e12ab56c49603ae13d4e82f6b12
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412460"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914379"

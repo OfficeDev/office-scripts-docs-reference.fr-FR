@@ -3,7 +3,7 @@ name: ExcelScript.ChartTrendlineLabel
 uid: ExcelScript!ExcelScript.ChartTrendlineLabel:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartTrendlineLabel
-summary: Cet objet représente les attributs d’un objet d’étiquette de courbe de tendance de graphique.
+summary: Cet objet représente les attributs d'un objet d'étiquette de courbe de tendance de graphique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getAutoText:member(1)
   package: ExcelScript!
   fullName: getAutoText()
-  summary: Spécifie si l’étiquette de courbe de tendance génère automatiquement le texte approprié en fonction du contexte.
+  summary: Spécifie si l'étiquette de courbe de tendance génère automatiquement le texte approprié en fonction du contexte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Format de l’étiquette de courbe de tendance du graphique.
+  summary: Format de l'étiquette de courbe de tendance du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Valeur de chaîne qui représente la formule de l’étiquette de courbe de tendance du graphique à l’aide de la notation de style A1.
+  summary: Valeur de chaîne qui représente la formule de l'étiquette de courbe de tendance du graphique à l'aide de la notation de style A1.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Représente la hauteur, exprimée en points, de l’étiquette de tendances du graphique. La valeur est `null` si l’étiquette de courbe de tendance du graphique n’est pas visible.
+  summary: Représente la hauteur, exprimée en points, de l’étiquette de tendances du graphique. La valeur est `null` si l'étiquette de courbe de tendance du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Représente l’alignement horizontal de l’étiquette de tendances du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir. Cette propriété n’est valide que si une étiquette de courbe de tendance a la valeur `TextOrientation` -90, 90 ou 180.
+  summary: Représente l'alignement horizontal de l'étiquette de tendances du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d'informations, voir. Cette propriété n'est valide que si une étiquette de courbe de tendance a la valeur `TextOrientation` -90, 90 ou 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Représente la distance, en points, entre le bord gauche de l’étiquette de la courbe de tendance du graphique et le bord gauche de la zone de graphique. La valeur est `null` si l’étiquette de courbe de tendance du graphique n’est pas visible.
+  summary: Représente la distance, en points, entre le bord gauche de l'étiquette de la courbe de tendance du graphique et le bord gauche de la zone de graphique. La valeur est `null` si l'étiquette de courbe de tendance du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu’il change dans les cellules).
+  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu'il change dans les cellules).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Valeur de chaîne qui représente le code de format de l’étiquette de courbe de tendance.
+  summary: Valeur de chaîne qui représente le code de format de l'étiquette de courbe de tendance.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Représente l’angle vers lequel le texte est orienté pour l’étiquette de courbe de tendance du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
+  summary: Représente l'angle vers lequel le texte est orienté pour l'étiquette de courbe de tendance du graphique. La valeur doit être un integer de -90 à 90 ou l'integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Représente la distance, en points, entre le bord supérieur de l’étiquette de tendances du graphique et le haut de la zone de graphique. La valeur est `null` si l’étiquette de courbe de tendance du graphique n’est pas visible.
+  summary: Représente la distance, en points, entre le bord supérieur de l'étiquette de tendances du graphique et le haut de la zone de graphique. La valeur est `null` si l'étiquette de courbe de tendance du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Représente l’alignement vertical de l’étiquette de tendances du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsqu’une étiquette de courbe `TextOrientation` de tendance a la valeur 0.
+  summary: Représente l'alignement vertical de l'étiquette de tendances du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsqu'une étiquette de courbe `TextOrientation` de tendance a la valeur 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Représente la largeur, exprimée en points, de l’étiquette de tendances du graphique. La valeur est `null` si l’étiquette de courbe de tendance du graphique n’est pas visible.
+  summary: Représente la largeur, exprimée en points, de l’étiquette de tendances du graphique. La valeur est `null` si l'étiquette de courbe de tendance du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setAutoText:member(1)
   package: ExcelScript!
   fullName: setAutoText(autoText)
-  summary: Spécifie si l’étiquette de courbe de tendance génère automatiquement le texte approprié en fonction du contexte.
+  summary: Spécifie si l'étiquette de courbe de tendance génère automatiquement le texte approprié en fonction du contexte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Valeur de chaîne qui représente la formule de l’étiquette de courbe de tendance du graphique à l’aide de la notation de style A1.
+  summary: Valeur de chaîne qui représente la formule de l'étiquette de courbe de tendance du graphique à l'aide de la notation de style A1.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -216,7 +216,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Représente l’alignement horizontal de l’étiquette de tendances du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir. Cette propriété n’est valide que si une étiquette de courbe de tendance a la valeur `TextOrientation` -90, 90 ou 180.
+  summary: Représente l'alignement horizontal de l'étiquette de tendances du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d'informations, voir. Cette propriété n'est valide que si une étiquette de courbe de tendance a la valeur `TextOrientation` -90, 90 ou 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -236,7 +236,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Représente la distance, en points, entre le bord gauche de l’étiquette de la courbe de tendance du graphique et le bord gauche de la zone de graphique. La valeur est `null` si l’étiquette de courbe de tendance du graphique n’est pas visible.
+  summary: Représente la distance, en points, entre le bord gauche de l'étiquette de la courbe de tendance du graphique et le bord gauche de la zone de graphique. La valeur est `null` si l'étiquette de courbe de tendance du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,7 +253,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu’il change dans les cellules).
+  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu'il change dans les cellules).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -270,7 +270,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Valeur de chaîne qui représente le code de format de l’étiquette de courbe de tendance.
+  summary: Valeur de chaîne qui représente le code de format de l'étiquette de courbe de tendance.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Représente l’angle vers lequel le texte est orienté pour l’étiquette de courbe de tendance du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
+  summary: Représente l'angle vers lequel le texte est orienté pour l'étiquette de courbe de tendance du graphique. La valeur doit être un integer de -90 à 90 ou l'integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Représente la distance, en points, entre le bord supérieur de l’étiquette de tendances du graphique et le haut de la zone de graphique. La valeur est `null` si l’étiquette de courbe de tendance du graphique n’est pas visible.
+  summary: Représente la distance, en points, entre le bord supérieur de l'étiquette de tendances du graphique et le haut de la zone de graphique. La valeur est `null` si l'étiquette de courbe de tendance du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartTrendlineLabel#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Représente l’alignement vertical de l’étiquette de tendances du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsqu’une étiquette de courbe `TextOrientation` de tendance a la valeur 0.
+  summary: Représente l'alignement vertical de l'étiquette de tendances du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsqu'une étiquette de courbe `TextOrientation` de tendance a la valeur 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,9 +355,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 362e5cc45beb64d9ecb31e8f252ccc2d56460844
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 9e2e5fc4947a3469339b617a5e7d8236d5ec2343
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606800"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914526"

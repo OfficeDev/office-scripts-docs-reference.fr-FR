@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxQuartileCalculation
 uid: ExcelScript!ExcelScript.ChartBoxQuartileCalculation:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxQuartileCalculation
-summary: Représente le type de calcul quartile de la mise en page de la série de graphiques. S’applique uniquement à un graphique en boîte et en moustaches.
+summary: Représente le type de calcul quartile de la disposition des séries de graphiques. S’applique uniquement à un graphique de zone et de zone.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -17,9 +17,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: c0a40a371a515687d67fab953cc7321300bc10d5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 5cfb86474f54105a9c938574813904e9ea665eb7
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416980"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914568"

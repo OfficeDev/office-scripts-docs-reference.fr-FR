@@ -3,7 +3,7 @@ name: ExcelScript.ChartBoxwhiskerOptions
 uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartBoxwhiskerOptions
-summary: Représente les propriétés d’un graphique en forme de boîte et de moustaches.
+summary: Représente les propriétés d’un graphique zone et valeur.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: getQuartileCalculation()
-  summary: Indique si le type de calcul quartile d’un graphique en boîte et en moustaches.
+  summary: Spécifie si le type de calcul du quartile d’un graphique de zone et de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: getShowInnerPoints()
-  summary: Indique si les points intérieurs sont affichés dans un graphique en boîte et en moustaches.
+  summary: Spécifie si les points internes sont affichés dans une zone et un graphique de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanLine:member(1)
   package: ExcelScript!
   fullName: getShowMeanLine()
-  summary: Indique si la ligne moyenne est affichée dans un graphique en boîte et en moustaches.
+  summary: Spécifie si la ligne moyenne est affichée dans une zone et un graphique de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: getShowMeanMarker()
-  summary: Indique si le marqueur moyen est affiché dans un graphique en boîte et en moustaches.
+  summary: Spécifie si la marque moyenne est affichée dans une zone et un graphique de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#getShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: getShowOutlierPoints()
-  summary: Indique si les points aberrants sont affichés dans un graphique en boîte et en moustaches.
+  summary: Spécifie si les points aberrants sont affichés dans un graphique zone et valeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setQuartileCalculation:member(1)
   package: ExcelScript!
   fullName: setQuartileCalculation(quartileCalculation)
-  summary: Indique si le type de calcul quartile d’un graphique en boîte et en moustaches.
+  summary: Spécifie si le type de calcul du quartile d’un graphique de zone et de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowInnerPoints:member(1)
   package: ExcelScript!
   fullName: setShowInnerPoints(showInnerPoints)
-  summary: Indique si les points intérieurs sont affichés dans un graphique en boîte et en moustaches.
+  summary: Spécifie si les points internes sont affichés dans une zone et un graphique de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -115,7 +115,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanLine:member(1)
   package: ExcelScript!
   fullName: setShowMeanLine(showMeanLine)
-  summary: Indique si la ligne moyenne est affichée dans un graphique en boîte et en moustaches.
+  summary: Spécifie si la ligne moyenne est affichée dans une zone et un graphique de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowMeanMarker:member(1)
   package: ExcelScript!
   fullName: setShowMeanMarker(showMeanMarker)
-  summary: Indique si le marqueur moyen est affiché dans un graphique en boîte et en moustaches.
+  summary: Spécifie si la marque moyenne est affichée dans une zone et un graphique de zone.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -149,7 +149,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBoxwhiskerOptions#setShowOutlierPoints:member(1)
   package: ExcelScript!
   fullName: setShowOutlierPoints(showOutlierPoints)
-  summary: Indique si les points aberrants sont affichés dans un graphique en boîte et en moustaches.
+  summary: Spécifie si les points aberrants sont affichés dans un graphique zone et valeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,9 +163,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 12b3f06b1036fee3892bdc0ab9a63c1dbff335b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: b53c861761fa2dbead962e9ec6e1b011af51f12b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420019"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914561"

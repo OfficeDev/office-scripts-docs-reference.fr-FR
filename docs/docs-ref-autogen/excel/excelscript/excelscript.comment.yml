@@ -25,7 +25,7 @@ methods:
               ): CommentReply;
     parameters:
     - id: content
-      description: Contenu du commentaire. Il peut s’agit d’une chaîne ou d’un objet `CommentRichContent` (par exemple, pour les commentaires avec mentions).
+      description: Contenu du commentaire. Il peut s'agit d'une chaîne ou d'un objet `CommentRichContent` (par exemple, pour les commentaires avec mentions).
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
       description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum `ContentType.Plain`<!-- -->.
@@ -119,7 +119,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Obtenir l’heure de création du commentaire. Renvoie `null` si le commentaire a été converti à partir d’une note, car le commentaire n’a pas de date de création.
+  summary: Obtenir l’heure de création du commentaire. Renvoie `null` si le commentaire a été converti à partir d'une note, car le commentaire n'a pas de date de création.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Spécifie l’identificateur de commentaire.
+  summary: Spécifie l'identificateur de commentaire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -197,7 +197,7 @@ methods:
   uid: ExcelScript!ExcelScript.Comment#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: Obtient le contenu des commentaires enrichis (par exemple, les mentions dans les commentaires). Cette chaîne n’est pas destinée à être affichée aux utilisateurs finaux. Votre add-in ne doit l’utiliser que pour l’utilisation du contenu de commentaires enrichis.
+  summary: Obtient le contenu des commentaires enrichis (par exemple, les mentions dans les commentaires). Cette chaîne n'est pas destinée à être affichée aux utilisateurs finaux. Votre add-in ne doit l'utiliser que pour l'utilisation du contenu de commentaires enrichis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -258,9 +258,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3417d9212461ffdd5ba0314f41491575206a4e65
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 64ea728bdbff9c555710e4a04342ad81a879fc3c
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606777"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914512"
