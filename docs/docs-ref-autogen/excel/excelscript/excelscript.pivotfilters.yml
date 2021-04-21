@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#dateFilter:member
   package: ExcelScript!
   fullName: dateFilter
-  summary: Filtre de date actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
+  summary: Filtre de date actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s'applique si aucun filtre de valeur n'est appliqué.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#labelFilter:member
   package: ExcelScript!
   fullName: labelFilter
-  summary: Filtre d’étiquette actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
+  summary: Filtre d'étiquette actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s'applique si aucun filtre de valeur n'est appliqué.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#manualFilter:member
   package: ExcelScript!
   fullName: manualFilter
-  summary: Filtre manuel actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
+  summary: Filtre manuel actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s'applique si aucun filtre de valeur n'est appliqué.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PivotFilters#valueFilter:member
   package: ExcelScript!
   fullName: valueFilter
-  summary: Filtre de valeurs actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
+  summary: Filtre de valeurs actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s'applique si aucun filtre de valeur n'est appliqué.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />
 metadata:
-  ms.openlocfilehash: 4227afb078b084fa529039e7b77587a01635e689
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 8cdd6cabb9376a1a50fff52faabea26061a8266f
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607199"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914313"

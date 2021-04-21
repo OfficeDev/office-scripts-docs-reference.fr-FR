@@ -3,7 +3,7 @@ name: ExcelScript.CultureInfo
 uid: ExcelScript!ExcelScript.CultureInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.CultureInfo
-summary: Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme de numéros et d’autres paramètres dépendants de la culture.
+summary: Fournit des informations basées sur les paramètres de culture système actuels. Cela inclut les noms de culture, la mise en forme des nombres et d’autres paramètres dépendant de la culture.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getDatetimeFormat:member(1)
   package: ExcelScript!
   fullName: getDatetimeFormat()
-  summary: Définit le format d’affichage de la date et de l’heure approprié pour la culture. Cette fonction est basée sur les paramètres de culture actuelle du système.
+  summary: Définit le format adapté à la culture de l’affichage de la date et de l’heure. Il est basé sur les paramètres de culture système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Obtient le nom de la culture au format languagecode2-Country/regioncode2 (par exemple, « zh-CN » ou « en-US »). Cette fonction est basée sur les paramètres système actuels.
+  summary: Obtient le nom de la culture au format languagecode2-country/regioncode2 (par exemple, « zh-cn » ou « en-us »). Il est basé sur les paramètres système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.CultureInfo#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Définit le format d’affichage des nombres approprié pour la culture. Cette fonction est basée sur les paramètres de culture actuelle du système.
+  summary: Définit le format adapté à la culture de l’affichage des nombres. Il est basé sur les paramètres de culture système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,9 +49,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatInfo:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: a399c6a2970feddfa20b995cbb9e55cb565f9f07
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 6d1e2ed04dfcdbb0275fc42382fa9a9e3f0c819b
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415658"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913709"

@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getBold:member(1)
   package: ExcelScript!
   fullName: getBold()
-  summary: Représente l’état gras de la police.
+  summary: Représente l'état gras de la police.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getItalic:member(1)
   package: ExcelScript!
   fullName: getItalic()
-  summary: Spécifie l’état italique de la police.
+  summary: Spécifie l'état italique de la police.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Spécifie l’état de la police de type strikethrough. Une valeur indique que la plage entière n’a pas de paramètre `null` de strikethrough uniforme.
+  summary: Spécifie l'état de la police de type strikethrough. Une valeur indique que la plage entière n'a pas de paramètre `null` de strikethrough uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)
   package: ExcelScript!
   fullName: getSubscript()
-  summary: Spécifie l’état d’indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie si toutes les polices de la plage sont en exposant ou `false` normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  summary: Spécifie l'état d'indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie si toutes les polices de la plage sont en exposant ou `false` normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)
   package: ExcelScript!
   fullName: getSuperscript()
-  summary: Spécifie l’état d’exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie si toutes les polices de la plage sont des indices ou des caractères `false` normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  summary: Spécifie l'état d'exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie si toutes les polices de la plage sont des indices ou des caractères `false` normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une valeur indique que la plage entière `null` n’a pas de paramètre de police `tintAndShade` uniforme.
+  summary: Spécifie un double qui s'éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d'origine. Une valeur indique que la plage entière `null` n'a pas de paramètre de police `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.RangeUnderlineStyle` plus d’informations, voir.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.RangeUnderlineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setBold:member(1)
   package: ExcelScript!
   fullName: setBold(bold)
-  summary: Représente l’état gras de la police.
+  summary: Représente l'état gras de la police.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -177,7 +177,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setItalic:member(1)
   package: ExcelScript!
   fullName: setItalic(italic)
-  summary: Spécifie l’état italique de la police.
+  summary: Spécifie l'état italique de la police.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Spécifie l’état de la police de type strikethrough. Une valeur indique que la plage entière n’a pas de paramètre `null` de strikethrough uniforme.
+  summary: Spécifie l'état de la police de type strikethrough. Une valeur indique que la plage entière n'a pas de paramètre `null` de strikethrough uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -245,7 +245,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)
   package: ExcelScript!
   fullName: setSubscript(subscript)
-  summary: Spécifie l’état d’indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie si toutes les polices de la plage sont en exposant ou `false` normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  summary: Spécifie l'état d'indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie si toutes les polices de la plage sont en exposant ou `false` normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)
   package: ExcelScript!
   fullName: setSuperscript(superscript)
-  summary: Spécifie l’état d’exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie si toutes les polices de la plage sont des indices ou des caractères `false` normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  summary: Spécifie l'état d'exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie si toutes les polices de la plage sont des indices ou des caractères `false` normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -279,7 +279,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une valeur indique que la plage entière `null` n’a pas de paramètre de police `tintAndShade` uniforme.
+  summary: Spécifie un double qui s'éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d'origine. Une valeur indique que la plage entière `null` n'a pas de paramètre de police `tintAndShade` uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -296,7 +296,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.RangeUnderlineStyle` plus d’informations, voir.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.RangeUnderlineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -310,9 +310,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: f7f26828af5dee973e65c3e48089a1c2ce1b2ebd
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: a22c0bd020b988ba946b27dcda5004939b09d153
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607430"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913432"

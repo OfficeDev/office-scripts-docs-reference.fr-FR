@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationPrompt
 uid: ExcelScript!ExcelScript.DataValidationPrompt:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationPrompt
-summary: Représente les propriétés d’invite de l’utilisateur pour la validation des données.
+summary: Représente les propriétés de l’invite utilisateur pour la validation des données.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationPrompt#showPrompt:member
   package: ExcelScript!
   fullName: showPrompt
-  summary: Indique si une invite s’affiche lorsqu’un utilisateur sélectionne une cellule avec validation des données.
+  summary: Spécifie si une invite s’affiche lorsqu’un utilisateur sélectionne une cellule avec validation des données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 2fdb5a9bca93bd708016c210ba507a43087c4429
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 19034794c229abf7f140b73412e08361de43f189
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415497"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913666"

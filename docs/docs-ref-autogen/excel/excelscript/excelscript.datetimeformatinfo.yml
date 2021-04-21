@@ -3,7 +3,7 @@ name: ExcelScript.DatetimeFormatInfo
 uid: ExcelScript!ExcelScript.DatetimeFormatInfo:interface
 package: ExcelScript!
 fullName: ExcelScript.DatetimeFormatInfo
-summary: Définit le format d’affichage des nombres approprié pour la culture. Cette fonction est basée sur les paramètres de culture actuelle du système.
+summary: Définit le format adapté à la culture de l’affichage des nombres. Il est basé sur les paramètres de culture système actuels.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getDateSeparator:member(1)
   package: ExcelScript!
   fullName: getDateSeparator()
-  summary: Obtient la chaîne utilisée comme séparateur de date. Cette fonction est basée sur les paramètres système actuels.
+  summary: Obtient la chaîne utilisée comme séparateur de date. Il est basé sur les paramètres système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongDatePattern:member(1)
   package: ExcelScript!
   fullName: getLongDatePattern()
-  summary: Obtient la chaîne de format pour une valeur de date longue. Cette fonction est basée sur les paramètres système actuels.
+  summary: Obtient la chaîne de format pour une valeur de date longue. Il est basé sur les paramètres système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getLongTimePattern:member(1)
   package: ExcelScript!
   fullName: getLongTimePattern()
-  summary: Obtient la chaîne de format pour une valeur d’heure longue. Cette fonction est basée sur les paramètres système actuels.
+  summary: Obtient la chaîne de format pour une valeur de temps longue. Il est basé sur les paramètres système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getShortDatePattern:member(1)
   package: ExcelScript!
   fullName: getShortDatePattern()
-  summary: Obtient la chaîne de format pour une valeur de date courte. Cette fonction est basée sur les paramètres système actuels.
+  summary: Obtient la chaîne de format pour une valeur de date courte. Il est basé sur les paramètres système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.DatetimeFormatInfo#getTimeSeparator:member(1)
   package: ExcelScript!
   fullName: getTimeSeparator()
-  summary: Obtient la chaîne utilisée comme séparateur d’heure. Cette fonction est basée sur les paramètres système actuels.
+  summary: Obtient la chaîne utilisée comme séparateur d’heure. Il est basé sur les paramètres système actuels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -75,9 +75,9 @@ methods:
       type: string
       description: ''
 metadata:
-  ms.openlocfilehash: a0ef9ff40580d0e29330b73b2f05c382fd73f777
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 41c906081273622c3070f65ff6c49fa4f3931586
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415434"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914470"

@@ -3,7 +3,7 @@ name: ExcelScript.ShapeTextHorizontalAlignment
 uid: ExcelScript!ExcelScript.ShapeTextHorizontalAlignment:enum
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextHorizontalAlignment
-summary: Cette énumération spécifie l’alignement horizontal du cadre de texte d’une forme.
+summary: Spécifie l’alignement horizontal du cadre de texte dans une forme.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -37,9 +37,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: 3ca414609a24d2bd772f16fa47b6a1e4aeaf5d77
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: cc33568326b8c90950c65110da6a31cb79d96810
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420614"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914166"

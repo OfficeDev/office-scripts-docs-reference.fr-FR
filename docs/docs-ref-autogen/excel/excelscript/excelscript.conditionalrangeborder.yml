@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getSideIndex:member(1)
   package: ExcelScript!
   fullName: getSideIndex()
-  summary: Valeur constante qui indique un côté spécifique de la bordure. Pour `ExcelScript.ConditionalRangeBorderIndex` plus d’informations, voir.
+  summary: Valeur constante qui indique un côté spécifique de la bordure. Pour `ExcelScript.ConditionalRangeBorderIndex` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeBorder#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour `ExcelScript.BorderLineStyle` plus d’informations, voir.
+  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour `ExcelScript.BorderLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeBorder#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour `ExcelScript.BorderLineStyle` plus d’informations, voir.
+  summary: L’une des constantes de style de ligne déterminant le style de ligne de la bordure. Pour `ExcelScript.BorderLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -83,9 +83,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1ba1fa3413428c69ada044307d7ef080fac2e6dd
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 8c63e4408d69e8f9db8bcefb559987dff96fbd95
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606716"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913751"

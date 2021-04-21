@@ -3,7 +3,7 @@ name: ExcelScript.ChartBorder
 uid: ExcelScript!ExcelScript.ChartBorder:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartBorder
-summary: Représente la mise en forme de bordure d’un élément de graphique.
+summary: Représente la mise en forme de bordure d'un élément de graphique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBorder#getLineStyle:member(1)
   package: ExcelScript!
   fullName: getLineStyle()
-  summary: Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d’informations, voir.
+  summary: Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,7 +82,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBorder#setLineStyle:member(1)
   package: ExcelScript!
   fullName: setLineStyle(lineStyle)
-  summary: Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d’informations, voir.
+  summary: Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -113,9 +113,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d77dba61ea9b284af72c28cf8b21caf5f255acf5
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 48c479a012b89b5d58d722a83b762c6cc51904d9
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606926"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914117"

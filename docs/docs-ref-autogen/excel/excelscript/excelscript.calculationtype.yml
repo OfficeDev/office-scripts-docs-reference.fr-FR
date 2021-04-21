@@ -15,15 +15,15 @@ fields:
 - name: fullRebuild
   uid: ExcelScript!ExcelScript.CalculationType.fullRebuild:member
   package: ExcelScript!
-  summary: Cette opération permet de reconstruire la chaîne de dépendance complète, de marquer toutes les cellules comme étant modifiées, puis de les recalculer.
+  summary: Cela reconstruira la chaîne de dépendance complète, marque toutes les cellules comme étant sales, puis les recalcule.
 - name: recalculate
   uid: ExcelScript!ExcelScript.CalculationType.recalculate:member
   package: ExcelScript!
   summary: Permet de recalculer toutes les cellules qu�Excel a marqu�es comme incorrectes, c�est-�-dire d�pendant de donn�es volatiles ou modifi�es, ainsi que les cellules marqu�es comme incorrectes par programmation.
 metadata:
-  ms.openlocfilehash: 8e772f6bfbf855d21f480d9a024c4e6c73eee2c8
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 8ea006b639ccac5ebe3f44e5c3cf960973b79665
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417211"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913977"

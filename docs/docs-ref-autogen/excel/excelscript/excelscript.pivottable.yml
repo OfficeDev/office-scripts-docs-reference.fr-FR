@@ -103,7 +103,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: getAllowMultipleFiltersPerField()
-  summary: Spécifie si le tableau croisé dynamique autorise l’application de plusieurs filtres de tableau croisé dynamique sur un champ de tableau croisé dynamique donné dans le tableau.
+  summary: Spécifie si le tableau croisé dynamique autorise l'application de plusieurs filtres de tableau croisé dynamique sur un champ de tableau croisé dynamique donné dans le tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,7 +129,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getColumnHierarchy:member(1)
   package: ExcelScript!
   fullName: getColumnHierarchy(name)
-  summary: Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n’existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
+  summary: Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n'existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getDataHierarchy:member(1)
   package: ExcelScript!
   fullName: getDataHierarchy(name)
-  summary: Obtient une DataPivotHierarchy par nom. Si la DataPivotHierarchy n’existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
+  summary: Obtient une DataPivotHierarchy par nom. Si la DataPivotHierarchy n'existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: getEnableDataValueEditing()
-  summary: Spécifie si le tableau croisé dynamique permet à l’utilisateur de modifier des valeurs dans le corps des données.
+  summary: Spécifie si le tableau croisé dynamique permet à l'utilisateur de modifier des valeurs dans le corps des données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -202,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getFilterHierarchy:member(1)
   package: ExcelScript!
   fullName: getFilterHierarchy(name)
-  summary: Obtient un FilterPivotHierarchy par nom. Si la FilterPivotHierarchy n’existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
+  summary: Obtient un FilterPivotHierarchy par nom. Si la FilterPivotHierarchy n'existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -232,7 +232,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getHierarchy:member(1)
   package: ExcelScript!
   fullName: getHierarchy(name)
-  summary: Obtient une PivotHierarchy par nom. Si la PivotHierarchy n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient une PivotHierarchy par nom. Si la PivotHierarchy n'existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -301,7 +301,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#getRowHierarchy:member(1)
   package: ExcelScript!
   fullName: getRowHierarchy(name)
-  summary: Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n’existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
+  summary: Obtient une RowColumnPivotHierarchy par nom. Si la RowColumnPivotHierarchy n'existe pas, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -431,7 +431,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setAllowMultipleFiltersPerField:member(1)
   package: ExcelScript!
   fullName: setAllowMultipleFiltersPerField(allowMultipleFiltersPerField)
-  summary: Spécifie si le tableau croisé dynamique autorise l’application de plusieurs filtres de tableau croisé dynamique sur un champ de tableau croisé dynamique donné dans le tableau.
+  summary: Spécifie si le tableau croisé dynamique autorise l'application de plusieurs filtres de tableau croisé dynamique sur un champ de tableau croisé dynamique donné dans le tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -451,7 +451,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotTable#setEnableDataValueEditing:member(1)
   package: ExcelScript!
   fullName: setEnableDataValueEditing(enableDataValueEditing)
-  summary: Spécifie si le tableau croisé dynamique permet à l’utilisateur de modifier des valeurs dans le corps des données.
+  summary: Spécifie si le tableau croisé dynamique permet à l'utilisateur de modifier des valeurs dans le corps des données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,9 +499,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 46b240d2029153fbbc2cbcfca1d15f2e54430414
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: fdf2049d2a57a29a61008d18c3dce3bdbe3176d1
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606377"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913460"

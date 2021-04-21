@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)
   package: ExcelScript!
   fullName: getBorderColor()
-  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n’est présente ou définie.
+  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n'est présente ou définie.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)
   package: ExcelScript!
   fullName: setBorderColor(borderColor)
-  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n’est présente ou définie.
+  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n'est présente ou définie.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,9 +130,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: bf8d679bc9be9e20f4ad6873c43101de44083437
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 29715083641d7ffbc94357a022635db2179ce5d4
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606737"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913293"

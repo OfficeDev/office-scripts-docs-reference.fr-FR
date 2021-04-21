@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getBorder:member(1)
   package: ExcelScript!
   fullName: getBorder()
-  summary: Représente le format de bordure de la zone de graphique, qui inclut couleur, style de style et épaisseur.
+  summary: Représente le format de bordure de la zone de graphique, qui inclut la couleur, le style de trait et l’pondération.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getColorScheme:member(1)
   package: ExcelScript!
   fullName: getColorScheme()
-  summary: Cette énumération spécifie le jeu de couleurs du graphique.
+  summary: Spécifie le modèle de couleurs du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#getRoundedCorners:member(1)
   package: ExcelScript!
   fullName: getRoundedCorners()
-  summary: Indique si la zone de graphique du graphique possède des angles arrondis.
+  summary: Spécifie si la zone de graphique du graphique possède des coins arrondis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#setColorScheme:member(1)
   package: ExcelScript!
   fullName: setColorScheme(colorScheme)
-  summary: Cette énumération spécifie le jeu de couleurs du graphique.
+  summary: Spécifie le modèle de couleurs du graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -95,7 +95,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartAreaFormat#setRoundedCorners:member(1)
   package: ExcelScript!
   fullName: setRoundedCorners(roundedCorners)
-  summary: Indique si la zone de graphique du graphique possède des angles arrondis.
+  summary: Spécifie si la zone de graphique du graphique possède des coins arrondis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -109,9 +109,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6894650c0e66dcdef8411a1877aa0f7eb2d96c06
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: eac32298d707fb25dc7fb8584ba83799ac279453
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49417106"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913265"

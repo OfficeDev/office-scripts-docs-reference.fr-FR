@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#horizontalFitToPages:member
   package: ExcelScript!
   fullName: horizontalFitToPages
-  summary: Nombre de pages pour l’ajuster horizontalement. Cette valeur peut être si `null` l’échelle de pourcentage est utilisée.
+  summary: Nombre de pages pour l’ajuster horizontalement. Cette valeur peut être si `null` l'échelle de pourcentage est utilisée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutZoomOptions#verticalFitToPages:member
   package: ExcelScript!
   fullName: verticalFitToPages
-  summary: Nombre de pages pour l’ajuster verticalement. Cette valeur peut être si `null` l’échelle de pourcentage est utilisée.
+  summary: Nombre de pages pour l’ajuster verticalement. Cette valeur peut être si `null` l'échelle de pourcentage est utilisée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: number
 metadata:
-  ms.openlocfilehash: 745f7759380e98af90f43cb3a032629642bed648
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: e003103fb547ccfe9c0fcbabbdd5f9d1c7bb042f
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606405"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913567"

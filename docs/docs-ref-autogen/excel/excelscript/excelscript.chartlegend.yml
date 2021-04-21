@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Spécifie la hauteur, en points, de la légende sur le graphique. La valeur est `null` si la légende n’est pas visible.
+  summary: Spécifie la hauteur, en points, de la légende sur le graphique. La valeur est `null` si la légende n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Spécifie la valeur gauche, en points, de la légende du graphique. La valeur est `null` si la légende n’est pas visible.
+  summary: Spécifie la valeur gauche, en points, de la légende du graphique. La valeur est `null` si la légende n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Spécifie la position de la légende sur le graphique. Pour `ExcelScript.ChartLegendPosition` plus d’informations, voir.
+  summary: Spécifie la position de la légende sur le graphique. Pour `ExcelScript.ChartLegendPosition` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Spécifie le haut d’une légende de graphique.
+  summary: Spécifie le haut d'une légende de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Spécifie la largeur, en points, de la légende du graphique. La valeur est `null` si la légende n’est pas visible.
+  summary: Spécifie la largeur, en points, de la légende du graphique. La valeur est `null` si la légende n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Spécifie la hauteur, en points, de la légende sur le graphique. La valeur est `null` si la légende n’est pas visible.
+  summary: Spécifie la hauteur, en points, de la légende sur le graphique. La valeur est `null` si la légende n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -160,7 +160,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Spécifie la valeur gauche, en points, de la légende du graphique. La valeur est `null` si la légende n’est pas visible.
+  summary: Spécifie la valeur gauche, en points, de la légende du graphique. La valeur est `null` si la légende n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -194,7 +194,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Spécifie la position de la légende sur le graphique. Pour `ExcelScript.ChartLegendPosition` plus d’informations, voir.
+  summary: Spécifie la position de la légende sur le graphique. Pour `ExcelScript.ChartLegendPosition` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -228,7 +228,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Spécifie le haut d’une légende de graphique.
+  summary: Spécifie le haut d'une légende de graphique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -262,7 +262,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartLegend#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Spécifie la largeur, en points, de la légende du graphique. La valeur est `null` si la légende n’est pas visible.
+  summary: Spécifie la largeur, en points, de la légende du graphique. La valeur est `null` si la légende n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,9 +276,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: eab9ab999ce36aee22186b9febbeaca8cd935fd5
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 351089d8cddf53eed7fe1979f8d4ffaba96c11db
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606571"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914061"

@@ -15,19 +15,19 @@ fields:
 - name: firstAndDefault
   uid: ExcelScript!ExcelScript.HeaderFooterState.firstAndDefault:member
   package: ExcelScript!
-  summary: Il y a un en-tête/pied de page de première page distinct et un en-tête/pied de page général utilisé pour toutes les autres pages.
+  summary: Il existe un en-tête/pied de page de première page distinct et un en-tête/pied de page général utilisé pour toutes les autres pages.
 - name: firstOddAndEven
   uid: ExcelScript!ExcelScript.HeaderFooterState.firstOddAndEven:member
   package: ExcelScript!
-  summary: Il y a un en-tête/pied de page de première page distinct, il y a un en-tête/pied de page distinct pour les pages paires et impaires.
+  summary: Il existe un en-tête/pied de page de première page distinct, puis un en-tête/pied de page distinct pour les pages impaires et pairs.
 - name: oddAndEven
   uid: ExcelScript!ExcelScript.HeaderFooterState.oddAndEven:member
   package: ExcelScript!
-  summary: Il y a un en-tête/pied de page différent pour les pages paires et impaires.
+  summary: Il existe un en-tête/pied de page différent pour les pages impaires et pairs.
 metadata:
-  ms.openlocfilehash: c8340881b74c9fb1761bbe3721c6031136668e3b
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 56adb02d9f1d03352bfb5382c00767ba553f376f
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412343"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913617"

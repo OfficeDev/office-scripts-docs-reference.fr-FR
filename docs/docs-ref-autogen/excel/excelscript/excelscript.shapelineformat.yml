@@ -3,7 +3,7 @@ name: ExcelScript.ShapeLineFormat
 uid: ExcelScript!ExcelScript.ShapeLineFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineFormat
-summary: Représente la mise en forme du trait de l’objet shape. Pour les images et les formes géométriques, la mise en forme des traits représente la bordure de la forme.
+summary: Représente la mise en forme du trait de l'objet shape. Pour les images et les formes géométriques, la mise en forme des traits représente la bordure de la forme.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getDashStyle:member(1)
   package: ExcelScript!
   fullName: getDashStyle()
-  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n’est pas visible ou qu’il existe des styles de tirets incohérents. Pour `ExcelScript.ShapeLineStyle` plus d’informations, voir.
+  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n'est pas visible ou qu'il existe des styles de tirets incohérents. Pour `ExcelScript.ShapeLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getStyle:member(1)
   package: ExcelScript!
   fullName: getStyle()
-  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n’est pas visible ou qu’il existe des styles incohérents. Pour `ExcelScript.ShapeLineStyle` plus d’informations, voir.
+  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n'est pas visible ou qu'il existe des styles incohérents. Pour `ExcelScript.ShapeLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getVisible:member(1)
   package: ExcelScript!
   fullName: getVisible()
-  summary: Spécifie si la mise en forme de trait d’un élément de forme est visible. Renvoie lorsque `null` la forme a des visibilités incohérentes.
+  summary: Spécifie si la mise en forme de trait d'un élément de forme est visible. Renvoie lorsque `null` la forme a des visibilités incohérentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#getWeight:member(1)
   package: ExcelScript!
   fullName: getWeight()
-  summary: Représente l’épaisseur de ligne, en points. Renvoie `null` lorsque la ligne n’est pas visible ou qu’il existe des pondérations de trait incohérentes.
+  summary: Représente l’épaisseur de ligne, en points. Renvoie `null` lorsque la ligne n'est pas visible ou qu'il existe des pondérations de trait incohérentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setDashStyle:member(1)
   package: ExcelScript!
   fullName: setDashStyle(dashStyle)
-  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n’est pas visible ou qu’il existe des styles de tirets incohérents. Pour `ExcelScript.ShapeLineStyle` plus d’informations, voir.
+  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n'est pas visible ou qu'il existe des styles de tirets incohérents. Pour `ExcelScript.ShapeLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setStyle:member(1)
   package: ExcelScript!
   fullName: setStyle(style)
-  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n’est pas visible ou qu’il existe des styles incohérents. Pour `ExcelScript.ShapeLineStyle` plus d’informations, voir.
+  summary: Représente le style de trait de la forme. Renvoie `null` lorsque la ligne n'est pas visible ou qu'il existe des styles incohérents. Pour `ExcelScript.ShapeLineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setVisible:member(1)
   package: ExcelScript!
   fullName: setVisible(visible)
-  summary: Spécifie si la mise en forme de trait d’un élément de forme est visible. Renvoie lorsque `null` la forme a des visibilités incohérentes.
+  summary: Spécifie si la mise en forme de trait d'un élément de forme est visible. Renvoie lorsque `null` la forme a des visibilités incohérentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -176,7 +176,7 @@ methods:
   uid: ExcelScript!ExcelScript.ShapeLineFormat#setWeight:member(1)
   package: ExcelScript!
   fullName: setWeight(weight)
-  summary: Représente l’épaisseur de ligne, en points. Renvoie `null` lorsque la ligne n’est pas visible ou qu’il existe des pondérations de trait incohérentes.
+  summary: Représente l’épaisseur de ligne, en points. Renvoie `null` lorsque la ligne n'est pas visible ou qu'il existe des pondérations de trait incohérentes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -190,9 +190,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 2ea61848a51fe162e684d79d1b1439a1ffdf5356
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 9bfbd742f1e38f12fe3f0d23aaa93abbd3d3889a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607367"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914180"

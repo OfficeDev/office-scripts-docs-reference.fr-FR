@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalRangeFont
 uid: ExcelScript!ExcelScript.ConditionalRangeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFont
-summary: Cet objet représente les attributs de police (style de police, couleur, etc.) d’un objet.
+summary: Cet objet représente les attributs de police (style de police, couleur, etc.) d'un objet.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getStrikethrough:member(1)
   package: ExcelScript!
   fullName: getStrikethrough()
-  summary: Spécifie l’état de la police de type strikethrough.
+  summary: Spécifie l'état de la police de type strikethrough.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#getUnderline:member(1)
   package: ExcelScript!
   fullName: getUnderline()
-  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ConditionalRangeFontUnderlineStyle` plus d’informations, voir.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ConditionalRangeFontUnderlineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setStrikethrough:member(1)
   package: ExcelScript!
   fullName: setStrikethrough(strikethrough)
-  summary: Spécifie l’état de la police de type strikethrough.
+  summary: Spécifie l'état de la police de type strikethrough.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalRangeFont#setUnderline:member(1)
   package: ExcelScript!
   fullName: setUnderline(underline)
-  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ConditionalRangeFontUnderlineStyle` plus d’informations, voir.
+  summary: Type de soulignement appliqué à la police. Pour `ExcelScript.ConditionalRangeFontUnderlineStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0baa0c9251cd94135e208c7592d45e78dace77ca
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 40a50aeabe5bfb60971703092ac02841779174d8
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606709"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913737"

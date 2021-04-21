@@ -3,7 +3,7 @@ name: ExcelScript.CalculationState
 uid: ExcelScript!ExcelScript.CalculationState:enum
 package: ExcelScript!
 fullName: ExcelScript.CalculationState
-summary: Représente l’état du calcul dans l’ensemble de l’application Excel.
+summary: Représente l’état de calcul dans l’ensemble de l’application Excel.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: Des modifications déclenchant un calcul ont eu lieu, mais le recalcul n'a pas encore été effectué.
 metadata:
-  ms.openlocfilehash: c9b0c55e213af980d82164b7fb282eaf4a34f78f
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: e9a1951d22a2108e21da0eb9eb873c921968ba9a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420208"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913286"

@@ -3,7 +3,7 @@ name: ExcelScript.Line
 uid: ExcelScript!ExcelScript.Line:interface
 package: ExcelScript!
 fullName: ExcelScript.Line
-summary: Représente une ligne à l’intérieur d’une feuille de calcul. Pour obtenir l’objet `Shape` correspondant, utilisez `Line.shape`<!-- -->.
+summary: Représente une ligne à l'intérieur d'une feuille de calcul. Pour obtenir l'objet `Shape` correspondant, utilisez `Line.shape`<!-- -->.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getBeginConnectedSite:member(1)
   package: ExcelScript!
   fullName: getBeginConnectedSite()
-  summary: Représente le site de connexion indiquant le point de connexion auquel le début d'un connecteur est relié. Renvoie `null` lorsque le début du trait n’est attaché à aucune forme.
+  summary: Représente le site de connexion indiquant le point de connexion auquel le début d'un connecteur est relié. Renvoie `null` lorsque le début du trait n'est attaché à aucune forme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -209,7 +209,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getEndConnectedSite:member(1)
   package: ExcelScript!
   fullName: getEndConnectedSite()
-  summary: Représente le site de connexion indiquant le point de connexion auquel la fin d'un connecteur est relié. Renvoie `null` lorsque la fin de la ligne n’est attachée à aucune forme.
+  summary: Représente le site de connexion indiquant le point de connexion auquel la fin d'un connecteur est relié. Renvoie `null` lorsque la fin de la ligne n'est attachée à aucune forme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -222,7 +222,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Spécifie l’identificateur de forme.
+  summary: Spécifie l'identificateur de forme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -261,7 +261,7 @@ methods:
   uid: ExcelScript!ExcelScript.Line#getShape:member(1)
   package: ExcelScript!
   fullName: getShape()
-  summary: Renvoie `Shape` l’objet associé à la ligne.
+  summary: Renvoie `Shape` l'objet associé à la ligne.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -390,9 +390,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 629957813ed37575e86ba1cf38ed57403a7d2b20
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: ad5199cef65f3c284260afe9bf89774e42638da5
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606426"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914358"

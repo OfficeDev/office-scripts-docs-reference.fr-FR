@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#getAllowOverflow:member(1)
   package: ExcelScript!
   fullName: getAllowOverflow()
-  summary: Indique si le débordement d’emplacement est activé dans un histogramme ou un graphique de Pareto.
+  summary: Spécifie si le débordement bin est activé dans un histogramme ou un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#getAllowUnderflow:member(1)
   package: ExcelScript!
   fullName: getAllowUnderflow()
-  summary: Indique si la débordement d’emplacement est activé dans un histogramme ou un graphique de Pareto.
+  summary: Spécifie si le sous-flux bin est activé dans un histogramme ou un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#getCount:member(1)
   package: ExcelScript!
   fullName: getCount()
-  summary: Indique le nombre d’emplacements d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie le nombre de bacs d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#getOverflowValue:member(1)
   package: ExcelScript!
   fullName: getOverflowValue()
-  summary: Indique la valeur de dépassement de l’emplacement d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie la valeur de débordement bin d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Indique le type de l’emplacement pour un histogramme ou un graphique de Pareto.
+  summary: Spécifie le type du bac pour un histogramme ou un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#getUnderflowValue:member(1)
   package: ExcelScript!
   fullName: getUnderflowValue()
-  summary: Indique la valeur de la sous-circulation de l’emplacement d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie la valeur de sous-flux bin d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Indique la valeur de largeur de l’emplacement d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie la valeur de largeur bin d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#setAllowOverflow:member(1)
   package: ExcelScript!
   fullName: setAllowOverflow(allowOverflow)
-  summary: Indique si le débordement d’emplacement est activé dans un histogramme ou un graphique de Pareto.
+  summary: Spécifie si le débordement bin est activé dans un histogramme ou un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -121,7 +121,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#setAllowUnderflow:member(1)
   package: ExcelScript!
   fullName: setAllowUnderflow(allowUnderflow)
-  summary: Indique si la débordement d’emplacement est activé dans un histogramme ou un graphique de Pareto.
+  summary: Spécifie si le sous-flux bin est activé dans un histogramme ou un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -138,7 +138,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#setCount:member(1)
   package: ExcelScript!
   fullName: setCount(count)
-  summary: Indique le nombre d’emplacements d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie le nombre de bacs d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#setOverflowValue:member(1)
   package: ExcelScript!
   fullName: setOverflowValue(overflowValue)
-  summary: Indique la valeur de dépassement de l’emplacement d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie la valeur de débordement bin d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -172,7 +172,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#setType:member(1)
   package: ExcelScript!
   fullName: setType(type)
-  summary: Indique le type de l’emplacement pour un histogramme ou un graphique de Pareto.
+  summary: Spécifie le type du bac pour un histogramme ou un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -189,7 +189,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#setUnderflowValue:member(1)
   package: ExcelScript!
   fullName: setUnderflowValue(underflowValue)
-  summary: Indique la valeur de la sous-circulation de l’emplacement d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie la valeur de sous-flux bin d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -206,7 +206,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartBinOptions#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Indique la valeur de largeur de l’emplacement d’un histogramme ou d’un graphique de Pareto.
+  summary: Spécifie la valeur de largeur bin d’un histogramme ou d’un graphique de pareto.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -220,9 +220,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3fb71ab22614c4bce0481d7adb2a78c9cde4dcab
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 3d4befc900b66d746385bfc60976b98e5d872f0d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49420047"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913949"

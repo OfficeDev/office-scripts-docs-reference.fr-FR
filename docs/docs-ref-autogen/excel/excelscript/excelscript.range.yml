@@ -21,7 +21,7 @@ methods:
     content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
-      description: Type de mise en forme conditionnelle en cours d’ajout. Pour `ExcelScript.ConditionalFormatType` plus d’informations, voir.
+      description: Type de mise en forme conditionnelle en cours d'ajout. Pour `ExcelScript.ConditionalFormatType` plus d'informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Remplit les plages de la plage actuelle à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être `null`<!-- -->ou peut étendre la source horizontalement ou verticalement. Les plages nonigues ne sont pas pris en charge.
+  summary: Remplit les plages de la plage actuelle à la plage de destination à l'aide de la logique de remplissage automatique spécifiée. La plage de destination peut être `null`<!-- -->ou peut étendre la source horizontalement ou verticalement. Les plages nonigues ne sont pas pris en charge.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -42,7 +42,7 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: Plage de destination à remplissage automatique. Si la plage de destination est `null`<!-- -->, les données sont remplies en fonction des cellules qui l’entourent (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de plage de l’interface utilisateur).
+      description: Plage de destination à remplissage automatique. Si la plage de destination est `null`<!-- -->, les données sont remplies en fonction des cellules qui l'entourent (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de plage de l'interface utilisateur).
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
       description: Type de remplissage automatique. Spécifie la façon dont la plage de destination doit être remplie, en fonction du contenu de la plage actuelle. La valeur par défaut est « FillDefault ».
@@ -75,7 +75,7 @@ methods:
     content: 'clear(applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
-      description: Facultatif. Détermine le type d’action de suppression. Pour `ExcelScript.ClearApplyTo` plus d’informations, voir.
+      description: Facultatif. Détermine le type d’action de suppression. Pour `ExcelScript.ClearApplyTo` plus d'informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
@@ -110,7 +110,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: Copie les données de cellule ou la mise en forme de la plage source ou `RangeAreas` de la plage actuelle. La plage de destination peut être d’une taille différente de la plage source ou `RangeAreas`<!-- -->. La destination est automatiquement étendue si elle est plus petite que la source.
+  summary: Copie les données de cellule ou la mise en forme de la plage source ou `RangeAreas` de la plage actuelle. La plage de destination peut être d'une taille différente de la plage source ou `RangeAreas`<!-- -->. La destination est automatiquement étendue si elle est plus petite que la source.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d’une plage rectangulaire.
+      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d'une plage rectangulaire.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: Type de données de cellule ou de mise en forme à copier. La valeur par défaut est « All ».
@@ -150,7 +150,7 @@ methods:
     content: 'delete(shift: DeleteShiftDirection): void;'
     parameters:
     - id: shift
-      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.DeleteShiftDirection` plus d’informations, voir.
+      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.DeleteShiftDirection` plus d'informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
     return:
       type: void
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage actuelle est plus grande qu’une seule cellule, la recherche sera limitée à cette plage, sinon la recherche couvrira la feuille entière en commençant après cette cellule. S’il n’existe aucune correspondance, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage actuelle est plus grande qu'une seule cellule, la recherche sera limitée à cette plage, sinon la recherche couvrira la feuille entière en commençant après cette cellule. S'il n'existe aucune correspondance, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -179,7 +179,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
   fullName: flashFill()
-  summary: Fait un remplissage flash à la plage actuelle. Le remplissage flash remplit automatiquement les données lorsqu’il détecte un motif, de sorte que la plage doit être une plage de colonnes unique et avoir des données autour d’elle afin de trouver un motif.
+  summary: Fait un remplissage flash à la plage actuelle. Le remplissage flash remplit automatiquement les données lorsqu'il détecte un motif, de sorte que la plage doit être une plage de colonnes unique et avoir des données autour d'elle afin de trouver un motif.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -192,7 +192,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
   package: ExcelScript!
   fullName: getAbsoluteResizedRange(numRows, numColumns)
-  summary: Obtient un objet avec la même cellule supérieure gauche que l’objet actuel, mais avec le nombre spécifié de lignes `Range` `Range` et de colonnes.
+  summary: Obtient un objet avec la même cellule supérieure gauche que l'objet actuel, mais avec le nombre spécifié de lignes `Range` `Range` et de colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: Spécifie la référence de plage en style A1. La valeur d’adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
+  summary: Spécifie la référence de plage en style A1. La valeur d'adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
-  summary: Représente la référence de plage pour la plage spécifiée dans la langue de l’utilisateur.
+  summary: Représente la référence de plage pour la plage spécifiée dans la langue de l'utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Renvoie l’objet de plage qui contient une cellule donnée sur la base des numéros de ligne et de colonne. La cellule peut se trouver en dehors des limites de sa plage parente, tant qu’elle reste dans la grille de la feuille de calcul. L’emplacement de la cellule renvoyée est déterminé à partir de la cellule supérieure gauche de la plage.
+  summary: Renvoie l’objet de plage qui contient une cellule donnée sur la base des numéros de ligne et de colonne. La cellule peut se trouver en dehors des limites de sa plage parente, tant qu'elle reste dans la grille de la feuille de calcul. L’emplacement de la cellule renvoyée est déterminé à partir de la cellule supérieure gauche de la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)
   package: ExcelScript!
   fullName: getColumnsAfter(count)
-  summary: Obtient un certain nombre de colonnes à droite de l’objet `Range` actuel.
+  summary: Obtient un certain nombre de colonnes à droite de l'objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)
   package: ExcelScript!
   fullName: getColumnsBefore(count)
-  summary: Obtient un certain nombre de colonnes à gauche de l’objet `Range` actuel.
+  summary: Obtient un certain nombre de colonnes à gauche de l'objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -421,7 +421,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
   package: ExcelScript!
   fullName: getDirectPrecedents()
-  summary: Renvoie un objet qui représente la plage contenant tous les antécédents directs d’une cellule dans la même feuille de calcul ou `WorkbookRangeAreas` dans plusieurs feuilles de calcul.
+  summary: Renvoie un objet qui représente la plage contenant tous les antécédents directs d'une cellule dans la même feuille de calcul ou `WorkbookRangeAreas` dans plusieurs feuilles de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Obtient un objet qui représente la colonne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s’agit d’une plage qui représente les `getEntireColumn` colonnes « B:E »).
+  summary: Obtient un objet qui représente la colonne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s'agit d'une plage qui représente les `getEntireColumn` colonnes « B:E »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Obtient un objet qui représente la ligne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s’agit d’une plage qui représente les lignes `GetEntireRow` « 4:11 »).
+  summary: Obtient un objet qui représente la ligne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s'agit d'une plage qui représente les lignes `GetEntireRow` « 4:11 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -456,11 +456,35 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
+- name: getExtendedRange(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
+  package: ExcelScript!
+  fullName: getExtendedRange(direction, activeCell)
+  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu'au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement des touches Ctrl+Shift+Flèche dans l'interface utilisateur d'Excel sur Windows.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getExtendedRange(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: Direction de la cellule active.
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: Cellule active de cette plage. Par défaut, la cellule active est la cellule supérieure gauche de la plage. Une erreur est lancée si la cellule active ne se trouve pas dans cette plage.
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
 - name: getFormat()
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures, l’alignement et d’autres propriétés de la plage.
+  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures, l'alignement et d'autres propriétés de la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -473,7 +497,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Représente la formule de cellule en notation de type A1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente la formule de cellule en notation de type A1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -486,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: Représente la formule de cellule en notation de type A1, dans la langue et les paramètres régionaux de mise en forme de nombre de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente la formule de cellule en notation de type A1, dans la langue et les paramètres régionaux de mise en forme de nombre de l'utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -499,7 +523,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: Représente la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -512,7 +536,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: Représente la formule dans le style de notation A1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation A1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -525,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -538,7 +562,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: Représente la formule dans le style de notation R1C1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation R1C1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -551,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: Représente si toutes les cellules ont une bordure renversée. Renvoie si toutes les cellules ont une bordure en débordement ou si toutes les `true` `false` cellules n’en ont pas. Renvoie `null` s’il existe des cellules avec et sans bordures en débordement dans la plage.
+  summary: Représente si toutes les cellules ont une bordure renversée. Renvoie si toutes les cellules ont une bordure en débordement ou si toutes les `true` `false` cellules n'en ont pas. Renvoie `null` s'il existe des cellules avec et sans bordures en débordement dans la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -603,7 +627,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: Restituer la plage en tant qu’image png codée en base 64.
+  summary: Restituer la plage en tant qu'image png codée en base 64.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -616,7 +640,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n'est trouvée, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -711,7 +735,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)
   package: ExcelScript!
   fullName: getLinkedDataTypeState()
-  summary: Représente l’état du type de données de la cellule.
+  summary: Représente l'état du type de données de la cellule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -733,24 +757,11 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
-- name: getMergedAreas()
-  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
-  package: ExcelScript!
-  fullName: getMergedAreas()
-  summary: Renvoie un `RangeAreas` objet qui représente les zones fusionnées dans cette plage. Notez que si le nombre de zones fusionnées dans cette plage est supérieur à 512, une erreur `InvalidOperation` sera lancée.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMergedAreas(): RangeAreas;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Représente le code de format numérique de cellule Excel pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente le code de format numérique de cellule Excel pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -776,7 +787,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategory()
-  summary: Spécifie la catégorie de format de nombre de la première cellule de la plage (représentée par l’index de ligne 0 et l’index de colonne de 0).
+  summary: Spécifie la catégorie de format de nombre de la première cellule de la plage (représentée par l'index de ligne 0 et l'index de colonne de 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -789,7 +800,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Représente le code de format numérique de cellule Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente le code de format numérique de cellule Excel pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -802,7 +813,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
   package: ExcelScript!
   fullName: getNumberFormats()
-  summary: Représente le code de format numérique d’Excel pour la plage donnée.
+  summary: Représente le code de format numérique d'Excel pour la plage donnée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -815,7 +826,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: Représente le code de format numérique d’Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
+  summary: Représente le code de format numérique d'Excel pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -865,7 +876,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’enum `BuiltInStyle` est renvoyée.
+  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l'enum `BuiltInStyle` est renvoyée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -874,11 +885,35 @@ methods:
     return:
       type: string
       description: ''
+- name: getRangeEdge(direction, activeCell)
+  uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
+  package: ExcelScript!
+  fullName: getRangeEdge(direction, activeCell)
+  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond à la direction fournie. Cela correspond au comportement de touche Ctrl+Flèche dans l'interface utilisateur d'Excel sur Windows.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      getRangeEdge(
+                  direction: KeyboardDirection,
+                  activeCell?: Range | string
+              ): Range;
+    parameters:
+    - id: direction
+      description: Direction de la cellule active.
+      type: <xref uid="ExcelScript!ExcelScript.KeyboardDirection:enum" />
+    - id: activeCell
+      description: Cellule active de cette plage. Par défaut, la cellule active est la cellule supérieure gauche de la plage. Une erreur est lancée si la cellule active ne se trouve pas dans cette plage.
+      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
+      description: ''
 - name: getResizedRange(deltaRows, deltaColumns)
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
   fullName: getResizedRange(deltaRows, deltaColumns)
-  summary: Obtient un objet semblable à l’objet actuel, mais avec son coin inférieur droit développé (ou contracté) par un certain nombre de lignes `Range` `Range` et de colonnes.
+  summary: Obtient un objet semblable à l'objet actuel, mais avec son coin inférieur droit développé (ou contracté) par un certain nombre de lignes `Range` `Range` et de colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -954,7 +989,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
   package: ExcelScript!
   fullName: getRowsAbove(count)
-  summary: Obtient un certain nombre de lignes au-dessus de l’objet `Range` actuel.
+  summary: Obtient un certain nombre de lignes au-dessus de l'objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -971,7 +1006,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowsBelow:member(1)
   package: ExcelScript!
   fullName: getRowsBelow(count)
-  summary: Obtient un certain nombre de lignes en dessous de l’objet `Range` actuel.
+  summary: Obtient un certain nombre de lignes en dessous de l'objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -988,7 +1023,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: Représente si toutes les cellules sont enregistrées en tant que formule ma matrice. Renvoie si toutes les cellules sont enregistrées en tant que formule ma matrice, ou si toutes les cellules ne le sont pas `true` en tant que formule ma `false` matrice. Renvoie si certaines cellules sont enregistrées en tant que formule `null` ma matrice et d’autres non.
+  summary: Représente si toutes les cellules sont enregistrées en tant que formule ma matrice. Renvoie si toutes les cellules sont enregistrées en tant que formule ma matrice, ou si toutes les cellules ne le sont pas `true` en tant que formule ma `false` matrice. Renvoie si certaines cellules sont enregistrées en tant que formule `null` ma matrice et d'autres non.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1014,7 +1049,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Obtient l’objet, comprenant une ou plusieurs plages, qui représente toutes les cellules qui correspondent au type et à la valeur `RangeAreas` spécifiés. Si aucune cellule spéciale n’est trouvée, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient l'objet, comprenant une ou plusieurs plages, qui représente toutes les cellules qui correspondent au type et à la valeur `RangeAreas` spécifiés. Si aucune cellule spéciale n'est trouvée, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1029,7 +1064,7 @@ methods:
       description: Type de cellules à inclure.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Si `cellType` l’une ou `constants` l’autre de ces deux `formulas`<!-- -->, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
+      description: Si `cellType` l'une ou `constants` l'autre de ces deux `formulas`<!-- -->, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -1038,7 +1073,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n’est pas une cellule d’ancrage ou si la plage de débordement est in trouvée, cette fonction retourne un objet dont la propriété est `isNullObject` définie sur `true`<!-- -->.
+  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n'est pas une cellule d'ancrage ou si la plage de débordement est in trouvée, cette fonction retourne un objet dont la propriété est `isNullObject` définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1051,7 +1086,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtient l’objet de plage contenant la cellule d’ancrage de la cellule dans laquelle la cellule est étendue. S’il ne s’agit pas d’une cellule en débordement ou si plusieurs cellules sont données, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
+  summary: Obtient l'objet de plage contenant la cellule d'ancrage de la cellule dans laquelle la cellule est étendue. S'il ne s'agit pas d'une cellule en débordement ou si plusieurs cellules sont données, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1094,7 +1129,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Représente la valeur Texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signes qui se produit dans \# l’interface utilisateur d’Excel n’affecte pas la valeur de texte renvoyée par l’API. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente la valeur Texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signes qui se produit dans \# l'interface utilisateur d'Excel n'affecte pas la valeur de texte renvoyée par l'API. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1107,7 +1142,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: Valeurs de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signe de nombre () qui se produit dans l’interface utilisateur Excel n’affecte pas la valeur de texte \# renvoyée par l’API.
+  summary: Valeurs de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signe de nombre () qui se produit dans l'interface utilisateur Excel n'affecte pas la valeur de texte \# renvoyée par l'API.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1133,7 +1168,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Renvoie la plage utilisée d’un objet de plage donné. S’il n’existe aucune cellule utilisée dans la plage, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Renvoie la plage utilisée d’un objet de plage donné. S'il n'existe aucune cellule utilisée dans la plage, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1150,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: Représente la valeur brute de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Une cellule contenant une erreur renvoie la chaîne d’erreur. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente la valeur brute de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Une cellule contenant une erreur renvoie la chaîne d’erreur. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1176,7 +1211,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
-  summary: Représente le type de données dans la cellule. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente le type de données dans la cellule. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1241,7 +1276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#group:member(1)
   package: ExcelScript!
   fullName: group(groupOption)
-  summary: Groupe les colonnes et les lignes d’un plan.
+  summary: Groupe les colonnes et les lignes d'un plan.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1249,7 +1284,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Spécifie comment la plage peut être groupée par lignes ou colonnes. Une erreur est lancée lorsque l’option de groupe diffère de la plage ou de la propriété (c’est-à-dire, est true et est « `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` ByColumns » ou est `range.isEntireColumn` true et est « `groupOption` ByRows »).
+      description: Spécifie comment la plage peut être groupée par lignes ou colonnes. Une erreur est lancée lorsque l'option de groupe diffère de la plage ou de la propriété (c'est-à-dire, est true et est « `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` ByColumns » ou est `range.isEntireColumn` true et est « `groupOption` ByRows »).
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1266,7 +1301,7 @@ methods:
     content: 'hideGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Spécifie s’il faut masquer les détails des lignes groupées ou des colonnes groupées.
+      description: Spécifie s'il faut masquer les détails des lignes groupées ou des colonnes groupées.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1275,7 +1310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#insert:member(1)
   package: ExcelScript!
   fullName: insert(shift)
-  summary: Insère une cellule ou une plage de cellules dans la feuille de calcul à la place d’une plage donnée et décale les autres cellules pour libérer de l’espace. Renvoie un nouvel `Range` objet à l’espace vide.
+  summary: Insère une cellule ou une plage de cellules dans la feuille de calcul à la place d’une plage donnée et décale les autres cellules pour libérer de l’espace. Renvoie un nouvel `Range` objet à l'espace vide.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1283,7 +1318,7 @@ methods:
     content: 'insert(shift: InsertShiftDirection): Range;'
     parameters:
     - id: shift
-      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.InsertShiftDirection` plus d’informations, voir.
+      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.InsertShiftDirection` plus d'informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1309,7 +1344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
   package: ExcelScript!
   fullName: moveTo(destinationRange)
-  summary: Déplace les valeurs, la mise en forme et les formules des cellules de la plage actuelle vers la plage de destination, en remplaçant les anciennes informations de ces cellules. La plage de destination est automatiquement étendue si elle est plus petite que la plage actuelle. Les cellules de la plage de destination en dehors de la zone d’origine ne sont pas modifiées.
+  summary: Déplace les valeurs, la mise en forme et les formules des cellules de la plage actuelle vers la plage de destination, en remplaçant les anciennes informations de ces cellules. La plage de destination est automatiquement étendue si elle est plus petite que la plage actuelle. Les cellules de la plage de destination en dehors de la zone d'origine ne sont pas modifiées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1338,10 +1373,10 @@ methods:
               ): RemoveDuplicatesResult;
     parameters:
     - id: columns
-      description: Colonnes à l’intérieur de la plage qui peuvent contenir des doublons. Au moins une colonne doit être spécifiée. Avec indice zéro.
+      description: Colonnes à l'intérieur de la plage qui peuvent contenir des doublons. Au moins une colonne doit être spécifiée. Avec indice zéro.
       type: number[]
     - id: includesHeader
-      description: True si les données d’entrée contiennent l’en-tête. La valeur par défaut est False.
+      description: True si les données d'entrée contiennent l'en-tête. La valeur par défaut est False.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
@@ -1366,7 +1401,7 @@ methods:
       description: Chaîne à rechercher.
       type: string
     - id: replacement
-      description: Chaîne qui remplace la chaîne d’origine.
+      description: Chaîne qui remplace la chaîne d'origine.
       type: string
     - id: criteria
       description: Critères de remplacement supplémentaires.
@@ -1421,7 +1456,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Définit la formule de cellule en notation de style A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit la formule de cellule en notation de style A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1438,7 +1473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
-  summary: Définissez la formule de cellule en notation de type A1, dans les paramètres régionaux de langue et de mise en forme numérique de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définissez la formule de cellule en notation de type A1, dans les paramètres régionaux de langue et de mise en forme numérique de l'utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1455,7 +1490,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulaR1C1(formulaR1C1)
-  summary: Définit la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1472,7 +1507,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: Représente la formule dans le style de notation A1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation A1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1489,7 +1524,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1506,7 +1541,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: Représente la formule dans le style de notation R1C1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation R1C1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1540,7 +1575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Définit le code de format numérique excel de cellule pour la plage donnée. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit le code de format numérique excel de cellule pour la plage donnée. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1557,7 +1592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Définit le code de format numérique excel de cellule pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit le code de format numérique excel de cellule pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1574,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
   fullName: setNumberFormats(numberFormats)
-  summary: Représente le code de format numérique d’Excel pour la plage donnée.
+  summary: Représente le code de format numérique d'Excel pour la plage donnée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1591,7 +1626,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Représente le code de format numérique d’Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
+  summary: Représente le code de format numérique d'Excel pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1608,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’enum `BuiltInStyle` est renvoyée.
+  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l'enum `BuiltInStyle` est renvoyée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1642,7 +1677,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Définit la valeur brute de la plage spécifiée. Les données définies peuvent être de type chaîne, nombre ou booléen. `null` sera ignorée (non définie ou écrasée dans Excel). Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit la valeur brute de la plage spécifiée. Les données définies peuvent être de type chaîne, nombre ou booléen. `null` sera ignorée (non définie ou écrasée dans Excel). Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1733,9 +1768,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 14625f148749589d974e094e1dc33f24a04b8a06
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: da511bf9e95a19149c3cf48a6df97c9a50ba5299
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607185"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914257"

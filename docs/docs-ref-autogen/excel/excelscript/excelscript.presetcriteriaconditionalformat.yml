@@ -3,7 +3,7 @@ name: ExcelScript.PresetCriteriaConditionalFormat
 uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.PresetCriteriaConditionalFormat
-summary: Représente le format conditionnel des critères prédéfinis, par exemple, au-dessus de la moyenne, au-dessous de moyenne, des valeurs uniques, contient des espaces vides, non vides, des erreurs et des erreurs.
+summary: Représente la mise en forme conditionnelle de critère prédéfini telle qu’au-dessus de la moyenne, en dessous de la moyenne, des valeurs uniques, contient vide, non vide, erreur et noerror.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PresetCriteriaConditionalFormat#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Renvoie un objet format qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
+  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,9 +53,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: fc1278500596dfc13f2859ba3b8acf1c3cf053b2
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 693c7a160b439c57a88374b06cc5d155d701cfab
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49412040"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914271"

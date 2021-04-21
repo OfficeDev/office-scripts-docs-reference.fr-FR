@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: Permet d’effacer tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
+  summary: Permet d'effacer tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: Permet d’effacer tous les critères existants du filtre du champ du type donné (s’il en existe un actuellement appliqué).
+  summary: Permet d'effacer tous les critères existants du filtre du champ du type donné (s'il en existe un actuellement appliqué).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: Obtient un pivotItem par nom. Si l’objet PivotItem n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un pivotItem par nom. Si l'objet PivotItem n'existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -155,7 +155,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#isFiltered:member(1)
   package: ExcelScript!
   fullName: isFiltered(filterType)
-  summary: Vérifie s’il existe des filtres appliqués sur le champ.
+  summary: Vérifie s'il existe des filtres appliqués sur le champ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -163,7 +163,7 @@ methods:
     content: 'isFiltered(filterType?: PivotFilterType): boolean;'
     parameters:
     - id: filterType
-      description: Type de filtre à vérifier. Si aucun type n’est fourni, cette méthode vérifie si un filtre est appliqué.
+      description: Type de filtre à vérifier. Si aucun type n'est fourni, cette méthode vérifie si un filtre est appliqué.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: boolean
@@ -240,7 +240,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#sortByValues:member(1)
   package: ExcelScript!
   fullName: sortByValues(sortBy, valuesHierarchy, pivotItemScope)
-  summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L’étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu’il existe plusieurs valeurs de la même DataPivotHierarchy.
+  summary: Trie le PivotField par valeurs spécifiées dans une étendue donnée. L'étendue définit les valeurs spécifiques qui seront utilisées pour le tri lorsqu'il existe plusieurs valeurs de la même DataPivotHierarchy.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -256,7 +256,7 @@ methods:
       description: Spécifie si le tri est effectué par ordre croissant ou décroit.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
-      description: Spécifie la hiérarchie de valeurs sur l’axe des données à utiliser pour le tri.
+      description: Spécifie la hiérarchie de valeurs sur l'axe des données à utiliser pour le tri.
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
       description: Éléments à utiliser pour l’étendue du tri. Ce sont les éléments qui formeront la ligne ou la colonne sur qui vous souhaitez trier. Si une chaîne est utilisée à la place d’un pivotItem, la chaîne représente l’ID de l’pivotItem. S’il n’y a pas d’autres éléments que la hiérarchie de données sur l’axe sur quoi vous souhaitez trier, cela peut être vide.
@@ -265,9 +265,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4228e7c2e7435e23e1566b570c05a7c18505e14e
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 093b593da92ac24585132f9c9b2da2dea2dcb1db
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606398"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913560"

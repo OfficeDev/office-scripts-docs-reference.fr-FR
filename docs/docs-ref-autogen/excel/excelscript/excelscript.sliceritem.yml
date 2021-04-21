@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
   package: ExcelScript!
   fullName: getHasData()
-  summary: La valeur est `true` si l’élément de slicer possède des données.
+  summary: La valeur est `true` si l'élément de slicer possède des données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
   package: ExcelScript!
   fullName: getIsSelected()
-  summary: La valeur `true` est si l’élément de slicer est sélectionné. La définition de cette valeur n’effacera pas l’état sélectionné des autres éléments de slicer. Par défaut, si l’élément de slicer est le seul sélectionné, lorsqu’il est désélectionnés, tous les éléments sont sélectionnés.
+  summary: La valeur `true` est si l'élément de slicer est sélectionné. La définition de cette valeur n'effacera pas l'état sélectionné des autres éléments de slicer. Par défaut, si l'élément de slicer est le seul sélectionné, lorsqu'il est désélectionnés, tous les éléments sont sélectionnés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
   package: ExcelScript!
   fullName: getName()
-  summary: Représente le titre affiché dans l’interface utilisateur Excel.
+  summary: Représente le titre affiché dans l'interface utilisateur Excel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
   package: ExcelScript!
   fullName: setIsSelected(isSelected)
-  summary: La valeur `true` est si l’élément de slicer est sélectionné. La définition de cette valeur n’effacera pas l’état sélectionné des autres éléments de slicer. Par défaut, si l’élément de slicer est le seul sélectionné, lorsqu’il est désélectionnés, tous les éléments sont sélectionnés.
+  summary: La valeur `true` est si l'élément de slicer est sélectionné. La définition de cette valeur n'effacera pas l'état sélectionné des autres éléments de slicer. Par défaut, si l'élément de slicer est le seul sélectionné, lorsqu'il est désélectionnés, tous les éléments sont sélectionnés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -79,9 +79,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: cdfae7429391b3992f4f885b23794f5876c6c7fd
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 10c0521469d6d8f2a916ba92fb907da2b1ef9d4c
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607353"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914152"
