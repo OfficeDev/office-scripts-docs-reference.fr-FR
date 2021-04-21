@@ -3,7 +3,7 @@ name: ExcelScript.ChartDataLabel
 uid: ExcelScript!ExcelScript.ChartDataLabel:interface
 package: ExcelScript!
 fullName: ExcelScript.ChartDataLabel
-summary: Représente l’étiquette de données d’un point de graphique.
+summary: Représente l'étiquette de données d'un point de graphique.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getAutoText:member(1)
   package: ExcelScript!
   fullName: getAutoText()
-  summary: Spécifie si l’étiquette de données génère automatiquement le texte approprié en fonction du contexte.
+  summary: Spécifie si l'étiquette de données génère automatiquement le texte approprié en fonction du contexte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Représente la hauteur, exprimée en points, de l’étiquette de données du graphique. La valeur est `null` si l’étiquette de données du graphique n’est pas visible.
+  summary: Représente la hauteur, exprimée en points, de l’étiquette de données du graphique. La valeur est `null` si l'étiquette de données du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: getHorizontalAlignment()
-  summary: Représente l’alignement horizontal de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsque l’étiquette de données est `TextOrientation` -90, 90 ou 180.
+  summary: Représente l’alignement horizontal de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsque l'étiquette de données est `TextOrientation` -90, 90 ou 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Représente la distance en points, du bord gauche de l’étiquette de données graphique au bord gauche de la zone de graphique. La valeur est `null` si l’étiquette de données du graphique n’est pas visible.
+  summary: Représente la distance en points, du bord gauche de l’étiquette de données graphique au bord gauche de la zone de graphique. La valeur est `null` si l'étiquette de données du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: getLinkNumberFormat()
-  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu’il change dans les cellules).
+  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu'il change dans les cellules).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getPosition:member(1)
   package: ExcelScript!
   fullName: getPosition()
-  summary: Valeur qui représente la position de l’étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d’informations, voir.
+  summary: Valeur qui représente la position de l'étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getShowCategoryName:member(1)
   package: ExcelScript!
   fullName: getShowCategoryName()
-  summary: Spécifie si le nom de catégorie d’étiquette de données est visible.
+  summary: Spécifie si le nom de catégorie d'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getShowLegendKey:member(1)
   package: ExcelScript!
   fullName: getShowLegendKey()
-  summary: Spécifie si le clé de légende d’étiquette de données est visible.
+  summary: Spécifie si le clé de légende d'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getShowPercentage:member(1)
   package: ExcelScript!
   fullName: getShowPercentage()
-  summary: Spécifie si le pourcentage d’étiquette de données est visible.
+  summary: Spécifie si le pourcentage d'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getShowSeriesName:member(1)
   package: ExcelScript!
   fullName: getShowSeriesName()
-  summary: Spécifie si le nom de la série d’étiquettes de données est visible.
+  summary: Spécifie si le nom de la série d'étiquettes de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getShowValue:member(1)
   package: ExcelScript!
   fullName: getShowValue()
-  summary: Spécifie si la valeur de l’étiquette de données est visible.
+  summary: Spécifie si la valeur de l'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getTextOrientation:member(1)
   package: ExcelScript!
   fullName: getTextOrientation()
-  summary: Représente l’angle vers lequel le texte est orienté pour l’étiquette de données du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
+  summary: Représente l'angle vers lequel le texte est orienté pour l'étiquette de données du graphique. La valeur doit être un integer de -90 à 90 ou l'integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Représente la distance en points, du bord supérieur de l’étiquette de données graphique au bord supérieur de la zone de graphique. La valeur est `null` si l’étiquette de données du graphique n’est pas visible.
+  summary: Représente la distance en points, du bord supérieur de l’étiquette de données graphique au bord supérieur de la zone de graphique. La valeur est `null` si l'étiquette de données du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: getVerticalAlignment()
-  summary: Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d’informations, voir. Cette propriété n’est valide que `TextOrientation` lorsque l’étiquette de données a la valeur 0.
+  summary: Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d'informations, voir. Cette propriété n'est valide que `TextOrientation` lorsque l'étiquette de données a la valeur 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Représente la largeur, exprimée en points, de l’étiquette de données du graphique. La valeur est `null` si l’étiquette de données du graphique n’est pas visible.
+  summary: Représente la largeur, exprimée en points, de l’étiquette de données du graphique. La valeur est `null` si l'étiquette de données du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -286,7 +286,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setAutoText:member(1)
   package: ExcelScript!
   fullName: setAutoText(autoText)
-  summary: Spécifie si l’étiquette de données génère automatiquement le texte approprié en fonction du contexte.
+  summary: Spécifie si l'étiquette de données génère automatiquement le texte approprié en fonction du contexte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,7 +320,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setHorizontalAlignment:member(1)
   package: ExcelScript!
   fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Représente l’alignement horizontal de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsque l’étiquette de données est `TextOrientation` -90, 90 ou 180.
+  summary: Représente l’alignement horizontal de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsque l'étiquette de données est `TextOrientation` -90, 90 ou 180.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -340,7 +340,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Représente la distance en points, du bord gauche de l’étiquette de données graphique au bord gauche de la zone de graphique. La valeur est `null` si l’étiquette de données du graphique n’est pas visible.
+  summary: Représente la distance en points, du bord gauche de l’étiquette de données graphique au bord gauche de la zone de graphique. La valeur est `null` si l'étiquette de données du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -357,7 +357,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setLinkNumberFormat:member(1)
   package: ExcelScript!
   fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu’il change dans les cellules).
+  summary: Spécifie si le format numérique est lié aux cellules (de sorte que le format numérique change dans les étiquettes lorsqu'il change dans les cellules).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -391,7 +391,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setPosition:member(1)
   package: ExcelScript!
   fullName: setPosition(position)
-  summary: Valeur qui représente la position de l’étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d’informations, voir.
+  summary: Valeur qui représente la position de l'étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -442,7 +442,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setShowCategoryName:member(1)
   package: ExcelScript!
   fullName: setShowCategoryName(showCategoryName)
-  summary: Spécifie si le nom de catégorie d’étiquette de données est visible.
+  summary: Spécifie si le nom de catégorie d'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -459,7 +459,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setShowLegendKey:member(1)
   package: ExcelScript!
   fullName: setShowLegendKey(showLegendKey)
-  summary: Spécifie si le clé de légende d’étiquette de données est visible.
+  summary: Spécifie si le clé de légende d'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -476,7 +476,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setShowPercentage:member(1)
   package: ExcelScript!
   fullName: setShowPercentage(showPercentage)
-  summary: Spécifie si le pourcentage d’étiquette de données est visible.
+  summary: Spécifie si le pourcentage d'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -493,7 +493,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setShowSeriesName:member(1)
   package: ExcelScript!
   fullName: setShowSeriesName(showSeriesName)
-  summary: Spécifie si le nom de la série d’étiquettes de données est visible.
+  summary: Spécifie si le nom de la série d'étiquettes de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -510,7 +510,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setShowValue:member(1)
   package: ExcelScript!
   fullName: setShowValue(showValue)
-  summary: Spécifie si la valeur de l’étiquette de données est visible.
+  summary: Spécifie si la valeur de l'étiquette de données est visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -544,7 +544,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setTextOrientation:member(1)
   package: ExcelScript!
   fullName: setTextOrientation(textOrientation)
-  summary: Représente l’angle vers lequel le texte est orienté pour l’étiquette de données du graphique. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
+  summary: Représente l'angle vers lequel le texte est orienté pour l'étiquette de données du graphique. La valeur doit être un integer de -90 à 90 ou l'integer 180 pour le texte orienté verticalement.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -561,7 +561,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Représente la distance en points, du bord supérieur de l’étiquette de données graphique au bord supérieur de la zone de graphique. La valeur est `null` si l’étiquette de données du graphique n’est pas visible.
+  summary: Représente la distance en points, du bord supérieur de l’étiquette de données graphique au bord supérieur de la zone de graphique. La valeur est `null` si l'étiquette de données du graphique n'est pas visible.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -578,7 +578,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartDataLabel#setVerticalAlignment:member(1)
   package: ExcelScript!
   fullName: setVerticalAlignment(verticalAlignment)
-  summary: Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d’informations, voir. Cette propriété n’est valide que `TextOrientation` lorsque l’étiquette de données a la valeur 0.
+  summary: Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d'informations, voir. Cette propriété n'est valide que `TextOrientation` lorsque l'étiquette de données a la valeur 0.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,9 +595,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 2d44571d609deb3e2c38dba5a3afe01a88bfbaee
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 671a8903121d1f320f3292adf2effd1902b912a3
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606919"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914554"
