@@ -11,19 +11,19 @@ fields:
 - name: compact
   uid: ExcelScript!ExcelScript.PivotLayoutType.compact:member
   package: ExcelScript!
-  summary: Formulaire compressé horizontalement avec des étiquettes à partir du champ suivant dans la même colonne.
+  summary: Formulaire compressé horizontalement avec des étiquettes du champ suivant dans la même colonne.
 - name: outline
   uid: ExcelScript!ExcelScript.PivotLayoutType.outline:member
   package: ExcelScript!
-  summary: Les éléments des champs internes se trouvent sur la même ligne que les champs externes les éléments et les sous-totaux sont toujours en bas.
+  summary: Les éléments des champs internes sont sur la même ligne que les éléments des champs externes et les sous-totaux sont toujours en bas.
 - name: tabular
   uid: ExcelScript!ExcelScript.PivotLayoutType.tabular:member
   package: ExcelScript!
   summary: Les éléments des champs internes sont toujours sur une nouvelle ligne par rapport aux éléments des champs externes.
 metadata:
-  ms.openlocfilehash: 2c698c1cea3b728857723dbdd00474d8723b9569
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 00e8342cd618db35b9f2f4a49bf8ab454be15c58
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415175"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913539"

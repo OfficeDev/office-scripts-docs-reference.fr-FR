@@ -15,15 +15,15 @@ fields:
 - name: leftToRight
   uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
   package: ExcelScript!
-  summary: Sens de lecture de gauche à droite
+  summary: Ordre de lecture de gauche à droite
 - name: rightToLeft
   uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
   package: ExcelScript!
-  summary: Sens de lecture de droite à gauche
+  summary: Ordre de lecture de droite à gauche
 metadata:
-  ms.openlocfilehash: 391ae0ad91303544e478b18cf04e6fcfbee4cec3
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 364d838721992c4fb52488de1652cc03750a8eaa
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416560"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914229"

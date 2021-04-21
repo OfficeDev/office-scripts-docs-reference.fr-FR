@@ -64,7 +64,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetFreezePanes#getLocation:member(1)
   package: ExcelScript!
   fullName: getLocation()
-  summary: Obtient une plage qui définit les cellules figées dans l’affichage de la feuille de calcul active. La plage figée correspond aux cellules figées dans le volet supérieur et le volet le plus à gauche. S’il n’existe pas de volet figé, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient une plage qui définit les cellules figées dans l’affichage de la feuille de calcul active. La plage figée correspond aux cellules figées dans le volet supérieur et le volet le plus à gauche. S'il n'existe pas de volet figé, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -87,9 +87,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 3ee4e99a62a7adfff3ab84a75424673c3cb9f59c
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: dba3890e3a18b536b7939f23f492ad079a01c486
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607276"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914655"

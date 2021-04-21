@@ -128,10 +128,10 @@ methods:
     content: 'deleteRowsAt(index: number, count?: number): void;'
     parameters:
     - id: index
-      description: 'Valeur d’index de la ligne à supprimer. Attention : l’index de la ligne a peut-être été déplacé à partir du moment où vous avez déterminé la valeur à utiliser pour la suppression.'
+      description: "Valeur d'index de la ligne à supprimer. Attention : l'index de la ligne a peut-être été déplacé à partir du moment où vous avez déterminé la valeur à utiliser pour la suppression."
       type: number
     - id: count
-      description: 'Nombre de lignes à supprimer. Par défaut, une seule ligne est supprimée. Remarque : la suppression de plus de 1 000 lignes en même temps peut entraîner un délai d’inoutout de Power Automate.'
+      description: "Nombre de lignes à supprimer. Par défaut, une seule ligne est supprimée. Remarque : la suppression de plus de 1 000 lignes en même temps peut entraîner un délai d'inoutout de Power Automate."
       type: number
     return:
       type: void
@@ -140,7 +140,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: Représente `AutoFilter` l’objet du tableau.
+  summary: Représente `AutoFilter` l'objet du tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: Obtient un objet de colonne par son nom ou son ID. Si la colonne n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un objet de colonne par son nom ou son ID. Si la colonne n'existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
   package: ExcelScript!
   fullName: getColumnById(key)
-  summary: Obtient un objet de colonne par ID. Si la colonne n’existe pas, elle retourne undefined.
+  summary: Obtient un objet de colonne par ID. Si la colonne n'existe pas, elle retourne undefined.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -187,7 +187,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
   package: ExcelScript!
   fullName: getColumnByName(key)
-  summary: Obtient un objet de colonne par nom. Si la colonne n’existe pas, elle retourne undefined.
+  summary: Obtient un objet de colonne par nom. Si la colonne n'existe pas, elle retourne undefined.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,6 +460,23 @@ methods:
     return:
       type: void
       description: ''
+- name: resize(newRange)
+  uid: ExcelScript!ExcelScript.Table#resize:member(1)
+  package: ExcelScript!
+  fullName: resize(newRange)
+  summary: Resize the table to the new range. La nouvelle plage doit se chevaucher avec la plage du tableau d’origine et les en-têtes (ou le haut du tableau) doivent se trouver sur la même ligne.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'resize(newRange: Range | string): void;'
+    parameters:
+    - id: newRange
+      description: Objet de plage ou adresse de plage qui sera utilisé pour déterminer la nouvelle taille du tableau.
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
+    return:
+      type: void
+      description: ''
 - name: setHighlightFirstColumn(highlightFirstColumn)
   uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
   package: ExcelScript!
@@ -614,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: fda7deca11fe0eae9282d9c9c54ac289e4e39df4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 9b5569c566237ce34403752541bc7ebcfc4f4f17
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605247"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913341"

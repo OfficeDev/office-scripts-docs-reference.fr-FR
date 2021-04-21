@@ -75,11 +75,11 @@ fields:
 - name: unknown
   uid: ExcelScript!ExcelScript.ValueFilterCondition.unknown:member
   package: ExcelScript!
-  summary: '`ValueFilterCondition` est inconnu ou non pris en cas d’insupportation.'
+  summary: "`ValueFilterCondition` est inconnu ou non pris en cas d'insupportation."
 metadata:
-  ms.openlocfilehash: fb0d318f36cfc2a4d50f14a690eebf1d922f18c9
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 74b546f8625a2e025318666956c019507d604c3e
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605254"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914613"

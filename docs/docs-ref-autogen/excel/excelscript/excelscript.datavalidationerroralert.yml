@@ -3,7 +3,7 @@ name: ExcelScript.DataValidationErrorAlert
 uid: ExcelScript!ExcelScript.DataValidationErrorAlert:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidationErrorAlert
-summary: Représente les propriétés d’alerte d’erreur pour la validation des données.
+summary: Représente les propriétés d'alerte d'erreur pour la validation des données.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#message:member
   package: ExcelScript!
   fullName: message
-  summary: Représente le message d’alerte d’erreur.
+  summary: Représente le message d'alerte d'erreur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#showAlert:member
   package: ExcelScript!
   fullName: showAlert
-  summary: Spécifie s’il faut afficher une boîte de dialogue d’alerte d’erreur lorsqu’un utilisateur entre des données non valides. La valeur par défaut est `true`<!-- -->.
+  summary: Spécifie s'il faut afficher une boîte de dialogue d'alerte d'erreur lorsqu'un utilisateur entre des données non valides. La valeur par défaut est `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#style:member
   package: ExcelScript!
   fullName: style
-  summary: Type d’alerte de validation des données. Pour `ExcelScript.DataValidationAlertStyle` plus d’informations, voir.
+  summary: Type d'alerte de validation des données. Pour `ExcelScript.DataValidationAlertStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.DataValidationErrorAlert#title:member
   package: ExcelScript!
   fullName: title
-  summary: Représente le titre de la boîte de dialogue d’alerte d’erreur.
+  summary: Représente le titre de la boîte de dialogue d'alerte d'erreur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -58,9 +58,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 64aa138911f1d67dd1bf48512168281cbacfda3b
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 9d8d4761c2e4e0870d03a3c1fafb66a46d9a839a
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606522"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913673"

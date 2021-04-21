@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getAutoFormat:member(1)
   package: ExcelScript!
   fullName: getAutoFormat()
-  summary: Spécifie si la mise en forme sera automatiquement mise en forme lorsqu’elle est actualisée ou lorsque les champs sont déplacés.
+  summary: Spécifie si la mise en forme sera automatiquement mise en forme lorsqu'elle est actualisée ou lorsque les champs sont déplacés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -69,7 +69,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getEnableFieldList:member(1)
   package: ExcelScript!
   fullName: getEnableFieldList()
-  summary: Spécifie si la liste des champs peut être affichée dans l’interface utilisateur.
+  summary: Spécifie si la liste des champs peut être affichée dans l'interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#getPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: getPreserveFormatting()
-  summary: Spécifie si la mise en forme est conservée lorsque le rapport est actualisé ou recalculé par des opérations telles que la pivotation, le tri ou la modification d’éléments de champ de page.
+  summary: Spécifie si la mise en forme est conservée lorsque le rapport est actualisé ou recalculé par des opérations telles que la pivotation, le tri ou la modification d'éléments de champ de page.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setAutoFormat:member(1)
   package: ExcelScript!
   fullName: setAutoFormat(autoFormat)
-  summary: Spécifie si la mise en forme sera automatiquement mise en forme lorsqu’elle est actualisée ou lorsque les champs sont déplacés.
+  summary: Spécifie si la mise en forme sera automatiquement mise en forme lorsqu'elle est actualisée ou lorsque les champs sont déplacés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -211,7 +211,7 @@ methods:
     content: 'setAutoSortOnCell(cell: Range | string, sortBy: SortBy): void;'
     parameters:
     - id: cell
-      description: Cellule unique à utiliser pour obtenir les critères d’application du tri automatique.
+      description: Cellule unique à utiliser pour obtenir les critères d'application du tri automatique.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: sortBy
       description: Sens du tri.
@@ -223,7 +223,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setEnableFieldList:member(1)
   package: ExcelScript!
   fullName: setEnableFieldList(enableFieldList)
-  summary: Spécifie si la liste des champs peut être affichée dans l’interface utilisateur.
+  summary: Spécifie si la liste des champs peut être affichée dans l'interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -257,7 +257,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotLayout#setPreserveFormatting:member(1)
   package: ExcelScript!
   fullName: setPreserveFormatting(preserveFormatting)
-  summary: Spécifie si la mise en forme est conservée lorsque le rapport est actualisé ou recalculé par des opérations telles que la pivotation, le tri ou la modification d’éléments de champ de page.
+  summary: Spécifie si la mise en forme est conservée lorsque le rapport est actualisé ou recalculé par des opérations telles que la pivotation, le tri ou la modification d'éléments de champ de page.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -322,9 +322,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 4612183d3dca994b991b7f65659024e46fb06a13
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 6329eaaeb305d4a07223761071ab79c764ca688d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607192"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914292"

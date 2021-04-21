@@ -3,7 +3,7 @@ name: ExcelScript.LabelFilterCondition
 uid: ExcelScript!ExcelScript.LabelFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.LabelFilterCondition
-summary: Enum représentant toutes les conditions acceptées par lesquelles un filtre d’étiquette peut être appliqué. Utilisé pour configurer le type de filtre de tableau croisé dynamique qui est appliqué au champ. `PivotFilter.criteria.exclusive` peuvent être définies `true` pour inverser la plupart de ces conditions.
+summary: Enum représentant toutes les conditions acceptées par lesquelles un filtre d'étiquette peut être appliqué. Utilisé pour configurer le type de filtre de tableau croisé dynamique qui est appliqué au champ. `PivotFilter.criteria.exclusive` peuvent être définies `true` pour inverser la plupart de ces conditions.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -12,7 +12,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.beginsWith:member
   package: ExcelScript!
   summary: >-
-    L’étiquette commence par le critère de sous-string.
+    L'étiquette commence par le critère de sous-string.
 
 
     Critères obligatoires : {`substring`<!-- -->}<!-- -->. Critères facultatifs : {`exclusive`<!-- -->}<!-- -->.
@@ -28,7 +28,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.contains:member
   package: ExcelScript!
   summary: >-
-    L’étiquette contient un critère de sous-string.
+    L'étiquette contient un critère de sous-string.
 
 
     Critères obligatoires : {`substring`<!-- -->}<!-- -->. Critères facultatifs : {`exclusive`<!-- -->}<!-- -->.
@@ -36,7 +36,7 @@ fields:
   uid: ExcelScript!ExcelScript.LabelFilterCondition.endsWith:member
   package: ExcelScript!
   summary: >-
-    L’étiquette se termine par un critère de sous-string.
+    L'étiquette se termine par un critère de sous-string.
 
 
     Critères obligatoires : {`substring`<!-- -->}<!-- -->. Critères facultatifs : {`exclusive`<!-- -->}<!-- -->.
@@ -83,11 +83,11 @@ fields:
 - name: unknown
   uid: ExcelScript!ExcelScript.LabelFilterCondition.unknown:member
   package: ExcelScript!
-  summary: '`LabelFilterCondition` est inconnu ou non pris en cas d’insupportation.'
+  summary: "`LabelFilterCondition` est inconnu ou non pris en cas d'insupportation."
 metadata:
-  ms.openlocfilehash: 971720fcb310dec1604bf18761b42f0ea34421a9
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: fef83ff91682edfcb31821be1ed8fb89bf98ea79
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606433"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913595"

@@ -3,7 +3,7 @@ name: ExcelScript.CommentMention
 uid: ExcelScript!ExcelScript.CommentMention:interface
 package: ExcelScript!
 fullName: ExcelScript.CommentMention
-summary: Représente l’entité mentionnée dans les commentaires.
+summary: Représente l'entité mentionnée dans les commentaires.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#email:member
   package: ExcelScript!
   fullName: email
-  summary: Adresse de messagerie de l’entité mentionnée dans un commentaire.
+  summary: Adresse de messagerie de l'entité mentionnée dans un commentaire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#id:member
   package: ExcelScript!
   fullName: id
-  summary: ID de l’entité. L’ID correspond à l’un des ID dans `CommentRichContent.richContent`<!-- -->.
+  summary: ID de l'entité. L'ID correspond à l'un des ID dans `CommentRichContent.richContent`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.CommentMention#name:member
   package: ExcelScript!
   fullName: name
-  summary: Nom de l’entité mentionnée dans un commentaire.
+  summary: Nom de l'entité mentionnée dans un commentaire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -46,9 +46,9 @@ properties:
     return:
       type: string
 metadata:
-  ms.openlocfilehash: 44c3197151b14d7a6954531d9e086f9fe33a53a6
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 8942bc859cde2bf8efc57d0001742f1b96f1d9ca
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606785"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914505"

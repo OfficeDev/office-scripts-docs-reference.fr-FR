@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getHeight:member(1)
   package: ExcelScript!
   fullName: getHeight()
-  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
+  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Cette propriété envoie une exception lorsqu'elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Représente l’ID unique du slicer.
+  summary: Représente l'ID unique du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu'elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItem:member(1)
   package: ExcelScript!
   fullName: getSlicerItem(key)
-  summary: Obtient un segment de l’élément à l’aide de son nom ou clé. Si l’élément de slicer n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un segment de l’élément à l’aide de son nom ou clé. Si l'élément de slicer n'existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -147,7 +147,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getSlicerItems:member(1)
   package: ExcelScript!
   fullName: getSlicerItems()
-  summary: Représente la collection d’éléments de slicer qui font partie du slicer.
+  summary: Représente la collection d'éléments de slicer qui font partie du slicer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -186,7 +186,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu'elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,7 +199,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#getWidth:member(1)
   package: ExcelScript!
   fullName: getWidth()
-  summary: Représente la largeur, en points, de la forme. Envoie une erreur `InvalidArgument` lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Représente la largeur, en points, de la forme. Envoie une erreur `InvalidArgument` lorsqu'elle est définie avec une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -233,7 +233,7 @@ methods:
     content: 'selectItems(items?: string[]): void;'
     parameters:
     - id: items
-      description: Facultatif. Noms d’éléments de slicer spécifiés à sélectionner.
+      description: Facultatif. Noms d'éléments de slicer spécifiés à sélectionner.
       type: string[]
     return:
       type: void
@@ -259,7 +259,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setHeight:member(1)
   package: ExcelScript!
   fullName: setHeight(height)
-  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Cette propriété envoie une exception lorsqu’elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
+  summary: Représente la hauteur, exprimée en points, de l’axe de graphique. Cette propriété envoie une exception lorsqu'elle est définie avec `InvalidArgument` une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -276,7 +276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu'elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: Représente la distance, en points, du bord supérieur de la section à la partie droite de la feuille de calcul. Cette propriété envoie `InvalidArgument` une erreur lorsqu'elle est définie avec une valeur négative comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Slicer#setWidth:member(1)
   package: ExcelScript!
   fullName: setWidth(width)
-  summary: Représente la largeur, en points, de la forme. Envoie une erreur `InvalidArgument` lorsqu’elle est définie avec une valeur négative ou zéro comme entrée.
+  summary: Représente la largeur, en points, de la forme. Envoie une erreur `InvalidArgument` lorsqu'elle est définie avec une valeur négative ou zéro comme entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -375,9 +375,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e77939566a567014410472a3a707d5c624220469
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 52084dc72ba038caa7f5ad210fba2c285cfb33f4
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606010"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913362"

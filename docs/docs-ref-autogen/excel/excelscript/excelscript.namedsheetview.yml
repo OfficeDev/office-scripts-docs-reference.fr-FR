@@ -1,0 +1,91 @@
+### YamlMime:TSType
+name: ExcelScript.NamedSheetView
+uid: ExcelScript!ExcelScript.NamedSheetView:interface
+package: ExcelScript!
+fullName: ExcelScript.NamedSheetView
+summary: Représente une vue de feuille nommée d’une feuille de calcul. Un affichage Feuille stocke les règles de tri et de filtre d’une feuille de calcul particulière. Chaque affichage feuille (même temporaire) possède un nom unique d’étendue feuille de calcul qui est utilisé pour accéder à l’affichage.
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+- name: activate()
+  uid: ExcelScript!ExcelScript.NamedSheetView#activate:member(1)
+  package: ExcelScript!
+  fullName: activate()
+  summary: Active cette vue de feuille. Cela équivaut à utiliser « Basculer vers » dans l’interface utilisateur Excel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'activate(): void;'
+    return:
+      type: void
+      description: ''
+- name: delete()
+  uid: ExcelScript!ExcelScript.NamedSheetView#delete:member(1)
+  package: ExcelScript!
+  fullName: delete()
+  summary: Supprime l’affichage Feuille de la feuille de calcul.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'delete(): void;'
+    return:
+      type: void
+      description: ''
+- name: duplicate(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#duplicate:member(1)
+  package: ExcelScript!
+  fullName: duplicate(name)
+  summary: Crée une copie de cette vue de feuille.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'duplicate(name?: string): NamedSheetView;'
+    parameters:
+    - id: name
+      description: Nom de la vue de feuille dupliquée. Si aucun nom n’est fourni, un nom est généré.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.NamedSheetView:interface" />
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.NamedSheetView#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Obtient ou définit le nom de l’affichage Feuille. Le nom de l’affichage feuille temporaire est la chaîne vide («  »). L’attribution d’un nom à l’affichage à l’aide de la propriété Name entraîne l’enregistrée de la vue de feuille.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.NamedSheetView#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Obtient ou définit le nom de l’affichage Feuille. Le nom de l’affichage feuille temporaire est la chaîne vide («  »). L’attribution d’un nom à l’affichage à l’aide de la propriété Name entraîne l’enregistrée de la vue de feuille.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 1db6ac57a9824763fd56594c4d8e94abb9ad9211
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913681"

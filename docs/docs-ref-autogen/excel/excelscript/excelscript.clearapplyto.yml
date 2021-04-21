@@ -15,23 +15,23 @@ fields:
 - name: contents
   uid: ExcelScript!ExcelScript.ClearApplyTo.contents:member
   package: ExcelScript!
-  summary: Efface le contenu de la plage.
+  summary: Permet d’effacer le contenu de la plage.
 - name: formats
   uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
   package: ExcelScript!
-  summary: Efface toutes les mises en forme de la plage.
+  summary: Cette pratique permet d’effacer toute la mise en forme de la plage.
 - name: hyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
   package: ExcelScript!
-  summary: Efface tous les liens hypertexte, mais conserve tout le contenu et la mise en forme.
+  summary: Clears all hyperlinks, but leaves all content and formatting intact.
 - name: removeHyperlinks
   uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
   package: ExcelScript!
-  summary: Supprime les liens hypertexte et la mise en forme de la cellule, mais laisse le contenu, les mises en forme conditionnelles et la validation des données intactes.
+  summary: Supprime les liens hypertexte et la mise en forme de la cellule, mais laisse le contenu, les formats conditionnels et la validation des données intacts.
 metadata:
-  ms.openlocfilehash: ac23bc453e0ec416e0d2f4bde26e0f69a7270ccf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415980"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913907"

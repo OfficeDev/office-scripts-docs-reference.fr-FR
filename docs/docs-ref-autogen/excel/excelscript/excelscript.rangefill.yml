@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Code couleur HTML représentant la couleur d’arrière-plan, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur d'arrière-plan, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
   package: ExcelScript!
   fullName: getPattern()
-  summary: Motif d’une plage. Pour `ExcelScript.FillPattern` plus d’informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur indique que la plage entière `null` n’a pas de paramètre de motif uniforme.
+  summary: Motif d'une plage. Pour `ExcelScript.FillPattern` plus d'informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur indique que la plage entière `null` n'a pas de paramètre de motif uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: getPatternTintAndShade()
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `patternTintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s'éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d'origine. Une `null` valeur indique que la plage n'a pas de `patternTintAndShade` paramètres uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `tintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s'éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d'origine. Une `null` valeur indique que la plage n'a pas de `tintAndShade` paramètres uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Code couleur HTML représentant la couleur d’arrière-plan, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur d'arrière-plan, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
   package: ExcelScript!
   fullName: setPattern(pattern)
-  summary: Motif d’une plage. Pour `ExcelScript.FillPattern` plus d’informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur indique que la plage entière `null` n’a pas de paramètre de motif uniforme.
+  summary: Motif d'une plage. Pour `ExcelScript.FillPattern` plus d'informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur indique que la plage entière `null` n'a pas de paramètre de motif uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `patternTintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s'éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d'origine. Une `null` valeur indique que la plage n'a pas de `patternTintAndShade` paramètres uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `tintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s'éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d'origine. Une `null` valeur indique que la plage n'a pas de `tintAndShade` paramètres uniformes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6bf9cb6b2e535971d2b4323e3c078d50e0df6894
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: dafa67da456c4e91adef5f2af1b7f06b3460152d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607171"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914243"

@@ -27,11 +27,11 @@ fields:
 - name: allDatesInPeriodApril
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member
   package: ExcelScript!
-  summary: Date du mois d’avril.
+  summary: Date du mois d'avril.
 - name: allDatesInPeriodAugust
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member
   package: ExcelScript!
-  summary: Date du mois d’août.
+  summary: Date du mois d'août.
 - name: allDatesInPeriodDecember
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member
   package: ExcelScript!
@@ -67,7 +67,7 @@ fields:
 - name: allDatesInPeriodOctober
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member
   package: ExcelScript!
-  summary: Date du mois d’octobre.
+  summary: Date du mois d'octobre.
 - name: allDatesInPeriodQuarter1
   uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member
   package: ExcelScript!
@@ -135,7 +135,7 @@ fields:
 - name: lastYear
   uid: ExcelScript!ExcelScript.DateFilterCondition.lastYear:member
   package: ExcelScript!
-  summary: Date de l’année dernière.
+  summary: Date de l'année dernière.
 - name: nextMonth
   uid: ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member
   package: ExcelScript!
@@ -151,7 +151,7 @@ fields:
 - name: nextYear
   uid: ExcelScript!ExcelScript.DateFilterCondition.nextYear:member
   package: ExcelScript!
-  summary: Date de l’année suivante.
+  summary: Date de l'année suivante.
 - name: thisMonth
   uid: ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member
   package: ExcelScript!
@@ -179,7 +179,7 @@ fields:
 - name: unknown
   uid: ExcelScript!ExcelScript.DateFilterCondition.unknown:member
   package: ExcelScript!
-  summary: '`DateFilterCondition` est inconnu ou non pris en cas d’insupportation.'
+  summary: "`DateFilterCondition` est inconnu ou non pris en cas d'insupportation."
 - name: yearToDate
   uid: ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member
   package: ExcelScript!
@@ -189,9 +189,9 @@ fields:
   package: ExcelScript!
   summary: Date du jour de la veille.
 metadata:
-  ms.openlocfilehash: 5891d34af071d4ed7b798acef50b8b875c2f3aa4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: e38289c8ae5e90bb90db21e64ec61fff4300f4e0
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607136"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914477"

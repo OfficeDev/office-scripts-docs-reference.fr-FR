@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.WorksheetSearchCriteria#completeMatch:member
   package: ExcelScript!
   fullName: completeMatch
-  summary: Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l’intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).
+  summary: Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l'intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -34,9 +34,9 @@ properties:
     return:
       type: boolean
 metadata:
-  ms.openlocfilehash: 393ff5521f0413ca8b03d8013cf6735fa24696bc
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 020d601d5494389faa66838d1eea359131917b8f
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607262"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914641"

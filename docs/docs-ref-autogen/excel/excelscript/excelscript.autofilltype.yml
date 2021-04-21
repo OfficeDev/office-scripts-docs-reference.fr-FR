@@ -57,9 +57,9 @@ fields:
   package: ExcelScript!
   summary: Version de « FillSeries » pour les nombres qui remplit les valeurs des cellules adjacentes en fonction d’un modèle de tendance linéaire.
 metadata:
-  ms.openlocfilehash: 60a16fedc18165357a796d52d714408cb4288ca7
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 2035fcda973e33df938bcfc54db8f110be392f06
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606627"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913935"

@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Spécifie l’identificateur de réponse du commentaire.
+  summary: Spécifie l'identificateur de réponse du commentaire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getResolved:member(1)
   package: ExcelScript!
   fullName: getResolved()
-  summary: État de réponse du commentaire. Valeur de signifie `true` que la réponse est dans l’état résolu.
+  summary: État de réponse du commentaire. Valeur de signifie `true` que la réponse est dans l'état résolu.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.CommentReply#getRichContent:member(1)
   package: ExcelScript!
   fullName: getRichContent()
-  summary: Contenu de commentaire enrichi (par exemple, mentions dans les commentaires). Cette chaîne n’est pas destinée à être affichée aux utilisateurs finaux. Votre add-in ne doit l’utiliser que pour l’utilisation du contenu de commentaires enrichis.
+  summary: Contenu de commentaire enrichi (par exemple, mentions dans les commentaires). Cette chaîne n'est pas destinée à être affichée aux utilisateurs finaux. Votre add-in ne doit l'utiliser que pour l'utilisation du contenu de commentaires enrichis.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -200,9 +200,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 979eadeede217100141cf9aa45a39fbaf0c6ab6f
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: b6aee6ac8a3b77481cb4b70fc9c8800b912c8150
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606768"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914054"

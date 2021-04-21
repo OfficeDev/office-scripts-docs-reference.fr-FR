@@ -3,7 +3,7 @@ name: ExcelScript.ChartGradientStyle
 uid: ExcelScript!ExcelScript.ChartGradientStyle:enum
 package: ExcelScript!
 fullName: ExcelScript.ChartGradientStyle
-summary: Représente le style de dégradé d’une série de graphique. Applicable uniquement aux graphiques de carte de région.
+summary: Représente le style de dégradé d’une série de graphiques. Ceci s’applique uniquement aux graphiques de carte de région.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -17,9 +17,9 @@ fields:
   package: ExcelScript!
   summary: ''
 metadata:
-  ms.openlocfilehash: e0eec4f7fe055cd020b994f86864a92441eb50c6
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: d0c2afaab35bdb5355d8a4ddcc8d4337b4ff065d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49418071"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914068"

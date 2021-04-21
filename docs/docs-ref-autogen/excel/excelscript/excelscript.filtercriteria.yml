@@ -41,7 +41,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#criterion2:member
   package: ExcelScript!
   fullName: criterion2
-  summary: Second critère utilisé pour filtrer des données. Utilisé uniquement en tant qu’opérateur dans le cas `custom` du filtrage.
+  summary: Second critère utilisé pour filtrer des données. Utilisé uniquement en tant qu'opérateur dans le cas `custom` du filtrage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -53,7 +53,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member
   package: ExcelScript!
   fullName: dynamicCriteria
-  summary: Critères dynamiques de `ExcelScript.DynamicFilterCriteria` l’ensemble à appliquer à cette colonne. Utilisé avec `dynamic` le filtrage.
+  summary: Critères dynamiques de `ExcelScript.DynamicFilterCriteria` l'ensemble à appliquer à cette colonne. Utilisé avec `dynamic` le filtrage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -89,7 +89,7 @@ properties:
   uid: ExcelScript!ExcelScript.FilterCriteria#operator:member
   package: ExcelScript!
   fullName: operator
-  summary: Opérateur utilisé pour combiner les critères 1 et 2 lors de l’utilisation `custom` du filtrage.
+  summary: Opérateur utilisé pour combiner les critères 1 et 2 lors de l'utilisation `custom` du filtrage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -122,9 +122,9 @@ properties:
     return:
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
 metadata:
-  ms.openlocfilehash: 7ec27c61105ed0d673b974f8fbb66d741917279f
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 087f822eceff7977613701fd62ff6d763a6df8ad
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607024"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913645"

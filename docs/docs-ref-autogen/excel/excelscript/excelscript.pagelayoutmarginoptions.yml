@@ -3,7 +3,7 @@ name: ExcelScript.PageLayoutMarginOptions
 uid: ExcelScript!ExcelScript.PageLayoutMarginOptions:interface
 package: ExcelScript!
 fullName: ExcelScript.PageLayoutMarginOptions
-summary: Représente les options des marges de la mise en page.
+summary: Représente les options dans les marges de mise en page.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#bottom:member
   package: ExcelScript!
   fullName: bottom
-  summary: Spécifie la marge inférieure de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  summary: Spécifie la marge inférieure de mise en page dans l’unité spécifiée à utiliser pour l’impression.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#header:member
   package: ExcelScript!
   fullName: header
-  summary: Spécifie la marge d’en-tête de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  summary: Spécifie la marge d’en-tête de mise en page dans l’unité spécifiée à utiliser pour l’impression.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#left:member
   package: ExcelScript!
   fullName: left
-  summary: Spécifie la marge de gauche de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  summary: Spécifie la marge gauche de mise en page dans l’unité spécifiée à utiliser pour l’impression.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -61,7 +61,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#right:member
   package: ExcelScript!
   fullName: right
-  summary: Spécifie la marge de droite de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  summary: Spécifie la marge droite de mise en page dans l’unité spécifiée à utiliser pour l’impression.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -73,7 +73,7 @@ properties:
   uid: ExcelScript!ExcelScript.PageLayoutMarginOptions#top:member
   package: ExcelScript!
   fullName: top
-  summary: Spécifie la marge supérieure de la mise en page dans l’unité spécifiée à utiliser pour l’impression.
+  summary: Spécifie la marge supérieure de mise en page dans l’unité spécifiée à utiliser pour l’impression.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -82,9 +82,9 @@ properties:
     return:
       type: number
 metadata:
-  ms.openlocfilehash: 3cd60d73c21b4ed612a6cd7b470c5e26f961056d
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 2f778f3a4f1d6b23382ec7b2dc956671a9bba9a8
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415283"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914327"

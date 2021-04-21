@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerBackgroundColor()
-  summary: Représentation de code couleur HTML de la couleur d’arrière-plan du marqueur d’un point de données (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur d'arrière-plan du marqueur d'un point de données (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: getMarkerForegroundColor()
-  summary: Représentation de code couleur HTML de la couleur de premier plan du marqueur d’un point de données (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur de premier plan du marqueur d'un point de données (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerSize:member(1)
   package: ExcelScript!
   fullName: getMarkerSize()
-  summary: Représente la taille du marqueur d’un point de données.
+  summary: Représente la taille du marqueur d'un point de données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#getMarkerStyle:member(1)
   package: ExcelScript!
   fullName: getMarkerStyle()
-  summary: Représente le style du marqueur du point de données de graphique. Pour `ExcelScript.ChartMarkerStyle` plus d’informations, voir.
+  summary: Représente le style du marqueur du point de données de graphique. Pour `ExcelScript.ChartMarkerStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -134,7 +134,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerBackgroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerBackgroundColor(markerBackgroundColor)
-  summary: Représentation de code couleur HTML de la couleur d’arrière-plan du marqueur d’un point de données (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur d'arrière-plan du marqueur d'un point de données (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -151,7 +151,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerForegroundColor:member(1)
   package: ExcelScript!
   fullName: setMarkerForegroundColor(markerForegroundColor)
-  summary: Représentation de code couleur HTML de la couleur de premier plan du marqueur d’un point de données (par exemple, \# FF0000 représente le rouge).
+  summary: Représentation de code couleur HTML de la couleur de premier plan du marqueur d'un point de données (par exemple, \# FF0000 représente le rouge).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -168,7 +168,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerSize:member(1)
   package: ExcelScript!
   fullName: setMarkerSize(markerSize)
-  summary: Représente la taille du marqueur d’un point de données.
+  summary: Représente la taille du marqueur d'un point de données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -185,7 +185,7 @@ methods:
   uid: ExcelScript!ExcelScript.ChartPoint#setMarkerStyle:member(1)
   package: ExcelScript!
   fullName: setMarkerStyle(markerStyle)
-  summary: Représente le style du marqueur du point de données de graphique. Pour `ExcelScript.ChartMarkerStyle` plus d’informations, voir.
+  summary: Représente le style du marqueur du point de données de graphique. Pour `ExcelScript.ChartMarkerStyle` plus d'informations, voir.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -199,9 +199,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: aad9a80594512307275935c6921b43f74220bd16
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 728022aa88607be2500a095ca1bd5bc1552d2433
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606863"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914547"

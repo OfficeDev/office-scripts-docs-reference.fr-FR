@@ -3,7 +3,7 @@ name: ExcelScript.ShapeTextVerticalOverflow
 uid: ExcelScript!ExcelScript.ShapeTextVerticalOverflow:enum
 package: ExcelScript!
 fullName: ExcelScript.ShapeTextVerticalOverflow
-summary: Indique le débordement vertical du cadre de texte d’une forme.
+summary: Spécifie le dépassement vertical du cadre de texte d’une forme.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,9 +21,9 @@ fields:
   package: ExcelScript!
   summary: Autoriser le texte à déborder verticalement du cadre de texte (du haut, du bas ou des deux selon l’alignement du texte).
 metadata:
-  ms.openlocfilehash: e52155ed38292cb461911c22ce5173e88217f3b5
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
+  ms.openlocfilehash: 11a5caa2c4b41de28d80f7ffb202c8c783478acc
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49411774"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913383"

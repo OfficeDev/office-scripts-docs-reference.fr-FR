@@ -3,7 +3,7 @@ name: ExcelScript.AutoFilter
 uid: ExcelScript!ExcelScript.AutoFilter:interface
 package: ExcelScript!
 fullName: ExcelScript.AutoFilter
-summary: Représente `AutoFilter` l’objet. Le filtre automatique transforme les valeurs de la colonne Excel en filtres spécifiques basés sur le contenu de la cellule.
+summary: Représente `AutoFilter` l'objet. Le filtre automatique transforme les valeurs de la colonne Excel en filtres spécifiques basés sur le contenu de la cellule.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -26,7 +26,7 @@ methods:
               ): void;
     parameters:
     - id: range
-      description: Plage à laquelle le filtre automatique s’appliquera.
+      description: Plage à laquelle le filtre automatique s'appliquera.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: columnIndex
       description: Index de colonne de base 0 auquel le filtre automatique est appliqué.
@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Renvoie `Range` l’objet qui représente la plage à laquelle le filtre automatique s’applique. Si aucun objet n’est associé au filtre automatique, cette méthode renvoie un objet dont la propriété `Range` `isNullObject` est définie sur `true`<!-- -->.
+  summary: Renvoie `Range` l'objet qui représente la plage à laquelle le filtre automatique s'applique. Si aucun objet n'est associé au filtre automatique, cette méthode renvoie un objet dont la propriété `Range` `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a865026c221bc283e64e00b8829f0eb05148ec61
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: ce4c83fe476eb2939d663f5dfbbd205c06459569
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606613"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913998"

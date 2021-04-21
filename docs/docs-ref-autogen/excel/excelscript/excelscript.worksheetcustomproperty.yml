@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorksheetCustomProperty#getKey:member(1)
   package: ExcelScript!
   fullName: getKey()
-  summary: Obtient la clé de la propriété personnalisée. Les clés de propriété personnalisées ne sont pas sensibles à la cas. La clé est limitée à 255 caractères (des valeurs plus importantes entraînent la `InvalidArgument` thrown d’une erreur.)
+  summary: Obtient la clé de la propriété personnalisée. Les clés de propriété personnalisées ne sont pas sensibles à la cas. La clé est limitée à 255 caractères (des valeurs plus importantes entraînent la `InvalidArgument` thrown d'une erreur.)
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1ff07614ff8fe9bc3921fae37293065a192aead1
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 6654f21268a1b68607283f91010afc6d00221981
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51605260"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51914592"

@@ -3,7 +3,7 @@ name: ExcelScript.ConditionalFormat
 uid: ExcelScript!ExcelScript.ConditionalFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.ConditionalFormat
-summary: Objet encapsulant la plage, le format, la règle et d’autres propriétés d’un format conditionnel.
+summary: Objet encapsulant la plage, le format, la règle et d'autres propriétés d'un format conditionnel.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
   package: ExcelScript!
   fullName: getColorScale()
-  summary: Renvoie les propriétés de mise en forme conditionnelle d’échelle de couleur si la mise en forme conditionnelle actuelle est un `ColorScale` type.
+  summary: Renvoie les propriétés de mise en forme conditionnelle d'échelle de couleur si la mise en forme conditionnelle actuelle est un `ColorScale` type.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
   package: ExcelScript!
   fullName: getIconSet()
-  summary: Renvoie les propriétés de mise en forme conditionnelle du jeu d’icônes si la mise en forme conditionnelle actuelle est un `IconSet` type.
+  summary: Renvoie les propriétés de mise en forme conditionnelle du jeu d'icônes si la mise en forme conditionnelle actuelle est un `IconSet` type.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
   package: ExcelScript!
   fullName: getPriority()
-  summary: Priorité (ou index) dans la collection de formats conditionnels dans qui ce format conditionnel existe actuellement. Cette modification modifie également les priorités d’autres formats conditionnels, afin de permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l’arrière. Les priorités plus élevées que les limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer une nouvelle copie de l’objet à ce nouvel emplacement de priorité si vous souhaitez y apporter d’autres modifications.
+  summary: Priorité (ou index) dans la collection de formats conditionnels dans qui ce format conditionnel existe actuellement. Cette modification modifie également les priorités d'autres formats conditionnels, afin de permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l'arrière. Les priorités plus élevées que les limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer une nouvelle copie de l'objet à ce nouvel emplacement de priorité si vous souhaitez y apporter d'autres modifications.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
   package: ExcelScript!
   fullName: getStopIfTrue()
-  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur est `null` sur les barres de données, les jeux d’icônes et les échelles de couleurs, car il n’existe aucun concept de ces `StopIfTrue` barres.
+  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur est `null` sur les barres de données, les jeux d'icônes et les échelles de couleurs, car il n'existe aucun concept de ces `StopIfTrue` barres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
   package: ExcelScript!
   fullName: setPriority(priority)
-  summary: Priorité (ou index) dans la collection de formats conditionnels dans qui ce format conditionnel existe actuellement. Cette modification modifie également les priorités d’autres formats conditionnels, afin de permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l’arrière. Les priorités plus élevées que les limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer une nouvelle copie de l’objet à ce nouvel emplacement de priorité si vous souhaitez y apporter d’autres modifications.
+  summary: Priorité (ou index) dans la collection de formats conditionnels dans qui ce format conditionnel existe actuellement. Cette modification modifie également les priorités d'autres formats conditionnels, afin de permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l'arrière. Les priorités plus élevées que les limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer une nouvelle copie de l'objet à ce nouvel emplacement de priorité si vous souhaitez y apporter d'autres modifications.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
   package: ExcelScript!
   fullName: setStopIfTrue(stopIfTrue)
-  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur est `null` sur les barres de données, les jeux d’icônes et les échelles de couleurs, car il n’existe aucun concept de ces `StopIfTrue` barres.
+  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur est `null` sur les barres de données, les jeux d'icônes et les échelles de couleurs, car il n'existe aucun concept de ces `StopIfTrue` barres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: df522599f14e8907b9260648729e170566833b15
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 5cd0ead34677a84a4b10e36b1eafab34eef4739c
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607094"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913836"

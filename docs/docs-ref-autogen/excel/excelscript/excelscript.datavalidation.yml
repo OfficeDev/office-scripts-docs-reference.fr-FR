@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Type de validation des données, voir `ExcelScript.DataValidationType` pour plus d’informations.
+  summary: Type de validation des données, voir `ExcelScript.DataValidationType` pour plus d'informations.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. Renvoie `true` si toutes les valeurs de cellule sont valides ou si toutes les `false` valeurs de cellule ne sont pas valides. Renvoie s’il existe des valeurs de cellule valides et `null` non valides dans la plage.
+  summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. Renvoie `true` si toutes les valeurs de cellule sont valides ou si toutes les `false` valeurs de cellule ne sont pas valides. Renvoie s'il existe des valeurs de cellule valides et `null` non valides dans la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,9 +182,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: c6d3151f99740e7628302eb6bea65e58fe153cc6
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
+  ms.openlocfilehash: 07fe11781815fa27d718d4e9b0ea512e6cb2925d
+  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606536"
+  ms.lasthandoff: 04/21/2021
+  ms.locfileid: "51913694"
