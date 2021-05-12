@@ -21,16 +21,16 @@ methods:
     content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
-      description: Type de mise en forme conditionnelle en cours d'ajout. Pour `ExcelScript.ConditionalFormatType` plus d'informations, voir.
+      description: Type de mise en forme conditionnelle en cours d’ajout. Pour `ExcelScript.ConditionalFormatType` plus d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample applies conditional formatting to the currently used range in the worksheet. \n * The conditional formatting is a green fill for the top 10% of values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the used range in the worksheet.\n  let range = selectedSheet.getUsedRange();\n\n  // Set the fill color to green for the top 10% of values in the range.\n  let conditionalFormat = range.addConditionalFormat(ExcelScript.ConditionalFormatType.topBottom)\n  conditionalFormat.getTopBottom().getFormat().getFill().setColor(\"green\");\n  conditionalFormat.getTopBottom().setRule({\n    rank: 10, // The percentage threshold.\n    type: ExcelScript.ConditionalTopBottomCriterionType.topPercent // The type of the top/bottom condition.\n  });\n}\n```"
 - name: autoFill(destinationRange, autoFillType)
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Remplit les plages de la plage actuelle à la plage de destination à l'aide de la logique de remplissage automatique spécifiée. La plage de destination peut être `null`<!-- -->ou peut étendre la source horizontalement ou verticalement. Les plages nonigues ne sont pas pris en charge.
+  summary: Remplit les plages de la plage actuelle à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être `null`<!-- -->ou peut étendre la source horizontalement ou verticalement. Les plages nonigues ne sont pas pris en charge.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -42,7 +42,7 @@ methods:
               ): void;
     parameters:
     - id: destinationRange
-      description: Plage de destination à remplissage automatique. Si la plage de destination est `null`<!-- -->, les données sont remplies en fonction des cellules qui l'entourent (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de plage de l'interface utilisateur).
+      description: Plage de destination à remplissage automatique. Si la plage de destination est `null`<!-- -->, les données sont remplies en fonction des cellules qui l’entourent (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de plage de l’interface utilisateur).
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: autoFillType
       description: Type de remplissage automatique. Spécifie la façon dont la plage de destination doit être remplie, en fonction du contenu de la plage actuelle. La valeur par défaut est « FillDefault ».
@@ -75,11 +75,11 @@ methods:
     content: 'clear(applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
-      description: Facultatif. Détermine le type d’action de suppression. Pour `ExcelScript.ClearApplyTo` plus d'informations, voir.
+      description: Facultatif. Détermine le type d’action de suppression. Pour `ExcelScript.ClearApplyTo` plus d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script removes all the formatting from the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let range = workbook.getSelectedRange();\n\n  // Clear all the formatting in that range.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
 - name: clearAllConditionalFormats()
   uid: ExcelScript!ExcelScript.Range#clearAllConditionalFormats:member(1)
   package: ExcelScript!
@@ -110,7 +110,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#copyFrom:member(1)
   package: ExcelScript!
   fullName: copyFrom(sourceRange, copyType, skipBlanks, transpose)
-  summary: Copie les données de cellule ou la mise en forme de la plage source ou `RangeAreas` de la plage actuelle. La plage de destination peut être d'une taille différente de la plage source ou `RangeAreas`<!-- -->. La destination est automatiquement étendue si elle est plus petite que la source.
+  summary: Copie les données de cellule ou la mise en forme de la plage source ou `RangeAreas` de la plage actuelle. La plage de destination peut être d’une taille différente de la plage source ou `RangeAreas`<!-- -->. La destination est automatiquement étendue si elle est plus petite que la source.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d'une plage rectangulaire.
+      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d’une plage rectangulaire.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: Type de données de cellule ou de mise en forme à copier. La valeur par défaut est « All ».
@@ -150,16 +150,16 @@ methods:
     content: 'delete(shift: DeleteShiftDirection): void;'
     parameters:
     - id: shift
-      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.DeleteShiftDirection` plus d'informations, voir.
+      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.DeleteShiftDirection` plus d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.DeleteShiftDirection:enum" />
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample creates a sample range, then deletes\n * \"A1\" using different DeleteShiftDirection values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add sample data to better visualize the delete changes.\n  const currentSheet = workbook.getActiveWorksheet();\n  currentSheet.getRange(\"A1:D4\").setValues([\n    [1,2,3,4],\n    [5,6,7,8],\n    [9,10,11,12],\n    [13,14,15,16]]);\n\n  // Delete A1 and shift the cells from the right to fill the space.\n  // The value being deleted is 1.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.left);\n\n  // Delete A1 and shift the cells from the bottom to fill the space.\n  // The value being deleted is 2.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.up);\n\n  // Log the sample range. The values should be:\n  /*\n    5, 3, 4, \"\",\n    9, 6, 7, 8,\n    13, 10, 11, 12,\n    \"\", 14, 15, 16\n  */\n  console.log(currentSheet.getRange(\"A1:D4\").getValues()); \n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample creates a sample range, then deletes\n * \"A1\" using different DeleteShiftDirection values.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add sample data to better visualize the delete changes.\n  const currentSheet = workbook.getActiveWorksheet();\n  currentSheet.getRange(\"A1:D4\").setValues([\n    [1,2,3,4],\n    [5,6,7,8],\n    [9,10,11,12],\n    [13,14,15,16]]);\n\n  // Delete A1 and shift the cells from the right to fill the space.\n  // The value being deleted is 1.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.left);\n\n  // Delete A1 and shift the cells from the bottom to fill the space.\n  // The value being deleted is 2.\n  currentSheet.getRange(\"A1\").delete(ExcelScript.DeleteShiftDirection.up);\n\n  // Log the sample range. The values should be:\n  /*\n    5, 3, 4, \"\",\n    9, 6, 7, 8,\n    13, 10, 11, 12,\n    \"\", 14, 15, 16\n  */\n  console.log(currentSheet.getRange(\"A1:D4\").getValues()); \n}\n```"
 - name: find(text, criteria)
   uid: ExcelScript!ExcelScript.Range#find:member(1)
   package: ExcelScript!
   fullName: find(text, criteria)
-  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage actuelle est plus grande qu'une seule cellule, la recherche sera limitée à cette plage, sinon la recherche couvrira la feuille entière en commençant après cette cellule. S'il n'existe aucune correspondance, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Recherche la chaîne donnée basée sur les critères spécifiés. Si la plage actuelle est plus grande qu’une seule cellule, la recherche sera limitée à cette plage, sinon la recherche couvrira la feuille entière en commençant après cette cellule. S’il n’existe aucune correspondance, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -179,7 +179,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#flashFill:member(1)
   package: ExcelScript!
   fullName: flashFill()
-  summary: Fait un remplissage flash à la plage actuelle. Le remplissage flash remplit automatiquement les données lorsqu'il détecte un motif, de sorte que la plage doit être une plage de colonnes unique et avoir des données autour d'elle afin de trouver un motif.
+  summary: Fait un remplissage flash à la plage actuelle. Le remplissage flash remplit automatiquement les données lorsqu’il détecte un motif, de sorte que la plage doit être une plage de colonnes unique et avoir des données autour d’elle afin de trouver un motif.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -192,7 +192,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAbsoluteResizedRange:member(1)
   package: ExcelScript!
   fullName: getAbsoluteResizedRange(numRows, numColumns)
-  summary: Obtient un objet avec la même cellule supérieure gauche que l'objet actuel, mais avec le nombre spécifié de lignes `Range` `Range` et de colonnes.
+  summary: Obtient un objet avec la même cellule supérieure gauche que l’objet actuel, mais avec le nombre spécifié de lignes `Range` `Range` et de colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: Spécifie la référence de plage en style A1. La valeur d'adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
+  summary: Spécifie la référence de plage en style A1. La valeur d’adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
-  summary: Représente la référence de plage pour la plage spécifiée dans la langue de l'utilisateur.
+  summary: Représente la référence de plage pour la plage spécifiée dans la langue de l’utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -255,7 +255,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Renvoie l’objet de plage qui contient une cellule donnée sur la base des numéros de ligne et de colonne. La cellule peut se trouver en dehors des limites de sa plage parente, tant qu'elle reste dans la grille de la feuille de calcul. L’emplacement de la cellule renvoyée est déterminé à partir de la cellule supérieure gauche de la plage.
+  summary: Renvoie l’objet de plage qui contient une cellule donnée sur la base des numéros de ligne et de colonne. La cellule peut se trouver en dehors des limites de sa plage parente, tant qu’elle reste dans la grille de la feuille de calcul. L’emplacement de la cellule renvoyée est déterminé à partir de la cellule supérieure gauche de la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -313,12 +313,12 @@ methods:
     content: 'getColumnCount(): number;'
     return:
       type: number
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
 - name: getColumnHidden()
   uid: ExcelScript!ExcelScript.Range#getColumnHidden:member(1)
   package: ExcelScript!
   fullName: getColumnHidden()
-  summary: Indique si toutes les colonnes de la plage active sont masquées.
+  summary: Représente si toutes les colonnes de la plage actuelle sont masquées. La valeur est `true` lorsque toutes les colonnes d’une plage sont masquées. La valeur `false` est lorsque aucune colonne de la plage n’est masquée. La valeur `null` est lorsque certaines colonnes d’une plage sont masquées et que d’autres colonnes de la même plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -344,7 +344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnsAfter:member(1)
   package: ExcelScript!
   fullName: getColumnsAfter(count)
-  summary: Obtient un certain nombre de colonnes à droite de l'objet `Range` actuel.
+  summary: Obtient un certain nombre de colonnes à droite de l’objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -361,7 +361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getColumnsBefore:member(1)
   package: ExcelScript!
   fullName: getColumnsBefore(count)
-  summary: Obtient un certain nombre de colonnes à gauche de l'objet `Range` actuel.
+  summary: Obtient un certain nombre de colonnes à gauche de l’objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -416,12 +416,12 @@ methods:
     content: 'getDataValidation(): DataValidation;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script creates a drop-down selection list for a cell. It uses the existing values of the selected range as the choices for the list.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the values for data validation.\n  let selectedRange = workbook.getSelectedRange();\n  let rangeValues = selectedRange.getValues();\n\n  // Convert the values into a comma-delimited string.\n  let dataValidationListString = \"\";\n  rangeValues.forEach((rangeValueRow) => {\n    rangeValueRow.forEach((value) => {\n      dataValidationListString += value + \",\";\n    });\n  });\n\n  // Clear the old range.\n  selectedRange.clear(ExcelScript.ClearApplyTo.contents);\n\n  // Apply the data validation to the first cell in the selected range.\n  let targetCell = selectedRange.getCell(0,0);\n  let dataValidation = targetCell.getDataValidation();\n\n  // Set the content of the drop-down list.\n  dataValidation.setRule({\n      list: {\n        inCellDropDown: true,\n        source: dataValidationListString\n      }\n    });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script creates a drop-down selection list for a cell. It uses the existing values of the selected range as the choices for the list.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the values for data validation.\n  let selectedRange = workbook.getSelectedRange();\n  let rangeValues = selectedRange.getValues();\n\n  // Convert the values into a comma-delimited string.\n  let dataValidationListString = \"\";\n  rangeValues.forEach((rangeValueRow) => {\n    rangeValueRow.forEach((value) => {\n      dataValidationListString += value + \",\";\n    });\n  });\n\n  // Clear the old range.\n  selectedRange.clear(ExcelScript.ClearApplyTo.contents);\n\n  // Apply the data validation to the first cell in the selected range.\n  let targetCell = selectedRange.getCell(0,0);\n  let dataValidation = targetCell.getDataValidation();\n\n  // Set the content of the drop-down list.\n  dataValidation.setRule({\n      list: {\n        inCellDropDown: true,\n        source: dataValidationListString\n      }\n    });\n}\n```"
 - name: getDirectPrecedents()
   uid: ExcelScript!ExcelScript.Range#getDirectPrecedents:member(1)
   package: ExcelScript!
   fullName: getDirectPrecedents()
-  summary: Renvoie un objet qui représente la plage contenant tous les antécédents directs d'une cellule dans la même feuille de calcul ou `WorkbookRangeAreas` dans plusieurs feuilles de calcul.
+  summary: Renvoie un objet qui représente la plage contenant tous les antécédents directs d’une cellule dans la même feuille de calcul ou `WorkbookRangeAreas` dans plusieurs feuilles de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -434,7 +434,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Obtient un objet qui représente la colonne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s'agit d'une plage qui représente les `getEntireColumn` colonnes « B:E »).
+  summary: Obtient un objet qui représente la colonne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s’agit d’une plage qui représente les `getEntireColumn` colonnes « B:E »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -447,7 +447,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Obtient un objet qui représente la ligne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s'agit d'une plage qui représente les lignes `GetEntireRow` « 4:11 »).
+  summary: Obtient un objet qui représente la ligne entière de la plage (par exemple, si la plage actuelle représente les cellules « B4:E11 », il s’agit d’une plage qui représente les lignes `GetEntireRow` « 4:11 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu'au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement des touches Ctrl+Shift+Flèche dans l'interface utilisateur d'Excel sur Windows.
+  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu’au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement des touches Ctrl+Shift+Flèche dans l’interface utilisateur d’Excel sur Windows.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -484,7 +484,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures, l'alignement et d'autres propriétés de la plage.
+  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures, l’alignement et d’autres propriétés de la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -497,7 +497,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormula:member(1)
   package: ExcelScript!
   fullName: getFormula()
-  summary: Représente la formule de cellule en notation de type A1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente la formule de cellule en notation de type A1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -505,12 +505,12 @@ methods:
     content: 'getFormula(): string;'
     return:
       type: string
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
 - name: getFormulaLocal()
   uid: ExcelScript!ExcelScript.Range#getFormulaLocal:member(1)
   package: ExcelScript!
   fullName: getFormulaLocal()
-  summary: Représente la formule de cellule en notation de type A1, dans la langue et les paramètres régionaux de mise en forme de nombre de l'utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente la formule de cellule en notation de type A1, dans la langue et les paramètres régionaux de mise en forme de nombre de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -523,7 +523,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulaR1C1()
-  summary: Représente la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -536,7 +536,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulas:member(1)
   package: ExcelScript!
   fullName: getFormulas()
-  summary: Représente la formule dans le style de notation A1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation A1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasLocal:member(1)
   package: ExcelScript!
   fullName: getFormulasLocal()
-  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -562,7 +562,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: getFormulasR1C1()
-  summary: Représente la formule dans le style de notation R1C1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation R1C1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -575,7 +575,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHasSpill:member(1)
   package: ExcelScript!
   fullName: getHasSpill()
-  summary: Représente si toutes les cellules ont une bordure renversée. Renvoie si toutes les cellules ont une bordure en débordement ou si toutes les `true` `false` cellules n'en ont pas. Renvoie `null` s'il existe des cellules avec et sans bordures en débordement dans la plage.
+  summary: Représente si toutes les cellules ont une bordure renversée. Renvoie si toutes les cellules ont une bordure en débordement ou si toutes les `true` `false` cellules n’en ont pas. Renvoie `null` s’il existe des cellules avec et sans bordures en débordement dans la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -601,7 +601,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
   package: ExcelScript!
   fullName: getHidden()
-  summary: Indique si toutes les cellules de la plage active sont masquées.
+  summary: Représente si toutes les cellules de la plage actuelle sont masquées. La valeur `true` est lorsque toutes les cellules d’une plage sont masquées. La valeur `false` est lorsque aucune cellule de la plage n’est masquée. La valeur `null` est lorsque certaines cellules d’une plage sont masquées et que d’autres cellules de la même plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -627,7 +627,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: Restituer la plage en tant qu'image png codée en base 64.
+  summary: Restituer la plage en tant qu’image png codée en base 64.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -640,7 +640,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n'est trouvée, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -735,7 +735,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getLinkedDataTypeState:member(1)
   package: ExcelScript!
   fullName: getLinkedDataTypeState()
-  summary: Représente l'état du type de données de la cellule.
+  summary: Représente l’état du type de données de la cellule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -761,7 +761,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Représente le code de format numérique de cellule Excel pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente le code de format numérique de cellule Excel pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -787,7 +787,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatCategory:member(1)
   package: ExcelScript!
   fullName: getNumberFormatCategory()
-  summary: Spécifie la catégorie de format de nombre de la première cellule de la plage (représentée par l'index de ligne 0 et l'index de colonne de 0).
+  summary: Spécifie la catégorie de format de nombre de la première cellule de la plage (représentée par l’index de ligne 0 et l’index de colonne de 0).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -800,7 +800,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatLocal()
-  summary: Représente le code de format numérique de cellule Excel pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente le code de format numérique de cellule Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -813,7 +813,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormats:member(1)
   package: ExcelScript!
   fullName: getNumberFormats()
-  summary: Représente le code de format numérique d'Excel pour la plage donnée.
+  summary: Représente le code de format numérique d’Excel pour la plage donnée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -826,7 +826,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: getNumberFormatsLocal()
-  summary: Représente le code de format numérique d'Excel pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
+  summary: Représente le code de format numérique d’Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -854,7 +854,7 @@ methods:
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script gets adjacent cells using relative references.\n * Note that if the active cell is on the top row, part of the script fails, \n * because it references the cell above the currently selected one.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently active cell in the workbook.\n  let activeCell = workbook.getActiveCell();\n  console.log(`The active cell's address is: ${activeCell.getAddress()}`);\n\n  // Get the cell to the right of the active cell and set its value and color.\n  let rightCell = activeCell.getOffsetRange(0,1);\n  rightCell.setValue(\"Right cell\");\n  console.log(`The right cell's address is: ${rightCell.getAddress()}`);\n  rightCell.getFormat().getFont().setColor(\"Magenta\");\n  rightCell.getFormat().getFill().setColor(\"Cyan\");\n\n  // Get the cell to the above of the active cell and set its value and color.\n  // Note that this operation will fail if the active cell is in the top row.\n  let aboveCell = activeCell.getOffsetRange(-1, 0);\n  aboveCell.setValue(\"Above cell\");\n  console.log(`The above cell's address is: ${aboveCell.getAddress()}`);\n  aboveCell.getFormat().getFont().setColor(\"White\");\n  aboveCell.getFormat().getFill().setColor(\"Black\");\n}\n```"
 - name: getPivotTables(fullyContained)
   uid: ExcelScript!ExcelScript.Range#getPivotTables:member(1)
   package: ExcelScript!
@@ -876,7 +876,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l'enum `BuiltInStyle` est renvoyée.
+  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’enum `BuiltInStyle` est renvoyée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -889,7 +889,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond à la direction fournie. Cela correspond au comportement de touche Ctrl+Flèche dans l'interface utilisateur d'Excel sur Windows.
+  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond à la direction fournie. Cela correspond au comportement de touche Ctrl+Flèche dans l’interface utilisateur d’Excel sur Windows.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -913,7 +913,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getResizedRange:member(1)
   package: ExcelScript!
   fullName: getResizedRange(deltaRows, deltaColumns)
-  summary: Obtient un objet semblable à l'objet actuel, mais avec son coin inférieur droit développé (ou contracté) par un certain nombre de lignes `Range` `Range` et de colonnes.
+  summary: Obtient un objet semblable à l’objet actuel, mais avec son coin inférieur droit développé (ou contracté) par un certain nombre de lignes `Range` `Range` et de colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -928,7 +928,7 @@ methods:
       type: number
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n    );\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script copies the formatting in the active cell to the neighboring cells.\n * Note that this script only works when the active cell isn't on an edge of the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let activeCell = workbook.getActiveCell();\n\n  // Get the cell that's one row above and one column to the left of the active cell.\n  let cornerCell = activeCell.getOffsetRange(-1,-1);\n\n  // Get a range that includes all the cells surrounding the active cell.\n  let surroundingRange = cornerCell.getResizedRange(2, 2)\n\n  // Copy the formatting from the active cell to the new range.\n  surroundingRange.copyFrom(\n    activeCell, /* The source range. */\n    ExcelScript.RangeCopyType.formats /* What to copy. */\n    );\n}\n```"
 - name: getRow(row)
   uid: ExcelScript!ExcelScript.Range#getRow:member(1)
   package: ExcelScript!
@@ -958,12 +958,12 @@ methods:
     content: 'getRowCount(): number;'
     return:
       type: number
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample provides the count of negative numbers that are present\n * in the used range of the current worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the working range.\n  let usedRange = workbook.getActiveWorksheet().getUsedRange();\n  let rowCount = usedRange.getRowCount();\n  let columnCount = usedRange.getColumnCount();\n\n  // Save the values locally to avoid repeatedly asking the workbook.\n  let usedRangeValues = usedRange.getValues();\n\n  // Start the negative number counter.\n  let negativeCount = 0;\n\n  // Iterate over the entire range looking for negative numbers.\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < columnCount; j++) {\n      if (usedRangeValues[i][j] < 0) {\n        negativeCount++;\n      }\n    }\n  }\n\n  // Log the negative number count to the console.\n  console.log(negativeCount);\n}\n```"
 - name: getRowHidden()
   uid: ExcelScript!ExcelScript.Range#getRowHidden:member(1)
   package: ExcelScript!
   fullName: getRowHidden()
-  summary: Indique si toutes les lignes de la plage active sont masquées.
+  summary: Représente si toutes les lignes de la plage actuelle sont masquées. La valeur `true` est lorsque toutes les lignes d’une plage sont masquées. La valeur `false` est lorsque aucune ligne de la plage n’est masquée. La valeur est lorsque certaines lignes d’une plage sont masquées et que d’autres lignes de la même `null` plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -989,7 +989,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowsAbove:member(1)
   package: ExcelScript!
   fullName: getRowsAbove(count)
-  summary: Obtient un certain nombre de lignes au-dessus de l'objet `Range` actuel.
+  summary: Obtient un certain nombre de lignes au-dessus de l’objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1006,7 +1006,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRowsBelow:member(1)
   package: ExcelScript!
   fullName: getRowsBelow(count)
-  summary: Obtient un certain nombre de lignes en dessous de l'objet `Range` actuel.
+  summary: Obtient un certain nombre de lignes en dessous de l’objet `Range` actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1023,7 +1023,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSavedAsArray:member(1)
   package: ExcelScript!
   fullName: getSavedAsArray()
-  summary: Représente si toutes les cellules sont enregistrées en tant que formule ma matrice. Renvoie si toutes les cellules sont enregistrées en tant que formule ma matrice, ou si toutes les cellules ne le sont pas `true` en tant que formule ma `false` matrice. Renvoie si certaines cellules sont enregistrées en tant que formule `null` ma matrice et d'autres non.
+  summary: Représente si toutes les cellules sont enregistrées en tant que formule ma matrice. Renvoie si toutes les cellules sont enregistrées en tant que formule ma matrice, ou si toutes les cellules ne le sont pas `true` en tant que formule ma `false` matrice. Renvoie si certaines cellules sont enregistrées en tant que formule `null` ma matrice et d’autres non.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1049,7 +1049,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Obtient l'objet, comprenant une ou plusieurs plages, qui représente toutes les cellules qui correspondent au type et à la valeur `RangeAreas` spécifiés. Si aucune cellule spéciale n'est trouvée, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient l’objet, comprenant une ou plusieurs plages, qui représente toutes les cellules qui correspondent au type et à la valeur `RangeAreas` spécifiés. Si aucune cellule spéciale n’est trouvée, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1064,16 +1064,16 @@ methods:
       description: Type de cellules à inclure.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Si `cellType` l'une ou `constants` l'autre de ces deux `formulas`<!-- -->, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
+      description: Si `cellType` l’une ou `constants` l’autre de ces deux `formulas`<!-- -->, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample gets all the blank cells in the current worksheet's used range. It then highlights all those cells with a yellow background.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Get the current used range.\n    let range = workbook.getActiveWorksheet().getUsedRange();\n    \n    // Get all the blank cells.\n    let blankCells = range.getSpecialCells(ExcelScript.SpecialCellType.blanks);\n    // Highlight the blank cells with a yellow background.\n    blankCells.getFormat().getFill().setColor(\"yellow\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample gets all the blank cells in the current worksheet's used range. It then highlights all those cells with a yellow background.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Get the current used range.\n    let range = workbook.getActiveWorksheet().getUsedRange();\n    \n    // Get all the blank cells.\n    let blankCells = range.getSpecialCells(ExcelScript.SpecialCellType.blanks);\n    // Highlight the blank cells with a yellow background.\n    blankCells.getFormat().getFill().setColor(\"yellow\");\n}\n```"
 - name: getSpillingToRange()
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n'est pas une cellule d'ancrage ou si la plage de débordement est in trouvée, cette fonction retourne un objet dont la propriété est `isNullObject` définie sur `true`<!-- -->.
+  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n’est pas une cellule d’ancrage ou si la plage de débordement est in trouvée, cette fonction retourne un objet dont la propriété est `isNullObject` définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1086,7 +1086,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtient l'objet de plage contenant la cellule d'ancrage de la cellule dans laquelle la cellule est étendue. S'il ne s'agit pas d'une cellule en débordement ou si plusieurs cellules sont données, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
+  summary: Obtient l’objet de plage contenant la cellule d’ancrage de la cellule dans laquelle la cellule est étendue. S’il ne s’agit pas d’une cellule en débordement ou si plusieurs cellules sont données, cette fonction retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1129,7 +1129,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getText:member(1)
   package: ExcelScript!
   fullName: getText()
-  summary: Représente la valeur Texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signes qui se produit dans \# l'interface utilisateur d'Excel n'affecte pas la valeur de texte renvoyée par l'API. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente la valeur Texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signes qui se produit dans \# l’interface utilisateur d’Excel n’affecte pas la valeur de texte renvoyée par l’API. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1142,7 +1142,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getTexts:member(1)
   package: ExcelScript!
   fullName: getTexts()
-  summary: Valeurs de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signe de nombre () qui se produit dans l'interface utilisateur Excel n'affecte pas la valeur de texte \# renvoyée par l'API.
+  summary: Valeurs de texte de la plage spécifiée. La valeur de texte ne dépend pas de la largeur de la cellule. La substitution de signe de nombre () qui se produit dans l’interface utilisateur Excel n’affecte pas la valeur de texte \# renvoyée par l’API.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1168,7 +1168,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getUsedRange:member(1)
   package: ExcelScript!
   fullName: getUsedRange(valuesOnly)
-  summary: Renvoie la plage utilisée d’un objet de plage donné. S'il n'existe aucune cellule utilisée dans la plage, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Renvoie la plage utilisée d’un objet de plage donné. S’il n’existe aucune cellule utilisée dans la plage, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1185,7 +1185,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValue:member(1)
   package: ExcelScript!
   fullName: getValue()
-  summary: Représente la valeur brute de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Une cellule contenant une erreur renvoie la chaîne d’erreur. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente la valeur brute de la plage spécifiée. Les données renvoyées peuvent être des chaînes, des valeurs numériques ou des valeurs booléennes. Une cellule contenant une erreur renvoie la chaîne d’erreur. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1193,7 +1193,7 @@ methods:
     content: 'getValue(): string | number | boolean;'
     return:
       type: string | number | boolean
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
 - name: getValues()
   uid: ExcelScript!ExcelScript.Range#getValues:member(1)
   package: ExcelScript!
@@ -1211,7 +1211,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getValueType:member(1)
   package: ExcelScript!
   fullName: getValueType()
-  summary: Représente le type de données dans la cellule. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l'index de ligne 0 et l'index de colonne de 0) sont renvoyées.
+  summary: Représente le type de données dans la cellule. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1276,7 +1276,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#group:member(1)
   package: ExcelScript!
   fullName: group(groupOption)
-  summary: Groupe les colonnes et les lignes d'un plan.
+  summary: Groupe les colonnes et les lignes d’un plan.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1284,7 +1284,7 @@ methods:
     content: 'group(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Spécifie comment la plage peut être groupée par lignes ou colonnes. Une erreur est lancée lorsque l'option de groupe diffère de la plage ou de la propriété (c'est-à-dire, est true et est « `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` ByColumns » ou est `range.isEntireColumn` true et est « `groupOption` ByRows »).
+      description: Spécifie comment la plage peut être groupée par lignes ou colonnes. Une erreur est lancée lorsque l’option de groupe diffère de la plage ou de la propriété (c’est-à-dire, est true et est « `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` ByColumns » ou est `range.isEntireColumn` true et est « `groupOption` ByRows »).
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1301,7 +1301,7 @@ methods:
     content: 'hideGroupDetails(groupOption: GroupOption): void;'
     parameters:
     - id: groupOption
-      description: Spécifie s'il faut masquer les détails des lignes groupées ou des colonnes groupées.
+      description: Spécifie s’il faut masquer les détails des lignes groupées ou des colonnes groupées.
       type: <xref uid="ExcelScript!ExcelScript.GroupOption:enum" />
     return:
       type: void
@@ -1310,7 +1310,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#insert:member(1)
   package: ExcelScript!
   fullName: insert(shift)
-  summary: Insère une cellule ou une plage de cellules dans la feuille de calcul à la place d’une plage donnée et décale les autres cellules pour libérer de l’espace. Renvoie un nouvel `Range` objet à l'espace vide.
+  summary: Insère une cellule ou une plage de cellules dans la feuille de calcul à la place d’une plage donnée et décale les autres cellules pour libérer de l’espace. Renvoie un nouvel `Range` objet à l’espace vide.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1318,7 +1318,7 @@ methods:
     content: 'insert(shift: InsertShiftDirection): Range;'
     parameters:
     - id: shift
-      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.InsertShiftDirection` plus d'informations, voir.
+      description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.InsertShiftDirection` plus d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.InsertShiftDirection:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
@@ -1344,7 +1344,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#moveTo:member(1)
   package: ExcelScript!
   fullName: moveTo(destinationRange)
-  summary: Déplace les valeurs, la mise en forme et les formules des cellules de la plage actuelle vers la plage de destination, en remplaçant les anciennes informations de ces cellules. La plage de destination est automatiquement étendue si elle est plus petite que la plage actuelle. Les cellules de la plage de destination en dehors de la zone d'origine ne sont pas modifiées.
+  summary: Déplace les valeurs, la mise en forme et les formules des cellules de la plage actuelle vers la plage de destination, en remplaçant les anciennes informations de ces cellules. La plage de destination est automatiquement étendue si elle est plus petite que la plage actuelle. Les cellules de la plage de destination en dehors de la zone d’origine ne sont pas modifiées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1373,10 +1373,10 @@ methods:
               ): RemoveDuplicatesResult;
     parameters:
     - id: columns
-      description: Colonnes à l'intérieur de la plage qui peuvent contenir des doublons. Au moins une colonne doit être spécifiée. Avec indice zéro.
+      description: Colonnes à l’intérieur de la plage qui peuvent contenir des doublons. Au moins une colonne doit être spécifiée. Avec indice zéro.
       type: number[]
     - id: includesHeader
-      description: True si les données d'entrée contiennent l'en-tête. La valeur par défaut est False.
+      description: True si les données d’entrée contiennent l’en-tête. La valeur par défaut est False.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.RemoveDuplicatesResult:interface" />
@@ -1401,7 +1401,7 @@ methods:
       description: Chaîne à rechercher.
       type: string
     - id: replacement
-      description: Chaîne qui remplace la chaîne d'origine.
+      description: Chaîne qui remplace la chaîne d’origine.
       type: string
     - id: criteria
       description: Critères de remplacement supplémentaires.
@@ -1426,7 +1426,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
   package: ExcelScript!
   fullName: setColumnHidden(columnHidden)
-  summary: Indique si toutes les colonnes de la plage active sont masquées.
+  summary: Représente si toutes les colonnes de la plage actuelle sont masquées. La valeur est `true` lorsque toutes les colonnes d’une plage sont masquées. La valeur `false` est lorsque aucune colonne de la plage n’est masquée. La valeur `null` est lorsque certaines colonnes d’une plage sont masquées et que d’autres colonnes de la même plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1456,7 +1456,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Définit la formule de cellule en notation de style A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
+  summary: Définit la formule de cellule en notation de style A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1468,12 +1468,12 @@ methods:
       type: string
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/*\n * This script sets a cell's formula, \n * then displays how Excel stores the cell's formula and value separately.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Set A1 to 2.\n  let a1 = selectedSheet.getRange(\"A1\");\n  a1.setValue(2);\n\n  // Set B1 to the formula =(2*A1), which should equal 4.\n  let b1 = selectedSheet.getRange(\"B1\")\n  b1.setFormula(\"=(2*A1)\");\n\n  // Log the current results for `getFormula` and `getValue` at B1.\n  console.log(`B1 - Formula: ${b1.getFormula()} | Value: ${b1.getValue()}`);\n}\n```"
 - name: setFormulaLocal(formulaLocal)
   uid: ExcelScript!ExcelScript.Range#setFormulaLocal:member(1)
   package: ExcelScript!
   fullName: setFormulaLocal(formulaLocal)
-  summary: Définissez la formule de cellule en notation de type A1, dans les paramètres régionaux de langue et de mise en forme numérique de l'utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
+  summary: Définissez la formule de cellule en notation de type A1, dans les paramètres régionaux de langue et de mise en forme numérique de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1490,7 +1490,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulaR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulaR1C1(formulaR1C1)
-  summary: Définit la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
+  summary: Définit la formule de cellule en notation de style R1C1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1507,7 +1507,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulas:member(1)
   package: ExcelScript!
   fullName: setFormulas(formulas)
-  summary: Représente la formule dans le style de notation A1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation A1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1524,7 +1524,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasLocal:member(1)
   package: ExcelScript!
   fullName: setFormulasLocal(formulasLocal)
-  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule en notation A1, en utilisant le langage et les paramètres de format de nombre régionaux de l’utilisateur. Par exemple, la formule « =SUM(A1, 1.5) » en anglais deviendrait « =SUMME(A1; 1,5) » en allemand. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1541,7 +1541,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormulasR1C1:member(1)
   package: ExcelScript!
   fullName: setFormulasR1C1(formulasR1C1)
-  summary: Représente la formule dans le style de notation R1C1. Si une cellule n'a pas de formule, sa valeur est renvoyée à la place.
+  summary: Représente la formule dans le style de notation R1C1. Si une cellule n’a pas de formule, sa valeur est renvoyée à la place.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1570,12 +1570,12 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/** \n * This script inserts a hyperlink to the first cell of the last worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the active cell.\n  let cell = workbook.getActiveCell();\n\n  // Get the last worksheet in the workbook.\n  // Note that this might be the current sheet if there's only one worksheet.\n  let lastSheet = workbook.getLastWorksheet();\n\n  // Get sheet name. \n  let linkedSheetName = lastSheet.getName();\n  console.log(`Setting hyperlink of ${cell.getAddress()} to the ${linkedSheetName} sheet's A1 cell`);\n\n  // Set the text for the hyperlink.\n  let value = `Click to go to: ${linkedSheetName}`;\n\n  // Create the hyperlink using that cell's value.\n  cell.setHyperlink({\n    textToDisplay: value.toString(),\n    screenTip: `Navigate to ${linkedSheetName}`,\n    documentReference: `${linkedSheetName}!A1`\n  });\n}\n```"
 - name: setNumberFormat(numberFormat)
   uid: ExcelScript!ExcelScript.Range#setNumberFormat:member(1)
   package: ExcelScript!
   fullName: setNumberFormat(numberFormat)
-  summary: Définit le code de format numérique excel de cellule pour la plage donnée. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
+  summary: Définit le code de format numérique excel de cellule pour la plage donnée. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1592,7 +1592,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatLocal(numberFormatLocal)
-  summary: Définit le code de format numérique excel de cellule pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
+  summary: Définit le code de format numérique excel de cellule pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1609,7 +1609,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormats:member(1)
   package: ExcelScript!
   fullName: setNumberFormats(numberFormats)
-  summary: Représente le code de format numérique d'Excel pour la plage donnée.
+  summary: Représente le code de format numérique d’Excel pour la plage donnée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1626,7 +1626,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setNumberFormatsLocal:member(1)
   package: ExcelScript!
   fullName: setNumberFormatsLocal(numberFormatsLocal)
-  summary: Représente le code de format numérique d'Excel pour la plage donnée, en fonction des paramètres de langue de l'utilisateur. Excel n'effectue pas de contrainte de langage ou de format lors de l'obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
+  summary: Représente le code de format numérique d’Excel pour la plage donnée, en fonction des paramètres de langue de l’utilisateur. Excel n’effectue pas de contrainte de langage ou de format lors de l’obtention ou de la définition de la `numberFormatLocal` propriété. Tout texte renvoyé utilise les chaînes au format local en fonction de la langue spécifiée dans les paramètres système.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1643,7 +1643,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l'enum `BuiltInStyle` est renvoyée.
+  summary: Représente le style de la plage actuelle. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’enum `BuiltInStyle` est renvoyée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1660,7 +1660,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setRowHidden:member(1)
   package: ExcelScript!
   fullName: setRowHidden(rowHidden)
-  summary: Indique si toutes les lignes de la plage active sont masquées.
+  summary: Représente si toutes les lignes de la plage actuelle sont masquées. La valeur `true` est lorsque toutes les lignes d’une plage sont masquées. La valeur `false` est lorsque aucune ligne de la plage n’est masquée. La valeur est lorsque certaines lignes d’une plage sont masquées et que d’autres lignes de la même `null` plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1677,7 +1677,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValue:member(1)
   package: ExcelScript!
   fullName: setValue(value)
-  summary: Définit la valeur brute de la plage spécifiée. Les données définies peuvent être de type chaîne, nombre ou booléen. `null` sera ignorée (non définie ou écrasée dans Excel). Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d'entrée.
+  summary: Définit la valeur brute de la plage spécifiée. Les données définies peuvent être de type chaîne, nombre ou booléen. `null` sera ignorée (non définie ou écrasée dans Excel). Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1706,7 +1706,7 @@ methods:
       type: (string | number | boolean)[][]
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```javascript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample inserts some pre-loaded data into a range.\n * It also shows how to get a range that fits the data.\n */\n function main(workbook: ExcelScript.Workbook) {\n   // Get the active cell.\n   let currentCell = workbook.getActiveCell();\n   \n   // Calculate the range needed to fit the given data.\n   let targetRange = currentCell.getResizedRange(DATA.length - 1, DATA[0].length - 1);\n\n   // Set range values to the data.\n   targetRange.setValues(DATA);\n\n   // Autofit the columns so the worksheet is readable. \n   targetRange.getFormat().autofitColumns();\n }\n\n /* \n  * This sample's data is in a static 2-dimensional array.\n  * You could also get the input from other ranges or sources.\n  * Note that each row must have the same number of columns to be valid. \n  */\n const DATA = [\n   ['Date', 'Salesperson', 'Product', 'Amount']\n   , ['3/2/2020', 'Anne', 'Pizza', '$1400']\n   , ['3/2/2020', 'Mariya', 'Pizza', '$1700']\n   , ['3/7/2020', 'Mark', 'Sandwiches', '$1010']\n   , ['3/24/2020', 'Anne', 'Pizza', '$750']\n   , ['3/28/2020', 'Mark', 'Salads', '$510']\n   , ['4/17/2020', 'Laura', 'Salads', '$900']\n   , ['4/17/2020', 'Mariya', 'Salads', '$1600']\n   , ['4/28/2020', 'Laura', 'Sandwiches', '$680']\n ];\n```"
 - name: showCard()
   uid: ExcelScript!ExcelScript.Range#showCard:member(1)
   package: ExcelScript!
@@ -1768,9 +1768,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: da511bf9e95a19149c3cf48a6df97c9a50ba5299
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
+  ms.openlocfilehash: 1170c2483f4795587758037090678928c8b6bbbf
+  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914257"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52330354"
