@@ -278,7 +278,7 @@ methods:
       description: Champ de la source de données par le filtre. Il peut `PivotField` s’agit d’un objet, d’un objet, de l’ID d’un ou du `TableColumn` nom ou de `PivotField` l’ID d’une `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit `Worksheet` d’un objet ou du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
+      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit `Worksheet` d’un objet, du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -602,7 +602,8 @@ methods:
   summary: Obtient une nouvelle collection de parties XML personnalisées dont les espaces de noms correspondent à l’espace de noms donné.
   remarks: ''
   isPreview: false
-  isDeprecated: false
+  isDeprecated: true
+  customDeprecatedMessage: Use `getCustomXmlPartsByNamespace` instead.
   syntax:
     content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
@@ -622,6 +623,23 @@ methods:
   isDeprecated: false
   syntax:
     content: 'getCustomXmlParts(): CustomXmlPart[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
+      description: ''
+- name: getCustomXmlPartsByNamespace(namespaceUri)
+  uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPartsByNamespace:member(1)
+  package: ExcelScript!
+  fullName: getCustomXmlPartsByNamespace(namespaceUri)
+  summary: Obtient une nouvelle collection de parties XML personnalisées dont les espaces de noms correspondent à l’espace de noms donné.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getCustomXmlPartsByNamespace(namespaceUri: string): CustomXmlPart[];'
+    parameters:
+    - id: namespaceUri
+      description: Il doit s’agit d’un URI de schéma complet . par exemple, " http://schemas.contoso.com/review/1.0 « .
+      type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
       description: ''
@@ -689,7 +707,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Facultatif. If `true`<!-- -->, considère uniquement les feuilles de calcul visibles, en ignorer les feuilles masquées.
+      description: Facultatif. If `true`<!-- -->, ne considère que les feuilles de calcul visibles, en ignorer les feuilles masquées.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -698,7 +716,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)
   package: ExcelScript!
   fullName: getIsDirty()
-  summary: Spécifie si des modifications ont été apportées depuis le dernier enregistré du manuel. Vous pouvez définir cette propriété si vous souhaitez fermer un livre de travail modifié sans l’enregistrer ou être invité `true` à l’enregistrer.
+  summary: Indique si des modifications ont été apportées depuis le dernier enregistré du manuel. Vous pouvez définir cette propriété si vous souhaitez fermer un livre de travail modifié sans l’enregistrer ou être invité `true` à l’enregistrer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -719,7 +737,7 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Facultatif. If `true`<!-- -->, considère uniquement les feuilles de calcul visibles, en ignorer les feuilles masquées.
+      description: Facultatif. If `true`<!-- -->, ne considère que les feuilles de calcul visibles, en ignorer les feuilles masquées.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -1277,9 +1295,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5ba82a40b51a08dec4e026d99bcd69f4783fe59d
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
+  ms.openlocfilehash: 2f75d4bf3e477731c8919ac209b614d562c7753e
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330368"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068245"

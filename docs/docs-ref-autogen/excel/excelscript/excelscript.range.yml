@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
-  summary: Ajoute un nouveau format conditionnel à la collection à la première/priorité supérieure.
+  summary: Ajoute un nouveau format conditionnel à la collection à la priorité première/supérieure.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu’au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement des touches Ctrl+Shift+Flèche dans la Excel sur Windows’interface utilisateur.
+  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu’au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement de touche Ctrl+Shift+Flèche dans la Excel sur Windows’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -601,7 +601,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
   package: ExcelScript!
   fullName: getHidden()
-  summary: Représente si toutes les cellules de la plage actuelle sont masquées. La valeur est `true` lorsque toutes les cellules d’une plage sont masquées. La valeur `false` est lorsque aucune cellule de la plage n’est masquée. La valeur `null` est lorsque certaines cellules d’une plage sont masquées et que d’autres cellules de la même plage ne le sont pas.
+  summary: Représente si toutes les cellules de la plage actuelle sont masquées. La valeur `true` est lorsque toutes les cellules d’une plage sont masquées. La valeur `false` est lorsque aucune cellule de la plage n’est masquée. La valeur `null` est lorsque certaines cellules d’une plage sont masquées et que d’autres cellules de la même plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -640,7 +640,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient l’objet de plage qui représente l’intersection rectangulaire des plages données. Si aucune intersection n’est trouvée, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -757,11 +757,24 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />[][]
       description: ''
+- name: getMergedAreas()
+  uid: ExcelScript!ExcelScript.Range#getMergedAreas:member(1)
+  package: ExcelScript!
+  fullName: getMergedAreas()
+  summary: Renvoie un objet RangeAreas qui représente les zones fusionnées dans cette plage. Notez que si le nombre de zones fusionnées dans cette plage est supérieur à 512, l’API ne pourra pas renvoyer le résultat. Si rangeAreas n’existe pas, retourne un objet null.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getMergedAreas(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
 - name: getNumberFormat()
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Représente le code de format Excel cellule pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente le code Excel format numérique de la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -889,7 +902,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond au sens fourni. Cela correspond au comportement de la touche Ctrl+Flèche dans la Excel sur Windows’interface utilisateur.
+  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond à la direction fournie. Cela correspond au comportement de touche Ctrl+Flèche dans la Excel sur Windows’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1456,7 +1469,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Définit la formule de cellule en notation de type A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit la formule de cellule en notation de style A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1768,9 +1781,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 5078d20a7a7558619d9393ab529fd3cd46c8f433
-  ms.sourcegitcommit: 02aeeff79f2bdb28393fdcacd6266820f7c4d085
+  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52589305"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068290"

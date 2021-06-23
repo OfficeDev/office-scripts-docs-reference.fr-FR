@@ -72,7 +72,8 @@ methods:
   summary: Convertit la forme à une image et renvoie l’image comme une chaîne codée en base 64. La résolution est 96. Les seuls formats pris en charge sont `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->et `ExcelScript.PictureFormat.GIF`<!-- -->.
   remarks: ''
   isPreview: false
-  isDeprecated: false
+  isDeprecated: true
+  customDeprecatedMessage: Use `getImageAsBase64` instead.
   syntax:
     content: 'getAsImage(format: PictureFormat): string;'
     parameters:
@@ -186,11 +187,28 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Image:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n* This script transfers an image from one worksheet to another.\n*/\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the worksheet with the image on it.\n  let firstWorksheet = workbook.getWorksheet(\"FirstSheet\");\n\n  // Get the first image from the worksheet.\n  // If a script added the image, you could add a name to make it easier to find.\n  let image: ExcelScript.Image;\n  firstWorksheet.getShapes().forEach((shape, index) => {\n    if (shape.getType() === ExcelScript.ShapeType.image) {\n      image = shape.getImage();\n      return;\n    }\n  });\n\n  // Copy the image to another worksheet.\n  image.getShape().copyTo(\"SecondSheet\");\n}\n```"
+- name: getImageAsBase64(format)
+  uid: ExcelScript!ExcelScript.Shape#getImageAsBase64:member(1)
+  package: ExcelScript!
+  fullName: getImageAsBase64(format)
+  summary: Convertit la forme à une image et renvoie l’image comme une chaîne codée en base 64. La résolution est 96. Les seuls formats pris en charge sont `ExcelScript.PictureFormat.BMP`<!-- -->, `ExcelScript.PictureFormat.PNG`<!-- -->, `ExcelScript.PictureFormat.JPEG`<!-- -->et `ExcelScript.PictureFormat.GIF`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getImageAsBase64(format: PictureFormat): string;'
+    parameters:
+    - id: format
+      description: Spécifie le format de l’image.
+      type: <xref uid="ExcelScript!ExcelScript.PictureFormat:enum" />
+    return:
+      type: string
+      description: ''
 - name: getLeft()
   uid: ExcelScript!ExcelScript.Shape#getLeft:member(1)
   package: ExcelScript!
   fullName: getLeft()
-  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative en tant qu’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -320,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#getTop:member(1)
   package: ExcelScript!
   fullName: getTop()
-  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative en tant qu’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -560,7 +578,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setLeft:member(1)
   package: ExcelScript!
   fullName: setLeft(left)
-  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, entre le côté gauche du graphique et l’origine de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative en tant qu’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -645,7 +663,7 @@ methods:
   uid: ExcelScript!ExcelScript.Shape#setTop:member(1)
   package: ExcelScript!
   fullName: setTop(top)
-  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative comme entrée.
+  summary: La distance, en points, du bord supérieur de l’objet au bord supérieur de la feuille de calcul. Cette propriété envoie une `InvalidArgument` exception lorsqu’elle est définie avec une valeur négative en tant qu’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -710,9 +728,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: bb0044ef90b105d370ee4d52e489a7e1022b0f20
-  ms.sourcegitcommit: 41542794df8af7ea28b8d7db989fba7ec77b6b0c
+  ms.openlocfilehash: bfcd50130075a73e983f90cf0a2de06eb5330643
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52330391"
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068234"
