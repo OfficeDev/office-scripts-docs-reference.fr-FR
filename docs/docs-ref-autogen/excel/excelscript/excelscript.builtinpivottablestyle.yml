@@ -1,0 +1,357 @@
+### YamlMime:TSEnum
+name: ExcelScript.BuiltInPivotTableStyle
+uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle:enum
+package: ExcelScript!
+fullName: ExcelScript.BuiltInPivotTableStyle
+summary: Représente un style de tableau croisé dynamique intégré
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+- name: dark1
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark1:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et un corps ombré.
+- name: dark10
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark10:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure extérieure.
+- name: dark11
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark11:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure extérieure.
+- name: dark12
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark12:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure extérieure.
+- name: dark13
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark13:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure extérieure.
+- name: dark14
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark14:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure extérieure.
+- name: dark15
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark15:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et des lignes à bandes.
+- name: dark16
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark16:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec un en-tête rempli, un pied de ligne rempli et des lignes à bandes.
+- name: dark17
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark17:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe et des lignes à bandes.
+- name: dark18
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark18:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec un en-tête rempli, un pied de piste rempli et des lignes à bandes.
+- name: dark19
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark19:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec un en-tête rempli, un pied de piste rempli et des lignes à bandes.
+- name: dark2
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark2:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et un corps ombré.
+- name: dark20
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark20:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec un en-tête rempli, un pied de piste rempli et des lignes à bandes.
+- name: dark21
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark21:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe et des lignes à bandes.
+- name: dark22
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark22:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec corps ombrage et bordures blanches.
+- name: dark23
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark23:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec corps ombré et bordures blanches.
+- name: dark24
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark24:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec corps ombré et bordures blanches.
+- name: dark25
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark25:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec corps ombré et bordures blanches.
+- name: dark26
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark26:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec corps ombré et bordures blanches.
+- name: dark27
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark27:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec corps ombrage et bordures blanches.
+- name: dark28
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark28:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec corps ombré et bordures blanches.
+- name: dark3
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark3:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et un corps ombré.
+- name: dark4
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark4:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et un corps ombré.
+- name: dark5
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark5:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et un corps ombré.
+- name: dark6
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark6:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et un corps ombré.
+- name: dark7
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark7:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et un corps ombré.
+- name: dark8
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark8:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure extérieure.
+- name: dark9
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.dark9:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure extérieure.
+- name: light1
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light1:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec des bordures d’en-tête et des bordures de pied de groupe.
+- name: light10
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light10:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne, une bordure de première colonne et des lignes à bandes.
+- name: light11
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light11:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne, une bordure de première colonne et des lignes à bandes.
+- name: light12
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light12:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec bordures d’en-tête, bordures de pied de ligne, bordure de première colonne et lignes à bandes.
+- name: light13
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light13:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne, une bordure de première colonne et des lignes à bandes.
+- name: light14
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light14:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne, une bordure de première colonne et des lignes à bandes.
+- name: light15
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light15:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec un en-tête rempli et des lignes à bandes.
+- name: light16
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light16:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec un en-tête rempli et des lignes à bandes.
+- name: light17
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light17:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec un en-tête rempli et des lignes à bandes.
+- name: light18
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light18:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec un en-tête rempli et des lignes à bandes.
+- name: light19
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light19:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec un en-tête rempli et des lignes à bandes.
+- name: light2
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light2:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec des bordures d’en-tête et des bordures de pied de groupe.
+- name: light20
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light20:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec un en-tête rempli et des lignes à bandes.
+- name: light21
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light21:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec un en-tête rempli et des lignes à bandes.
+- name: light22
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light22:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de groupe et des colonnes à bordures.
+- name: light23
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light23:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne et des colonnes à bordures.
+- name: light24
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light24:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne et des colonnes à bordures.
+- name: light25
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light25:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de groupe et des colonnes à bordures.
+- name: light26
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light26:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne et des colonnes à bordures.
+- name: light27
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light27:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne et des colonnes à bordures.
+- name: light28
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light28:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de ligne et des colonnes à bordures.
+- name: light3
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light3:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec des bordures d’en-tête et des bordures de pied de groupe.
+- name: light4
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light4:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec des bordures d’en-tête et des bordures de pied de groupe.
+- name: light5
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light5:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec des bordures d’en-tête et des bordures de pied de groupe.
+- name: light6
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light6:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec des bordures d’en-tête et des bordures de pied de groupe.
+- name: light7
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light7:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec des bordures d’en-tête et des bordures de pied de groupe.
+- name: light8
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light8:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec des bordures d’en-tête, des bordures de pied de groupe, une bordure de première colonne et des lignes à bandes.
+- name: light9
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.light9:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec bordures d’en-tête, bordures de pied de ligne, bordure de première colonne et lignes à bandes.
+- name: medium1
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium1:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de pied de groupe.
+- name: medium10
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium10:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec en-tête rempli, lignes à bandes et bordure de ligne totale.
+- name: medium11
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium11:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec en-tête rempli, lignes à bandes et bordure de ligne totale.
+- name: medium12
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium12:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec en-tête rempli, lignes à bandes et bordure de ligne totale.
+- name: medium13
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium13:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec en-tête rempli, lignes à bandes et bordure de ligne totale.
+- name: medium14
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium14:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec en-tête rempli, lignes à bandes et bordure de ligne totale.
+- name: medium15
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium15:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et un corps ombré.
+- name: medium16
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium16:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et un corps ombré.
+- name: medium17
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium17:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et un corps ombré.
+- name: medium18
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium18:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et un corps ombré.
+- name: medium19
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium19:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et un corps ombré.
+- name: medium2
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium2:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de pied de groupe.
+- name: medium20
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium20:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et un corps ombré.
+- name: medium21
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium21:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec un en-tête rempli, un pied de groupe rempli et un corps ombré.
+- name: medium22
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium22:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec la première colonne remplie et le corps ombré.
+- name: medium23
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium23:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec la première colonne remplie et le corps ombré.
+- name: medium24
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium24:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec la première colonne remplie et le corps ombré.
+- name: medium25
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium25:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec la première colonne remplie et le corps ombré.
+- name: medium26
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium26:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec la première colonne remplie et le corps ombré.
+- name: medium27
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium27:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec la première colonne remplie et le corps ombré.
+- name: medium28
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium28:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec la première colonne remplie et le corps ombré.
+- name: medium3
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium3:member
+  package: ExcelScript!
+  summary: « Accent 2 » (orange dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de pied de groupe.
+- name: medium4
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium4:member
+  package: ExcelScript!
+  summary: « Accent 3 » (gris dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de pied de groupe.
+- name: medium5
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium5:member
+  package: ExcelScript!
+  summary: « Accent 4 » (jaune dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de pied de groupe.
+- name: medium6
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium6:member
+  package: ExcelScript!
+  summary: « Accent 5 » (bleu clair dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de pied de groupe.
+- name: medium7
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium7:member
+  package: ExcelScript!
+  summary: « Accent 6 » (vert dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de pied de groupe.
+- name: medium8
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium8:member
+  package: ExcelScript!
+  summary: « Dark 1 » (noir dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de ligne totale.
+- name: medium9
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.medium9:member
+  package: ExcelScript!
+  summary: « Accent 1 » (bleu dans le thème « Office » par défaut) avec un en-tête rempli, des lignes à bandes et une bordure de ligne totale.
+- name: none
+  uid: ExcelScript!ExcelScript.BuiltInPivotTableStyle.none:member
+  package: ExcelScript!
+  summary: Aucun
+metadata:
+  ms.openlocfilehash: 3d3c366ae0a5114c1cf82f16bf4dd37bc476d202
+  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 06/22/2021
+  ms.locfileid: "53068303"
