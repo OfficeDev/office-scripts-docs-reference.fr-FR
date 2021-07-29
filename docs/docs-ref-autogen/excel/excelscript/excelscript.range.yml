@@ -18,7 +18,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
+    content: 'addConditionalFormat(type: ConditionalFormatType) : ConditionalFormat;'
     parameters:
     - id: type
       description: Type de mise en forme conditionnelle en cours d’ajout. Pour `ExcelScript.ConditionalFormatType` plus d’informations, voir.
@@ -35,11 +35,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      autoFill(
-                  destinationRange?: Range | string,
-                  autoFillType?: AutoFillType
-              ): void;
+    content: 'autoFill( destinationRange?: Range | string, autoFillType?: AutoFillType ): void;'
     parameters:
     - id: destinationRange
       description: Plage de destination à remplissage automatique. Si la plage de destination est `null`<!-- -->, les données sont remplies en fonction des cellules qui l’entourent (ce qui est le comportement lorsque vous double-cliquez sur la poignée de remplissage de plage de l’interface utilisateur).
@@ -115,16 +111,10 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      copyFrom(
-                  sourceRange: Range | RangeAreas | string,
-                  copyType?: RangeCopyType,
-                  skipBlanks?: boolean,
-                  transpose?: boolean
-              ): void;
+    content: 'copyFrom( sourceRange: Range | RangeAreas | string, copyType?: RangeCopyType, skipBlanks?: boolean, transpose?: boolean ): void;'
     parameters:
     - id: sourceRange
-      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d’une plage rectangulaire.
+      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, son formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d’une plage rectangulaire.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: Type de données de cellule ou de mise en forme à copier. La valeur par défaut est « All ».
@@ -147,7 +137,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'delete(shift: DeleteShiftDirection): void;'
+    content: 'delete(shift: DeleteShiftDirection) : void;'
     parameters:
     - id: shift
       description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.DeleteShiftDirection` plus d’informations, voir.
@@ -164,7 +154,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'find(text: string, criteria: SearchCriteria): Range;'
+    content: 'find(text: string, criteria: SearchCriteria) : Range;'
     parameters:
     - id: text
       description: Chaîne à rechercher.
@@ -197,7 +187,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Range;'
+    content: 'getAbsoluteResizedRange(numRows: number, numColumns: number) : Range;'
     parameters:
     - id: numRows
       description: Nombre de lignes de la nouvelle taille de plage.
@@ -212,7 +202,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: Spécifie la référence de plage dans le style A1. La valeur d’adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
+  summary: Spécifie la référence de plage en style A1. La valeur d’adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -243,7 +233,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getBoundingRect(anotherRange: Range | string): Range;'
+    content: 'getBoundingRect(anotherRange: Range | string) : Range;'
     parameters:
     - id: anotherRange
       description: Objet de plage, adresse ou nom de plage.
@@ -251,7 +241,7 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
-- name: getCell(row, column)
+- name: getCell(ligne, colonne)
   uid: ExcelScript!ExcelScript.Range#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
@@ -260,7 +250,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getCell(row: number, column: number): Range;'
+    content: 'getCell(row: number, column: number) : Range;'
     parameters:
     - id: row
       description: Numéro de ligne de la cellule à récupérer. Avec indice zéro.
@@ -293,7 +283,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumn(column: number): Range;'
+    content: 'getColumn(column: number) : Range;'
     parameters:
     - id: column
       description: Numéro de colonne de la plage à récupérer. Avec indice zéro.
@@ -323,7 +313,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnHidden(): boolean;'
+    content: 'getColumnHidden() : booléen ;'
     return:
       type: boolean
       description: ''
@@ -349,7 +339,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnsAfter(count?: number): Range;'
+    content: 'getColumnsAfter(count?: number) : Range;'
     parameters:
     - id: count
       description: Facultatif. Nombre de colonnes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
@@ -366,7 +356,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getColumnsBefore(count?: number): Range;'
+    content: 'getColumnsBefore(count?: number) : Range;'
     parameters:
     - id: count
       description: Facultatif. Nombre de colonnes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
@@ -383,7 +373,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getConditionalFormat(id: string): ConditionalFormat;'
+    content: 'getConditionalFormat(id: string) : ConditionalFormat;'
     parameters:
     - id: id
       description: ID de la mise en forme conditionnelle.
@@ -400,7 +390,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getConditionalFormats(): ConditionalFormat[];'
+    content: 'getConditionalFormats() : ConditionalFormat[];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />[]
       description: ''
@@ -413,7 +403,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getDataValidation(): DataValidation;'
+    content: 'getDataValidation() : DataValidation;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.DataValidation:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script creates a drop-down selection list for a cell. It uses the existing values of the selected range as the choices for the list.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the values for data validation.\n  let selectedRange = workbook.getSelectedRange();\n  let rangeValues = selectedRange.getValues();\n\n  // Convert the values into a comma-delimited string.\n  let dataValidationListString = \"\";\n  rangeValues.forEach((rangeValueRow) => {\n    rangeValueRow.forEach((value) => {\n      dataValidationListString += value + \",\";\n    });\n  });\n\n  // Clear the old range.\n  selectedRange.clear(ExcelScript.ClearApplyTo.contents);\n\n  // Apply the data validation to the first cell in the selected range.\n  let targetCell = selectedRange.getCell(0,0);\n  let dataValidation = targetCell.getDataValidation();\n\n  // Set the content of the drop-down list.\n  dataValidation.setRule({\n      list: {\n        inCellDropDown: true,\n        source: dataValidationListString\n      }\n    });\n}\n```"
@@ -426,7 +416,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getDirectPrecedents(): WorkbookRangeAreas;'
+    content: 'getDirectPrecedents() : WorkbookRangeAreas;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.WorkbookRangeAreas:interface" />
       description: ''
@@ -439,7 +429,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getEntireColumn(): Range;'
+    content: 'getEntireColumn() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -452,7 +442,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getEntireRow(): Range;'
+    content: 'getEntireRow() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -460,16 +450,12 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu’au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement de touche Ctrl+Shift+Flèche dans la Excel sur Windows’interface utilisateur.
+  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu’au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement des touches Ctrl+Shift+Flèche dans la Excel sur Windows’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getExtendedRange(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getExtendedRange( direction : KeyboardDirection, activeCell?: Range | string ) : Range;'
     parameters:
     - id: direction
       description: Direction de la cellule active.
@@ -489,7 +475,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getFormat(): RangeFormat;'
+    content: 'getFormat() : RangeFormat;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
       description: ''
@@ -619,7 +605,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getHyperlink(): RangeHyperlink;'
+    content: 'getHyperlink() : RangeHyperlink;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeHyperlink:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample clears all of the hyperlinks from the current worksheet\n * and removes the usual hyperlink formatting.\n */\nfunction main(workbook: ExcelScript.Workbook, sheetName: string = 'Sheet1') {\n  // Get the active worksheet. \n  let sheet = workbook.getWorksheet(sheetName);\n\n  // Get the used range to operate on.\n  // For large ranges (over 10000 entries), consider splitting the operation into batches for performance.\n  const targetRange = sheet.getUsedRange(true);\n  console.log(`Target Range to clear hyperlinks from: ${targetRange.getAddress()}`);\n\n  const rowCount = targetRange.getRowCount();\n  const colCount = targetRange.getColumnCount();\n  console.log(`Searching for hyperlinks in ${targetRange.getAddress()} which contains ${(rowCount * colCount)} cells`);\n\n  // Go through each individual cell looking for a hyperlink. \n  // This allows us to limit the formatting changes to only the cells with hyperlink formatting.\n  let clearedCount = 0;\n  for (let i = 0; i < rowCount; i++) {\n    for (let j = 0; j < colCount; j++) {\n      const cell = targetRange.getCell(i, j);\n      const hyperlink = cell.getHyperlink();\n      if (hyperlink) {\n        cell.clear(ExcelScript.ClearApplyTo.hyperlinks);\n        cell.getFormat().getFont().setUnderline(ExcelScript.RangeUnderlineStyle.none);\n        cell.getFormat().getFont().setColor('Black');\n        clearedCount++;\n      }\n    }\n  }\n\n  console.log(`Done. Cleared hyperlinks from ${clearedCount} cells`);\n}\n```"
@@ -645,7 +631,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIntersection(anotherRange: Range | string): Range;'
+    content: 'getIntersection(anotherRange: Range | string) : Range;'
     parameters:
     - id: anotherRange
       description: Objet de plage ou adresse de plage utilisé pour déterminer l’intersection des plages.
@@ -662,7 +648,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getIsEntireColumn(): boolean;'
+    content: 'getIsEntireColumn() : booléen ;'
     return:
       type: boolean
       description: ''
@@ -688,7 +674,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLastCell(): Range;'
+    content: 'getLastCell() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -701,7 +687,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLastColumn(): Range;'
+    content: 'getLastColumn() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -714,7 +700,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLastRow(): Range;'
+    content: 'getLastRow() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -740,7 +726,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getLinkedDataTypeState(): LinkedDataTypeState;'
+    content: 'getLinkedDataTypeState() : LinkedDataTypeState;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.LinkedDataTypeState:enum" />
       description: ''
@@ -766,7 +752,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getMergedAreas(): RangeAreas;'
+    content: 'getMergedAreas() : RangeAreas;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
       description: ''
@@ -805,7 +791,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getNumberFormatCategory(): NumberFormatCategory;'
+    content: 'getNumberFormatCategory() : NumberFormatCategory;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.NumberFormatCategory:enum" />
       description: ''
@@ -857,7 +843,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getOffsetRange(rowOffset: number, columnOffset: number): Range;'
+    content: 'getOffsetRange(rowOffset: number, columnOffset: number) : Range;'
     parameters:
     - id: rowOffset
       description: Nombre de lignes (positif, négatif ou nul) duquel décaler la plage. Les valeurs positives représentent un décalage vers le bas et les valeurs négatives un décalage vers le haut.
@@ -902,16 +888,12 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond à la direction fournie. Cela correspond au comportement de touche Ctrl+Flèche dans la Excel sur Windows’interface utilisateur.
+  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond au sens fourni. Cela correspond au comportement de la touche Ctrl+Flèche dans la Excel sur Windows’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getRangeEdge(
-                  direction: KeyboardDirection,
-                  activeCell?: Range | string
-              ): Range;
+    content: 'getRangeEdge( direction : KeyboardDirection, activeCell?: Range | string ) : Range;'
     parameters:
     - id: direction
       description: Direction de la cellule active.
@@ -931,7 +913,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getResizedRange(deltaRows: number, deltaColumns: number): Range;'
+    content: 'getResizedRange(deltaRows: number, deltaColumns: number) : Range;'
     parameters:
     - id: deltaRows
       description: Nombre de lignes par lequel développer le coin inférieur droit, par rapport à la plage actuelle. Utilisez un nombre positif pour étendre la plage ou un nombre négatif pour la réduire.
@@ -951,7 +933,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRow(row: number): Range;'
+    content: 'getRow(row: number) : Range;'
     parameters:
     - id: row
       description: Numéro de ligne de la plage à récupérer. Avec indice zéro.
@@ -1007,7 +989,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowsAbove(count?: number): Range;'
+    content: 'getRowsAbove(count?: number) : Range;'
     parameters:
     - id: count
       description: Facultatif. Nombre de lignes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
@@ -1024,7 +1006,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getRowsBelow(count?: number): Range;'
+    content: 'getRowsBelow(count?: number) : Range;'
     parameters:
     - id: count
       description: Facultatif. Nombre de lignes à inclure dans la plage obtenue. En règle générale, utilisez un nombre positif pour créer une plage en dehors de la plage actuelle. Vous pouvez également utiliser un nombre négatif pour créer une plage à l’intérieur de la plage actuelle. La valeur par défaut est 1.
@@ -1041,7 +1023,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSavedAsArray(): boolean;'
+    content: 'getSavedAsArray() : booléen ;'
     return:
       type: boolean
       description: ''
@@ -1054,7 +1036,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSort(): RangeSort;'
+    content: 'getSort() : RangeSort;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeSort:interface" />
       description: ''
@@ -1067,11 +1049,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      getSpecialCells(
-                  cellType: SpecialCellType,
-                  cellValueType?: SpecialCellValueType
-              ): RangeAreas;
+    content: 'getSpecialCells( cellType: SpecialCellType, cellValueType?: SpecialCellValueType ): RangeAreas;'
     parameters:
     - id: cellType
       description: Type de cellules à inclure.
@@ -1091,7 +1069,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSpillingToRange(): Range;'
+    content: 'getSpillingToRange() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -1104,7 +1082,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSpillParent(): Range;'
+    content: 'getSpillParent() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -1117,7 +1095,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getSurroundingRegion(): Range;'
+    content: 'getSurroundingRegion() : Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
       description: ''
@@ -1186,7 +1164,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getUsedRange(valuesOnly?: boolean): Range;'
+    content: 'getUsedRange(valuesOnly?: boolean) : Range;'
     parameters:
     - id: valuesOnly
       description: Prend uniquement en compte les cellules avec des valeurs sous forme de cellules utilisées.
@@ -1203,7 +1181,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValue(): string | number | boolean;'
+    content: 'getValue(): string | numéro | booléen ;'
     return:
       type: string | number | boolean
       description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
@@ -1229,7 +1207,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValueType(): RangeValueType;'
+    content: 'getValueType() : RangeValueType;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />
       description: ''
@@ -1242,7 +1220,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getValueTypes(): RangeValueType[][];'
+    content: 'getValueTypes() : RangeValueType[][];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
       description: ''
@@ -1255,7 +1233,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'getVisibleView(): RangeView;'
+    content: 'getVisibleView() : RangeView;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeView:interface" />
       description: ''
@@ -1294,7 +1272,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'group(groupOption: GroupOption): void;'
+    content: 'group(groupOption: GroupOption) : void;'
     parameters:
     - id: groupOption
       description: Spécifie comment la plage peut être groupée par lignes ou colonnes. Une erreur est lancée lorsque l’option de groupe diffère de la plage ou de la propriété (c’est-à-dire, est true et est « `InvalidArgument` `isEntireRow` `isEntireColumn` `range.isEntireRow` `groupOption` ByColumns » ou est `range.isEntireColumn` true et est « `groupOption` ByRows »).
@@ -1311,7 +1289,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'hideGroupDetails(groupOption: GroupOption): void;'
+    content: 'hideGroupDetails(groupOption: GroupOption) : void;'
     parameters:
     - id: groupOption
       description: Spécifie s’il faut masquer les détails des lignes groupées ou des colonnes groupées.
@@ -1328,7 +1306,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'insert(shift: InsertShiftDirection): Range;'
+    content: 'insert(shift: InsertShiftDirection) : Range;'
     parameters:
     - id: shift
       description: Indique la façon dont les cellules doivent être décalées. Pour `ExcelScript.InsertShiftDirection` plus d’informations, voir.
@@ -1362,7 +1340,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'moveTo(destinationRange: Range | string): void;'
+    content: 'moveTo(destinationRange: Range | string) : void;'
     parameters:
     - id: destinationRange
       description: destinationRange Spécifie la plage vers laquelle les informations de cette plage seront déplacées.
@@ -1379,11 +1357,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      removeDuplicates(
-                  columns: number[],
-                  includesHeader: boolean
-              ): RemoveDuplicatesResult;
+    content: 'removeDuplicates( columns: number[], includesHeader: boolean ): RemoveDuplicatesResult;'
     parameters:
     - id: columns
       description: Colonnes à l’intérieur de la plage qui peuvent contenir des doublons. Au moins une colonne doit être spécifiée. Avec indice zéro.
@@ -1403,12 +1377,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: >-
-      replaceAll(
-                  text: string,
-                  replacement: string,
-                  criteria: ReplaceCriteria
-              ): number;
+    content: 'replaceAll( text: string, replacement: string, criteria: ReplaceCriteria ): number;'
     parameters:
     - id: text
       description: Chaîne à rechercher.
@@ -1469,7 +1438,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Définit la formule de cellule en notation de style A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit la formule de cellule en notation de type A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1593,7 +1562,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
+    content: 'setNumberFormat(numberFormat: string) : void;'
     parameters:
     - id: numberFormat
       description: ''
@@ -1695,7 +1664,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'setValue(value: any): void;'
+    content: 'setValue(value: any) : void;'
     parameters:
     - id: value
       description: ''
@@ -1707,7 +1676,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setValues:member(1)
   package: ExcelScript!
   fullName: setValues(values)
-  summary: Représente les valeurs brutes de la plage spécifiée. Les données renvoyées peuvent être une chaîne, un nombre ou un booléen. Les cellules contenant une erreur renvoie la chaîne d’erreur. Si la valeur renvoyée commence par un signe plus (« + ») moins (« - ») ou un signe égal (« = ») Excel cette valeur comme une formule.
+  summary: Définit les valeurs brutes de la plage spécifiée. Les données fournies peuvent être une chaîne, un nombre ou un booléen. Si la valeur fournie commence par un signe plus (« + ») moins (« - ») ou un signe égal (« = ») Excel cette valeur comme une formule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1742,7 +1711,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'showGroupDetails(groupOption: GroupOption): void;'
+    content: 'showGroupDetails(groupOption: GroupOption) : void;'
     parameters:
     - id: groupOption
       description: Spécifie s’il faut afficher les détails des lignes groupées ou des colonnes groupées.
@@ -1759,7 +1728,7 @@ methods:
   isPreview: false
   isDeprecated: false
   syntax:
-    content: 'ungroup(groupOption: GroupOption): void;'
+    content: 'ungroup(groupOption: GroupOption) : void;'
     parameters:
     - id: groupOption
       description: Spécifie comment la plage peut être désgroupée par lignes ou colonnes.
@@ -1781,9 +1750,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 39db0f5c0479064f14f416e076ab7292688f1055
-  ms.sourcegitcommit: e5b33f91b2d93fb8623df8ddbb6ee42bf55b73b5
+  ms.openlocfilehash: bc3d9a01cbb2a67d6461bbbd97c67014fae0e2fc
+  ms.sourcegitcommit: 95be94d379c5184e2db071999e3367c51e927a27
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "53068290"
+  ms.lasthandoff: 07/28/2021
+  ms.locfileid: "53617912"
