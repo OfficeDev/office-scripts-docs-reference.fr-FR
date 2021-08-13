@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartSeriesBy
-uid: ExcelScript!ExcelScript.ChartSeriesBy:enum
+uid: 'ExcelScript!ExcelScript.ChartSeriesBy:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartSeriesBy
-summary: Spécifie si les séries sont par lignes ou par colonnes. Dans Excel sur ordinateur de bureau, l’option « auto » inspecte la forme de données source pour déterminer automatiquement si les données sont par lignes ou par colonnes. Dans Excel sur le web, « auto » est simplement « colonnes » par défaut.
+summary: 'Spécifie si les séries sont par lignes ou par colonnes. Dans Excel bureau, l’option « automatique » inspecte la forme de données source pour déterminer automatiquement si les données sont par lignes ou par colonnes. Dans Excel sur le Web, « auto » sera simplement « colonnes » par défaut.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: auto
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.auto:member
-  package: ExcelScript!
-  summary: Dans Excel sur ordinateur de bureau, l’option « auto » inspecte la forme de données source pour déterminer automatiquement si les données sont par lignes ou par colonnes. Dans Excel sur le web, « auto » est simplement « colonnes » par défaut.
-- name: columns
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.columns:member
-  package: ExcelScript!
-  summary: ''
-- name: rows
-  uid: ExcelScript!ExcelScript.ChartSeriesBy.rows:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: e41eaae1d2ca390388775c565331243e7ea95ae5
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914540"
+  - name: auto
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.auto:member'
+    package: ExcelScript!
+    summary: 'Dans Excel bureau, l’option « automatique » inspecte la forme de données source pour déterminer automatiquement si les données sont par lignes ou par colonnes. Dans Excel sur le Web, « auto » sera simplement « colonnes » par défaut.'
+  - name: columns
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.columns:member'
+    package: ExcelScript!
+    summary: ''
+  - name: rows
+    uid: 'ExcelScript!ExcelScript.ChartSeriesBy.rows:member'
+    package: ExcelScript!
+    summary: ''

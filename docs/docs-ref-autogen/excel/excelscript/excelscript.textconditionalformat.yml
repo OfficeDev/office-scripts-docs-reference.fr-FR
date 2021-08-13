@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.TextConditionalFormat
-uid: ExcelScript!ExcelScript.TextConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.TextConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.TextConditionalFormat
 summary: Représente une mise en forme conditionnelle de texte spécifique.
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures et d’autres propriétés de la mise en forme conditionnelle.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ConditionalRangeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
-      description: ''
-- name: getRule()
-  uid: ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)
-  package: ExcelScript!
-  fullName: getRule()
-  summary: Règle de mise en forme conditionnelle.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRule(): ConditionalTextComparisonRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
-      description: ''
-- name: setRule(rule)
-  uid: ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)
-  package: ExcelScript!
-  fullName: setRule(rule)
-  summary: Règle de mise en forme conditionnelle.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRule(rule: ConditionalTextComparisonRule): void;'
-    parameters:
-    - id: rule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: e22b27edda001744c08f8e9b5a99b78b187c6c0c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914620"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 'Renvoie un objet format, qui encapsule la police, le remplissage, les bordures et d’autres propriétés de la mise en forme conditionnelle.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
+        description: ''
+  - name: getRule()
+    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#getRule:member(1)'
+    package: ExcelScript!
+    fullName: getRule()
+    summary: Règle de mise en forme conditionnelle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRule(): ConditionalTextComparisonRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />'
+        description: ''
+  - name: setRule(rule)
+    uid: 'ExcelScript!ExcelScript.TextConditionalFormat#setRule:member(1)'
+    package: ExcelScript!
+    fullName: setRule(rule)
+    summary: Règle de mise en forme conditionnelle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRule(rule: ConditionalTextComparisonRule): void;'
+      parameters:
+        - id: rule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalTextComparisonRule:interface" />'
+      return:
+        type: void
+        description: ''

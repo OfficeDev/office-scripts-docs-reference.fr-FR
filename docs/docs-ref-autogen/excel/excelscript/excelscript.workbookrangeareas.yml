@@ -1,74 +1,67 @@
 ### YamlMime:TSType
 name: ExcelScript.WorkbookRangeAreas
-uid: ExcelScript!ExcelScript.WorkbookRangeAreas:interface
+uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas:interface'
 package: ExcelScript!
 fullName: ExcelScript.WorkbookRangeAreas
-summary: Représente une collection d'une ou plusieurs plages rectangulaires dans plusieurs feuilles de calcul.
+summary: Représente une collection d’une ou plusieurs plages rectangulaires dans plusieurs feuilles de calcul.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAddresses()
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
-  package: ExcelScript!
-  fullName: getAddresses()
-  summary: Renvoie un tableau d'adresses de style A1. Les valeurs d'adresse contiennent le nom de la feuille de calcul pour chaque bloc rectangulaire de cellules (par exemple, « Feuille1 ! A1:B4, Sheet1! D1:D4 »). En lecture seule.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAddresses(): string[];'
-    return:
-      type: string[]
-      description: ''
-- name: getAreas()
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
-  package: ExcelScript!
-  fullName: getAreas()
-  summary: Renvoie `RangeAreasCollection` l'objet. Chacune `RangeAreas` de la collection représente une ou plusieurs plages de rectangles dans une feuille de calcul.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAreas(): RangeAreas[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />[]
-      description: ''
-- name: getRangeAreasBySheet(key)
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
-  package: ExcelScript!
-  fullName: getRangeAreasBySheet(key)
-  summary: Renvoie `RangeAreas` l'objet en fonction du nom de la feuille de calcul ou de l'ID de la collection. Si la feuille de calcul n'existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRangeAreasBySheet(key: string): RangeAreas;'
-    parameters:
-    - id: key
-      description: Nom ou ID de la feuille de calcul.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
-- name: getRanges()
-  uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)
-  package: ExcelScript!
-  fullName: getRanges()
-  summary: Renvoie les plages qui composent cet objet dans un `RangeCollection` objet.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRanges(): Range[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
-      description: ''
-metadata:
-  ms.openlocfilehash: a56a6dbb72129b429a514e511ad1f7227222c0df
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914599"
+  - name: getAddresses()
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)'
+    package: ExcelScript!
+    fullName: getAddresses()
+    summary: "Renvoie un tableau d’adresses de style A1. Les valeurs d’adresse contiennent le nom de la feuille de calcul pour chaque bloc rectangulaire de cellules (par exemple, « Feuille1 ! A1:B4, Sheet1! D1:D4\_»). En lecture seule."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAddresses(): string[];'
+      return:
+        type: 'string[]'
+        description: ''
+  - name: getAreas()
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)'
+    package: ExcelScript!
+    fullName: getAreas()
+    summary: Renvoie `RangeAreasCollection` l’objet. Chacune `RangeAreas` de la collection représente une ou plusieurs plages de rectangles dans une feuille de calcul.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAreas(): RangeAreas[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />[]'
+        description: ''
+  - name: getRangeAreasBySheet(key)
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)'
+    package: ExcelScript!
+    fullName: getRangeAreasBySheet(key)
+    summary: 'Renvoie `RangeAreas` l’objet en fonction du nom de la feuille de calcul ou de l’ID de la collection. Si la feuille de calcul n’existe pas, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeAreasBySheet(key: string): RangeAreas;'
+      parameters:
+        - id: key
+          description: Nom ou ID de la feuille de calcul.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
+        description: ''
+  - name: getRanges()
+    uid: 'ExcelScript!ExcelScript.WorkbookRangeAreas#getRanges:member(1)'
+    package: ExcelScript!
+    fullName: getRanges()
+    summary: Renvoie les plages qui composent cet objet dans un `RangeCollection` objet.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRanges(): Range[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />[]'
+        description: ''

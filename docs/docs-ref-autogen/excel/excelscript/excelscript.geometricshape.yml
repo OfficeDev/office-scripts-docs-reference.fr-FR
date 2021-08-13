@@ -1,31 +1,24 @@
 ### YamlMime:TSType
 name: ExcelScript.GeometricShape
-uid: ExcelScript!ExcelScript.GeometricShape:interface
+uid: 'ExcelScript!ExcelScript.GeometricShape:interface'
 package: ExcelScript!
 fullName: ExcelScript.GeometricShape
-summary: Représente une forme géométrique à l’intérieur d’une feuille de calcul. Une forme géométrique peut être un rectangle, une flèche de bloc, un symbole d’équation, un élément d’arc de flux, une étoile, une bannière, une callout ou toute autre forme de base dans Excel.
+summary: 'Représente une forme géométrique à l’intérieur d’une feuille de calcul. Une forme géométrique peut être un rectangle, une flèche de bloc, un symbole d’équation, un élément d’arc de flux, une étoile, une bannière, une callout ou toute autre forme de base dans Excel.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getId()
-  uid: ExcelScript!ExcelScript.GeometricShape#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Représente l’identificateur de forme.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-metadata:
-  ms.openlocfilehash: 4dfea045b85b1e12ab56c49603ae13d4e82f6b12
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914379"
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.GeometricShape#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: Représente l’identificateur de forme.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''

@@ -1,159 +1,152 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalRangeFormat
-uid: ExcelScript!ExcelScript.ConditionalRangeFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFormat
-summary: Objet de format encapsulant la police, le remplissage, les bordures et d'autres propriétés de la plage de formats conditionnels.
+summary: 'Objet de format encapsulant la police, le remplissage, les bordures et d’autres propriétés de la plage de formats conditionnels.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorders()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)
-  package: ExcelScript!
-  fullName: getBorders()
-  summary: Collection d'objets de bordure qui s'appliquent à la plage de mise en forme conditionnelle globale.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorders(): ConditionalRangeBorder[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]
-      description: ''
-- name: getConditionalRangeBorder(index)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorder(index)
-  summary: Obtient un objet de bordure à l’aide de son nom.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      getConditionalRangeBorder(
-                  index: ConditionalRangeBorderIndex
-              ): ConditionalRangeBorder;
-    parameters:
-    - id: index
-      description: Valeur d’indice de l’objet de bordure à récupérer. Pour `ExcelScript.ConditionalRangeBorderIndex` plus d'informations, voir.
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderBottom()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderBottom()
-  summary: Obtient la bordure inférieure.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderLeft()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderLeft()
-  summary: Obtient la bordure gauche.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderRight()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderRight()
-  summary: Obtient la bordure droite.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getConditionalRangeBorderTop()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)
-  package: ExcelScript!
-  fullName: getConditionalRangeBorderTop()
-  summary: Obtient la bordure supérieure.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Renvoie l'objet de remplissage défini sur la plage de mise en forme conditionnelle globale.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ConditionalRangeFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Renvoie l'objet de police défini sur la plage de mise en forme conditionnelle globale.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ConditionalRangeFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: Représente le code de format numérique d'Excel pour la plage donnée. Effacé si `null` transmis.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: Représente le code de format numérique d'Excel pour la plage donnée. Effacé si `null` transmis.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: fa181e54c3f71c44ba2e1bb08a890674d7e6f027
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913730"
+  - name: getBorders()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getBorders:member(1)'
+    package: ExcelScript!
+    fullName: getBorders()
+    summary: Collection d’objets de bordure qui s’appliquent à la plage de mise en forme conditionnelle globale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorders(): ConditionalRangeBorder[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />[]'
+        description: ''
+  - name: getConditionalRangeBorder(index)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorder:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorder(index)
+    summary: Obtient un objet de bordure à l’aide de son nom.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        getConditionalRangeBorder(
+                    index: ConditionalRangeBorderIndex
+                ): ConditionalRangeBorder;
+      parameters:
+        - id: index
+          description: 'Valeur d’indice de l’objet de bordure à récupérer. Pour `ExcelScript.ConditionalRangeBorderIndex` plus d’informations, voir.'
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorderIndex:enum" />'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderBottom()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderBottom:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderBottom()
+    summary: Obtient la bordure inférieure.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderBottom(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderLeft()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderLeft:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderLeft()
+    summary: Obtient la bordure gauche.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderLeft(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderRight()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderRight:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderRight()
+    summary: Obtient la bordure droite.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderRight(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getConditionalRangeBorderTop()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getConditionalRangeBorderTop:member(1)'
+    package: ExcelScript!
+    fullName: getConditionalRangeBorderTop()
+    summary: Obtient la bordure supérieure.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getConditionalRangeBorderTop(): ConditionalRangeBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: Renvoie l’objet de remplissage défini sur la plage de mise en forme conditionnelle globale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ConditionalRangeFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: Renvoie l’objet de police défini sur la plage de mise en forme conditionnelle globale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ConditionalRangeFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFont:interface" />'
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: Représente le Excel de format numérique de la plage donnée. Effacé si `null` transmis.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFormat#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: Représente le Excel de format numérique de la plage donnée. Effacé si `null` transmis.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartErrorBarsInclude
-uid: ExcelScript!ExcelScript.ChartErrorBarsInclude:enum
+uid: 'ExcelScript!ExcelScript.ChartErrorBarsInclude:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartErrorBarsInclude
 summary: Représente les parties de la barre d’erreur à inclure.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: both
-  uid: ExcelScript!ExcelScript.ChartErrorBarsInclude.both:member
-  package: ExcelScript!
-  summary: ''
-- name: minusValues
-  uid: ExcelScript!ExcelScript.ChartErrorBarsInclude.minusValues:member
-  package: ExcelScript!
-  summary: ''
-- name: plusValues
-  uid: ExcelScript!ExcelScript.ChartErrorBarsInclude.plusValues:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: c5a2fc958cea1c4170f5da7c29f573b596564570
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416903"
+  - name: both
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsInclude.both:member'
+    package: ExcelScript!
+    summary: ''
+  - name: minusValues
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsInclude.minusValues:member'
+    package: ExcelScript!
+    summary: ''
+  - name: plusValues
+    uid: 'ExcelScript!ExcelScript.ChartErrorBarsInclude.plusValues:member'
+    package: ExcelScript!
+    summary: ''

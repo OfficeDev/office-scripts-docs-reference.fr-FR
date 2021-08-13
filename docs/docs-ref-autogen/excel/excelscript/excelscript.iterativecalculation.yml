@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.IterativeCalculation
-uid: ExcelScript!ExcelScript.IterativeCalculation:interface
+uid: 'ExcelScript!ExcelScript.IterativeCalculation:interface'
 package: ExcelScript!
 fullName: ExcelScript.IterativeCalculation
 summary: Représente les paramètres de calcul itératifs.
@@ -9,100 +9,93 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getEnabled()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)
-  package: ExcelScript!
-  fullName: getEnabled()
-  summary: Cette propriété a la valeur True si Microsoft Excel utilise l'itération pour résoudre des références circulaires.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getEnabled(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMaxChange()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)
-  package: ExcelScript!
-  fullName: getMaxChange()
-  summary: Spécifie la quantité maximale de modification entre chaque itération à mesure qu’Excel résout des références circulaires.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxChange(): number;'
-    return:
-      type: number
-      description: ''
-- name: getMaxIteration()
-  uid: ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: getMaxIteration()
-  summary: Spécifie le nombre maximal d’itérations qu’Excel peut utiliser pour résoudre une référence circulaire.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMaxIteration(): number;'
-    return:
-      type: number
-      description: ''
-- name: setEnabled(enabled)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)
-  package: ExcelScript!
-  fullName: setEnabled(enabled)
-  summary: Cette propriété a la valeur True si Microsoft Excel utilise l'itération pour résoudre des références circulaires.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setEnabled(enabled: boolean): void;'
-    parameters:
-    - id: enabled
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setMaxChange(maxChange)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)
-  package: ExcelScript!
-  fullName: setMaxChange(maxChange)
-  summary: Spécifie la quantité maximale de modification entre chaque itération à mesure qu’Excel résout des références circulaires.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxChange(maxChange: number): void;'
-    parameters:
-    - id: maxChange
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setMaxIteration(maxIteration)
-  uid: ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)
-  package: ExcelScript!
-  fullName: setMaxIteration(maxIteration)
-  summary: Spécifie le nombre maximal d’itérations qu’Excel peut utiliser pour résoudre une référence circulaire.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMaxIteration(maxIteration: number): void;'
-    parameters:
-    - id: maxIteration
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9cd7e98544d85bb18748059ba1ab5c8d382aab7f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913602"
+  - name: getEnabled()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getEnabled:member(1)'
+    package: ExcelScript!
+    fullName: getEnabled()
+    summary: "Cette propriété a la valeur True si Microsoft\_Excel utilise l'itération pour résoudre des références circulaires."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getEnabled(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMaxChange()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: getMaxChange()
+    summary: Spécifie la quantité maximale de modification entre chaque itération à mesure Excel des références circulaires.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxChange(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getMaxIteration()
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#getMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: getMaxIteration()
+    summary: Spécifie le nombre maximal d’itérations que Excel pouvez utiliser pour résoudre une référence circulaire.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMaxIteration(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setEnabled(enabled)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setEnabled:member(1)'
+    package: ExcelScript!
+    fullName: setEnabled(enabled)
+    summary: "Cette propriété a la valeur True si Microsoft\_Excel utilise l'itération pour résoudre des références circulaires."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setEnabled(enabled: boolean): void;'
+      parameters:
+        - id: enabled
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setMaxChange(maxChange)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxChange:member(1)'
+    package: ExcelScript!
+    fullName: setMaxChange(maxChange)
+    summary: Spécifie la quantité maximale de modification entre chaque itération à mesure Excel des références circulaires.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxChange(maxChange: number): void;'
+      parameters:
+        - id: maxChange
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setMaxIteration(maxIteration)
+    uid: 'ExcelScript!ExcelScript.IterativeCalculation#setMaxIteration:member(1)'
+    package: ExcelScript!
+    fullName: setMaxIteration(maxIteration)
+    summary: Spécifie le nombre maximal d’itérations que Excel pouvez utiliser pour résoudre une référence circulaire.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMaxIteration(maxIteration: number): void;'
+      parameters:
+        - id: maxIteration
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

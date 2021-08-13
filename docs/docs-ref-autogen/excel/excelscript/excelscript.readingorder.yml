@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ReadingOrder
-uid: ExcelScript!ExcelScript.ReadingOrder:enum
+uid: 'ExcelScript!ExcelScript.ReadingOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.ReadingOrder
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: context
-  uid: ExcelScript!ExcelScript.ReadingOrder.context:member
-  package: ExcelScript!
-  summary: Le sens de la lecture est déterminé par la langue du premier caractère saisi. S'il s'agit du caractère d'une langue lue de droite à gauche, la lecture se fera de la droite vers la gauche. Inversement, si le premier caractère saisi appartient à une langue qui se lit de gauche à droite, la lecture se fera de la gauche vers la droite.
-- name: leftToRight
-  uid: ExcelScript!ExcelScript.ReadingOrder.leftToRight:member
-  package: ExcelScript!
-  summary: Ordre de lecture de gauche à droite
-- name: rightToLeft
-  uid: ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member
-  package: ExcelScript!
-  summary: Ordre de lecture de droite à gauche
-metadata:
-  ms.openlocfilehash: 364d838721992c4fb52488de1652cc03750a8eaa
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914229"
+  - name: context
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.context:member'
+    package: ExcelScript!
+    summary: 'Le sens de la lecture est déterminé par la langue du premier caractère saisi. S''il s''agit du caractère d''une langue lue de droite à gauche, la lecture se fera de la droite vers la gauche. Inversement, si le premier caractère saisi appartient à une langue qui se lit de gauche à droite, la lecture se fera de la gauche vers la droite.'
+  - name: leftToRight
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.leftToRight:member'
+    package: ExcelScript!
+    summary: Ordre de lecture de gauche à droite
+  - name: rightToLeft
+    uid: 'ExcelScript!ExcelScript.ReadingOrder.rightToLeft:member'
+    package: ExcelScript!
+    summary: Ordre de lecture de droite à gauche

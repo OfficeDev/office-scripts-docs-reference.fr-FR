@@ -1,198 +1,191 @@
 ### YamlMime:TSType
 name: ExcelScript.ShapeFont
-uid: ExcelScript!ExcelScript.ShapeFont:interface
+uid: 'ExcelScript!ExcelScript.ShapeFont:interface'
 package: ExcelScript!
 fullName: ExcelScript.ShapeFont
-summary: Représente les attributs de police, tels que le nom de la police, la taille de police et la couleur, pour l'objet d'une `TextRange` forme.
+summary: 'Représente les attributs de police, tels que le nom de police, la taille de police et la couleur, pour l’objet d’une `TextRange` forme.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBold()
-  uid: ExcelScript!ExcelScript.ShapeFont#getBold:member(1)
-  package: ExcelScript!
-  fullName: getBold()
-  summary: Représente le format de police Gras. Renvoie `null` si l'inclut des fragments de texte en gras `TextRange` et non gras.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBold(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ShapeFont#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, « \# FF0000 » représente le rouge). Renvoie `null` si `TextRange` l'inclut des fragments de texte avec des couleurs différentes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getItalic()
-  uid: ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)
-  package: ExcelScript!
-  fullName: getItalic()
-  summary: Représente le format de police Italique. Renvoie si l'inclut des fragments de texte en `null` `TextRange` italique et non italique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getItalic(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.ShapeFont#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Représente le nom de la police (par exemple, « Calibri »). Si le texte est un script complexe ou une langue d'Asie orientale, il s'agit du nom de police correspondant . Sinon, il s'agit du nom de la police latine.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getSize()
-  uid: ExcelScript!ExcelScript.ShapeFont#getSize:member(1)
-  package: ExcelScript!
-  fullName: getSize()
-  summary: Représente la taille de police en points (par exemple, 11). Renvoie si `null` `TextRange` l'inclut des fragments de texte avec des tailles de police différentes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSize(): number;'
-    return:
-      type: number
-      description: ''
-- name: getUnderline()
-  uid: ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)
-  package: ExcelScript!
-  fullName: getUnderline()
-  summary: Type de soulignement appliqué à la police. Renvoie `null` si `TextRange` l'inclut des fragments de texte avec des styles de soulignement différents. Pour `ExcelScript.ShapeFontUnderlineStyle` plus d'informations, voir.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getUnderline(): ShapeFontUnderlineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />
-      description: ''
-- name: setBold(bold)
-  uid: ExcelScript!ExcelScript.ShapeFont#setBold:member(1)
-  package: ExcelScript!
-  fullName: setBold(bold)
-  summary: Représente le format de police Gras. Renvoie `null` si l'inclut des fragments de texte en gras `TextRange` et non gras.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBold(bold: boolean): void;'
-    parameters:
-    - id: bold
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ShapeFont#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, « \# FF0000 » représente le rouge). Renvoie `null` si `TextRange` l'inclut des fragments de texte avec des couleurs différentes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setItalic(italic)
-  uid: ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)
-  package: ExcelScript!
-  fullName: setItalic(italic)
-  summary: Représente le format de police Italique. Renvoie si l'inclut des fragments de texte en `null` `TextRange` italique et non italique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setItalic(italic: boolean): void;'
-    parameters:
-    - id: italic
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.ShapeFont#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Représente le nom de la police (par exemple, « Calibri »). Si le texte est un script complexe ou une langue d'Asie orientale, il s'agit du nom de police correspondant . Sinon, il s'agit du nom de la police latine.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setSize(size)
-  uid: ExcelScript!ExcelScript.ShapeFont#setSize:member(1)
-  package: ExcelScript!
-  fullName: setSize(size)
-  summary: Représente la taille de police en points (par exemple, 11). Renvoie si `null` `TextRange` l'inclut des fragments de texte avec des tailles de police différentes.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSize(size: number): void;'
-    parameters:
-    - id: size
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setUnderline(underline)
-  uid: ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)
-  package: ExcelScript!
-  fullName: setUnderline(underline)
-  summary: Type de soulignement appliqué à la police. Renvoie `null` si `TextRange` l'inclut des fragments de texte avec des styles de soulignement différents. Pour `ExcelScript.ShapeFontUnderlineStyle` plus d'informations, voir.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
-    parameters:
-    - id: underline
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: de6feb3a51ce36b6d5744ee0b0ca65837dcd7e26
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914194"
+  - name: getBold()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getBold:member(1)'
+    package: ExcelScript!
+    fullName: getBold()
+    summary: Représente le format de police Gras. Renvoie `null` si l’inclut des fragments de texte en gras `TextRange` et non gras.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBold(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 'Représentation de code couleur HTML de la couleur du texte (par exemple, « \# FF0000 » représente le rouge). Renvoie `null` si `TextRange` l’inclut des fragments de texte avec des couleurs différentes.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getItalic()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getItalic:member(1)'
+    package: ExcelScript!
+    fullName: getItalic()
+    summary: Représente le format de police Italique. Renvoie si l’inclut des fragments de texte en `null` `TextRange` italique et non italique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getItalic(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: 'Représente le nom de la police (par exemple, « Calibri »). Si le texte est un script complexe ou une langue d’Asie orientale, il s’agit du nom de police correspondant . Sinon, il s’agit du nom de la police latine.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getSize()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getSize:member(1)'
+    package: ExcelScript!
+    fullName: getSize()
+    summary: 'Représente la taille de police en points (par exemple, 11). Renvoie si `null` `TextRange` l’inclut des fragments de texte avec des tailles de police différentes.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSize(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getUnderline()
+    uid: 'ExcelScript!ExcelScript.ShapeFont#getUnderline:member(1)'
+    package: ExcelScript!
+    fullName: getUnderline()
+    summary: 'Type de soulignement appliqué à la police. Renvoie `null` si `TextRange` l’inclut des fragments de texte avec des styles de soulignement différents. Pour `ExcelScript.ShapeFontUnderlineStyle` plus d’informations, voir.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getUnderline(): ShapeFontUnderlineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />'
+        description: ''
+  - name: setBold(bold)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setBold:member(1)'
+    package: ExcelScript!
+    fullName: setBold(bold)
+    summary: Représente le format de police Gras. Renvoie `null` si l’inclut des fragments de texte en gras `TextRange` et non gras.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBold(bold: boolean): void;'
+      parameters:
+        - id: bold
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 'Représentation de code couleur HTML de la couleur du texte (par exemple, « \# FF0000 » représente le rouge). Renvoie `null` si `TextRange` l’inclut des fragments de texte avec des couleurs différentes.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setItalic(italic)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setItalic:member(1)'
+    package: ExcelScript!
+    fullName: setItalic(italic)
+    summary: Représente le format de police Italique. Renvoie si l’inclut des fragments de texte en `null` `TextRange` italique et non italique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setItalic(italic: boolean): void;'
+      parameters:
+        - id: italic
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: 'Représente le nom de la police (par exemple, « Calibri »). Si le texte est un script complexe ou une langue d’Asie orientale, il s’agit du nom de police correspondant . Sinon, il s’agit du nom de la police latine.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setSize(size)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setSize:member(1)'
+    package: ExcelScript!
+    fullName: setSize(size)
+    summary: 'Représente la taille de police en points (par exemple, 11). Renvoie si `null` `TextRange` l’inclut des fragments de texte avec des tailles de police différentes.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSize(size: number): void;'
+      parameters:
+        - id: size
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setUnderline(underline)
+    uid: 'ExcelScript!ExcelScript.ShapeFont#setUnderline:member(1)'
+    package: ExcelScript!
+    fullName: setUnderline(underline)
+    summary: 'Type de soulignement appliqué à la police. Renvoie `null` si `TextRange` l’inclut des fragments de texte avec des styles de soulignement différents. Pour `ExcelScript.ShapeFontUnderlineStyle` plus d’informations, voir.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setUnderline(underline: ShapeFontUnderlineStyle): void;'
+      parameters:
+        - id: underline
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ShapeFontUnderlineStyle:enum" />'
+      return:
+        type: void
+        description: ''

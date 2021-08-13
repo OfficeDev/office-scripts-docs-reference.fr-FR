@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ClearApplyTo
-uid: ExcelScript!ExcelScript.ClearApplyTo:enum
+uid: 'ExcelScript!ExcelScript.ClearApplyTo:enum'
 package: ExcelScript!
 fullName: ExcelScript.ClearApplyTo
 summary: ''
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.ClearApplyTo.all:member
-  package: ExcelScript!
-  summary: ''
-- name: contents
-  uid: ExcelScript!ExcelScript.ClearApplyTo.contents:member
-  package: ExcelScript!
-  summary: Permet d’effacer le contenu de la plage.
-- name: formats
-  uid: ExcelScript!ExcelScript.ClearApplyTo.formats:member
-  package: ExcelScript!
-  summary: Cette pratique permet d’effacer toute la mise en forme de la plage.
-- name: hyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member
-  package: ExcelScript!
-  summary: Clears all hyperlinks, but leaves all content and formatting intact.
-- name: removeHyperlinks
-  uid: ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member
-  package: ExcelScript!
-  summary: Supprime les liens hypertexte et la mise en forme de la cellule, mais laisse le contenu, les formats conditionnels et la validation des données intacts.
-metadata:
-  ms.openlocfilehash: 71f3e0f6a14f8aff49e539b9078306047c60a77d
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913907"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.all:member'
+    package: ExcelScript!
+    summary: ''
+  - name: contents
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.contents:member'
+    package: ExcelScript!
+    summary: Permet d’effacer le contenu de la plage.
+  - name: formats
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.formats:member'
+    package: ExcelScript!
+    summary: Cette pratique permet d’effacer toute la mise en forme de la plage.
+  - name: hyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.hyperlinks:member'
+    package: ExcelScript!
+    summary: 'Clears all hyperlinks, but leaves all content and formatting intact.'
+  - name: removeHyperlinks
+    uid: 'ExcelScript!ExcelScript.ClearApplyTo.removeHyperlinks:member'
+    package: ExcelScript!
+    summary: 'Supprime les liens hypertexte et la mise en forme de la cellule, mais laisse le contenu, les formats conditionnels et la validation des données intacts.'

@@ -1,108 +1,101 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartMapOptions
-uid: ExcelScript!ExcelScript.ChartMapOptions:interface
+uid: 'ExcelScript!ExcelScript.ChartMapOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartMapOptions
-summary: Encapsule les propriétés d’un graphique de carte de région.
+summary: Encapsule les propriétés d’un graphique de carte région.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getLabelStrategy()
-  uid: ExcelScript!ExcelScript.ChartMapOptions#getLabelStrategy:member(1)
-  package: ExcelScript!
-  fullName: getLabelStrategy()
-  summary: Cette énumération spécifie la stratégie d’étiquettes de cartes d’un graphique de carte de région.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLabelStrategy(): ChartMapLabelStrategy;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />
-      description: ''
-- name: getLevel()
-  uid: ExcelScript!ExcelScript.ChartMapOptions#getLevel:member(1)
-  package: ExcelScript!
-  fullName: getLevel()
-  summary: Spécifie le niveau de mappage de série d’un graphique de carte de région.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLevel(): ChartMapAreaLevel;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />
-      description: ''
-- name: getProjectionType()
-  uid: ExcelScript!ExcelScript.ChartMapOptions#getProjectionType:member(1)
-  package: ExcelScript!
-  fullName: getProjectionType()
-  summary: Indique le type de projection de série d’un graphique de carte de région.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getProjectionType(): ChartMapProjectionType;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />
-      description: ''
-- name: setLabelStrategy(labelStrategy)
-  uid: ExcelScript!ExcelScript.ChartMapOptions#setLabelStrategy:member(1)
-  package: ExcelScript!
-  fullName: setLabelStrategy(labelStrategy)
-  summary: Cette énumération spécifie la stratégie d’étiquettes de cartes d’un graphique de carte de région.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLabelStrategy(labelStrategy: ChartMapLabelStrategy): void;'
-    parameters:
-    - id: labelStrategy
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />
-    return:
-      type: void
-      description: ''
-- name: setLevel(level)
-  uid: ExcelScript!ExcelScript.ChartMapOptions#setLevel:member(1)
-  package: ExcelScript!
-  fullName: setLevel(level)
-  summary: Spécifie le niveau de mappage de série d’un graphique de carte de région.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLevel(level: ChartMapAreaLevel): void;'
-    parameters:
-    - id: level
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />
-    return:
-      type: void
-      description: ''
-- name: setProjectionType(projectionType)
-  uid: ExcelScript!ExcelScript.ChartMapOptions#setProjectionType:member(1)
-  package: ExcelScript!
-  fullName: setProjectionType(projectionType)
-  summary: Indique le type de projection de série d’un graphique de carte de région.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setProjectionType(projectionType: ChartMapProjectionType): void;'
-    parameters:
-    - id: projectionType
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: e742df86933d33c7a0f0392075bf8b0800266f57
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49419662"
+  - name: getLabelStrategy()
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#getLabelStrategy:member(1)'
+    package: ExcelScript!
+    fullName: getLabelStrategy()
+    summary: Spécifie la stratégie d’étiquettes de carte de série d’un graphique de carte région.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLabelStrategy(): ChartMapLabelStrategy;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />'
+        description: ''
+  - name: getLevel()
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#getLevel:member(1)'
+    package: ExcelScript!
+    fullName: getLevel()
+    summary: Spécifie le niveau de mappage des séries d’un graphique de carte région.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLevel(): ChartMapAreaLevel;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />'
+        description: ''
+  - name: getProjectionType()
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#getProjectionType:member(1)'
+    package: ExcelScript!
+    fullName: getProjectionType()
+    summary: Spécifie le type de projection de série d’un graphique région carte.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getProjectionType(): ChartMapProjectionType;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />'
+        description: ''
+  - name: setLabelStrategy(labelStrategy)
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#setLabelStrategy:member(1)'
+    package: ExcelScript!
+    fullName: setLabelStrategy(labelStrategy)
+    summary: Spécifie la stratégie d’étiquettes de carte de série d’un graphique de carte région.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLabelStrategy(labelStrategy: ChartMapLabelStrategy): void;'
+      parameters:
+        - id: labelStrategy
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartMapLabelStrategy:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setLevel(level)
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#setLevel:member(1)'
+    package: ExcelScript!
+    fullName: setLevel(level)
+    summary: Spécifie le niveau de mappage des séries d’un graphique de carte région.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLevel(level: ChartMapAreaLevel): void;'
+      parameters:
+        - id: level
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartMapAreaLevel:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setProjectionType(projectionType)
+    uid: 'ExcelScript!ExcelScript.ChartMapOptions#setProjectionType:member(1)'
+    package: ExcelScript!
+    fullName: setProjectionType(projectionType)
+    summary: Spécifie le type de projection de série d’un graphique région carte.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setProjectionType(projectionType: ChartMapProjectionType): void;'
+      parameters:
+        - id: projectionType
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartMapProjectionType:enum" />'
+      return:
+        type: void
+        description: ''

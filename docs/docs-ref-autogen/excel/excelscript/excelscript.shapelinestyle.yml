@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeLineStyle
-uid: ExcelScript!ExcelScript.ShapeLineStyle:enum
+uid: 'ExcelScript!ExcelScript.ShapeLineStyle:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeLineStyle
 summary: Style d’une ligne.
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: single
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.single:member
-  package: ExcelScript!
-  summary: Ligne simple.
-- name: thickBetweenThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member
-  package: ExcelScript!
-  summary: Trait épais avec un trait fin de chaque coté
-- name: thickThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member
-  package: ExcelScript!
-  summary: Trait épais jouxtant un trait fin. Pour les lignes horizontales, le trait épais se trouve au-dessus du trait fin. Pour les lignes verticales, le trait épais se trouve à gauche du trait fin.
-- name: thinThick
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member
-  package: ExcelScript!
-  summary: Trait épais jouxtant un trait fin. Pour les lignes horizontales, le trait épais se trouve sous le trait fin. Pour les lignes verticales, le trait épais se trouve à droite du trait fin.
-- name: thinThin
-  uid: ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member
-  package: ExcelScript!
-  summary: Deux traits fins
-metadata:
-  ms.openlocfilehash: 05c9927a86ac3301390897d4f09c15ccdb49606a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913397"
+  - name: single
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.single:member'
+    package: ExcelScript!
+    summary: Ligne simple.
+  - name: thickBetweenThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickBetweenThin:member'
+    package: ExcelScript!
+    summary: Trait épais avec un trait fin de chaque coté
+  - name: thickThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thickThin:member'
+    package: ExcelScript!
+    summary: 'Trait épais jouxtant un trait fin. Pour les lignes horizontales, le trait épais se trouve au-dessus du trait fin. Pour les lignes verticales, le trait épais se trouve à gauche du trait fin.'
+  - name: thinThick
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThick:member'
+    package: ExcelScript!
+    summary: 'Trait épais jouxtant un trait fin. Pour les lignes horizontales, le trait épais se trouve sous le trait fin. Pour les lignes verticales, le trait épais se trouve à droite du trait fin.'
+  - name: thinThin
+    uid: 'ExcelScript!ExcelScript.ShapeLineStyle.thinThin:member'
+    package: ExcelScript!
+    summary: Deux traits fins

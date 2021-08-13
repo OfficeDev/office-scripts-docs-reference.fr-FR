@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PictureFormat
-uid: ExcelScript!ExcelScript.PictureFormat:enum
+uid: 'ExcelScript!ExcelScript.PictureFormat:enum'
 package: ExcelScript!
 fullName: ExcelScript.PictureFormat
 summary: Format de l’image.
@@ -8,34 +8,27 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bmp
-  uid: ExcelScript!ExcelScript.PictureFormat.bmp:member
-  package: ExcelScript!
-  summary: Image bitmap.
-- name: gif
-  uid: ExcelScript!ExcelScript.PictureFormat.gif:member
-  package: ExcelScript!
-  summary: Format d’échange de graphiques.
-- name: jpeg
-  uid: ExcelScript!ExcelScript.PictureFormat.jpeg:member
-  package: ExcelScript!
-  summary: Groupe Joint Photographic Experts.
-- name: png
-  uid: ExcelScript!ExcelScript.PictureFormat.png:member
-  package: ExcelScript!
-  summary: Portable Network Graphics.
-- name: svg
-  uid: ExcelScript!ExcelScript.PictureFormat.svg:member
-  package: ExcelScript!
-  summary: Graphique vectoriel extensible.
-- name: unknown
-  uid: ExcelScript!ExcelScript.PictureFormat.unknown:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 17f4104923cd1c1d008f67c9e2b2b4190ea26dcf
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49415266"
+  - name: bmp
+    uid: 'ExcelScript!ExcelScript.PictureFormat.bmp:member'
+    package: ExcelScript!
+    summary: Image bitmap.
+  - name: gif
+    uid: 'ExcelScript!ExcelScript.PictureFormat.gif:member'
+    package: ExcelScript!
+    summary: Format d’échange graphique.
+  - name: jpeg
+    uid: 'ExcelScript!ExcelScript.PictureFormat.jpeg:member'
+    package: ExcelScript!
+    summary: Groupe d’experts en exercice commun.
+  - name: png
+    uid: 'ExcelScript!ExcelScript.PictureFormat.png:member'
+    package: ExcelScript!
+    summary: Graphiques réseau portables.
+  - name: svg
+    uid: 'ExcelScript!ExcelScript.PictureFormat.svg:member'
+    package: ExcelScript!
+    summary: Graphique vectoriel évolutif.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PictureFormat.unknown:member'
+    package: ExcelScript!
+    summary: ''

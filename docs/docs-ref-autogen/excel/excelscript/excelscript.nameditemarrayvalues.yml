@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.NamedItemArrayValues
-uid: ExcelScript!ExcelScript.NamedItemArrayValues:interface
+uid: 'ExcelScript!ExcelScript.NamedItemArrayValues:interface'
 package: ExcelScript!
 fullName: ExcelScript.NamedItemArrayValues
 summary: Représente un objet contenant des valeurs et des types d’un élément nommé.
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getTypes()
-  uid: ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)
-  package: ExcelScript!
-  fullName: getTypes()
-  summary: Représente les types de chaque élément dans le tableau d’éléments nommés
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTypes(): RangeValueType[][];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]
-      description: ''
-- name: getValues()
-  uid: ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)
-  package: ExcelScript!
-  fullName: getValues()
-  summary: Représente les valeurs de chaque élément dans le tableau élément nommé.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getValues(): (string | number | boolean)[][];'
-    return:
-      type: (string | number | boolean)[][]
-      description: ''
-metadata:
-  ms.openlocfilehash: 3df4b339e499dad6a5e1bd1bc43586d0ca1d8ab9
-  ms.sourcegitcommit: 5f690fded7477d48c3af2a89399a0fbc2108bce8
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/02/2020
-  ms.locfileid: "49554638"
+  - name: getTypes()
+    uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getTypes:member(1)'
+    package: ExcelScript!
+    fullName: getTypes()
+    summary: Représente les types de chaque élément dans le tableau d’éléments nommés
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTypes(): RangeValueType[][];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.RangeValueType:enum" />[][]'
+        description: ''
+  - name: getValues()
+    uid: 'ExcelScript!ExcelScript.NamedItemArrayValues#getValues:member(1)'
+    package: ExcelScript!
+    fullName: getValues()
+    summary: Représente les valeurs de chaque élément dans le tableau élément nommé.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getValues(): (string | number | boolean)[][];'
+      return:
+        type: '(string | number | boolean)[][]'
+        description: ''

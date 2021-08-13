@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterCriteria
-uid: ExcelScript!ExcelScript.FilterCriteria:interface
+uid: 'ExcelScript!ExcelScript.FilterCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.FilterCriteria
 summary: Représente les critères de filtrage appliqués à une colonne.
@@ -9,122 +9,111 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: color
-  uid: ExcelScript!ExcelScript.FilterCriteria#color:member
-  package: ExcelScript!
-  fullName: color
-  summary: Chaîne de couleur HTML utilisée pour filtrer des cellules. Utilisé avec `cellColor` et `fontColor` filtrage.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'color?: string;'
-    return:
-      type: string
-- name: criterion1
-  uid: ExcelScript!ExcelScript.FilterCriteria#criterion1:member
-  package: ExcelScript!
-  fullName: criterion1
-  summary: >-
-    Premier critère utilisé pour filtrer des données. Utilisé comme opérateur dans le cas du `custom` filtrage. Par exemple «<!-- -->&gt;<!-- -->50 » pour les nombres supérieurs à 50 ou « =* s » pour les valeurs se terminant par « s ».
-
-
-    Utilisé comme nombre dans le cas des éléments supérieurs/inférieurs/pourcentages (par exemple, « 5 » pour les 5 premiers éléments si la valeur `filterOn` est définie sur `topItems`<!-- -->).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'criterion1?: string;'
-    return:
-      type: string
-- name: criterion2
-  uid: ExcelScript!ExcelScript.FilterCriteria#criterion2:member
-  package: ExcelScript!
-  fullName: criterion2
-  summary: Second critère utilisé pour filtrer des données. Utilisé uniquement en tant qu'opérateur dans le cas `custom` du filtrage.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'criterion2?: string;'
-    return:
-      type: string
-- name: dynamicCriteria
-  uid: ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member
-  package: ExcelScript!
-  fullName: dynamicCriteria
-  summary: Critères dynamiques de `ExcelScript.DynamicFilterCriteria` l'ensemble à appliquer à cette colonne. Utilisé avec `dynamic` le filtrage.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'dynamicCriteria?: DynamicFilterCriteria;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
-- name: filterOn
-  uid: ExcelScript!ExcelScript.FilterCriteria#filterOn:member
-  package: ExcelScript!
-  fullName: filterOn
-  summary: Propriété utilisée par le filtre pour déterminer si les valeurs doivent rester visibles.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'filterOn: FilterOn;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterOn:enum" />
-- name: icon
-  uid: ExcelScript!ExcelScript.FilterCriteria#icon:member
-  package: ExcelScript!
-  fullName: icon
-  summary: Icône utilisée pour filtrer des cellules. Utilisé avec `icon` le filtrage.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'icon?: Icon;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Icon:interface" />
-- name: operator
-  uid: ExcelScript!ExcelScript.FilterCriteria#operator:member
-  package: ExcelScript!
-  fullName: operator
-  summary: Opérateur utilisé pour combiner les critères 1 et 2 lors de l'utilisation `custom` du filtrage.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'operator?: FilterOperator;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />
-- name: subField
-  uid: ExcelScript!ExcelScript.FilterCriteria#subField:member
-  package: ExcelScript!
-  fullName: subField
-  summary: Propriété utilisée par le filtre pour faire un filtre enrichi sur les valeurs enrichies.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'subField?: string;'
-    return:
-      type: string
-- name: values
-  uid: ExcelScript!ExcelScript.FilterCriteria#values:member
-  package: ExcelScript!
-  fullName: values
-  summary: Ensemble de valeurs à utiliser dans le cadre du `values` filtrage.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'values?: Array<string | FilterDatetime>;'
-    return:
-      type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
-metadata:
-  ms.openlocfilehash: 087f822eceff7977613701fd62ff6d763a6df8ad
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913645"
+  - name: color
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#color:member'
+    package: ExcelScript!
+    fullName: color
+    summary: Chaîne de couleur HTML utilisée pour filtrer des cellules. Utilisé avec `cellColor` et `fontColor` filtrage.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: criterion1
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion1:member'
+    package: ExcelScript!
+    fullName: criterion1
+    summary: "Premier critère utilisé pour filtrer des données. Utilisé comme opérateur dans le cas du `custom` filtrage. Par exemple «<!-- -->&gt;<!-- -->50\_» pour les nombres supérieurs à 50 ou « =* s » pour les valeurs se terminant par « s ».\n\nUtilisé comme nombre dans le cas des éléments supérieurs/inférieurs/pourcentages (par exemple, « 5 » pour les 5 premiers éléments si la valeur est `filterOn` définie sur `topItems`<!-- -->)."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'criterion1?: string;'
+      return:
+        type: string
+  - name: criterion2
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#criterion2:member'
+    package: ExcelScript!
+    fullName: criterion2
+    summary: Second critère utilisé pour filtrer des données. Utilisé uniquement en tant qu’opérateur dans le cas `custom` du filtrage.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'criterion2?: string;'
+      return:
+        type: string
+  - name: dynamicCriteria
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#dynamicCriteria:member'
+    package: ExcelScript!
+    fullName: dynamicCriteria
+    summary: Critères dynamiques de `ExcelScript.DynamicFilterCriteria` l’ensemble à appliquer à cette colonne. Utilisé avec `dynamic` le filtrage.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dynamicCriteria?: DynamicFilterCriteria;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />'
+  - name: filterOn
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#filterOn:member'
+    package: ExcelScript!
+    fullName: filterOn
+    summary: Propriété utilisée par le filtre pour déterminer si les valeurs doivent rester visibles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'filterOn: FilterOn;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterOn:enum" />'
+  - name: icon
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#icon:member'
+    package: ExcelScript!
+    fullName: icon
+    summary: Icône utilisée pour filtrer des cellules. Utilisé avec `icon` le filtrage.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'icon?: Icon;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Icon:interface" />'
+  - name: operator
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#operator:member'
+    package: ExcelScript!
+    fullName: operator
+    summary: Opérateur utilisé pour combiner les critères 1 et 2 lors de l’utilisation `custom` du filtrage.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'operator?: FilterOperator;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterOperator:enum" />'
+  - name: subField
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#subField:member'
+    package: ExcelScript!
+    fullName: subField
+    summary: Propriété utilisée par le filtre pour faire un filtre enrichi sur les valeurs enrichies.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type: string
+  - name: values
+    uid: 'ExcelScript!ExcelScript.FilterCriteria#values:member'
+    package: ExcelScript!
+    fullName: values
+    summary: Ensemble de valeurs à utiliser dans le cadre du `values` filtrage.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'values?: Array<string | FilterDatetime>;'
+      return:
+        type: 'Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;'

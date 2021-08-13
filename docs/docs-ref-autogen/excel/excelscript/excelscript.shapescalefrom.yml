@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeScaleFrom
-uid: ExcelScript!ExcelScript.ShapeScaleFrom:enum
+uid: 'ExcelScript!ExcelScript.ShapeScaleFrom:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeScaleFrom
 summary: Spécifie la partie de la forme qui conserve sa position lorsque le forme est mise à l'échelle.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: scaleFromBottomRight
-  uid: ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromBottomRight:member
-  package: ExcelScript!
-  summary: ''
-- name: scaleFromMiddle
-  uid: ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromMiddle:member
-  package: ExcelScript!
-  summary: ''
-- name: scaleFromTopLeft
-  uid: ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromTopLeft:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 7e855781a6c80111e1e5db058670886b0bdad526
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914173"
+  - name: scaleFromBottomRight
+    uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromBottomRight:member'
+    package: ExcelScript!
+    summary: ''
+  - name: scaleFromMiddle
+    uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromMiddle:member'
+    package: ExcelScript!
+    summary: ''
+  - name: scaleFromTopLeft
+    uid: 'ExcelScript!ExcelScript.ShapeScaleFrom.scaleFromTopLeft:member'
+    package: ExcelScript!
+    summary: ''

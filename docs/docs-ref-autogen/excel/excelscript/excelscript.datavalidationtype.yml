@@ -1,57 +1,74 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DataValidationType
-uid: ExcelScript!ExcelScript.DataValidationType:enum
+uid: 'ExcelScript!ExcelScript.DataValidationType:enum'
 package: ExcelScript!
 fullName: ExcelScript.DataValidationType
 summary: Représente l’enum du type de validation des données.
-remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
+remarks: |-
+
+
+  #### <a name="examples"></a>Exemples
+
+  ```TypeScript
+  /**
+   * This sample reads and logs the data validation type of the currently selected range.
+   */
+  function main(workbook: ExcelScript.Workbook) {
+    // Get the currently selected range.
+    let range = workbook.getSelectedRange();
+
+    // Get the type (`DataValidationType`) of data validation applied to the range.
+    let validationType = range.getDataValidation().getType();
+
+    /*
+     * Log the data validation type.
+     * If the range has a single value, it logs that type.
+     * If the range doesn't have data validation applied, it logs "None".
+     * If the range has multiple different types of data validation, it logs "Inconsistent" or "MixedCriteria".
+     */
+    console.log(validationType.toString());
+  }
+  ```
 isPreview: false
 isDeprecated: false
 fields:
-- name: custom
-  uid: ExcelScript!ExcelScript.DataValidationType.custom:member
-  package: ExcelScript!
-  summary: Type de validation de données personnalisé.
-- name: date
-  uid: ExcelScript!ExcelScript.DataValidationType.date:member
-  package: ExcelScript!
-  summary: Type de validation des données de date.
-- name: decimal
-  uid: ExcelScript!ExcelScript.DataValidationType.decimal:member
-  package: ExcelScript!
-  summary: Type de validation des données décimales.
-- name: inconsistent
-  uid: ExcelScript!ExcelScript.DataValidationType.inconsistent:member
-  package: ExcelScript!
-  summary: Incohérent signifie que la plage a une validation de données incohérente, ce qui indique qu’il existe différentes règles sur différentes cellules.
-- name: list
-  uid: ExcelScript!ExcelScript.DataValidationType.list:member
-  package: ExcelScript!
-  summary: Type de validation des données de liste.
-- name: mixedCriteria
-  uid: ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member
-  package: ExcelScript!
-  summary: Les critères mixtes signifient que la validation des données de la plage est présente sur certaines cellules, mais pas toutes.
-- name: none
-  uid: ExcelScript!ExcelScript.DataValidationType.none:member
-  package: ExcelScript!
-  summary: Aucun ne signifie autoriser une valeur, indiquant qu’il n’y a aucune validation de données dans la plage.
-- name: textLength
-  uid: ExcelScript!ExcelScript.DataValidationType.textLength:member
-  package: ExcelScript!
-  summary: Type de validation des données de longueur de texte.
-- name: time
-  uid: ExcelScript!ExcelScript.DataValidationType.time:member
-  package: ExcelScript!
-  summary: Type de validation des données d’heure.
-- name: wholeNumber
-  uid: ExcelScript!ExcelScript.DataValidationType.wholeNumber:member
-  package: ExcelScript!
-  summary: Type de validation des données de nombre entier.
-metadata:
-  ms.openlocfilehash: 9b0bb4199eff15b3613be84d248341a5484a2bd8
-  ms.sourcegitcommit: 0b4ded26cbb2aa6e90e05b3e0af88b67da159021
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/15/2021
-  ms.locfileid: "53451599"
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.DataValidationType.custom:member'
+    package: ExcelScript!
+    summary: Type de validation de données personnalisé.
+  - name: date
+    uid: 'ExcelScript!ExcelScript.DataValidationType.date:member'
+    package: ExcelScript!
+    summary: Type de validation des données de date.
+  - name: decimal
+    uid: 'ExcelScript!ExcelScript.DataValidationType.decimal:member'
+    package: ExcelScript!
+    summary: Type de validation des données décimales.
+  - name: inconsistent
+    uid: 'ExcelScript!ExcelScript.DataValidationType.inconsistent:member'
+    package: ExcelScript!
+    summary: 'Incohérent signifie que la plage a une validation de données incohérente, ce qui indique qu’il existe différentes règles sur différentes cellules.'
+  - name: list
+    uid: 'ExcelScript!ExcelScript.DataValidationType.list:member'
+    package: ExcelScript!
+    summary: Type de validation des données de liste.
+  - name: mixedCriteria
+    uid: 'ExcelScript!ExcelScript.DataValidationType.mixedCriteria:member'
+    package: ExcelScript!
+    summary: 'Les critères mixtes signifient que la validation des données est présente sur certaines cellules, mais pas toutes.'
+  - name: none
+    uid: 'ExcelScript!ExcelScript.DataValidationType.none:member'
+    package: ExcelScript!
+    summary: 'Aucun ne signifie autoriser n’importe quelle valeur, indiquant qu’il n’y a aucune validation de données dans la plage.'
+  - name: textLength
+    uid: 'ExcelScript!ExcelScript.DataValidationType.textLength:member'
+    package: ExcelScript!
+    summary: Type de validation des données de longueur de texte.
+  - name: time
+    uid: 'ExcelScript!ExcelScript.DataValidationType.time:member'
+    package: ExcelScript!
+    summary: Type de validation des données d’heure.
+  - name: wholeNumber
+    uid: 'ExcelScript!ExcelScript.DataValidationType.wholeNumber:member'
+    package: ExcelScript!
+    summary: Type de validation des données de nombre entier.

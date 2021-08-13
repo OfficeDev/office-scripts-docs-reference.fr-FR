@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PivotFilterType
-uid: ExcelScript!ExcelScript.PivotFilterType:enum
+uid: 'ExcelScript!ExcelScript.PivotFilterType:enum'
 package: ExcelScript!
 fullName: ExcelScript.PivotFilterType
 summary: Simple enum qui représente un type de filtre pour un champ de tableau croisé dynamique.
@@ -8,30 +8,23 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: date
-  uid: ExcelScript!ExcelScript.PivotFilterType.date:member
-  package: ExcelScript!
-  summary: "Filtre les pivotItems avec une date à la place d'une étiquette. Remarque : un champ de tableau croisé dynamique ne peut pas simultanément avoir un filtre d'étiquette et un filtre de date appliqué."
-- name: label
-  uid: ExcelScript!ExcelScript.PivotFilterType.label:member
-  package: ExcelScript!
-  summary: "Filtre les pivotItems en fonction de leurs étiquettes. Remarque : un champ de tableau croisé dynamique ne peut pas simultanément avoir un filtre d'étiquette et un filtre de date appliqué."
-- name: manual
-  uid: ExcelScript!ExcelScript.PivotFilterType.manual:member
-  package: ExcelScript!
-  summary: Filtre des pivotItems sélectionnés manuellement à partir du tableau croisé dynamique.
-- name: unknown
-  uid: ExcelScript!ExcelScript.PivotFilterType.unknown:member
-  package: ExcelScript!
-  summary: "`PivotFilterType` est inconnu ou non pris en cas d'insupportation."
-- name: value
-  uid: ExcelScript!ExcelScript.PivotFilterType.value:member
-  package: ExcelScript!
-  summary: Filtres basés sur la valeur d'un pivotItem par rapport à un `DataPivotHierarchy`<!-- -->.
-metadata:
-  ms.openlocfilehash: f070c217d5b4a7958666c25a9971c8c8eaffb8f4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914306"
+  - name: date
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.date:member'
+    package: ExcelScript!
+    summary: 'Filtre les pivotItems avec une date à la place d’une étiquette. Remarque : un champ de tableau croisé dynamique ne peut pas simultanément avoir un filtre d’étiquette et un filtre de date appliqué.'
+  - name: label
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.label:member'
+    package: ExcelScript!
+    summary: 'Filtre les pivotItems en fonction de leurs étiquettes. Remarque : un champ de tableau croisé dynamique ne peut pas simultanément avoir un filtre d’étiquette et un filtre de date appliqué.'
+  - name: manual
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.manual:member'
+    package: ExcelScript!
+    summary: Filtre des pivotItems sélectionnés manuellement à partir du tableau croisé dynamique.
+  - name: unknown
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.unknown:member'
+    package: ExcelScript!
+    summary: '`PivotFilterType` est inconnu ou non pris en cas d’insupportation.'
+  - name: value
+    uid: 'ExcelScript!ExcelScript.PivotFilterType.value:member'
+    package: ExcelScript!
+    summary: Filtres basés sur la valeur d’un pivotItem par rapport à un `DataPivotHierarchy`<!-- -->.

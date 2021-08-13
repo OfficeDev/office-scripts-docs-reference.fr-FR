@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalDataBarNegativeFormat
-uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface
+uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalDataBarNegativeFormat
 summary: Représente un format conditionnel pour le côté négatif de la barre de données.
@@ -9,130 +9,123 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorderColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)
-  package: ExcelScript!
-  fullName: getBorderColor()
-  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n'est présente ou définie.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorderColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getFillColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)
-  package: ExcelScript!
-  fullName: getFillColor()
-  summary: Code couleur HTML représentant la couleur de remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFillColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getMatchPositiveBorderColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)
-  package: ExcelScript!
-  fullName: getMatchPositiveBorderColor()
-  summary: Spécifie si la barre de données négative a la même couleur de bordure que la barre de données positive.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMatchPositiveBorderColor(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getMatchPositiveFillColor()
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)
-  package: ExcelScript!
-  fullName: getMatchPositiveFillColor()
-  summary: Spécifie si la barre de données négative a la même couleur de remplissage que la barre de données positive.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getMatchPositiveFillColor(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setBorderColor(borderColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)
-  package: ExcelScript!
-  fullName: setBorderColor(borderColor)
-  summary: Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n'est présente ou définie.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setBorderColor(borderColor: string): void;'
-    parameters:
-    - id: borderColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setFillColor(fillColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)
-  package: ExcelScript!
-  fullName: setFillColor(fillColor)
-  summary: Code couleur HTML représentant la couleur de remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setFillColor(fillColor: string): void;'
-    parameters:
-    - id: fillColor
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setMatchPositiveBorderColor(matchPositiveBorderColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)
-  package: ExcelScript!
-  fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
-  summary: Spécifie si la barre de données négative a la même couleur de bordure que la barre de données positive.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
-    parameters:
-    - id: matchPositiveBorderColor
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setMatchPositiveFillColor(matchPositiveFillColor)
-  uid: ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)
-  package: ExcelScript!
-  fullName: setMatchPositiveFillColor(matchPositiveFillColor)
-  summary: Spécifie si la barre de données négative a la même couleur de remplissage que la barre de données positive.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
-    parameters:
-    - id: matchPositiveFillColor
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 29715083641d7ffbc94357a022635db2179ce5d4
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913293"
+  - name: getBorderColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: getBorderColor()
+    summary: 'Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n’est présente ou définie.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorderColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getFillColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getFillColor:member(1)'
+    package: ExcelScript!
+    fullName: getFillColor()
+    summary: 'Code couleur HTML représentant la couleur de remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFillColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getMatchPositiveBorderColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: getMatchPositiveBorderColor()
+    summary: Spécifie si la barre de données négative a la même couleur de bordure que la barre de données positive.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMatchPositiveBorderColor(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getMatchPositiveFillColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#getMatchPositiveFillColor:member(1)'
+    package: ExcelScript!
+    fullName: getMatchPositiveFillColor()
+    summary: Spécifie si la barre de données négative a la même couleur de remplissage que la barre de données positive.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getMatchPositiveFillColor(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setBorderColor(borderColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: setBorderColor(borderColor)
+    summary: 'Code couleur HTML représentant la couleur de la bordure, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »). La valeur est « » (chaîne vide) si aucune bordure n’est présente ou définie.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setBorderColor(borderColor: string): void;'
+      parameters:
+        - id: borderColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setFillColor(fillColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setFillColor:member(1)'
+    package: ExcelScript!
+    fullName: setFillColor(fillColor)
+    summary: 'Code couleur HTML représentant la couleur de remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setFillColor(fillColor: string): void;'
+      parameters:
+        - id: fillColor
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveBorderColor:member(1)'
+    package: ExcelScript!
+    fullName: setMatchPositiveBorderColor(matchPositiveBorderColor)
+    summary: Spécifie si la barre de données négative a la même couleur de bordure que la barre de données positive.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMatchPositiveBorderColor(matchPositiveBorderColor: boolean): void;'
+      parameters:
+        - id: matchPositiveBorderColor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setMatchPositiveFillColor(matchPositiveFillColor)
+    uid: 'ExcelScript!ExcelScript.ConditionalDataBarNegativeFormat#setMatchPositiveFillColor:member(1)'
+    package: ExcelScript!
+    fullName: setMatchPositiveFillColor(matchPositiveFillColor)
+    summary: Spécifie si la barre de données négative a la même couleur de remplissage que la barre de données positive.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMatchPositiveFillColor(matchPositiveFillColor: boolean): void;'
+      parameters:
+        - id: matchPositiveFillColor
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

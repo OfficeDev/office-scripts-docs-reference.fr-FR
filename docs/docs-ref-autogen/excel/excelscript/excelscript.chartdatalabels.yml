@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartDataLabels
-uid: ExcelScript!ExcelScript.ChartDataLabels:interface
+uid: 'ExcelScript!ExcelScript.ChartDataLabels:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartDataLabels
 summary: Représente une collection de toutes les étiquettes de données associées à un point de graphique.
@@ -9,449 +9,442 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getAutoText()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getAutoText:member(1)
-  package: ExcelScript!
-  fullName: getAutoText()
-  summary: Spécifie si les étiquettes de données génèrent automatiquement le texte approprié en fonction du contexte.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAutoText(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Spécifie le format des étiquettes de données de graphique, qui inclut la mise en forme de remplissage et de police.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ChartDataLabelFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelFormat:interface" />
-      description: ''
-- name: getHorizontalAlignment()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getHorizontalAlignment()
-  summary: Spécifie l'alignement horizontal pour l'étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsque `TextOrientation` l'étiquette de données est 0.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-      description: ''
-- name: getLinkNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getLinkNumberFormat()
-  summary: Spécifie si le format numérique est lié aux cellules. If `true`<!-- -->, le format numérique change dans les étiquettes lorsqu'il change dans les cellules.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLinkNumberFormat(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getNumberFormat()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: getNumberFormat()
-  summary: Spécifie le code de format pour les étiquettes de données.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getNumberFormat(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPosition()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)
-  package: ExcelScript!
-  fullName: getPosition()
-  summary: Valeur qui représente la position de l'étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d'informations, voir.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPosition(): ChartDataLabelPosition;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />
-      description: ''
-- name: getSeparator()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getSeparator:member(1)
-  package: ExcelScript!
-  fullName: getSeparator()
-  summary: Chaîne représentant le séparateur utilisé pour les étiquettes de données d’un graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSeparator(): string;'
-    return:
-      type: string
-      description: ''
-- name: getShowBubbleSize()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getShowBubbleSize:member(1)
-  package: ExcelScript!
-  fullName: getShowBubbleSize()
-  summary: Spécifie si la taille des bulles des étiquettes de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBubbleSize(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowCategoryName()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getShowCategoryName:member(1)
-  package: ExcelScript!
-  fullName: getShowCategoryName()
-  summary: Spécifie si le nom de catégorie d'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowCategoryName(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowLegendKey()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getShowLegendKey:member(1)
-  package: ExcelScript!
-  fullName: getShowLegendKey()
-  summary: Spécifie si le clé de légende d'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowLegendKey(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowPercentage()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getShowPercentage:member(1)
-  package: ExcelScript!
-  fullName: getShowPercentage()
-  summary: Spécifie si le pourcentage d'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowPercentage(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowSeriesName()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getShowSeriesName:member(1)
-  package: ExcelScript!
-  fullName: getShowSeriesName()
-  summary: Spécifie si le nom de la série d'étiquettes de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowSeriesName(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowValue()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getShowValue:member(1)
-  package: ExcelScript!
-  fullName: getShowValue()
-  summary: Spécifie si la valeur de l'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowValue(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getTextOrientation()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: getTextOrientation()
-  summary: Représente l'angle vers lequel le texte est orienté pour les étiquettes de données. La valeur doit être un integer de -90 à 90 ou l'integer 180 pour le texte orienté verticalement.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTextOrientation(): number;'
-    return:
-      type: number
-      description: ''
-- name: getVerticalAlignment()
-  uid: ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: getVerticalAlignment()
-  summary: Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsque l'étiquette de `TextOrientation` données est -90, 90 ou 180.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-      description: ''
-- name: setAutoText(autoText)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setAutoText:member(1)
-  package: ExcelScript!
-  fullName: setAutoText(autoText)
-  summary: Spécifie si les étiquettes de données génèrent automatiquement le texte approprié en fonction du contexte.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setAutoText(autoText: boolean): void;'
-    parameters:
-    - id: autoText
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setHorizontalAlignment(horizontalAlignment)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setHorizontalAlignment(horizontalAlignment)
-  summary: Spécifie l'alignement horizontal pour l'étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsque `TextOrientation` l'étiquette de données est 0.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setHorizontalAlignment(
-                  horizontalAlignment: ChartTextHorizontalAlignment
-              ): void;
-    parameters:
-    - id: horizontalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-- name: setLinkNumberFormat(linkNumberFormat)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setLinkNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setLinkNumberFormat(linkNumberFormat)
-  summary: Spécifie si le format numérique est lié aux cellules. If `true`<!-- -->, le format numérique change dans les étiquettes lorsqu'il change dans les cellules.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
-    parameters:
-    - id: linkNumberFormat
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setNumberFormat(numberFormat)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setNumberFormat:member(1)
-  package: ExcelScript!
-  fullName: setNumberFormat(numberFormat)
-  summary: Spécifie le code de format pour les étiquettes de données.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setNumberFormat(numberFormat: string): void;'
-    parameters:
-    - id: numberFormat
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPosition(position)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)
-  package: ExcelScript!
-  fullName: setPosition(position)
-  summary: Valeur qui représente la position de l'étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d'informations, voir.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPosition(position: ChartDataLabelPosition): void;'
-    parameters:
-    - id: position
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />
-    return:
-      type: void
-      description: ''
-- name: setSeparator(separator)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setSeparator:member(1)
-  package: ExcelScript!
-  fullName: setSeparator(separator)
-  summary: Chaîne représentant le séparateur utilisé pour les étiquettes de données d’un graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setSeparator(separator: string): void;'
-    parameters:
-    - id: separator
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setShowBubbleSize(showBubbleSize)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setShowBubbleSize:member(1)
-  package: ExcelScript!
-  fullName: setShowBubbleSize(showBubbleSize)
-  summary: Spécifie si la taille des bulles des étiquettes de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBubbleSize(showBubbleSize: boolean): void;'
-    parameters:
-    - id: showBubbleSize
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowCategoryName(showCategoryName)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setShowCategoryName:member(1)
-  package: ExcelScript!
-  fullName: setShowCategoryName(showCategoryName)
-  summary: Spécifie si le nom de catégorie d'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowCategoryName(showCategoryName: boolean): void;'
-    parameters:
-    - id: showCategoryName
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowLegendKey(showLegendKey)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setShowLegendKey:member(1)
-  package: ExcelScript!
-  fullName: setShowLegendKey(showLegendKey)
-  summary: Spécifie si le clé de légende d'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowLegendKey(showLegendKey: boolean): void;'
-    parameters:
-    - id: showLegendKey
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowPercentage(showPercentage)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setShowPercentage:member(1)
-  package: ExcelScript!
-  fullName: setShowPercentage(showPercentage)
-  summary: Spécifie si le pourcentage d'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowPercentage(showPercentage: boolean): void;'
-    parameters:
-    - id: showPercentage
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowSeriesName(showSeriesName)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setShowSeriesName:member(1)
-  package: ExcelScript!
-  fullName: setShowSeriesName(showSeriesName)
-  summary: Spécifie si le nom de la série d'étiquettes de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowSeriesName(showSeriesName: boolean): void;'
-    parameters:
-    - id: showSeriesName
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowValue(showValue)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setShowValue:member(1)
-  package: ExcelScript!
-  fullName: setShowValue(showValue)
-  summary: Spécifie si la valeur de l'étiquette de données est visible.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowValue(showValue: boolean): void;'
-    parameters:
-    - id: showValue
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setTextOrientation(textOrientation)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setTextOrientation:member(1)
-  package: ExcelScript!
-  fullName: setTextOrientation(textOrientation)
-  summary: Représente l'angle vers lequel le texte est orienté pour les étiquettes de données. La valeur doit être un integer de -90 à 90 ou l'integer 180 pour le texte orienté verticalement.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setTextOrientation(textOrientation: number): void;'
-    parameters:
-    - id: textOrientation
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-- name: setVerticalAlignment(verticalAlignment)
-  uid: ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)
-  package: ExcelScript!
-  fullName: setVerticalAlignment(verticalAlignment)
-  summary: Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d'informations, voir. Cette propriété n'est valide que lorsque l'étiquette de `TextOrientation` données est -90, 90 ou 180.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setVerticalAlignment(
-                  verticalAlignment: ChartTextVerticalAlignment
-              ): void;
-    parameters:
-    - id: verticalAlignment
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 0ee57a2ce4cea547800a306ff6dfdb5a4927978b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914103"
+  - name: getAutoText()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getAutoText:member(1)'
+    package: ExcelScript!
+    fullName: getAutoText()
+    summary: Spécifie si les étiquettes de données génèrent automatiquement le texte approprié en fonction du contexte.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAutoText(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 'Spécifie le format des étiquettes de données de graphique, qui inclut la mise en forme de remplissage et de police.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ChartDataLabelFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartDataLabelFormat:interface" />'
+        description: ''
+  - name: getHorizontalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getHorizontalAlignment()
+    summary: 'Spécifie l’alignement horizontal pour l’étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsque `TextOrientation` l’étiquette de données est 0.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHorizontalAlignment(): ChartTextHorizontalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+        description: ''
+  - name: getLinkNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getLinkNumberFormat()
+    summary: 'Spécifie si le format numérique est lié aux cellules. If `true`<!-- -->, le format numérique change dans les étiquettes lorsqu’il change dans les cellules.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLinkNumberFormat(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getNumberFormat()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: getNumberFormat()
+    summary: Spécifie le code de format pour les étiquettes de données.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNumberFormat(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPosition()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getPosition:member(1)'
+    package: ExcelScript!
+    fullName: getPosition()
+    summary: 'Valeur qui représente la position de l’étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d’informations, voir.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPosition(): ChartDataLabelPosition;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />'
+        description: ''
+  - name: getSeparator()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getSeparator:member(1)'
+    package: ExcelScript!
+    fullName: getSeparator()
+    summary: Chaîne représentant le séparateur utilisé pour les étiquettes de données d’un graphique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSeparator(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getShowBubbleSize()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowBubbleSize:member(1)'
+    package: ExcelScript!
+    fullName: getShowBubbleSize()
+    summary: Spécifie si la taille des bulles des étiquettes de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBubbleSize(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowCategoryName()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowCategoryName:member(1)'
+    package: ExcelScript!
+    fullName: getShowCategoryName()
+    summary: Spécifie si le nom de catégorie d’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowCategoryName(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowLegendKey()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowLegendKey:member(1)'
+    package: ExcelScript!
+    fullName: getShowLegendKey()
+    summary: Spécifie si le clé de légende d’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowLegendKey(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowPercentage()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowPercentage:member(1)'
+    package: ExcelScript!
+    fullName: getShowPercentage()
+    summary: Spécifie si le pourcentage d’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowPercentage(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowSeriesName()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowSeriesName:member(1)'
+    package: ExcelScript!
+    fullName: getShowSeriesName()
+    summary: Spécifie si le nom de la série d’étiquettes de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowSeriesName(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowValue()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getShowValue:member(1)'
+    package: ExcelScript!
+    fullName: getShowValue()
+    summary: Spécifie si la valeur de l’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowValue(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getTextOrientation()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: getTextOrientation()
+    summary: Représente l’angle vers lequel le texte est orienté pour les étiquettes de données. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTextOrientation(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getVerticalAlignment()
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#getVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: getVerticalAlignment()
+    summary: 'Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsque l’étiquette de `TextOrientation` données est -90, 90 ou 180.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getVerticalAlignment(): ChartTextVerticalAlignment;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+        description: ''
+  - name: setAutoText(autoText)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setAutoText:member(1)'
+    package: ExcelScript!
+    fullName: setAutoText(autoText)
+    summary: Spécifie si les étiquettes de données génèrent automatiquement le texte approprié en fonction du contexte.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setAutoText(autoText: boolean): void;'
+      parameters:
+        - id: autoText
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setHorizontalAlignment(horizontalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setHorizontalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setHorizontalAlignment(horizontalAlignment)
+    summary: 'Spécifie l’alignement horizontal pour l’étiquette de données du graphique. Pour `ExcelScript.ChartTextHorizontalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsque `TextOrientation` l’étiquette de données est 0.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setHorizontalAlignment(
+                    horizontalAlignment: ChartTextHorizontalAlignment
+                ): void;
+      parameters:
+        - id: horizontalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextHorizontalAlignment:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setLinkNumberFormat(linkNumberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setLinkNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setLinkNumberFormat(linkNumberFormat)
+    summary: 'Spécifie si le format numérique est lié aux cellules. If `true`<!-- -->, le format numérique change dans les étiquettes lorsqu’il change dans les cellules.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLinkNumberFormat(linkNumberFormat: boolean): void;'
+      parameters:
+        - id: linkNumberFormat
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setNumberFormat(numberFormat)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setNumberFormat:member(1)'
+    package: ExcelScript!
+    fullName: setNumberFormat(numberFormat)
+    summary: Spécifie le code de format pour les étiquettes de données.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setNumberFormat(numberFormat: string): void;'
+      parameters:
+        - id: numberFormat
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPosition(position)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setPosition:member(1)'
+    package: ExcelScript!
+    fullName: setPosition(position)
+    summary: 'Valeur qui représente la position de l’étiquette de données. Pour `ExcelScript.ChartDataLabelPosition` plus d’informations, voir.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPosition(position: ChartDataLabelPosition): void;'
+      parameters:
+        - id: position
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartDataLabelPosition:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setSeparator(separator)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setSeparator:member(1)'
+    package: ExcelScript!
+    fullName: setSeparator(separator)
+    summary: Chaîne représentant le séparateur utilisé pour les étiquettes de données d’un graphique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setSeparator(separator: string): void;'
+      parameters:
+        - id: separator
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setShowBubbleSize(showBubbleSize)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowBubbleSize:member(1)'
+    package: ExcelScript!
+    fullName: setShowBubbleSize(showBubbleSize)
+    summary: Spécifie si la taille des bulles des étiquettes de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBubbleSize(showBubbleSize: boolean): void;'
+      parameters:
+        - id: showBubbleSize
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowCategoryName(showCategoryName)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowCategoryName:member(1)'
+    package: ExcelScript!
+    fullName: setShowCategoryName(showCategoryName)
+    summary: Spécifie si le nom de catégorie d’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowCategoryName(showCategoryName: boolean): void;'
+      parameters:
+        - id: showCategoryName
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowLegendKey(showLegendKey)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowLegendKey:member(1)'
+    package: ExcelScript!
+    fullName: setShowLegendKey(showLegendKey)
+    summary: Spécifie si le clé de légende d’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowLegendKey(showLegendKey: boolean): void;'
+      parameters:
+        - id: showLegendKey
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowPercentage(showPercentage)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowPercentage:member(1)'
+    package: ExcelScript!
+    fullName: setShowPercentage(showPercentage)
+    summary: Spécifie si le pourcentage d’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowPercentage(showPercentage: boolean): void;'
+      parameters:
+        - id: showPercentage
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowSeriesName(showSeriesName)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowSeriesName:member(1)'
+    package: ExcelScript!
+    fullName: setShowSeriesName(showSeriesName)
+    summary: Spécifie si le nom de la série d’étiquettes de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowSeriesName(showSeriesName: boolean): void;'
+      parameters:
+        - id: showSeriesName
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowValue(showValue)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setShowValue:member(1)'
+    package: ExcelScript!
+    fullName: setShowValue(showValue)
+    summary: Spécifie si la valeur de l’étiquette de données est visible.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowValue(showValue: boolean): void;'
+      parameters:
+        - id: showValue
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setTextOrientation(textOrientation)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setTextOrientation:member(1)'
+    package: ExcelScript!
+    fullName: setTextOrientation(textOrientation)
+    summary: Représente l’angle vers lequel le texte est orienté pour les étiquettes de données. La valeur doit être un integer de -90 à 90 ou l’integer 180 pour le texte orienté verticalement.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setTextOrientation(textOrientation: number): void;'
+      parameters:
+        - id: textOrientation
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: setVerticalAlignment(verticalAlignment)
+    uid: 'ExcelScript!ExcelScript.ChartDataLabels#setVerticalAlignment:member(1)'
+    package: ExcelScript!
+    fullName: setVerticalAlignment(verticalAlignment)
+    summary: 'Représente l’alignement vertical de l’étiquette de données du graphique. Pour `ExcelScript.ChartTextVerticalAlignment` plus d’informations, voir. Cette propriété n’est valide que lorsque l’étiquette de `TextOrientation` données est -90, 90 ou 180.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setVerticalAlignment(
+                    verticalAlignment: ChartTextVerticalAlignment
+                ): void;
+      parameters:
+        - id: verticalAlignment
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartTextVerticalAlignment:enum" />'
+      return:
+        type: void
+        description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartMapLabelStrategy
-uid: ExcelScript!ExcelScript.ChartMapLabelStrategy:enum
+uid: 'ExcelScript!ExcelScript.ChartMapLabelStrategy:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartMapLabelStrategy
 summary: Représente le niveau de région d’une disposition de série de graphique. Cela s’applique uniquement aux graphiques de carte de région.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: bestFit
-  uid: ExcelScript!ExcelScript.ChartMapLabelStrategy.bestFit:member
-  package: ExcelScript!
-  summary: ''
-- name: none
-  uid: ExcelScript!ExcelScript.ChartMapLabelStrategy.none:member
-  package: ExcelScript!
-  summary: ''
-- name: showAll
-  uid: ExcelScript!ExcelScript.ChartMapLabelStrategy.showAll:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 7277cd970c073ca308d4cbc890de47e636f69427
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912010"
+  - name: bestFit
+    uid: 'ExcelScript!ExcelScript.ChartMapLabelStrategy.bestFit:member'
+    package: ExcelScript!
+    summary: ''
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ChartMapLabelStrategy.none:member'
+    package: ExcelScript!
+    summary: ''
+  - name: showAll
+    uid: 'ExcelScript!ExcelScript.ChartMapLabelStrategy.showAll:member'
+    package: ExcelScript!
+    summary: ''

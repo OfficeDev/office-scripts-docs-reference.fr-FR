@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ReplaceCriteria
-uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
+uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
 package: ExcelScript!
 fullName: ExcelScript.ReplaceCriteria
 summary: Représente les critères de remplacement à utiliser.
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: completeMatch
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
-  package: ExcelScript!
-  fullName: completeMatch
-  summary: Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l'intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'completeMatch?: boolean;'
-    return:
-      type: boolean
-- name: matchCase
-  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
-  package: ExcelScript!
-  fullName: matchCase
-  summary: Spécifie si la correspondance est sensible à la cas. La valeur `false` par défaut est (ne sensible à la cas).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'matchCase?: boolean;'
-    return:
-      type: boolean
-metadata:
-  ms.openlocfilehash: 68dd8e155cf367ff10b8ce7c2fc33bfa1b162a63
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914222"
+  - name: completeMatch
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
+    package: ExcelScript!
+    fullName: completeMatch
+    summary: 'Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l’intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'completeMatch?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
+    package: ExcelScript!
+    fullName: matchCase
+    summary: Spécifie si la correspondance est sensible à la cas. La valeur `false` par défaut est (ne sensible à la cas).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean

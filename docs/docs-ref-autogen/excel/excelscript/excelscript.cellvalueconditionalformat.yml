@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CellValueConditionalFormat
-uid: ExcelScript!ExcelScript.CellValueConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.CellValueConditionalFormat
 summary: Représente une mise en forme conditionnelle de valeur de cellule.
@@ -9,53 +9,46 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFormat()
-  uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)
-  package: ExcelScript!
-  fullName: getFormat()
-  summary: Renvoie un objet format, qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFormat(): ConditionalRangeFormat;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />
-      description: ''
-- name: getRule()
-  uid: ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)
-  package: ExcelScript!
-  fullName: getRule()
-  summary: Spécifie l’objet de règle sur ce format conditionnel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRule(): ConditionalCellValueRule;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />
-      description: ''
-- name: setRule(rule)
-  uid: ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)
-  package: ExcelScript!
-  fullName: setRule(rule)
-  summary: Spécifie l’objet de règle sur ce format conditionnel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setRule(rule: ConditionalCellValueRule): void;'
-    parameters:
-    - id: rule
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 07decd3b64fda9ffa3e814f17d21d5fcc1f508de
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913921"
+  - name: getFormat()
+    uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#getFormat:member(1)'
+    package: ExcelScript!
+    fullName: getFormat()
+    summary: 'Renvoie un objet format, qui encapsule la police, le remplissage, les bordures et d’autres propriétés des formats conditionnels.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFormat(): ConditionalRangeFormat;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalRangeFormat:interface" />'
+        description: ''
+  - name: getRule()
+    uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#getRule:member(1)'
+    package: ExcelScript!
+    fullName: getRule()
+    summary: Spécifie l’objet de règle sur ce format conditionnel.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRule(): ConditionalCellValueRule;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />'
+        description: ''
+  - name: setRule(rule)
+    uid: 'ExcelScript!ExcelScript.CellValueConditionalFormat#setRule:member(1)'
+    package: ExcelScript!
+    fullName: setRule(rule)
+    summary: Spécifie l’objet de règle sur ce format conditionnel.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setRule(rule: ConditionalCellValueRule): void;'
+      parameters:
+        - id: rule
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalCellValueRule:interface" />'
+      return:
+        type: void
+        description: ''

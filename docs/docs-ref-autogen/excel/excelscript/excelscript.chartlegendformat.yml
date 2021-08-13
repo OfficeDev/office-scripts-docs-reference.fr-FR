@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartLegendFormat
-uid: ExcelScript!ExcelScript.ChartLegendFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartLegendFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartLegendFormat
 summary: Regroupe les propriétés de format de la légende d’un graphique.
@@ -9,49 +9,42 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartLegendFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: Représente le format bordure, qui inclut couleur, style de ligne et épaisseur.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartLegendFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Représente le format de remplissage d’un objet, qui comprend des informations de mise en forme d’arrière-plan.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartLegendFormat#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Représente les attributs de police tels que le nom de police, la taille de police et la couleur d’une légende de graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 818764184a7af37ddedaefe68ef6d0eb4852d25f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912025"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartLegendFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: 'Représente le format bordure, qui inclut couleur, style de ligne et épaisseur.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartLegendFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 'Représente le format de remplissage d’un objet, qui comprend des informations de mise en forme d’arrière-plan.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartLegendFormat#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Représente les attributs de police tels que le nom de police, la taille de police et la couleur d’une légende de graphique.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

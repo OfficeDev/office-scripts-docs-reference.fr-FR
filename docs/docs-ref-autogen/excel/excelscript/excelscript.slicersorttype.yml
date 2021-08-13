@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SlicerSortType
-uid: ExcelScript!ExcelScript.SlicerSortType:enum
+uid: 'ExcelScript!ExcelScript.SlicerSortType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SlicerSortType
 summary: Spécifie le comportement de tri du slicer pour `Slicer.sortBy`<!-- -->.
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: ascending
-  uid: ExcelScript!ExcelScript.SlicerSortType.ascending:member
-  package: ExcelScript!
-  summary: Trier les éléments de slicer par ordre croissant par légende d’élément.
-- name: dataSourceOrder
-  uid: ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member
-  package: ExcelScript!
-  summary: Trier les éléments de slicer dans l’ordre indiqué par la source de données.
-- name: descending
-  uid: ExcelScript!ExcelScript.SlicerSortType.descending:member
-  package: ExcelScript!
-  summary: Trier les éléments de slicer dans l’ordre décroit par légende d’élément.
-metadata:
-  ms.openlocfilehash: db45ddcb1ff4913f4f4d76e9303660517f95a4a4
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51606003"
+  - name: ascending
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.ascending:member'
+    package: ExcelScript!
+    summary: Trier les éléments de slicer par ordre croissant par légende d’élément.
+  - name: dataSourceOrder
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.dataSourceOrder:member'
+    package: ExcelScript!
+    summary: Trier les éléments de slicer dans l’ordre indiqué par la source de données.
+  - name: descending
+    uid: 'ExcelScript!ExcelScript.SlicerSortType.descending:member'
+    package: ExcelScript!
+    summary: Trier les éléments de slicer dans l’ordre décroit par légende d’élément.

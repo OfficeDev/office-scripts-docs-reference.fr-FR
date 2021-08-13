@@ -1,61 +1,54 @@
 ### YamlMime:TSType
 name: ExcelScript.ConditionalRangeFill
-uid: ExcelScript!ExcelScript.ConditionalRangeFill:interface
+uid: 'ExcelScript!ExcelScript.ConditionalRangeFill:interface'
 package: ExcelScript!
 fullName: ExcelScript.ConditionalRangeFill
-summary: Représente l'arrière-plan d'un objet de plage conditionnelle.
+summary: Représente l’arrière-plan d’un objet de plage conditionnelle.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: Réinitialise le remplissage.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: Code couleur HTML représentant la couleur du remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: Code couleur HTML représentant la couleur du remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: fae3593425cfa32294c127cdc7992fd1bd3f5746
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913744"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: Réinitialise le remplissage.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: 'Code couleur HTML représentant la couleur du remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ConditionalRangeFill#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: 'Code couleur HTML représentant la couleur du remplissage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

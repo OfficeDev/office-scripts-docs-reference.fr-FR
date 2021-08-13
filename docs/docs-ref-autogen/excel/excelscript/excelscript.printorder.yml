@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PrintOrder
-uid: ExcelScript!ExcelScript.PrintOrder:enum
+uid: 'ExcelScript!ExcelScript.PrintOrder:enum'
 package: ExcelScript!
 fullName: ExcelScript.PrintOrder
 summary: ''
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: downThenOver
-  uid: ExcelScript!ExcelScript.PrintOrder.downThenOver:member
-  package: ExcelScript!
-  summary: Traite les lignes les unes après les autres de haut en bas avant de traiter les pages ou champs de page vers la droite.
-- name: overThenDown
-  uid: ExcelScript!ExcelScript.PrintOrder.overThenDown:member
-  package: ExcelScript!
-  summary: Traite les pages ou champs page vers la droite avant de descendre à la ligne suivante.
-metadata:
-  ms.openlocfilehash: e164a2b92767c6d8f6504164598ef6e78802052a
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914264"
+  - name: downThenOver
+    uid: 'ExcelScript!ExcelScript.PrintOrder.downThenOver:member'
+    package: ExcelScript!
+    summary: Traite les lignes les unes après les autres de haut en bas avant de traiter les pages ou champs de page vers la droite.
+  - name: overThenDown
+    uid: 'ExcelScript!ExcelScript.PrintOrder.overThenDown:member'
+    package: ExcelScript!
+    summary: Traite les pages ou champs page vers la droite avant de descendre à la ligne suivante.

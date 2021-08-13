@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.CustomDataValidation
-uid: ExcelScript!ExcelScript.CustomDataValidation:interface
+uid: 'ExcelScript!ExcelScript.CustomDataValidation:interface'
 package: ExcelScript!
 fullName: ExcelScript.CustomDataValidation
 summary: Représente les critères de validation des données personnalisés.
@@ -9,22 +9,15 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: formula
-  uid: ExcelScript!ExcelScript.CustomDataValidation#formula:member
-  package: ExcelScript!
-  fullName: formula
-  summary: Une formule de validation des données personnalisée. Cela crée des règles d’entrée spéciales, telles que la prévention des doublons ou la limitation du total dans une plage de cellules.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'formula: string;'
-    return:
-      type: string
-metadata:
-  ms.openlocfilehash: fdfa6250fa959a35feba17bfc6e9310666129986
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913702"
+  - name: formula
+    uid: 'ExcelScript!ExcelScript.CustomDataValidation#formula:member'
+    package: ExcelScript!
+    fullName: formula
+    summary: 'Une formule de validation des données personnalisée. Cela crée des règles d’entrée spéciales, telles que la prévention des doublons ou la limitation du total dans une plage de cellules.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula: string;'
+      return:
+        type: string

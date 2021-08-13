@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.NumberFormatCategory
-uid: ExcelScript!ExcelScript.NumberFormatCategory:enum
+uid: 'ExcelScript!ExcelScript.NumberFormatCategory:enum'
 package: ExcelScript!
 fullName: ExcelScript.NumberFormatCategory
 summary: Représente une catégorie de formats numériques.
@@ -8,58 +8,51 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: accounting
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.accounting:member
-  package: ExcelScript!
-  summary: Les formats comptables aligner les symboles monétaires et les points décimaux dans une colonne.
-- name: currency
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.currency:member
-  package: ExcelScript!
-  summary: Les formats monétaires sont utilisés pour les valeurs monétaires générales. Utilisez des formats de comptabilité pour aligner les points décimaux dans une colonne.
-- name: custom
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.custom:member
-  package: ExcelScript!
-  summary: Format personnalisé qui ne fait partie d’aucune catégorie.
-- name: date
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.date:member
-  package: ExcelScript!
-  summary: Les formats de date affichent les numéros de série de date et d’heure sous forme de valeurs de date. Les formats de date qui commencent par un astérisque (*) répondent aux modifications des paramètres régionaux de date et d’heure spécifiés pour le système d’exploitation. Les formats sans astérisque ne sont pas affectés par les paramètres du système d’exploitation.
-- name: fraction
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.fraction:member
-  package: ExcelScript!
-  summary: Les formats de fraction affichent la valeur de cellule sous la forme d’un nombre entier, le reste étant arrondi à la valeur de fraction la plus proche.
-- name: general
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.general:member
-  package: ExcelScript!
-  summary: Les cellules de format général n’ont pas de format numérique spécifique.
-- name: number
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.number:member
-  package: ExcelScript!
-  summary: Le nombre est utilisé pour l’affichage général des nombres. La devise et la comptabilité proposent une mise en forme spécialisée pour la valeur monétaire.
-- name: percentage
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.percentage:member
-  package: ExcelScript!
-  summary: Les formats de pourcentage multiplient la valeur de la cellule par 100 et affichent le résultat par un symbole de pourcentage.
-- name: scientific
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.scientific:member
-  package: ExcelScript!
-  summary: Les formats scientifiques affichent la valeur de la cellule sous la forme d’un nombre entre 1 et 10 multiplié par une puissance de 10.
-- name: special
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.special:member
-  package: ExcelScript!
-  summary: Des formats spéciaux sont utiles pour le suivi des valeurs de liste et de base de données.
-- name: text
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.text:member
-  package: ExcelScript!
-  summary: Les cellules au format texte sont traitées comme du texte même lorsqu’un nombre se trouve dans la cellule. La cellule s’affiche exactement comme entrée.
-- name: time
-  uid: ExcelScript!ExcelScript.NumberFormatCategory.time:member
-  package: ExcelScript!
-  summary: Les formats d’heure affichent les numéros de série de date et d’heure sous forme de valeurs de date. Les formats d’heure qui commencent par un astérisque (*) répondent aux modifications des paramètres régionaux de date et d’heure spécifiés pour le système d’exploitation. Les formats sans astérisque ne sont pas affectés par les paramètres du système d’exploitation.
-metadata:
-  ms.openlocfilehash: e5918eeb718dd94b8c443a5cfed0b2e537542975
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914334"
+  - name: accounting
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.accounting:member'
+    package: ExcelScript!
+    summary: Les formats comptables aligner les symboles monétaires et les points décimaux dans une colonne.
+  - name: currency
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.currency:member'
+    package: ExcelScript!
+    summary: Les formats monétaires sont utilisés pour les valeurs monétaires générales. Utilisez des formats de comptabilité pour aligner les points décimaux dans une colonne.
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.custom:member'
+    package: ExcelScript!
+    summary: Format personnalisé qui ne fait partie d’aucune catégorie.
+  - name: date
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.date:member'
+    package: ExcelScript!
+    summary: Les formats de date affichent les numéros de série de date et d’heure sous forme de valeurs de date. Les formats de date qui commencent par un astérisque (*) répondent aux modifications des paramètres régionaux de date et d’heure spécifiés pour le système d’exploitation. Les formats sans astérisque ne sont pas affectés par les paramètres du système d’exploitation.
+  - name: fraction
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.fraction:member'
+    package: ExcelScript!
+    summary: 'Les formats de fraction affichent la valeur de cellule sous la forme d’un nombre entier, le reste étant arrondi à la valeur de fraction la plus proche.'
+  - name: general
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.general:member'
+    package: ExcelScript!
+    summary: Les cellules de format général n’ont pas de format numérique spécifique.
+  - name: number
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.number:member'
+    package: ExcelScript!
+    summary: Le nombre est utilisé pour l’affichage général des nombres. La devise et la comptabilité proposent une mise en forme spécialisée pour la valeur monétaire.
+  - name: percentage
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.percentage:member'
+    package: ExcelScript!
+    summary: Les formats de pourcentage multiplient la valeur de la cellule par 100 et affichent le résultat par un symbole de pourcentage.
+  - name: scientific
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.scientific:member'
+    package: ExcelScript!
+    summary: Les formats scientifiques affichent la valeur de la cellule sous la forme d’un nombre entre 1 et 10 multiplié par une puissance de 10.
+  - name: special
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.special:member'
+    package: ExcelScript!
+    summary: Des formats spéciaux sont utiles pour le suivi des valeurs de liste et de base de données.
+  - name: text
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.text:member'
+    package: ExcelScript!
+    summary: Les cellules au format texte sont traitées comme du texte même lorsqu’un nombre se trouve dans la cellule. La cellule s’affiche exactement comme entrée.
+  - name: time
+    uid: 'ExcelScript!ExcelScript.NumberFormatCategory.time:member'
+    package: ExcelScript!
+    summary: Les formats d’heure affichent les numéros de série de date et d’heure sous forme de valeurs de date. Les formats d’heure qui commencent par un astérisque (*) répondent aux modifications des paramètres régionaux de date et d’heure spécifiés pour le système d’exploitation. Les formats sans astérisque ne sont pas affectés par les paramètres du système d’exploitation.

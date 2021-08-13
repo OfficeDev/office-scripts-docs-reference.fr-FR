@@ -1,31 +1,24 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartFormatString
-uid: ExcelScript!ExcelScript.ChartFormatString:interface
+uid: 'ExcelScript!ExcelScript.ChartFormatString:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartFormatString
-summary: Représente la sous-stration dans les objets liés au graphique qui contiennent du texte, comme `ChartTitle` un objet ou un `ChartAxisTitle` objet.
+summary: 'Représente la sous-stration dans les objets liés au graphique qui contiennent du texte, comme `ChartTitle` un objet ou un `ChartAxisTitle` objet.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getFont()
-  uid: ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)
-  package: ExcelScript!
-  fullName: getFont()
-  summary: Représente les attributs de police, tels que le nom de police, la taille de police et la couleur d'un objet de caractères de graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFont(): ChartFont;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFont:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: 117644700d3730164127e2c31f04b633b42ac244
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914082"
+  - name: getFont()
+    uid: 'ExcelScript!ExcelScript.ChartFormatString#getFont:member(1)'
+    package: ExcelScript!
+    fullName: getFont()
+    summary: 'Représente les attributs de police, tels que le nom de police, la taille de police et la couleur d’un objet de caractères de graphique.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFont(): ChartFont;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFont:interface" />'
+        description: ''

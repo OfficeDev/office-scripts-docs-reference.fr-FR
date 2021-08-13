@@ -1,61 +1,54 @@
 ### YamlMime:TSType
 name: ExcelScript.ColorScaleConditionalFormat
-uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface
+uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ColorScaleConditionalFormat
-summary: Représente les critères d'échelle de couleur pour la mise en forme conditionnelle.
+summary: Représente les critères d’échelle de couleur pour la mise en forme conditionnelle.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getCriteria()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)
-  package: ExcelScript!
-  fullName: getCriteria()
-  summary: Critères de l'échelle de couleurs. Le milieu est facultatif lorsque vous utilisez une échelle de couleur à deux points.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getCriteria(): ConditionalColorScaleCriteria;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-      description: ''
-- name: getThreeColorScale()
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)
-  package: ExcelScript!
-  fullName: getThreeColorScale()
-  summary: If `true`<!-- -->, l'échelle de couleurs aura trois points (minimum, milieu, maximum), sinon elle en aura deux (minimum, maximum).
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getThreeColorScale(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setCriteria(criteria)
-  uid: ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)
-  package: ExcelScript!
-  fullName: setCriteria(criteria)
-  summary: Critères de l'échelle de couleurs. Le milieu est facultatif lorsque vous utilisez une échelle de couleur à deux points.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
-    parameters:
-    - id: criteria
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 8a890f2b95d90663083c6a1141142e5585f6c160
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913864"
+  - name: getCriteria()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getCriteria:member(1)'
+    package: ExcelScript!
+    fullName: getCriteria()
+    summary: Critère de l’échelle de couleur. Le point Milieu est facultatif lorsque vous utilisez une échelle de couleur à deux points.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getCriteria(): ConditionalColorScaleCriteria;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+        description: ''
+  - name: getThreeColorScale()
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#getThreeColorScale:member(1)'
+    package: ExcelScript!
+    fullName: getThreeColorScale()
+    summary: 'If `true`<!-- -->, l’échelle de couleurs aura trois points (minimum, milieu, maximum), sinon elle en aura deux (minimum, maximum).'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getThreeColorScale(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setCriteria(criteria)
+    uid: 'ExcelScript!ExcelScript.ColorScaleConditionalFormat#setCriteria:member(1)'
+    package: ExcelScript!
+    fullName: setCriteria(criteria)
+    summary: Critère de l’échelle de couleur. Le point Milieu est facultatif lorsque vous utilisez une échelle de couleur à deux points.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setCriteria(criteria: ConditionalColorScaleCriteria): void;'
+      parameters:
+        - id: criteria
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ConditionalColorScaleCriteria:interface" />'
+      return:
+        type: void
+        description: ''

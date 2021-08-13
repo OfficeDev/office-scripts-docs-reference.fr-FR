@@ -1,29 +1,22 @@
 ### YamlMime:TSEnum
 name: ExcelScript.TopBottomSelectionType
-uid: ExcelScript!ExcelScript.TopBottomSelectionType:enum
+uid: 'ExcelScript!ExcelScript.TopBottomSelectionType:enum'
 package: ExcelScript!
 fullName: ExcelScript.TopBottomSelectionType
-summary: Une simple enum pour les filtres de haut/bas pour choisir s’il faut filtrer selon le N supérieur ou inférieur N pour cent, nombre ou somme de valeurs.
+summary: 'Une simple enum pour les filtres de haut/bas pour choisir s’il faut filtrer selon le N supérieur ou inférieur N pour cent, nombre ou somme de valeurs.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: items
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.items:member
-  package: ExcelScript!
-  summary: Filtrer le nombre n supérieur/inférieur d’éléments tel que mesuré par la valeur choisie.
-- name: percent
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.percent:member
-  package: ExcelScript!
-  summary: Filtrer le N pourcentage supérieur/inférieur des éléments tel que mesuré par la valeur choisie.
-- name: sum
-  uid: ExcelScript!ExcelScript.TopBottomSelectionType.sum:member
-  package: ExcelScript!
-  summary: Filtrer la somme N supérieure/inférieure telle que mesurée par la valeur choisie.
-metadata:
-  ms.openlocfilehash: c58781b98eee7b27807577f9f00af54e048877a9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914669"
+  - name: items
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.items:member'
+    package: ExcelScript!
+    summary: Filtrer le nombre n supérieur/inférieur d’éléments tel que mesuré par la valeur choisie.
+  - name: percent
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.percent:member'
+    package: ExcelScript!
+    summary: Filtrer le N pourcentage supérieur/inférieur des éléments tel que mesuré par la valeur choisie.
+  - name: sum
+    uid: 'ExcelScript!ExcelScript.TopBottomSelectionType.sum:member'
+    package: ExcelScript!
+    summary: Filtrer la somme N supérieure/inférieure telle que mesurée par la valeur choisie.

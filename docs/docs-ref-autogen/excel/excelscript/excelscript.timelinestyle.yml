@@ -1,87 +1,80 @@
 ### YamlMime:TSType
 name: ExcelScript.TimelineStyle
-uid: ExcelScript!ExcelScript.TimelineStyle:interface
+uid: 'ExcelScript!ExcelScript.TimelineStyle:interface'
 package: ExcelScript!
 fullName: ExcelScript.TimelineStyle
-summary: Représente un `TimelineStyle`<!-- -->, qui définit les éléments de style par région dans la chronologie.
+summary: 'Représente un `TimelineStyle`<!-- -->, qui définit les éléments de style par région dans la chronologie.'
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: delete()
-  uid: ExcelScript!ExcelScript.TimelineStyle#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Supprime le style de tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: duplicate()
-  uid: ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)
-  package: ExcelScript!
-  fullName: duplicate()
-  summary: Crée une copie de ce style de chronologie avec des copies de tous les éléments de style.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'duplicate(): TimelineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.TimelineStyle#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Obtient le nom du style de chronologie.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getReadOnly()
-  uid: ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)
-  package: ExcelScript!
-  fullName: getReadOnly()
-  summary: Spécifie si cet `TimelineStyle` objet est en lecture seule.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getReadOnly(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.TimelineStyle#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Obtient le nom du style de chronologie.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 11b929c9721ee10674ea4cb0ab1797c3420d8e5f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914697"
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Supprime le style de tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: duplicate()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#duplicate:member(1)'
+    package: ExcelScript!
+    fullName: duplicate()
+    summary: Crée une copie de ce style de chronologie avec des copies de tous les éléments de style.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'duplicate(): TimelineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TimelineStyle:interface" />'
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Obtient le nom du style de chronologie.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getReadOnly()
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#getReadOnly:member(1)'
+    package: ExcelScript!
+    fullName: getReadOnly()
+    summary: Spécifie si cet `TimelineStyle` objet est en lecture seule.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getReadOnly(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.TimelineStyle#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Obtient le nom du style de chronologie.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''

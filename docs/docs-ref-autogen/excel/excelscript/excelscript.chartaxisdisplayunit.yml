@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ChartAxisDisplayUnit
-uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum
+uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit:enum'
 package: ExcelScript!
 fullName: ExcelScript.ChartAxisDisplayUnit
 summary: ''
@@ -8,54 +8,47 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: billions
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de milliards.
-- name: custom
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de valeur personnalisée.
-- name: hundredMillions
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de centaines de millions.
-- name: hundreds
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de centaines.
-- name: hundredThousands
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de centaines de milliers.
-- name: millions
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de millions.
-- name: none
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member
-  package: ExcelScript!
-  summary: Option par défaut. Cela réinitialise l’unité d’affichage sur l’axe et définisse l’étiquette d’unité invisible.
-- name: tenMillions
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de dizaines de millions.
-- name: tenThousands
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de dizaines de milliers.
-- name: thousands
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de milliers.
-- name: trillions
-  uid: ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member
-  package: ExcelScript!
-  summary: Cela permet de définir l’axe en unités de billions.
-metadata:
-  ms.openlocfilehash: 08e418c2cfe3a94b7d9293a1c4fa239af1044b0e
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913258"
+  - name: billions
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.billions:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de milliards.
+  - name: custom
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.custom:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de valeur personnalisée.
+  - name: hundredMillions
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredMillions:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de centaines de millions.
+  - name: hundreds
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundreds:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de centaines.
+  - name: hundredThousands
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.hundredThousands:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de centaines de milliers.
+  - name: millions
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.millions:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de millions.
+  - name: none
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.none:member'
+    package: ExcelScript!
+    summary: Option par défaut. Cela réinitialise l’unité d’affichage sur l’axe et définisse l’étiquette d’unité invisible.
+  - name: tenMillions
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenMillions:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de dizaines de millions.
+  - name: tenThousands
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.tenThousands:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de dizaines de milliers.
+  - name: thousands
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.thousands:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de milliers.
+  - name: trillions
+    uid: 'ExcelScript!ExcelScript.ChartAxisDisplayUnit.trillions:member'
+    package: ExcelScript!
+    summary: Cela permet de définir l’axe en unités de billions.

@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.ShapeScaleType
-uid: ExcelScript!ExcelScript.ShapeScaleType:enum
+uid: 'ExcelScript!ExcelScript.ShapeScaleType:enum'
 package: ExcelScript!
 fullName: ExcelScript.ShapeScaleType
 summary: Spécifie si la forme est mise à l’échelle par rapport à sa taille d’origine ou actuelle.
@@ -8,18 +8,11 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: currentSize
-  uid: ExcelScript!ExcelScript.ShapeScaleType.currentSize:member
-  package: ExcelScript!
-  summary: ''
-- name: originalSize
-  uid: ExcelScript!ExcelScript.ShapeScaleType.originalSize:member
-  package: ExcelScript!
-  summary: ''
-metadata:
-  ms.openlocfilehash: 8376c25a0906e55fed00b56914ef1a4c0724667b
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913390"
+  - name: currentSize
+    uid: 'ExcelScript!ExcelScript.ShapeScaleType.currentSize:member'
+    package: ExcelScript!
+    summary: ''
+  - name: originalSize
+    uid: 'ExcelScript!ExcelScript.ShapeScaleType.originalSize:member'
+    package: ExcelScript!
+    summary: ''

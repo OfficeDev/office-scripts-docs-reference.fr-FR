@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.SlicerItem
-uid: ExcelScript!ExcelScript.SlicerItem:interface
+uid: 'ExcelScript!ExcelScript.SlicerItem:interface'
 package: ExcelScript!
 fullName: ExcelScript.SlicerItem
 summary: Représente un élément de slicer dans un slicer.
@@ -9,79 +9,72 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getHasData()
-  uid: ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)
-  package: ExcelScript!
-  fullName: getHasData()
-  summary: La valeur est `true` si l'élément de slicer possède des données.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHasData(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getIsSelected()
-  uid: ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)
-  package: ExcelScript!
-  fullName: getIsSelected()
-  summary: La valeur `true` est si l'élément de slicer est sélectionné. La définition de cette valeur n'effacera pas l'état sélectionné des autres éléments de slicer. Par défaut, si l'élément de slicer est le seul sélectionné, lorsqu'il est désélectionnés, tous les éléments sont sélectionnés.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getIsSelected(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getKey()
-  uid: ExcelScript!ExcelScript.SlicerItem#getKey:member(1)
-  package: ExcelScript!
-  fullName: getKey()
-  summary: Représente la valeur unique représentant l’élément de segment.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getKey(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.SlicerItem#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Représente le titre affiché dans l'interface utilisateur Excel.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: setIsSelected(isSelected)
-  uid: ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)
-  package: ExcelScript!
-  fullName: setIsSelected(isSelected)
-  summary: La valeur `true` est si l'élément de slicer est sélectionné. La définition de cette valeur n'effacera pas l'état sélectionné des autres éléments de slicer. Par défaut, si l'élément de slicer est le seul sélectionné, lorsqu'il est désélectionnés, tous les éléments sont sélectionnés.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setIsSelected(isSelected: boolean): void;'
-    parameters:
-    - id: isSelected
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 10c0521469d6d8f2a916ba92fb907da2b1ef9d4c
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914152"
+  - name: getHasData()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getHasData:member(1)'
+    package: ExcelScript!
+    fullName: getHasData()
+    summary: La valeur est `true` si l’élément de slicer possède des données.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHasData(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getIsSelected()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: getIsSelected()
+    summary: 'La valeur `true` est si l’élément de slicer est sélectionné. La définition de cette valeur n’effacera pas l’état sélectionné des autres éléments de slicer. Par défaut, si l’élément de slicer est le seul sélectionné, lorsqu’il est désélectionnés, tous les éléments sont sélectionnés.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getIsSelected(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getKey()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getKey:member(1)'
+    package: ExcelScript!
+    fullName: getKey()
+    summary: Représente la valeur unique représentant l’élément de segment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getKey(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.SlicerItem#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Représente le titre affiché dans l’interface Excel’utilisateur.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: setIsSelected(isSelected)
+    uid: 'ExcelScript!ExcelScript.SlicerItem#setIsSelected:member(1)'
+    package: ExcelScript!
+    fullName: setIsSelected(isSelected)
+    summary: 'La valeur `true` est si l’élément de slicer est sélectionné. La définition de cette valeur n’effacera pas l’état sélectionné des autres éléments de slicer. Par défaut, si l’élément de slicer est le seul sélectionné, lorsqu’il est désélectionnés, tous les éléments sont sélectionnés.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setIsSelected(isSelected: boolean): void;'
+      parameters:
+        - id: isSelected
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

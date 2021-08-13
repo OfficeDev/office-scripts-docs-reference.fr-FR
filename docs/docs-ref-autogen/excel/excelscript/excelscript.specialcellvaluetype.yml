@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.SpecialCellValueType
-uid: ExcelScript!ExcelScript.SpecialCellValueType:enum
+uid: 'ExcelScript!ExcelScript.SpecialCellValueType:enum'
 package: ExcelScript!
 fullName: ExcelScript.SpecialCellValueType
 summary: ''
@@ -8,70 +8,63 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: all
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.all:member
-  package: ExcelScript!
-  summary: Cellules qui ont des valeurs d’erreurs, booléques, numériques ou de chaînes.
-- name: errors
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errors:member
-  package: ExcelScript!
-  summary: Cellules qui ont des erreurs.
-- name: errorsLogical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member
-  package: ExcelScript!
-  summary: Cellules qui ont des erreurs ou des valeurs boolétiques.
-- name: errorsLogicalNumber
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member
-  package: ExcelScript!
-  summary: Cellules qui ont des erreurs, des valeurs booléles ou numériques.
-- name: errorsLogicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member
-  package: ExcelScript!
-  summary: Cellules qui ont des erreurs, des valeurs booléles ou des valeurs de chaîne.
-- name: errorsNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member
-  package: ExcelScript!
-  summary: Cellules qui ont des erreurs ou des valeurs numériques.
-- name: errorsNumberText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member
-  package: ExcelScript!
-  summary: Cellules qui ont des erreurs, des valeurs numériques ou des valeurs de chaîne.
-- name: errorsText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member
-  package: ExcelScript!
-  summary: Cellules qui ont des erreurs ou des valeurs de chaîne.
-- name: logical
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logical:member
-  package: ExcelScript!
-  summary: Cellules qui ont une valeur boolé américaine.
-- name: logicalNumbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member
-  package: ExcelScript!
-  summary: Cellules qui ont une valeur booléque ou numérique.
-- name: logicalNumbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member
-  package: ExcelScript!
-  summary: Cellules qui ont une valeur booléque, numérique ou de chaîne.
-- name: logicalText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member
-  package: ExcelScript!
-  summary: Cellules qui ont une valeur booléle ou de chaîne.
-- name: numbers
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbers:member
-  package: ExcelScript!
-  summary: Cellules qui ont une valeur numérique.
-- name: numbersText
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member
-  package: ExcelScript!
-  summary: Cellules qui ont une valeur numérique ou de chaîne.
-- name: text
-  uid: ExcelScript!ExcelScript.SpecialCellValueType.text:member
-  package: ExcelScript!
-  summary: Cellules qui ont une valeur de chaîne.
-metadata:
-  ms.openlocfilehash: 93f2ab2e05785f1f93bc26839d20d9c060205384
-  ms.sourcegitcommit: c59beb1eedc28c06a7d723b425b3fb7954865491
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/07/2021
-  ms.locfileid: "51607339"
+  - name: all
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.all:member'
+    package: ExcelScript!
+    summary: 'Cellules qui ont des valeurs d’erreurs, booléques, numériques ou de chaînes.'
+  - name: errors
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errors:member'
+    package: ExcelScript!
+    summary: Cellules qui ont des erreurs.
+  - name: errorsLogical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogical:member'
+    package: ExcelScript!
+    summary: Cellules qui ont des erreurs ou des valeurs boolétiques.
+  - name: errorsLogicalNumber
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalNumber:member'
+    package: ExcelScript!
+    summary: 'Cellules qui ont des erreurs, des valeurs booléles ou numériques.'
+  - name: errorsLogicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsLogicalText:member'
+    package: ExcelScript!
+    summary: 'Cellules qui ont des erreurs, des valeurs booléles ou des valeurs de chaîne.'
+  - name: errorsNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumbers:member'
+    package: ExcelScript!
+    summary: Cellules qui ont des erreurs ou des valeurs numériques.
+  - name: errorsNumberText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsNumberText:member'
+    package: ExcelScript!
+    summary: 'Cellules qui ont des erreurs, des valeurs numériques ou des valeurs de chaîne.'
+  - name: errorsText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.errorsText:member'
+    package: ExcelScript!
+    summary: Cellules qui ont des erreurs ou des valeurs de chaîne.
+  - name: logical
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logical:member'
+    package: ExcelScript!
+    summary: Cellules qui ont une valeur boolé américaine.
+  - name: logicalNumbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbers:member'
+    package: ExcelScript!
+    summary: Cellules qui ont une valeur booléque ou numérique.
+  - name: logicalNumbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalNumbersText:member'
+    package: ExcelScript!
+    summary: 'Cellules qui ont une valeur booléque, numérique ou de chaîne.'
+  - name: logicalText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.logicalText:member'
+    package: ExcelScript!
+    summary: Cellules qui ont une valeur booléle ou de chaîne.
+  - name: numbers
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbers:member'
+    package: ExcelScript!
+    summary: Cellules qui ont une valeur numérique.
+  - name: numbersText
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.numbersText:member'
+    package: ExcelScript!
+    summary: Cellules qui ont une valeur numérique ou de chaîne.
+  - name: text
+    uid: 'ExcelScript!ExcelScript.SpecialCellValueType.text:member'
+    package: ExcelScript!
+    summary: Cellules qui ont une valeur de chaîne.

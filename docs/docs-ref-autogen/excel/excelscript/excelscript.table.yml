@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.Table
-uid: ExcelScript!ExcelScript.Table:interface
+uid: 'ExcelScript!ExcelScript.Table:interface'
 package: ExcelScript!
 fullName: ExcelScript.Table
 summary: Représente un tableau Excel.
@@ -9,631 +9,624 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: addColumn(index, values, name)
-  uid: ExcelScript!ExcelScript.Table#addColumn:member(1)
-  package: ExcelScript!
-  fullName: addColumn(index, values, name)
-  summary: Ajoute une nouvelle colonne au tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      addColumn(
-                  index?: number,
-                  values?: (boolean | string | number)[],
-                  name?: string
-              ): TableColumn;
-    parameters:
-    - id: index
-      description: Facultatif. Spécifie la position relative de la nouvelle colonne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Les colonnes avec un index supérieur seront décalées sur le côté. Avec indice zéro.
-      type: number
-    - id: values
-      description: Facultatif. Tableau à 1 dimension de valeurs non formatées de la colonne de tableau.
-      type: (boolean | string | number)[]
-    - id: name
-      description: Facultatif. Spécifie le nom de la nouvelle colonne. Si la valeur est null, le nom par défaut est utilisé.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
-      description: ''
-- name: addRow(index, values)
-  uid: ExcelScript!ExcelScript.Table#addRow:member(1)
-  package: ExcelScript!
-  fullName: addRow(index, values)
-  summary: Ajoute une ligne au tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
-    parameters:
-    - id: index
-      description: Facultatif. Spécifie la position relative de la nouvelle ligne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Toutes les lignes en dessous de la ligne insérée sont déplacées vers le bas. Avec indice zéro.
-      type: number
-    - id: values
-      description: Facultatif. Tableau à 1 dimension de valeurs non formatées de la ligne de tableau.
-      type: (boolean | string | number)[]
-    return:
-      type: void
-      description: ''
-- name: addRows(index, values)
-  uid: ExcelScript!ExcelScript.Table#addRows:member(1)
-  package: ExcelScript!
-  fullName: addRows(index, values)
-  summary: Ajoute une ou plusieurs lignes dans le tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
-    parameters:
-    - id: index
-      description: Facultatif. Spécifie la position relative de la nouvelle ligne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Toutes les lignes en dessous de la ligne insérée sont déplacées vers le bas. Avec indice zéro.
-      type: number
-    - id: values
-      description: Facultatif. Matrice 2D des valeurs non mises en forme de la ligne du tableau.
-      type: (boolean | string | number)[][]
-    return:
-      type: void
-      description: ''
-- name: clearFilters()
-  uid: ExcelScript!ExcelScript.Table#clearFilters:member(1)
-  package: ExcelScript!
-  fullName: clearFilters()
-  summary: Supprime tous les filtres appliqués actuellement sur le tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clearFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: convertToRange()
-  uid: ExcelScript!ExcelScript.Table#convertToRange:member(1)
-  package: ExcelScript!
-  fullName: convertToRange()
-  summary: Convertit le tableau en plage normale de cellules. Toutes les données sont conservées.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'convertToRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: delete()
-  uid: ExcelScript!ExcelScript.Table#delete:member(1)
-  package: ExcelScript!
-  fullName: delete()
-  summary: Supprime le tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'delete(): void;'
-    return:
-      type: void
-      description: ''
-- name: deleteRowsAt(index, count)
-  uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
-  package: ExcelScript!
-  fullName: deleteRowsAt(index, count)
-  summary: Supprimer un nombre spécifié de lignes à un index donné.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'deleteRowsAt(index: number, count?: number): void;'
-    parameters:
-    - id: index
-      description: "Valeur d'index de la ligne à supprimer. Attention : l'index de la ligne a peut-être été déplacé à partir du moment où vous avez déterminé la valeur à utiliser pour la suppression."
-      type: number
-    - id: count
-      description: "Nombre de lignes à supprimer. Par défaut, une seule ligne est supprimée. Remarque : la suppression de plus de 1 000 lignes en même temps peut entraîner un délai d'inoutout de Power Automate."
-      type: number
-    return:
-      type: void
-      description: ''
-- name: getAutoFilter()
-  uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
-  package: ExcelScript!
-  fullName: getAutoFilter()
-  summary: Représente `AutoFilter` l'objet du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getAutoFilter(): AutoFilter;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
-- name: getColumn(key)
-  uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
-  package: ExcelScript!
-  fullName: getColumn(key)
-  summary: Obtient un objet de colonne par son nom ou son ID. Si la colonne n'existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumn(key: number | string): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: Nom de colonne ou ID.
-      type: number | string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumnById(key)
-  uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
-  package: ExcelScript!
-  fullName: getColumnById(key)
-  summary: Obtient un objet de colonne par ID. Si la colonne n'existe pas, elle retourne undefined.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnById(key: number): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: ID de colonne.
-      type: number
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumnByName(key)
-  uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
-  package: ExcelScript!
-  fullName: getColumnByName(key)
-  summary: Obtient un objet de colonne par nom. Si la colonne n'existe pas, elle retourne undefined.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumnByName(key: string): TableColumn | undefined;'
-    parameters:
-    - id: key
-      description: Nom de colonne.
-      type: string
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
-      description: ''
-- name: getColumns()
-  uid: ExcelScript!ExcelScript.Table#getColumns:member(1)
-  package: ExcelScript!
-  fullName: getColumns()
-  summary: Représente une collection de toutes les colonnes du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColumns(): TableColumn[];'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />[]
-      description: ''
-- name: getHeaderRowRange()
-  uid: ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)
-  package: ExcelScript!
-  fullName: getHeaderRowRange()
-  summary: Obtient l’objet de plage associé à la ligne d’en-tête du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHeaderRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getHighlightFirstColumn()
-  uid: ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)
-  package: ExcelScript!
-  fullName: getHighlightFirstColumn()
-  summary: Spécifie si la première colonne contient une mise en forme spéciale.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHighlightFirstColumn(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getHighlightLastColumn()
-  uid: ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)
-  package: ExcelScript!
-  fullName: getHighlightLastColumn()
-  summary: Spécifie si la dernière colonne contient une mise en forme spéciale.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getHighlightLastColumn(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getId()
-  uid: ExcelScript!ExcelScript.Table#getId:member(1)
-  package: ExcelScript!
-  fullName: getId()
-  summary: Renvoie une valeur qui permet d’identifier le tableau dans un classeur donné. La valeur de l’identificateur reste identique, même lorsque le tableau est renommé.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLegacyId()
-  uid: ExcelScript!ExcelScript.Table#getLegacyId:member(1)
-  package: ExcelScript!
-  fullName: getLegacyId()
-  summary: Renvoie un ID numérique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLegacyId(): string;'
-    return:
-      type: string
-      description: ''
-- name: getName()
-  uid: ExcelScript!ExcelScript.Table#getName:member(1)
-  package: ExcelScript!
-  fullName: getName()
-  summary: Nom du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getName(): string;'
-    return:
-      type: string
-      description: ''
-- name: getPredefinedTableStyle()
-  uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
-  package: ExcelScript!
-  fullName: getPredefinedTableStyle()
-  summary: 'Valeur de constante qui représente le style de tableau. Les valeurs possibles sont les suivants : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getPredefinedTableStyle(): string;'
-    return:
-      type: string
-      description: ''
-- name: getRange()
-  uid: ExcelScript!ExcelScript.Table#getRange:member(1)
-  package: ExcelScript!
-  fullName: getRange()
-  summary: Renvoie l’objet de plage associé à l’intégralité du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRangeBetweenHeaderAndTotal()
-  uid: ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)
-  package: ExcelScript!
-  fullName: getRangeBetweenHeaderAndTotal()
-  summary: Obtient l’objet de plage associé au corps de données du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRangeBetweenHeaderAndTotal(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getRowCount()
-  uid: ExcelScript!ExcelScript.Table#getRowCount:member(1)
-  package: ExcelScript!
-  fullName: getRowCount()
-  summary: Obtient le nombre de lignes dans le tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getRowCount(): number;'
-    return:
-      type: number
-      description: ''
-- name: getShowBandedColumns()
-  uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
-  package: ExcelScript!
-  fullName: getShowBandedColumns()
-  summary: Spécifie si les colonnes indiquent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillante différemment des colonnes impaires, pour faciliter la lecture du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBandedColumns(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowBandedRows()
-  uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
-  package: ExcelScript!
-  fullName: getShowBandedRows()
-  summary: Spécifie si les lignes indiquent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillante différemment des lignes impaires, pour faciliter la lecture du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowBandedRows(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowFilterButton()
-  uid: ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)
-  package: ExcelScript!
-  fullName: getShowFilterButton()
-  summary: Spécifie si les boutons de filtre sont visibles en haut de chaque en-tête de colonne. Ce paramètre est autorisé uniquement si le tableau contient une ligne d’en-tête.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowFilterButton(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowHeaders()
-  uid: ExcelScript!ExcelScript.Table#getShowHeaders:member(1)
-  package: ExcelScript!
-  fullName: getShowHeaders()
-  summary: Spécifie si la ligne d’en-tête est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne d’en-tête.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowHeaders(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowTotals()
-  uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
-  package: ExcelScript!
-  fullName: getShowTotals()
-  summary: Spécifie si la ligne de total est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowTotals(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getSort()
-  uid: ExcelScript!ExcelScript.Table#getSort:member(1)
-  package: ExcelScript!
-  fullName: getSort()
-  summary: Représente le tri du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getSort(): TableSort;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.TableSort:interface" />
-      description: ''
-- name: getTotalRowRange()
-  uid: ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)
-  package: ExcelScript!
-  fullName: getTotalRowRange()
-  summary: Obtient l’objet de plage associé à la ligne de total du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getTotalRowRange(): Range;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: ''
-- name: getWorksheet()
-  uid: ExcelScript!ExcelScript.Table#getWorksheet:member(1)
-  package: ExcelScript!
-  fullName: getWorksheet()
-  summary: Feuille de calcul contenant le tableau actif.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWorksheet(): Worksheet;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
-- name: reapplyFilters()
-  uid: ExcelScript!ExcelScript.Table#reapplyFilters:member(1)
-  package: ExcelScript!
-  fullName: reapplyFilters()
-  summary: Applique de nouveau tous les filtres actuellement appliqués sur le tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'reapplyFilters(): void;'
-    return:
-      type: void
-      description: ''
-- name: resize(newRange)
-  uid: ExcelScript!ExcelScript.Table#resize:member(1)
-  package: ExcelScript!
-  fullName: resize(newRange)
-  summary: Resize the table to the new range. La nouvelle plage doit se chevaucher avec la plage du tableau d’origine et les en-têtes (ou le haut du tableau) doivent se trouver sur la même ligne.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'resize(newRange: Range | string): void;'
-    parameters:
-    - id: newRange
-      description: Objet de plage ou adresse de plage qui sera utilisé pour déterminer la nouvelle taille du tableau.
-      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
-    return:
-      type: void
-      description: ''
-- name: setHighlightFirstColumn(highlightFirstColumn)
-  uid: ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)
-  package: ExcelScript!
-  fullName: setHighlightFirstColumn(highlightFirstColumn)
-  summary: Spécifie si la première colonne contient une mise en forme spéciale.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
-    parameters:
-    - id: highlightFirstColumn
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setHighlightLastColumn(highlightLastColumn)
-  uid: ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)
-  package: ExcelScript!
-  fullName: setHighlightLastColumn(highlightLastColumn)
-  summary: Spécifie si la dernière colonne contient une mise en forme spéciale.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
-    parameters:
-    - id: highlightLastColumn
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setName(name)
-  uid: ExcelScript!ExcelScript.Table#setName:member(1)
-  package: ExcelScript!
-  fullName: setName(name)
-  summary: Nom du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setName(name: string): void;'
-    parameters:
-    - id: name
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setPredefinedTableStyle(predefinedTableStyle)
-  uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
-  package: ExcelScript!
-  fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 'Valeur de constante qui représente le style de tableau. Les valeurs possibles sont les suivants : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
-    parameters:
-    - id: predefinedTableStyle
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setShowBandedColumns(showBandedColumns)
-  uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
-  package: ExcelScript!
-  fullName: setShowBandedColumns(showBandedColumns)
-  summary: Spécifie si les colonnes indiquent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillante différemment des colonnes impaires, pour faciliter la lecture du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
-    parameters:
-    - id: showBandedColumns
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowBandedRows(showBandedRows)
-  uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
-  package: ExcelScript!
-  fullName: setShowBandedRows(showBandedRows)
-  summary: Spécifie si les lignes indiquent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillante différemment des lignes impaires, pour faciliter la lecture du tableau.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowBandedRows(showBandedRows: boolean): void;'
-    parameters:
-    - id: showBandedRows
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowFilterButton(showFilterButton)
-  uid: ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)
-  package: ExcelScript!
-  fullName: setShowFilterButton(showFilterButton)
-  summary: Spécifie si les boutons de filtre sont visibles en haut de chaque en-tête de colonne. Ce paramètre est autorisé uniquement si le tableau contient une ligne d’en-tête.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowFilterButton(showFilterButton: boolean): void;'
-    parameters:
-    - id: showFilterButton
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowHeaders(showHeaders)
-  uid: ExcelScript!ExcelScript.Table#setShowHeaders:member(1)
-  package: ExcelScript!
-  fullName: setShowHeaders(showHeaders)
-  summary: Spécifie si la ligne d’en-tête est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne d’en-tête.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowHeaders(showHeaders: boolean): void;'
-    parameters:
-    - id: showHeaders
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowTotals(showTotals)
-  uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
-  package: ExcelScript!
-  fullName: setShowTotals(showTotals)
-  summary: Spécifie si la ligne de total est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowTotals(showTotals: boolean): void;'
-    parameters:
-    - id: showTotals
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 9b5569c566237ce34403752541bc7ebcfc4f4f17
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51913341"
+  - name: 'addColumn(index, values, name)'
+    uid: 'ExcelScript!ExcelScript.Table#addColumn:member(1)'
+    package: ExcelScript!
+    fullName: 'addColumn(index, values, name)'
+    summary: Ajoute une nouvelle colonne au tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        addColumn(
+                    index?: number,
+                    values?: (boolean | string | number)[],
+                    name?: string
+                ): TableColumn;
+      parameters:
+        - id: index
+          description: 'Facultatif. Spécifie la position relative de la nouvelle colonne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Les colonnes avec un index supérieur seront décalées sur le côté. Avec indice zéro.'
+          type: number
+        - id: values
+          description: Facultatif. Tableau à 1 dimension de valeurs non formatées de la colonne de tableau.
+          type: '(boolean | string | number)[]'
+        - id: name
+          description: 'Facultatif. Spécifie le nom de la nouvelle colonne. Si la valeur est null, le nom par défaut est utilisé.'
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" />'
+        description: ''
+  - name: 'addRow(index, values)'
+    uid: 'ExcelScript!ExcelScript.Table#addRow:member(1)'
+    package: ExcelScript!
+    fullName: 'addRow(index, values)'
+    summary: Ajoute une ligne au tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addRow(index?: number, values?: (boolean | string | number)[]): void;'
+      parameters:
+        - id: index
+          description: 'Facultatif. Spécifie la position relative de la nouvelle ligne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Toutes les lignes en dessous de la ligne insérée sont déplacées vers le bas. Avec indice zéro.'
+          type: number
+        - id: values
+          description: Facultatif. Tableau à 1 dimension de valeurs non formatées de la ligne de tableau.
+          type: '(boolean | string | number)[]'
+      return:
+        type: void
+        description: ''
+  - name: 'addRows(index, values)'
+    uid: 'ExcelScript!ExcelScript.Table#addRows:member(1)'
+    package: ExcelScript!
+    fullName: 'addRows(index, values)'
+    summary: Ajoute une ou plusieurs lignes dans le tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addRows(index?: number, values?: (boolean | string | number)[][]): void;'
+      parameters:
+        - id: index
+          description: 'Facultatif. Spécifie la position relative de la nouvelle ligne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Toutes les lignes en dessous de la ligne insérée sont déplacées vers le bas. Avec indice zéro.'
+          type: number
+        - id: values
+          description: "Facultatif. Matrice\_2D des valeurs non mises en forme de la ligne du tableau."
+          type: '(boolean | string | number)[][]'
+      return:
+        type: void
+        description: ''
+  - name: clearFilters()
+    uid: 'ExcelScript!ExcelScript.Table#clearFilters:member(1)'
+    package: ExcelScript!
+    fullName: clearFilters()
+    summary: Supprime tous les filtres appliqués actuellement sur le tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clearFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: convertToRange()
+    uid: 'ExcelScript!ExcelScript.Table#convertToRange:member(1)'
+    package: ExcelScript!
+    fullName: convertToRange()
+    summary: Convertit le tableau en plage normale de cellules. Toutes les données sont conservées.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'convertToRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: delete()
+    uid: 'ExcelScript!ExcelScript.Table#delete:member(1)'
+    package: ExcelScript!
+    fullName: delete()
+    summary: Supprime le tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: 'deleteRowsAt(index, count)'
+    uid: 'ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)'
+    package: ExcelScript!
+    fullName: 'deleteRowsAt(index, count)'
+    summary: Supprimer un nombre spécifié de lignes à un index donné.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'deleteRowsAt(index: number, count?: number): void;'
+      parameters:
+        - id: index
+          description: 'Valeur d’index de la ligne à supprimer. Attention : l’index de la ligne a peut-être été déplacé à partir du moment où vous avez déterminé la valeur à utiliser pour la suppression.'
+          type: number
+        - id: count
+          description: 'Nombre de lignes à supprimer. Par défaut, une seule ligne est supprimée. Remarque : la suppression de plus de 1 000 lignes en même temps peut entraîner un Power Automate de travail.'
+          type: number
+      return:
+        type: void
+        description: ''
+  - name: getAutoFilter()
+    uid: 'ExcelScript!ExcelScript.Table#getAutoFilter:member(1)'
+    package: ExcelScript!
+    fullName: getAutoFilter()
+    summary: Représente `AutoFilter` l’objet du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getAutoFilter(): AutoFilter;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />'
+        description: ''
+  - name: getColumn(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumn:member(1)'
+    package: ExcelScript!
+    fullName: getColumn(key)
+    summary: 'Obtient un objet de colonne par son nom ou son ID. Si la colonne n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumn(key: number | string): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: Nom de colonne ou ID.
+          type: number | string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumnById(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumnById:member(1)'
+    package: ExcelScript!
+    fullName: getColumnById(key)
+    summary: 'Obtient un objet de colonne par ID. Si la colonne n’existe pas, elle retourne undefined.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnById(key: number): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: ID de colonne.
+          type: number
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumnByName(key)
+    uid: 'ExcelScript!ExcelScript.Table#getColumnByName:member(1)'
+    package: ExcelScript!
+    fullName: getColumnByName(key)
+    summary: 'Obtient un objet de colonne par nom. Si la colonne n’existe pas, elle retourne undefined.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumnByName(key: string): TableColumn | undefined;'
+      parameters:
+        - id: key
+          description: Nom de colonne.
+          type: string
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined'
+        description: ''
+  - name: getColumns()
+    uid: 'ExcelScript!ExcelScript.Table#getColumns:member(1)'
+    package: ExcelScript!
+    fullName: getColumns()
+    summary: Représente une collection de toutes les colonnes du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColumns(): TableColumn[];'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableColumn:interface" />[]'
+        description: ''
+  - name: getHeaderRowRange()
+    uid: 'ExcelScript!ExcelScript.Table#getHeaderRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getHeaderRowRange()
+    summary: Obtient l’objet de plage associé à la ligne d’en-tête du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHeaderRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getHighlightFirstColumn()
+    uid: 'ExcelScript!ExcelScript.Table#getHighlightFirstColumn:member(1)'
+    package: ExcelScript!
+    fullName: getHighlightFirstColumn()
+    summary: Spécifie si la première colonne contient une mise en forme spéciale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHighlightFirstColumn(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getHighlightLastColumn()
+    uid: 'ExcelScript!ExcelScript.Table#getHighlightLastColumn:member(1)'
+    package: ExcelScript!
+    fullName: getHighlightLastColumn()
+    summary: Spécifie si la dernière colonne contient une mise en forme spéciale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getHighlightLastColumn(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getId()
+    uid: 'ExcelScript!ExcelScript.Table#getId:member(1)'
+    package: ExcelScript!
+    fullName: getId()
+    summary: 'Renvoie une valeur qui permet d’identifier le tableau dans un classeur donné. La valeur de l’identificateur reste identique, même lorsque le tableau est renommé.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLegacyId()
+    uid: 'ExcelScript!ExcelScript.Table#getLegacyId:member(1)'
+    package: ExcelScript!
+    fullName: getLegacyId()
+    summary: Renvoie un ID numérique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLegacyId(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getName()
+    uid: 'ExcelScript!ExcelScript.Table#getName:member(1)'
+    package: ExcelScript!
+    fullName: getName()
+    summary: Nom du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getName(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getPredefinedTableStyle()
+    uid: 'ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)'
+    package: ExcelScript!
+    fullName: getPredefinedTableStyle()
+    summary: 'Valeur de constante qui représente le style de tableau. Les valeurs possibles sont les suivants : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getPredefinedTableStyle(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getRange()
+    uid: 'ExcelScript!ExcelScript.Table#getRange:member(1)'
+    package: ExcelScript!
+    fullName: getRange()
+    summary: Renvoie l’objet de plage associé à l’intégralité du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRangeBetweenHeaderAndTotal()
+    uid: 'ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)'
+    package: ExcelScript!
+    fullName: getRangeBetweenHeaderAndTotal()
+    summary: Obtient l’objet de plage associé au corps de données du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeBetweenHeaderAndTotal(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getRowCount()
+    uid: 'ExcelScript!ExcelScript.Table#getRowCount:member(1)'
+    package: ExcelScript!
+    fullName: getRowCount()
+    summary: Obtient le nombre de lignes dans le tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRowCount(): number;'
+      return:
+        type: number
+        description: ''
+  - name: getShowBandedColumns()
+    uid: 'ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)'
+    package: ExcelScript!
+    fullName: getShowBandedColumns()
+    summary: 'Spécifie si les colonnes indiquent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillante différemment des colonnes impaires, pour faciliter la lecture du tableau.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBandedColumns(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowBandedRows()
+    uid: 'ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)'
+    package: ExcelScript!
+    fullName: getShowBandedRows()
+    summary: 'Spécifie si les lignes indiquent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillante différemment des lignes impaires, pour faciliter la lecture du tableau.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowBandedRows(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowFilterButton()
+    uid: 'ExcelScript!ExcelScript.Table#getShowFilterButton:member(1)'
+    package: ExcelScript!
+    fullName: getShowFilterButton()
+    summary: Spécifie si les boutons de filtre sont visibles en haut de chaque en-tête de colonne. Ce paramètre est autorisé uniquement si le tableau contient une ligne d’en-tête.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowFilterButton(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowHeaders()
+    uid: 'ExcelScript!ExcelScript.Table#getShowHeaders:member(1)'
+    package: ExcelScript!
+    fullName: getShowHeaders()
+    summary: Spécifie si la ligne d’en-tête est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne d’en-tête.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowHeaders(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowTotals()
+    uid: 'ExcelScript!ExcelScript.Table#getShowTotals:member(1)'
+    package: ExcelScript!
+    fullName: getShowTotals()
+    summary: Spécifie si la ligne de total est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowTotals(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getSort()
+    uid: 'ExcelScript!ExcelScript.Table#getSort:member(1)'
+    package: ExcelScript!
+    fullName: getSort()
+    summary: Représente le tri du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getSort(): TableSort;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.TableSort:interface" />'
+        description: ''
+  - name: getTotalRowRange()
+    uid: 'ExcelScript!ExcelScript.Table#getTotalRowRange:member(1)'
+    package: ExcelScript!
+    fullName: getTotalRowRange()
+    summary: Obtient l’objet de plage associé à la ligne de total du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getTotalRowRange(): Range;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Range:interface" />'
+        description: ''
+  - name: getWorksheet()
+    uid: 'ExcelScript!ExcelScript.Table#getWorksheet:member(1)'
+    package: ExcelScript!
+    fullName: getWorksheet()
+    summary: Feuille de calcul contenant le tableau actif.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWorksheet(): Worksheet;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.Worksheet:interface" />'
+        description: ''
+  - name: reapplyFilters()
+    uid: 'ExcelScript!ExcelScript.Table#reapplyFilters:member(1)'
+    package: ExcelScript!
+    fullName: reapplyFilters()
+    summary: Applique de nouveau tous les filtres actuellement appliqués sur le tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reapplyFilters(): void;'
+      return:
+        type: void
+        description: ''
+  - name: resize(newRange)
+    uid: 'ExcelScript!ExcelScript.Table#resize:member(1)'
+    package: ExcelScript!
+    fullName: resize(newRange)
+    summary: Resize the table to the new range. La nouvelle plage doit se chevaucher avec la plage du tableau d’origine et les en-têtes (ou le haut du tableau) doivent se trouver sur la même ligne.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resize(newRange: Range | string): void;'
+      parameters:
+        - id: newRange
+          description: Objet de plage ou adresse de plage qui sera utilisé pour déterminer la nouvelle taille du tableau.
+          type: '<xref uid="ExcelScript!ExcelScript.Range:interface" /> | string'
+      return:
+        type: void
+        description: ''
+  - name: setHighlightFirstColumn(highlightFirstColumn)
+    uid: 'ExcelScript!ExcelScript.Table#setHighlightFirstColumn:member(1)'
+    package: ExcelScript!
+    fullName: setHighlightFirstColumn(highlightFirstColumn)
+    summary: Spécifie si la première colonne contient une mise en forme spéciale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHighlightFirstColumn(highlightFirstColumn: boolean): void;'
+      parameters:
+        - id: highlightFirstColumn
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setHighlightLastColumn(highlightLastColumn)
+    uid: 'ExcelScript!ExcelScript.Table#setHighlightLastColumn:member(1)'
+    package: ExcelScript!
+    fullName: setHighlightLastColumn(highlightLastColumn)
+    summary: Spécifie si la dernière colonne contient une mise en forme spéciale.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setHighlightLastColumn(highlightLastColumn: boolean): void;'
+      parameters:
+        - id: highlightLastColumn
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setName(name)
+    uid: 'ExcelScript!ExcelScript.Table#setName:member(1)'
+    package: ExcelScript!
+    fullName: setName(name)
+    summary: Nom du tableau.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setName(name: string): void;'
+      parameters:
+        - id: name
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setPredefinedTableStyle(predefinedTableStyle)
+    uid: 'ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)'
+    package: ExcelScript!
+    fullName: setPredefinedTableStyle(predefinedTableStyle)
+    summary: 'Valeur de constante qui représente le style de tableau. Les valeurs possibles sont les suivants : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPredefinedTableStyle(predefinedTableStyle: string): void;'
+      parameters:
+        - id: predefinedTableStyle
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setShowBandedColumns(showBandedColumns)
+    uid: 'ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)'
+    package: ExcelScript!
+    fullName: setShowBandedColumns(showBandedColumns)
+    summary: 'Spécifie si les colonnes indiquent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillante différemment des colonnes impaires, pour faciliter la lecture du tableau.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBandedColumns(showBandedColumns: boolean): void;'
+      parameters:
+        - id: showBandedColumns
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowBandedRows(showBandedRows)
+    uid: 'ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)'
+    package: ExcelScript!
+    fullName: setShowBandedRows(showBandedRows)
+    summary: 'Spécifie si les lignes indiquent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillante différemment des lignes impaires, pour faciliter la lecture du tableau.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowBandedRows(showBandedRows: boolean): void;'
+      parameters:
+        - id: showBandedRows
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowFilterButton(showFilterButton)
+    uid: 'ExcelScript!ExcelScript.Table#setShowFilterButton:member(1)'
+    package: ExcelScript!
+    fullName: setShowFilterButton(showFilterButton)
+    summary: Spécifie si les boutons de filtre sont visibles en haut de chaque en-tête de colonne. Ce paramètre est autorisé uniquement si le tableau contient une ligne d’en-tête.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowFilterButton(showFilterButton: boolean): void;'
+      parameters:
+        - id: showFilterButton
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowHeaders(showHeaders)
+    uid: 'ExcelScript!ExcelScript.Table#setShowHeaders:member(1)'
+    package: ExcelScript!
+    fullName: setShowHeaders(showHeaders)
+    summary: Spécifie si la ligne d’en-tête est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne d’en-tête.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowHeaders(showHeaders: boolean): void;'
+      parameters:
+        - id: showHeaders
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowTotals(showTotals)
+    uid: 'ExcelScript!ExcelScript.Table#setShowTotals:member(1)'
+    package: ExcelScript!
+    fullName: setShowTotals(showTotals)
+    summary: Spécifie si la ligne de total est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowTotals(showTotals: boolean): void;'
+      parameters:
+        - id: showTotals
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
