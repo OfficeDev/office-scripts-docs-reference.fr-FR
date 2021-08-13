@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartPivotOptions
-uid: ExcelScript!ExcelScript.ChartPivotOptions:interface
+uid: 'ExcelScript!ExcelScript.ChartPivotOptions:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartPivotOptions
 summary: Encapsule les options pour le graphique croisé dynamique.
@@ -9,133 +9,126 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getShowAxisFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowAxisFieldButtons()
-  summary: Spécifie s'il faut afficher les boutons de champ d'axe dans un tableau croisé dynamique. La propriété correspond à la commande « Afficher les boutons de champ d'axe » dans la liste « Boutons de champ » de l'onglet « Analyser », qui est disponible lorsqu'un tableau croisé dynamique `showAxisFieldButtons` est sélectionné.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowAxisFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowLegendFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowLegendFieldButtons()
-  summary: Spécifie s'il faut afficher les boutons de champ de légende dans un tableau croisé dynamique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowLegendFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowReportFilterFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowReportFilterFieldButtons()
-  summary: Spécifie s'il faut afficher les boutons de champ de filtre de rapport dans un tableau croisé dynamique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowReportFilterFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: getShowValueFieldButtons()
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: getShowValueFieldButtons()
-  summary: Spécifie s'il faut afficher les boutons de champ afficher la valeur dans un tableau croisé dynamique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getShowValueFieldButtons(): boolean;'
-    return:
-      type: boolean
-      description: ''
-- name: setShowAxisFieldButtons(showAxisFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowAxisFieldButtons(showAxisFieldButtons)
-  summary: Spécifie s'il faut afficher les boutons de champ d'axe dans un tableau croisé dynamique. La propriété correspond à la commande « Afficher les boutons de champ d'axe » dans la liste « Boutons de champ » de l'onglet « Analyser », qui est disponible lorsqu'un tableau croisé dynamique `showAxisFieldButtons` est sélectionné.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowAxisFieldButtons(showAxisFieldButtons: boolean): void;'
-    parameters:
-    - id: showAxisFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowLegendFieldButtons(showLegendFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowLegendFieldButtons(showLegendFieldButtons)
-  summary: Spécifie s'il faut afficher les boutons de champ de légende dans un tableau croisé dynamique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowLegendFieldButtons(showLegendFieldButtons: boolean): void;'
-    parameters:
-    - id: showLegendFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
-  summary: Spécifie s'il faut afficher les boutons de champ de filtre de rapport dans un tableau croisé dynamique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: >-
-      setShowReportFilterFieldButtons(
-                  showReportFilterFieldButtons: boolean
-              ): void;
-    parameters:
-    - id: showReportFilterFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-- name: setShowValueFieldButtons(showValueFieldButtons)
-  uid: ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)
-  package: ExcelScript!
-  fullName: setShowValueFieldButtons(showValueFieldButtons)
-  summary: Spécifie s'il faut afficher les boutons de champ afficher la valeur dans un tableau croisé dynamique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setShowValueFieldButtons(showValueFieldButtons: boolean): void;'
-    parameters:
-    - id: showValueFieldButtons
-      description: ''
-      type: boolean
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 2b62f48341a400860e419e75d062157439d8429f
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912046"
+  - name: getShowAxisFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowAxisFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowAxisFieldButtons()
+    summary: "Spécifie s’il faut afficher les boutons de champ d’axe sur une PivotChart. La propriété correspond à la commande « Afficher les boutons de champ d’axe » dans la liste «\_Boutons de champ\_» de l’onglet « Analyser », qui est disponible lorsqu’une PivotChart est `showAxisFieldButtons` sélectionnée."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowAxisFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowLegendFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowLegendFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowLegendFieldButtons()
+    summary: Spécifie s’il faut afficher les boutons de champ de légende sur un PivotChart.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowLegendFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowReportFilterFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowReportFilterFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowReportFilterFieldButtons()
+    summary: Spécifie s’il faut afficher les boutons de champ de filtre de rapport sur une PivotChart.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowReportFilterFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: getShowValueFieldButtons()
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#getShowValueFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: getShowValueFieldButtons()
+    summary: Spécifie s’il faut afficher les boutons de champ afficher la valeur sur une PivotChart.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getShowValueFieldButtons(): boolean;'
+      return:
+        type: boolean
+        description: ''
+  - name: setShowAxisFieldButtons(showAxisFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowAxisFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowAxisFieldButtons(showAxisFieldButtons)
+    summary: "Spécifie s’il faut afficher les boutons de champ d’axe sur une PivotChart. La propriété correspond à la commande « Afficher les boutons de champ d’axe » dans la liste «\_Boutons de champ\_» de l’onglet « Analyser », qui est disponible lorsqu’une PivotChart est `showAxisFieldButtons` sélectionnée."
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowAxisFieldButtons(showAxisFieldButtons: boolean): void;'
+      parameters:
+        - id: showAxisFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowLegendFieldButtons(showLegendFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowLegendFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowLegendFieldButtons(showLegendFieldButtons)
+    summary: Spécifie s’il faut afficher les boutons de champ de légende sur un PivotChart.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowLegendFieldButtons(showLegendFieldButtons: boolean): void;'
+      parameters:
+        - id: showLegendFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowReportFilterFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowReportFilterFieldButtons(showReportFilterFieldButtons)
+    summary: Spécifie s’il faut afficher les boutons de champ de filtre de rapport sur une PivotChart.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        setShowReportFilterFieldButtons(
+                    showReportFilterFieldButtons: boolean
+                ): void;
+      parameters:
+        - id: showReportFilterFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''
+  - name: setShowValueFieldButtons(showValueFieldButtons)
+    uid: 'ExcelScript!ExcelScript.ChartPivotOptions#setShowValueFieldButtons:member(1)'
+    package: ExcelScript!
+    fullName: setShowValueFieldButtons(showValueFieldButtons)
+    summary: Spécifie s’il faut afficher les boutons de champ afficher la valeur sur une PivotChart.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setShowValueFieldButtons(showValueFieldButtons: boolean): void;'
+      parameters:
+        - id: showValueFieldButtons
+          description: ''
+          type: boolean
+      return:
+        type: void
+        description: ''

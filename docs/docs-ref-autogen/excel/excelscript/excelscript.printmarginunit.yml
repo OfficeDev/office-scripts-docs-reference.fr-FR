@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: ExcelScript.PrintMarginUnit
-uid: ExcelScript!ExcelScript.PrintMarginUnit:enum
+uid: 'ExcelScript!ExcelScript.PrintMarginUnit:enum'
 package: ExcelScript!
 fullName: ExcelScript.PrintMarginUnit
 summary: ''
@@ -8,22 +8,15 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 fields:
-- name: centimeters
-  uid: ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member
-  package: ExcelScript!
-  summary: Affectez les marges de page en centimètres.
-- name: inches
-  uid: ExcelScript!ExcelScript.PrintMarginUnit.inches:member
-  package: ExcelScript!
-  summary: Affectez les marges de page en pouces.
-- name: points
-  uid: ExcelScript!ExcelScript.PrintMarginUnit.points:member
-  package: ExcelScript!
-  summary: Affectez les marges de page en points. Un point est de 1/72 de pouce.
-metadata:
-  ms.openlocfilehash: b9f154f4a174cd83796bbf533b83308515508442
-  ms.sourcegitcommit: e62d18a494e9cc7f26dac222660a2237fd073c56
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2020
-  ms.locfileid: "49416672"
+  - name: centimeters
+    uid: 'ExcelScript!ExcelScript.PrintMarginUnit.centimeters:member'
+    package: ExcelScript!
+    summary: Affectez les marges de page en centimètres.
+  - name: inches
+    uid: 'ExcelScript!ExcelScript.PrintMarginUnit.inches:member'
+    package: ExcelScript!
+    summary: Affectez les marges de page en pouces.
+  - name: points
+    uid: 'ExcelScript!ExcelScript.PrintMarginUnit.points:member'
+    package: ExcelScript!
+    summary: Affectez les marges de page en points. Un point est de 1/72 de pouce.

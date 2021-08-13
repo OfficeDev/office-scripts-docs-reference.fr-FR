@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.FilterDatetime
-uid: ExcelScript!ExcelScript.FilterDatetime:interface
+uid: 'ExcelScript!ExcelScript.FilterDatetime:interface'
 package: ExcelScript!
 fullName: ExcelScript.FilterDatetime
 summary: Représente la méthode de filtrage d’une date lorsque des valeurs sont filtrées.
@@ -9,34 +9,27 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-- name: date
-  uid: ExcelScript!ExcelScript.FilterDatetime#date:member
-  package: ExcelScript!
-  fullName: date
-  summary: Date au format ISO8601 utilisée pour filtrer des données.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'date: string;'
-    return:
-      type: string
-- name: specificity
-  uid: ExcelScript!ExcelScript.FilterDatetime#specificity:member
-  package: ExcelScript!
-  fullName: specificity
-  summary: Utilisation de la date pour conserver des données. Par exemple, si la date est 2005-04-02 et que la spécifie est définie sur « month », l’opération de filtrage conservera toutes les lignes dont la date est le mois d’avril 2005.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'specificity: FilterDatetimeSpecificity;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />
-metadata:
-  ms.openlocfilehash: bda4d979c4c6a409f4f3caf7e7db4e28966f3891
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914400"
+  - name: date
+    uid: 'ExcelScript!ExcelScript.FilterDatetime#date:member'
+    package: ExcelScript!
+    fullName: date
+    summary: Date au format ISO8601 utilisée pour filtrer des données.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'date: string;'
+      return:
+        type: string
+  - name: specificity
+    uid: 'ExcelScript!ExcelScript.FilterDatetime#specificity:member'
+    package: ExcelScript!
+    fullName: specificity
+    summary: 'Utilisation de la date pour conserver des données. Par exemple, si la date est 2005-04-02 et que la spécifie est définie sur « month », l’opération de filtrage conservera toutes les lignes dont la date est le mois d’avril 2005.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'specificity: FilterDatetimeSpecificity;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.FilterDatetimeSpecificity:enum" />'

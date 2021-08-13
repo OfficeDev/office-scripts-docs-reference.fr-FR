@@ -1,121 +1,114 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartBorder
-uid: ExcelScript!ExcelScript.ChartBorder:interface
+uid: 'ExcelScript!ExcelScript.ChartBorder:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartBorder
-summary: Représente la mise en forme de bordure d'un élément de graphique.
+summary: Représente la mise en forme de bordure d’un élément de graphique.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: clear()
-  uid: ExcelScript!ExcelScript.ChartBorder#clear:member(1)
-  package: ExcelScript!
-  fullName: clear()
-  summary: Désactiver le format de bordure d’un élément de graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'clear(): void;'
-    return:
-      type: void
-      description: ''
-- name: getColor()
-  uid: ExcelScript!ExcelScript.ChartBorder#getColor:member(1)
-  package: ExcelScript!
-  fullName: getColor()
-  summary: Code couleur HTML qui représente la couleur des bordures dans le graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getColor(): string;'
-    return:
-      type: string
-      description: ''
-- name: getLineStyle()
-  uid: ExcelScript!ExcelScript.ChartBorder#getLineStyle:member(1)
-  package: ExcelScript!
-  fullName: getLineStyle()
-  summary: Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d'informations, voir.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getLineStyle(): ChartLineStyle;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />
-      description: ''
-- name: getWeight()
-  uid: ExcelScript!ExcelScript.ChartBorder#getWeight:member(1)
-  package: ExcelScript!
-  fullName: getWeight()
-  summary: Représente l’épaisseur de bordure, en points.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getWeight(): number;'
-    return:
-      type: number
-      description: ''
-- name: setColor(color)
-  uid: ExcelScript!ExcelScript.ChartBorder#setColor:member(1)
-  package: ExcelScript!
-  fullName: setColor(color)
-  summary: Code couleur HTML qui représente la couleur des bordures dans le graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setColor(color: string): void;'
-    parameters:
-    - id: color
-      description: ''
-      type: string
-    return:
-      type: void
-      description: ''
-- name: setLineStyle(lineStyle)
-  uid: ExcelScript!ExcelScript.ChartBorder#setLineStyle:member(1)
-  package: ExcelScript!
-  fullName: setLineStyle(lineStyle)
-  summary: Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d'informations, voir.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setLineStyle(lineStyle: ChartLineStyle): void;'
-    parameters:
-    - id: lineStyle
-      description: ''
-      type: <xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />
-    return:
-      type: void
-      description: ''
-- name: setWeight(weight)
-  uid: ExcelScript!ExcelScript.ChartBorder#setWeight:member(1)
-  package: ExcelScript!
-  fullName: setWeight(weight)
-  summary: Représente l’épaisseur de bordure, en points.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'setWeight(weight: number): void;'
-    parameters:
-    - id: weight
-      description: ''
-      type: number
-    return:
-      type: void
-      description: ''
-metadata:
-  ms.openlocfilehash: 48c479a012b89b5d58d722a83b762c6cc51904d9
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51914117"
+  - name: clear()
+    uid: 'ExcelScript!ExcelScript.ChartBorder#clear:member(1)'
+    package: ExcelScript!
+    fullName: clear()
+    summary: Désactiver le format de bordure d’un élément de graphique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getColor()
+    uid: 'ExcelScript!ExcelScript.ChartBorder#getColor:member(1)'
+    package: ExcelScript!
+    fullName: getColor()
+    summary: Code couleur HTML qui représente la couleur des bordures dans le graphique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getColor(): string;'
+      return:
+        type: string
+        description: ''
+  - name: getLineStyle()
+    uid: 'ExcelScript!ExcelScript.ChartBorder#getLineStyle:member(1)'
+    package: ExcelScript!
+    fullName: getLineStyle()
+    summary: 'Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d’informations, voir.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLineStyle(): ChartLineStyle;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />'
+        description: ''
+  - name: getWeight()
+    uid: 'ExcelScript!ExcelScript.ChartBorder#getWeight:member(1)'
+    package: ExcelScript!
+    fullName: getWeight()
+    summary: 'Représente l’épaisseur de bordure, en points.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getWeight(): number;'
+      return:
+        type: number
+        description: ''
+  - name: setColor(color)
+    uid: 'ExcelScript!ExcelScript.ChartBorder#setColor:member(1)'
+    package: ExcelScript!
+    fullName: setColor(color)
+    summary: Code couleur HTML qui représente la couleur des bordures dans le graphique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setColor(color: string): void;'
+      parameters:
+        - id: color
+          description: ''
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: setLineStyle(lineStyle)
+    uid: 'ExcelScript!ExcelScript.ChartBorder#setLineStyle:member(1)'
+    package: ExcelScript!
+    fullName: setLineStyle(lineStyle)
+    summary: 'Représente le style de trait de la bordure. Pour `ExcelScript.ChartLineStyle` plus d’informations, voir.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLineStyle(lineStyle: ChartLineStyle): void;'
+      parameters:
+        - id: lineStyle
+          description: ''
+          type: '<xref uid="ExcelScript!ExcelScript.ChartLineStyle:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: setWeight(weight)
+    uid: 'ExcelScript!ExcelScript.ChartBorder#setWeight:member(1)'
+    package: ExcelScript!
+    fullName: setWeight(weight)
+    summary: 'Représente l’épaisseur de bordure, en points.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setWeight(weight: number): void;'
+      parameters:
+        - id: weight
+          description: ''
+          type: number
+      return:
+        type: void
+        description: ''

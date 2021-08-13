@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ChartPlotAreaFormat
-uid: ExcelScript!ExcelScript.ChartPlotAreaFormat:interface
+uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat:interface'
 package: ExcelScript!
 fullName: ExcelScript.ChartPlotAreaFormat
 summary: Représente les propriétés de format d’une zone de traçage de graphique.
@@ -9,36 +9,29 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-- name: getBorder()
-  uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)
-  package: ExcelScript!
-  fullName: getBorder()
-  summary: Spécifie les attributs de bordure d’une zone de traçage de graphique.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getBorder(): ChartBorder;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />
-      description: ''
-- name: getFill()
-  uid: ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)
-  package: ExcelScript!
-  fullName: getFill()
-  summary: Spécifie le format de remplissage d’un objet, qui inclut des informations de mise en forme d’arrière-plan.
-  remarks: ''
-  isPreview: false
-  isDeprecated: false
-  syntax:
-    content: 'getFill(): ChartFill;'
-    return:
-      type: <xref uid="ExcelScript!ExcelScript.ChartFill:interface" />
-      description: ''
-metadata:
-  ms.openlocfilehash: d1bbeba38b16b66cf2d012a30bb600c6c59ab268
-  ms.sourcegitcommit: 8af38275dd124e0b8365081640b87ec88f9eec40
-  ms.translationtype: MT
-  ms.contentlocale: fr-FR
-  ms.lasthandoff: 04/21/2021
-  ms.locfileid: "51912032"
+  - name: getBorder()
+    uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getBorder:member(1)'
+    package: ExcelScript!
+    fullName: getBorder()
+    summary: Spécifie les attributs de bordure d’une zone de traçage de graphique.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getBorder(): ChartBorder;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartBorder:interface" />'
+        description: ''
+  - name: getFill()
+    uid: 'ExcelScript!ExcelScript.ChartPlotAreaFormat#getFill:member(1)'
+    package: ExcelScript!
+    fullName: getFill()
+    summary: 'Spécifie le format de remplissage d’un objet, qui inclut des informations de mise en forme d’arrière-plan.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getFill(): ChartFill;'
+      return:
+        type: '<xref uid="ExcelScript!ExcelScript.ChartFill:interface" />'
+        description: ''
