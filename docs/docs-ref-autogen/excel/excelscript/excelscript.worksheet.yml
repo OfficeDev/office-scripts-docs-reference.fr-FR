@@ -306,7 +306,7 @@ methods:
       description: Champ de la source de données par le filtre. Il peut `PivotField` s’agit d’un objet, d’un objet, de l’ID d’un ou du `TableColumn` nom ou de `PivotField` l’ID d’une `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit `Worksheet` d’un objet, du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
+      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit `Worksheet` d’un objet ou du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -422,7 +422,7 @@ methods:
               ): Worksheet;
     parameters:
     - id: positionType
-      description: Emplacement dans le manuel où placer la feuille de calcul nouvellement créée. La valeur par défaut est « None », qui insère la feuille de calcul au début de la feuille de calcul.
+      description: Emplacement dans le workbook où placer la feuille de calcul nouvellement créée. La valeur par défaut est « None », qui insère la feuille de calcul au début de la feuille de calcul.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
       description: Feuille de calcul existante qui détermine la position de la feuille de calcul nouvellement créée. Cette demande est nécessaire uniquement `positionType` si « Before » (avant) ou « After » (après).
@@ -488,7 +488,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script looks through a worksheet and finds cells containing \"No\". \n * Those cells are filled red.\n * Use Range.find instead of Worksheet.findAll when you want to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let noCells = worksheet.findAll(\"No\", { completeMatch: true });\n\n  // Set the fill color to red.\n  noCells.getFormat().getFill().setColor(\"red\");\n}\n```"
 - name: getActiveNamedSheetView()
   uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
   package: ExcelScript!
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Obtient la feuille de calcul qui suit celle-ci. Si aucune feuille de calcul ne suit celle-ci, cette méthode retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
+  summary: Obtient la feuille de calcul qui suit celle-ci. Si aucune feuille de calcul ne suit celle-ci, cette méthode retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -779,7 +779,7 @@ methods:
     content: 'getNext(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Facultatif. If `true`<!-- -->, ne considère que les feuilles de calcul visibles, en ignorer les feuilles masquées.
+      description: Facultatif. If `true`<!-- -->, considère uniquement les feuilles de calcul visibles, en ignorer les feuilles masquées.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -852,7 +852,7 @@ methods:
     content: 'getPrevious(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Facultatif. If `true`<!-- -->, ne considère que les feuilles de calcul visibles, en ignorer les feuilles masquées.
+      description: Facultatif. If `true`<!-- -->, considère uniquement les feuilles de calcul visibles, en ignorer les feuilles masquées.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6abeb2898ae72714b5d8b5d703c43c2c07056a2b
-  ms.sourcegitcommit: b426fa221dc89bd11cd7a2d1204c13a3bf656826
+  ms.openlocfilehash: 26571777e8d9e984b3dea653b3e9e85ed7c41166
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/18/2021
-  ms.locfileid: "58379971"
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003759"

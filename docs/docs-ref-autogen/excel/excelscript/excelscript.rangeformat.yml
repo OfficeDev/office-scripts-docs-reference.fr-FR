@@ -1,513 +1,520 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFormat
-uid: 'ExcelScript!ExcelScript.RangeFormat:interface'
+uid: ExcelScript!ExcelScript.RangeFormat:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFormat
-summary: 'Objet de format qui comprend les propriétés de police, de remplissage, de bordures, d’alignement et d’autres propriétés de la plage.'
+summary: Objet de format qui comprend les propriétés de police, de remplissage, de bordures, d’alignement et d’autres propriétés de la plage.
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: adjustIndent(amount)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)'
-    package: ExcelScript!
-    fullName: adjustIndent(amount)
-    summary: Ajuste le retrait de la mise en forme de plage. La valeur du retrait est de 0 à 250 et est mesurée en caractères.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'adjustIndent(amount: number): void;'
-      parameters:
-        - id: amount
-          description: 'Nombre d’espaces de caractères par lequel le retrait actuel est ajusté. Cette valeur doit être entre -250 et 250. **Remarque**: si la quantité augmente le niveau de retrait au-dessus de 250, le niveau de retrait reste avec 250. De même, si le montant réduit le niveau de retrait en dessous de 0, le niveau de retrait reste 0.'
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: autofitColumns()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)'
-    package: ExcelScript!
-    fullName: autofitColumns()
-    summary: 'Modifie la largeur des colonnes de la plage active pour obtenir le meilleur ajustement, en fonction des données présentes dans les colonnes.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'autofitColumns(): void;'
-      return:
-        type: void
-        description: ''
-  - name: autofitRows()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)'
-    package: ExcelScript!
-    fullName: autofitRows()
-    summary: 'Modifie la hauteur des lignes de la plage active pour obtenir le meilleur ajustement, en fonction des données présentes dans les colonnes.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'autofitRows(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getAutoIndent()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)'
-    package: ExcelScript!
-    fullName: getAutoIndent()
-    summary: Spécifie si le texte est automatiquement mis en retrait lorsque l’alignement du texte est égal à la distribution.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getAutoIndent(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getBorders()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)'
-    package: ExcelScript!
-    fullName: getBorders()
-    summary: Collection d’objets de bordure qui s’appliquent à l’ensemble de la plage.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getBorders(): RangeBorder[];'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />[]'
-        description: ''
-  - name: getColumnWidth()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)'
-    package: ExcelScript!
-    fullName: getColumnWidth()
-    summary: 'Spécifie la largeur de toutes les colums dans la plage. Si la largeur des colonnes n’est pas uniforme, `null` est renvoyée.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getColumnWidth(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getFill()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getFill:member(1)'
-    package: ExcelScript!
-    fullName: getFill()
-    summary: Renvoie l’objet de remplissage défini sur la plage globale.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFill(): RangeFill;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeFill:interface" />'
-        description: ''
-  - name: getFont()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getFont:member(1)'
-    package: ExcelScript!
-    fullName: getFont()
-    summary: Renvoie l’objet de police défini sur l’ensemble de la plage.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getFont(): RangeFont;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeFont:interface" />'
-        description: ''
-  - name: getHorizontalAlignment()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: getHorizontalAlignment()
-    summary: 'Représente l’alignement horizontal de l’objet spécifié. Pour `ExcelScript.HorizontalAlignment` plus d’informations, voir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getHorizontalAlignment(): HorizontalAlignment;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />'
-        description: ''
-  - name: getIndentLevel()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)'
-    package: ExcelScript!
-    fullName: getIndentLevel()
-    summary: Entier compris entre 0 à 250 qui indique le niveau de retrait du style.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIndentLevel(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getProtection()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)'
-    package: ExcelScript!
-    fullName: getProtection()
-    summary: Renvoie l’objet de protection du format pour une plage.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getProtection(): FormatProtection;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.FormatProtection:interface" />'
-        description: ''
-  - name: getRangeBorder(index)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)'
-    package: ExcelScript!
-    fullName: getRangeBorder(index)
-    summary: Obtient un objet de bordure à l’aide de son nom.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
-      parameters:
-        - id: index
-          description: 'Valeur d’indice de l’objet de bordure à récupérer. Pour `ExcelScript.BorderIndex` plus d’informations, voir.'
-          type: '<xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />'
-        description: ''
-  - name: getRangeBorderTintAndShade()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: getRangeBorderTintAndShade()
-    summary: 'Spécifie un double qui s’éclaircit ou assombrit une couleur pour les bordures de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que l’ensemble de la collection de bordures n’a pas de paramètre `tintAndShade` uniforme.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRangeBorderTintAndShade(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getReadingOrder()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)'
-    package: ExcelScript!
-    fullName: getReadingOrder()
-    summary: L’ordre de lecture de la plage.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getReadingOrder(): ReadingOrder;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />'
-        description: ''
-  - name: getRowHeight()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)'
-    package: ExcelScript!
-    fullName: getRowHeight()
-    summary: 'Hauteur de toutes les lignes de la plage. Si les hauteurs de ligne ne sont pas uniformes, `null` elles sont renvoyées.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRowHeight(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getShrinkToFit()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)'
-    package: ExcelScript!
-    fullName: getShrinkToFit()
-    summary: Spécifie si le texte est automatiquement réduit pour tenir dans la largeur de colonne disponible.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getShrinkToFit(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getTextOrientation()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)'
-    package: ExcelScript!
-    fullName: getTextOrientation()
-    summary: 'Orientation du texte de toutes les cellules de la plage. L’orientation du texte doit être un intégralité entre -90 et 90 ou 180 pour le texte orienté verticalement. Si l’orientation au sein d’une plage n’est pas uniforme, `null` elle est renvoyée.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTextOrientation(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getUseStandardHeight()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)'
-    package: ExcelScript!
-    fullName: getUseStandardHeight()
-    summary: 'Détermine si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie `true` si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie si la plage contient plusieurs lignes et que les lignes ne sont `null` pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUseStandardHeight(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getUseStandardWidth()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)'
-    package: ExcelScript!
-    fullName: getUseStandardWidth()
-    summary: 'Spécifie si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `true` si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `null` si la plage contient plusieurs colonnes et que les colonnes ne sont pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUseStandardWidth(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getVerticalAlignment()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: getVerticalAlignment()
-    summary: 'Représente l’alignement vertical de l’objet spécifié. Pour `ExcelScript.VerticalAlignment` plus d’informations, voir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getVerticalAlignment(): VerticalAlignment;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />'
-        description: ''
-  - name: getWrapText()
-    uid: 'ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)'
-    package: ExcelScript!
-    fullName: getWrapText()
-    summary: Spécifie si Excel le texte dans l’objet. Une `null` valeur indique que la plage entière n’a pas de paramètre de wrap uniforme
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getWrapText(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setAutoIndent(autoIndent)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)'
-    package: ExcelScript!
-    fullName: setAutoIndent(autoIndent)
-    summary: Spécifie si le texte est automatiquement mis en retrait lorsque l’alignement du texte est égal à la distribution.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setAutoIndent(autoIndent: boolean): void;'
-      parameters:
-        - id: autoIndent
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setColumnWidth(columnWidth)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)'
-    package: ExcelScript!
-    fullName: setColumnWidth(columnWidth)
-    summary: 'Spécifie la largeur de toutes les colums dans la plage. Si la largeur des colonnes n’est pas uniforme, `null` est renvoyée.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setColumnWidth(columnWidth: number): void;'
-      parameters:
-        - id: columnWidth
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setHorizontalAlignment(horizontalAlignment)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: setHorizontalAlignment(horizontalAlignment)
-    summary: 'Représente l’alignement horizontal de l’objet spécifié. Pour `ExcelScript.HorizontalAlignment` plus d’informations, voir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
-      parameters:
-        - id: horizontalAlignment
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setIndentLevel(indentLevel)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)'
-    package: ExcelScript!
-    fullName: setIndentLevel(indentLevel)
-    summary: Entier compris entre 0 à 250 qui indique le niveau de retrait du style.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setIndentLevel(indentLevel: number): void;'
-      parameters:
-        - id: indentLevel
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
-    summary: 'Spécifie un double qui s’éclaircit ou assombrit une couleur pour les bordures de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que l’ensemble de la collection de bordures n’a pas de paramètre `tintAndShade` uniforme.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
-      parameters:
-        - id: rangeBorderTintAndShade
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setReadingOrder(readingOrder)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)'
-    package: ExcelScript!
-    fullName: setReadingOrder(readingOrder)
-    summary: L’ordre de lecture de la plage.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
-      parameters:
-        - id: readingOrder
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setRowHeight(rowHeight)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)'
-    package: ExcelScript!
-    fullName: setRowHeight(rowHeight)
-    summary: 'Hauteur de toutes les lignes de la plage. Si les hauteurs de ligne ne sont pas uniformes, `null` elles sont renvoyées.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRowHeight(rowHeight: number): void;'
-      parameters:
-        - id: rowHeight
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setShrinkToFit(shrinkToFit)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)'
-    package: ExcelScript!
-    fullName: setShrinkToFit(shrinkToFit)
-    summary: Spécifie si le texte est automatiquement réduit pour tenir dans la largeur de colonne disponible.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setShrinkToFit(shrinkToFit: boolean): void;'
-      parameters:
-        - id: shrinkToFit
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setTextOrientation(textOrientation)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)'
-    package: ExcelScript!
-    fullName: setTextOrientation(textOrientation)
-    summary: 'Orientation du texte de toutes les cellules de la plage. L’orientation du texte doit être un intégralité entre -90 et 90 ou 180 pour le texte orienté verticalement. Si l’orientation au sein d’une plage n’est pas uniforme, `null` elle est renvoyée.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setTextOrientation(textOrientation: number): void;'
-      parameters:
-        - id: textOrientation
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setUseStandardHeight(useStandardHeight)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)'
-    package: ExcelScript!
-    fullName: setUseStandardHeight(useStandardHeight)
-    summary: 'Détermine si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie `true` si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie si la plage contient plusieurs lignes et que les lignes ne sont `null` pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
-      parameters:
-        - id: useStandardHeight
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setUseStandardWidth(useStandardWidth)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)'
-    package: ExcelScript!
-    fullName: setUseStandardWidth(useStandardWidth)
-    summary: 'Spécifie si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `true` si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `null` si la plage contient plusieurs colonnes et que les colonnes ne sont pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
-      parameters:
-        - id: useStandardWidth
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setVerticalAlignment(verticalAlignment)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)'
-    package: ExcelScript!
-    fullName: setVerticalAlignment(verticalAlignment)
-    summary: 'Représente l’alignement vertical de l’objet spécifié. Pour `ExcelScript.VerticalAlignment` plus d’informations, voir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
-      parameters:
-        - id: verticalAlignment
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />'
-      return:
-        type: void
-        description: ''
-  - name: setWrapText(wrapText)
-    uid: 'ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)'
-    package: ExcelScript!
-    fullName: setWrapText(wrapText)
-    summary: Spécifie si Excel le texte dans l’objet. Une `null` valeur indique que la plage entière n’a pas de paramètre de wrap uniforme
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setWrapText(wrapText: boolean): void;'
-      parameters:
-        - id: wrapText
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
+- name: adjustIndent(amount)
+  uid: ExcelScript!ExcelScript.RangeFormat#adjustIndent:member(1)
+  package: ExcelScript!
+  fullName: adjustIndent(amount)
+  summary: Ajuste le retrait de la mise en forme de plage. La valeur du retrait est de 0 à 250 et est mesurée en caractères.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'adjustIndent(amount: number): void;'
+    parameters:
+    - id: amount
+      description: 'Nombre d’espaces de caractères par lequel le retrait actuel est ajusté. Cette valeur doit être entre -250 et 250. **Remarque**: si la quantité augmente le niveau de retrait au-dessus de 250, le niveau de retrait reste avec 250. De même, si le montant réduit le niveau de retrait en dessous de 0, le niveau de retrait reste 0.'
+      type: number
+    return:
+      type: void
+      description: ''
+- name: autofitColumns()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitColumns:member(1)
+  package: ExcelScript!
+  fullName: autofitColumns()
+  summary: Modifie la largeur des colonnes de la plage active pour obtenir le meilleur ajustement, en fonction des données présentes dans les colonnes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitColumns(): void;'
+    return:
+      type: void
+      description: ''
+- name: autofitRows()
+  uid: ExcelScript!ExcelScript.RangeFormat#autofitRows:member(1)
+  package: ExcelScript!
+  fullName: autofitRows()
+  summary: Modifie la hauteur des lignes de la plage active pour obtenir le meilleur ajustement, en fonction des données présentes dans les colonnes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'autofitRows(): void;'
+    return:
+      type: void
+      description: ''
+- name: getAutoIndent()
+  uid: ExcelScript!ExcelScript.RangeFormat#getAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: getAutoIndent()
+  summary: Spécifie si le texte est automatiquement mis en retrait lorsque l’alignement du texte est égal à la distribution.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getAutoIndent(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getBorders()
+  uid: ExcelScript!ExcelScript.RangeFormat#getBorders:member(1)
+  package: ExcelScript!
+  fullName: getBorders()
+  summary: Collection d’objets de bordure qui s’appliquent à l’ensemble de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBorders(): RangeBorder[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />[]
+      description: ''
+- name: getColumnWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: getColumnWidth()
+  summary: Spécifie la largeur de toutes les colums de la plage. Si la largeur des colonnes n’est pas uniforme, `null` est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColumnWidth(): number;'
+    return:
+      type: number
+      description: ''
+- name: getFill()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFill:member(1)
+  package: ExcelScript!
+  fullName: getFill()
+  summary: Renvoie l’objet de remplissage défini sur la plage globale.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFill(): RangeFill;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFill:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script gives the total row of a table a green color fill.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table in the workbook.\n  let table = workbook.getTables()[0];\n\n  // Get the range for the total row of the table.\n  let totalRange = table.getTotalRowRange();\n\n  // Set the fill color to green.\n  totalRange.getFormat().getFill().setColor(\"green\");\n}\n```"
+- name: getFont()
+  uid: ExcelScript!ExcelScript.RangeFormat#getFont:member(1)
+  package: ExcelScript!
+  fullName: getFont()
+  summary: Renvoie l’objet de police défini sur l’ensemble de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getFont(): RangeFont;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeFont:interface" />
+      description: ''
+- name: getHorizontalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getHorizontalAlignment()
+  summary: Représente l’alignement horizontal de l’objet spécifié. Pour `ExcelScript.HorizontalAlignment` plus d’informations, voir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getHorizontalAlignment(): HorizontalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+      description: ''
+- name: getIndentLevel()
+  uid: ExcelScript!ExcelScript.RangeFormat#getIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: getIndentLevel()
+  summary: Entier compris entre 0 à 250 qui indique le niveau de retrait du style.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIndentLevel(): number;'
+    return:
+      type: number
+      description: ''
+- name: getProtection()
+  uid: ExcelScript!ExcelScript.RangeFormat#getProtection:member(1)
+  package: ExcelScript!
+  fullName: getProtection()
+  summary: Renvoie l’objet de protection du format pour une plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getProtection(): FormatProtection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.FormatProtection:interface" />
+      description: ''
+- name: getRangeBorder(index)
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorder:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorder(index)
+  summary: Obtient un objet de bordure à l’aide de son nom.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorder(index: BorderIndex): RangeBorder;'
+    parameters:
+    - id: index
+      description: Valeur d’indice de l’objet de bordure à récupérer. Pour `ExcelScript.BorderIndex` plus d’informations, voir.
+      type: <xref uid="ExcelScript!ExcelScript.BorderIndex:enum" />
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeBorder:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script adds a border around the outside of a range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a range from the current worksheet.\n  let range = workbook.getActiveWorksheet().getRange(\"B2:E15\");\n\n  // Add a border around the whole bounding range.\n  let format = range.getFormat();\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeTop).setStyle(ExcelScript.BorderLineStyle.continuous); // Top border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeBottom).setStyle(ExcelScript.BorderLineStyle.continuous); // Bottom border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeLeft).setStyle(ExcelScript.BorderLineStyle.continuous); // Left border\n  format.getRangeBorder(ExcelScript.BorderIndex.edgeRight).setStyle(ExcelScript.BorderLineStyle.continuous); // Right border\n}\n```"
+- name: getRangeBorderTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getRangeBorderTintAndShade()
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour les bordures de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que l’ensemble de la collection de bordures n’a pas de paramètre `tintAndShade` uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRangeBorderTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getReadingOrder()
+  uid: ExcelScript!ExcelScript.RangeFormat#getReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: getReadingOrder()
+  summary: L’ordre de lecture de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getReadingOrder(): ReadingOrder;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+      description: ''
+- name: getRowHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getRowHeight:member(1)
+  package: ExcelScript!
+  fullName: getRowHeight()
+  summary: Hauteur de toutes les lignes de la plage. Si les hauteurs de ligne ne sont pas uniformes, `null` sont renvoyées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRowHeight(): number;'
+    return:
+      type: number
+      description: ''
+- name: getShrinkToFit()
+  uid: ExcelScript!ExcelScript.RangeFormat#getShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: getShrinkToFit()
+  summary: Spécifie si le texte est automatiquement réduit pour tenir dans la largeur de colonne disponible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getShrinkToFit(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTextOrientation()
+  uid: ExcelScript!ExcelScript.RangeFormat#getTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: getTextOrientation()
+  summary: Orientation du texte de toutes les cellules de la plage. L’orientation du texte doit être un intégralité entre -90 et 90 ou 180 pour le texte orienté verticalement. Si l’orientation au sein d’une plage n’est pas uniforme, `null` elle est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTextOrientation(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUseStandardHeight()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardHeight()
+  summary: 'Détermine si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie `true` si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie si la plage contient plusieurs lignes et que les lignes ne sont `null` pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardHeight(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getUseStandardWidth()
+  uid: ExcelScript!ExcelScript.RangeFormat#getUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: getUseStandardWidth()
+  summary: 'Spécifie si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `true` si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `null` si la plage contient plusieurs colonnes et que les colonnes ne sont pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUseStandardWidth(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getVerticalAlignment()
+  uid: ExcelScript!ExcelScript.RangeFormat#getVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: getVerticalAlignment()
+  summary: Représente l’alignement vertical de l’objet spécifié. Pour `ExcelScript.VerticalAlignment` plus d’informations, voir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getVerticalAlignment(): VerticalAlignment;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+      description: ''
+- name: getWrapText()
+  uid: ExcelScript!ExcelScript.RangeFormat#getWrapText:member(1)
+  package: ExcelScript!
+  fullName: getWrapText()
+  summary: Spécifie si Excel le texte dans l’objet. Une `null` valeur indique que la plage entière n’a pas de paramètre de wrap uniforme
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getWrapText(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setAutoIndent(autoIndent)
+  uid: ExcelScript!ExcelScript.RangeFormat#setAutoIndent:member(1)
+  package: ExcelScript!
+  fullName: setAutoIndent(autoIndent)
+  summary: Spécifie si le texte est automatiquement mis en retrait lorsque l’alignement du texte est égal à la distribution.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setAutoIndent(autoIndent: boolean): void;'
+    parameters:
+    - id: autoIndent
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setColumnWidth(columnWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setColumnWidth:member(1)
+  package: ExcelScript!
+  fullName: setColumnWidth(columnWidth)
+  summary: Spécifie la largeur de toutes les colums de la plage. Si la largeur des colonnes n’est pas uniforme, `null` est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColumnWidth(columnWidth: number): void;'
+    parameters:
+    - id: columnWidth
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setHorizontalAlignment(horizontalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setHorizontalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setHorizontalAlignment(horizontalAlignment)
+  summary: Représente l’alignement horizontal de l’objet spécifié. Pour `ExcelScript.HorizontalAlignment` plus d’informations, voir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): void;'
+    parameters:
+    - id: horizontalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.HorizontalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setIndentLevel(indentLevel)
+  uid: ExcelScript!ExcelScript.RangeFormat#setIndentLevel:member(1)
+  package: ExcelScript!
+  fullName: setIndentLevel(indentLevel)
+  summary: Entier compris entre 0 à 250 qui indique le niveau de retrait du style.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIndentLevel(indentLevel: number): void;'
+    parameters:
+    - id: indentLevel
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRangeBorderTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setRangeBorderTintAndShade(rangeBorderTintAndShade)
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour les bordures de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que l’ensemble de la collection de bordures n’a pas de paramètre `tintAndShade` uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRangeBorderTintAndShade(rangeBorderTintAndShade: number): void;'
+    parameters:
+    - id: rangeBorderTintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setReadingOrder(readingOrder)
+  uid: ExcelScript!ExcelScript.RangeFormat#setReadingOrder:member(1)
+  package: ExcelScript!
+  fullName: setReadingOrder(readingOrder)
+  summary: L’ordre de lecture de la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setReadingOrder(readingOrder: ReadingOrder): void;'
+    parameters:
+    - id: readingOrder
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.ReadingOrder:enum" />
+    return:
+      type: void
+      description: ''
+- name: setRowHeight(rowHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setRowHeight:member(1)
+  package: ExcelScript!
+  fullName: setRowHeight(rowHeight)
+  summary: Hauteur de toutes les lignes de la plage. Si les hauteurs de ligne ne sont pas uniformes, `null` sont renvoyées.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRowHeight(rowHeight: number): void;'
+    parameters:
+    - id: rowHeight
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setShrinkToFit(shrinkToFit)
+  uid: ExcelScript!ExcelScript.RangeFormat#setShrinkToFit:member(1)
+  package: ExcelScript!
+  fullName: setShrinkToFit(shrinkToFit)
+  summary: Spécifie si le texte est automatiquement réduit pour tenir dans la largeur de colonne disponible.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setShrinkToFit(shrinkToFit: boolean): void;'
+    parameters:
+    - id: shrinkToFit
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setTextOrientation(textOrientation)
+  uid: ExcelScript!ExcelScript.RangeFormat#setTextOrientation:member(1)
+  package: ExcelScript!
+  fullName: setTextOrientation(textOrientation)
+  summary: Orientation du texte de toutes les cellules de la plage. L’orientation du texte doit être un intégralité entre -90 et 90 ou 180 pour le texte orienté verticalement. Si l’orientation au sein d’une plage n’est pas uniforme, `null` elle est renvoyée.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTextOrientation(textOrientation: number): void;'
+    parameters:
+    - id: textOrientation
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setUseStandardHeight(useStandardHeight)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardHeight:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardHeight(useStandardHeight)
+  summary: 'Détermine si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie `true` si la hauteur de ligne de `Range` l’objet est égale à la hauteur standard de la feuille. Renvoie si la plage contient plusieurs lignes et que les lignes ne sont `null` pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardHeight(useStandardHeight: boolean): void;'
+    parameters:
+    - id: useStandardHeight
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setUseStandardWidth(useStandardWidth)
+  uid: ExcelScript!ExcelScript.RangeFormat#setUseStandardWidth:member(1)
+  package: ExcelScript!
+  fullName: setUseStandardWidth(useStandardWidth)
+  summary: 'Spécifie si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `true` si la largeur de colonne de `Range` l’objet est égale à la largeur standard de la feuille. Renvoie `null` si la plage contient plusieurs colonnes et que les colonnes ne sont pas toutes de la même hauteur. Renvoie dans le `false` cas contraire. Remarque : cette propriété est uniquement destinée à être définie sur `true`<!-- -->. Sa définition `false` n’a aucun effet.'
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUseStandardWidth(useStandardWidth: boolean): void;'
+    parameters:
+    - id: useStandardWidth
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setVerticalAlignment(verticalAlignment)
+  uid: ExcelScript!ExcelScript.RangeFormat#setVerticalAlignment:member(1)
+  package: ExcelScript!
+  fullName: setVerticalAlignment(verticalAlignment)
+  summary: Représente l’alignement vertical de l’objet spécifié. Pour `ExcelScript.VerticalAlignment` plus d’informations, voir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setVerticalAlignment(verticalAlignment: VerticalAlignment): void;'
+    parameters:
+    - id: verticalAlignment
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.VerticalAlignment:enum" />
+    return:
+      type: void
+      description: ''
+- name: setWrapText(wrapText)
+  uid: ExcelScript!ExcelScript.RangeFormat#setWrapText:member(1)
+  package: ExcelScript!
+  fullName: setWrapText(wrapText)
+  summary: Spécifie si Excel le texte dans l’objet. Une `null` valeur indique que la plage entière n’a pas de paramètre de wrap uniforme
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setWrapText(wrapText: boolean): void;'
+    parameters:
+    - id: wrapText
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 571788b608684d394f3bbb12eb82acdb736a4e2e
+  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 09/29/2021
+  ms.locfileid: "60003721"
