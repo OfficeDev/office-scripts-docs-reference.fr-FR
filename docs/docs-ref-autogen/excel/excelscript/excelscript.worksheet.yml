@@ -21,7 +21,7 @@ methods:
     content: 'activate(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script switches the active view to a worksheet named \"Data\", if it exists.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet exists.\n  let dataWorksheet = workbook.getWorksheet(\"Data\");\n  if (dataWorksheet) {\n    // Switch to the \"Data\" worksheet.\n    dataWorksheet.activate();\n  } else {\n    console.log(`No worksheet named \"Data\" in this workbook.`);\n  }\n}\n```"
 - name: addChart(type, sourceData, seriesBy)
   uid: ExcelScript!ExcelScript.Worksheet#addChart:member(1)
   package: ExcelScript!
@@ -429,7 +429,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script duplicates a worksheet named \"Template\". \n * The new worksheet is added after the template.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the worksheet named \"Template\".\n  let template = workbook.getWorksheet(\"Template\");\n\n  // Copy the worksheet.\n  let newSheet = template.copy(\n    ExcelScript.WorksheetPositionType.after,\n    template\n  );\n\n  // Name the worksheet using the current date.\n  let date = new Date(Date.now());\n  newSheet.setName(`${date.toDateString()}`);\n}\n```"
 - name: delete()
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
@@ -659,7 +659,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getFreezePanes:member(1)
   package: ExcelScript!
   fullName: getFreezePanes()
-  summary: Obtient un objet qui peut être utilisé pour manipuler des volets figés sur la feuille de calcul.
+  summary: Obtient un objet qui peut être utilisé pour manipuler des volets figés dans la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -771,7 +771,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getNext:member(1)
   package: ExcelScript!
   fullName: getNext(visibleOnly)
-  summary: Obtient la feuille de calcul qui suit celle-ci. Si aucune feuille de calcul ne suit celle-ci, cette méthode retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient la feuille de calcul qui suit celle-ci. Si aucune feuille de calcul ne suit celle-ci, cette méthode retourne un objet dont la propriété `isNullObject` est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 26571777e8d9e984b3dea653b3e9e85ed7c41166
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: 8d72ac45bf8844897dbdf829fd94f516fbce4bea
+  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003759"
+  ms.lasthandoff: 10/14/2021
+  ms.locfileid: "60355734"
