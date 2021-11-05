@@ -380,6 +380,19 @@ methods:
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script adds a new worksheet named \"Data\" to the workbook.\n * If a worksheet with that name already exists, the script logs a note.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet already exists.\n  if (workbook.getWorksheet(\"Data\")) {\n    console.log(\"The Data worksheet is already in the workbook.\");\n  } else {\n    // Add a new worksheet.\n    let worksheet = workbook.addWorksheet(\"Data\");\n  }\n}\n```"
+- name: breakAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: breakAllLinksToLinkedWorkbooks()
+  summary: Rompt tous les liens vers les workbooks liés. Une fois les liens rompus, toutes les formules référentant des liens de workbook sont entièrement supprimées et remplacées par les valeurs récupérées les plus récentes.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'breakAllLinksToLinkedWorkbooks(): void;'
+    return:
+      type: void
+      description: ''
 - name: getActiveCell()
   uid: ExcelScript!ExcelScript.Workbook#getActiveCell:member(1)
   package: ExcelScript!
@@ -716,7 +729,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getIsDirty:member(1)
   package: ExcelScript!
   fullName: getIsDirty()
-  summary: Spécifie si des modifications ont été apportées depuis le dernier enregistré du manuel. Vous pouvez définir cette propriété si vous souhaitez fermer un livre de travail modifié sans l’enregistrer ou être invité `true` à l’enregistrer.
+  summary: Indique si des modifications ont été apportées depuis le dernier enregistré du manuel. Vous pouvez définir cette propriété si vous souhaitez fermer un livre de travail modifié sans l’enregistrer ou être invité `true` à l’enregistrer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -741,6 +754,49 @@ methods:
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
+      description: ''
+- name: getLinkedWorkbookByUrl(key)
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookByUrl:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookByUrl(key)
+  summary: Obtient des informations sur un workbook lié par son URL. Si le workbook n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookByUrl(key: string): LinkedWorkbook | undefined;'
+    parameters:
+    - id: key
+      description: URL du manuel lié.
+      type: string
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" /> | undefined
+      description: ''
+- name: getLinkedWorkbookRefreshMode()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbookRefreshMode()
+  summary: Représente le mode de mise à jour des liens du workbook. Le mode est le même pour tous les liens debook présents dans le workbook.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbookRefreshMode(): WorkbookLinksRefreshMode;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+      description: ''
+- name: getLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: getLinkedWorkbooks()
+  summary: Renvoie une collection de workbooks liés. Dans les formules, les liens du workbook peuvent être utilisés pour référencer des données (valeurs de cellules et noms) en dehors du workbook actuel.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getLinkedWorkbooks(): LinkedWorkbook[];'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.LinkedWorkbook:interface" />[]
       description: ''
 - name: getName()
   uid: ExcelScript!ExcelScript.Workbook#getName:member(1)
@@ -1120,7 +1176,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1156,6 +1212,19 @@ methods:
   isDeprecated: false
   syntax:
     content: 'refreshAllDataConnections(): void;'
+    return:
+      type: void
+      description: ''
+- name: refreshAllLinksToLinkedWorkbooks()
+  uid: ExcelScript!ExcelScript.Workbook#refreshAllLinksToLinkedWorkbooks:member(1)
+  package: ExcelScript!
+  fullName: refreshAllLinksToLinkedWorkbooks()
+  summary: Effectue une demande d’actualisation de tous les liens dubook.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'refreshAllLinksToLinkedWorkbooks(): void;'
     return:
       type: void
       description: ''
@@ -1277,6 +1346,26 @@ methods:
     return:
       type: void
       description: ''
+- name: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  uid: ExcelScript!ExcelScript.Workbook#setLinkedWorkbookRefreshMode:member(1)
+  package: ExcelScript!
+  fullName: setLinkedWorkbookRefreshMode(linkedWorkbookRefreshMode)
+  summary: Représente le mode de mise à jour des liens du workbook. Le mode est le même pour tous les liens debook présents dans le workbook.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: >-
+      setLinkedWorkbookRefreshMode(
+                  linkedWorkbookRefreshMode: WorkbookLinksRefreshMode
+              ): void;
+    parameters:
+    - id: linkedWorkbookRefreshMode
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.WorkbookLinksRefreshMode:enum" />
+    return:
+      type: void
+      description: ''
 - name: setUsePrecisionAsDisplayed(usePrecisionAsDisplayed)
   uid: ExcelScript!ExcelScript.Workbook#setUsePrecisionAsDisplayed:member(1)
   package: ExcelScript!
@@ -1295,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1861d589a81d75380b4f92bccb13376a263cf6b6
-  ms.sourcegitcommit: 453b3731fa9a0e87412009b01c55142cd361b9cd
+  ms.openlocfilehash: 6639d3d72f5077f3f49c1ad953085ecd684ef599
+  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/14/2021
-  ms.locfileid: "60355755"
+  ms.lasthandoff: 11/05/2021
+  ms.locfileid: "60793365"
