@@ -93,7 +93,7 @@ methods:
   uid: ExcelScript!ExcelScript.AutoFilter#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Renvoie `Range` l’objet qui représente la plage à laquelle le filtre automatique s’applique. Si aucun objet n’est associé au filtre automatique, cette méthode renvoie un objet dont la propriété `Range` `isNullObject` est définie sur `true`<!-- -->.
+  summary: Renvoie l’objet qui représente la plage à laquelle le filtre automatique `Range` s’applique. Si aucun objet `Range` n’est associé au filtre automatique, cette méthode renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -129,9 +129,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: e798066ad83627541c710f23dd17468bc22e9c66
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: f600ab01652e0bc2791c8d73018be8df23ec9b54
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793351"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064828"

@@ -230,7 +230,7 @@ methods:
               ): PivotTableStyle;
     parameters:
     - id: name
-      description: Nom unique du nouveau style de tableau croisé dynamique. Une erreur est `InvalidArgument` alors produite si le nom est déjà en cours d’utilisation.
+      description: Nom unique du nouveau style de tableau croisé dynamique. Cette erreur se `InvalidArgument` lance si le nom est déjà en cours d’utilisation.
       type: string
     - id: makeUniqueName
       description: 'Facultatif. Par défaut : `false`<!-- -->. If `true`<!-- -->, est l’application de nombres au nom afin de le rendre unique, si nécessaire.'
@@ -278,7 +278,7 @@ methods:
       description: Champ de la source de données par le filtre. Il peut `PivotField` s’agit d’un objet, d’un objet, de l’ID d’un ou du `TableColumn` nom ou de `PivotField` l’ID d’une `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit `Worksheet` d’un objet ou du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
+      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit `Worksheet` d’un objet, du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -335,7 +335,7 @@ methods:
     content: 'addTableStyle(name: string, makeUniqueName?: boolean): TableStyle;'
     parameters:
     - id: name
-      description: Nom unique du nouveau style de tableau. Une erreur est `InvalidArgument` alors produite si le nom est déjà en cours d’utilisation.
+      description: Nom unique du nouveau style de tableau. Cette erreur se `InvalidArgument` lance si le nom est déjà en cours d’utilisation.
       type: string
     - id: makeUniqueName
       description: 'Facultatif. Par défaut : `false`<!-- -->. If `true`<!-- -->, est l’application de nombres au nom afin de le rendre unique, si nécessaire.'
@@ -355,7 +355,7 @@ methods:
     content: 'addTimelineStyle(name: string, makeUniqueName?: boolean): TimelineStyle;'
     parameters:
     - id: name
-      description: Nom unique du nouveau style de chronologie. Une erreur est `InvalidArgument` alors produite si le nom est déjà en cours d’utilisation.
+      description: Nom unique du nouveau style de chronologie. Cette erreur se `InvalidArgument` lance si le nom est déjà en cours d’utilisation.
       type: string
     - id: makeUniqueName
       description: 'Facultatif. Par défaut : `false`<!-- -->. If `true`<!-- -->, est l’application de nombres au nom afin de le rendre unique, si nécessaire.'
@@ -410,7 +410,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
   fullName: getActiveChart()
-  summary: Obtient la feuille de calcul active du classeur. S’il n’existe aucun graphique actif, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient la feuille de calcul active du classeur. S’il n’existe aucun graphique actif, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -423,7 +423,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getActiveSlicer:member(1)
   package: ExcelScript!
   fullName: getActiveSlicer()
-  summary: Obtient le segment actif actuel du classeur. S’il n’existe aucun slicer actif, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient le segment actif actuel du classeur. S’il n’existe aucun slicer actif, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -449,7 +449,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getApplication:member(1)
   package: ExcelScript!
   fullName: getApplication()
-  summary: Représente l’instance Excel’application qui contient ce workbook.
+  summary: Représente l’instance Excel’application qui contient ce manuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -475,7 +475,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getBinding:member(1)
   package: ExcelScript!
   fullName: getBinding(id)
-  summary: Obtient un objet de liaison par ID. Si l’objet de liaison n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un objet de liaison par ID. Si l’objet de liaison n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -595,7 +595,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getCustomXmlPart:member(1)
   package: ExcelScript!
   fullName: getCustomXmlPart(id)
-  summary: Obtient une partie XML personnalisée en fonction de son ID. Si `CustomXmlPart` l’objet n’existe pas, cette fonction renvoie un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient une partie XML personnalisée en fonction de son ID. Si ce `CustomXmlPart` n’est pas le cas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -621,7 +621,7 @@ methods:
     content: 'getCustomXmlPartByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: Il doit s’agit d’un URI de schéma complet . par exemple, " http://schemas.contoso.com/review/1.0 « .
+      description: Il doit s’agit d’un URI de schéma complet ; par exemple, " http://schemas.contoso.com/review/1.0 « .
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -651,7 +651,7 @@ methods:
     content: 'getCustomXmlPartsByNamespace(namespaceUri: string): CustomXmlPart[];'
     parameters:
     - id: namespaceUri
-      description: Il doit s’agit d’un URI de schéma complet . par exemple, " http://schemas.contoso.com/review/1.0 « .
+      description: Il doit s’agit d’un URI de schéma complet ; par exemple, " http://schemas.contoso.com/review/1.0 « .
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomXmlPart:interface" />[]
@@ -720,7 +720,7 @@ methods:
     content: 'getFirstWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Facultatif. If `true`<!-- -->, considère uniquement les feuilles de calcul visibles, en ignorer les feuilles masquées.
+      description: Facultatif. If `true`<!-- -->, ne considère que les feuilles de calcul visibles, en ignorer les feuilles masquées.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -750,7 +750,7 @@ methods:
     content: 'getLastWorksheet(visibleOnly?: boolean): Worksheet;'
     parameters:
     - id: visibleOnly
-      description: Facultatif. If `true`<!-- -->, considère uniquement les feuilles de calcul visibles, en ignorer les feuilles masquées.
+      description: Facultatif. If `true`<!-- -->, ne considère que les feuilles de calcul visibles, en ignorer les feuilles masquées.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
@@ -789,7 +789,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getLinkedWorkbooks:member(1)
   package: ExcelScript!
   fullName: getLinkedWorkbooks()
-  summary: Renvoie une collection de workbooks liés. Dans les formules, les liens du workbook peuvent être utilisés pour référencer des données (valeurs de cellules et noms) en dehors du workbook actuel.
+  summary: Renvoie une collection de workbooks liés. Dans les formules, les liens du workbook peuvent être utilisés pour référencer des données (valeurs de cellule et noms) en dehors du workbook actuel.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -815,7 +815,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
   fullName: getNamedItem(name)
-  summary: Obtient un `NamedItem` objet à l’aide de son nom. Si l’objet n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un `NamedItem` objet à l’aide de son nom. Si l’objet n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -845,7 +845,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTable:member(1)
   package: ExcelScript!
   fullName: getPivotTable(name)
-  summary: Obtient un tableau croisé dynamique par nom. Si le tableau croisé dynamique n’existe pas, cette fonction renvoie un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient un tableau croisé dynamique par nom. Si le tableau croisé dynamique n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -875,7 +875,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getPivotTableStyle:member(1)
   package: ExcelScript!
   fullName: getPivotTableStyle(name)
-  summary: Obtient `PivotTableStyle` une par nom. Si `PivotTableStyle` l’objet n’existe pas, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient `PivotTableStyle` une par nom. Si ce `PivotTableStyle` n’est pas le cas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1013,7 +1013,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicer:member(1)
   package: ExcelScript!
   fullName: getSlicer(key)
-  summary: Obtient un slicer à l’aide de son nom ou de son ID. Si le slicer n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un slicer à l’aide de son nom ou de son ID. Si le slicer n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1043,7 +1043,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getSlicerStyle:member(1)
   package: ExcelScript!
   fullName: getSlicerStyle(name)
-  summary: Obtient `SlicerStyle` une par nom. Si le style du slicer n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient `SlicerStyle` une par nom. Si le style du slicer n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1073,7 +1073,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTable:member(1)
   package: ExcelScript!
   fullName: getTable(key)
-  summary: Obtient un tableau à l’aide de son nom ou de son ID. Si le tableau n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient un tableau à l’aide de son nom ou de son ID. Si le tableau n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1103,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTableStyle:member(1)
   package: ExcelScript!
   fullName: getTableStyle(name)
-  summary: Obtient `TableStyle` une par nom. Si le style de tableau n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient `TableStyle` une par nom. Si le style de tableau n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1133,7 +1133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getTimelineStyle:member(1)
   package: ExcelScript!
   fullName: getTimelineStyle(name)
-  summary: Obtient `TimelineStyle` une par nom. Si le style de chronologie n’existe pas, cette fonction retourne un objet dont la `isNullObject` propriété est définie sur `true`<!-- -->.
+  summary: Obtient `TimelineStyle` une par nom. Si le style de chronologie n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1176,7 +1176,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet(key)
-  summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, cette fonction retourne un objet dont `isNullObject` la propriété est définie sur `true`<!-- -->.
+  summary: Obtient un objet de feuille de calcul à l’aide de son nom ou de son ID. Si la feuille de calcul n’existe pas, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1333,7 +1333,7 @@ methods:
   uid: ExcelScript!ExcelScript.Workbook#setIsDirty:member(1)
   package: ExcelScript!
   fullName: setIsDirty(isDirty)
-  summary: Spécifie si des modifications ont été apportées depuis le dernier enregistré du manuel. Vous pouvez définir cette propriété si vous souhaitez fermer un livre de travail modifié sans l’enregistrer ou être invité `true` à l’enregistrer.
+  summary: Indique si des modifications ont été apportées depuis le dernier enregistré du manuel. Vous pouvez définir cette propriété si vous souhaitez fermer un livre de travail modifié sans l’enregistrer ou être invité `true` à l’enregistrer.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6639d3d72f5077f3f49c1ad953085ecd684ef599
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: 253c69d6b18673802e35526c93056f0640cf8fbd
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793365"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064786"

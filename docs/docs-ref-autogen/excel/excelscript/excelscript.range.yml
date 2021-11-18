@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#addConditionalFormat:member(1)
   package: ExcelScript!
   fullName: addConditionalFormat(type)
-  summary: Ajoute un nouveau format conditionnel à la collection à la priorité première/supérieure.
+  summary: Ajoute un nouveau format conditionnel à la collection à la première/priorité supérieure.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#autoFill:member(1)
   package: ExcelScript!
   fullName: autoFill(destinationRange, autoFillType)
-  summary: Remplit les plages de la plage actuelle à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être `null`<!-- -->ou peut étendre la source horizontalement ou verticalement. Les plages nonigues ne sont pas pris en charge.
+  summary: Remplit la plage actuelle à la plage de destination à l’aide de la logique de remplissage automatique spécifiée. La plage de destination peut être `null`<!-- -->ou peut étendre la source horizontalement ou verticalement. Les plages nonigues ne sont pas pris en charge.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d’une plage rectangulaire.
+      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, son formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d’une plage rectangulaire.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: Type de données de cellule ou de mise en forme à copier. La valeur par défaut est « All ».
@@ -212,7 +212,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getAddress:member(1)
   package: ExcelScript!
   fullName: getAddress()
-  summary: Spécifie la référence de plage en style A1. La valeur d’adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
+  summary: Spécifie la référence de plage dans le style A1. La valeur d’adresse contient la référence de feuille (par exemple, « Feuille1 ! A1:B4 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -460,7 +460,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getExtendedRange:member(1)
   package: ExcelScript!
   fullName: getExtendedRange(direction, activeCell)
-  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu’au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement de touche Ctrl+Shift+Flèche dans la Excel sur Windows’interface utilisateur.
+  summary: Renvoie un objet de plage qui inclut la plage actuelle et jusqu’au bord de la plage, en fonction de la direction fournie. Cela correspond au comportement des touches Ctrl+Shift+Flèche dans la Excel sur Windows’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -601,7 +601,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getHidden:member(1)
   package: ExcelScript!
   fullName: getHidden()
-  summary: Représente si toutes les cellules de la plage actuelle sont masquées. La valeur `true` est lorsque toutes les cellules d’une plage sont masquées. La valeur `false` est lorsque aucune cellule de la plage n’est masquée. La valeur `null` est lorsque certaines cellules d’une plage sont masquées et que d’autres cellules de la même plage ne le sont pas.
+  summary: Représente si toutes les cellules de la plage actuelle sont masquées. La valeur est `true` lorsque toutes les cellules d’une plage sont masquées. La valeur `false` est lorsque aucune cellule de la plage n’est masquée. La valeur `null` est lorsque certaines cellules d’une plage sont masquées et que d’autres cellules de la même plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -627,7 +627,11 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getImage:member(1)
   package: ExcelScript!
   fullName: getImage()
-  summary: Restituer la plage en tant qu’image png codée en base 64.
+  summary: >-
+    Restituer la plage en tant qu’image png codée en base 64.
+
+
+    **Remarque**: il existe un problème connu qui entraîne l’habillage du texte ou du texte qui dépasse la largeur de la cellule pour s’restituer sur la même ligne sans habillage `Range.getImage` de ligne. Cela rend l’image résultante illisible, car le texte déborde sur toute la ligne. En solution de contournement, assurez-vous que les données de la plage s’intègrent dans chacune des cellules sous la même ligne.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -774,7 +778,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getNumberFormat:member(1)
   package: ExcelScript!
   fullName: getNumberFormat()
-  summary: Représente le code Excel format numérique de la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
+  summary: Représente le code de format Excel cellule pour la plage donnée. Si la plage contient plusieurs cellules, les données de la première cellule (représentées par l’index de ligne 0 et l’index de colonne de 0) sont renvoyées.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -902,7 +906,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getRangeEdge:member(1)
   package: ExcelScript!
   fullName: getRangeEdge(direction, activeCell)
-  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond à la direction fournie. Cela correspond au comportement de touche Ctrl+Flèche dans la Excel sur Windows’interface utilisateur.
+  summary: Renvoie un objet de plage qui est la cellule edge de la zone de données qui correspond au sens fourni. Cela correspond au comportement de la touche Ctrl+Flèche dans la Excel sur Windows’interface utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1086,7 +1090,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillingToRange:member(1)
   package: ExcelScript!
   fullName: getSpillingToRange()
-  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n’est pas une cellule d’ancrage ou si la plage de débordement est in trouver, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient l’objet de la plage contenant la plage renversé lorsque appelée sur une cellule d’ancrage. Si la plage n’est pas une cellule d’ancrage ou si la plage de débordement est in trouvée, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1099,7 +1103,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#getSpillParent:member(1)
   package: ExcelScript!
   fullName: getSpillParent()
-  summary: Obtient l’objet de plage contenant la cellule d’ancrage de la cellule dans laquelle la cellule est étendue. S’il ne s’agit pas d’une cellule en débordement ou si plusieurs cellules sont données, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient l’objet de plage contenant la cellule d’ancrage de la cellule dans laquelle la cellule est répandu. S’il ne s’agit pas d’une cellule en débordement ou si plusieurs cellules sont données, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1439,7 +1443,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setColumnHidden:member(1)
   package: ExcelScript!
   fullName: setColumnHidden(columnHidden)
-  summary: Représente si toutes les colonnes de la plage actuelle sont masquées. La valeur est `true` lorsque toutes les colonnes d’une plage sont masquées. La valeur `false` est lorsque aucune colonne de la plage n’est masquée. La valeur `null` est lorsque certaines colonnes d’une plage sont masquées et que d’autres colonnes de la même plage ne le sont pas.
+  summary: Représente si toutes les colonnes de la plage actuelle sont masquées. La valeur est `true` lorsque toutes les colonnes d’une plage sont masquées. La valeur `false` est lorsqu’aucune colonne de la plage n’est masquée. La valeur `null` est lorsque certaines colonnes d’une plage sont masquées et que d’autres colonnes de la même plage ne le sont pas.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1469,7 +1473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Range#setFormula:member(1)
   package: ExcelScript!
   fullName: setFormula(formula)
-  summary: Définit la formule de cellule en notation de style A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
+  summary: Définit la formule de cellule en notation de type A1. Si la plage contient plusieurs cellules, chaque cellule de la plage donnée est mise à jour avec les données d’entrée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1781,9 +1785,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6f92ae14072075e94e23da505d833044859315ff
-  ms.sourcegitcommit: 279af9e14fb2bf9e0d54a7e3ead0e3c4ca4164e8
+  ms.openlocfilehash: d3769fc5b4b2da492a94ed9a151f9eeba68791b9
+  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/05/2021
-  ms.locfileid: "60793379"
+  ms.lasthandoff: 11/17/2021
+  ms.locfileid: "61064905"
