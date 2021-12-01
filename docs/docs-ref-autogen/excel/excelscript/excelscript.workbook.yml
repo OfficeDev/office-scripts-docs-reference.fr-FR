@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.Workbook:interface
 package: ExcelScript!
 fullName: ExcelScript.Workbook
 summary: Le workbook est l’objet de niveau supérieur qui contient des objets connexes tels que des feuilles de calcul, des tableaux et des plages.
-remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script adds a new worksheet to the workbook, then switches to it.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add a new worksheet with the default name.\n  let worksheet = workbook.addWorksheet();\n\n  // Switch focus to the new worksheet.\n  worksheet.activate();\n}\n```"
+remarks: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script adds a new worksheet to the workbook, then switches to it.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Add a new worksheet with the default name.\n  let worksheet = workbook.addWorksheet();\n\n  // Switch focus to the new worksheet.\n  worksheet.activate();\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -213,7 +213,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to an existing worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n * It also assumes there is a worksheet named \"PivotSheet\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n  let pivotTable = workbook.addPivotTable(\"My Pivot\", table, \"PivotSheet!A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
 - name: addPivotTableStyle(name, makeUniqueName)
   uid: ExcelScript!ExcelScript.Workbook#addPivotTableStyle:member(1)
   package: ExcelScript!
@@ -379,7 +379,7 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script adds a new worksheet named \"Data\" to the workbook.\n * If a worksheet with that name already exists, the script logs a note.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet already exists.\n  if (workbook.getWorksheet(\"Data\")) {\n    console.log(\"The Data worksheet is already in the workbook.\");\n  } else {\n    // Add a new worksheet.\n    let worksheet = workbook.addWorksheet(\"Data\");\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script adds a new worksheet named \"Data\" to the workbook.\n * If a worksheet with that name already exists, the script logs a note.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet already exists.\n  if (workbook.getWorksheet(\"Data\")) {\n    console.log(\"The Data worksheet is already in the workbook.\");\n  } else {\n    // Add a new worksheet.\n    let worksheet = workbook.addWorksheet(\"Data\");\n  }\n}\n```"
 - name: breakAllLinksToLinkedWorkbooks()
   uid: ExcelScript!ExcelScript.Workbook#breakAllLinksToLinkedWorkbooks:member(1)
   package: ExcelScript!
@@ -405,7 +405,7 @@ methods:
     content: 'getActiveCell(): Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script logs the value of the current active cell. \n * If multiple cells are selected, the top-leftmost cell will be logged.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current active cell in the workbook.\n  let cell = workbook.getActiveCell();\n  console.log(`The current cell's value is ${cell.getValue()}`);\n}\n```"
 - name: getActiveChart()
   uid: ExcelScript!ExcelScript.Workbook#getActiveChart:member(1)
   package: ExcelScript!
@@ -810,7 +810,7 @@ methods:
     content: 'getName(): string;'
     return:
       type: string
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script logs the name of the workbook without the \".xlsx\" extension.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the workbook's name.\n  let name = workbook.getName();\n\n  // Remove the file extension.\n  name = name.substring(0, name.lastIndexOf(\".xlsx\"));\n\n  // Display the name in the console.\n  console.log(name);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script logs the name of the workbook without the \".xlsx\" extension.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the workbook's name.\n  let name = workbook.getName();\n\n  // Remove the file extension.\n  name = name.substring(0, name.lastIndexOf(\".xlsx\"));\n\n  // Display the name in the console.\n  console.log(name);\n}\n```"
 - name: getNamedItem(name)
   uid: ExcelScript!ExcelScript.Workbook#getNamedItem:member(1)
   package: ExcelScript!
@@ -1188,7 +1188,7 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" /> | undefined
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script switches the active view to a worksheet named \"Data\", if it exists.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet exists.\n  let dataWorksheet = workbook.getWorksheet(\"Data\");\n  if (dataWorksheet) {\n    // Switch to the \"Data\" worksheet.\n    dataWorksheet.activate();\n  } else {\n    console.log(`No worksheet named \"Data\" in this workbook.`);\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script switches the active view to a worksheet named \"Data\", if it exists.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet exists.\n  let dataWorksheet = workbook.getWorksheet(\"Data\");\n  if (dataWorksheet) {\n    // Switch to the \"Data\" worksheet.\n    dataWorksheet.activate();\n  } else {\n    console.log(`No worksheet named \"Data\" in this workbook.`);\n  }\n}\n```"
 - name: getWorksheets()
   uid: ExcelScript!ExcelScript.Workbook#getWorksheets:member(1)
   package: ExcelScript!
@@ -1201,7 +1201,7 @@ methods:
     content: 'getWorksheets(): Worksheet[];'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />[]
-      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script logs the names of all the worksheets in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n\n  // Get a list of all the worksheet names.\n  let names = sheets.map ((sheet) => sheet.getName());\n\n  // Write in the console all the worksheet names and the total count.\n  console.log(names);\n  console.log(`Total worksheets inside of this workbook: ${sheets.length}`);\n}\n```"
 - name: refreshAllDataConnections()
   uid: ExcelScript!ExcelScript.Workbook#refreshAllDataConnections:member(1)
   package: ExcelScript!
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 253c69d6b18673802e35526c93056f0640cf8fbd
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 0cf6be7bea44595eb8cdce4d1000268f330f9073
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064786"
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240611"

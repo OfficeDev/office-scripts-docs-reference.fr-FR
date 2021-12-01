@@ -1,47 +1,54 @@
 ### YamlMime:TSType
 name: ExcelScript.SearchCriteria
-uid: 'ExcelScript!ExcelScript.SearchCriteria:interface'
+uid: ExcelScript!ExcelScript.SearchCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.SearchCriteria
 summary: Représente les critères de recherche à utiliser.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script searches for the next instance of the text \"TK\" on the current worksheet.\n * It then selects that cell and removes \"TK\" and all formatting from the cell.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current worksheet.\n  let range = workbook.getActiveWorksheet().getUsedRange();\n\n  // Get the next cell that contains \"TK\".\n  let tkCell = range.find(\"TK\", {\n    completeMatch: true, /* Don't match if the cell text only contains \"TK\" as part of another string. */\n    matchCase: false,\n    searchDirection: ExcelScript.SearchDirection.forward /* Start at the beginning of the range and go to later columns and rows. */\n  });\n\n  // Set focus on the found cell.\n  tkCell.select();\n\n  // Remove the \"TK\" text value from the cell, as well as any formatting that may have been added.\n  tkCell.clear(ExcelScript.ClearApplyTo.all);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: completeMatch
-    uid: 'ExcelScript!ExcelScript.SearchCriteria#completeMatch:member'
-    package: ExcelScript!
-    fullName: completeMatch
-    summary: 'Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l’intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type: boolean
-  - name: matchCase
-    uid: 'ExcelScript!ExcelScript.SearchCriteria#matchCase:member'
-    package: ExcelScript!
-    fullName: matchCase
-    summary: Spécifie si la correspondance est sensible à la cas. La valeur `false` par défaut est (ne sensible à la cas).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type: boolean
-  - name: searchDirection
-    uid: 'ExcelScript!ExcelScript.SearchCriteria#searchDirection:member'
-    package: ExcelScript!
-    fullName: searchDirection
-    summary: Détermine le sens de la recherche. Par défaut est transférer. Voir `ExcelScript.SearchDirection`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'searchDirection?: SearchDirection;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />'
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.SearchCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l’intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+- name: matchCase
+  uid: ExcelScript!ExcelScript.SearchCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: Spécifie si la correspondance est sensible à la cas. La valeur `false` par défaut est (ne pas sensible à la cas).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+- name: searchDirection
+  uid: ExcelScript!ExcelScript.SearchCriteria#searchDirection:member
+  package: ExcelScript!
+  fullName: searchDirection
+  summary: Détermine le sens de la recherche. Par défaut est transférer. Voir `ExcelScript.SearchDirection`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'searchDirection?: SearchDirection;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.SearchDirection:enum" />
+metadata:
+  ms.openlocfilehash: bb362830b20602d07ce046b465a4d6f2936dcd53
+  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 12/01/2021
+  ms.locfileid: "61240632"
