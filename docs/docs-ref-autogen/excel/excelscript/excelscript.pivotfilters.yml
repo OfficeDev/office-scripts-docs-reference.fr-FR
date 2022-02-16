@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.PivotFilters
-uid: 'ExcelScript!ExcelScript.PivotFilters:interface'
+uid: ExcelScript!ExcelScript.PivotFilters:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotFilters
 summary: Interface représentant tous les filtres de tableau croisé dynamique actuellement appliqués à un champ de tableau croisé dynamique donné.
@@ -9,51 +9,59 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: dateFilter
-    uid: 'ExcelScript!ExcelScript.PivotFilters#dateFilter:member'
-    package: ExcelScript!
-    fullName: dateFilter
-    summary: Filtre de date actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'dateFilter?: PivotDateFilter;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotDateFilter:interface" />'
-  - name: labelFilter
-    uid: 'ExcelScript!ExcelScript.PivotFilters#labelFilter:member'
-    package: ExcelScript!
-    fullName: labelFilter
-    summary: Filtre d’étiquette actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'labelFilter?: PivotLabelFilter;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotLabelFilter:interface" />'
-  - name: manualFilter
-    uid: 'ExcelScript!ExcelScript.PivotFilters#manualFilter:member'
-    package: ExcelScript!
-    fullName: manualFilter
-    summary: Filtre manuel actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'manualFilter?: PivotManualFilter;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotManualFilter:interface" />'
-  - name: valueFilter
-    uid: 'ExcelScript!ExcelScript.PivotFilters#valueFilter:member'
-    package: ExcelScript!
-    fullName: valueFilter
-    summary: Filtre de valeurs actuellement appliqué au champ de tableau croisé dynamique. Cette propriété `null` s’applique si aucun filtre de valeur n’est appliqué.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'valueFilter?: PivotValueFilter;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />'
+- name: dateFilter
+  uid: ExcelScript!ExcelScript.PivotFilters#dateFilter:member
+  package: ExcelScript!
+  fullName: dateFilter
+  summary: Filtre de date actuellement appliqué au champ de tableau croisé dynamique. Cette propriété s’applique `null` si aucun filtre de valeur n’est appliqué.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'dateFilter?: PivotDateFilter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotDateFilter:interface" />
+- name: labelFilter
+  uid: ExcelScript!ExcelScript.PivotFilters#labelFilter:member
+  package: ExcelScript!
+  fullName: labelFilter
+  summary: Filtre d’étiquettes actuellement appliqué au champ de tableau croisé dynamique. Cette propriété s’applique `null` si aucun filtre de valeur n’est appliqué.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'labelFilter?: PivotLabelFilter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotLabelFilter:interface" />
+- name: manualFilter
+  uid: ExcelScript!ExcelScript.PivotFilters#manualFilter:member
+  package: ExcelScript!
+  fullName: manualFilter
+  summary: Filtre manuel actuellement appliqué au champ de tableau croisé dynamique. Cette propriété s’applique `null` si aucun filtre de valeur n’est appliqué.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'manualFilter?: PivotManualFilter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotManualFilter:interface" />
+- name: valueFilter
+  uid: ExcelScript!ExcelScript.PivotFilters#valueFilter:member
+  package: ExcelScript!
+  fullName: valueFilter
+  summary: Filtre de valeurs actuellement appliqué au champ de tableau croisé dynamique. Cette propriété s’applique `null` si aucun filtre de valeur n’est appliqué.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'valueFilter?: PivotValueFilter;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.PivotValueFilter:interface" />
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script applies a PivotValueFilter to the first row hierarchy in the PivotTable.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the PivotTable on the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let pivotTable = sheet.getPivotTables()[0];\n\n  // Get the first row hierarchy to use as the field which gets filtered.\n  let rowHierarchy = pivotTable.getRowHierarchies()[0];\n\n  // Get the first data hierarchy to use as the values for filtering the rows.\n  let dataHierarchy = pivotTable.getDataHierarchies()[0];\n\n  // Create a filter that excludes values greater than 500.\n  let filter: ExcelScript.PivotValueFilter = {\n    condition: ExcelScript.ValueFilterCondition.greaterThan,\n    comparator: 500,\n    value: dataHierarchy.getName()\n  };\n\n  // Apply the filter.\n  rowHierarchy.getPivotField(rowHierarchy.getName()).applyFilter({\n    valueFilter: filter\n  });\n}\n```"
+metadata:
+  ms.openlocfilehash: dbf3d43443519967afa22f78d8b3f7fd07a25fa6
+  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 02/16/2022
+  ms.locfileid: "62857292"
