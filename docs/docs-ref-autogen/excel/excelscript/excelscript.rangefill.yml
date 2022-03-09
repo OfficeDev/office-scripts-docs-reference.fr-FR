@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeFill:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFill
 summary: Représente l’arrière-plan d’un objet de plage.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script sets the fill color of the used range to green.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeFill object.\n  let fill = usedRange.getFormat().getFill();\n\n  // Set the fill color to green.\n  fill.setColor(\"green\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,12 +21,12 @@ methods:
     content: 'clear(): void;'
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script removes all fill color and styles from the used range.\n */\nfunction main(workbook: ExcelScript.Workbook)\n{\n  // Get the used range of the current worksheet.\n  let currentSheet = workbook.getActiveWorksheet();\n  let usedRange = currentSheet.getUsedRange();\n\n  // Clear the fill from the entire range.\n  usedRange.getFormat().getFill().clear();\n}\n```"
 - name: getColor()
   uid: ExcelScript!ExcelScript.RangeFill#getColor:member(1)
   package: ExcelScript!
   fullName: getColor()
-  summary: Code couleur HTML représentant la couleur d’arrière-plan, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur d’arrière-plan, \#au format RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPattern:member(1)
   package: ExcelScript!
   fullName: getPattern()
-  summary: Motif d’une plage. Pour `ExcelScript.FillPattern` plus d’informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur indique que la plage entière `null` n’a pas de paramètre de motif uniforme.
+  summary: Motif d’une plage. Pour plus `ExcelScript.FillPattern` d’informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une `null` valeur indique que la plage entière n’a pas de paramètre de motif uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternColor:member(1)
   package: ExcelScript!
   fullName: getPatternColor()
-  summary: Code couleur HTML représentant la couleur du modèle de plage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur du modèle de plage, \#au format RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: getPatternTintAndShade()
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `patternTintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de paramètres uniformes `patternTintAndShade` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#getTintAndShade:member(1)
   package: ExcelScript!
   fullName: getTintAndShade()
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `tintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de paramètres uniformes `tintAndShade` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setColor:member(1)
   package: ExcelScript!
   fullName: setColor(color)
-  summary: Code couleur HTML représentant la couleur d’arrière-plan, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur d’arrière-plan, \#au format RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -108,7 +108,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPattern:member(1)
   package: ExcelScript!
   fullName: setPattern(pattern)
-  summary: Motif d’une plage. Pour `ExcelScript.FillPattern` plus d’informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une valeur indique que la plage entière `null` n’a pas de paramètre de motif uniforme.
+  summary: Motif d’une plage. Pour plus `ExcelScript.FillPattern` d’informations, voir. LinearGradient et RectangularGradient ne sont pas pris en charge. Une `null` valeur indique que la plage entière n’a pas de paramètre de motif uniforme.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -125,7 +125,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternColor:member(1)
   package: ExcelScript!
   fullName: setPatternColor(patternColor)
-  summary: Code couleur HTML représentant la couleur du modèle de plage, au format \# RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
+  summary: Code couleur HTML représentant la couleur du modèle de plage, \#au format RRGGBB (par exemple, « FFA500 ») ou sous forme de couleur HTML nommée (par exemple, « orange »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -142,7 +142,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setPatternTintAndShade:member(1)
   package: ExcelScript!
   fullName: setPatternTintAndShade(patternTintAndShade)
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `patternTintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur de motif pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de paramètres uniformes `patternTintAndShade` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -159,7 +159,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeFill#setTintAndShade:member(1)
   package: ExcelScript!
   fullName: setTintAndShade(tintAndShade)
-  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de `tintAndShade` paramètres uniformes.
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour le remplissage de la plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage n’a pas de paramètres uniformes `tintAndShade` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -173,9 +173,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 50a9ed8476ce3f2bbcc2d8a3209cec35097a6657
-  ms.sourcegitcommit: b862905bd3ed886880931647f7c164ae908cb1cd
+  ms.openlocfilehash: a6ffc69ccf2ef802d028fb2df60ca6e4a752c352
+  ms.sourcegitcommit: 95d4c3dc3d1a6a84b10430cfe796f4d883d5dbf4
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/29/2021
-  ms.locfileid: "60003728"
+  ms.lasthandoff: 03/09/2022
+  ms.locfileid: "63391609"
