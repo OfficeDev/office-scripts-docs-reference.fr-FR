@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.Worksheet:interface
 package: ExcelScript!
 fullName: ExcelScript.Worksheet
 summary: Une feuille de calcul Excel est une grille de cellules. Elle peut contenir des données, des tableaux, des graphiques, etc.
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script creates a new worksheet named \"Plum\" and sets its tab color to purple.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const newSheet = workbook.addWorksheet(\"Plum\")\n  newSheet.setTabColor(\"purple\");\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ methods:
     content: 'activate(): void;'
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script switches the active view to a worksheet named \"Data\", if it exists.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet exists.\n  let dataWorksheet = workbook.getWorksheet(\"Data\");\n  if (dataWorksheet) {\n    // Switch to the \"Data\" worksheet.\n    dataWorksheet.activate();\n  } else {\n    console.log(`No worksheet named \"Data\" in this workbook.`);\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script switches the active view to a worksheet named \"Data\", if it exists.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Check if the \"Data\" worksheet exists.\n  let dataWorksheet = workbook.getWorksheet(\"Data\");\n  if (dataWorksheet) {\n    // Switch to the \"Data\" worksheet.\n    dataWorksheet.activate();\n  } else {\n    console.log(`No worksheet named \"Data\" in this workbook.`);\n  }\n}\n```"
 - name: addChart(type, sourceData, seriesBy)
   uid: ExcelScript!ExcelScript.Worksheet#addChart:member(1)
   package: ExcelScript!
@@ -39,17 +39,17 @@ methods:
               ): Chart;
     parameters:
     - id: type
-      description: Représente le type d’un graphique. Pour `ExcelScript.ChartType` plus d’informations, voir.
+      description: Représente le type d’un graphique. Pour plus `ExcelScript.ChartType` d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ChartType:enum" />
     - id: sourceData
       description: Objet `Range` correspondant aux données sources.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
     - id: seriesBy
-      description: Facultatif. Spécifie la façon dont les colonnes ou les lignes sont utilisées comme séries de données sur le graphique. Pour `ExcelScript.ChartSeriesBy` plus d’informations, voir.
+      description: Facultatif. Spécifie la façon dont les colonnes ou les lignes sont utilisées comme séries de données sur le graphique. Pour plus `ExcelScript.ChartSeriesBy` d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ChartSeriesBy:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Chart:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This sample creates a column-clustered chart based on the current worksheet's data.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the data range.\n  let range = selectedSheet.getUsedRange();\n\n  // Insert a chart using the data on the current worksheet.\n  let chart = selectedSheet.addChart(ExcelScript.ChartType.columnClustered, range);\n\n  // Name the chart for easy access in other scripts.\n  chart.setName(\"ColumnChart\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample creates a column-clustered chart based on the current worksheet's data.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the data range.\n  let range = selectedSheet.getUsedRange();\n\n  // Insert a chart using the data on the current worksheet.\n  let chart = selectedSheet.addChart(ExcelScript.ChartType.columnClustered, range);\n\n  // Name the chart for easy access in other scripts.\n  chart.setName(\"ColumnChart\");\n}\n```"
 - name: addComment(cellAddress, content, contentType)
   uid: ExcelScript!ExcelScript.Worksheet#addComment:member(1)
   package: ExcelScript!
@@ -67,10 +67,10 @@ methods:
               ): Comment;
     parameters:
     - id: cellAddress
-      description: Cellule à laquelle le commentaire est ajouté. Il peut s’agit `Range` d’un objet ou d’une chaîne. S’il s’agit d’une chaîne, elle doit contenir l’adresse complète, y compris le nom de la feuille. Une `InvalidArgument` erreur est lancée si la plage fournie est supérieure à une cellule.
+      description: Cellule à laquelle le commentaire est ajouté. Il peut s’agit d’un `Range` objet ou d’une chaîne. S’il s’agit d’une chaîne, elle doit contenir l’adresse complète, y compris le nom de la feuille. Une `InvalidArgument` erreur est lancée si la plage fournie est supérieure à une cellule.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: content
-      description: Contenu du commentaire. Il peut s’agit d’une chaîne ou `CommentRichContent` d’un objet. Les chaînes sont utilisées pour le texte simple. `CommentRichContent` permettent d’autres fonctionnalités de commentaire, telles que les mentions.
+      description: Contenu du commentaire. Il peut s’agit d’une chaîne ou d’un `CommentRichContent` objet. Les chaînes sont utilisées pour le texte simple. `CommentRichContent` permettent d’autres fonctionnalités de commentaire, telles que les mentions.
       type: <xref uid="ExcelScript!ExcelScript.CommentRichContent:interface" /> | string
     - id: contentType
       description: Facultatif. Type de contenu contenu dans le commentaire. La valeur par défaut est enum `ContentType.Plain`<!-- -->.
@@ -90,7 +90,7 @@ methods:
     content: 'addGeometricShape(geometricShapeType: GeometricShapeType): Shape;'
     parameters:
     - id: geometricShapeType
-      description: Représente le type de la forme géométrique. Pour `ExcelScript.GeometricShapeType` plus d’informations, voir.
+      description: Représente le type de la forme géométrique. Pour plus `ExcelScript.GeometricShapeType` d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.GeometricShapeType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -133,7 +133,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#addImage:member(1)
   package: ExcelScript!
   fullName: addImage(base64ImageString)
-  summary: Crée une image à partir d’une chaîne en base 64 et il est ajouté à la feuille de calcul. Renvoie `Shape` l’objet qui représente la nouvelle image.
+  summary: Crée une image à partir d’une chaîne en base 64 et il est ajouté à la feuille de calcul. Renvoie l’objet `Shape` qui représente la nouvelle image.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -145,7 +145,7 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```typescript\n/**\n * This sample copies an image from a URL. This could be used to copy photos that a colleague stored in a shared folder to a related workbook.\n */\nasync function main(workbook: ExcelScript.Workbook) {\n  // Fetch the image from a URL.\n  const link = \"https://raw.githubusercontent.com/OfficeDev/office-scripts-docs/master/docs/images/git-octocat.png\";\n  const response = await fetch(link);\n\n  // Store the response as an ArrayBuffer, since it is a raw image file.\n  const data = await response.arrayBuffer();\n\n  // Convert the image data into a base64-encoded string.\n  const image = convertToBase64(data);\n\n  // Add the image to the current worksheet.\n  workbook.getActiveWorksheet().addImage(image)\n}\n\n/**\n * Converts an ArrayBuffer containing a .png image into a base64-encoded string.\n */\nfunction convertToBase64(input: ArrayBuffer) {\n  const uInt8Array = new Uint8Array(input);\n  const count = uInt8Array.length;\n\n  // Allocate the necessary space up front.\n  const charCodeArray = new Array(count) \n  \n  // Convert every entry in the array to a character.\n  for (let i = count; i >= 0; i--) { \n    charCodeArray[i] = String.fromCharCode(uInt8Array[i]);\n  }\n\n  // Convert the characters to base64.\n  const base64 = btoa(charCodeArray.join(''));\n  return base64;\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```typescript\n/**\n * This sample copies an image from a URL. This could be used to copy photos that a colleague stored in a shared folder to a related workbook.\n */\nasync function main(workbook: ExcelScript.Workbook) {\n  // Fetch the image from a URL.\n  const link = \"https://raw.githubusercontent.com/OfficeDev/office-scripts-docs/master/docs/images/git-octocat.png\";\n  const response = await fetch(link);\n\n  // Store the response as an ArrayBuffer, since it is a raw image file.\n  const data = await response.arrayBuffer();\n\n  // Convert the image data into a base64-encoded string.\n  const image = convertToBase64(data);\n\n  // Add the image to the current worksheet.\n  workbook.getActiveWorksheet().addImage(image)\n}\n\n/**\n * Converts an ArrayBuffer containing a .png image into a base64-encoded string.\n */\nfunction convertToBase64(input: ArrayBuffer) {\n  const uInt8Array = new Uint8Array(input);\n  const count = uInt8Array.length;\n\n  // Allocate the necessary space up front.\n  const charCodeArray = new Array(count) \n  \n  // Convert every entry in the array to a character.\n  for (let i = count; i >= 0; i--) { \n    charCodeArray[i] = String.fromCharCode(uInt8Array[i]);\n  }\n\n  // Convert the characters to base64.\n  const base64 = btoa(charCodeArray.join(''));\n  return base64;\n}\n```"
 - name: addLine(startLeft, startTop, endLeft, endTop, connectorType)
   uid: ExcelScript!ExcelScript.Worksheet#addLine:member(1)
   package: ExcelScript!
@@ -177,7 +177,7 @@ methods:
       description: Distance, en points, entre la fin de la ligne et le haut de la feuille de calcul.
       type: number
     - id: connectorType
-      description: Représente le type de connecteur. Pour `ExcelScript.ConnectorType` plus d’informations, voir.
+      description: Représente le type de connecteur. Pour plus `ExcelScript.ConnectorType` d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ConnectorType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Shape:interface" />
@@ -282,7 +282,7 @@ methods:
       type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n\n  // Switch to the new worksheet.\n  newSheet.activate();\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to a new worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n\n  // Add the PivotTable to a new worksheet.\n  let newSheet = workbook.addWorksheet(\"Pivot\");\n  let pivotTable = newSheet.addPivotTable(\"My Pivot\", table, \"A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n\n  // Switch to the new worksheet.\n  newSheet.activate();\n}\n```"
 - name: addSlicer(slicerSource, sourceField, slicerDestination)
   uid: ExcelScript!ExcelScript.Worksheet#addSlicer:member(1)
   package: ExcelScript!
@@ -300,13 +300,13 @@ methods:
               ): Slicer;
     parameters:
     - id: slicerSource
-      description: Source de données sur qui le nouveau slicer sera basé. Il peut `PivotTable` s’agit d’un `Table` objet, d’un objet ou d’une chaîne. Lorsqu’un objet de tableau croisé dynamique est transmis, la source de données est la source de `PivotTable` l’objet. `Table`Lorsqu’un objet est transmis, la source de données est `Table` l’objet. Lorsqu’une chaîne est passée, elle est interprétée comme le nom ou l’ID d’un tableau ou d’un tableau croisé dynamique.
+      description: Source de données sur qui le nouveau slicer sera basé. Il peut s’agit d’un `PivotTable` objet, d’un `Table` objet ou d’une chaîne. Lorsqu’un objet de tableau croisé dynamique est transmis, la source de données est la source de l’objet `PivotTable` . Lorsqu’un `Table` objet est transmis, la source de données est l’objet `Table` . Lorsqu’une chaîne est passée, elle est interprétée comme le nom ou l’ID d’un tableau ou d’un tableau croisé dynamique.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotTable:interface" /> | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: sourceField
-      description: Champ de la source de données par le filtre. Il peut `PivotField` s’agit d’un objet, d’un objet, de l’ID d’un ou du `TableColumn` nom ou de `PivotField` l’ID d’une `TableColumn`<!-- -->.
+      description: Champ de la source de données par le filtre. Il peut s’agit d’un `PivotField` objet, d’un `TableColumn` objet, de l’ID d’un `PivotField` ou du nom ou de l’ID d’une `TableColumn`<!-- -->.
       type: string | <xref uid="ExcelScript!ExcelScript.PivotField:interface" /> | number | <xref uid="ExcelScript!ExcelScript.TableColumn:interface" />
     - id: slicerDestination
-      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit `Worksheet` d’un objet, du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
+      description: Facultatif. Feuille de calcul dans laquelle le nouveau slicer sera créé. Il peut s’agit d’un `Worksheet` objet, du nom ou de l’ID d’une feuille de calcul. Ce paramètre peut être omis si la collection de slicers est récupérée à partir d’une feuille de calcul.
       type: string | <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Slicer:interface" />
@@ -323,14 +323,14 @@ methods:
     content: 'addTable(address: Range | string, hasHeaders: boolean): Table;'
     parameters:
     - id: address
-      description: Objet, `Range` ou adresse de chaîne ou nom de la plage représentant la source de données. Si l’adresse ne contient pas de nom de feuille, la feuille ouverte est utilisée.
+      description: Objet `Range` , ou adresse de chaîne ou nom de la plage représentant la source de données. Si l’adresse ne contient pas de nom de feuille, la feuille ouverte est utilisée.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     - id: hasHeaders
       description: Valeur booléle qui indique si les données importées ont des étiquettes de colonne. Si la source ne contient pas d’en-têtes (c’est-à-dire, lorsque cette propriété est définie sur `false`<!-- -->), Excel génère automatiquement un en-tête et décale les données d’une ligne vers le bas.
       type: boolean
     return:
       type: <xref uid="ExcelScript!ExcelScript.Table:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample creates a table from the current worksheet's used range, then sorts it based on the first column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Create a table with the used cells.\n  let usedRange = selectedSheet.getUsedRange();\n  let newTable = selectedSheet.addTable(usedRange, true);\n\n  // Sort the table using the first column.\n  newTable.getSort().apply([{ key: 0, ascending: true }]);\n}\n```"
 - name: addTextBox(text)
   uid: ExcelScript!ExcelScript.Worksheet#addTextBox:member(1)
   package: ExcelScript!
@@ -381,7 +381,7 @@ methods:
               ): WorksheetCustomProperty;
     parameters:
     - id: key
-      description: Clé qui identifie l’objet de propriété personnalisée. Il ne fait pas l’affaire. La clé est limitée à 255 caractères (des valeurs plus importantes entraînent la `InvalidArgument` thrown d’une erreur.)
+      description: Clé qui identifie l’objet de propriété personnalisée. Il ne fait pas l’affaire. La clé est limitée à 255 caractères (des valeurs plus importantes entraînent `InvalidArgument` la thrown d’une erreur.)
       type: string
     - id: value
       description: Valeur de cette propriété personnalisée.
@@ -425,11 +425,11 @@ methods:
       description: Emplacement dans le manuel où placer la feuille de calcul nouvellement créée. La valeur par défaut est « None », qui insère la feuille de calcul au début de la feuille de calcul.
       type: <xref uid="ExcelScript!ExcelScript.WorksheetPositionType:enum" />
     - id: relativeTo
-      description: Feuille de calcul existante qui détermine la position de la feuille de calcul nouvellement créée. Cette demande est nécessaire uniquement `positionType` si la demande est « Before » (avant) ou « After » (après).
+      description: Feuille de calcul existante qui détermine la position de la feuille de calcul nouvellement créée. Cette demande est nécessaire uniquement si `positionType` la demande est « Before » (avant) ou « After » (après).
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.Worksheet:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script duplicates a worksheet named \"Template\". \n * The new worksheet is added after the template.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the worksheet named \"Template\".\n  let template = workbook.getWorksheet(\"Template\");\n\n  // Copy the worksheet.\n  let newSheet = template.copy(\n    ExcelScript.WorksheetPositionType.after,\n    template\n  );\n\n  // Name the worksheet using the current date.\n  let date = new Date(Date.now());\n  newSheet.setName(`${date.toDateString()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script duplicates a worksheet named \"Template\". \n * The new worksheet is added after the template.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the worksheet named \"Template\".\n  let template = workbook.getWorksheet(\"Template\");\n\n  // Copy the worksheet.\n  let newSheet = template.copy(\n    ExcelScript.WorksheetPositionType.after,\n    template\n  );\n\n  // Name the worksheet using the current date.\n  let date = new Date(Date.now());\n  newSheet.setName(`${date.toDateString()}`);\n}\n```"
 - name: delete()
   uid: ExcelScript!ExcelScript.Worksheet#delete:member(1)
   package: ExcelScript!
@@ -442,7 +442,7 @@ methods:
     content: 'delete(): void;'
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * The following scripts removes the first worksheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first worksheet.\n  let sheet = workbook.getWorksheets()[0];\n\n  // Remove that worksheet from the workbook.\n  sheet.delete();\n}\n```"
 - name: enterTemporaryNamedSheetView()
   uid: ExcelScript!ExcelScript.Worksheet#enterTemporaryNamedSheetView:member(1)
   package: ExcelScript!
@@ -473,7 +473,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#findAll:member(1)
   package: ExcelScript!
   fullName: findAll(text, criteria)
-  summary: Recherche toutes les occurrences de la chaîne donnée en fonction des critères spécifiés et les renvoie en tant qu’objet, comprenant une ou `RangeAreas` plusieurs plages rectangulaires.
+  summary: Recherche toutes les occurrences `RangeAreas` de la chaîne donnée en fonction des critères spécifiés et les renvoie en tant qu’objet, comprenant une ou plusieurs plages rectangulaires.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -488,7 +488,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.WorksheetSearchCriteria:interface" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script searches through a worksheet and finds cells containing \"No\". \n * Those cells are filled red.\n * Use Range.find instead of Worksheet.findAll when you want to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let noCells = worksheet.findAll(\"No\", { completeMatch: true });\n\n  // Set the fill color to red.\n  noCells.getFormat().getFill().setColor(\"red\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script searches through a worksheet and finds cells containing \"No\". \n * Those cells are filled red.\n * Use Range.find instead of Worksheet.findAll when you want to limit the search to a specific range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current, active worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let noCells = worksheet.findAll(\"No\", { completeMatch: true });\n\n  // Set the fill color to red.\n  noCells.getFormat().getFill().setColor(\"red\");\n}\n```"
 - name: getActiveNamedSheetView()
   uid: ExcelScript!ExcelScript.Worksheet#getActiveNamedSheetView:member(1)
   package: ExcelScript!
@@ -506,7 +506,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: Représente `AutoFilter` l’objet de la feuille de calcul.
+  summary: Représente l’objet `AutoFilter` de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -514,12 +514,12 @@ methods:
     content: 'getAutoFilter(): AutoFilter;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.AutoFilter:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script creates an autofilter on the worksheet that filters out rows based on column values. \n * The autofilter filters to only include rows that have a value in column D in the top 10 percentile \n * (of column D values).\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  const currentSheet = workbook.getActiveWorksheet();\n  const dataRange = currentSheet.getUsedRange();\n\n  // Add a filter that will only show the rows with the top 10% of values in column D\n  // (index 3, assuming the used range spans from at least A:D).\n  currentSheet.getAutoFilter().apply(dataRange, 3, {\n    criterion1: \"10\",\n    filterOn: ExcelScript.FilterOn.topPercent\n  });\n}\n```"
 - name: getCell(row, column)
   uid: ExcelScript!ExcelScript.Worksheet#getCell:member(1)
   package: ExcelScript!
   fullName: getCell(row, column)
-  summary: Obtient `Range` l’objet contenant la cellule unique en fonction des numéros de ligne et de colonne. La cellule peut se trouver en dehors des limites de sa plage parente, tant qu’elle reste dans la grille de la feuille de calcul.
+  summary: Obtient l’objet `Range` contenant la cellule unique en fonction des numéros de ligne et de colonne. La cellule peut se trouver en dehors des limites de sa plage parente, tant qu’elle reste dans la grille de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -551,7 +551,7 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Chart:interface" /> | undefined
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This sample moves an existing chart to a specific place on the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n  \n  // Get an existing chart named \"ColumnChart\".\n  let chart = selectedSheet.getChart(\"ColumnChart\");\n\n  // Place the chart over the range \"F1:L13\".\n  chart.setPosition(\"F1\", \"L13\");\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample moves an existing chart to a specific place on the worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n  \n  // Get an existing chart named \"ColumnChart\".\n  let chart = selectedSheet.getChart(\"ColumnChart\");\n\n  // Place the chart over the range \"F1:L13\".\n  chart.setPosition(\"F1\", \"L13\");\n}\n```"
 - name: getCharts()
   uid: ExcelScript!ExcelScript.Worksheet#getCharts:member(1)
   package: ExcelScript!
@@ -594,7 +594,7 @@ methods:
     content: 'getCommentByCell(cellAddress: Range | string): Comment;'
     parameters:
     - id: cellAddress
-      description: Cellule sur laquelle se trouve le commentaire. Il peut s’agit `Range` d’un objet ou d’une chaîne. S’il s’agit d’une chaîne, elle doit contenir l’adresse complète, y compris le nom de la feuille. Une `InvalidArgument` erreur est lancée si la plage fournie est supérieure à une cellule.
+      description: Cellule sur laquelle se trouve le commentaire. Il peut s’agit d’un `Range` objet ou d’une chaîne. S’il s’agit d’une chaîne, elle doit contenir l’adresse complète, y compris le nom de la feuille. Une `InvalidArgument` erreur est lancée si la plage fournie est supérieure à une cellule.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Comment:interface" />
@@ -706,7 +706,7 @@ methods:
     content: 'getName(): string;'
     return:
       type: string
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This sample gets all the worksheet names in the workbook.\n * It then logs those names to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Create an array to hold the worksheet names.\n    let worksheetNames = [];\n\n    // Iterate over the worksheet collection in the workbook.\n    for (let worksheet of workbook.getWorksheets()) {\n        worksheetNames.push(worksheet.getName());\n    }\n\n    // Log the array of worksheet names.\n    console.log(worksheetNames);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample gets all the worksheet names in the workbook.\n * It then logs those names to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n    // Create an array to hold the worksheet names.\n    let worksheetNames = [];\n\n    // Iterate over the worksheet collection in the workbook.\n    for (let worksheet of workbook.getWorksheets()) {\n        worksheetNames.push(worksheet.getName());\n    }\n\n    // Log the array of worksheet names.\n    console.log(worksheetNames);\n}\n```"
 - name: getNamedItem(name)
   uid: ExcelScript!ExcelScript.Worksheet#getNamedItem:member(1)
   package: ExcelScript!
@@ -788,7 +788,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getPageLayout:member(1)
   package: ExcelScript!
   fullName: getPageLayout()
-  summary: Obtient `PageLayout` l’objet de la feuille de calcul.
+  summary: Obtient l’objet `PageLayout` de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -874,7 +874,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRange:member(1)
   package: ExcelScript!
   fullName: getRange(address)
-  summary: Obtient `Range` l’objet, qui représente un seul bloc rectangulaire de cellules, spécifié par l’adresse ou le nom.
+  summary: Obtient l’objet `Range` , qui représente un seul bloc rectangulaire de cellules, spécifié par l’adresse ou le nom.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -886,12 +886,12 @@ methods:
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample reads the value of A1 and prints it to the console.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the current worksheet.\n  let selectedSheet = workbook.getActiveWorksheet();\n\n  // Get the value of cell A1.\n  let range = selectedSheet.getRange(\"A1\");\n  \n  // Print the value of A1.\n  console.log(range.getValue());\n}\n```"
 - name: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
   uid: ExcelScript!ExcelScript.Worksheet#getRangeByIndexes:member(1)
   package: ExcelScript!
   fullName: getRangeByIndexes(startRow, startColumn, rowCount, columnCount)
-  summary: Obtient l’objet qui commence à un index de ligne et un index de colonne particuliers et s’étend sur un certain nombre de lignes `Range` et de colonnes.
+  summary: Obtient l’objet `Range` qui commence à un index de ligne et un index de colonne particuliers et s’étend sur un certain nombre de lignes et de colonnes.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -923,7 +923,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges(address)
-  summary: Obtient `RangeAreas` l’objet, qui représente un ou plusieurs blocs de plages rectangulaires, spécifiés par l’adresse ou le nom.
+  summary: Obtient l’objet `RangeAreas` , qui représente un ou plusieurs blocs de plages rectangulaires, spécifiés par l’adresse ou le nom.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1052,7 +1052,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#getTabColor:member(1)
   package: ExcelScript!
   fullName: getTabColor()
-  summary: Couleur de l’onglet de la feuille de calcul. Lors de la récupération de la couleur de l’onglet, si la feuille de calcul est invisible, la valeur sera `null`<!-- -->. Si la feuille de calcul est visible mais que la couleur de l’onglet est définie sur auto, une chaîne vide est renvoyée. Dans le cas contraire, la propriété sera définie sur une couleur, sous la forme \# RRGGBB (par exemple, « FFA500 »). Lorsque vous définissez la couleur, utilisez une chaîne vide pour définir une couleur « automatique » ou une couleur réelle dans le cas contraire.
+  summary: Couleur de l’onglet de la feuille de calcul. Lors de la récupération de la couleur de l’onglet, si la feuille de calcul est invisible, la valeur sera `null`<!-- -->. Si la feuille de calcul est visible mais que la couleur de l’onglet est définie sur auto, une chaîne vide est renvoyée. Dans le cas contraire, la propriété sera définie sur une couleur, \#sous la forme RRGGBB (par exemple, « FFA500 »). Lorsque vous définissez la couleur, utilisez une chaîne vide pour définir une couleur « automatique » ou une couleur réelle dans le cas contraire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1254,7 +1254,7 @@ methods:
       type: string
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This sample renames a worksheet from \"Sheet1\" to \"SALES\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"Sheet1\".\n  const sheet = workbook.getWorksheet('Sheet1'); \n\n  // Set its name to SALES.\n  sheet.setName('SALES');\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample renames a worksheet from \"Sheet1\" to \"SALES\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"Sheet1\".\n  const sheet = workbook.getWorksheet('Sheet1'); \n\n  // Set its name to SALES.\n  sheet.setName('SALES');\n}\n```"
 - name: setPosition(position)
   uid: ExcelScript!ExcelScript.Worksheet#setPosition:member(1)
   package: ExcelScript!
@@ -1271,7 +1271,7 @@ methods:
       type: number
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This sample sets the worksheet named \"SALES\" as the first sheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"SALES\".\n  const sheet = workbook.getWorksheet('SALES'); \n  // Position the worksheet at the beginning of the workbook.\n  sheet.setPosition(0);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample sets the worksheet named \"SALES\" as the first sheet in the workbook.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get a worksheet named \"SALES\".\n  const sheet = workbook.getWorksheet('SALES'); \n  // Position the worksheet at the beginning of the workbook.\n  sheet.setPosition(0);\n}\n```"
 - name: setShowGridlines(showGridlines)
   uid: ExcelScript!ExcelScript.Worksheet#setShowGridlines:member(1)
   package: ExcelScript!
@@ -1327,7 +1327,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#setTabColor:member(1)
   package: ExcelScript!
   fullName: setTabColor(tabColor)
-  summary: Couleur de l’onglet de la feuille de calcul. Lors de la récupération de la couleur de l’onglet, si la feuille de calcul est invisible, la valeur sera `null`<!-- -->. Si la feuille de calcul est visible mais que la couleur de l’onglet est définie sur auto, une chaîne vide est renvoyée. Dans le cas contraire, la propriété sera définie sur une couleur, sous la forme \# RRGGBB (par exemple, « FFA500 »). Lorsque vous définissez la couleur, utilisez une chaîne vide pour définir une couleur « automatique » ou une couleur réelle dans le cas contraire.
+  summary: Couleur de l’onglet de la feuille de calcul. Lors de la récupération de la couleur de l’onglet, si la feuille de calcul est invisible, la valeur sera `null`<!-- -->. Si la feuille de calcul est visible mais que la couleur de l’onglet est définie sur auto, une chaîne vide est renvoyée. Dans le cas contraire, la propriété sera définie sur une couleur, \#sous la forme RRGGBB (par exemple, « FFA500 »). Lorsque vous définissez la couleur, utilisez une chaîne vide pour définir une couleur « automatique » ou une couleur réelle dans le cas contraire.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1339,7 +1339,7 @@ methods:
       type: string
     return:
       type: void
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script sets the tab color of every worksheet in the workbook to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n  \n  // Set the tab color of each worksheet to a random color.\n  for (let sheet of sheets) {    \n    // Set the color of the current worksheet's tab to red.\n    sheet.setTabColor(\"red\");\n  }\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script sets the tab color of every worksheet in the workbook to red.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get all the worksheets in the workbook. \n  let sheets = workbook.getWorksheets();\n  \n  // Set the tab color of each worksheet to a random color.\n  for (let sheet of sheets) {    \n    // Set the color of the current worksheet's tab to red.\n    sheet.setTabColor(\"red\");\n  }\n}\n```"
 - name: setVisibility(visibility)
   uid: ExcelScript!ExcelScript.Worksheet#setVisibility:member(1)
   package: ExcelScript!
@@ -1361,7 +1361,7 @@ methods:
   uid: ExcelScript!ExcelScript.Worksheet#showOutlineLevels:member(1)
   package: ExcelScript!
   fullName: showOutlineLevels(rowLevels, columnLevels)
-  summary: Affiche les groupes de lignes ou de colonnes par niveaux de plan. Décrit les groupes et récapitule une liste de données dans la feuille de calcul. Les `rowLevels` `columnLevels` paramètres spécifient le nombre de niveaux du plan qui seront affichés. La plage d’arguments acceptable est entre 0 et 8. La valeur 0 ne modifie pas l’affichage actuel. Une valeur supérieure au nombre actuel de niveaux affiche tous les niveaux.
+  summary: Affiche les groupes de lignes ou de colonnes par niveaux de plan. Décrit les groupes et récapitule une liste de données dans la feuille de calcul. Les `rowLevels` paramètres `columnLevels` spécifient le nombre de niveaux du plan qui seront affichés. La plage d’arguments acceptable est entre 0 et 8. La valeur 0 ne modifie pas l’affichage actuel. Une valeur supérieure au nombre actuel de niveaux affiche tous les niveaux.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -1378,9 +1378,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 1eef5e7e31219028c6c86b4b4784ef9f0a74011f
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 81c49cac1838a1162ade2933ae19caa11519834d
+  ms.sourcegitcommit: f6d4b6aecddf48872f4d9a7bcfffafce65e3d9aa
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240562"
+  ms.lasthandoff: 03/11/2022
+  ms.locfileid: "63434827"
