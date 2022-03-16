@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.ReplaceCriteria
-uid: 'ExcelScript!ExcelScript.ReplaceCriteria:interface'
+uid: ExcelScript!ExcelScript.ReplaceCriteria:interface
 package: ExcelScript!
 fullName: ExcelScript.ReplaceCriteria
 summary: Représente les critères de remplacement à utiliser.
@@ -9,27 +9,36 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
-  - name: completeMatch
-    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member'
-    package: ExcelScript!
-    fullName: completeMatch
-    summary: 'Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l’intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, partiellement correspond à et `cat` `caterpillar``scatter`<!-- -->). La valeur par `false` défaut est (partielle).'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'completeMatch?: boolean;'
-      return:
-        type: boolean
-  - name: matchCase
-    uid: 'ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member'
-    package: ExcelScript!
-    fullName: matchCase
-    summary: Spécifie si la correspondance est sensible à la cas. La valeur `false` par défaut est (ne sensible à la cas).
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'matchCase?: boolean;'
-      return:
-        type: boolean
+- name: completeMatch
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#completeMatch:member
+  package: ExcelScript!
+  fullName: completeMatch
+  summary: Spécifie si la correspondance doit être complète ou partielle. Une correspondance complète correspond à l’intégralité du contenu de la cellule. Une correspondance partielle correspond à une sous-stration dans le contenu de la cellule (par exemple, `cat` partiellement correspond `caterpillar` à et `scatter`<!-- -->). La valeur par défaut `false` est (partielle).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'completeMatch?: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script normalizes the text in a column so that values don't include both \"OK\" and \"okay\". \n * It replaces \"OK\" and all the case-based variants with \"okay\".\n */ \nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range representing column D.\n  const currentSheet = workbook.getActiveWorksheet();\n  const column = currentSheet.getRange(\"D:D\");\n\n  // Create a ReplaceCriteria object for the Range.replaceAll call.\n  const criteria: ExcelScript.ReplaceCriteria = {\n    completeMatch: true, /* Use a complete match to skip cells that already say \"okay\". */\n    matchCase: false /* Ignore case when comparing strings. */\n  };\n\n  // Replace all instances of \"ok\" (case-insensitive) with \"okay\".\n  column.replaceAll(\"ok\", \"okay\", criteria);\n}\n```"
+- name: matchCase
+  uid: ExcelScript!ExcelScript.ReplaceCriteria#matchCase:member
+  package: ExcelScript!
+  fullName: matchCase
+  summary: Spécifie si la correspondance est sensible à la cas. La valeur par `false` défaut est (ne pas sensible à la cas).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'matchCase?: boolean;'
+    return:
+      type: boolean
+      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script replaces instances of \"NA\" with \"North America\", \n * using the casing to ignore parts of words.\n */ \nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently used range.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Create a ReplaceCriteria object for the Range.replaceAll call.\n  const criteria: ExcelScript.ReplaceCriteria = {\n    completeMatch: false, \n    matchCase: true /* Match with \"NA market\", not \"navigate\" */\n  }\n\n  // Replace all instances of \"NA\" (case-sensitive) with \"North America\".\n  usedRange.replaceAll(\"NA\", \"North America\", criteria);\n}\n```"
+metadata:
+  ms.openlocfilehash: 67d8d8e77928b29159806267f82e9532d3d41d58
+  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/15/2022
+  ms.locfileid: "63508372"
