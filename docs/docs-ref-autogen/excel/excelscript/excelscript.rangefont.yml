@@ -1,311 +1,318 @@
 ### YamlMime:TSType
 name: ExcelScript.RangeFont
-uid: 'ExcelScript!ExcelScript.RangeFont:interface'
+uid: ExcelScript!ExcelScript.RangeFont:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeFont
-summary: 'Cet objet représente les attributs de police (nom de la police, taille de police, couleur, etc.) d’un objet.'
-remarks: ''
+summary: Cet objet représente les attributs de police (nom de la police, taille de police, couleur, etc.) d’un objet.
+remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script sets the font of A1 to Arial, size 16.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get A1 on the current worksheet.\n  const cell = workbook.getActiveWorksheet().getCell(0,0);\n\n  // Adjust the font settings for that cell.\n  const cellFont = cell.getFormat().getFont();\n  cellFont.setName(\"Arial\");\n  cellFont.setSize(16);\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: getBold()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getBold:member(1)'
-    package: ExcelScript!
-    fullName: getBold()
-    summary: Représente l’état gras de la police.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getBold(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getColor()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getColor:member(1)'
-    package: ExcelScript!
-    fullName: getColor()
-    summary: 'Représentation de code couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getColor(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getItalic()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getItalic:member(1)'
-    package: ExcelScript!
-    fullName: getItalic()
-    summary: Spécifie l’état italique de la police.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getItalic(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getName()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getName:member(1)'
-    package: ExcelScript!
-    fullName: getName()
-    summary: 'Nom de la police (par exemple, « Calibri »). La longueur du nom ne doit pas être supérieure à 31 caractères.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getName(): string;'
-      return:
-        type: string
-        description: ''
-  - name: getSize()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getSize:member(1)'
-    package: ExcelScript!
-    fullName: getSize()
-    summary: Taille de police
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getSize(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getStrikethrough()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)'
-    package: ExcelScript!
-    fullName: getStrikethrough()
-    summary: Spécifie l’état de la police de type strikethrough. Une valeur indique que la plage entière n’a pas de paramètre `null` de strikethrough uniforme.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getStrikethrough(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getSubscript()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)'
-    package: ExcelScript!
-    fullName: getSubscript()
-    summary: 'Spécifie l’état d’indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie si toutes les polices de la plage sont en exposant ou `false` normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getSubscript(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getSuperscript()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)'
-    package: ExcelScript!
-    fullName: getSuperscript()
-    summary: 'Spécifie l’état d’exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie si toutes les polices de la plage sont des indices ou des caractères `false` normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getSuperscript(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getTintAndShade()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: getTintAndShade()
-    summary: 'Spécifie un double qui s’éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une valeur indique que la plage entière `null` n’a pas de paramètre de police `tintAndShade` uniforme.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getTintAndShade(): number;'
-      return:
-        type: number
-        description: ''
-  - name: getUnderline()
-    uid: 'ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)'
-    package: ExcelScript!
-    fullName: getUnderline()
-    summary: 'Type de soulignement appliqué à la police. Pour `ExcelScript.RangeUnderlineStyle` plus d’informations, voir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getUnderline(): RangeUnderlineStyle;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />'
-        description: ''
-  - name: setBold(bold)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setBold:member(1)'
-    package: ExcelScript!
-    fullName: setBold(bold)
-    summary: Représente l’état gras de la police.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setBold(bold: boolean): void;'
-      parameters:
-        - id: bold
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setColor(color)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setColor:member(1)'
-    package: ExcelScript!
-    fullName: setColor(color)
-    summary: 'Représentation de code couleur HTML de la couleur du texte (par exemple, \# FF0000 représente le rouge).'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setColor(color: string): void;'
-      parameters:
-        - id: color
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setItalic(italic)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setItalic:member(1)'
-    package: ExcelScript!
-    fullName: setItalic(italic)
-    summary: Spécifie l’état italique de la police.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setItalic(italic: boolean): void;'
-      parameters:
-        - id: italic
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setName(name)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setName:member(1)'
-    package: ExcelScript!
-    fullName: setName(name)
-    summary: 'Nom de la police (par exemple, « Calibri »). La longueur du nom ne doit pas être supérieure à 31 caractères.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setName(name: string): void;'
-      parameters:
-        - id: name
-          description: ''
-          type: string
-      return:
-        type: void
-        description: ''
-  - name: setSize(size)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setSize:member(1)'
-    package: ExcelScript!
-    fullName: setSize(size)
-    summary: Taille de police
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setSize(size: number): void;'
-      parameters:
-        - id: size
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setStrikethrough(strikethrough)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)'
-    package: ExcelScript!
-    fullName: setStrikethrough(strikethrough)
-    summary: Spécifie l’état de la police de type strikethrough. Une valeur indique que la plage entière n’a pas de paramètre `null` de strikethrough uniforme.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setStrikethrough(strikethrough: boolean): void;'
-      parameters:
-        - id: strikethrough
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setSubscript(subscript)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)'
-    package: ExcelScript!
-    fullName: setSubscript(subscript)
-    summary: 'Spécifie l’état d’indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie si toutes les polices de la plage sont en exposant ou `false` normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setSubscript(subscript: boolean): void;'
-      parameters:
-        - id: subscript
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setSuperscript(superscript)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)'
-    package: ExcelScript!
-    fullName: setSuperscript(superscript)
-    summary: 'Spécifie l’état d’exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie si toutes les polices de la plage sont des indices ou des caractères `false` normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setSuperscript(superscript: boolean): void;'
-      parameters:
-        - id: superscript
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setTintAndShade(tintAndShade)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)'
-    package: ExcelScript!
-    fullName: setTintAndShade(tintAndShade)
-    summary: 'Spécifie un double qui s’éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une valeur indique que la plage entière `null` n’a pas de paramètre de police `tintAndShade` uniforme.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setTintAndShade(tintAndShade: number): void;'
-      parameters:
-        - id: tintAndShade
-          description: ''
-          type: number
-      return:
-        type: void
-        description: ''
-  - name: setUnderline(underline)
-    uid: 'ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)'
-    package: ExcelScript!
-    fullName: setUnderline(underline)
-    summary: 'Type de soulignement appliqué à la police. Pour `ExcelScript.RangeUnderlineStyle` plus d’informations, voir.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setUnderline(underline: RangeUnderlineStyle): void;'
-      parameters:
-        - id: underline
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />'
-      return:
-        type: void
-        description: ''
+- name: getBold()
+  uid: ExcelScript!ExcelScript.RangeFont#getBold:member(1)
+  package: ExcelScript!
+  fullName: getBold()
+  summary: Représente l’état gras de la police.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getBold(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getColor()
+  uid: ExcelScript!ExcelScript.RangeFont#getColor:member(1)
+  package: ExcelScript!
+  fullName: getColor()
+  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, \#FF0000 représente le rouge).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getColor(): string;'
+    return:
+      type: string
+      description: ''
+- name: getItalic()
+  uid: ExcelScript!ExcelScript.RangeFont#getItalic:member(1)
+  package: ExcelScript!
+  fullName: getItalic()
+  summary: Spécifie l’état italique de la police.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getItalic(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getName()
+  uid: ExcelScript!ExcelScript.RangeFont#getName:member(1)
+  package: ExcelScript!
+  fullName: getName()
+  summary: Nom de la police (par exemple, « Calibri »). La longueur du nom ne doit pas être supérieure à 31 caractères.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getName(): string;'
+    return:
+      type: string
+      description: ''
+- name: getSize()
+  uid: ExcelScript!ExcelScript.RangeFont#getSize:member(1)
+  package: ExcelScript!
+  fullName: getSize()
+  summary: Taille de police
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSize(): number;'
+    return:
+      type: number
+      description: ''
+- name: getStrikethrough()
+  uid: ExcelScript!ExcelScript.RangeFont#getStrikethrough:member(1)
+  package: ExcelScript!
+  fullName: getStrikethrough()
+  summary: Spécifie l’état de la police de type strikethrough. Une `null` valeur indique que la plage entière n’a pas de paramètre de strikethrough uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getStrikethrough(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSubscript()
+  uid: ExcelScript!ExcelScript.RangeFont#getSubscript:member(1)
+  package: ExcelScript!
+  fullName: getSubscript()
+  summary: Spécifie l’état d’indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie `false` si toutes les polices de la plage sont en exposant ou normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSubscript(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getSuperscript()
+  uid: ExcelScript!ExcelScript.RangeFont#getSuperscript:member(1)
+  package: ExcelScript!
+  fullName: getSuperscript()
+  summary: Spécifie l’état d’exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie `false` si toutes les polices de la plage sont des indices ou des caractères normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getSuperscript(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getTintAndShade()
+  uid: ExcelScript!ExcelScript.RangeFont#getTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: getTintAndShade()
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage entière n’a pas de paramètre de police uniforme `tintAndShade` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getTintAndShade(): number;'
+    return:
+      type: number
+      description: ''
+- name: getUnderline()
+  uid: ExcelScript!ExcelScript.RangeFont#getUnderline:member(1)
+  package: ExcelScript!
+  fullName: getUnderline()
+  summary: Type de soulignement appliqué à la police. Pour plus `ExcelScript.RangeUnderlineStyle` d’informations, voir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getUnderline(): RangeUnderlineStyle;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />
+      description: ''
+- name: setBold(bold)
+  uid: ExcelScript!ExcelScript.RangeFont#setBold:member(1)
+  package: ExcelScript!
+  fullName: setBold(bold)
+  summary: Représente l’état gras de la police.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setBold(bold: boolean): void;'
+    parameters:
+    - id: bold
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script bolds the text of cell A1.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get A1 on the current worksheet.\n  const cell = workbook.getActiveWorksheet().getCell(0,0);\n\n  // Bold the font for that cell\n  cell.getFormat().getFont().setBold(true);\n}\n```"
+- name: setColor(color)
+  uid: ExcelScript!ExcelScript.RangeFont#setColor:member(1)
+  package: ExcelScript!
+  fullName: setColor(color)
+  summary: Représentation de code couleur HTML de la couleur du texte (par exemple, \#FF0000 représente le rouge).
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setColor(color: string): void;'
+    parameters:
+    - id: color
+      description: ''
+      type: string
+    return:
+      type: void
+      description: ''
+- name: setItalic(italic)
+  uid: ExcelScript!ExcelScript.RangeFont#setItalic:member(1)
+  package: ExcelScript!
+  fullName: setItalic(italic)
+  summary: Spécifie l’état italique de la police.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setItalic(italic: boolean): void;'
+    parameters:
+    - id: italic
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setName(name)
+  uid: ExcelScript!ExcelScript.RangeFont#setName:member(1)
+  package: ExcelScript!
+  fullName: setName(name)
+  summary: Nom de la police (par exemple, « Calibri »). La longueur du nom ne doit pas être supérieure à 31 caractères.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setName(name: string): void;'
+    parameters:
+    - id: name
+      description: ''
+      type: string
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script sets the font style of A1 to Arial.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get A1 on the current worksheet.\n  const cell = workbook.getActiveWorksheet().getCell(0,0);\n\n  // Adjust the font settings for that cell.\n  cell.getFormat().getFont().setName(\"Arial\");\n}\n```"
+- name: setSize(size)
+  uid: ExcelScript!ExcelScript.RangeFont#setSize:member(1)
+  package: ExcelScript!
+  fullName: setSize(size)
+  summary: Taille de police
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSize(size: number): void;'
+    parameters:
+    - id: size
+      description: ''
+      type: number
+    return:
+      type: void
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script sets the font size of A1 to 16.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get A1 on the current worksheet.\n  const cell = workbook.getActiveWorksheet().getCell(0,0);\n\n  // Adjust the font settings for that cell.clear\n  cell.getFormat().getFont().setSize(16);\n}\n```"
+- name: setStrikethrough(strikethrough)
+  uid: ExcelScript!ExcelScript.RangeFont#setStrikethrough:member(1)
+  package: ExcelScript!
+  fullName: setStrikethrough(strikethrough)
+  summary: Spécifie l’état de la police de type strikethrough. Une `null` valeur indique que la plage entière n’a pas de paramètre de strikethrough uniforme.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setStrikethrough(strikethrough: boolean): void;'
+    parameters:
+    - id: strikethrough
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setSubscript(subscript)
+  uid: ExcelScript!ExcelScript.RangeFont#setSubscript:member(1)
+  package: ExcelScript!
+  fullName: setSubscript(subscript)
+  summary: Spécifie l’état d’indice de la police. Renvoie `true` si toutes les polices de la plage sont des indices. Renvoie `false` si toutes les polices de la plage sont en exposant ou normales (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSubscript(subscript: boolean): void;'
+    parameters:
+    - id: subscript
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setSuperscript(superscript)
+  uid: ExcelScript!ExcelScript.RangeFont#setSuperscript:member(1)
+  package: ExcelScript!
+  fullName: setSuperscript(superscript)
+  summary: Spécifie l’état d’exposant de la police. Renvoie `true` si toutes les polices de la plage sont en exposant. Renvoie `false` si toutes les polices de la plage sont des indices ou des caractères normaux (ni exposant, ni indice). Renvoie dans le `null` cas contraire.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setSuperscript(superscript: boolean): void;'
+    parameters:
+    - id: superscript
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setTintAndShade(tintAndShade)
+  uid: ExcelScript!ExcelScript.RangeFont#setTintAndShade:member(1)
+  package: ExcelScript!
+  fullName: setTintAndShade(tintAndShade)
+  summary: Spécifie un double qui s’éclaircit ou assombrit une couleur pour la police de plage. La valeur est entre -1 (plus sombre) et 1 (plus clair), avec 0 pour la couleur d’origine. Une `null` valeur indique que la plage entière n’a pas de paramètre de police uniforme `tintAndShade` .
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setTintAndShade(tintAndShade: number): void;'
+    parameters:
+    - id: tintAndShade
+      description: ''
+      type: number
+    return:
+      type: void
+      description: ''
+- name: setUnderline(underline)
+  uid: ExcelScript!ExcelScript.RangeFont#setUnderline:member(1)
+  package: ExcelScript!
+  fullName: setUnderline(underline)
+  summary: Type de soulignement appliqué à la police. Pour plus `ExcelScript.RangeUnderlineStyle` d’informations, voir.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setUnderline(underline: RangeUnderlineStyle): void;'
+    parameters:
+    - id: underline
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.RangeUnderlineStyle:enum" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 357af9d7ec73c34a8c822164e0b71325fe602b38
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755976"

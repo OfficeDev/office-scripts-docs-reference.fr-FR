@@ -4,7 +4,7 @@ uid: ExcelScript!ExcelScript.RangeAreas:interface
 package: ExcelScript!
 fullName: ExcelScript.RangeAreas
 summary: '`RangeAreas` représente une collection d’une ou plusieurs plages rectangulaires dans la même feuille de calcul.'
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +21,7 @@ methods:
     content: 'addConditionalFormat(type: ConditionalFormatType): ConditionalFormat;'
     parameters:
     - id: type
-      description: Type de mise en forme conditionnelle en cours d’ajout. Pour `ExcelScript.ConditionalFormatType` plus d’informations, voir.
+      description: Type de mise en forme conditionnelle en cours d’ajout. Pour plus `ExcelScript.ConditionalFormatType` d’informations, voir.
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormatType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.ConditionalFormat:interface" />
@@ -51,11 +51,11 @@ methods:
     content: 'clear(applyTo?: ClearApplyTo): void;'
     parameters:
     - id: applyTo
-      description: Facultatif. Détermine le type d’action de suppression. Pour `ExcelScript.ClearApplyTo` plus d’informations, voir. La valeur par défaut est « All ».
+      description: Facultatif. Détermine le type d’action de suppression. Pour plus `ExcelScript.ClearApplyTo` d’informations, voir. La valeur par défaut est « All ».
       type: <xref uid="ExcelScript!ExcelScript.ClearApplyTo:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script clears all the cells in the current worksheet that are displaying errors.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula error.\n  const errorCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas, ExcelScript.SpecialCellValueType.errors);\n\n  // If there are any error cells, clear them.\n  if (errorCells) {\n    errorCells.clear();\n  }\n}\n```"
 - name: clearAllConditionalFormats()
   uid: ExcelScript!ExcelScript.RangeAreas#clearAllConditionalFormats:member(1)
   package: ExcelScript!
@@ -73,7 +73,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#convertDataTypeToText:member(1)
   package: ExcelScript!
   fullName: convertDataTypeToText()
-  summary: Convertit toutes les cellules des `RangeAreas` types de données en texte.
+  summary: Convertit toutes les cellules des types de `RangeAreas` données en texte.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -100,7 +100,7 @@ methods:
               ): void;
     parameters:
     - id: sourceRange
-      description: Plage source ou `RangeAreas` à partir de la copie. Lorsque la source possède plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des `RangeAreas` colonnes complètes d’une plage rectangulaire.
+      description: Plage source ou à `RangeAreas` partir de la copie. Lorsque la source possède `RangeAreas` plusieurs plages, leur formulaire doit pouvoir être créé en supprimant des lignes ou des colonnes complètes d’une plage rectangulaire.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     - id: copyType
       description: Type de données de cellule ou de mise en forme à copier. La valeur par défaut est « All ».
@@ -131,7 +131,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getAddressLocal:member(1)
   package: ExcelScript!
   fullName: getAddressLocal()
-  summary: Renvoie la `RangeAreas` référence dans les paramètres régionaux de l’utilisateur.
+  summary: Renvoie la référence `RangeAreas` dans les paramètres régionaux de l’utilisateur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getCellCount:member(1)
   package: ExcelScript!
   fullName: getCellCount()
-  summary: Renvoie le nombre de cellules dans l’objet, récapitulant le nombre de cellules de toutes les `RangeAreas` plages rectangulaires individuelles. Renvoie -1 si le nombre de cellules est supérieure à 2 ^ 31-1 (2 147 483 647).
+  summary: Renvoie le nombre de cellules dans l’objet `RangeAreas` , récapitulant le nombre de cellules de toutes les plages rectangulaires individuelles. Renvoie -1 si le nombre de cellules est supérieure à 2 ^ 31-1 (2 147 483 647).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -226,7 +226,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireColumn:member(1)
   package: ExcelScript!
   fullName: getEntireColumn()
-  summary: Renvoie un objet qui représente les colonnes entières de l'(par exemple, si le courant représente les cellules `RangeAreas` « B4:E11, H2 », il renvoie un qui représente les `RangeAreas` `RangeAreas` `RangeAreas` colonnes « B:E, H:H »).
+  summary: "`RangeAreas` Renvoie un objet qui représente les colonnes entières `RangeAreas` de l'(par exemple, `RangeAreas` si le courant représente les cellules « B4:E11, H2 », il renvoie un `RangeAreas` qui représente les colonnes « B:E, H:H »)."
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,7 +239,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getEntireRow:member(1)
   package: ExcelScript!
   fullName: getEntireRow()
-  summary: Renvoie un objet qui représente les lignes entières de l'(par exemple, si le courant représente les cellules « B4:E11 », il renvoie un qui représente les lignes `RangeAreas` `RangeAreas` « `RangeAreas` `RangeAreas` 4:11 »).
+  summary: Renvoie un `RangeAreas` objet qui représente les lignes entières `RangeAreas` de l'(par exemple, `RangeAreas` si le courant représente les cellules « B4:E11 `RangeAreas` », il renvoie un qui représente les lignes « 4:11 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -252,7 +252,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getFormat:member(1)
   package: ExcelScript!
   fullName: getFormat()
-  summary: Renvoie un objet, qui encapsule la police, le remplissage, les bordures, l’alignement et d’autres propriétés de toutes les `RangeFormat` plages de `RangeAreas` l’objet.
+  summary: Renvoie un `RangeFormat` objet, qui encapsule la police, le remplissage, les bordures, l’alignement et d’autres propriétés de toutes les plages de l’objet `RangeAreas` .
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,12 +260,12 @@ methods:
     content: 'getFormat(): RangeFormat;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeFormat:interface" />
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script finds and highlights all the cells in the current worksheet that contain a formula.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the used range on the current sheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const usedRange = currentSheet.getUsedRange();\n\n  // Get the RangeAreas object for each cell with a formula.\n  const formulaCells = usedRange.getSpecialCells(ExcelScript.SpecialCellType.formulas);\n\n  // Add a light blue background to the cells containing formulas.\n  formulaCells.getFormat().getFill().setColor(\"#ADD8E6\");\n}\n```"
 - name: getIntersection(anotherRange)
   uid: ExcelScript!ExcelScript.RangeAreas#getIntersection:member(1)
   package: ExcelScript!
   fullName: getIntersection(anotherRange)
-  summary: Renvoie `RangeAreas` l’objet qui représente l’intersection des plages données ou `RangeAreas`<!-- -->. Si aucune intersection n’est trouvée, cette fonction renvoie `undefined`<!-- -->.
+  summary: Renvoie l’objet `RangeAreas` qui représente l’intersection des plages données ou `RangeAreas`<!-- -->. Si aucune intersection n’est trouvée, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -273,7 +273,7 @@ methods:
     content: 'getIntersection(anotherRange: Range | RangeAreas | string): RangeAreas;'
     parameters:
     - id: anotherRange
-      description: Plage, `RangeAreas` objet ou adresse qui sera utilisé pour déterminer l’intersection.
+      description: Plage, objet `RangeAreas` ou adresse qui sera utilisé pour déterminer l’intersection.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getIsEntireRow:member(1)
   package: ExcelScript!
   fullName: getIsEntireRow()
-  summary: Spécifie si toutes les plages de cet objet représentent des lignes `RangeAreas` entières (par exemple, « 1:3, 5:7 »).
+  summary: Spécifie si toutes les plages `RangeAreas` de cet objet représentent des lignes entières (par exemple, « 1:3, 5:7 »).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -308,7 +308,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getOffsetRangeAreas:member(1)
   package: ExcelScript!
   fullName: getOffsetRangeAreas(rowOffset, columnOffset)
-  summary: Renvoie un objet décalé par le décalage de ligne `RangeAreas` et de colonne spécifique. La dimension de l’objet `RangeAreas` renvoyé correspond à l’objet d’origine. Si le résultat est forcé en dehors des limites de la grille de la feuille de calcul, une erreur `RangeAreas` est lancée.
+  summary: Renvoie un `RangeAreas` objet décalé par le décalage de ligne et de colonne spécifique. La dimension de l’objet renvoyé `RangeAreas` correspond à l’objet d’origine. Si le résultat est `RangeAreas` forcé en dehors des limites de la grille de la feuille de calcul, une erreur est lancée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -332,7 +332,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedCellStyle()
-  summary: Représente le style de toutes les plages de cet `RangeAreas` objet. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’enum `BuiltInStyle` est renvoyée.
+  summary: Représente le style de toutes les plages de cet `RangeAreas` objet. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans `BuiltInStyle` l’enum est renvoyée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -345,7 +345,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getSpecialCells:member(1)
   package: ExcelScript!
   fullName: getSpecialCells(cellType, cellValueType)
-  summary: Renvoie un objet qui représente toutes les cellules qui correspondent au type et à la valeur `RangeAreas` spécifiés. Si aucune cellule spéciale ne correspond aux critères, cette fonction renvoie `undefined`<!-- -->.
+  summary: Renvoie un `RangeAreas` objet qui représente toutes les cellules qui correspondent au type et à la valeur spécifiés. Si aucune cellule spéciale ne correspond aux critères, cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
       description: Type de cellules à inclure.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellType:enum" />
     - id: cellValueType
-      description: Si `cellType` l’une ou `constants` l’autre de ces deux `formulas`<!-- -->, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
+      description: Si l’une `cellType` ou l’autre `constants` de ces deux `formulas`<!-- -->, cet argument est utilisé pour déterminer les types de cellules à inclure dans le résultat. Ces valeurs peuvent être combinées pour renvoyer plusieurs types. Par défaut, toutes les constantes ou formules sont sélectionnées, quel qu'en soit le type.
       type: <xref uid="ExcelScript!ExcelScript.SpecialCellValueType:enum" />
     return:
       type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
@@ -386,7 +386,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#getUsedRangeAreas:member(1)
   package: ExcelScript!
   fullName: getUsedRangeAreas(valuesOnly)
-  summary: Renvoie l’objet utilisé qui comprend toutes les zones utilisées `RangeAreas` de plages rectangulaires individuelles dans l’objet. `RangeAreas` S’il n’existe aucune cellule utilisée dans le `RangeAreas`<!-- -->, puis cette fonction renvoie `undefined`<!-- -->.
+  summary: Renvoie l’objet utilisé `RangeAreas` qui comprend toutes les zones utilisées de plages rectangulaires individuelles dans l’objet `RangeAreas` . S’il n’existe aucune cellule utilisée dans le `RangeAreas`<!-- -->, puis cette fonction renvoie `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -429,7 +429,7 @@ methods:
   uid: ExcelScript!ExcelScript.RangeAreas#setPredefinedCellStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedCellStyle(predefinedCellStyle)
-  summary: Représente le style de toutes les plages de cet `RangeAreas` objet. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans l’enum `BuiltInStyle` est renvoyée.
+  summary: Représente le style de toutes les plages de cet `RangeAreas` objet. Si les styles des cellules sont incohérents, `null` ils sont renvoyés. Pour les styles personnalisés, le nom du style est renvoyé. Pour les styles intégrés, une chaîne représentant une valeur dans `BuiltInStyle` l’enum est renvoyée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -443,9 +443,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d2379d59b4a588788b4700e9985267e6ddf6a6d7
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 61f1c5d9f766f016055f7398b9ba2bada8b22e0d
+  ms.sourcegitcommit: dfc12de9e6eb5de71199b36f92ce93039509ad37
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064849"
+  ms.lasthandoff: 03/23/2022
+  ms.locfileid: "63755969"
