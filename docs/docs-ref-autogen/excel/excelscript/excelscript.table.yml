@@ -29,7 +29,7 @@ methods:
       description: Facultatif. Spécifie la position relative de la nouvelle colonne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Les colonnes avec un index supérieur seront décalées sur le côté. Avec indice zéro.
       type: number
     - id: values
-      description: Facultatif. Tableau à 1 dimension de valeurs non formatées de la colonne de tableau.
+      description: Facultatif. Tableau à 1 dimension de valeurs non mises en forme de la colonne de table.
       type: (boolean | string | number)[]
     - id: name
       description: Facultatif. Spécifie le nom de la nouvelle colonne. Si la valeur est null, le nom par défaut est utilisé.
@@ -41,7 +41,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#addRow:member(1)
   package: ExcelScript!
   fullName: addRow(index, values)
-  summary: Ajoute une ligne au tableau.
+  summary: Ajoute une ligne à la table.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -52,7 +52,7 @@ methods:
       description: Facultatif. Spécifie la position relative de la nouvelle ligne. Si la valeur est null ou -1, la ligne est ajoutée à la fin. Toutes les lignes en dessous de la ligne insérée sont déplacées vers le bas. Avec indice zéro.
       type: number
     - id: values
-      description: Facultatif. Tableau à 1 dimension de valeurs non formatées de la ligne de tableau.
+      description: Facultatif. Tableau à 1 dimension de valeurs non mises en forme de la ligne de table.
       type: (boolean | string | number)[]
     return:
       type: void
@@ -120,7 +120,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#deleteRowsAt:member(1)
   package: ExcelScript!
   fullName: deleteRowsAt(index, count)
-  summary: Supprimer un nombre spécifié de lignes à un index donné.
+  summary: Supprimez un nombre spécifié de lignes à un index donné.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -131,7 +131,7 @@ methods:
       description: 'Valeur d’index de la ligne à supprimer. Attention : l’index de la ligne a peut-être été déplacé à partir du moment où vous avez déterminé la valeur à utiliser pour la suppression.'
       type: number
     - id: count
-      description: 'Nombre de lignes à supprimer. Par défaut, une seule ligne est supprimée. Remarque : la suppression de plus de 1 000 lignes en même temps peut entraîner un Power Automate de travail.'
+      description: 'Nombre de lignes à supprimer. Par défaut, une seule ligne est supprimée. Remarque : la suppression simultanée de plus de 1 000 lignes peut entraîner un délai d’expiration Power Automate.'
       type: number
     return:
       type: void
@@ -140,7 +140,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getAutoFilter:member(1)
   package: ExcelScript!
   fullName: getAutoFilter()
-  summary: Représente `AutoFilter` l’objet du tableau.
+  summary: Représente l’objet `AutoFilter` de la table.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -153,7 +153,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumn:member(1)
   package: ExcelScript!
   fullName: getColumn(key)
-  summary: Obtient un objet de colonne par son nom ou son ID. Si la colonne n’existe pas, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient un objet de colonne par son nom ou son ID. Si la colonne n’existe pas, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -161,7 +161,7 @@ methods:
     content: 'getColumn(key: number | string): TableColumn | undefined;'
     parameters:
     - id: key
-      description: Nom de colonne ou ID.
+      description: Nom ou ID de colonne.
       type: number | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.TableColumn:interface" /> | undefined
@@ -170,7 +170,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnById:member(1)
   package: ExcelScript!
   fullName: getColumnById(key)
-  summary: Obtient un objet de colonne par ID. Si la colonne n’existe pas, elle retourne undefined.
+  summary: Obtient un objet de colonne par ID. Si la colonne n’existe pas, retourne une valeur non définie.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -187,7 +187,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getColumnByName:member(1)
   package: ExcelScript!
   fullName: getColumnByName(key)
-  summary: Obtient un objet de colonne par nom. Si la colonne n’existe pas, elle retourne undefined.
+  summary: Obtient un objet de colonne par nom. Si la colonne n’existe pas, retourne une valeur non définie.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -269,7 +269,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getLegacyId:member(1)
   package: ExcelScript!
   fullName: getLegacyId()
-  summary: Renvoie un ID numérique.
+  summary: Retourne un ID numérique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -295,7 +295,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: getPredefinedTableStyle()
-  summary: 'Valeur constante qui représente le style de tableau. Les valeurs possibles sont les suivants : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
+  summary: 'Valeur constante qui représente le style de tableau. Les valeurs possibles sont : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -316,7 +316,7 @@ methods:
     content: 'getRange(): Range;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script removes any extra formatting that's been applied to a table. \n * This leaves only the base table style effects.\n * Any formatting outside of the table will be left as is.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let table = worksheet.getTables()[0];\n\n  // Get the range used by the table.\n  let range = table.getRange();\n\n  // Clear all the formatting that is not applied by the table and the table style.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script removes any extra formatting that's been applied to a table. \n * This leaves only the base table style effects.\n * Any formatting outside of the table will be left as is.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the first table on the current worksheet.\n  let worksheet = workbook.getActiveWorksheet();\n  let table = worksheet.getTables()[0];\n\n  // Get the range used by the table.\n  let range = table.getRange();\n\n  // Clear all the formatting that is not applied by the table and the table style.\n  range.clear(ExcelScript.ClearApplyTo.formats);\n}\n```"
 - name: getRangeBetweenHeaderAndTotal()
   uid: ExcelScript!ExcelScript.Table#getRangeBetweenHeaderAndTotal:member(1)
   package: ExcelScript!
@@ -347,7 +347,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: getShowBandedColumns()
-  summary: Spécifie si les colonnes indiquent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillante différemment des colonnes impaires, pour faciliter la lecture du tableau.
+  summary: Spécifie si les colonnes affichent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillance différemment des colonnes paires, pour faciliter la lecture du tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -360,7 +360,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowBandedRows:member(1)
   package: ExcelScript!
   fullName: getShowBandedRows()
-  summary: Spécifie si les lignes indiquent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillante différemment des lignes impaires, pour faciliter la lecture du tableau.
+  summary: Spécifie si les lignes affichent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillance différemment des lignes paires, pour faciliter la lecture du tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -399,7 +399,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#getShowTotals:member(1)
   package: ExcelScript!
   fullName: getShowTotals()
-  summary: Spécifie si la ligne de total est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
+  summary: Spécifie si la ligne totale est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -464,7 +464,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#resize:member(1)
   package: ExcelScript!
   fullName: resize(newRange)
-  summary: Resize the table to the new range. La nouvelle plage doit se chevaucher avec la plage du tableau d’origine et les en-têtes (ou le haut du tableau) doivent se trouver sur la même ligne.
+  summary: Redimensionnez la table sur la nouvelle plage. La nouvelle plage doit chevaucher la plage de tables d’origine et les en-têtes (ou le haut de la table) doivent se trouver dans la même ligne.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -472,7 +472,7 @@ methods:
     content: 'resize(newRange: Range | string): void;'
     parameters:
     - id: newRange
-      description: Objet de plage ou adresse de plage qui sera utilisé pour déterminer la nouvelle taille du tableau.
+      description: Objet de plage ou adresse de plage qui sera utilisé pour déterminer la nouvelle taille de la table.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -532,7 +532,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setPredefinedTableStyle:member(1)
   package: ExcelScript!
   fullName: setPredefinedTableStyle(predefinedTableStyle)
-  summary: 'Valeur constante qui représente le style de tableau. Les valeurs possibles sont les suivants : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
+  summary: 'Valeur constante qui représente le style de tableau. Les valeurs possibles sont : « TableStyleLight1 » à « TableStyleLight21 », « TableStyleMedium1 » à « TableStyleMedium28 », « TableStyleDark1 » à « TableStyleDark11 ». Vous pouvez également indiquer un style personnalisé présent dans le classeur.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -549,7 +549,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedColumns:member(1)
   package: ExcelScript!
   fullName: setShowBandedColumns(showBandedColumns)
-  summary: Spécifie si les colonnes indiquent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillante différemment des colonnes impaires, pour faciliter la lecture du tableau.
+  summary: Spécifie si les colonnes affichent une mise en forme à bandes dans laquelle les colonnes impaires sont mises en surbrillance différemment des colonnes paires, pour faciliter la lecture du tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -566,7 +566,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowBandedRows:member(1)
   package: ExcelScript!
   fullName: setShowBandedRows(showBandedRows)
-  summary: Spécifie si les lignes indiquent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillante différemment des lignes impaires, pour faciliter la lecture du tableau.
+  summary: Spécifie si les lignes affichent une mise en forme à bandes dans laquelle les lignes impaires sont mises en surbrillance différemment des lignes paires, pour faciliter la lecture du tableau.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -617,7 +617,7 @@ methods:
   uid: ExcelScript!ExcelScript.Table#setShowTotals:member(1)
   package: ExcelScript!
   fullName: setShowTotals(showTotals)
-  summary: Spécifie si la ligne de total est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
+  summary: Spécifie si la ligne totale est visible. Cette valeur peut être définie de manière à afficher ou à masquer la ligne de total.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -631,9 +631,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 6519d6987825c7f3c316f3f153115fb4d83a2bef
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: d257901ee686a182d2891bb7ccf63cba1116a1dd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240653"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394036"

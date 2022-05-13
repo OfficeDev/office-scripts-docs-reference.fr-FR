@@ -3,7 +3,7 @@ name: ExcelScript.NamedItem
 uid: ExcelScript!ExcelScript.NamedItem:interface
 package: ExcelScript!
 fullName: ExcelScript.NamedItem
-summary: Représente un nom défini pour une plage de cellules ou une valeur. Les noms peuvent être des objets nommés primitifs (comme dans le type ci-dessous), un objet de plage ou une référence à une plage. Cet objet peut être utilisé pour obtenir l’objet de plage associé à des noms.
+summary: Représente un nom défini pour une plage de cellules ou une valeur. Les noms peuvent être des objets nommés primitifs (comme indiqué dans le type ci-dessous), un objet de plage ou une référence à une plage. Cet objet peut être utilisé pour obtenir l’objet de plage associé à des noms.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Renvoie l’objet de plage qui est associé au nom. Si le type de l’élément nommé n’est pas une plage, cette fonction renvoie `undefined`<!-- -->.
+  summary: Renvoie l’objet de plage qui est associé au nom. Si le type de l’élément nommé n’est pas une plage, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getScope:member(1)
   package: ExcelScript!
   fullName: getScope()
-  summary: 'Spécifie si le nom est d’étendue au workbook ou à une feuille de calcul spécifique. Les valeurs possibles sont : Worksheet, Workbook.'
+  summary: 'Spécifie si le nom est limité au classeur ou à une feuille de calcul spécifique. Les valeurs possibles sont les suivantes : Feuille de calcul, Classeur.'
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Spécifie le type de la valeur renvoyée par la formule du nom. Pour `ExcelScript.NamedItemType` plus d’informations, voir.
+  summary: Spécifie le type de la valeur retournée par la formule du nom. Voir `ExcelScript.NamedItemType` pour plus d’informations.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.NamedItem#getWorksheet:member(1)
   package: ExcelScript!
   fullName: getWorksheet()
-  summary: Renvoie la feuille de calcul dans laquelle l’élément nommé est d’étendue. Si l’élément est plutôt limitée au workbook, cette fonction renvoie `undefined`<!-- -->.
+  summary: Retourne la feuille de calcul dans laquelle l’élément nommé est délimité. Si l’élément est limité au classeur à la place, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -204,9 +204,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: b097f6d3666bdd2d2334de0cd2e9705852bb219a
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 182f0fc8a5e12d2bc525d28c22f8c6734abbcffd
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064835"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394120"

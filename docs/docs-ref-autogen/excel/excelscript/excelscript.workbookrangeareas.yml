@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAddresses:member(1)
   package: ExcelScript!
   fullName: getAddresses()
-  summary: Renvoie un tableau d’adresses de style A1. Les valeurs d’adresse contiennent le nom de la feuille de calcul pour chaque bloc rectangulaire de cellules (par exemple, « Feuille1 ! A1:B4, Sheet1! D1:D4 »). En lecture seule.
+  summary: Retourne un tableau d’adresses de style A1. Les valeurs d’adresse contiennent le nom de la feuille de calcul pour chaque bloc rectangulaire de cellules (par exemple, « Sheet1! A1:B4, Sheet1! D1:D4 »). En lecture seule.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getAreas:member(1)
   package: ExcelScript!
   fullName: getAreas()
-  summary: Renvoie `RangeAreasCollection` l’objet. Chacune `RangeAreas` de la collection représente une ou plusieurs plages de rectangles dans une feuille de calcul.
+  summary: Renvoie l’objet `RangeAreasCollection` . Chacune `RangeAreas` de la collection représente une ou plusieurs plages de rectangles dans une feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.WorkbookRangeAreas#getRangeAreasBySheet:member(1)
   package: ExcelScript!
   fullName: getRangeAreasBySheet(key)
-  summary: Renvoie `RangeAreas` l’objet en fonction du nom ou de l’ID de la feuille de calcul dans la collection. Si la feuille de calcul n’existe pas, cette fonction renvoie `undefined`<!-- -->.
+  summary: Retourne l’objet `RangeAreas` en fonction du nom ou de l’ID de la feuille de calcul dans la collection. Si la feuille de calcul n’existe pas, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -66,9 +66,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" />[]
       description: ''
 metadata:
-  ms.openlocfilehash: d564fd517a586b22ce7a8b00545027741b87f31b
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 6b82b4ad4c506c0fb4f56ed78928db930f5e1b7e
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064926"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394187"

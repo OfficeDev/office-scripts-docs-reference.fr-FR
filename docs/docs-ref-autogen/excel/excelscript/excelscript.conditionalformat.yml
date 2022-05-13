@@ -26,7 +26,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getCellValue:member(1)
   package: ExcelScript!
   fullName: getCellValue()
-  summary: Renvoie les propriétés de mise en forme conditionnelle de la valeur de cellule si la mise en forme conditionnelle actuelle est un `CellValue` type.
+  summary: Retourne les propriétés de format conditionnel de valeur de cellule si le format conditionnel actuel est un `CellValue` type.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -39,7 +39,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getColorScale:member(1)
   package: ExcelScript!
   fullName: getColorScale()
-  summary: Renvoie les propriétés de mise en forme conditionnelle d’échelle de couleur si la mise en forme conditionnelle actuelle est un `ColorScale` type.
+  summary: Retourne les propriétés de format conditionnel de mise à l’échelle des couleurs si le format conditionnel actuel est un `ColorScale` type.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -47,12 +47,12 @@ methods:
     content: 'getColorScale(): ColorScaleConditionalFormat | undefined;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.ColorScaleConditionalFormat:interface" /> | undefined
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script applies a red, white, and blue color scale to the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Create a new conditional formatting object by adding one to the range.\n  let conditionalFormatting = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.colorScale);\n\n  // Set the colors for the three parts of the scale: minimum, midpoint, and maximum.\n  conditionalFormatting.getColorScale().setCriteria({\n    minimum: {\n      color:\"#F8696B\", /* A pale red. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.lowestValue\n    },\n    midpoint: {\n      color: \"#FCFCFF\", /* Slightly off-white. */\n      formula:'=50',type:ExcelScript.ConditionalFormatColorCriterionType.percentile\n    },\n    maximum: {\n      color: \"#5A8AC6\", /* A pale blue. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.highestValue\n    }\n  });\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script applies a red, white, and blue color scale to the selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected range.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Create a new conditional formatting object by adding one to the range.\n  let conditionalFormatting = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.colorScale);\n\n  // Set the colors for the three parts of the scale: minimum, midpoint, and maximum.\n  conditionalFormatting.getColorScale().setCriteria({\n    minimum: {\n      color:\"#F8696B\", /* A pale red. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.lowestValue\n    },\n    midpoint: {\n      color: \"#FCFCFF\", /* Slightly off-white. */\n      formula:'=50',type:ExcelScript.ConditionalFormatColorCriterionType.percentile\n    },\n    maximum: {\n      color: \"#5A8AC6\", /* A pale blue. */\n      type:ExcelScript.ConditionalFormatColorCriterionType.highestValue\n    }\n  });\n}\n```"
 - name: getCustom()
   uid: ExcelScript!ExcelScript.ConditionalFormat#getCustom:member(1)
   package: ExcelScript!
   fullName: getCustom()
-  summary: Renvoie les propriétés de mise en forme conditionnelle personnalisée si la mise en forme conditionnelle actuelle est un type personnalisé.
+  summary: Retourne les propriétés de format conditionnel personnalisées si le format conditionnel actuel est un type personnalisé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -60,12 +60,12 @@ methods:
     content: 'getCustom(): CustomConditionalFormat | undefined;'
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomConditionalFormat:interface" /> | undefined
-      description: "\n\n#### <a name=\"examples\"></a>範例\n\n```TypeScript\n/**\n * This script applies a custom conditional formatting to the selected range.\n * A light-green fill is applied to a cell if the value is larger than the value in the row's previous column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected cells.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Apply a rule for positive change from the previous column.\n  let positiveChange = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.custom);\n  positiveChange.getCustom().getFormat().getFill().setColor(\"lightgreen\");\n  positiveChange.getCustom().getRule().setFormula(`=${selectedRange.getCell(0, 0).getAddress()}>${selectedRange.getOffsetRange(0, -1).getCell(0, 0).getAddress()}`);\n}\n```"
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script applies a custom conditional formatting to the selected range.\n * A light-green fill is applied to a cell if the value is larger than the value in the row's previous column.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the selected cells.\n  let selectedRange = workbook.getSelectedRange();\n\n  // Apply a rule for positive change from the previous column.\n  let positiveChange = selectedRange.addConditionalFormat(ExcelScript.ConditionalFormatType.custom);\n  positiveChange.getCustom().getFormat().getFill().setColor(\"lightgreen\");\n  positiveChange.getCustom().getRule().setFormula(`=${selectedRange.getCell(0, 0).getAddress()}>${selectedRange.getOffsetRange(0, -1).getCell(0, 0).getAddress()}`);\n}\n```"
 - name: getDataBar()
   uid: ExcelScript!ExcelScript.ConditionalFormat#getDataBar:member(1)
   package: ExcelScript!
   fullName: getDataBar()
-  summary: Renvoie les propriétés de la barre de données si la mise en forme conditionnelle actuelle est une barre de données.
+  summary: Retourne les propriétés de la barre de données si le format conditionnel actuel est une barre de données.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getIconSet:member(1)
   package: ExcelScript!
   fullName: getIconSet()
-  summary: Renvoie les propriétés de mise en forme conditionnelle du jeu d’icônes si la mise en forme conditionnelle actuelle est un `IconSet` type.
+  summary: Retourne les propriétés de format conditionnel du jeu d’icônes si le format conditionnel actuel est un `IconSet` type.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getId:member(1)
   package: ExcelScript!
   fullName: getId()
-  summary: Priorité de la mise en forme conditionnelle dans la mise en forme actuelle `ConditionalFormatCollection`<!-- -->.
+  summary: Priorité du format conditionnel dans le format actuel `ConditionalFormatCollection`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPreset:member(1)
   package: ExcelScript!
   fullName: getPreset()
-  summary: Renvoie la mise en forme conditionnelle des critères prédéfinits. Pour plus d’informations, consultez l’article `ExcelScript.PresetCriteriaConditionalFormat`.
+  summary: Retourne le format conditionnel des critères prédéfinies. Pour plus d’informations, consultez l’article `ExcelScript.PresetCriteriaConditionalFormat`.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -117,7 +117,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getPriority:member(1)
   package: ExcelScript!
   fullName: getPriority()
-  summary: Priorité (ou index) dans la collection de formats conditionnels dans qui ce format conditionnel existe actuellement. Cette modification modifie également les priorités d’autres formats conditionnels, afin de permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l’arrière. Les priorités plus élevées que les limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer une nouvelle copie de l’objet à ce nouvel emplacement de priorité si vous souhaitez y apporter d’autres modifications.
+  summary: Priorité (ou index) dans la collection de format conditionnel dans laquelle ce format conditionnel existe actuellement. Cette modification modifie également les priorités d’autres formats conditionnels pour permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l’arrière. Les priorités supérieures aux limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer à nouveau une nouvelle copie de l’objet à cet emplacement de nouvelle priorité si vous souhaitez y apporter d’autres modifications.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -130,7 +130,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRange:member(1)
   package: ExcelScript!
   fullName: getRange()
-  summary: Renvoie la plage à laquelle le format conditionnel est appliqué. Si la mise en forme conditionnelle est appliquée à plusieurs plages, cette fonction renvoie `undefined`<!-- -->.
+  summary: Retourne la plage à laquelle le format conditonal est appliqué. Si le format conditionnel est appliqué à plusieurs plages, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getRanges:member(1)
   package: ExcelScript!
   fullName: getRanges()
-  summary: Renvoie le `RangeAreas`<!-- -->, comprenant une ou plusieurs plages rectangulaires, à laquelle le format conditionnel est appliqué.
+  summary: Retourne la valeur `RangeAreas`<!-- -->, comprenant une ou plusieurs plages rectangulaires auxquelles le format conditonal est appliqué.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getStopIfTrue:member(1)
   package: ExcelScript!
   fullName: getStopIfTrue()
-  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur est `null` sur les barres de données, les jeux d’icônes et les échelles de couleurs, car il n’existe aucun concept de ces `StopIfTrue` barres.
+  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur se trouve `null` sur les barres de données, les jeux d’icônes et les échelles de couleurs, car il n’existe aucun concept pour `StopIfTrue` ces barres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTextComparison:member(1)
   package: ExcelScript!
   fullName: getTextComparison()
-  summary: Renvoie les propriétés de mise en forme conditionnelle de texte spécifiques si la mise en forme conditionnelle actuelle est un type de texte. Par exemple, pour mettre en forme des cellules correspondant au mot « Text ».
+  summary: Retourne les propriétés de format conditionnel de texte spécifiques si le format conditionnel actuel est un type de texte. Par exemple, pour mettre en forme des cellules correspondant au mot « Text ».
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -182,7 +182,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getTopBottom:member(1)
   package: ExcelScript!
   fullName: getTopBottom()
-  summary: Renvoie les propriétés de mise en forme conditionnelle supérieure/inférieure si la mise en forme conditionnelle actuelle est un `TopBottom` type. Par exemple, pour mettre en forme les 10 % ou les 10 premiers éléments.
+  summary: Retourne les propriétés de format conditionnel supérieur/inférieur si le format conditionnel actuel est un `TopBottom` type. Par exemple, pour mettre en forme les 10 premiers ou 10 derniers éléments.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#getType:member(1)
   package: ExcelScript!
   fullName: getType()
-  summary: Type de mise en forme conditionnelle. Une seule peut être définie à la fois.
+  summary: Type de format conditionnel. Un seul peut être défini à la fois.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -208,7 +208,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setPriority:member(1)
   package: ExcelScript!
   fullName: setPriority(priority)
-  summary: Priorité (ou index) dans la collection de formats conditionnels dans qui ce format conditionnel existe actuellement. Cette modification modifie également les priorités d’autres formats conditionnels, afin de permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l’arrière. Les priorités plus élevées que les limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer une nouvelle copie de l’objet à ce nouvel emplacement de priorité si vous souhaitez y apporter d’autres modifications.
+  summary: Priorité (ou index) dans la collection de format conditionnel dans laquelle ce format conditionnel existe actuellement. Cette modification modifie également les priorités d’autres formats conditionnels pour permettre un ordre de priorité contigu. Utilisez une priorité négative pour commencer à partir de l’arrière. Les priorités supérieures aux limites seront définies sur la priorité maximale (ou minimale si négative). Notez également que si vous modifiez la priorité, vous devez récupérer à nouveau une nouvelle copie de l’objet à cet emplacement de nouvelle priorité si vous souhaitez y apporter d’autres modifications.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -225,7 +225,7 @@ methods:
   uid: ExcelScript!ExcelScript.ConditionalFormat#setStopIfTrue:member(1)
   package: ExcelScript!
   fullName: setStopIfTrue(stopIfTrue)
-  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur est `null` sur les barres de données, les jeux d’icônes et les échelles de couleurs, car il n’existe aucun concept de ces `StopIfTrue` barres.
+  summary: Si les conditions de cette mise en forme conditionnelle sont remplies, aucun format de priorité inférieure ne doit prendre effet sur cette cellule. La valeur se trouve `null` sur les barres de données, les jeux d’icônes et les échelles de couleurs, car il n’existe aucun concept pour `StopIfTrue` ces barres.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -239,9 +239,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: d76b9ca2141a89c44983f5dda3bd7b0609016220
-  ms.sourcegitcommit: b796bf885c8fe7d777f70602bb7038de424d922b
+  ms.openlocfilehash: 268983e49cd3b24c52841add0c9c6cc39613b7c7
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/01/2021
-  ms.locfileid: "61240576"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394162"

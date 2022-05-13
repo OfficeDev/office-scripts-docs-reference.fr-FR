@@ -3,7 +3,7 @@ name: ExcelScript.PivotField
 uid: ExcelScript!ExcelScript.PivotField:interface
 package: ExcelScript!
 fullName: ExcelScript.PivotField
-summary: Représente le champ Excel PivotField.
+summary: Représente le champ de tableau croisé dynamique Excel.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#applyFilter:member(1)
   package: ExcelScript!
   fullName: applyFilter(filter)
-  summary: Définit un ou plusieurs des filtres de tableau croisé dynamique actuels du champ et les applique au champ. Si les filtres fournis ne sont pas valides ou ne peuvent pas être appliqués, une exception est lancée.
+  summary: Définit un ou plusieurs des filtres croisés dynamiques actuels du champ et les applique au champ. Si les filtres fournis ne sont pas valides ou ne peuvent pas être appliqués, une exception est levée.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -21,7 +21,7 @@ methods:
     content: 'applyFilter(filter: PivotFilters): void;'
     parameters:
     - id: filter
-      description: Un filtre de tableau croisé dynamique spécifique configuré ou une interface de filtres croisés dynamiques contenant plusieurs filtres configurés.
+      description: Un filtre dynamique spécifique configuré ou une interface PivotFilters contenant plusieurs filtres configurés.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilters:interface" />
     return:
       type: void
@@ -30,7 +30,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearAllFilters:member(1)
   package: ExcelScript!
   fullName: clearAllFilters()
-  summary: Permet d’effacer tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
+  summary: Efface tous les critères de tous les filtres du champ. Cela supprime tout filtrage actif sur le champ.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -43,7 +43,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#clearFilter:member(1)
   package: ExcelScript!
   fullName: clearFilter(filterType)
-  summary: Permet d’effacer tous les critères existants du filtre du champ du type donné (s’il en existe un actuellement appliqué).
+  summary: Efface tous les critères existants du filtre du champ du type donné (si un critère est actuellement appliqué).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -51,7 +51,7 @@ methods:
     content: 'clearFilter(filterType: PivotFilterType): void;'
     parameters:
     - id: filterType
-      description: Type de filtre sur le champ pour lequel effacer tous les critères.
+      description: Type de filtre sur le champ dont tous les critères doivent être clairs.
       type: <xref uid="ExcelScript!ExcelScript.PivotFilterType:enum" />
     return:
       type: void
@@ -86,7 +86,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getItems:member(1)
   package: ExcelScript!
   fullName: getItems()
-  summary: Renvoie les PivotFields associés à PivotField.
+  summary: Retourne les éléments de tableau croisé dynamique associés au champ de tableau croisé dynamique.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -112,7 +112,7 @@ methods:
   uid: ExcelScript!ExcelScript.PivotField#getPivotItem:member(1)
   package: ExcelScript!
   fullName: getPivotItem(name)
-  summary: Obtient un pivotItem par nom. Si l’pivotItem n’existe pas, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient un pivotItem par son nom. Si pivotItem n’existe pas, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -120,7 +120,7 @@ methods:
     content: 'getPivotItem(name: string): PivotItem | undefined;'
     parameters:
     - id: name
-      description: Nom du pivotItem à récupérer.
+      description: Nom du pivotitem à récupérer.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotItem:interface" /> | undefined
@@ -231,7 +231,7 @@ methods:
     content: 'sortByLabels(sortBy: SortBy): void;'
     parameters:
     - id: sortBy
-      description: Spécifie si le tri est effectué par ordre croissant ou décroit.
+      description: Spécifie si le tri est effectué dans l’ordre croissant ou décroissant.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     return:
       type: void
@@ -253,21 +253,21 @@ methods:
               ): void;
     parameters:
     - id: sortBy
-      description: Spécifie si le tri est effectué par ordre croissant ou décroit.
+      description: Spécifie si le tri est effectué dans l’ordre croissant ou décroissant.
       type: <xref uid="ExcelScript!ExcelScript.SortBy:enum" />
     - id: valuesHierarchy
-      description: Spécifie la hiérarchie de valeurs sur l’axe des données à utiliser pour le tri.
+      description: Spécifie la hiérarchie des valeurs sur l’axe des données à utiliser pour le tri.
       type: <xref uid="ExcelScript!ExcelScript.DataPivotHierarchy:interface" />
     - id: pivotItemScope
-      description: Éléments à utiliser pour l’étendue du tri. Ce sont les éléments qui formeront la ligne ou la colonne sur qui vous souhaitez trier. Si une chaîne est utilisée à la place d’un pivotItem, la chaîne représente l’ID de l’pivotItem. S’il n’y a pas d’autres éléments que la hiérarchie de données sur l’axe sur quoi vous souhaitez trier, cela peut être vide.
+      description: Éléments qui doivent être utilisés pour l’étendue du tri. Il s’agit des éléments qui composent la ligne ou la colonne sur laquelle vous souhaitez trier. Si une chaîne est utilisée à la place d’un pivotItem, la chaîne représente l’ID du pivotItem. S’il n’existe aucun élément autre que la hiérarchie de données sur l’axe sur lequel vous souhaitez trier, cela peut être vide.
       type: "Array&lt;<xref uid=\"ExcelScript!ExcelScript.PivotItem:interface\" /> | string&gt;\n        "
     return:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 0a1b4e3b1fa368d54a066f1ed58dbde60edf99ca
-  ms.sourcegitcommit: 9dbae2022b7fe47e64affb163fd332b01810dccf
+  ms.openlocfilehash: b101e242560b91b8f743585d90e374bd5fbc2851
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/16/2022
-  ms.locfileid: "62857327"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394184"

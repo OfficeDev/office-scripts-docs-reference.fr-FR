@@ -3,7 +3,7 @@ name: ExcelScript.DocumentProperties
 uid: ExcelScript!ExcelScript.DocumentProperties:interface
 package: ExcelScript!
 fullName: ExcelScript.DocumentProperties
-summary: Représente les propriétés du workbook.
+summary: Représente les propriétés du classeur.
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -21,10 +21,10 @@ methods:
     content: 'addCustomProperty(key: string, value: any): CustomProperty;'
     parameters:
     - id: key
-      description: Obligatoire. Clé de la propriété personnalisée, qui ne fait pas l’affaire. La clé est limitée à 255 caractères en dehors de Excel sur le Web (les clés plus grandes sont automatiquement tronées à 255 caractères sur d’autres plateformes).
+      description: Obligatoire. Clé de la propriété personnalisée, qui ne respecte pas la casse. La clé est limitée à 255 caractères en dehors de Excel sur le Web (les clés plus grandes sont automatiquement réduites à 255 caractères sur d’autres plateformes).
       type: string
     - id: value
-      description: Obligatoire. Valeur de la propriété personnalisée. La valeur est limitée à 255 caractères en dehors de Excel sur le Web (les valeurs plus élevées sont automatiquement réduites à 255 caractères sur d’autres plateformes).
+      description: Obligatoire. Valeur de la propriété personnalisée. La valeur est limitée à 255 caractères en dehors de Excel sur le Web (les valeurs plus grandes sont automatiquement réduites à 255 caractères sur d’autres plateformes).
       type: any
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" />
@@ -46,7 +46,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getAuthor:member(1)
   package: ExcelScript!
   fullName: getAuthor()
-  summary: Auteur du livre.
+  summary: Auteur du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -59,7 +59,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCategory:member(1)
   package: ExcelScript!
   fullName: getCategory()
-  summary: Catégorie du classez.
+  summary: Catégorie du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -72,7 +72,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getComments:member(1)
   package: ExcelScript!
   fullName: getComments()
-  summary: Commentaires du workbook.
+  summary: Commentaires du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -85,7 +85,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCompany:member(1)
   package: ExcelScript!
   fullName: getCompany()
-  summary: Société du workbook.
+  summary: Société du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -98,7 +98,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCreationDate:member(1)
   package: ExcelScript!
   fullName: getCreationDate()
-  summary: Obtient la date de création du classeur. En lecture seule.
+  summary: Obtient la date de création du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -111,7 +111,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustom:member(1)
   package: ExcelScript!
   fullName: getCustom()
-  summary: Obtient la collection de propriétés personnalisées du classeur. En lecture seule.
+  summary: Obtient la collection de propriétés personnalisées du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -124,7 +124,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getCustomProperty:member(1)
   package: ExcelScript!
   fullName: getCustomProperty(key)
-  summary: Obtient un objet de propriété personnalisé par sa clé, qui ne tient pas compte de la casse. Si la propriété personnalisée n’existe pas, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient un objet de propriété personnalisé par sa clé, qui ne tient pas compte de la casse. Si la propriété personnalisée n’existe pas, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -132,7 +132,7 @@ methods:
     content: 'getCustomProperty(key: string): CustomProperty | undefined;'
     parameters:
     - id: key
-      description: Obligatoire. Clé qui identifie l’objet de propriété personnalisée.
+      description: Obligatoire. Clé qui identifie l’objet de propriété personnalisé.
       type: string
     return:
       type: <xref uid="ExcelScript!ExcelScript.CustomProperty:interface" /> | undefined
@@ -141,7 +141,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getKeywords:member(1)
   package: ExcelScript!
   fullName: getKeywords()
-  summary: Mots clés du manuel.
+  summary: Mots clés du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -154,7 +154,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getLastAuthor:member(1)
   package: ExcelScript!
   fullName: getLastAuthor()
-  summary: Obtient ou définit le dernier auteur du classeur. En lecture seule.
+  summary: Obtient ou définit le dernier auteur du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -167,7 +167,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getManager:member(1)
   package: ExcelScript!
   fullName: getManager()
-  summary: Responsable du manuel.
+  summary: Gestionnaire du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,7 +180,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getRevisionNumber:member(1)
   package: ExcelScript!
   fullName: getRevisionNumber()
-  summary: Obtient le numéro de révision du classeur. En lecture seule.
+  summary: Obtient le numéro de révision du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -193,7 +193,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getSubject:member(1)
   package: ExcelScript!
   fullName: getSubject()
-  summary: Objet du manuel.
+  summary: Objet du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -206,7 +206,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#getTitle:member(1)
   package: ExcelScript!
   fullName: getTitle()
-  summary: Titre du manuel.
+  summary: Titre du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -219,7 +219,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setAuthor:member(1)
   package: ExcelScript!
   fullName: setAuthor(author)
-  summary: Auteur du livre.
+  summary: Auteur du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -236,7 +236,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setCategory:member(1)
   package: ExcelScript!
   fullName: setCategory(category)
-  summary: Catégorie du classez.
+  summary: Catégorie du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -253,7 +253,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setComments:member(1)
   package: ExcelScript!
   fullName: setComments(comments)
-  summary: Commentaires du workbook.
+  summary: Commentaires du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -270,7 +270,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setCompany:member(1)
   package: ExcelScript!
   fullName: setCompany(company)
-  summary: Société du workbook.
+  summary: Société du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -287,7 +287,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setKeywords:member(1)
   package: ExcelScript!
   fullName: setKeywords(keywords)
-  summary: Mots clés du manuel.
+  summary: Mots clés du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -304,7 +304,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setManager:member(1)
   package: ExcelScript!
   fullName: setManager(manager)
-  summary: Responsable du manuel.
+  summary: Gestionnaire du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -321,7 +321,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setRevisionNumber:member(1)
   package: ExcelScript!
   fullName: setRevisionNumber(revisionNumber)
-  summary: Obtient le numéro de révision du classeur. En lecture seule.
+  summary: Obtient le numéro de révision du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -338,7 +338,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setSubject:member(1)
   package: ExcelScript!
   fullName: setSubject(subject)
-  summary: Objet du manuel.
+  summary: Objet du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -355,7 +355,7 @@ methods:
   uid: ExcelScript!ExcelScript.DocumentProperties#setTitle:member(1)
   package: ExcelScript!
   fullName: setTitle(title)
-  summary: Titre du manuel.
+  summary: Titre du classeur.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -369,9 +369,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 625ea9b1b9ce99a2f4b8e750ba181865016dc6ad
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: b145a889420ad995959a9445c8cd936f8e588d39
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064912"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394136"

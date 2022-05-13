@@ -13,7 +13,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: getBlackAndWhite()
-  summary: Option d’impression noir et blanc de la feuille de calcul.
+  summary: Option d’impression en noir et blanc de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -65,7 +65,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getDraftMode:member(1)
   package: ExcelScript!
   fullName: getDraftMode()
-  summary: Option de mode brouillon de la feuille de calcul. If `true`<!-- -->, la feuille sera imprimée sans graphiques.
+  summary: Option de mode brouillon de la feuille de calcul. Si `true`<!-- -->, la feuille sera imprimée sans graphiques.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -78,7 +78,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: getFirstPageNumber()
-  summary: Premier numéro de page de la feuille de calcul à imprimer. Une `null` valeur représente la numéro de page « automatique ».
+  summary: Numéro de la première page de la feuille de calcul à imprimer. Une `null` valeur représente la numérotation de page « automatique ».
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -91,7 +91,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getFooterMargin:member(1)
   package: ExcelScript!
   fullName: getFooterMargin()
-  summary: Marge de pied de la feuille de calcul, en points, à utiliser lors de l’impression.
+  summary: Marge de pied de page de la feuille de calcul, en points, à utiliser lors de l’impression.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -143,7 +143,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getOrientation:member(1)
   package: ExcelScript!
   fullName: getOrientation()
-  summary: Orientation de la feuille de calcul de la page.
+  summary: Orientation de la page de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -156,7 +156,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPaperSize:member(1)
   package: ExcelScript!
   fullName: getPaperSize()
-  summary: Format de papier de la feuille de calcul de la page.
+  summary: Taille de papier de la feuille de calcul de la page.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -169,7 +169,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintArea:member(1)
   package: ExcelScript!
   fullName: getPrintArea()
-  summary: Obtient l’objet, comprenant une ou plusieurs plages rectangulaires, qui représente la zone `RangeAreas` d’impression de la feuille de calcul. S’il n’existe aucune zone d’impression, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient l’objet `RangeAreas` , comprenant une ou plusieurs plages rectangulaires, qui représente la zone d’impression de la feuille de calcul. S’il n’y a pas de zone d’impression, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -195,7 +195,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintErrors:member(1)
   package: ExcelScript!
   fullName: getPrintErrors()
-  summary: Option d’erreurs d’impression de la feuille de calcul.
+  summary: Option erreurs d’impression de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -221,7 +221,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintHeadings:member(1)
   package: ExcelScript!
   fullName: getPrintHeadings()
-  summary: Spécifie si les en-tête de la feuille de calcul seront imprimés.
+  summary: Spécifie si les en-têtes de la feuille de calcul seront imprimés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -234,7 +234,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintOrder:member(1)
   package: ExcelScript!
   fullName: getPrintOrder()
-  summary: Option d’ordre d’impression de page de la feuille de calcul. Cela indique l’ordre à utiliser pour traiter le numéro de page imprimé.
+  summary: Option de commande d’impression de page de la feuille de calcul. Cela indique l’ordre à utiliser pour traiter le numéro de page imprimé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -247,7 +247,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleColumns:member(1)
   package: ExcelScript!
   fullName: getPrintTitleColumns()
-  summary: Obtient l’objet plage représentant les colonnes de titre. Si elle n’est pas définie, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient l’objet plage représentant les colonnes de titre. Si elle n’est pas définie, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -260,7 +260,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getPrintTitleRows:member(1)
   package: ExcelScript!
   fullName: getPrintTitleRows()
-  summary: Obtient l’objet plage représentant les rangées de titre. Si elle n’est pas définie, cette fonction renvoie `undefined`<!-- -->.
+  summary: Obtient l’objet plage représentant les rangées de titre. Si elle n’est pas définie, cette méthode retourne `undefined`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -299,7 +299,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#getZoom:member(1)
   package: ExcelScript!
   fullName: getZoom()
-  summary: Options de zoom avant impression de la feuille de calcul. `PageLayoutZoomOptions`L’objet doit être définie en tant qu’objet JSON (à utiliser au lieu `x.zoom = {...}` de`x.zoom.scale = ...`<!-- -->).
+  summary: Options de zoom avant avant de la feuille de calcul. L’objet `PageLayoutZoomOptions` doit être défini en tant qu’objet JSON (utiliser `x.zoom = {...}` au lieu de `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -312,7 +312,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setBlackAndWhite:member(1)
   package: ExcelScript!
   fullName: setBlackAndWhite(blackAndWhite)
-  summary: Option d’impression noir et blanc de la feuille de calcul.
+  summary: Option d’impression en noir et blanc de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -380,7 +380,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setDraftMode:member(1)
   package: ExcelScript!
   fullName: setDraftMode(draftMode)
-  summary: Option de mode brouillon de la feuille de calcul. If `true`<!-- -->, la feuille sera imprimée sans graphiques.
+  summary: Option de mode brouillon de la feuille de calcul. Si `true`<!-- -->, la feuille sera imprimée sans graphiques.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -397,7 +397,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFirstPageNumber:member(1)
   package: ExcelScript!
   fullName: setFirstPageNumber(firstPageNumber)
-  summary: Premier numéro de page de la feuille de calcul à imprimer. Une `null` valeur représente la numéro de page « automatique ».
+  summary: Numéro de la première page de la feuille de calcul à imprimer. Une `null` valeur représente la numérotation de page « automatique ».
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -414,7 +414,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setFooterMargin:member(1)
   package: ExcelScript!
   fullName: setFooterMargin(footerMargin)
-  summary: Marge de pied de la feuille de calcul, en points, à utiliser lors de l’impression.
+  summary: Marge de pied de page de la feuille de calcul, en points, à utiliser lors de l’impression.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -465,7 +465,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setOrientation:member(1)
   package: ExcelScript!
   fullName: setOrientation(orientation)
-  summary: Orientation de la feuille de calcul de la page.
+  summary: Orientation de la page de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -482,7 +482,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPaperSize:member(1)
   package: ExcelScript!
   fullName: setPaperSize(paperSize)
-  summary: Format de papier de la feuille de calcul de la page.
+  summary: Taille de papier de la feuille de calcul de la page.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -507,7 +507,7 @@ methods:
     content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
     parameters:
     - id: printArea
-      description: Plage ou plages du contenu à imprimer.
+      description: Plage ou plage du contenu à imprimer.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" /> | string
     return:
       type: void
@@ -533,7 +533,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintErrors:member(1)
   package: ExcelScript!
   fullName: setPrintErrors(printErrors)
-  summary: Option d’erreurs d’impression de la feuille de calcul.
+  summary: Option erreurs d’impression de la feuille de calcul.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -567,7 +567,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintHeadings:member(1)
   package: ExcelScript!
   fullName: setPrintHeadings(printHeadings)
-  summary: Spécifie si les en-tête de la feuille de calcul seront imprimés.
+  summary: Spécifie si les en-têtes de la feuille de calcul seront imprimés.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -596,7 +596,7 @@ methods:
               ): void;
     parameters:
     - id: unit
-      description: Unité de mesure des marges fournies.
+      description: Unité de mesure pour les marges fournies.
       type: <xref uid="ExcelScript!ExcelScript.PrintMarginUnit:enum" />
     - id: marginOptions
       description: Valeurs de marge à définir. Les marges non fournies restent inchangées.
@@ -608,7 +608,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setPrintOrder:member(1)
   package: ExcelScript!
   fullName: setPrintOrder(printOrder)
-  summary: Option d’ordre d’impression de page de la feuille de calcul. Cela indique l’ordre à utiliser pour traiter le numéro de page imprimé.
+  summary: Option de commande d’impression de page de la feuille de calcul. Cela indique l’ordre à utiliser pour traiter le numéro de page imprimé.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -633,7 +633,7 @@ methods:
     content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
     parameters:
     - id: printTitleColumns
-      description: Colonnes à répéter à gauche de chaque page. La plage doit s’étendre sur toute la colonne pour être valide.
+      description: Colonnes à répéter à gauche de chaque page. La plage doit couvrir l’intégralité de la colonne pour être valide.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -650,7 +650,7 @@ methods:
     content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
     parameters:
     - id: printTitleRows
-      description: Lignes à répéter en haut de chaque page. La plage doit s’étendre sur toute la ligne pour être valide.
+      description: Lignes à répéter en haut de chaque page. La plage doit s’étendre sur l’ensemble de la ligne pour être valide.
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: void
@@ -693,7 +693,7 @@ methods:
   uid: ExcelScript!ExcelScript.PageLayout#setZoom:member(1)
   package: ExcelScript!
   fullName: setZoom(zoom)
-  summary: Options de zoom avant impression de la feuille de calcul. `PageLayoutZoomOptions`L’objet doit être définie en tant qu’objet JSON (à utiliser au lieu `x.zoom = {...}` de`x.zoom.scale = ...`<!-- -->).
+  summary: Options de zoom avant avant de la feuille de calcul. L’objet `PageLayoutZoomOptions` doit être défini en tant qu’objet JSON (utiliser `x.zoom = {...}` au lieu de `x.zoom.scale = ...`<!-- -->).
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -707,9 +707,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: 7f9a97d565c2be0eb8530d038ffb011c3b272a73
-  ms.sourcegitcommit: f7fb04c9453c417ca7c13566def67d92f1d35934
+  ms.openlocfilehash: 3471c7a1cd66390c49f1d211027b97700195aff8
+  ms.sourcegitcommit: 550121614d5022da564dc035c9550a7aca2c31c5
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/17/2021
-  ms.locfileid: "61064807"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65394225"
