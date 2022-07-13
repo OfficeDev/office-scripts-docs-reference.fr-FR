@@ -121,7 +121,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.DynamicFilterCriteria:enum" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script applies a filter to a table that filters it \n * to only show rows with dates from the previous month.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the table named \"ReportTable\".\n  const table = workbook.getTable(\"ReportTable\");\n\n  // Get the column with the header \"Date\".\n  const dateColumn = table.getColumnByName(\"Date\");\n\n  // Apply a dynamic filter to the column. \n  // `lastMonth` will only show rows with a date from the previous month.\n  dateColumn.getFilter().applyDynamicFilter(ExcelScript.DynamicFilterCriteria.lastMonth);\n}\n```"
 - name: applyFontColorFilter(color)
   uid: ExcelScript!ExcelScript.Filter#applyFontColorFilter:member(1)
   package: ExcelScript!
@@ -202,7 +202,7 @@ methods:
     content: 'applyValuesFilter(values: Array<string | FilterDatetime>): void;'
     parameters:
     - id: values
-      description: Liste des valeurs à afficher. Il doit s’agit d’un tableau de chaînes ou d’objets `ExcelScript.FilterDateTime` .
+      description: Liste des valeurs à afficher. Il doit s’agir d’un tableau de chaînes ou d’un tableau d’objets `ExcelScript.FilterDateTime` .
       type: Array&lt;string | <xref uid="ExcelScript!ExcelScript.FilterDatetime:interface" />&gt;
     return:
       type: void
@@ -234,9 +234,9 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.FilterCriteria:interface" />
       description: ''
 metadata:
-  ms.openlocfilehash: c7a8aeffb0d54e23920b3eafbdcd8fe93798e637
-  ms.sourcegitcommit: 9b58b1ac2de88fae836d9f575fbc59c498a0b4ea
+  ms.openlocfilehash: c387a30a5fb3630a161fdc9f68954b61d07b8118
+  ms.sourcegitcommit: 224152865ad439182e63f5630f0f0aec589420a7
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/15/2022
-  ms.locfileid: "63508381"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66767034"
