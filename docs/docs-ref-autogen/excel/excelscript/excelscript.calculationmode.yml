@@ -1,22 +1,29 @@
 ### YamlMime:TSEnum
 name: ExcelScript.CalculationMode
-uid: 'ExcelScript!ExcelScript.CalculationMode:enum'
+uid: ExcelScript!ExcelScript.CalculationMode:enum
 package: ExcelScript!
 fullName: ExcelScript.CalculationMode
 summary: ''
-remarks: ''
+remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script recalculates the used range of a specific worksheet.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Only recalculate if the calculation mode is not set to automatic.\n  if (workbook.getApplication().getCalculationMode() !== ExcelScript.CalculationMode.automatic) {\n    // Get the used range from a worksheet named \"Monthly Report\".\n    const sheet = workbook.getWorksheet(\"Monthly Report\");\n    const range = sheet.getUsedRange();\n    console.log(`Calculating ${range.getAddress()}`);\n\n    // Force all the used cells in that worksheet to calculate.\n    sheet.getUsedRange().calculate();\n  }\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: automatic
-    uid: 'ExcelScript!ExcelScript.CalculationMode.automatic:member'
-    package: ExcelScript!
-    summary: Comportement de recalcul par défaut dans lequel Excel calcule les résultats de nouvelle formule chaque fois que les données pertinentes sont modifiées.
-  - name: automaticExceptTables
-    uid: 'ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member'
-    package: ExcelScript!
-    summary: 'Calcule les résultats d’une nouvelle formule chaque fois que les données pertinentes sont modifiées, sauf si la formule se trouve dans une table de données.'
-  - name: manual
-    uid: 'ExcelScript!ExcelScript.CalculationMode.manual:member'
-    package: ExcelScript!
-    summary: Les calculs se produisent uniquement lorsque l’utilisateur ou le add-in les demande.
+- name: automatic
+  uid: ExcelScript!ExcelScript.CalculationMode.automatic:member
+  package: ExcelScript!
+  summary: Comportement de recalcul par défaut dans lequel Excel calcule les résultats de la nouvelle formule chaque fois que les données pertinentes sont modifiées.
+- name: automaticExceptTables
+  uid: ExcelScript!ExcelScript.CalculationMode.automaticExceptTables:member
+  package: ExcelScript!
+  summary: Calcule les nouveaux résultats de formule chaque fois que les données pertinentes sont modifiées, sauf si la formule se trouve dans une table de données.
+- name: manual
+  uid: ExcelScript!ExcelScript.CalculationMode.manual:member
+  package: ExcelScript!
+  summary: Les calculs se produisent uniquement lorsque l’utilisateur ou le complément les demande.
+metadata:
+  ms.openlocfilehash: 79cc9d67dd3288540146a4d56fe712f37607a33b
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890458"

@@ -1,184 +1,197 @@
 ### YamlMime:TSEnum
 name: ExcelScript.DateFilterCondition
-uid: 'ExcelScript!ExcelScript.DateFilterCondition:enum'
+uid: ExcelScript!ExcelScript.DateFilterCondition:enum
 package: ExcelScript!
 fullName: ExcelScript.DateFilterCondition
-summary: Enum représentant toutes les conditions acceptées par lesquelles un filtre de date peut être appliqué. Utilisé pour configurer le type de filtre de tableau croisé dynamique qui est appliqué au champ.
-remarks: ''
+summary: Énumération représentant toutes les conditions acceptées par lesquelles un filtre de dates peut être appliqué. Utilisé pour configurer le type de filtre croisé dynamique appliqué au champ.
+remarks: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script applies a filter to a PivotTable that filters out rows \n * that aren't from this month.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the \"Date Recorded\" field to filter. \n  // The data in this field must be dates in order for the filter to work.\n  const pivot = workbook.getPivotTables()[0];\n  const rowHierarchy = pivot.getRowHierarchy(\"Date Recorded\");\n  const rowField = rowHierarchy.getFields()[0];\n\n  // Apply the date filter.\n  rowField.applyFilter({\n    dateFilter: {\n      // Setting the condition to `thisMonth` means items that are before or\n      // after this month will not be displayed.\n      condition: ExcelScript.DateFilterCondition.thisMonth\n    }\n  });\n}\n```"
 isPreview: false
 isDeprecated: false
 fields:
-  - name: after
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.after:member'
-    package: ExcelScript!
-    summary: |-
-      Date se trouve après la date de comparaison.
+- name: after
+  uid: ExcelScript!ExcelScript.DateFilterCondition.after:member
+  package: ExcelScript!
+  summary: >-
+    La date est postérieure à la date du comparateur.
 
-      Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
-  - name: afterOrEqualTo
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.afterOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      La date est après ou égale à la date de comparaison.
 
-      Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
-  - name: allDatesInPeriodApril
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member'
-    package: ExcelScript!
-    summary: Date du mois d’avril.
-  - name: allDatesInPeriodAugust
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member'
-    package: ExcelScript!
-    summary: Date du mois d’août.
-  - name: allDatesInPeriodDecember
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member'
-    package: ExcelScript!
-    summary: Date de décembre.
-  - name: allDatesInPeriodFebruary
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodFebruary:member'
-    package: ExcelScript!
-    summary: Date de février.
-  - name: allDatesInPeriodJanuary
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJanuary:member'
-    package: ExcelScript!
-    summary: Date du mois de janvier.
-  - name: allDatesInPeriodJuly
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJuly:member'
-    package: ExcelScript!
-    summary: Date du mois de juillet.
-  - name: allDatesInPeriodJune
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJune:member'
-    package: ExcelScript!
-    summary: Date du mois de juin.
-  - name: allDatesInPeriodMarch
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMarch:member'
-    package: ExcelScript!
-    summary: Date du mois de mars.
-  - name: allDatesInPeriodMay
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMay:member'
-    package: ExcelScript!
-    summary: Date du mois de mai.
-  - name: allDatesInPeriodNovember
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodNovember:member'
-    package: ExcelScript!
-    summary: Date de novembre.
-  - name: allDatesInPeriodOctober
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member'
-    package: ExcelScript!
-    summary: Date du mois d’octobre.
-  - name: allDatesInPeriodQuarter1
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member'
-    package: ExcelScript!
-    summary: La date est au trimestre 1.
-  - name: allDatesInPeriodQuarter2
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter2:member'
-    package: ExcelScript!
-    summary: La date est au trimestre 2.
-  - name: allDatesInPeriodQuarter3
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter3:member'
-    package: ExcelScript!
-    summary: La date est au 3 trimestre.
-  - name: allDatesInPeriodQuarter4
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter4:member'
-    package: ExcelScript!
-    summary: La date est au 4e trimestre.
-  - name: allDatesInPeriodSeptember
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodSeptember:member'
-    package: ExcelScript!
-    summary: Date du mois de septembre.
-  - name: before
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.before:member'
-    package: ExcelScript!
-    summary: |-
-      La date est avant la date de comparaison.
+    Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
+- name: afterOrEqualTo
+  uid: ExcelScript!ExcelScript.DateFilterCondition.afterOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    La date est postérieure ou égale à la date du comparateur.
 
-      Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
-  - name: beforeOrEqualTo
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.beforeOrEqualTo:member'
-    package: ExcelScript!
-    summary: |-
-      La date est avant ou égale à la date de comparaison.
 
-      Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
-  - name: between
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.between:member'
-    package: ExcelScript!
-    summary: |-
-      Entre `lowerBound` et `upperBound` dates.
+    Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
+- name: allDatesInPeriodApril
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodApril:member
+  package: ExcelScript!
+  summary: La date est en avril.
+- name: allDatesInPeriodAugust
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodAugust:member
+  package: ExcelScript!
+  summary: La date est en août.
+- name: allDatesInPeriodDecember
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodDecember:member
+  package: ExcelScript!
+  summary: La date est en décembre.
+- name: allDatesInPeriodFebruary
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodFebruary:member
+  package: ExcelScript!
+  summary: La date est en février.
+- name: allDatesInPeriodJanuary
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJanuary:member
+  package: ExcelScript!
+  summary: La date est en janvier.
+- name: allDatesInPeriodJuly
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJuly:member
+  package: ExcelScript!
+  summary: La date est en juillet.
+- name: allDatesInPeriodJune
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodJune:member
+  package: ExcelScript!
+  summary: La date est en juin.
+- name: allDatesInPeriodMarch
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMarch:member
+  package: ExcelScript!
+  summary: La date est en mars.
+- name: allDatesInPeriodMay
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodMay:member
+  package: ExcelScript!
+  summary: La date est en mai.
+- name: allDatesInPeriodNovember
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodNovember:member
+  package: ExcelScript!
+  summary: La date est en novembre.
+- name: allDatesInPeriodOctober
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodOctober:member
+  package: ExcelScript!
+  summary: La date est en octobre.
+- name: allDatesInPeriodQuarter1
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter1:member
+  package: ExcelScript!
+  summary: La date est au trimestre 1.
+- name: allDatesInPeriodQuarter2
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter2:member
+  package: ExcelScript!
+  summary: La date est au trimestre 2.
+- name: allDatesInPeriodQuarter3
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter3:member
+  package: ExcelScript!
+  summary: La date est au trimestre 3.
+- name: allDatesInPeriodQuarter4
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodQuarter4:member
+  package: ExcelScript!
+  summary: La date est au trimestre 4.
+- name: allDatesInPeriodSeptember
+  uid: ExcelScript!ExcelScript.DateFilterCondition.allDatesInPeriodSeptember:member
+  package: ExcelScript!
+  summary: La date est en septembre.
+- name: before
+  uid: ExcelScript!ExcelScript.DateFilterCondition.before:member
+  package: ExcelScript!
+  summary: >-
+    La date est antérieure à la date du comparateur.
 
-      Critères obligatoires : {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
-  - name: equals
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.equals:member'
-    package: ExcelScript!
-    summary: |-
-      Est égal au critère de comparaison.
 
-      Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
-  - name: lastMonth
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastMonth:member'
-    package: ExcelScript!
-    summary: Date du mois dernier.
-  - name: lastQuarter
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastQuarter:member'
-    package: ExcelScript!
-    summary: Date du dernier trimestre.
-  - name: lastWeek
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastWeek:member'
-    package: ExcelScript!
-    summary: Date de la semaine dernière.
-  - name: lastYear
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.lastYear:member'
-    package: ExcelScript!
-    summary: Date de l’année dernière.
-  - name: nextMonth
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member'
-    package: ExcelScript!
-    summary: Date du mois suivant.
-  - name: nextQuarter
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextQuarter:member'
-    package: ExcelScript!
-    summary: La date est le trimestre suivant.
-  - name: nextWeek
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextWeek:member'
-    package: ExcelScript!
-    summary: Date de la semaine suivante.
-  - name: nextYear
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.nextYear:member'
-    package: ExcelScript!
-    summary: Date de l’année suivante.
-  - name: thisMonth
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member'
-    package: ExcelScript!
-    summary: Date du mois en cours.
-  - name: thisQuarter
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisQuarter:member'
-    package: ExcelScript!
-    summary: Date de ce trimestre.
-  - name: thisWeek
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisWeek:member'
-    package: ExcelScript!
-    summary: Date de cette semaine.
-  - name: thisYear
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.thisYear:member'
-    package: ExcelScript!
-    summary: Date de cette année.
-  - name: today
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.today:member'
-    package: ExcelScript!
-    summary: Date du jour.
-  - name: tomorrow
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.tomorrow:member'
-    package: ExcelScript!
-    summary: La date est demain.
-  - name: unknown
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.unknown:member'
-    package: ExcelScript!
-    summary: '`DateFilterCondition` est inconnu ou non pris en cas d’insupportation.'
-  - name: yearToDate
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member'
-    package: ExcelScript!
-    summary: Date de la même année.
-  - name: yesterday
-    uid: 'ExcelScript!ExcelScript.DateFilterCondition.yesterday:member'
-    package: ExcelScript!
-    summary: Date du jour de la veille.
+    Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
+- name: beforeOrEqualTo
+  uid: ExcelScript!ExcelScript.DateFilterCondition.beforeOrEqualTo:member
+  package: ExcelScript!
+  summary: >-
+    La date est antérieure ou égale à la date du comparateur.
+
+
+    Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->}<!-- -->.
+- name: between
+  uid: ExcelScript!ExcelScript.DateFilterCondition.between:member
+  package: ExcelScript!
+  summary: >-
+    Entre `lowerBound` et `upperBound` dates.
+
+
+    Critères obligatoires : {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+- name: equals
+  uid: ExcelScript!ExcelScript.DateFilterCondition.equals:member
+  package: ExcelScript!
+  summary: >-
+    Correspond au critère de comparateur.
+
+
+    Critères obligatoires : {`comparator`<!-- -->}<!-- -->. Critères facultatifs : {`wholeDays`<!-- -->, `exclusive`<!-- -->}<!-- -->.
+- name: lastMonth
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastMonth:member
+  package: ExcelScript!
+  summary: La date est le mois dernier.
+- name: lastQuarter
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastQuarter:member
+  package: ExcelScript!
+  summary: La date est le dernier trimestre.
+- name: lastWeek
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastWeek:member
+  package: ExcelScript!
+  summary: La date est la semaine dernière.
+- name: lastYear
+  uid: ExcelScript!ExcelScript.DateFilterCondition.lastYear:member
+  package: ExcelScript!
+  summary: La date est l’année dernière.
+- name: nextMonth
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextMonth:member
+  package: ExcelScript!
+  summary: La date est le mois prochain.
+- name: nextQuarter
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextQuarter:member
+  package: ExcelScript!
+  summary: La date est le trimestre suivant.
+- name: nextWeek
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextWeek:member
+  package: ExcelScript!
+  summary: La date est la semaine prochaine.
+- name: nextYear
+  uid: ExcelScript!ExcelScript.DateFilterCondition.nextYear:member
+  package: ExcelScript!
+  summary: La date est l’année prochaine.
+- name: thisMonth
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisMonth:member
+  package: ExcelScript!
+  summary: La date est ce mois-ci.
+- name: thisQuarter
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisQuarter:member
+  package: ExcelScript!
+  summary: La date est ce trimestre.
+- name: thisWeek
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisWeek:member
+  package: ExcelScript!
+  summary: La date est cette semaine.
+- name: thisYear
+  uid: ExcelScript!ExcelScript.DateFilterCondition.thisYear:member
+  package: ExcelScript!
+  summary: C’est cette an née.
+- name: today
+  uid: ExcelScript!ExcelScript.DateFilterCondition.today:member
+  package: ExcelScript!
+  summary: La date est aujourd’hui.
+- name: tomorrow
+  uid: ExcelScript!ExcelScript.DateFilterCondition.tomorrow:member
+  package: ExcelScript!
+  summary: La date est demain.
+- name: unknown
+  uid: ExcelScript!ExcelScript.DateFilterCondition.unknown:member
+  package: ExcelScript!
+  summary: '`DateFilterCondition` est inconnu ou non pris en charge.'
+- name: yearToDate
+  uid: ExcelScript!ExcelScript.DateFilterCondition.yearToDate:member
+  package: ExcelScript!
+  summary: Date de la même année à ce jour.
+- name: yesterday
+  uid: ExcelScript!ExcelScript.DateFilterCondition.yesterday:member
+  package: ExcelScript!
+  summary: La date est hier.
+metadata:
+  ms.openlocfilehash: 4fe94b8d7054d4ab00102050dc2c0a5803b626a7
+  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 07/20/2022
+  ms.locfileid: "66890360"
