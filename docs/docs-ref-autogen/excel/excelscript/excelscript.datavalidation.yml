@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ExcelScript.DataValidation
-uid: 'ExcelScript!ExcelScript.DataValidation:interface'
+uid: ExcelScript!ExcelScript.DataValidation:interface
 package: ExcelScript!
 fullName: ExcelScript.DataValidation
 summary: Représente la validation des données appliquée à la plage actuelle.
@@ -9,199 +9,182 @@ isPreview: false
 isDeprecated: false
 type: interface
 methods:
-  - name: clear()
-    uid: 'ExcelScript!ExcelScript.DataValidation#clear:member(1)'
-    package: ExcelScript!
-    fullName: clear()
-    summary: Efface la validation des données de la plage active.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'clear(): void;'
-      return:
-        type: void
-        description: ''
-  - name: getErrorAlert()
-    uid: 'ExcelScript!ExcelScript.DataValidation#getErrorAlert:member(1)'
-    package: ExcelScript!
-    fullName: getErrorAlert()
-    summary: Alerte d’erreur lorsque l’utilisateur entre des données non valides.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getErrorAlert(): DataValidationErrorAlert;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />'
-        description: ''
-  - name: getIgnoreBlanks()
-    uid: 'ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)'
-    package: ExcelScript!
-    fullName: getIgnoreBlanks()
-    summary: Spécifie si la validation des données sera effectuée sur des cellules vides. La valeur par défaut est `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getIgnoreBlanks(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: getInvalidCells()
-    uid: 'ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)'
-    package: ExcelScript!
-    fullName: getInvalidCells()
-    summary: 'Renvoie un `RangeAreas` objet, comprenant une ou plusieurs plages rectangulaires, avec des valeurs de cellule non valides. Si toutes les valeurs de cellule sont valides, cette fonction retourne `null`<!-- -->.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getInvalidCells(): RangeAreas;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />'
-        description: ''
-  - name: getPrompt()
-    uid: 'ExcelScript!ExcelScript.DataValidation#getPrompt:member(1)'
-    package: ExcelScript!
-    fullName: getPrompt()
-    summary: Invite lorsque les utilisateurs sélectionnent une cellule.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getPrompt(): DataValidationPrompt;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />'
-        description: ''
-  - name: getRule()
-    uid: 'ExcelScript!ExcelScript.DataValidation#getRule:member(1)'
-    package: ExcelScript!
-    fullName: getRule()
-    summary: Règle de validation des données qui contient différents types de critères de validation des données.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getRule(): DataValidationRule;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />'
-        description: ''
-  - name: getType()
-    uid: 'ExcelScript!ExcelScript.DataValidation#getType:member(1)'
-    package: ExcelScript!
-    fullName: getType()
-    summary: 'Type de validation des données, voir `ExcelScript.DataValidationType` pour plus d’informations.'
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getType(): DataValidationType;'
-      return:
-        type: '<xref uid="ExcelScript!ExcelScript.DataValidationType:enum" />'
-        description: |-
-
-
-          #### <a name="examples"></a>Exemples
-
-          ```TypeScript
-          /**
-           * This sample reads and logs the data validation type of the currently selected range.
-           */
-          function main(workbook: ExcelScript.Workbook) {
-            // Get the currently selected range.
-            let range = workbook.getSelectedRange();
-
-            // Get the type (`DataValidationType`) of data validation applied to the range.
-            let validationType = range.getDataValidation().getType();
-
-            /*
-             * Log the data validation type.
-             * If the range has a single value, it logs that type.
-             * If the range doesn't have data validation applied, it logs "None".
-             * If the range has multiple different types of data validation, it logs "Inconsistent" or "MixedCriteria".
-             */
-            console.log(validationType.toString());
-          }
-          ```
-  - name: getValid()
-    uid: 'ExcelScript!ExcelScript.DataValidation#getValid:member(1)'
-    package: ExcelScript!
-    fullName: getValid()
-    summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. Renvoie `true` si toutes les valeurs de cellule sont valides ou si toutes les `false` valeurs de cellule ne sont pas valides. Renvoie s’il existe des valeurs de cellule valides et `null` non valides dans la plage.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'getValid(): boolean;'
-      return:
-        type: boolean
-        description: ''
-  - name: setErrorAlert(errorAlert)
-    uid: 'ExcelScript!ExcelScript.DataValidation#setErrorAlert:member(1)'
-    package: ExcelScript!
-    fullName: setErrorAlert(errorAlert)
-    summary: Alerte d’erreur lorsque l’utilisateur entre des données non valides.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setErrorAlert(errorAlert: DataValidationErrorAlert): void;'
-      parameters:
-        - id: errorAlert
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: setIgnoreBlanks(ignoreBlanks)
-    uid: 'ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)'
-    package: ExcelScript!
-    fullName: setIgnoreBlanks(ignoreBlanks)
-    summary: Spécifie si la validation des données sera effectuée sur des cellules vides. La valeur par défaut est `true`<!-- -->.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setIgnoreBlanks(ignoreBlanks: boolean): void;'
-      parameters:
-        - id: ignoreBlanks
-          description: ''
-          type: boolean
-      return:
-        type: void
-        description: ''
-  - name: setPrompt(prompt)
-    uid: 'ExcelScript!ExcelScript.DataValidation#setPrompt:member(1)'
-    package: ExcelScript!
-    fullName: setPrompt(prompt)
-    summary: Invite lorsque les utilisateurs sélectionnent une cellule.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setPrompt(prompt: DataValidationPrompt): void;'
-      parameters:
-        - id: prompt
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />'
-      return:
-        type: void
-        description: ''
-  - name: setRule(rule)
-    uid: 'ExcelScript!ExcelScript.DataValidation#setRule:member(1)'
-    package: ExcelScript!
-    fullName: setRule(rule)
-    summary: Règle de validation des données qui contient différents types de critères de validation des données.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'setRule(rule: DataValidationRule): void;'
-      parameters:
-        - id: rule
-          description: ''
-          type: '<xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />'
-      return:
-        type: void
-        description: ''
+- name: clear()
+  uid: ExcelScript!ExcelScript.DataValidation#clear:member(1)
+  package: ExcelScript!
+  fullName: clear()
+  summary: Efface la validation des données de la plage active.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'clear(): void;'
+    return:
+      type: void
+      description: ''
+- name: getErrorAlert()
+  uid: ExcelScript!ExcelScript.DataValidation#getErrorAlert:member(1)
+  package: ExcelScript!
+  fullName: getErrorAlert()
+  summary: Alerte d’erreur lorsque l’utilisateur entre des données non valides.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getErrorAlert(): DataValidationErrorAlert;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />
+      description: ''
+- name: getIgnoreBlanks()
+  uid: ExcelScript!ExcelScript.DataValidation#getIgnoreBlanks:member(1)
+  package: ExcelScript!
+  fullName: getIgnoreBlanks()
+  summary: Spécifie si la validation des données sera effectuée sur des cellules vides. La valeur par défaut est `true`.<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getIgnoreBlanks(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: getInvalidCells()
+  uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
+  package: ExcelScript!
+  fullName: getInvalidCells()
+  summary: Renvoie un `RangeAreas` objet, comprenant une ou plusieurs plages rectangulaires, avec des valeurs de cellule non valides. Si toutes les valeurs de cellule sont valides, cette méthode retourne `null`<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getInvalidCells(): RangeAreas;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.RangeAreas:interface" />
+      description: ''
+- name: getPrompt()
+  uid: ExcelScript!ExcelScript.DataValidation#getPrompt:member(1)
+  package: ExcelScript!
+  fullName: getPrompt()
+  summary: Invite lorsque les utilisateurs sélectionnent une cellule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getPrompt(): DataValidationPrompt;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />
+      description: ''
+- name: getRule()
+  uid: ExcelScript!ExcelScript.DataValidation#getRule:member(1)
+  package: ExcelScript!
+  fullName: getRule()
+  summary: Règle de validation des données qui contient différents types de critères de validation des données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getRule(): DataValidationRule;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />
+      description: ''
+- name: getType()
+  uid: ExcelScript!ExcelScript.DataValidation#getType:member(1)
+  package: ExcelScript!
+  fullName: getType()
+  summary: Type de validation des données, consultez `ExcelScript.DataValidationType` pour plus d’informations.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getType(): DataValidationType;'
+    return:
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationType:enum" />
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This sample reads and logs the data validation type of the currently selected range.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the currently selected range.\n  let range = workbook.getSelectedRange();\n\n  // Get the type (`DataValidationType`) of data validation applied to the range.\n  let validationType = range.getDataValidation().getType();\n\n  /*\n   * Log the data validation type.\n   * If the range has a single value, it logs that type.\n   * If the range doesn't have data validation applied, it logs \"None\".\n   * If the range has multiple different types of data validation, it logs \"Inconsistent\" or \"MixedCriteria\".\n   */\n  console.log(validationType.toString());\n}\n```"
+- name: getValid()
+  uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
+  package: ExcelScript!
+  fullName: getValid()
+  summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. `true` Renvoie si toutes les valeurs de cellule sont valides ou `false` si toutes les valeurs de cellule ne sont pas valides. Retourne s’il `null` existe des valeurs de cellule valides et non valides dans la plage.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'getValid(): boolean;'
+    return:
+      type: boolean
+      description: ''
+- name: setErrorAlert(errorAlert)
+  uid: ExcelScript!ExcelScript.DataValidation#setErrorAlert:member(1)
+  package: ExcelScript!
+  fullName: setErrorAlert(errorAlert)
+  summary: Alerte d’erreur lorsque l’utilisateur entre des données non valides.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setErrorAlert(errorAlert: DataValidationErrorAlert): void;'
+    parameters:
+    - id: errorAlert
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationErrorAlert:interface" />
+    return:
+      type: void
+      description: ''
+- name: setIgnoreBlanks(ignoreBlanks)
+  uid: ExcelScript!ExcelScript.DataValidation#setIgnoreBlanks:member(1)
+  package: ExcelScript!
+  fullName: setIgnoreBlanks(ignoreBlanks)
+  summary: Spécifie si la validation des données sera effectuée sur des cellules vides. La valeur par défaut est `true`.<!-- -->.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setIgnoreBlanks(ignoreBlanks: boolean): void;'
+    parameters:
+    - id: ignoreBlanks
+      description: ''
+      type: boolean
+    return:
+      type: void
+      description: ''
+- name: setPrompt(prompt)
+  uid: ExcelScript!ExcelScript.DataValidation#setPrompt:member(1)
+  package: ExcelScript!
+  fullName: setPrompt(prompt)
+  summary: Invite lorsque les utilisateurs sélectionnent une cellule.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setPrompt(prompt: DataValidationPrompt): void;'
+    parameters:
+    - id: prompt
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationPrompt:interface" />
+    return:
+      type: void
+      description: ''
+- name: setRule(rule)
+  uid: ExcelScript!ExcelScript.DataValidation#setRule:member(1)
+  package: ExcelScript!
+  fullName: setRule(rule)
+  summary: Règle de validation des données qui contient différents types de critères de validation des données.
+  remarks: ''
+  isPreview: false
+  isDeprecated: false
+  syntax:
+    content: 'setRule(rule: DataValidationRule): void;'
+    parameters:
+    - id: rule
+      description: ''
+      type: <xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />
+    return:
+      type: void
+      description: ''
+metadata:
+  ms.openlocfilehash: 3e4285c5bc14bd9323ee70e1481280993e33fbc1
+  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 08/24/2022
+  ms.locfileid: "67423868"
