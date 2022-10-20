@@ -210,7 +210,7 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string | <xref uid="ExcelScript!ExcelScript.Table:interface" />
     - id: destination
       description: Cellule située dans le coin supérieur gauche de la plage de destination du rapport de tableau croisé dynamique (plage de la feuille de calcul destinée à recevoir le rapport obtenu).
-      type: "<xref uid=\"ExcelScript!ExcelScript.Range:interface\" /> | string\n        "
+      type: <xref uid="ExcelScript!ExcelScript.Range:interface" /> | string
     return:
       type: <xref uid="ExcelScript!ExcelScript.PivotTable:interface" />
       description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script creates a PivotTable from an existing table and adds it to an existing worksheet.\n * This script assumes there is a table in the current worksheet with columns named \"Type\" and \"Sales\".\n * It also assumes there is a worksheet named \"PivotSheet\".\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Create a PivotTable based on a table in the current worksheet.\n  let sheet = workbook.getActiveWorksheet();\n  let table = sheet.getTables()[0];\n  let pivotTable = workbook.addPivotTable(\"My Pivot\", table, \"PivotSheet!A1\");\n\n  // Add fields to the PivotTable to show \"Sales\" per \"Type\".\n  pivotTable.addRowHierarchy(pivotTable.getHierarchy(\"Type\"));\n  pivotTable.addDataHierarchy(pivotTable.getHierarchy(\"Sales\"));\n}\n```"
@@ -1274,7 +1274,7 @@ methods:
     parameters:
     - id: newDefaultStyle
       description: Objet `PivotTableStyle` , ou nom de l’objet `PivotTableStyle` , qui doit être la nouvelle valeur par défaut.
-      type: "<xref uid=\"ExcelScript!ExcelScript.PivotTableStyle:interface\" /> | string\n        "
+      type: <xref uid="ExcelScript!ExcelScript.PivotTableStyle:interface" /> | string
     return:
       type: void
       description: ''
@@ -1384,9 +1384,9 @@ methods:
       type: void
       description: ''
 metadata:
-  ms.openlocfilehash: a28bde06c417868ab367f7f7c64641fe89e8d4d5
-  ms.sourcegitcommit: 1c3f24cda5e255ddb9dd7741f4af26ea0ad9922e
+  ms.openlocfilehash: eac0c41cc07384bce1a23c12a5f047ab32040218
+  ms.sourcegitcommit: 497d2ecc546aecf311c23c82110f8f0dfbcde0b9
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 07/20/2022
-  ms.locfileid: "66890521"
+  ms.lasthandoff: 10/20/2022
+  ms.locfileid: "68619511"
