@@ -52,7 +52,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getInvalidCells:member(1)
   package: ExcelScript!
   fullName: getInvalidCells()
-  summary: Renvoie un `RangeAreas` objet, comprenant une ou plusieurs plages rectangulaires, avec des valeurs de cellule non valides. Si toutes les valeurs de cellule sont valides, cette méthode retourne `null`<!-- -->.
+  summary: Retourne un `RangeAreas` objet, comprenant une ou plusieurs plages rectangulaires, avec des valeurs de cellule non valides. Si toutes les valeurs de cellule sont valides, cette méthode retourne `null`<!-- -->.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -104,7 +104,7 @@ methods:
   uid: ExcelScript!ExcelScript.DataValidation#getValid:member(1)
   package: ExcelScript!
   fullName: getValid()
-  summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. `true` Renvoie si toutes les valeurs de cellule sont valides ou `false` si toutes les valeurs de cellule ne sont pas valides. Retourne s’il `null` existe des valeurs de cellule valides et non valides dans la plage.
+  summary: Représente si toutes les valeurs de cellule sont valides selon les règles de validation des données. Retourne `true` si toutes les valeurs de cellule sont valides ou `false` si toutes les valeurs de cellule ne sont pas valides. Retourne `null` s’il existe des valeurs de cellule valides et non valides dans la plage.
   remarks: ''
   isPreview: false
   isDeprecated: false
@@ -180,11 +180,11 @@ methods:
       type: <xref uid="ExcelScript!ExcelScript.DataValidationRule:interface" />
     return:
       type: void
-      description: ''
+      description: "\n\n#### <a name=\"examples\"></a>Exemples\n\n```TypeScript\n/**\n * This script creates a data validation rule for the range B1:B5.\n * All values in that range must be a positive number.\n * Attempts to enter other values are blocked and an error message appears.\n */\nfunction main(workbook: ExcelScript.Workbook) {\n  // Get the range B1:B5 in the active worksheet.\n  const currentSheet = workbook.getActiveWorksheet();\n  const positiveNumberOnlyCells = currentSheet.getRange(\"B1:B5\");\n\n  // Create a data validation rule to only allow positive numbers.\n  const positiveNumberValidation: ExcelScript.BasicDataValidation = {\n    formula1: \"0\",\n    operator: ExcelScript.DataValidationOperator.greaterThan\n  };\n  const positiveNumberOnlyRule: ExcelScript.DataValidationRule = {\n    wholeNumber: positiveNumberValidation\n  };\n\n  // Set the rule on the range.\n  const rangeDataValidation = positiveNumberOnlyCells.getDataValidation();\n  rangeDataValidation.setRule(positiveNumberOnlyRule);\n\n  // Create an alert to appear when data other than positive numbers are entered.\n  const positiveNumberOnlyAlert: ExcelScript.DataValidationErrorAlert = {\n    message: \"Positive numbers only\",\n    showAlert: true,\n    style: ExcelScript.DataValidationAlertStyle.stop,\n    title: \"Invalid data\"\n  };\n  rangeDataValidation.setErrorAlert(positiveNumberOnlyAlert);\n}\n```"
 metadata:
-  ms.openlocfilehash: 3e4285c5bc14bd9323ee70e1481280993e33fbc1
-  ms.sourcegitcommit: e4d007e5b8fa836727fe0419950ff22d5edc2384
+  ms.openlocfilehash: 0c8131bf0d480ce14d4578e6a51a876090f90201
+  ms.sourcegitcommit: f004fc5d3ebfc650a5a353e05f1d75c2bc330f09
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/24/2022
-  ms.locfileid: "67423868"
+  ms.lasthandoff: 10/26/2022
+  ms.locfileid: "68698200"
